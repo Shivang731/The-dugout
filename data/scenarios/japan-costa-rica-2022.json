@@ -1,0 +1,378 @@
+{
+  "id": "japan-costa-rica-2022",
+  "meta": {
+    "title": "Japan vs Costa Rica — Group Stage",
+    "trigger_label": "Second half — Japan trail 0-1",
+    "difficulty": 1,
+    "order": 28,
+    "stage": "Group Stage",
+    "group": "E",
+    "date": "2022-11-27",
+    "stadium": "Ahmad bin Ali Stadium"
+  },
+  "scoreline": {
+    "display": "Japan 0 – 1 Costa Rica",
+    "home": 0,
+    "away": 1
+  },
+  "context": "A pivotal moment in this group stage match. Japan trail Costa Rica 0-1. Something has to change. The manager must decide how to respond.",
+  "home_team": "Japan",
+  "away_team": "Costa Rica",
+  "home_formation": "4-4-2",
+  "away_formation": "5-4-1",
+  "home_players": [
+    {
+      "name": "Shūichi Gonda",
+      "number": 12,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 42
+    },
+    {
+      "name": "Yuto Nagatomo",
+      "number": 5,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 28
+    },
+    {
+      "name": "Miki Yamane",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 46
+    },
+    {
+      "name": "Maya Yoshida",
+      "number": 22,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Ko Itakura",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Ritsu Doan",
+      "number": 8,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 46
+    },
+    {
+      "name": "Yuki Soma",
+      "number": 24,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 55
+    },
+    {
+      "name": "Wataru Endo",
+      "number": 6,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 57
+    },
+    {
+      "name": "Hidemasa Morita",
+      "number": 13,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 55
+    },
+    {
+      "name": "Daichi Kamada",
+      "number": 15,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 58
+    },
+    {
+      "name": "Ayase Ueda",
+      "number": 21,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 44
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Keylor Navas Gamboa",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 39
+    },
+    {
+      "name": "Óscar Esau Duarte Gaitán",
+      "number": 6,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Francisco Javier Calvo Quesada",
+      "number": 15,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 48
+    },
+    {
+      "name": "Kendall Jamaal Waston Manley",
+      "number": 19,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Bryan Oviedo",
+      "number": 8,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 51
+    },
+    {
+      "name": "Keysher Fuller Spence",
+      "number": 4,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 49
+    },
+    {
+      "name": "Celso Borges Mora",
+      "number": 5,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 47
+    },
+    {
+      "name": "Yeltsin Ignacio Tejeda Valverde",
+      "number": 17,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 53
+    },
+    {
+      "name": "Joel Nathaniel Campbell Samuels",
+      "number": 12,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 58
+    },
+    {
+      "name": "Gerson Torres Barrantes",
+      "number": 13,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 54
+    },
+    {
+      "name": "Anthony Daniel Contreras Enríquez",
+      "number": 7,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 57
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Costa Rica won 1-0. Keysher Fuller Spence (80')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Japan and Costa Rica (0-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Japan and Costa Rica (0-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Japan and Costa Rica (0-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Japan and Costa Rica (0-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Daichi Kamada": "Daichi Kamada at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Joel Nathaniel Campbell Samuels": "Joel Nathaniel Campbell Samuels at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Wataru Endo": "Wataru Endo at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Anthony Daniel Contreras Enríquez": "Anthony Daniel Contreras Enríquez at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Yuto Nagatomo": "Yuto Nagatomo at 28/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Joel Nathaniel Campbell Samuels",
+      "attacker_team": "Costa Rica",
+      "defender": "Miki Yamane",
+      "defender_team": "Japan",
+      "advantage": "Even",
+      "diff": "+0",
+      "critical": true
+    },
+    {
+      "attacker": "Gerson Torres Barrantes",
+      "attacker_team": "Costa Rica",
+      "defender": "Yuto Nagatomo",
+      "defender_team": "Japan",
+      "advantage": "Gerson Torres Barrantes",
+      "diff": "+18",
+      "critical": true
+    },
+    {
+      "attacker": "Ayase Ueda",
+      "attacker_team": "Japan",
+      "defender": "Kendall Jamaal Waston Manley",
+      "defender_team": "Costa Rica",
+      "advantage": "Kendall Jamaal Waston Manley",
+      "diff": "-1",
+      "critical": false
+    },
+    {
+      "attacker": "Anthony Daniel Contreras Enríquez",
+      "attacker_team": "Costa Rica",
+      "defender": "Ko Itakura",
+      "defender_team": "Japan",
+      "advantage": "Ko Itakura",
+      "diff": "-12",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 40,
+      "type": "yellow_card",
+      "description": "Anthony Daniel Contreras Enríquez (Costa Rica) shown a yellow card card — Foul",
+      "player": "Anthony Daniel Contreras Enríquez"
+    },
+    {
+      "minute": 43,
+      "type": "yellow_card",
+      "description": "Miki Yamane (Japan) shown a yellow card card — Foul",
+      "player": "Miki Yamane"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Hiroki Ito replaces Yuto Nagatomo (Tactical)",
+      "player": "Hiroki Ito"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Takuma Asano replaces Ayase Ueda (Tactical)",
+      "player": "Takuma Asano"
+    },
+    {
+      "minute": 60,
+      "type": "yellow_card",
+      "description": "Celso Borges Mora (Costa Rica) shown a yellow card card — Foul",
+      "player": "Celso Borges Mora"
+    },
+    {
+      "minute": 61,
+      "type": "substitution",
+      "description": "Kaoru Mitoma replaces Miki Yamane (Tactical)",
+      "player": "Kaoru Mitoma"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Brandon Aguilera Zamora replaces Gerson Torres Barrantes (Tactical)",
+      "player": "Brandon Aguilera Zamora"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Jewison Bennette replaces Anthony Daniel Contreras Enríquez (Tactical)",
+      "player": "Jewison Bennette"
+    },
+    {
+      "minute": 66,
+      "type": "substitution",
+      "description": "Junya Ito replaces Ritsu Doan (Tactical)",
+      "player": "Junya Ito"
+    },
+    {
+      "minute": 69,
+      "type": "yellow_card",
+      "description": "Francisco Javier Calvo Quesada (Costa Rica) shown a yellow card card — Foul",
+      "player": "Francisco Javier Calvo Quesada"
+    },
+    {
+      "minute": 80,
+      "type": "goal",
+      "description": "Keysher Fuller Spence scores for Costa Rica!",
+      "player": "Keysher Fuller Spence"
+    },
+    {
+      "minute": 81,
+      "type": "substitution",
+      "description": "Takumi Minamino replaces Yuki Soma (Tactical)",
+      "player": "Takumi Minamino"
+    },
+    {
+      "minute": 83,
+      "type": "yellow_card",
+      "description": "Ko Itakura (Japan) shown a yellow card card — Foul",
+      "player": "Ko Itakura"
+    },
+    {
+      "minute": 88,
+      "type": "substitution",
+      "description": "Youstin Delfin Salas Gómez replaces Celso Borges Mora (Tactical)",
+      "player": "Youstin Delfin Salas Gómez"
+    },
+    {
+      "minute": 92,
+      "type": "yellow_card",
+      "description": "Wataru Endo (Japan) shown a yellow card card — Foul",
+      "player": "Wataru Endo"
+    },
+    {
+      "minute": 94,
+      "type": "substitution",
+      "description": "Daniel Alonso Chacón Salas replaces Joel Nathaniel Campbell Samuels (Tactical)",
+      "player": "Daniel Alonso Chacón Salas"
+    }
+  ]
+}

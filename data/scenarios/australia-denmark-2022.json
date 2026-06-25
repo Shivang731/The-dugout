@@ -1,0 +1,379 @@
+{
+  "id": "australia-denmark-2022",
+  "meta": {
+    "title": "Australia vs Denmark — Group Stage",
+    "trigger_label": "Second half — Australia lead 1-0",
+    "difficulty": 1,
+    "order": 48,
+    "stage": "Group Stage",
+    "group": "D",
+    "date": "2022-11-30",
+    "stadium": "Al Janoub Stadium   "
+  },
+  "scoreline": {
+    "display": "Australia 1 – 0 Denmark",
+    "home": 1,
+    "away": 0
+  },
+  "context": "A pivotal moment in this group stage match. Australia lead Denmark 1-0. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Australia",
+  "away_team": "Denmark",
+  "home_formation": "4-4-2",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Mathew Ryan",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 35
+    },
+    {
+      "name": "Aziz Eraltay Behich",
+      "number": 16,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "Miloš Degenek",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "Harry Souttar",
+      "number": 19,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Kye Rowles",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Mathew Leckie",
+      "number": 7,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 49
+    },
+    {
+      "name": "Craig Goodwin",
+      "number": 23,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 33
+    },
+    {
+      "name": "Aaron Mooy",
+      "number": 13,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 58
+    },
+    {
+      "name": "Jackson Irvine",
+      "number": 22,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 55
+    },
+    {
+      "name": "Riley McGree",
+      "number": 14,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 61
+    },
+    {
+      "name": "Mitchell Thomas Duke",
+      "number": 15,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 51
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Kasper Schmeichel",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 31
+    },
+    {
+      "name": "Rasmus Nissen Kristensen",
+      "number": 13,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 41
+    },
+    {
+      "name": "Joakim Mæhle",
+      "number": 5,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 49
+    },
+    {
+      "name": "Andreas Christensen",
+      "number": 6,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 40
+    },
+    {
+      "name": "Joachim Andersen",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Pierre-Emile Højbjerg",
+      "number": 23,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 56
+    },
+    {
+      "name": "Christian Dannemann Eriksen",
+      "number": 10,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 51
+    },
+    {
+      "name": "Mathias Jensen",
+      "number": 7,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 50
+    },
+    {
+      "name": "Andreas Skov Olsen",
+      "number": 11,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 50
+    },
+    {
+      "name": "Jesper Lindstrøm",
+      "number": 25,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 50
+    },
+    {
+      "name": "Martin Braithwaite Christensen",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 60
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "C",
+    "description": "Australia won 1-0. Mathew Leckie (59')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between Australia and Denmark (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between Australia and Denmark (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between Australia and Denmark (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between Australia and Denmark (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Riley McGree": "Riley McGree at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Martin Braithwaite Christensen": "Martin Braithwaite Christensen at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Aaron Mooy": "Aaron Mooy at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Pierre-Emile Højbjerg": "Pierre-Emile Højbjerg at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Kasper Schmeichel": "Kasper Schmeichel at 31/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages.",
+    "Craig Goodwin": "Craig Goodwin at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Jesper Lindstrøm",
+      "attacker_team": "Denmark",
+      "defender": "Miloš Degenek",
+      "defender_team": "Australia",
+      "advantage": "Jesper Lindstrøm",
+      "diff": "+4",
+      "critical": true
+    },
+    {
+      "attacker": "Andreas Skov Olsen",
+      "attacker_team": "Denmark",
+      "defender": "Aziz Eraltay Behich",
+      "defender_team": "Australia",
+      "advantage": "Andreas Skov Olsen",
+      "diff": "+18",
+      "critical": true
+    },
+    {
+      "attacker": "Mitchell Thomas Duke",
+      "attacker_team": "Australia",
+      "defender": "Joachim Andersen",
+      "defender_team": "Denmark",
+      "advantage": "Even",
+      "diff": "+0",
+      "critical": false
+    },
+    {
+      "attacker": "Martin Braithwaite Christensen",
+      "attacker_team": "Denmark",
+      "defender": "Kye Rowles",
+      "defender_team": "Australia",
+      "advantage": "Kye Rowles",
+      "diff": "-12",
+      "critical": false
+    },
+    {
+      "attacker": "Craig Goodwin",
+      "attacker_team": "Australia",
+      "defender": "Rasmus Nissen Kristensen",
+      "defender_team": "Denmark",
+      "advantage": "Rasmus Nissen Kristensen",
+      "diff": "-6",
+      "critical": false
+    },
+    {
+      "attacker": "Mathew Leckie",
+      "attacker_team": "Australia",
+      "defender": "Joakim Mæhle",
+      "defender_team": "Denmark",
+      "advantage": "Joakim Mæhle",
+      "diff": "-10",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 3,
+      "type": "yellow_card",
+      "description": "Aziz Eraltay Behich (Australia) shown a yellow card card — Foul",
+      "player": "Aziz Eraltay Behich"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Keanu Baccus replaces Craig Goodwin (Tactical)",
+      "player": "Keanu Baccus"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Alexander Hartmann Bah replaces Rasmus Nissen Kristensen (Tactical)",
+      "player": "Alexander Hartmann Bah"
+    },
+    {
+      "minute": 56,
+      "type": "yellow_card",
+      "description": "Miloš Degenek (Australia) shown a yellow card card — Foul",
+      "player": "Miloš Degenek"
+    },
+    {
+      "minute": 58,
+      "type": "substitution",
+      "description": "Kasper Dolberg replaces Martin Braithwaite Christensen (Tactical)",
+      "player": "Kasper Dolberg"
+    },
+    {
+      "minute": 58,
+      "type": "substitution",
+      "description": "Mikkel Damsgaard replaces Mathias Jensen (Tactical)",
+      "player": "Mikkel Damsgaard"
+    },
+    {
+      "minute": 59,
+      "type": "goal",
+      "description": "Mathew Leckie scores for Australia!",
+      "player": "Mathew Leckie"
+    },
+    {
+      "minute": 68,
+      "type": "substitution",
+      "description": "Robert Skov replaces Andreas Skov Olsen (Tactical)",
+      "player": "Robert Skov"
+    },
+    {
+      "minute": 69,
+      "type": "substitution",
+      "description": "Andreas Evald Cornelius replaces Joakim Mæhle (Tactical)",
+      "player": "Andreas Evald Cornelius"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Bailey Wright replaces Riley McGree (Tactical)",
+      "player": "Bailey Wright"
+    },
+    {
+      "minute": 74,
+      "type": "yellow_card",
+      "description": "Robert Skov (Denmark) shown a yellow card card — Foul",
+      "player": "Robert Skov"
+    },
+    {
+      "minute": 81,
+      "type": "substitution",
+      "description": "Jamie MacLaren replaces Mitchell Thomas Duke (Tactical)",
+      "player": "Jamie MacLaren"
+    },
+    {
+      "minute": 88,
+      "type": "substitution",
+      "description": "Ajdin Hrustic replaces Mathew Leckie (Tactical)",
+      "player": "Ajdin Hrustic"
+    }
+  ]
+}

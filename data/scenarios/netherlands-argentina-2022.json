@@ -1,0 +1,458 @@
+{
+  "id": "netherlands-argentina-2022",
+  "meta": {
+    "title": "Netherlands vs Argentina — Quarter-finals",
+    "trigger_label": "Second half — Netherlands locked at 2-2, a moment of brilliance needed",
+    "difficulty": 3,
+    "order": 71,
+    "stage": "Quarter-finals",
+    "group": null,
+    "date": "2022-12-09",
+    "stadium": "Lusail Stadium"
+  },
+  "scoreline": {
+    "display": "Netherlands 2 – 2 Argentina",
+    "home": 2,
+    "away": 2
+  },
+  "context": "A tense moment in this quarter-finals match. Netherlands and Argentina are locked at 2-2. One tactical shift could be the difference between glory and heartbreak.",
+  "home_team": "Netherlands",
+  "away_team": "Argentina",
+  "home_formation": "5-3-2",
+  "away_formation": "5-3-2",
+  "home_players": [
+    {
+      "name": "Andries Noppert",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 38
+    },
+    {
+      "name": "Nathan Aké",
+      "number": 5,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Virgil van Dijk",
+      "number": 4,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Jurriën David Norman Timber",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Daley Blind",
+      "number": 17,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 51
+    },
+    {
+      "name": "Denzel Dumfries",
+      "number": 22,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 45
+    },
+    {
+      "name": "Marten de Roon",
+      "number": 15,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 48
+    },
+    {
+      "name": "Frenkie de Jong",
+      "number": 21,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 45
+    },
+    {
+      "name": "Cody Mathès Gakpo",
+      "number": 8,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 53
+    },
+    {
+      "name": "Memphis Depay",
+      "number": 10,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 58
+    },
+    {
+      "name": "Steven Bergwijn",
+      "number": 7,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 45
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Damián Emiliano Martínez",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 41
+    },
+    {
+      "name": "Nicolás Hernán Otamendi",
+      "number": 19,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Cristian Gabriel Romero",
+      "number": 13,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Lisandro Martínez",
+      "number": 25,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Marcos Javier Acuña",
+      "number": 8,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 43
+    },
+    {
+      "name": "Nahuel Molina Lucero",
+      "number": 26,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 53
+    },
+    {
+      "name": "Enzo Fernandez",
+      "number": 24,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 49
+    },
+    {
+      "name": "Rodrigo Javier De Paul",
+      "number": 7,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 58
+    },
+    {
+      "name": "Alexis Mac Allister",
+      "number": 20,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 61
+    },
+    {
+      "name": "Lionel Andrés Messi Cuccittini",
+      "number": 10,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 65
+    },
+    {
+      "name": "Julián Álvarez",
+      "number": 9,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 51
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Make an attacking substitution to break the deadlock",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Push the full-backs higher, create overloads out wide",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Stay patient, maintain shape, look for a moment of magic",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Go ultra-attacking — bring on an extra striker",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "The match went to penalties after a 2-2 draw. Nahuel Molina Lucero (34'), Lionel Andrés Messi Cuccittini (72'), Wout Weghorst (82'), Wout Weghorst (100')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Make an attacking substitution to break the deadlock**\nRisk level: High. This is the positive choice. An attacking substitution signals intent and can break the deadlock. In the context of this quarter-finals match between Netherlands and Argentina (2-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Push the full-backs higher, create overloads out wide**\nRisk level: Medium. This is the width-based approach. Overlapping full-backs create numerical advantages in wide areas. In the context of this quarter-finals match between Netherlands and Argentina (2-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Stay patient, maintain shape, look for a moment of magic**\nRisk level: Medium. This is the patient choice. Maintaining shape avoids risk but may not be enough to win. In the context of this quarter-finals match between Netherlands and Argentina (2-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Go ultra-attacking — bring on an extra striker**\nRisk level: Very High. This is the all-out attacking option. An extra striker increases goal threat but sacrifices midfield control. In the context of this quarter-finals match between Netherlands and Argentina (2-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Lionel Andrés Messi Cuccittini": "Lionel Andrés Messi Cuccittini at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Alexis Mac Allister": "Alexis Mac Allister at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Memphis Depay": "Memphis Depay at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Rodrigo Javier De Paul": "Rodrigo Javier De Paul at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Steven Bergwijn",
+      "attacker_team": "Netherlands",
+      "defender": "Lisandro Martínez",
+      "defender_team": "Argentina",
+      "advantage": "Steven Bergwijn",
+      "diff": "+10",
+      "critical": true
+    },
+    {
+      "attacker": "Julián Álvarez",
+      "attacker_team": "Argentina",
+      "defender": "Jurriën David Norman Timber",
+      "defender_team": "Netherlands",
+      "advantage": "Jurriën David Norman Timber",
+      "diff": "-5",
+      "critical": true
+    },
+    {
+      "attacker": "Cody Mathès Gakpo",
+      "attacker_team": "Netherlands",
+      "defender": "Enzo Fernandez",
+      "defender_team": "Argentina",
+      "advantage": "Cody Mathès Gakpo",
+      "diff": "+1",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 34,
+      "type": "goal",
+      "description": "Nahuel Molina Lucero scores for Argentina!",
+      "player": "Nahuel Molina Lucero"
+    },
+    {
+      "minute": 42,
+      "type": "yellow_card",
+      "description": "Marcos Javier Acuña (Argentina) shown a yellow card card — Foul",
+      "player": "Marcos Javier Acuña"
+    },
+    {
+      "minute": 42,
+      "type": "yellow_card",
+      "description": "Jurriën David Norman Timber (Netherlands) shown a yellow card card — Bad Behaviour",
+      "player": "Jurriën David Norman Timber"
+    },
+    {
+      "minute": 44,
+      "type": "yellow_card",
+      "description": "Cristian Gabriel Romero (Argentina) shown a yellow card card — Foul",
+      "player": "Cristian Gabriel Romero"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Steven Berghuis replaces Steven Bergwijn (Tactical)",
+      "player": "Steven Berghuis"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Teun Koopmeiners replaces Marten de Roon (Tactical)",
+      "player": "Teun Koopmeiners"
+    },
+    {
+      "minute": 46,
+      "type": "yellow_card",
+      "description": "Wout Weghorst (Netherlands) shown a yellow card card — Bad Behaviour",
+      "player": "Wout Weghorst"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Luuk de Jong replaces Daley Blind (Tactical)",
+      "player": "Luuk de Jong"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Leandro Daniel Paredes replaces Rodrigo Javier De Paul (Tactical)",
+      "player": "Leandro Daniel Paredes"
+    },
+    {
+      "minute": 72,
+      "type": "goal",
+      "description": "Lionel Andrés Messi Cuccittini scores for Argentina! (Penalty)",
+      "player": "Lionel Andrés Messi Cuccittini"
+    },
+    {
+      "minute": 75,
+      "type": "yellow_card",
+      "description": "Memphis Depay (Netherlands) shown a yellow card card — Bad Behaviour",
+      "player": "Memphis Depay"
+    },
+    {
+      "minute": 75,
+      "type": "yellow_card",
+      "description": "Lisandro Martínez (Argentina) shown a yellow card card — Bad Behaviour",
+      "player": "Lisandro Martínez"
+    },
+    {
+      "minute": 77,
+      "type": "substitution",
+      "description": "Nicolás Alejandro Tagliafico replaces Marcos Javier Acuña (Tactical)",
+      "player": "Nicolás Alejandro Tagliafico"
+    },
+    {
+      "minute": 77,
+      "type": "substitution",
+      "description": "Germán Alejandro Pezzella replaces Cristian Gabriel Romero (Tactical)",
+      "player": "Germán Alejandro Pezzella"
+    },
+    {
+      "minute": 77,
+      "type": "substitution",
+      "description": "Wout Weghorst replaces Memphis Depay (Tactical)",
+      "player": "Wout Weghorst"
+    },
+    {
+      "minute": 80,
+      "type": "substitution",
+      "description": "Lautaro Javier Martínez replaces Julián Álvarez (Tactical)",
+      "player": "Lautaro Javier Martínez"
+    },
+    {
+      "minute": 82,
+      "type": "goal",
+      "description": "Wout Weghorst scores for Netherlands!",
+      "player": "Wout Weghorst"
+    },
+    {
+      "minute": 87,
+      "type": "yellow_card",
+      "description": "Steven Berghuis (Netherlands) shown a yellow card card — Bad Behaviour",
+      "player": "Steven Berghuis"
+    },
+    {
+      "minute": 87,
+      "type": "yellow_card",
+      "description": "Leandro Daniel Paredes (Argentina) shown a yellow card card — Foul",
+      "player": "Leandro Daniel Paredes"
+    },
+    {
+      "minute": 99,
+      "type": "yellow_card",
+      "description": "Lionel Andrés Messi Cuccittini (Argentina) shown a yellow card card — Bad Behaviour",
+      "player": "Lionel Andrés Messi Cuccittini"
+    },
+    {
+      "minute": 100,
+      "type": "goal",
+      "description": "Wout Weghorst scores for Netherlands!",
+      "player": "Wout Weghorst"
+    },
+    {
+      "minute": 101,
+      "type": "yellow_card",
+      "description": "Nicolás Hernán Otamendi (Argentina) shown a yellow card card — Bad Behaviour",
+      "player": "Nicolás Hernán Otamendi"
+    },
+    {
+      "minute": 102,
+      "type": "yellow_card",
+      "description": "Steven Bergwijn (Netherlands) shown a yellow card card — Bad Behaviour",
+      "player": "Steven Bergwijn"
+    },
+    {
+      "minute": 105,
+      "type": "substitution",
+      "description": "Gonzalo Ariel Montiel replaces Nahuel Molina Lucero (Tactical)",
+      "player": "Gonzalo Ariel Montiel"
+    },
+    {
+      "minute": 108,
+      "type": "yellow_card",
+      "description": "Gonzalo Ariel Montiel (Argentina) shown a yellow card card — Bad Behaviour",
+      "player": "Gonzalo Ariel Montiel"
+    },
+    {
+      "minute": 111,
+      "type": "substitution",
+      "description": "Ángel Fabián Di María Hernández replaces Lisandro Martínez (Tactical)",
+      "player": "Ángel Fabián Di María Hernández"
+    },
+    {
+      "minute": 111,
+      "type": "yellow_card",
+      "description": "Germán Alejandro Pezzella (Argentina) shown a yellow card card — Foul",
+      "player": "Germán Alejandro Pezzella"
+    },
+    {
+      "minute": 112,
+      "type": "substitution",
+      "description": "Noa Lang replaces Cody Mathès Gakpo (Tactical)",
+      "player": "Noa Lang"
+    },
+    {
+      "minute": 127,
+      "type": "yellow_card",
+      "description": "Denzel Dumfries (Netherlands) shown a yellow card card — Bad Behaviour",
+      "player": "Denzel Dumfries"
+    },
+    {
+      "minute": 127,
+      "type": "yellow_card",
+      "description": "Denzel Dumfries (Netherlands) shown a second yellow card — Bad Behaviour",
+      "player": "Denzel Dumfries"
+    },
+    {
+      "minute": 127,
+      "type": "yellow_card",
+      "description": "Noa Lang (Netherlands) shown a yellow card card — Bad Behaviour",
+      "player": "Noa Lang"
+    }
+  ]
+}

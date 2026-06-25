@@ -1,0 +1,332 @@
+{
+  "id": "tunisia-france-2022",
+  "meta": {
+    "title": "Tunisia vs France — Group Stage",
+    "trigger_label": "Second half — Tunisia lead 1-0",
+    "difficulty": 1,
+    "order": 55,
+    "stage": "Group Stage",
+    "group": "D",
+    "date": "2022-11-30",
+    "stadium": "Education City Stadium "
+  },
+  "scoreline": {
+    "display": "Tunisia 1 – 0 France",
+    "home": 1,
+    "away": 0
+  },
+  "context": "A pivotal moment in this group stage match. Tunisia lead France 1-0. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Tunisia",
+  "away_team": "France",
+  "home_formation": "5-4-1",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Aymen Dahmen",
+      "number": 16,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 43
+    },
+    {
+      "name": "Yassine Meriah",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Nader Ghandri",
+      "number": 5,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 40
+    },
+    {
+      "name": "Montassar Omar Talbi",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 46
+    },
+    {
+      "name": "Ali Maâloul",
+      "number": 12,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 52
+    },
+    {
+      "name": "Wajdi Kechrida",
+      "number": 21,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 56
+    },
+    {
+      "name": "Ellyes Joris Skhiri",
+      "number": 17,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 57
+    },
+    {
+      "name": "Aïssa Bilal Laïdouni",
+      "number": 14,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 49
+    },
+    {
+      "name": "Anis Ben Slimane",
+      "number": 25,
+      "pos": "RAM",
+      "x": 0.675,
+      "y": 0.43,
+      "fatigue": 66
+    },
+    {
+      "name": "Mohamed Ali Ben Romdhane",
+      "number": 15,
+      "pos": "LAM",
+      "x": 0.325,
+      "y": 0.43,
+      "fatigue": 54
+    },
+    {
+      "name": "Wahbi Khazri",
+      "number": 10,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 51
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Steve Mandanda",
+      "number": 16,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 37
+    },
+    {
+      "name": "Axel Disasi",
+      "number": 3,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 53
+    },
+    {
+      "name": "Eduardo Camavinga",
+      "number": 25,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 41
+    },
+    {
+      "name": "Raphaël Varane",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Ibrahima Konaté",
+      "number": 24,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 40
+    },
+    {
+      "name": "Aurélien Djani Tchouaméni",
+      "number": 8,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 61
+    },
+    {
+      "name": "Jordan Veretout",
+      "number": 15,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 53
+    },
+    {
+      "name": "Youssouf Fofana",
+      "number": 13,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 53
+    },
+    {
+      "name": "Mattéo Guendouzi Olié",
+      "number": 6,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 50
+    },
+    {
+      "name": "Kingsley Coman",
+      "number": 20,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 66
+    },
+    {
+      "name": "Randal Kolo Muani",
+      "number": 12,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 52
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "C",
+    "description": "Tunisia won 1-0. Wahbi Khazri (57')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between Tunisia and France (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between Tunisia and France (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between Tunisia and France (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between Tunisia and France (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Anis Ben Slimane": "Anis Ben Slimane at 66/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Kingsley Coman": "Kingsley Coman at 66/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Aurélien Djani Tchouaméni": "Aurélien Djani Tchouaméni at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Ellyes Joris Skhiri": "Ellyes Joris Skhiri at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Wahbi Khazri",
+      "attacker_team": "Tunisia",
+      "defender": "Ibrahima Konaté",
+      "defender_team": "France",
+      "advantage": "Wahbi Khazri",
+      "diff": "+16",
+      "critical": true
+    },
+    {
+      "attacker": "Randal Kolo Muani",
+      "attacker_team": "France",
+      "defender": "Montassar Omar Talbi",
+      "defender_team": "Tunisia",
+      "advantage": "Randal Kolo Muani",
+      "diff": "+14",
+      "critical": true
+    },
+    {
+      "attacker": "Mohamed Ali Ben Romdhane",
+      "attacker_team": "Tunisia",
+      "defender": "Aurélien Djani Tchouaméni",
+      "defender_team": "France",
+      "advantage": "Mohamed Ali Ben Romdhane",
+      "diff": "+17",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 27,
+      "type": "yellow_card",
+      "description": "Wajdi Kechrida (Tunisia) shown a yellow card card — Foul",
+      "player": "Wajdi Kechrida"
+    },
+    {
+      "minute": 57,
+      "type": "goal",
+      "description": "Wahbi Khazri scores for Tunisia!",
+      "player": "Wahbi Khazri"
+    },
+    {
+      "minute": 59,
+      "type": "substitution",
+      "description": "Issam Jebali replaces Wahbi Khazri (Injury)",
+      "player": "Issam Jebali"
+    },
+    {
+      "minute": 62,
+      "type": "substitution",
+      "description": "William Saliba replaces Raphaël Varane (Tactical)",
+      "player": "William Saliba"
+    },
+    {
+      "minute": 62,
+      "type": "substitution",
+      "description": "Kylian Mbappé Lottin replaces Kingsley Coman (Tactical)",
+      "player": "Kylian Mbappé Lottin"
+    },
+    {
+      "minute": 62,
+      "type": "substitution",
+      "description": "Adrien Rabiot replaces Jordan Veretout (Tactical)",
+      "player": "Adrien Rabiot"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "description": "Antoine Griezmann replaces Youssouf Fofana (Tactical)",
+      "player": "Antoine Griezmann"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Ghilane Chalali replaces Mohamed Ali Ben Romdhane (Tactical)",
+      "player": "Ghilane Chalali"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Ousmane Dembélé replaces Mattéo Guendouzi Olié (Tactical)",
+      "player": "Ousmane Dembélé"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Ali Abdi replaces Anis Ben Slimane (Tactical)",
+      "player": "Ali Abdi"
+    }
+  ]
+}

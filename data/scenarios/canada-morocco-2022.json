@@ -1,0 +1,401 @@
+{
+  "id": "canada-morocco-2022",
+  "meta": {
+    "title": "Canada vs Morocco — Group Stage",
+    "trigger_label": "Second half — Canada trail 1-2",
+    "difficulty": 1,
+    "order": 52,
+    "stage": "Group Stage",
+    "group": "F",
+    "date": "2022-12-01",
+    "stadium": "Al Thumama Stadium"
+  },
+  "scoreline": {
+    "display": "Canada 1 – 2 Morocco",
+    "home": 1,
+    "away": 2
+  },
+  "context": "A pivotal moment in this group stage match. Canada trail Morocco 1-2. Something has to change. The manager must decide how to respond.",
+  "home_team": "Canada",
+  "away_team": "Morocco",
+  "home_formation": "4-1-4-1",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Milan Borjan",
+      "number": 18,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 37
+    },
+    {
+      "name": "Sam Adekugbe",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 50
+    },
+    {
+      "name": "Alistair Johnston",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 44
+    },
+    {
+      "name": "Steven de Sousa Vitoria",
+      "number": 5,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 50
+    },
+    {
+      "name": "Kamal Miller",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Alphonso Davies",
+      "number": 19,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 56
+    },
+    {
+      "name": "Tajon Buchanan",
+      "number": 11,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 57
+    },
+    {
+      "name": "Jonathan Osorio",
+      "number": 21,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 55
+    },
+    {
+      "name": "Mark Anthony Kaye",
+      "number": 14,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 57
+    },
+    {
+      "name": "David Junior Hoilett",
+      "number": 10,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 60
+    },
+    {
+      "name": "Cyle Larin",
+      "number": 17,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 60
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Yassine Bounou",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 35
+    },
+    {
+      "name": "Achraf Hakimi Mouh",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 49
+    },
+    {
+      "name": "Noussair Mazraoui",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 52
+    },
+    {
+      "name": "Romain Saïss",
+      "number": 6,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Nayef Aguerd",
+      "number": 5,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 47
+    },
+    {
+      "name": "Sofyan Amrabat",
+      "number": 4,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 60
+    },
+    {
+      "name": "Abdelhamid Sabiri",
+      "number": 11,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 52
+    },
+    {
+      "name": "Azzedine Ounahi",
+      "number": 8,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 47
+    },
+    {
+      "name": "Sofiane Boufal",
+      "number": 17,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 60
+    },
+    {
+      "name": "Hakim Ziyech",
+      "number": 7,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 57
+    },
+    {
+      "name": "Youssef En-Nesyri",
+      "number": 19,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 53
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Morocco won 2-1. Hakim Ziyech (3'), Youssef En-Nesyri (22'), None (39')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Canada and Morocco (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Canada and Morocco (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Canada and Morocco (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Canada and Morocco (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "David Junior Hoilett": "David Junior Hoilett at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Cyle Larin": "Cyle Larin at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Sofyan Amrabat": "Sofyan Amrabat at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Sofiane Boufal": "Sofiane Boufal at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Sofiane Boufal",
+      "attacker_team": "Morocco",
+      "defender": "Alistair Johnston",
+      "defender_team": "Canada",
+      "advantage": "Alistair Johnston",
+      "diff": "-15",
+      "critical": true
+    },
+    {
+      "attacker": "Hakim Ziyech",
+      "attacker_team": "Morocco",
+      "defender": "Sam Adekugbe",
+      "defender_team": "Canada",
+      "advantage": "Sam Adekugbe",
+      "diff": "-12",
+      "critical": false
+    },
+    {
+      "attacker": "Cyle Larin",
+      "attacker_team": "Canada",
+      "defender": "Nayef Aguerd",
+      "defender_team": "Morocco",
+      "advantage": "Cyle Larin",
+      "diff": "+11",
+      "critical": false
+    },
+    {
+      "attacker": "Youssef En-Nesyri",
+      "attacker_team": "Morocco",
+      "defender": "Kamal Miller",
+      "defender_team": "Canada",
+      "advantage": "Youssef En-Nesyri",
+      "diff": "+11",
+      "critical": false
+    },
+    {
+      "attacker": "Tajon Buchanan",
+      "attacker_team": "Canada",
+      "defender": "Achraf Hakimi Mouh",
+      "defender_team": "Morocco",
+      "advantage": "Tajon Buchanan",
+      "diff": "+9",
+      "critical": false
+    },
+    {
+      "attacker": "Alphonso Davies",
+      "attacker_team": "Canada",
+      "defender": "Noussair Mazraoui",
+      "defender_team": "Morocco",
+      "advantage": "Alphonso Davies",
+      "diff": "+9",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 3,
+      "type": "goal",
+      "description": "Hakim Ziyech scores for Morocco!",
+      "player": "Hakim Ziyech"
+    },
+    {
+      "minute": 6,
+      "type": "yellow_card",
+      "description": "David Junior Hoilett (Canada) shown a yellow card card — Foul",
+      "player": "David Junior Hoilett"
+    },
+    {
+      "minute": 22,
+      "type": "goal",
+      "description": "Youssef En-Nesyri scores for Morocco!",
+      "player": "Youssef En-Nesyri"
+    },
+    {
+      "minute": 25,
+      "type": "yellow_card",
+      "description": "Jonathan Osorio (Canada) shown a yellow card card — Foul",
+      "player": "Jonathan Osorio"
+    },
+    {
+      "minute": 39,
+      "type": "goal",
+      "description": "None scores for Canada! (Own Goal)",
+      "player": null
+    },
+    {
+      "minute": 46,
+      "type": "yellow_card",
+      "description": "Sam Adekugbe (Canada) shown a yellow card card — Foul",
+      "player": "Sam Adekugbe"
+    },
+    {
+      "minute": 59,
+      "type": "substitution",
+      "description": "Jonathan David replaces Cyle Larin (Tactical)",
+      "player": "Jonathan David"
+    },
+    {
+      "minute": 59,
+      "type": "substitution",
+      "description": "Atiba Hutchinson replaces Mark Anthony Kaye (Tactical)",
+      "player": "Atiba Hutchinson"
+    },
+    {
+      "minute": 60,
+      "type": "substitution",
+      "description": "Ismael Koné replaces Sam Adekugbe (Tactical)",
+      "player": "Ismael Koné"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Zakaria Aboukhlal replaces Sofiane Boufal (Tactical)",
+      "player": "Zakaria Aboukhlal"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Selim Amallah replaces Abdelhamid Sabiri (Tactical)",
+      "player": "Selim Amallah"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Richie Laryea replaces Jonathan Osorio (Tactical)",
+      "player": "Richie Laryea"
+    },
+    {
+      "minute": 75,
+      "type": "substitution",
+      "description": "David Wallace Wotherspoon replaces David Junior Hoilett (Tactical)",
+      "player": "David Wallace Wotherspoon"
+    },
+    {
+      "minute": 75,
+      "type": "substitution",
+      "description": "Abderrazak Hamdallah replaces Hakim Ziyech (Tactical)",
+      "player": "Abderrazak Hamdallah"
+    },
+    {
+      "minute": 75,
+      "type": "substitution",
+      "description": "Jawad El Yamiq replaces Azzedine Ounahi (Tactical)",
+      "player": "Jawad El Yamiq"
+    },
+    {
+      "minute": 83,
+      "type": "yellow_card",
+      "description": "Steven de Sousa Vitoria (Canada) shown a yellow card card — Foul",
+      "player": "Steven de Sousa Vitoria"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Yahya Jabrane replaces Achraf Hakimi Mouh (Tactical)",
+      "player": "Yahya Jabrane"
+    }
+  ]
+}

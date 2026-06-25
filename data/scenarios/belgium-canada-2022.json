@@ -1,0 +1,373 @@
+{
+  "id": "belgium-canada-2022",
+  "meta": {
+    "title": "Belgium vs Canada — Group Stage",
+    "trigger_label": "Second half — Belgium lead 1-0",
+    "difficulty": 1,
+    "order": 21,
+    "stage": "Group Stage",
+    "group": "F",
+    "date": "2022-11-23",
+    "stadium": "Ahmad bin Ali Stadium"
+  },
+  "scoreline": {
+    "display": "Belgium 1 – 0 Canada",
+    "home": 1,
+    "away": 0
+  },
+  "context": "A pivotal moment in this group stage match. Belgium lead Canada 1-0. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Belgium",
+  "away_team": "Canada",
+  "home_formation": "5-4-1",
+  "away_formation": "5-4-1",
+  "home_players": [
+    {
+      "name": "Thibaut Courtois",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 39
+    },
+    {
+      "name": "Jan Vertonghen",
+      "number": 5,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Leander Dendoncker",
+      "number": 19,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Toby Alderweireld",
+      "number": 2,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Yannick Ferreira Carrasco",
+      "number": 11,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 33
+    },
+    {
+      "name": "Timothy Castagne",
+      "number": 21,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 52
+    },
+    {
+      "name": "Youri Tielemans",
+      "number": 8,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 33
+    },
+    {
+      "name": "Axel Witsel",
+      "number": 6,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 57
+    },
+    {
+      "name": "Kevin De Bruyne",
+      "number": 7,
+      "pos": "RAM",
+      "x": 0.675,
+      "y": 0.43,
+      "fatigue": 54
+    },
+    {
+      "name": "Eden Hazard",
+      "number": 10,
+      "pos": "LAM",
+      "x": 0.325,
+      "y": 0.43,
+      "fatigue": 66
+    },
+    {
+      "name": "Michy Batshuayi Tunga",
+      "number": 23,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 53
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Milan Borjan",
+      "number": 18,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 46
+    },
+    {
+      "name": "Steven de Sousa Vitoria",
+      "number": 5,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Kamal Miller",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Alistair Johnston",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 48
+    },
+    {
+      "name": "Alphonso Davies",
+      "number": 19,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 42
+    },
+    {
+      "name": "Richie Laryea",
+      "number": 22,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 52
+    },
+    {
+      "name": "Stephen Antunes Eustáquio",
+      "number": 7,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 60
+    },
+    {
+      "name": "Atiba Hutchinson",
+      "number": 13,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 44
+    },
+    {
+      "name": "David Junior Hoilett",
+      "number": 10,
+      "pos": "LAM",
+      "x": 0.325,
+      "y": 0.43,
+      "fatigue": 56
+    },
+    {
+      "name": "Tajon Buchanan",
+      "number": 11,
+      "pos": "RAM",
+      "x": 0.675,
+      "y": 0.43,
+      "fatigue": 63
+    },
+    {
+      "name": "Jonathan David",
+      "number": 20,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 53
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "Belgium won 1-0. Michy Batshuayi Tunga (43')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between Belgium and Canada (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between Belgium and Canada (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between Belgium and Canada (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between Belgium and Canada (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Eden Hazard": "Eden Hazard at 66/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Tajon Buchanan": "Tajon Buchanan at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Stephen Antunes Eustáquio": "Stephen Antunes Eustáquio at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Axel Witsel": "Axel Witsel at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Yannick Ferreira Carrasco": "Yannick Ferreira Carrasco at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages.",
+    "Youri Tielemans": "Youri Tielemans at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Michy Batshuayi Tunga",
+      "attacker_team": "Belgium",
+      "defender": "Alistair Johnston",
+      "defender_team": "Canada",
+      "advantage": "Michy Batshuayi Tunga",
+      "diff": "+13",
+      "critical": true
+    },
+    {
+      "attacker": "Jonathan David",
+      "attacker_team": "Canada",
+      "defender": "Toby Alderweireld",
+      "defender_team": "Belgium",
+      "advantage": "Toby Alderweireld",
+      "diff": "-5",
+      "critical": false
+    },
+    {
+      "attacker": "Eden Hazard",
+      "attacker_team": "Belgium",
+      "defender": "Atiba Hutchinson",
+      "defender_team": "Canada",
+      "advantage": "Atiba Hutchinson",
+      "diff": "-14",
+      "critical": true
+    },
+    {
+      "attacker": "Tajon Buchanan",
+      "attacker_team": "Canada",
+      "defender": "Axel Witsel",
+      "defender_team": "Belgium",
+      "advantage": "Axel Witsel",
+      "diff": "-13",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 7,
+      "type": "yellow_card",
+      "description": "Yannick Ferreira Carrasco (Belgium) shown a yellow card card — Foul",
+      "player": "Yannick Ferreira Carrasco"
+    },
+    {
+      "minute": 43,
+      "type": "goal",
+      "description": "Michy Batshuayi Tunga scores for Belgium!",
+      "player": "Michy Batshuayi Tunga"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Amadou Onana replaces Youri Tielemans (Tactical)",
+      "player": "Amadou Onana"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Thomas Meunier replaces Yannick Ferreira Carrasco (Tactical)",
+      "player": "Thomas Meunier"
+    },
+    {
+      "minute": 52,
+      "type": "yellow_card",
+      "description": "Thomas Meunier (Belgium) shown a yellow card card — Foul",
+      "player": "Thomas Meunier"
+    },
+    {
+      "minute": 55,
+      "type": "yellow_card",
+      "description": "Amadou Onana (Belgium) shown a yellow card card — Foul",
+      "player": "Amadou Onana"
+    },
+    {
+      "minute": 57,
+      "type": "substitution",
+      "description": "Cyle Larin replaces David Junior Hoilett (Tactical)",
+      "player": "Cyle Larin"
+    },
+    {
+      "minute": 57,
+      "type": "substitution",
+      "description": "Ismael Koné replaces Atiba Hutchinson (Tactical)",
+      "player": "Ismael Koné"
+    },
+    {
+      "minute": 61,
+      "type": "substitution",
+      "description": "Leandro Trossard replaces Eden Hazard (Tactical)",
+      "player": "Leandro Trossard"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Sam Adekugbe replaces Richie Laryea (Tactical)",
+      "player": "Sam Adekugbe"
+    },
+    {
+      "minute": 77,
+      "type": "substitution",
+      "description": "Ikoma Loïs Openda replaces Michy Batshuayi Tunga (Tactical)",
+      "player": "Ikoma Loïs Openda"
+    },
+    {
+      "minute": 80,
+      "type": "substitution",
+      "description": "Liam Millar replaces Tajon Buchanan (Tactical)",
+      "player": "Liam Millar"
+    },
+    {
+      "minute": 80,
+      "type": "substitution",
+      "description": "Jonathan Osorio replaces Stephen Antunes Eustáquio (Tactical)",
+      "player": "Jonathan Osorio"
+    },
+    {
+      "minute": 80,
+      "type": "yellow_card",
+      "description": "Alphonso Davies (Canada) shown a yellow card card — Foul",
+      "player": "Alphonso Davies"
+    },
+    {
+      "minute": 82,
+      "type": "yellow_card",
+      "description": "Alistair Johnston (Canada) shown a yellow card card — Foul",
+      "player": "Alistair Johnston"
+    }
+  ]
+}

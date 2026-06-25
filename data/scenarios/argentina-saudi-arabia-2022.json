@@ -1,0 +1,407 @@
+{
+  "id": "argentina-saudi-arabia-2022",
+  "meta": {
+    "title": "Argentina vs Saudi Arabia — Group Stage",
+    "trigger_label": "Second half — Argentina trail 1-2",
+    "difficulty": 1,
+    "order": 15,
+    "stage": "Group Stage",
+    "group": "C",
+    "date": "2022-11-22",
+    "stadium": "Lusail Stadium"
+  },
+  "scoreline": {
+    "display": "Argentina 1 – 2 Saudi Arabia",
+    "home": 1,
+    "away": 2
+  },
+  "context": "A pivotal moment in this group stage match. Argentina trail Saudi Arabia 1-2. Something has to change. The manager must decide how to respond.",
+  "home_team": "Argentina",
+  "away_team": "Saudi Arabia",
+  "home_formation": "4-4-2",
+  "away_formation": "4-1-4-1",
+  "home_players": [
+    {
+      "name": "Damián Emiliano Martínez",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 38
+    },
+    {
+      "name": "Nicolás Alejandro Tagliafico",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 41
+    },
+    {
+      "name": "Nahuel Molina Lucero",
+      "number": 26,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 48
+    },
+    {
+      "name": "Nicolás Hernán Otamendi",
+      "number": 19,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Cristian Gabriel Romero",
+      "number": 13,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Ángel Fabián Di María Hernández",
+      "number": 11,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 45
+    },
+    {
+      "name": "Alejandro Darío Gómez",
+      "number": 17,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 47
+    },
+    {
+      "name": "Rodrigo Javier De Paul",
+      "number": 7,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 49
+    },
+    {
+      "name": "Leandro Daniel Paredes",
+      "number": 5,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 54
+    },
+    {
+      "name": "Lionel Andrés Messi Cuccittini",
+      "number": 10,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 51
+    },
+    {
+      "name": "Lautaro Javier Martínez",
+      "number": 22,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 57
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Mohammed Khalil Al Owais",
+      "number": 21,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 43
+    },
+    {
+      "name": "Yasir Gharsan Al Shahrani",
+      "number": 13,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 47
+    },
+    {
+      "name": "Saud Abdullah Abdul Hamid",
+      "number": 12,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 45
+    },
+    {
+      "name": "Ali Albulayhi",
+      "number": 5,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 50
+    },
+    {
+      "name": "Hassan Mohammed Al-Tambakti",
+      "number": 17,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 47
+    },
+    {
+      "name": "Salem Mohammed Al Dawsari",
+      "number": 10,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 48
+    },
+    {
+      "name": "Firas Tariq Nasser Al Albirakan",
+      "number": 9,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 60
+    },
+    {
+      "name": "Abdulelah Saad Hameed Al-Malki",
+      "number": 8,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 59
+    },
+    {
+      "name": "Salman Mohammed Al Faraj",
+      "number": 7,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 40
+    },
+    {
+      "name": "Mohammed Kanoo",
+      "number": 23,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 57
+    },
+    {
+      "name": "Saleh Khalid Al Shehri",
+      "number": 11,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 58
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Saudi Arabia won 2-1. Lionel Andrés Messi Cuccittini (9'), Saleh Khalid Al Shehri (47'), Salem Mohammed Al Dawsari (52')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Argentina and Saudi Arabia (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Argentina and Saudi Arabia (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Argentina and Saudi Arabia (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Argentina and Saudi Arabia (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Firas Tariq Nasser Al Albirakan": "Firas Tariq Nasser Al Albirakan at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Abdulelah Saad Hameed Al-Malki": "Abdulelah Saad Hameed Al-Malki at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Saleh Khalid Al Shehri": "Saleh Khalid Al Shehri at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Lautaro Javier Martínez": "Lautaro Javier Martínez at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Lautaro Javier Martínez",
+      "attacker_team": "Argentina",
+      "defender": "Hassan Mohammed Al-Tambakti",
+      "defender_team": "Saudi Arabia",
+      "advantage": "Lautaro Javier Martínez",
+      "diff": "+7",
+      "critical": false
+    },
+    {
+      "attacker": "Saleh Khalid Al Shehri",
+      "attacker_team": "Saudi Arabia",
+      "defender": "Cristian Gabriel Romero",
+      "defender_team": "Argentina",
+      "advantage": "Saleh Khalid Al Shehri",
+      "diff": "+10",
+      "critical": false
+    },
+    {
+      "attacker": "Alejandro Darío Gómez",
+      "attacker_team": "Argentina",
+      "defender": "Saud Abdullah Abdul Hamid",
+      "defender_team": "Saudi Arabia",
+      "advantage": "Alejandro Darío Gómez",
+      "diff": "+19",
+      "critical": true
+    },
+    {
+      "attacker": "Salem Mohammed Al Dawsari",
+      "attacker_team": "Saudi Arabia",
+      "defender": "Nahuel Molina Lucero",
+      "defender_team": "Argentina",
+      "advantage": "Salem Mohammed Al Dawsari",
+      "diff": "+6",
+      "critical": false
+    },
+    {
+      "attacker": "Ángel Fabián Di María Hernández",
+      "attacker_team": "Argentina",
+      "defender": "Yasir Gharsan Al Shahrani",
+      "defender_team": "Saudi Arabia",
+      "advantage": "Yasir Gharsan Al Shahrani",
+      "diff": "-8",
+      "critical": false
+    },
+    {
+      "attacker": "Firas Tariq Nasser Al Albirakan",
+      "attacker_team": "Saudi Arabia",
+      "defender": "Nicolás Alejandro Tagliafico",
+      "defender_team": "Argentina",
+      "advantage": "Firas Tariq Nasser Al Albirakan",
+      "diff": "+1",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 9,
+      "type": "goal",
+      "description": "Lionel Andrés Messi Cuccittini scores for Argentina! (Penalty)",
+      "player": "Lionel Andrés Messi Cuccittini"
+    },
+    {
+      "minute": 47,
+      "type": "goal",
+      "description": "Saleh Khalid Al Shehri scores for Saudi Arabia!",
+      "player": "Saleh Khalid Al Shehri"
+    },
+    {
+      "minute": 47,
+      "type": "substitution",
+      "description": "Nawaf Shaker Al Abid replaces Salman Mohammed Al Faraj (Injury)",
+      "player": "Nawaf Shaker Al Abid"
+    },
+    {
+      "minute": 52,
+      "type": "goal",
+      "description": "Salem Mohammed Al Dawsari scores for Saudi Arabia!",
+      "player": "Salem Mohammed Al Dawsari"
+    },
+    {
+      "minute": 58,
+      "type": "substitution",
+      "description": "Lisandro Martínez replaces Cristian Gabriel Romero (Tactical)",
+      "player": "Lisandro Martínez"
+    },
+    {
+      "minute": 58,
+      "type": "substitution",
+      "description": "Julián Álvarez replaces Alejandro Darío Gómez (Tactical)",
+      "player": "Julián Álvarez"
+    },
+    {
+      "minute": 58,
+      "type": "substitution",
+      "description": "Enzo Fernandez replaces Leandro Daniel Paredes (Tactical)",
+      "player": "Enzo Fernandez"
+    },
+    {
+      "minute": 66,
+      "type": "yellow_card",
+      "description": "Abdulelah Saad Hameed Al-Malki (Saudi Arabia) shown a yellow card card — Foul",
+      "player": "Abdulelah Saad Hameed Al-Malki"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Marcos Javier Acuña replaces Nicolás Alejandro Tagliafico (Tactical)",
+      "player": "Marcos Javier Acuña"
+    },
+    {
+      "minute": 74,
+      "type": "yellow_card",
+      "description": "Ali Albulayhi (Saudi Arabia) shown a yellow card card — Bad Behaviour",
+      "player": "Ali Albulayhi"
+    },
+    {
+      "minute": 77,
+      "type": "substitution",
+      "description": "Sultan Abdullah Salim Al Ghannam replaces Saleh Khalid Al Shehri (Tactical)",
+      "player": "Sultan Abdullah Salim Al Ghannam"
+    },
+    {
+      "minute": 78,
+      "type": "yellow_card",
+      "description": "Salem Mohammed Al Dawsari (Saudi Arabia) shown a yellow card card — Bad Behaviour",
+      "player": "Salem Mohammed Al Dawsari"
+    },
+    {
+      "minute": 81,
+      "type": "yellow_card",
+      "description": "Saud Abdullah Abdul Hamid (Saudi Arabia) shown a yellow card card — Foul",
+      "player": "Saud Abdullah Abdul Hamid"
+    },
+    {
+      "minute": 87,
+      "type": "substitution",
+      "description": "Abdulelah Al Amri replaces Nawaf Shaker Al Abid (Tactical)",
+      "player": "Abdulelah Al Amri"
+    },
+    {
+      "minute": 87,
+      "type": "yellow_card",
+      "description": "Nawaf Shaker Al Abid (Saudi Arabia) shown a yellow card card — Bad Behaviour",
+      "player": "Nawaf Shaker Al Abid"
+    },
+    {
+      "minute": 88,
+      "type": "substitution",
+      "description": "Haitham Mohammed Asiri replaces Firas Tariq Nasser Al Albirakan (Tactical)",
+      "player": "Haitham Mohammed Asiri"
+    },
+    {
+      "minute": 91,
+      "type": "yellow_card",
+      "description": "Mohammed Khalil Al Owais (Saudi Arabia) shown a yellow card card — Bad Behaviour",
+      "player": "Mohammed Khalil Al Owais"
+    },
+    {
+      "minute": 98,
+      "type": "substitution",
+      "description": "Mohammed Al Burayk replaces Yasir Gharsan Al Shahrani (Injury)",
+      "player": "Mohammed Al Burayk"
+    }
+  ]
+}

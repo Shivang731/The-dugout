@@ -1,0 +1,330 @@
+[
+  {
+    "match_id": 3869685,
+    "kick_order": 0,
+    "team": "France",
+    "player": "Kylian Mbapp\u00e9 Lottin",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869685,
+    "kick_order": 1,
+    "team": "Argentina",
+    "player": "Lionel Andr\u00e9s Messi Cuccittini",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869685,
+    "kick_order": 2,
+    "team": "France",
+    "player": "Kingsley Coman",
+    "outcome": "Saved",
+    "scored": false
+  },
+  {
+    "match_id": 3869685,
+    "kick_order": 3,
+    "team": "Argentina",
+    "player": "Paulo Bruno Exequiel Dybala",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869685,
+    "kick_order": 4,
+    "team": "France",
+    "player": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+    "outcome": "Off T",
+    "scored": false
+  },
+  {
+    "match_id": 3869685,
+    "kick_order": 5,
+    "team": "Argentina",
+    "player": "Leandro Daniel Paredes",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869685,
+    "kick_order": 6,
+    "team": "France",
+    "player": "Randal Kolo Muani",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869685,
+    "kick_order": 7,
+    "team": "Argentina",
+    "player": "Gonzalo Ariel Montiel",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869220,
+    "kick_order": 8,
+    "team": "Morocco",
+    "player": "Abdelhamid Sabiri",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869220,
+    "kick_order": 9,
+    "team": "Spain",
+    "player": "Pablo Sarabia Garc\u00eda",
+    "outcome": "Post",
+    "scored": false
+  },
+  {
+    "match_id": 3869220,
+    "kick_order": 10,
+    "team": "Morocco",
+    "player": "Hakim Ziyech",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869220,
+    "kick_order": 11,
+    "team": "Spain",
+    "player": "Carlos Soler Barrag\u00e1n",
+    "outcome": "Saved",
+    "scored": false
+  },
+  {
+    "match_id": 3869220,
+    "kick_order": 12,
+    "team": "Morocco",
+    "player": "Badr Banoun",
+    "outcome": "Saved",
+    "scored": false
+  },
+  {
+    "match_id": 3869220,
+    "kick_order": 13,
+    "team": "Spain",
+    "player": "Sergio Busquets i Burgos",
+    "outcome": "Saved",
+    "scored": false
+  },
+  {
+    "match_id": 3869220,
+    "kick_order": 14,
+    "team": "Morocco",
+    "player": "Achraf Hakimi Mouh",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869321,
+    "kick_order": 15,
+    "team": "Netherlands",
+    "player": "Virgil van Dijk",
+    "outcome": "Saved",
+    "scored": false
+  },
+  {
+    "match_id": 3869321,
+    "kick_order": 16,
+    "team": "Argentina",
+    "player": "Lionel Andr\u00e9s Messi Cuccittini",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869321,
+    "kick_order": 17,
+    "team": "Netherlands",
+    "player": "Steven Berghuis",
+    "outcome": "Saved",
+    "scored": false
+  },
+  {
+    "match_id": 3869321,
+    "kick_order": 18,
+    "team": "Argentina",
+    "player": "Leandro Daniel Paredes",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869321,
+    "kick_order": 19,
+    "team": "Netherlands",
+    "player": "Teun Koopmeiners",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869321,
+    "kick_order": 20,
+    "team": "Argentina",
+    "player": "Gonzalo Ariel Montiel",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869321,
+    "kick_order": 21,
+    "team": "Netherlands",
+    "player": "Wout Weghorst",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869321,
+    "kick_order": 22,
+    "team": "Argentina",
+    "player": "Enzo Fernandez",
+    "outcome": "Off T",
+    "scored": false
+  },
+  {
+    "match_id": 3869321,
+    "kick_order": 23,
+    "team": "Netherlands",
+    "player": "Luuk de Jong",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869321,
+    "kick_order": 24,
+    "team": "Argentina",
+    "player": "Lautaro Javier Mart\u00ednez",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869219,
+    "kick_order": 25,
+    "team": "Japan",
+    "player": "Takumi Minamino",
+    "outcome": "Saved",
+    "scored": false
+  },
+  {
+    "match_id": 3869219,
+    "kick_order": 26,
+    "team": "Croatia",
+    "player": "Nikola Vla\u0161i\u0107",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869219,
+    "kick_order": 27,
+    "team": "Japan",
+    "player": "Kaoru Mitoma",
+    "outcome": "Saved",
+    "scored": false
+  },
+  {
+    "match_id": 3869219,
+    "kick_order": 28,
+    "team": "Croatia",
+    "player": "Marcelo Brozovi\u0107",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869219,
+    "kick_order": 29,
+    "team": "Japan",
+    "player": "Takuma Asano",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869219,
+    "kick_order": 30,
+    "team": "Croatia",
+    "player": "Marko Livaja",
+    "outcome": "Post",
+    "scored": false
+  },
+  {
+    "match_id": 3869219,
+    "kick_order": 31,
+    "team": "Japan",
+    "player": "Maya Yoshida",
+    "outcome": "Saved",
+    "scored": false
+  },
+  {
+    "match_id": 3869219,
+    "kick_order": 32,
+    "team": "Croatia",
+    "player": "Mario Pa\u0161ali\u0107",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869420,
+    "kick_order": 33,
+    "team": "Croatia",
+    "player": "Nikola Vla\u0161i\u0107",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869420,
+    "kick_order": 34,
+    "team": "Brazil",
+    "player": "Rodrygo Silva de Goes",
+    "outcome": "Saved",
+    "scored": false
+  },
+  {
+    "match_id": 3869420,
+    "kick_order": 35,
+    "team": "Croatia",
+    "player": "Lovro Majer",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869420,
+    "kick_order": 36,
+    "team": "Brazil",
+    "player": "Carlos Henrique Casimiro",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869420,
+    "kick_order": 37,
+    "team": "Croatia",
+    "player": "Luka Modri\u0107",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869420,
+    "kick_order": 38,
+    "team": "Brazil",
+    "player": "Pedro Guilherme Abreu dos Santos",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869420,
+    "kick_order": 39,
+    "team": "Croatia",
+    "player": "Mislav Or\u0161i\u0107",
+    "outcome": "Goal",
+    "scored": true
+  },
+  {
+    "match_id": 3869420,
+    "kick_order": 40,
+    "team": "Brazil",
+    "player": "Marcos Ao\u00e1s Corr\u00eaa",
+    "outcome": "Post",
+    "scored": false
+  }
+]

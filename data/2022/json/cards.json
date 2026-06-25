@@ -1,0 +1,2054 @@
+[
+  {
+    "match_id": 3857278,
+    "minute": 42,
+    "second": 18,
+    "team": "United States",
+    "player": "Tyler Adams",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857278,
+    "minute": 76,
+    "second": 14,
+    "team": "Iran",
+    "player": "Seyed Majid Hosseini",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857278,
+    "minute": 82,
+    "second": 27,
+    "team": "Iran",
+    "player": "Mohammad Hossein Kanani Zadegan",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857278,
+    "minute": 95,
+    "second": 26,
+    "team": "Iran",
+    "player": "Abolfazl Jalali",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857254,
+    "minute": 23,
+    "second": 45,
+    "team": "Denmark",
+    "player": "Rasmus Nissen Kristensen",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857254,
+    "minute": 77,
+    "second": 15,
+    "team": "Denmark",
+    "player": "Mathias Jensen",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857254,
+    "minute": 84,
+    "second": 57,
+    "team": "Tunisia",
+    "player": "Taha Yassine Khenissi",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869253,
+    "minute": 43,
+    "second": 31,
+    "team": "South Korea",
+    "player": "Woo-Young Jung",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869684,
+    "minute": 68,
+    "second": 38,
+    "team": "Morocco",
+    "player": "Azzedine Ounahi",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869684,
+    "minute": 83,
+    "second": 42,
+    "team": "Morocco",
+    "player": "Selim Amallah",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857257,
+    "minute": 3,
+    "second": 4,
+    "team": "Australia",
+    "player": "Aziz Eraltay Behich",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857257,
+    "minute": 56,
+    "second": 51,
+    "team": "Australia",
+    "player": "Milo\u0161 Degenek",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857257,
+    "minute": 74,
+    "second": 36,
+    "team": "Denmark",
+    "player": "Robert Skov",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857282,
+    "minute": 10,
+    "second": 28,
+    "team": "United States",
+    "player": "Sergino Dest",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857282,
+    "minute": 12,
+    "second": 3,
+    "team": "United States",
+    "player": "Weston McKennie",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857282,
+    "minute": 39,
+    "second": 5,
+    "team": "Wales",
+    "player": "Gareth Frank Bale",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857282,
+    "minute": 46,
+    "second": 53,
+    "team": "Wales",
+    "player": "Chris Mepham",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857282,
+    "minute": 50,
+    "second": 15,
+    "team": "United States",
+    "player": "Tim Ream",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857282,
+    "minute": 99,
+    "second": 52,
+    "team": "United States",
+    "player": "Kellyn Kai Perry-Acosta",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857296,
+    "minute": 65,
+    "second": 56,
+    "team": "Belgium",
+    "player": "Leander Dendoncker",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869254,
+    "minute": 42,
+    "second": 3,
+    "team": "Switzerland",
+    "player": "Fabian Lukas Sch\u00e4r",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869254,
+    "minute": 58,
+    "second": 28,
+    "team": "Switzerland",
+    "player": "Eray Ervin C\u00f6mert",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857279,
+    "minute": 54,
+    "second": 4,
+    "team": "Australia",
+    "player": "Mitchell Thomas Duke",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857279,
+    "minute": 79,
+    "second": 7,
+    "team": "Australia",
+    "player": "Jackson Irvine",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857279,
+    "minute": 93,
+    "second": 51,
+    "team": "Australia",
+    "player": "Aaron Mooy",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857277,
+    "minute": 77,
+    "second": 27,
+    "team": "Morocco",
+    "player": "Sofyan Amrabat",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869118,
+    "minute": 75,
+    "second": 8,
+    "team": "Senegal",
+    "player": "Kalidou Koulibaly",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857264,
+    "minute": 48,
+    "second": 12,
+    "team": "Argentina",
+    "player": "Marcos Javier Acu\u00f1a",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857264,
+    "minute": 77,
+    "second": 37,
+    "team": "Poland",
+    "player": "Grzegorz Krychowiak",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857288,
+    "minute": 25,
+    "second": 16,
+    "team": "Tunisia",
+    "player": "A\u00efssa Bilal La\u00efdouni",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857288,
+    "minute": 63,
+    "second": 50,
+    "team": "Tunisia",
+    "player": "Ali Abdi",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857288,
+    "minute": 91,
+    "second": 57,
+    "team": "Tunisia",
+    "player": "Ferjani Sassi",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857292,
+    "minute": 75,
+    "second": 12,
+    "team": "Costa Rica",
+    "player": "\u00d3scar Esau Duarte Gait\u00e1n",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 51,
+    "second": 21,
+    "team": "Argentina",
+    "player": "Enzo Fernandez",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 54,
+    "second": 12,
+    "team": "France",
+    "player": "Adrien Rabiot",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 86,
+    "second": 24,
+    "team": "France",
+    "player": "Marcus Thuram",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 94,
+    "second": 35,
+    "team": "France",
+    "player": "Olivier Giroud",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 97,
+    "second": 33,
+    "team": "Argentina",
+    "player": "Marcos Javier Acu\u00f1a",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 113,
+    "second": 27,
+    "team": "Argentina",
+    "player": "Leandro Daniel Paredes",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 115,
+    "second": 39,
+    "team": "Argentina",
+    "player": "Gonzalo Ariel Montiel",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 124,
+    "second": 57,
+    "team": "Argentina",
+    "player": "Dami\u00e1n Emiliano Mart\u00ednez",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869486,
+    "minute": 69,
+    "second": 40,
+    "team": "Morocco",
+    "player": "Achraf Dari",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869486,
+    "minute": 86,
+    "second": 30,
+    "team": "Portugal",
+    "player": "Vitor Machado Ferreira",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869486,
+    "minute": 90,
+    "second": 51,
+    "team": "Morocco",
+    "player": "Walid Cheddira",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869486,
+    "minute": 92,
+    "second": 9,
+    "team": "Morocco",
+    "player": "Walid Cheddira",
+    "card": "Second Yellow",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869552,
+    "minute": 26,
+    "second": 14,
+    "team": "Morocco",
+    "player": "Sofiane Boufal",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857295,
+    "minute": 40,
+    "second": 50,
+    "team": "Costa Rica",
+    "player": "Anthony Daniel Contreras Enr\u00edquez",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857295,
+    "minute": 43,
+    "second": 11,
+    "team": "Japan",
+    "player": "Miki Yamane",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857295,
+    "minute": 60,
+    "second": 53,
+    "team": "Costa Rica",
+    "player": "Celso Borges Mora",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857295,
+    "minute": 69,
+    "second": 37,
+    "team": "Costa Rica",
+    "player": "Francisco Javier Calvo Quesada",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857295,
+    "minute": 83,
+    "second": 6,
+    "team": "Japan",
+    "player": "Ko Itakura",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857295,
+    "minute": 92,
+    "second": 31,
+    "team": "Japan",
+    "player": "Wataru Endo",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857281,
+    "minute": 51,
+    "second": 12,
+    "team": "Canada",
+    "player": "Tajon Buchanan",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857281,
+    "minute": 55,
+    "second": 5,
+    "team": "Croatia",
+    "player": "Dejan Lovren",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857281,
+    "minute": 84,
+    "second": 2,
+    "team": "Canada",
+    "player": "Kamal Miller",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857281,
+    "minute": 84,
+    "second": 3,
+    "team": "Croatia",
+    "player": "Luka Modri\u0107",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857287,
+    "minute": 55,
+    "second": 38,
+    "team": "Uruguay",
+    "player": "Jos\u00e9 Mart\u00edn C\u00e1ceres Silva",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857287,
+    "minute": 87,
+    "second": 45,
+    "team": "South Korea",
+    "player": "Gue-Sung Cho",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857299,
+    "minute": 19,
+    "second": 59,
+    "team": "Ghana",
+    "player": "Daniel Amartey",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857299,
+    "minute": 26,
+    "second": 30,
+    "team": "South Korea",
+    "player": "Woo-Young Jung",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857299,
+    "minute": 72,
+    "second": 28,
+    "team": "Ghana",
+    "player": "Tariq Lamptey",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857299,
+    "minute": 76,
+    "second": 30,
+    "team": "South Korea",
+    "player": "Young-Gwon Kim",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857294,
+    "minute": 51,
+    "second": 15,
+    "team": "Netherlands",
+    "player": "Nathan Ak\u00e9",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869220,
+    "minute": 75,
+    "second": 53,
+    "team": "Spain",
+    "player": "Aymeric Laporte",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869220,
+    "minute": 89,
+    "second": 5,
+    "team": "Morocco",
+    "player": "Romain Sa\u00efss",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857297,
+    "minute": 14,
+    "second": 31,
+    "team": "Poland",
+    "player": "Jakub Piotr Kiwior",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857297,
+    "minute": 15,
+    "second": 31,
+    "team": "Poland",
+    "player": "Matty Cash",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857297,
+    "minute": 18,
+    "second": 47,
+    "team": "Poland",
+    "player": "Arkadiusz Milik",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857297,
+    "minute": 19,
+    "second": 55,
+    "team": "Saudi Arabia",
+    "player": "Abdulelah Saad Hameed Al-Malki",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857297,
+    "minute": 48,
+    "second": 23,
+    "team": "Saudi Arabia",
+    "player": "Abdulelah Al Amri",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857263,
+    "minute": 36,
+    "second": 5,
+    "team": "Germany",
+    "player": "Thilo Kehrer",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857263,
+    "minute": 43,
+    "second": 28,
+    "team": "Spain",
+    "player": "Sergio Busquets i Burgos",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857263,
+    "minute": 56,
+    "second": 58,
+    "team": "Germany",
+    "player": "Leon Goretzka",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857263,
+    "minute": 59,
+    "second": 8,
+    "team": "Germany",
+    "player": "Joshua Kimmich",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857283,
+    "minute": 27,
+    "second": 52,
+    "team": "Belgium",
+    "player": "Amadou Onana",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857283,
+    "minute": 94,
+    "second": 38,
+    "team": "Morocco",
+    "player": "Abdelhamid Sabiri",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 42,
+    "second": 21,
+    "team": "Argentina",
+    "player": "Marcos Javier Acu\u00f1a",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 42,
+    "second": 32,
+    "team": "Netherlands",
+    "player": "Jurri\u00ebn David Norman Timber",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 44,
+    "second": 24,
+    "team": "Argentina",
+    "player": "Cristian Gabriel Romero",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 46,
+    "second": 44,
+    "team": "Netherlands",
+    "player": "Wout Weghorst",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 75,
+    "second": 6,
+    "team": "Netherlands",
+    "player": "Memphis Depay",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 75,
+    "second": 8,
+    "team": "Argentina",
+    "player": "Lisandro Mart\u00ednez",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 87,
+    "second": 7,
+    "team": "Netherlands",
+    "player": "Steven Berghuis",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 87,
+    "second": 57,
+    "team": "Argentina",
+    "player": "Leandro Daniel Paredes",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 99,
+    "second": 46,
+    "team": "Argentina",
+    "player": "Lionel Andr\u00e9s Messi Cuccittini",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 101,
+    "second": 20,
+    "team": "Argentina",
+    "player": "Nicol\u00e1s Hern\u00e1n Otamendi",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 102,
+    "second": 39,
+    "team": "Netherlands",
+    "player": "Steven Bergwijn",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 108,
+    "second": 49,
+    "team": "Argentina",
+    "player": "Gonzalo Ariel Montiel",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 111,
+    "second": 20,
+    "team": "Argentina",
+    "player": "Germ\u00e1n Alejandro Pezzella",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 127,
+    "second": 3,
+    "team": "Netherlands",
+    "player": "Denzel Dumfries",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 127,
+    "second": 44,
+    "team": "Netherlands",
+    "player": "Denzel Dumfries",
+    "card": "Second Yellow",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 127,
+    "second": 44,
+    "team": "Netherlands",
+    "player": "Noa Lang",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857265,
+    "minute": 28,
+    "second": 10,
+    "team": "Mexico",
+    "player": "Jorge Eduardo S\u00e1nchez Ramos",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857265,
+    "minute": 53,
+    "second": 9,
+    "team": "Mexico",
+    "player": "H\u00e9ctor Alfredo Moreno Herrera",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857265,
+    "minute": 75,
+    "second": 9,
+    "team": "Poland",
+    "player": "Przemys\u0142aw Frankowski",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 19,
+    "second": 12,
+    "team": "Qatar",
+    "player": "Ismaeel Mohammad Mohammad",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 29,
+    "second": 42,
+    "team": "Senegal",
+    "player": "Boulaye Dia",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 46,
+    "second": 26,
+    "team": "Qatar",
+    "player": "Homam Alamin Ahmed",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 51,
+    "second": 45,
+    "team": "Senegal",
+    "player": "Ismail Jakobs",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 86,
+    "second": 47,
+    "team": "Senegal",
+    "player": "Path\u00e9 Isma\u00ebl Ciss",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 90,
+    "second": 3,
+    "team": "Qatar",
+    "player": "Assim Omer Al Haj Madibo",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857258,
+    "minute": 5,
+    "second": 29,
+    "team": "Serbia",
+    "player": "Strahinja Pavlovi\u0107",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857258,
+    "minute": 48,
+    "second": 10,
+    "team": "Serbia",
+    "player": "Nemanja Gudelj",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857258,
+    "minute": 63,
+    "second": 51,
+    "team": "Serbia",
+    "player": "Sa\u0161a Luki\u0107",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869151,
+    "minute": 14,
+    "second": 11,
+    "team": "Australia",
+    "player": "Jackson Irvine",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869151,
+    "minute": 37,
+    "second": 20,
+    "team": "Australia",
+    "player": "Milo\u0161 Degenek",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 14,
+    "second": 17,
+    "team": "Qatar",
+    "player": "Saad Abdullah Al Sheeb",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 21,
+    "second": 6,
+    "team": "Qatar",
+    "player": "Almoez Ali Zainalabiddin Abdulla",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 28,
+    "second": 29,
+    "team": "Ecuador",
+    "player": "Mois\u00e9s Isaac Caicedo Corozo",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 35,
+    "second": 47,
+    "team": "Qatar",
+    "player": "Karim Boudiaf",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 55,
+    "second": 37,
+    "team": "Ecuador",
+    "player": "Jhegson Sebasti\u00e1n M\u00e9ndez Carabal\u00ed",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 76,
+    "second": 55,
+    "team": "Qatar",
+    "player": "Akram Hassan Afif",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857267,
+    "minute": 65,
+    "second": 30,
+    "team": "Senegal",
+    "player": "Idrissa Gana Gueye",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869117,
+    "minute": 59,
+    "second": 24,
+    "team": "Netherlands",
+    "player": "Teun Koopmeiners",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869117,
+    "minute": 86,
+    "second": 34,
+    "team": "Netherlands",
+    "player": "Frenkie de Jong",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857269,
+    "minute": 49,
+    "second": 51,
+    "team": "Switzerland",
+    "player": "Fabian Rieder",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857269,
+    "minute": 51,
+    "second": 24,
+    "team": "Brazil",
+    "player": "Frederico Rodrigues Santos",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857275,
+    "minute": 27,
+    "second": 20,
+    "team": "Tunisia",
+    "player": "Wajdi Kechrida",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857268,
+    "minute": 7,
+    "second": 10,
+    "team": "Belgium",
+    "player": "Yannick Ferreira Carrasco",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857268,
+    "minute": 52,
+    "second": 52,
+    "team": "Belgium",
+    "player": "Thomas Meunier",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857268,
+    "minute": 55,
+    "second": 48,
+    "team": "Belgium",
+    "player": "Amadou Onana",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857268,
+    "minute": 80,
+    "second": 37,
+    "team": "Canada",
+    "player": "Alphonso Davies",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857268,
+    "minute": 82,
+    "second": 38,
+    "team": "Canada",
+    "player": "Alistair Johnston",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869219,
+    "minute": 89,
+    "second": 30,
+    "team": "Croatia",
+    "player": "Mateo Kova\u010di\u0107",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869219,
+    "minute": 115,
+    "second": 26,
+    "team": "Croatia",
+    "player": "Borna Bari\u0161i\u0107",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857293,
+    "minute": 18,
+    "second": 58,
+    "team": "Uruguay",
+    "player": "Darwin Gabriel N\u00fa\u00f1ez Ribeiro",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857293,
+    "minute": 59,
+    "second": 37,
+    "team": "Uruguay",
+    "player": "Luis Alberto Su\u00e1rez D\u00edaz",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857293,
+    "minute": 85,
+    "second": 2,
+    "team": "Ghana",
+    "player": "Kamaldeen Sulemana",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857293,
+    "minute": 86,
+    "second": 4,
+    "team": "Uruguay",
+    "player": "Sebasti\u00e1n Coates Ni\u00f3n",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857293,
+    "minute": 98,
+    "second": 27,
+    "team": "Ghana",
+    "player": "Alidu Seidu",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857293,
+    "minute": 100,
+    "second": 2,
+    "team": "Uruguay",
+    "player": "Jos\u00e9 Mar\u00eda Gim\u00e9nez de Vargas",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857293,
+    "minute": 100,
+    "second": 8,
+    "team": "Uruguay",
+    "player": "Edinson Roberto Cavani G\u00f3mez",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857274,
+    "minute": 56,
+    "second": 13,
+    "team": "Ecuador",
+    "player": "Jhegson Sebasti\u00e1n M\u00e9ndez Carabal\u00ed",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869152,
+    "minute": 30,
+    "second": 55,
+    "team": "France",
+    "player": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869152,
+    "minute": 46,
+    "second": 14,
+    "team": "Poland",
+    "player": "Bartosz Bereszy\u0144ski",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869152,
+    "minute": 87,
+    "second": 44,
+    "team": "Poland",
+    "player": "Matty Cash",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 14,
+    "second": 56,
+    "team": "Mexico",
+    "player": "Edson Omar \u00c1lvarez Vel\u00e1zquez",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 27,
+    "second": 44,
+    "team": "Saudi Arabia",
+    "player": "Saleh Khalid Al Shehri",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 33,
+    "second": 22,
+    "team": "Saudi Arabia",
+    "player": "Ali Al Hassan",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 51,
+    "second": 0,
+    "team": "Saudi Arabia",
+    "player": "Hassan Mohammed Al-Tambakti",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 80,
+    "second": 27,
+    "team": "Saudi Arabia",
+    "player": "Abdullah Mohammed Madu",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 90,
+    "second": 23,
+    "team": "Saudi Arabia",
+    "player": "Abdulelah Al Amri",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 96,
+    "second": 47,
+    "team": "Saudi Arabia",
+    "player": "Hattan Babhir",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857289,
+    "minute": 21,
+    "second": 29,
+    "team": "Mexico",
+    "player": "N\u00e9stor Alejandro Ara\u00fajo Razo",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857289,
+    "minute": 42,
+    "second": 35,
+    "team": "Argentina",
+    "player": "Gonzalo Ariel Montiel",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857289,
+    "minute": 49,
+    "second": 25,
+    "team": "Mexico",
+    "player": "\u00c9rick Gabriel Guti\u00e9rrez Galaviz",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857289,
+    "minute": 65,
+    "second": 53,
+    "team": "Mexico",
+    "player": "H\u00e9ctor Miguel Herrera L\u00f3pez",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857289,
+    "minute": 88,
+    "second": 47,
+    "team": "Mexico",
+    "player": "Roberto Carlos Alvarado Hern\u00e1ndez",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857255,
+    "minute": 38,
+    "second": 24,
+    "team": "Japan",
+    "player": "Ko Itakura",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857255,
+    "minute": 43,
+    "second": 31,
+    "team": "Japan",
+    "player": "Shogo Taniguchi",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857255,
+    "minute": 44,
+    "second": 20,
+    "team": "Japan",
+    "player": "Maya Yoshida",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857298,
+    "minute": 44,
+    "second": 55,
+    "team": "Ghana",
+    "player": "Mohammed Kudus",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857298,
+    "minute": 48,
+    "second": 14,
+    "team": "Ghana",
+    "player": "Andr\u00e9 Ayew Pel\u00e9",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857298,
+    "minute": 56,
+    "second": 40,
+    "team": "Ghana",
+    "player": "Alidu Seidu",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857298,
+    "minute": 89,
+    "second": 30,
+    "team": "Portugal",
+    "player": "Danilo Lu\u00eds H\u00e9lio Pereira",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857298,
+    "minute": 90,
+    "second": 29,
+    "team": "Ghana",
+    "player": "I\u00f1aki Williams Arthuer",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857298,
+    "minute": 94,
+    "second": 28,
+    "team": "Portugal",
+    "player": "Bruno Miguel Borges Fernandes",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 66,
+    "second": 24,
+    "team": "Saudi Arabia",
+    "player": "Abdulelah Saad Hameed Al-Malki",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 74,
+    "second": 9,
+    "team": "Saudi Arabia",
+    "player": "Ali Albulayhi",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 78,
+    "second": 38,
+    "team": "Saudi Arabia",
+    "player": "Salem Mohammed Al Dawsari",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 81,
+    "second": 2,
+    "team": "Saudi Arabia",
+    "player": "Saud Abdullah Abdul Hamid",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 87,
+    "second": 42,
+    "team": "Saudi Arabia",
+    "player": "Nawaf Shaker Al Abid",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 91,
+    "second": 2,
+    "team": "Saudi Arabia",
+    "player": "Mohammed Khalil Al Owais",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857261,
+    "minute": 28,
+    "second": 39,
+    "team": "Wales",
+    "player": "Daniel James",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857261,
+    "minute": 60,
+    "second": 34,
+    "team": "Wales",
+    "player": "Aaron Ramsey",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869519,
+    "minute": 31,
+    "second": 10,
+    "team": "Croatia",
+    "player": "Dominik Livakovi\u0107",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869519,
+    "minute": 31,
+    "second": 31,
+    "team": "Croatia",
+    "player": "Mateo Kova\u010di\u0107",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869519,
+    "minute": 67,
+    "second": 31,
+    "team": "Argentina",
+    "player": "Cristian Gabriel Romero",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869519,
+    "minute": 70,
+    "second": 56,
+    "team": "Argentina",
+    "player": "Nicol\u00e1s Hern\u00e1n Otamendi",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857291,
+    "minute": 67,
+    "second": 18,
+    "team": "Costa Rica",
+    "player": "Francisco Javier Calvo Quesada",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857291,
+    "minute": 96,
+    "second": 7,
+    "team": "Costa Rica",
+    "player": "Joel Nathaniel Campbell Samuels",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857262,
+    "minute": 35,
+    "second": 42,
+    "team": "South Korea",
+    "player": "Kang-In Lee",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857262,
+    "minute": 92,
+    "second": 36,
+    "team": "South Korea",
+    "player": "Hee-Chan Hwang",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857259,
+    "minute": 23,
+    "second": 18,
+    "team": "Cameroon",
+    "player": "Nicolas Alexis Julio N'Koulou Ndoubena",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857259,
+    "minute": 29,
+    "second": 38,
+    "team": "Cameroon",
+    "player": "Christian Mougang Bassogog",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857259,
+    "minute": 48,
+    "second": 35,
+    "team": "Serbia",
+    "player": "Luka Jovi\u0107",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857259,
+    "minute": 92,
+    "second": 53,
+    "team": "Serbia",
+    "player": "Nikola Milenkovi\u0107",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857276,
+    "minute": 6,
+    "second": 43,
+    "team": "Canada",
+    "player": "David Junior Hoilett",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857276,
+    "minute": 25,
+    "second": 39,
+    "team": "Canada",
+    "player": "Jonathan Osorio",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857276,
+    "minute": 46,
+    "second": 25,
+    "team": "Canada",
+    "player": "Sam Adekugbe",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857276,
+    "minute": 83,
+    "second": 49,
+    "team": "Canada",
+    "player": "Steven de Sousa Vitoria",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857290,
+    "minute": 35,
+    "second": 21,
+    "team": "Cameroon",
+    "player": "Ngoran Suiru Fai Collins",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857290,
+    "minute": 63,
+    "second": 29,
+    "team": "Switzerland",
+    "player": "Nico Elvedi",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857290,
+    "minute": 82,
+    "second": 49,
+    "team": "Switzerland",
+    "player": "Manuel Obafemi Akanji",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857273,
+    "minute": 47,
+    "second": 31,
+    "team": "Wales",
+    "player": "Joe Rodon",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857273,
+    "minute": 83,
+    "second": 43,
+    "team": "Wales",
+    "player": "Wayne Hennessey",
+    "card": "Red Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857273,
+    "minute": 94,
+    "second": 0,
+    "team": "Iran",
+    "player": "Ramin Rezaeian",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857273,
+    "minute": 94,
+    "second": 20,
+    "team": "Iran",
+    "player": "Alireza Jahanbakhsh",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857256,
+    "minute": 14,
+    "second": 27,
+    "team": "Switzerland",
+    "player": "Silvan Widmer",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857256,
+    "minute": 33,
+    "second": 22,
+    "team": "Switzerland",
+    "player": "Ruben Vargas",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857256,
+    "minute": 46,
+    "second": 35,
+    "team": "Serbia",
+    "player": "Sergej Milinkovi\u0107-Savi\u0107",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857256,
+    "minute": 55,
+    "second": 0,
+    "team": "Serbia",
+    "player": "Strahinja Pavlovi\u0107",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857256,
+    "minute": 66,
+    "second": 5,
+    "team": "Serbia",
+    "player": "Predrag Rajkovi\u0107",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857256,
+    "minute": 80,
+    "second": 29,
+    "team": "Serbia",
+    "player": "Nemanja Gudelj",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857256,
+    "minute": 81,
+    "second": 42,
+    "team": "Serbia",
+    "player": "Aleksandar Mitrovi\u0107",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857256,
+    "minute": 94,
+    "second": 20,
+    "team": "Serbia",
+    "player": "Nikola Milenkovi\u0107",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857256,
+    "minute": 94,
+    "second": 21,
+    "team": "Switzerland",
+    "player": "Granit Xhaka",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857256,
+    "minute": 98,
+    "second": 17,
+    "team": "Switzerland",
+    "player": "Fabian Lukas Sch\u00e4r",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857256,
+    "minute": 99,
+    "second": 3,
+    "team": "Serbia",
+    "player": "Sa\u0161a Luki\u0107",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869420,
+    "minute": 24,
+    "second": 6,
+    "team": "Brazil",
+    "player": "Danilo Luiz da Silva",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869420,
+    "minute": 30,
+    "second": 14,
+    "team": "Croatia",
+    "player": "Marcelo Brozovi\u0107",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869420,
+    "minute": 67,
+    "second": 21,
+    "team": "Brazil",
+    "player": "Carlos Henrique Casimiro",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869420,
+    "minute": 76,
+    "second": 16,
+    "team": "Brazil",
+    "player": "Marcos Ao\u00e1s Corr\u00eaa",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869420,
+    "minute": 116,
+    "second": 19,
+    "team": "Croatia",
+    "player": "Bruno Petkovi\u0107",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3869354,
+    "minute": 42,
+    "second": 15,
+    "team": "France",
+    "player": "Antoine Griezmann",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869354,
+    "minute": 45,
+    "second": 48,
+    "team": "France",
+    "player": "Ousmane Demb\u00e9l\u00e9",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869354,
+    "minute": 79,
+    "second": 43,
+    "team": "France",
+    "player": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3869354,
+    "minute": 88,
+    "second": 42,
+    "team": "England",
+    "player": "Harry Maguire",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857266,
+    "minute": 19,
+    "second": 3,
+    "team": "Denmark",
+    "player": "Andreas Christensen",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857266,
+    "minute": 22,
+    "second": 15,
+    "team": "Denmark",
+    "player": "Andreas Evald Cornelius",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857266,
+    "minute": 42,
+    "second": 6,
+    "team": "France",
+    "player": "Jules Kound\u00e9",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857280,
+    "minute": 5,
+    "second": 9,
+    "team": "Cameroon",
+    "player": "Nouhou Tolo",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857280,
+    "minute": 6,
+    "second": 24,
+    "team": "Brazil",
+    "player": "\u00c9der Gabriel Milit\u00e3o",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857280,
+    "minute": 27,
+    "second": 49,
+    "team": "Cameroon",
+    "player": "Pierre Kunde Malong",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857280,
+    "minute": 31,
+    "second": 47,
+    "team": "Cameroon",
+    "player": "Ngoran Suiru Fai Collins",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857280,
+    "minute": 80,
+    "second": 29,
+    "team": "Cameroon",
+    "player": "Vincent Pat\u00e9 Aboubakar",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857280,
+    "minute": 84,
+    "second": 21,
+    "team": "Brazil",
+    "player": "Bruno Guimar\u00e3es Rodriguez Moura",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857280,
+    "minute": 92,
+    "second": 54,
+    "team": "Cameroon",
+    "player": "Vincent Pat\u00e9 Aboubakar",
+    "card": "Second Yellow",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857285,
+    "minute": 55,
+    "second": 48,
+    "team": "Netherlands",
+    "player": "Matthijs de Ligt",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857285,
+    "minute": 93,
+    "second": 48,
+    "team": "Senegal",
+    "player": "Nampalys Mendy",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857285,
+    "minute": 95,
+    "second": 15,
+    "team": "Senegal",
+    "player": "Idrissa Gana Gueye",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857271,
+    "minute": 24,
+    "second": 19,
+    "team": "Iran",
+    "player": "Alireza Jahanbakhsh",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857271,
+    "minute": 47,
+    "second": 47,
+    "team": "Iran",
+    "player": "Morteza Pouraliganji",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857270,
+    "minute": 5,
+    "second": 34,
+    "team": "Uruguay",
+    "player": "Rodrigo Bentancur Colm\u00e1n",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857270,
+    "minute": 37,
+    "second": 45,
+    "team": "Portugal",
+    "player": "R\u00faben Diogo Da Silva Neves",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857270,
+    "minute": 43,
+    "second": 50,
+    "team": "Uruguay",
+    "player": "Math\u00edas Olivera Miramontes",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  },
+  {
+    "match_id": 3857270,
+    "minute": 76,
+    "second": 12,
+    "team": "Portugal",
+    "player": "Jo\u00e3o F\u00e9lix Sequeira",
+    "card": "Yellow Card",
+    "reason": "Foul"
+  },
+  {
+    "match_id": 3857270,
+    "minute": 88,
+    "second": 35,
+    "team": "Portugal",
+    "player": "R\u00faben Santos Gato Alves Dias",
+    "card": "Yellow Card",
+    "reason": "Bad Behaviour"
+  }
+]

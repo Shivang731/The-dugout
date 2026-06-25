@@ -1,0 +1,355 @@
+{
+  "id": "mexico-poland-2022",
+  "meta": {
+    "title": "Mexico vs Poland — Group Stage",
+    "trigger_label": "Second half — Mexico locked at 0-0, a moment of brilliance needed",
+    "difficulty": 1,
+    "order": 23,
+    "stage": "Group Stage",
+    "group": "C",
+    "date": "2022-11-22",
+    "stadium": "Stadium 974"
+  },
+  "scoreline": {
+    "display": "Mexico 0 – 0 Poland",
+    "home": 0,
+    "away": 0
+  },
+  "context": "A tense moment in this group stage match. Mexico and Poland are locked at 0-0. One tactical shift could be the difference between glory and heartbreak.",
+  "home_team": "Mexico",
+  "away_team": "Poland",
+  "home_formation": "4-3-3",
+  "away_formation": "4-1-4-1",
+  "home_players": [
+    {
+      "name": "Francisco Guillermo Ochoa Magaña",
+      "number": 13,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 33
+    },
+    {
+      "name": "Jesús Daniel Gallardo Vasconcelos",
+      "number": 23,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 56
+    },
+    {
+      "name": "Jorge Eduardo Sánchez Ramos",
+      "number": 19,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "Héctor Alfredo Moreno Herrera",
+      "number": 15,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "César Jasib Montes Castro",
+      "number": 3,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 54
+    },
+    {
+      "name": "Edson Omar Álvarez Velázquez",
+      "number": 4,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 61
+    },
+    {
+      "name": "Héctor Miguel Herrera López",
+      "number": 16,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 59
+    },
+    {
+      "name": "Luis Gerardo Chávez Magallón",
+      "number": 24,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 60
+    },
+    {
+      "name": "Hirving Rodrigo Lozano Bahena",
+      "number": 22,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 58
+    },
+    {
+      "name": "Ernesto Alexis Vega Rojas",
+      "number": 10,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 57
+    },
+    {
+      "name": "Henry Josué Martín Mex",
+      "number": 20,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 59
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Wojciech Szczęsny",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 32
+    },
+    {
+      "name": "Matty Cash",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 44
+    },
+    {
+      "name": "Bartosz Bereszyński",
+      "number": 18,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 53
+    },
+    {
+      "name": "Kamil Glik",
+      "number": 15,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Jakub Piotr Kiwior",
+      "number": 14,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 40
+    },
+    {
+      "name": "Jakub Kamiński",
+      "number": 13,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 57
+    },
+    {
+      "name": "Nicola Zalewski",
+      "number": 21,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 41
+    },
+    {
+      "name": "Grzegorz Krychowiak",
+      "number": 10,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 58
+    },
+    {
+      "name": "Sebastian Szymański",
+      "number": 19,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 52
+    },
+    {
+      "name": "Piotr Zieliński",
+      "number": 20,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 60
+    },
+    {
+      "name": "Robert Lewandowski",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 62
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Make an attacking substitution to break the deadlock",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Push the full-backs higher, create overloads out wide",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Stay patient, maintain shape, look for a moment of magic",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Go ultra-attacking — bring on an extra striker",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "C",
+    "description": "The match ended 0-0. No goals."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Make an attacking substitution to break the deadlock**\nRisk level: High. This is the positive choice. An attacking substitution signals intent and can break the deadlock. In the context of this group stage match between Mexico and Poland (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Push the full-backs higher, create overloads out wide**\nRisk level: Medium. This is the width-based approach. Overlapping full-backs create numerical advantages in wide areas. In the context of this group stage match between Mexico and Poland (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Stay patient, maintain shape, look for a moment of magic**\nRisk level: Medium. This is the patient choice. Maintaining shape avoids risk but may not be enough to win. In the context of this group stage match between Mexico and Poland (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Go ultra-attacking — bring on an extra striker**\nRisk level: Very High. This is the all-out attacking option. An extra striker increases goal threat but sacrifices midfield control. In the context of this group stage match between Mexico and Poland (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Robert Lewandowski": "Robert Lewandowski at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Edson Omar Álvarez Velázquez": "Edson Omar Álvarez Velázquez at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Luis Gerardo Chávez Magallón": "Luis Gerardo Chávez Magallón at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Piotr Zieliński": "Piotr Zieliński at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Wojciech Szczęsny": "Wojciech Szczęsny at 32/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages.",
+    "Francisco Guillermo Ochoa Magaña": "Francisco Guillermo Ochoa Magaña at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Ernesto Alexis Vega Rojas",
+      "attacker_team": "Mexico",
+      "defender": "Matty Cash",
+      "defender_team": "Poland",
+      "advantage": "Matty Cash",
+      "diff": "-5",
+      "critical": false
+    },
+    {
+      "attacker": "Hirving Rodrigo Lozano Bahena",
+      "attacker_team": "Mexico",
+      "defender": "Bartosz Bereszyński",
+      "defender_team": "Poland",
+      "advantage": "Bartosz Bereszyński",
+      "diff": "-7",
+      "critical": false
+    },
+    {
+      "attacker": "Henry Josué Martín Mex",
+      "attacker_team": "Mexico",
+      "defender": "Jakub Piotr Kiwior",
+      "defender_team": "Poland",
+      "advantage": "Henry Josué Martín Mex",
+      "diff": "+19",
+      "critical": true
+    },
+    {
+      "attacker": "Robert Lewandowski",
+      "attacker_team": "Poland",
+      "defender": "César Jasib Montes Castro",
+      "defender_team": "Mexico",
+      "advantage": "César Jasib Montes Castro",
+      "diff": "-14",
+      "critical": true
+    },
+    {
+      "attacker": "Nicola Zalewski",
+      "attacker_team": "Poland",
+      "defender": "Jorge Eduardo Sánchez Ramos",
+      "defender_team": "Mexico",
+      "advantage": "Nicola Zalewski",
+      "diff": "+10",
+      "critical": false
+    },
+    {
+      "attacker": "Jakub Kamiński",
+      "attacker_team": "Poland",
+      "defender": "Jesús Daniel Gallardo Vasconcelos",
+      "defender_team": "Mexico",
+      "advantage": "Jesús Daniel Gallardo Vasconcelos",
+      "diff": "-14",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 28,
+      "type": "yellow_card",
+      "description": "Jorge Eduardo Sánchez Ramos (Mexico) shown a yellow card card — Foul",
+      "player": "Jorge Eduardo Sánchez Ramos"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Krystian Bielik replaces Nicola Zalewski (Tactical)",
+      "player": "Krystian Bielik"
+    },
+    {
+      "minute": 53,
+      "type": "yellow_card",
+      "description": "Héctor Alfredo Moreno Herrera (Mexico) shown a yellow card card — Foul",
+      "player": "Héctor Alfredo Moreno Herrera"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Carlos Alberto Rodríguez Gómez replaces Héctor Miguel Herrera López (Tactical)",
+      "player": "Carlos Alberto Rodríguez Gómez"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Raúl Alonso Jiménez Rodríguez replaces Henry Josué Martín Mex (Tactical)",
+      "player": "Raúl Alonso Jiménez Rodríguez"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Przemysław Frankowski replaces Sebastian Szymański (Tactical)",
+      "player": "Przemysław Frankowski"
+    },
+    {
+      "minute": 75,
+      "type": "yellow_card",
+      "description": "Przemysław Frankowski (Poland) shown a yellow card card — Foul",
+      "player": "Przemysław Frankowski"
+    },
+    {
+      "minute": 83,
+      "type": "substitution",
+      "description": "Carlos Uriel Antuna Romero replaces Ernesto Alexis Vega Rojas (Tactical)",
+      "player": "Carlos Uriel Antuna Romero"
+    },
+    {
+      "minute": 87,
+      "type": "substitution",
+      "description": "Arkadiusz Milik replaces Piotr Zieliński (Tactical)",
+      "player": "Arkadiusz Milik"
+    }
+  ]
+}

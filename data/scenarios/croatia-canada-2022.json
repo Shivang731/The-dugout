@@ -1,0 +1,414 @@
+{
+  "id": "croatia-canada-2022",
+  "meta": {
+    "title": "Croatia vs Canada — Group Stage",
+    "trigger_label": "Second half — Croatia lead 4-1",
+    "difficulty": 1,
+    "order": 40,
+    "stage": "Group Stage",
+    "group": "F",
+    "date": "2022-11-27",
+    "stadium": "Sheikh Khalifa International Stadium"
+  },
+  "scoreline": {
+    "display": "Croatia 4 – 1 Canada",
+    "home": 4,
+    "away": 1
+  },
+  "context": "A pivotal moment in this group stage match. Croatia lead Canada 4-1. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Croatia",
+  "away_team": "Canada",
+  "home_formation": "4-3-3",
+  "away_formation": "4-4-2",
+  "home_players": [
+    {
+      "name": "Dominik Livaković",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 39
+    },
+    {
+      "name": "Borna Sosa",
+      "number": 19,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 49
+    },
+    {
+      "name": "Josip Juranović",
+      "number": 22,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 44
+    },
+    {
+      "name": "Dejan Lovren",
+      "number": 6,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 51
+    },
+    {
+      "name": "Joško Gvardiol",
+      "number": 20,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Marcelo Brozović",
+      "number": 11,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 51
+    },
+    {
+      "name": "Mateo Kovačić",
+      "number": 8,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 47
+    },
+    {
+      "name": "Luka Modrić",
+      "number": 10,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 56
+    },
+    {
+      "name": "Andrej Kramarić",
+      "number": 9,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 51
+    },
+    {
+      "name": "Ivan Perišić",
+      "number": 4,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 56
+    },
+    {
+      "name": "Marko Livaja",
+      "number": 14,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 59
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Milan Borjan",
+      "number": 18,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 36
+    },
+    {
+      "name": "Richie Laryea",
+      "number": 22,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 56
+    },
+    {
+      "name": "Alistair Johnston",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 44
+    },
+    {
+      "name": "Steven de Sousa Vitoria",
+      "number": 5,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Kamal Miller",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Alphonso Davies",
+      "number": 19,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 45
+    },
+    {
+      "name": "Tajon Buchanan",
+      "number": 11,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 46
+    },
+    {
+      "name": "Stephen Antunes Eustáquio",
+      "number": 7,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 33
+    },
+    {
+      "name": "Atiba Hutchinson",
+      "number": 13,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 60
+    },
+    {
+      "name": "Cyle Larin",
+      "number": 17,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 41
+    },
+    {
+      "name": "Jonathan David",
+      "number": 20,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 63
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "C",
+    "description": "Croatia won 4-1. Alphonso Davies (1'), Andrej Kramarić (35'), Marko Livaja (43'), Andrej Kramarić (69'), Lovro Majer (93')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between Croatia and Canada (4-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between Croatia and Canada (4-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between Croatia and Canada (4-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between Croatia and Canada (4-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Jonathan David": "Jonathan David at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Atiba Hutchinson": "Atiba Hutchinson at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Marko Livaja": "Marko Livaja at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Luka Modrić": "Luka Modrić at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Stephen Antunes Eustáquio": "Stephen Antunes Eustáquio at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Ivan Perišić",
+      "attacker_team": "Croatia",
+      "defender": "Alistair Johnston",
+      "defender_team": "Canada",
+      "advantage": "Ivan Perišić",
+      "diff": "+8",
+      "critical": false
+    },
+    {
+      "attacker": "Andrej Kramarić",
+      "attacker_team": "Croatia",
+      "defender": "Richie Laryea",
+      "defender_team": "Canada",
+      "advantage": "Andrej Kramarić",
+      "diff": "+9",
+      "critical": false
+    },
+    {
+      "attacker": "Marko Livaja",
+      "attacker_team": "Croatia",
+      "defender": "Kamal Miller",
+      "defender_team": "Canada",
+      "advantage": "Marko Livaja",
+      "diff": "+9",
+      "critical": false
+    },
+    {
+      "attacker": "Jonathan David",
+      "attacker_team": "Canada",
+      "defender": "Joško Gvardiol",
+      "defender_team": "Croatia",
+      "advantage": "Jonathan David",
+      "diff": "+19",
+      "critical": true
+    },
+    {
+      "attacker": "Alphonso Davies",
+      "attacker_team": "Canada",
+      "defender": "Josip Juranović",
+      "defender_team": "Croatia",
+      "advantage": "Josip Juranović",
+      "diff": "-7",
+      "critical": false
+    },
+    {
+      "attacker": "Tajon Buchanan",
+      "attacker_team": "Canada",
+      "defender": "Borna Sosa",
+      "defender_team": "Croatia",
+      "advantage": "Tajon Buchanan",
+      "diff": "+7",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 1,
+      "type": "goal",
+      "description": "Alphonso Davies scores for Canada!",
+      "player": "Alphonso Davies"
+    },
+    {
+      "minute": 35,
+      "type": "goal",
+      "description": "Andrej Kramarić scores for Croatia!",
+      "player": "Andrej Kramarić"
+    },
+    {
+      "minute": 43,
+      "type": "goal",
+      "description": "Marko Livaja scores for Croatia!",
+      "player": "Marko Livaja"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Jonathan Osorio replaces Cyle Larin (Tactical)",
+      "player": "Jonathan Osorio"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Ismael Koné replaces Stephen Antunes Eustáquio (Injury)",
+      "player": "Ismael Koné"
+    },
+    {
+      "minute": 51,
+      "type": "yellow_card",
+      "description": "Tajon Buchanan (Canada) shown a yellow card card — Foul",
+      "player": "Tajon Buchanan"
+    },
+    {
+      "minute": 55,
+      "type": "yellow_card",
+      "description": "Dejan Lovren (Croatia) shown a yellow card card — Foul",
+      "player": "Dejan Lovren"
+    },
+    {
+      "minute": 59,
+      "type": "substitution",
+      "description": "Bruno Petković replaces Marko Livaja (Tactical)",
+      "player": "Bruno Petković"
+    },
+    {
+      "minute": 61,
+      "type": "substitution",
+      "description": "David Junior Hoilett replaces Richie Laryea (Tactical)",
+      "player": "David Junior Hoilett"
+    },
+    {
+      "minute": 69,
+      "type": "goal",
+      "description": "Andrej Kramarić scores for Croatia!",
+      "player": "Andrej Kramarić"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "description": "Nikola Vlašić replaces Andrej Kramarić (Tactical)",
+      "player": "Nikola Vlašić"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "description": "Lucas Daniel Cavallini replaces Jonathan David (Tactical)",
+      "player": "Lucas Daniel Cavallini"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "description": "Sam Adekugbe replaces Atiba Hutchinson (Tactical)",
+      "player": "Sam Adekugbe"
+    },
+    {
+      "minute": 84,
+      "type": "yellow_card",
+      "description": "Kamal Miller (Canada) shown a yellow card card — Bad Behaviour",
+      "player": "Kamal Miller"
+    },
+    {
+      "minute": 84,
+      "type": "yellow_card",
+      "description": "Luka Modrić (Croatia) shown a yellow card card — Bad Behaviour",
+      "player": "Luka Modrić"
+    },
+    {
+      "minute": 85,
+      "type": "substitution",
+      "description": "Mislav Oršić replaces Ivan Perišić (Tactical)",
+      "player": "Mislav Oršić"
+    },
+    {
+      "minute": 85,
+      "type": "substitution",
+      "description": "Mario Pašalić replaces Luka Modrić (Tactical)",
+      "player": "Mario Pašalić"
+    },
+    {
+      "minute": 85,
+      "type": "substitution",
+      "description": "Lovro Majer replaces Mateo Kovačić (Tactical)",
+      "player": "Lovro Majer"
+    },
+    {
+      "minute": 93,
+      "type": "goal",
+      "description": "Lovro Majer scores for Croatia!",
+      "player": "Lovro Majer"
+    }
+  ]
+}

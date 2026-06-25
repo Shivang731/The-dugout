@@ -1,0 +1,371 @@
+{
+  "id": "england-france-2022",
+  "meta": {
+    "title": "England vs France — Quarter-finals",
+    "trigger_label": "Second half — England trail 1-2",
+    "difficulty": 3,
+    "order": 77,
+    "stage": "Quarter-finals",
+    "group": null,
+    "date": "2022-12-10",
+    "stadium": "Al Bayt Stadium"
+  },
+  "scoreline": {
+    "display": "England 1 – 2 France",
+    "home": 1,
+    "away": 2
+  },
+  "context": "A pivotal moment in this quarter-finals match. England trail France 1-2. Something has to change. The manager must decide how to respond.",
+  "home_team": "England",
+  "away_team": "France",
+  "home_formation": "4-3-3",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Jordan Pickford",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 38
+    },
+    {
+      "name": "Kyle Walker",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 45
+    },
+    {
+      "name": "Luke Shaw",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 53
+    },
+    {
+      "name": "John Stones",
+      "number": 5,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Harry Maguire",
+      "number": 6,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 47
+    },
+    {
+      "name": "Declan Rice",
+      "number": 4,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 56
+    },
+    {
+      "name": "Jordan Brian Henderson",
+      "number": 8,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 45
+    },
+    {
+      "name": "Jude Bellingham",
+      "number": 22,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 49
+    },
+    {
+      "name": "Philip Foden",
+      "number": 20,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 50
+    },
+    {
+      "name": "Bukayo Saka",
+      "number": 17,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 65
+    },
+    {
+      "name": "Harry Kane",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 59
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Hugo Lloris",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 41
+    },
+    {
+      "name": "Jules Koundé",
+      "number": 5,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 53
+    },
+    {
+      "name": "Theo Bernard François Hernández",
+      "number": 22,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 52
+    },
+    {
+      "name": "Raphaël Varane",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Dayotchanculle Upamecano",
+      "number": 18,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 48
+    },
+    {
+      "name": "Adrien Rabiot",
+      "number": 14,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 53
+    },
+    {
+      "name": "Aurélien Djani Tchouaméni",
+      "number": 8,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Antoine Griezmann",
+      "number": 7,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 64
+    },
+    {
+      "name": "Kylian Mbappé Lottin",
+      "number": 10,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 65
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "number": 11,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 51
+    },
+    {
+      "name": "Olivier Giroud",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 53
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "France won 2-1. Aurélien Djani Tchouaméni (16'), Harry Kane (53'), Olivier Giroud (77')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this quarter-finals match between England and France (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this quarter-finals match between England and France (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this quarter-finals match between England and France (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this quarter-finals match between England and France (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Bukayo Saka": "Bukayo Saka at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Kylian Mbappé Lottin": "Kylian Mbappé Lottin at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Antoine Griezmann": "Antoine Griezmann at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Harry Kane": "Harry Kane at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Philip Foden",
+      "attacker_team": "England",
+      "defender": "Jules Koundé",
+      "defender_team": "France",
+      "advantage": "Philip Foden",
+      "diff": "+3",
+      "critical": false
+    },
+    {
+      "attacker": "Kylian Mbappé Lottin",
+      "attacker_team": "France",
+      "defender": "Kyle Walker",
+      "defender_team": "England",
+      "advantage": "Kylian Mbappé Lottin",
+      "diff": "+13",
+      "critical": true
+    },
+    {
+      "attacker": "Bukayo Saka",
+      "attacker_team": "England",
+      "defender": "Theo Bernard François Hernández",
+      "defender_team": "France",
+      "advantage": "Theo Bernard François Hernández",
+      "diff": "-15",
+      "critical": true
+    },
+    {
+      "attacker": "Ousmane Dembélé",
+      "attacker_team": "France",
+      "defender": "Luke Shaw",
+      "defender_team": "England",
+      "advantage": "Luke Shaw",
+      "diff": "-1",
+      "critical": true
+    },
+    {
+      "attacker": "Harry Kane",
+      "attacker_team": "England",
+      "defender": "Dayotchanculle Upamecano",
+      "defender_team": "France",
+      "advantage": "Dayotchanculle Upamecano",
+      "diff": "-15",
+      "critical": true
+    },
+    {
+      "attacker": "Olivier Giroud",
+      "attacker_team": "France",
+      "defender": "Harry Maguire",
+      "defender_team": "England",
+      "advantage": "Olivier Giroud",
+      "diff": "+16",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 16,
+      "type": "goal",
+      "description": "Aurélien Djani Tchouaméni scores for France!",
+      "player": "Aurélien Djani Tchouaméni"
+    },
+    {
+      "minute": 42,
+      "type": "yellow_card",
+      "description": "Antoine Griezmann (France) shown a yellow card card — Foul",
+      "player": "Antoine Griezmann"
+    },
+    {
+      "minute": 45,
+      "type": "yellow_card",
+      "description": "Ousmane Dembélé (France) shown a yellow card card — Foul",
+      "player": "Ousmane Dembélé"
+    },
+    {
+      "minute": 53,
+      "type": "goal",
+      "description": "Harry Kane scores for England! (Penalty)",
+      "player": "Harry Kane"
+    },
+    {
+      "minute": 77,
+      "type": "goal",
+      "description": "Olivier Giroud scores for France!",
+      "player": "Olivier Giroud"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Kingsley Coman replaces Ousmane Dembélé (Tactical)",
+      "player": "Kingsley Coman"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Mason Mount replaces Jordan Brian Henderson (Tactical)",
+      "player": "Mason Mount"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Raheem Sterling replaces Bukayo Saka (Tactical)",
+      "player": "Raheem Sterling"
+    },
+    {
+      "minute": 79,
+      "type": "yellow_card",
+      "description": "Theo Bernard François Hernández (France) shown a yellow card card — Foul",
+      "player": "Theo Bernard François Hernández"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Marcus Rashford replaces Philip Foden (Tactical)",
+      "player": "Marcus Rashford"
+    },
+    {
+      "minute": 88,
+      "type": "yellow_card",
+      "description": "Harry Maguire (England) shown a yellow card card — Foul",
+      "player": "Harry Maguire"
+    },
+    {
+      "minute": 97,
+      "type": "substitution",
+      "description": "Jack Grealish replaces John Stones (Injury)",
+      "player": "Jack Grealish"
+    }
+  ]
+}

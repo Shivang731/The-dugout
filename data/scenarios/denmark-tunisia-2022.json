@@ -1,0 +1,336 @@
+{
+  "id": "denmark-tunisia-2022",
+  "meta": {
+    "title": "Denmark vs Tunisia — Group Stage",
+    "trigger_label": "Second half — Denmark locked at 0-0, a moment of brilliance needed",
+    "difficulty": 1,
+    "order": 21,
+    "stage": "Group Stage",
+    "group": "D",
+    "date": "2022-11-22",
+    "stadium": "Education City Stadium "
+  },
+  "scoreline": {
+    "display": "Denmark 0 – 0 Tunisia",
+    "home": 0,
+    "away": 0
+  },
+  "context": "A tense moment in this group stage match. Denmark and Tunisia are locked at 0-0. One tactical shift could be the difference between glory and heartbreak.",
+  "home_team": "Denmark",
+  "away_team": "Tunisia",
+  "home_formation": "5-3-2",
+  "away_formation": "5-4-1",
+  "home_players": [
+    {
+      "name": "Kasper Schmeichel",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 33
+    },
+    {
+      "name": "Andreas Christensen",
+      "number": 6,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 50
+    },
+    {
+      "name": "Simon Thorup Kjær",
+      "number": 4,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Joachim Andersen",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 48
+    },
+    {
+      "name": "Rasmus Nissen Kristensen",
+      "number": 13,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 56
+    },
+    {
+      "name": "Joakim Mæhle",
+      "number": 5,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 46
+    },
+    {
+      "name": "Thomas Delaney",
+      "number": 8,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 42
+    },
+    {
+      "name": "Christian Dannemann Eriksen",
+      "number": 10,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 48
+    },
+    {
+      "name": "Pierre-Emile Højbjerg",
+      "number": 23,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 54
+    },
+    {
+      "name": "Kasper Dolberg",
+      "number": 12,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 59
+    },
+    {
+      "name": "Andreas Skov Olsen",
+      "number": 11,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 62
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Aymen Dahmen",
+      "number": 16,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 39
+    },
+    {
+      "name": "Yassine Meriah",
+      "number": 4,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Dylan Daniel Mahmoud Bronn",
+      "number": 6,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 50
+    },
+    {
+      "name": "Montassar Omar Talbi",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 46
+    },
+    {
+      "name": "Mohamed Dräger",
+      "number": 20,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 45
+    },
+    {
+      "name": "Ali Abdi",
+      "number": 24,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 50
+    },
+    {
+      "name": "Ellyes Joris Skhiri",
+      "number": 17,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 52
+    },
+    {
+      "name": "Aïssa Bilal Laïdouni",
+      "number": 14,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 51
+    },
+    {
+      "name": "Youssef Msakni",
+      "number": 7,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 65
+    },
+    {
+      "name": "Anis Ben Slimane",
+      "number": 25,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 64
+    },
+    {
+      "name": "Issam Jebali",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 56
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Make an attacking substitution to break the deadlock",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Push the full-backs higher, create overloads out wide",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Stay patient, maintain shape, look for a moment of magic",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Go ultra-attacking — bring on an extra striker",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "The match ended 0-0. No goals."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Make an attacking substitution to break the deadlock**\nRisk level: High. This is the positive choice. An attacking substitution signals intent and can break the deadlock. In the context of this group stage match between Denmark and Tunisia (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Push the full-backs higher, create overloads out wide**\nRisk level: Medium. This is the width-based approach. Overlapping full-backs create numerical advantages in wide areas. In the context of this group stage match between Denmark and Tunisia (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Stay patient, maintain shape, look for a moment of magic**\nRisk level: Medium. This is the patient choice. Maintaining shape avoids risk but may not be enough to win. In the context of this group stage match between Denmark and Tunisia (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Go ultra-attacking — bring on an extra striker**\nRisk level: Very High. This is the all-out attacking option. An extra striker increases goal threat but sacrifices midfield control. In the context of this group stage match between Denmark and Tunisia (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Youssef Msakni": "Youssef Msakni at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Anis Ben Slimane": "Anis Ben Slimane at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Andreas Skov Olsen": "Andreas Skov Olsen at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Kasper Dolberg": "Kasper Dolberg at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Kasper Schmeichel": "Kasper Schmeichel at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Andreas Skov Olsen",
+      "attacker_team": "Denmark",
+      "defender": "Montassar Omar Talbi",
+      "defender_team": "Tunisia",
+      "advantage": "Andreas Skov Olsen",
+      "diff": "+9",
+      "critical": false
+    },
+    {
+      "attacker": "Issam Jebali",
+      "attacker_team": "Tunisia",
+      "defender": "Joachim Andersen",
+      "defender_team": "Denmark",
+      "advantage": "Even",
+      "diff": "+0",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 23,
+      "type": "yellow_card",
+      "description": "Rasmus Nissen Kristensen (Denmark) shown a yellow card card — Foul",
+      "player": "Rasmus Nissen Kristensen"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Mikkel Damsgaard replaces Thomas Delaney (Injury)",
+      "player": "Mikkel Damsgaard"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Mathias Jensen replaces Simon Thorup Kjær (Tactical)",
+      "player": "Mathias Jensen"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Jesper Lindstrøm replaces Andreas Skov Olsen (Tactical)",
+      "player": "Jesper Lindstrøm"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Andreas Evald Cornelius replaces Kasper Dolberg (Tactical)",
+      "player": "Andreas Evald Cornelius"
+    },
+    {
+      "minute": 66,
+      "type": "substitution",
+      "description": "Naïm Sliti replaces Anis Ben Slimane (Tactical)",
+      "player": "Naïm Sliti"
+    },
+    {
+      "minute": 77,
+      "type": "yellow_card",
+      "description": "Mathias Jensen (Denmark) shown a yellow card card — Foul",
+      "player": "Mathias Jensen"
+    },
+    {
+      "minute": 79,
+      "type": "substitution",
+      "description": "Hannibal Mejbri replaces Youssef Msakni (Tactical)",
+      "player": "Hannibal Mejbri"
+    },
+    {
+      "minute": 80,
+      "type": "substitution",
+      "description": "Taha Yassine Khenissi replaces Issam Jebali (Tactical)",
+      "player": "Taha Yassine Khenissi"
+    },
+    {
+      "minute": 84,
+      "type": "yellow_card",
+      "description": "Taha Yassine Khenissi (Tunisia) shown a yellow card card — Foul",
+      "player": "Taha Yassine Khenissi"
+    },
+    {
+      "minute": 87,
+      "type": "substitution",
+      "description": "Wajdi Kechrida replaces Mohamed Dräger (Tactical)",
+      "player": "Wajdi Kechrida"
+    },
+    {
+      "minute": 87,
+      "type": "substitution",
+      "description": "Ferjani Sassi replaces Aïssa Bilal Laïdouni (Tactical)",
+      "player": "Ferjani Sassi"
+    }
+  ]
+}

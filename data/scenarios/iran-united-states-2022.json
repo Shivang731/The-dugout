@@ -1,0 +1,388 @@
+{
+  "id": "iran-united-states-2022",
+  "meta": {
+    "title": "Iran vs United States — Group Stage",
+    "trigger_label": "Second half — Iran trail 0-1",
+    "difficulty": 1,
+    "order": 52,
+    "stage": "Group Stage",
+    "group": "B",
+    "date": "2022-11-29",
+    "stadium": "Al Thumama Stadium"
+  },
+  "scoreline": {
+    "display": "Iran 0 – 1 United States",
+    "home": 0,
+    "away": 1
+  },
+  "context": "A pivotal moment in this group stage match. Iran trail United States 0-1. Something has to change. The manager must decide how to respond.",
+  "home_team": "Iran",
+  "away_team": "United States",
+  "home_formation": "4-1-4-1",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Alireza Safar Beiranvand",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 35
+    },
+    {
+      "name": "Ramin Rezaeian",
+      "number": 23,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 49
+    },
+    {
+      "name": "Milad Mohammadi",
+      "number": 5,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 44
+    },
+    {
+      "name": "Morteza Pouraliganji",
+      "number": 8,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Seyed Majid Hosseini",
+      "number": 19,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Ehsan Hajsafi",
+      "number": 3,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 49
+    },
+    {
+      "name": "Ali Gholizadeh",
+      "number": 17,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 49
+    },
+    {
+      "name": "Saeid Ezatolahi Afagh",
+      "number": 6,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 57
+    },
+    {
+      "name": "Ahmad Nourollahi",
+      "number": 21,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 53
+    },
+    {
+      "name": "Mehdi Taremi",
+      "number": 9,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 52
+    },
+    {
+      "name": "Sardar Azmoun",
+      "number": 20,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 52
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Matthew Charles Turner",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 41
+    },
+    {
+      "name": "Antonee Robinson",
+      "number": 5,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 40
+    },
+    {
+      "name": "Sergino Dest",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 42
+    },
+    {
+      "name": "Cameron Carter-Vickers",
+      "number": 20,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 51
+    },
+    {
+      "name": "Tim Ream",
+      "number": 13,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Tyler Adams",
+      "number": 4,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 51
+    },
+    {
+      "name": "Weston McKennie",
+      "number": 8,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 54
+    },
+    {
+      "name": "Yunus Dimoara Musah",
+      "number": 6,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 60
+    },
+    {
+      "name": "Timothy Weah",
+      "number": 21,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 51
+    },
+    {
+      "name": "Christian Pulisic",
+      "number": 10,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 51
+    },
+    {
+      "name": "Joshua Sargent",
+      "number": 24,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 55
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "United States won 1-0. Christian Pulisic (37')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Iran and United States (0-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Iran and United States (0-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Iran and United States (0-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Iran and United States (0-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Yunus Dimoara Musah": "Yunus Dimoara Musah at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Saeid Ezatolahi Afagh": "Saeid Ezatolahi Afagh at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Joshua Sargent": "Joshua Sargent at 55/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Christian Pulisic",
+      "attacker_team": "United States",
+      "defender": "Ramin Rezaeian",
+      "defender_team": "Iran",
+      "advantage": "Christian Pulisic",
+      "diff": "+13",
+      "critical": true
+    },
+    {
+      "attacker": "Timothy Weah",
+      "attacker_team": "United States",
+      "defender": "Milad Mohammadi",
+      "defender_team": "Iran",
+      "advantage": "Timothy Weah",
+      "diff": "+14",
+      "critical": true
+    },
+    {
+      "attacker": "Sardar Azmoun",
+      "attacker_team": "Iran",
+      "defender": "Tim Ream",
+      "defender_team": "United States",
+      "advantage": "Tim Ream",
+      "diff": "-15",
+      "critical": true
+    },
+    {
+      "attacker": "Joshua Sargent",
+      "attacker_team": "United States",
+      "defender": "Seyed Majid Hosseini",
+      "defender_team": "Iran",
+      "advantage": "Joshua Sargent",
+      "diff": "+12",
+      "critical": false
+    },
+    {
+      "attacker": "Ehsan Hajsafi",
+      "attacker_team": "Iran",
+      "defender": "Sergino Dest",
+      "defender_team": "United States",
+      "advantage": "Sergino Dest",
+      "diff": "-7",
+      "critical": false
+    },
+    {
+      "attacker": "Ali Gholizadeh",
+      "attacker_team": "Iran",
+      "defender": "Antonee Robinson",
+      "defender_team": "United States",
+      "advantage": "Ali Gholizadeh",
+      "diff": "+4",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 37,
+      "type": "goal",
+      "description": "Christian Pulisic scores for United States!",
+      "player": "Christian Pulisic"
+    },
+    {
+      "minute": 42,
+      "type": "yellow_card",
+      "description": "Tyler Adams (United States) shown a yellow card card — Foul",
+      "player": "Tyler Adams"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Brenden Aaronson replaces Christian Pulisic (Tactical)",
+      "player": "Brenden Aaronson"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Saman Ghoddos replaces Sardar Azmoun (Tactical)",
+      "player": "Saman Ghoddos"
+    },
+    {
+      "minute": 47,
+      "type": "substitution",
+      "description": "Ali Karimi replaces Milad Mohammadi (Injury)",
+      "player": "Ali Karimi"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Kellyn Kai Perry-Acosta replaces Weston McKennie (Tactical)",
+      "player": "Kellyn Kai Perry-Acosta"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Mehdi Torabi replaces Ahmad Nourollahi (Tactical)",
+      "player": "Mehdi Torabi"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Abolfazl Jalali replaces Ehsan Hajsafi (Tactical)",
+      "player": "Abolfazl Jalali"
+    },
+    {
+      "minute": 76,
+      "type": "substitution",
+      "description": "Haji Wright replaces Joshua Sargent (Injury)",
+      "player": "Haji Wright"
+    },
+    {
+      "minute": 76,
+      "type": "substitution",
+      "description": "Karim Ansarifard replaces Ali Gholizadeh (Tactical)",
+      "player": "Karim Ansarifard"
+    },
+    {
+      "minute": 76,
+      "type": "yellow_card",
+      "description": "Seyed Majid Hosseini (Iran) shown a yellow card card — Foul",
+      "player": "Seyed Majid Hosseini"
+    },
+    {
+      "minute": 81,
+      "type": "substitution",
+      "description": "Walker Zimmerman replaces Timothy Weah (Tactical)",
+      "player": "Walker Zimmerman"
+    },
+    {
+      "minute": 81,
+      "type": "substitution",
+      "description": "Shaquell Moore replaces Sergino Dest (Tactical)",
+      "player": "Shaquell Moore"
+    },
+    {
+      "minute": 82,
+      "type": "yellow_card",
+      "description": "Mohammad Hossein Kanani Zadegan (Iran) shown a yellow card card — Bad Behaviour",
+      "player": "Mohammad Hossein Kanani Zadegan"
+    },
+    {
+      "minute": 95,
+      "type": "yellow_card",
+      "description": "Abolfazl Jalali (Iran) shown a yellow card card — Foul",
+      "player": "Abolfazl Jalali"
+    }
+  ]
+}

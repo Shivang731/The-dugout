@@ -1,0 +1,360 @@
+{
+  "id": "senegal-netherlands-2022",
+  "meta": {
+    "title": "Senegal vs Netherlands — Group Stage",
+    "trigger_label": "Second half — Senegal trail 0-2",
+    "difficulty": 1,
+    "order": 10,
+    "stage": "Group Stage",
+    "group": "A",
+    "date": "2022-11-21",
+    "stadium": "Al Thumama Stadium"
+  },
+  "scoreline": {
+    "display": "Senegal 0 – 2 Netherlands",
+    "home": 0,
+    "away": 2
+  },
+  "context": "A pivotal moment in this group stage match. Senegal trail Netherlands 0-2. Something has to change. The manager must decide how to respond.",
+  "home_team": "Senegal",
+  "away_team": "Netherlands",
+  "home_formation": "4-3-3",
+  "away_formation": "5-3-2",
+  "home_players": [
+    {
+      "name": "Edouard Mendy",
+      "number": 16,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 39
+    },
+    {
+      "name": "Youssouf Sabaly",
+      "number": 21,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 51
+    },
+    {
+      "name": "Abdou Diallo",
+      "number": 22,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "number": 3,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 40
+    },
+    {
+      "name": "Pape Abou Cissé",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 47
+    },
+    {
+      "name": "Cheikhou Kouyaté",
+      "number": 8,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 46
+    },
+    {
+      "name": "Nampalys Mendy",
+      "number": 6,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 55
+    },
+    {
+      "name": "Idrissa Gana Gueye",
+      "number": 5,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 65
+    },
+    {
+      "name": "Ismaïla Sarr",
+      "number": 18,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 65
+    },
+    {
+      "name": "Krépin Diatta",
+      "number": 15,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 63
+    },
+    {
+      "name": "Boulaye Dia",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 63
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Andries Noppert",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 31
+    },
+    {
+      "name": "Nathan Aké",
+      "number": 5,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Virgil van Dijk",
+      "number": 4,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Matthijs de Ligt",
+      "number": 3,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 54
+    },
+    {
+      "name": "Daley Blind",
+      "number": 17,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 54
+    },
+    {
+      "name": "Denzel Dumfries",
+      "number": 22,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 54
+    },
+    {
+      "name": "Steven Berghuis",
+      "number": 11,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 48
+    },
+    {
+      "name": "Frenkie de Jong",
+      "number": 21,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 45
+    },
+    {
+      "name": "Cody Mathès Gakpo",
+      "number": 8,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 57
+    },
+    {
+      "name": "Vincent Janssen",
+      "number": 18,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 56
+    },
+    {
+      "name": "Steven Bergwijn",
+      "number": 7,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 55
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Netherlands won 2-0. Cody Mathès Gakpo (83'), Davy Klaassen (98')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Senegal and Netherlands (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Senegal and Netherlands (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Senegal and Netherlands (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Senegal and Netherlands (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Idrissa Gana Gueye": "Idrissa Gana Gueye at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Ismaïla Sarr": "Ismaïla Sarr at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Krépin Diatta": "Krépin Diatta at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Boulaye Dia": "Boulaye Dia at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Andries Noppert": "Andries Noppert at 31/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Boulaye Dia",
+      "attacker_team": "Senegal",
+      "defender": "Matthijs de Ligt",
+      "defender_team": "Netherlands",
+      "advantage": "Boulaye Dia",
+      "diff": "+9",
+      "critical": true
+    },
+    {
+      "attacker": "Steven Bergwijn",
+      "attacker_team": "Netherlands",
+      "defender": "Pape Abou Cissé",
+      "defender_team": "Senegal",
+      "advantage": "Steven Bergwijn",
+      "diff": "+9",
+      "critical": false
+    },
+    {
+      "attacker": "Idrissa Gana Gueye",
+      "attacker_team": "Senegal",
+      "defender": "Frenkie de Jong",
+      "defender_team": "Netherlands",
+      "advantage": "Idrissa Gana Gueye",
+      "diff": "+14",
+      "critical": true
+    },
+    {
+      "attacker": "Cody Mathès Gakpo",
+      "attacker_team": "Netherlands",
+      "defender": "Nampalys Mendy",
+      "defender_team": "Senegal",
+      "advantage": "Cody Mathès Gakpo",
+      "diff": "+3",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 55,
+      "type": "yellow_card",
+      "description": "Matthijs de Ligt (Netherlands) shown a yellow card card — Foul",
+      "player": "Matthijs de Ligt"
+    },
+    {
+      "minute": 61,
+      "type": "substitution",
+      "description": "Memphis Depay replaces Vincent Janssen (Tactical)",
+      "player": "Memphis Depay"
+    },
+    {
+      "minute": 61,
+      "type": "substitution",
+      "description": "Ismail Jakobs replaces Abdou Diallo (Injury)",
+      "player": "Ismail Jakobs"
+    },
+    {
+      "minute": 68,
+      "type": "substitution",
+      "description": "Cheikh Ahmadou Bamba Mbacke Dieng replaces Boulaye Dia (Tactical)",
+      "player": "Cheikh Ahmadou Bamba Mbacke Dieng"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Pape Gueye replaces Cheikhou Kouyaté (Injury)",
+      "player": "Pape Gueye"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Nicolas Jackson replaces Krépin Diatta (Tactical)",
+      "player": "Nicolas Jackson"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Davy Klaassen replaces Steven Bergwijn (Tactical)",
+      "player": "Davy Klaassen"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Teun Koopmeiners replaces Steven Berghuis (Tactical)",
+      "player": "Teun Koopmeiners"
+    },
+    {
+      "minute": 83,
+      "type": "goal",
+      "description": "Cody Mathès Gakpo scores for Netherlands!",
+      "player": "Cody Mathès Gakpo"
+    },
+    {
+      "minute": 93,
+      "type": "substitution",
+      "description": "Marten de Roon replaces Cody Mathès Gakpo (Tactical)",
+      "player": "Marten de Roon"
+    },
+    {
+      "minute": 93,
+      "type": "yellow_card",
+      "description": "Nampalys Mendy (Senegal) shown a yellow card card — Foul",
+      "player": "Nampalys Mendy"
+    },
+    {
+      "minute": 95,
+      "type": "yellow_card",
+      "description": "Idrissa Gana Gueye (Senegal) shown a yellow card card — Foul",
+      "player": "Idrissa Gana Gueye"
+    },
+    {
+      "minute": 98,
+      "type": "goal",
+      "description": "Davy Klaassen scores for Netherlands!",
+      "player": "Davy Klaassen"
+    }
+  ]
+}

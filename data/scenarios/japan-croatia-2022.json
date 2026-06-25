@@ -1,0 +1,371 @@
+{
+  "id": "japan-croatia-2022",
+  "meta": {
+    "title": "Japan vs Croatia — Round of 16",
+    "trigger_label": "Second half — Japan locked at 1-1, a moment of brilliance needed",
+    "difficulty": 2,
+    "order": 64,
+    "stage": "Round of 16",
+    "group": null,
+    "date": "2022-12-05",
+    "stadium": "Al Janoub Stadium   "
+  },
+  "scoreline": {
+    "display": "Japan 1 – 1 Croatia",
+    "home": 1,
+    "away": 1
+  },
+  "context": "A tense moment in this round of 16 match. Japan and Croatia are locked at 1-1. One tactical shift could be the difference between glory and heartbreak.",
+  "home_team": "Japan",
+  "away_team": "Croatia",
+  "home_formation": "5-4-1",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Shūichi Gonda",
+      "number": 12,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 44
+    },
+    {
+      "name": "Maya Yoshida",
+      "number": 22,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Takehiro Tomiyasu",
+      "number": 16,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Shogo Taniguchi",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 47
+    },
+    {
+      "name": "Yuto Nagatomo",
+      "number": 5,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 46
+    },
+    {
+      "name": "Junya Ito",
+      "number": 14,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 49
+    },
+    {
+      "name": "Wataru Endo",
+      "number": 6,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 56
+    },
+    {
+      "name": "Hidemasa Morita",
+      "number": 13,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Ritsu Doan",
+      "number": 8,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 57
+    },
+    {
+      "name": "Daichi Kamada",
+      "number": 15,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 58
+    },
+    {
+      "name": "Daizen Maeda",
+      "number": 25,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 60
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Dominik Livaković",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 41
+    },
+    {
+      "name": "Borna Barišić",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "Josip Juranović",
+      "number": 22,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 48
+    },
+    {
+      "name": "Dejan Lovren",
+      "number": 6,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 46
+    },
+    {
+      "name": "Joško Gvardiol",
+      "number": 20,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Marcelo Brozović",
+      "number": 11,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 61
+    },
+    {
+      "name": "Mateo Kovačić",
+      "number": 8,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 57
+    },
+    {
+      "name": "Luka Modrić",
+      "number": 10,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 46
+    },
+    {
+      "name": "Andrej Kramarić",
+      "number": 9,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 65
+    },
+    {
+      "name": "Ivan Perišić",
+      "number": 4,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 62
+    },
+    {
+      "name": "Bruno Petković",
+      "number": 16,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 59
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Make an attacking substitution to break the deadlock",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Push the full-backs higher, create overloads out wide",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Stay patient, maintain shape, look for a moment of magic",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Go ultra-attacking — bring on an extra striker",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "The match went to penalties after a 1-1 draw. Daizen Maeda (42'), Ivan Perišić (54')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Make an attacking substitution to break the deadlock**\nRisk level: High. This is the positive choice. An attacking substitution signals intent and can break the deadlock. In the context of this round of 16 match between Japan and Croatia (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Push the full-backs higher, create overloads out wide**\nRisk level: Medium. This is the width-based approach. Overlapping full-backs create numerical advantages in wide areas. In the context of this round of 16 match between Japan and Croatia (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Stay patient, maintain shape, look for a moment of magic**\nRisk level: Medium. This is the patient choice. Maintaining shape avoids risk but may not be enough to win. In the context of this round of 16 match between Japan and Croatia (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Go ultra-attacking — bring on an extra striker**\nRisk level: Very High. This is the all-out attacking option. An extra striker increases goal threat but sacrifices midfield control. In the context of this round of 16 match between Japan and Croatia (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Andrej Kramarić": "Andrej Kramarić at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Ivan Perišić": "Ivan Perišić at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Marcelo Brozović": "Marcelo Brozović at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Daizen Maeda": "Daizen Maeda at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Daichi Kamada",
+      "attacker_team": "Japan",
+      "defender": "Josip Juranović",
+      "defender_team": "Croatia",
+      "advantage": "Josip Juranović",
+      "diff": "-7",
+      "critical": false
+    },
+    {
+      "attacker": "Ritsu Doan",
+      "attacker_team": "Japan",
+      "defender": "Borna Barišić",
+      "defender_team": "Croatia",
+      "advantage": "Ritsu Doan",
+      "diff": "+17",
+      "critical": true
+    },
+    {
+      "attacker": "Daizen Maeda",
+      "attacker_team": "Japan",
+      "defender": "Joško Gvardiol",
+      "defender_team": "Croatia",
+      "advantage": "Joško Gvardiol",
+      "diff": "-10",
+      "critical": false
+    },
+    {
+      "attacker": "Bruno Petković",
+      "attacker_team": "Croatia",
+      "defender": "Shogo Taniguchi",
+      "defender_team": "Japan",
+      "advantage": "Bruno Petković",
+      "diff": "+17",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 42,
+      "type": "goal",
+      "description": "Daizen Maeda scores for Japan!",
+      "player": "Daizen Maeda"
+    },
+    {
+      "minute": 54,
+      "type": "goal",
+      "description": "Ivan Perišić scores for Croatia!",
+      "player": "Ivan Perišić"
+    },
+    {
+      "minute": 61,
+      "type": "substitution",
+      "description": "Ante Budimir replaces Bruno Petković (Tactical)",
+      "player": "Ante Budimir"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Kaoru Mitoma replaces Yuto Nagatomo (Tactical)",
+      "player": "Kaoru Mitoma"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Takuma Asano replaces Daizen Maeda (Tactical)",
+      "player": "Takuma Asano"
+    },
+    {
+      "minute": 67,
+      "type": "substitution",
+      "description": "Mario Pašalić replaces Andrej Kramarić (Tactical)",
+      "player": "Mario Pašalić"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Hiroki Sakai replaces Daichi Kamada (Tactical)",
+      "player": "Hiroki Sakai"
+    },
+    {
+      "minute": 86,
+      "type": "substitution",
+      "description": "Takumi Minamino replaces Ritsu Doan (Tactical)",
+      "player": "Takumi Minamino"
+    },
+    {
+      "minute": 89,
+      "type": "yellow_card",
+      "description": "Mateo Kovačić (Croatia) shown a yellow card card — Foul",
+      "player": "Mateo Kovačić"
+    },
+    {
+      "minute": 98,
+      "type": "substitution",
+      "description": "Lovro Majer replaces Luka Modrić (Tactical)",
+      "player": "Lovro Majer"
+    },
+    {
+      "minute": 98,
+      "type": "substitution",
+      "description": "Nikola Vlašić replaces Mateo Kovačić (Tactical)",
+      "player": "Nikola Vlašić"
+    },
+    {
+      "minute": 105,
+      "type": "substitution",
+      "description": "Ao Tanaka replaces Hidemasa Morita (Tactical)",
+      "player": "Ao Tanaka"
+    },
+    {
+      "minute": 105,
+      "type": "substitution",
+      "description": "Mislav Oršić replaces Ivan Perišić (Tactical)",
+      "player": "Mislav Oršić"
+    },
+    {
+      "minute": 105,
+      "type": "substitution",
+      "description": "Marko Livaja replaces Ante Budimir (Tactical)",
+      "player": "Marko Livaja"
+    },
+    {
+      "minute": 115,
+      "type": "yellow_card",
+      "description": "Borna Barišić (Croatia) shown a yellow card card — Foul",
+      "player": "Borna Barišić"
+    }
+  ]
+}

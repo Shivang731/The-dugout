@@ -1,0 +1,407 @@
+{
+  "id": "south-korea-ghana-2022",
+  "meta": {
+    "title": "South Korea vs Ghana — Group Stage",
+    "trigger_label": "Second half — South Korea trail 2-3",
+    "difficulty": 1,
+    "order": 37,
+    "stage": "Group Stage",
+    "group": "H",
+    "date": "2022-11-28",
+    "stadium": "Education City Stadium "
+  },
+  "scoreline": {
+    "display": "South Korea 2 – 3 Ghana",
+    "home": 2,
+    "away": 3
+  },
+  "context": "A pivotal moment in this group stage match. South Korea trail Ghana 2-3. Something has to change. The manager must decide how to respond.",
+  "home_team": "South Korea",
+  "away_team": "Ghana",
+  "home_formation": "4-3-3",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Seung-Gyu Kim",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 43
+    },
+    {
+      "name": "Jin-Su Kim",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 42
+    },
+    {
+      "name": "Moon-Hwan Kim",
+      "number": 15,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 56
+    },
+    {
+      "name": "Young-Gwon Kim",
+      "number": 19,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Min Jae Kim",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Woo-Young Jung",
+      "number": 5,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 53
+    },
+    {
+      "name": "In-Beom Hwang",
+      "number": 6,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 61
+    },
+    {
+      "name": "Woo-Yeong Jeong",
+      "number": 25,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 42
+    },
+    {
+      "name": "Heung-Min Son",
+      "number": 7,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 54
+    },
+    {
+      "name": "Chang-Hoon Kwon",
+      "number": 22,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 54
+    },
+    {
+      "name": "Gue-Sung Cho",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 62
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Lawrence Ati-Zigi",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 44
+    },
+    {
+      "name": "Gideon Mensah",
+      "number": 14,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 47
+    },
+    {
+      "name": "Tariq Lamptey",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 42
+    },
+    {
+      "name": "Daniel Amartey",
+      "number": 18,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Mohamed Salisu",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Thomas Teye Partey",
+      "number": 5,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Salis Abdul Samed",
+      "number": 21,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 55
+    },
+    {
+      "name": "André Ayew Pelé",
+      "number": 10,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 53
+    },
+    {
+      "name": "Jordan Ayew",
+      "number": 9,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 57
+    },
+    {
+      "name": "Mohammed Kudus",
+      "number": 20,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 65
+    },
+    {
+      "name": "Iñaki Williams Arthuer",
+      "number": 19,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 58
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Ghana won 3-2. Mohamed Salisu (23'), Mohammed Kudus (33'), Gue-Sung Cho (57'), Gue-Sung Cho (60'), Mohammed Kudus (67')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between South Korea and Ghana (2-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between South Korea and Ghana (2-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between South Korea and Ghana (2-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between South Korea and Ghana (2-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Mohammed Kudus": "Mohammed Kudus at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Gue-Sung Cho": "Gue-Sung Cho at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "In-Beom Hwang": "In-Beom Hwang at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Iñaki Williams Arthuer": "Iñaki Williams Arthuer at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Heung-Min Son",
+      "attacker_team": "South Korea",
+      "defender": "Tariq Lamptey",
+      "defender_team": "Ghana",
+      "advantage": "Heung-Min Son",
+      "diff": "+19",
+      "critical": true
+    },
+    {
+      "attacker": "Jordan Ayew",
+      "attacker_team": "Ghana",
+      "defender": "Moon-Hwan Kim",
+      "defender_team": "South Korea",
+      "advantage": "Moon-Hwan Kim",
+      "diff": "-13",
+      "critical": true
+    },
+    {
+      "attacker": "Chang-Hoon Kwon",
+      "attacker_team": "South Korea",
+      "defender": "Gideon Mensah",
+      "defender_team": "Ghana",
+      "advantage": "Gideon Mensah",
+      "diff": "-4",
+      "critical": false
+    },
+    {
+      "attacker": "Mohammed Kudus",
+      "attacker_team": "Ghana",
+      "defender": "Jin-Su Kim",
+      "defender_team": "South Korea",
+      "advantage": "Mohammed Kudus",
+      "diff": "+5",
+      "critical": true
+    },
+    {
+      "attacker": "Gue-Sung Cho",
+      "attacker_team": "South Korea",
+      "defender": "Mohamed Salisu",
+      "defender_team": "Ghana",
+      "advantage": "Mohamed Salisu",
+      "diff": "-2",
+      "critical": false
+    },
+    {
+      "attacker": "Iñaki Williams Arthuer",
+      "attacker_team": "Ghana",
+      "defender": "Min Jae Kim",
+      "defender_team": "South Korea",
+      "advantage": "Iñaki Williams Arthuer",
+      "diff": "+10",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 19,
+      "type": "yellow_card",
+      "description": "Daniel Amartey (Ghana) shown a yellow card card — Foul",
+      "player": "Daniel Amartey"
+    },
+    {
+      "minute": 23,
+      "type": "goal",
+      "description": "Mohamed Salisu scores for Ghana!",
+      "player": "Mohamed Salisu"
+    },
+    {
+      "minute": 26,
+      "type": "yellow_card",
+      "description": "Woo-Young Jung (South Korea) shown a yellow card card — Foul",
+      "player": "Woo-Young Jung"
+    },
+    {
+      "minute": 33,
+      "type": "goal",
+      "description": "Mohammed Kudus scores for Ghana!",
+      "player": "Mohammed Kudus"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Sang-Ho Na replaces Woo-Yeong Jeong (Tactical)",
+      "player": "Sang-Ho Na"
+    },
+    {
+      "minute": 56,
+      "type": "substitution",
+      "description": "Kang-In Lee replaces Chang-Hoon Kwon (Tactical)",
+      "player": "Kang-In Lee"
+    },
+    {
+      "minute": 57,
+      "type": "goal",
+      "description": "Gue-Sung Cho scores for South Korea!",
+      "player": "Gue-Sung Cho"
+    },
+    {
+      "minute": 60,
+      "type": "goal",
+      "description": "Gue-Sung Cho scores for South Korea!",
+      "player": "Gue-Sung Cho"
+    },
+    {
+      "minute": 67,
+      "type": "goal",
+      "description": "Mohammed Kudus scores for Ghana!",
+      "player": "Mohammed Kudus"
+    },
+    {
+      "minute": 72,
+      "type": "yellow_card",
+      "description": "Tariq Lamptey (Ghana) shown a yellow card card — Foul",
+      "player": "Tariq Lamptey"
+    },
+    {
+      "minute": 76,
+      "type": "yellow_card",
+      "description": "Young-Gwon Kim (South Korea) shown a yellow card card — Foul",
+      "player": "Young-Gwon Kim"
+    },
+    {
+      "minute": 77,
+      "type": "substitution",
+      "description": "Denis Odoi replaces Tariq Lamptey (Tactical)",
+      "player": "Denis Odoi"
+    },
+    {
+      "minute": 77,
+      "type": "substitution",
+      "description": "Daniel-Kofi Kyereh replaces André Ayew Pelé (Tactical)",
+      "player": "Daniel-Kofi Kyereh"
+    },
+    {
+      "minute": 77,
+      "type": "substitution",
+      "description": "Kamaldeen Sulemana replaces Jordan Ayew (Tactical)",
+      "player": "Kamaldeen Sulemana"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Ui-Jo Hwang replaces Woo-Young Jung (Tactical)",
+      "player": "Ui-Jo Hwang"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Alexander Djiku replaces Mohammed Kudus (Tactical)",
+      "player": "Alexander Djiku"
+    },
+    {
+      "minute": 87,
+      "type": "substitution",
+      "description": "Abdul Rahman Baba replaces Gideon Mensah (Injury)",
+      "player": "Abdul Rahman Baba"
+    },
+    {
+      "minute": 91,
+      "type": "substitution",
+      "description": "Kyung-Won Kwon replaces Min Jae Kim (Tactical)",
+      "player": "Kyung-Won Kwon"
+    }
+  ]
+}

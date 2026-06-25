@@ -1,0 +1,402 @@
+{
+  "id": "croatia-brazil-2022",
+  "meta": {
+    "title": "Croatia vs Brazil — Quarter-finals",
+    "trigger_label": "Second half — Croatia locked at 1-1, a moment of brilliance needed",
+    "difficulty": 3,
+    "order": 73,
+    "stage": "Quarter-finals",
+    "group": null,
+    "date": "2022-12-09",
+    "stadium": "Education City Stadium "
+  },
+  "scoreline": {
+    "display": "Croatia 1 – 1 Brazil",
+    "home": 1,
+    "away": 1
+  },
+  "context": "A tense moment in this quarter-finals match. Croatia and Brazil are locked at 1-1. One tactical shift could be the difference between glory and heartbreak.",
+  "home_team": "Croatia",
+  "away_team": "Brazil",
+  "home_formation": "4-3-3",
+  "away_formation": "4-1-4-1",
+  "home_players": [
+    {
+      "name": "Dominik Livaković",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 32
+    },
+    {
+      "name": "Borna Sosa",
+      "number": 19,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 51
+    },
+    {
+      "name": "Josip Juranović",
+      "number": 22,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 47
+    },
+    {
+      "name": "Dejan Lovren",
+      "number": 6,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Joško Gvardiol",
+      "number": 20,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Marcelo Brozović",
+      "number": 11,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 61
+    },
+    {
+      "name": "Mateo Kovačić",
+      "number": 8,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 61
+    },
+    {
+      "name": "Luka Modrić",
+      "number": 10,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 53
+    },
+    {
+      "name": "Ivan Perišić",
+      "number": 4,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 65
+    },
+    {
+      "name": "Mario Pašalić",
+      "number": 15,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 64
+    },
+    {
+      "name": "Andrej Kramarić",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 50
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Alisson Ramsés Becker",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 42
+    },
+    {
+      "name": "Danilo Luiz da Silva",
+      "number": 2,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 47
+    },
+    {
+      "name": "Éder Gabriel Militão",
+      "number": 14,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 51
+    },
+    {
+      "name": "Thiago Emiliano da Silva",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 48
+    },
+    {
+      "name": "Marcos Aoás Corrêa",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 50
+    },
+    {
+      "name": "Raphael Dias Belloli",
+      "number": 11,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 55
+    },
+    {
+      "name": "Vinícius José Paixão de Oliveira Júnior",
+      "number": 20,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 53
+    },
+    {
+      "name": "Carlos Henrique Casimiro",
+      "number": 5,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 51
+    },
+    {
+      "name": "Lucas Tolentino Coelho de Lima",
+      "number": 7,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 52
+    },
+    {
+      "name": "Neymar da Silva Santos Junior",
+      "number": 10,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 56
+    },
+    {
+      "name": "Richarlison de Andrade",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 61
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Make an attacking substitution to break the deadlock",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Push the full-backs higher, create overloads out wide",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Stay patient, maintain shape, look for a moment of magic",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Go ultra-attacking — bring on an extra striker",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "C",
+    "description": "The match went to penalties after a 1-1 draw. Neymar da Silva Santos Junior (105'), Bruno Petković (116')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Make an attacking substitution to break the deadlock**\nRisk level: High. This is the positive choice. An attacking substitution signals intent and can break the deadlock. In the context of this quarter-finals match between Croatia and Brazil (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Push the full-backs higher, create overloads out wide**\nRisk level: Medium. This is the width-based approach. Overlapping full-backs create numerical advantages in wide areas. In the context of this quarter-finals match between Croatia and Brazil (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Stay patient, maintain shape, look for a moment of magic**\nRisk level: Medium. This is the patient choice. Maintaining shape avoids risk but may not be enough to win. In the context of this quarter-finals match between Croatia and Brazil (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Go ultra-attacking — bring on an extra striker**\nRisk level: Very High. This is the all-out attacking option. An extra striker increases goal threat but sacrifices midfield control. In the context of this quarter-finals match between Croatia and Brazil (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Ivan Perišić": "Ivan Perišić at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Mario Pašalić": "Mario Pašalić at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Marcelo Brozović": "Marcelo Brozović at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Mateo Kovačić": "Mateo Kovačić at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Dominik Livaković": "Dominik Livaković at 32/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Ivan Perišić",
+      "attacker_team": "Croatia",
+      "defender": "Éder Gabriel Militão",
+      "defender_team": "Brazil",
+      "advantage": "Éder Gabriel Militão",
+      "diff": "-6",
+      "critical": false
+    },
+    {
+      "attacker": "Mario Pašalić",
+      "attacker_team": "Croatia",
+      "defender": "Danilo Luiz da Silva",
+      "defender_team": "Brazil",
+      "advantage": "Danilo Luiz da Silva",
+      "diff": "-8",
+      "critical": false
+    },
+    {
+      "attacker": "Andrej Kramarić",
+      "attacker_team": "Croatia",
+      "defender": "Marcos Aoás Corrêa",
+      "defender_team": "Brazil",
+      "advantage": "Andrej Kramarić",
+      "diff": "+16",
+      "critical": true
+    },
+    {
+      "attacker": "Richarlison de Andrade",
+      "attacker_team": "Brazil",
+      "defender": "Joško Gvardiol",
+      "defender_team": "Croatia",
+      "advantage": "Joško Gvardiol",
+      "diff": "-15",
+      "critical": true
+    },
+    {
+      "attacker": "Vinícius José Paixão de Oliveira Júnior",
+      "attacker_team": "Brazil",
+      "defender": "Josip Juranović",
+      "defender_team": "Croatia",
+      "advantage": "Vinícius José Paixão de Oliveira Júnior",
+      "diff": "+19",
+      "critical": true
+    },
+    {
+      "attacker": "Raphael Dias Belloli",
+      "attacker_team": "Brazil",
+      "defender": "Borna Sosa",
+      "defender_team": "Croatia",
+      "advantage": "Borna Sosa",
+      "diff": "-13",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 24,
+      "type": "yellow_card",
+      "description": "Danilo Luiz da Silva (Brazil) shown a yellow card card — Foul",
+      "player": "Danilo Luiz da Silva"
+    },
+    {
+      "minute": 30,
+      "type": "yellow_card",
+      "description": "Marcelo Brozović (Croatia) shown a yellow card card — Foul",
+      "player": "Marcelo Brozović"
+    },
+    {
+      "minute": 55,
+      "type": "substitution",
+      "description": "Antony Matheus dos Santos replaces Raphael Dias Belloli (Tactical)",
+      "player": "Antony Matheus dos Santos"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Rodrygo Silva de Goes replaces Vinícius José Paixão de Oliveira Júnior (Tactical)",
+      "player": "Rodrygo Silva de Goes"
+    },
+    {
+      "minute": 67,
+      "type": "yellow_card",
+      "description": "Carlos Henrique Casimiro (Brazil) shown a yellow card card — Foul",
+      "player": "Carlos Henrique Casimiro"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Nikola Vlašić replaces Mario Pašalić (Tactical)",
+      "player": "Nikola Vlašić"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Bruno Petković replaces Andrej Kramarić (Tactical)",
+      "player": "Bruno Petković"
+    },
+    {
+      "minute": 76,
+      "type": "yellow_card",
+      "description": "Marcos Aoás Corrêa (Brazil) shown a yellow card card — Foul",
+      "player": "Marcos Aoás Corrêa"
+    },
+    {
+      "minute": 83,
+      "type": "substitution",
+      "description": "Pedro Guilherme Abreu dos Santos replaces Richarlison de Andrade (Tactical)",
+      "player": "Pedro Guilherme Abreu dos Santos"
+    },
+    {
+      "minute": 105,
+      "type": "goal",
+      "description": "Neymar da Silva Santos Junior scores for Brazil!",
+      "player": "Neymar da Silva Santos Junior"
+    },
+    {
+      "minute": 105,
+      "type": "substitution",
+      "description": "Lovro Majer replaces Mateo Kovačić (Tactical)",
+      "player": "Lovro Majer"
+    },
+    {
+      "minute": 105,
+      "type": "substitution",
+      "description": "Frederico Rodrigues Santos replaces Lucas Tolentino Coelho de Lima (Tactical)",
+      "player": "Frederico Rodrigues Santos"
+    },
+    {
+      "minute": 105,
+      "type": "substitution",
+      "description": "Alex Sandro Lobo Silva replaces Éder Gabriel Militão (Tactical)",
+      "player": "Alex Sandro Lobo Silva"
+    },
+    {
+      "minute": 109,
+      "type": "substitution",
+      "description": "Ante Budimir replaces Borna Sosa (Tactical)",
+      "player": "Ante Budimir"
+    },
+    {
+      "minute": 113,
+      "type": "substitution",
+      "description": "Mislav Oršić replaces Marcelo Brozović (Tactical)",
+      "player": "Mislav Oršić"
+    },
+    {
+      "minute": 116,
+      "type": "goal",
+      "description": "Bruno Petković scores for Croatia!",
+      "player": "Bruno Petković"
+    },
+    {
+      "minute": 116,
+      "type": "yellow_card",
+      "description": "Bruno Petković (Croatia) shown a yellow card card — Bad Behaviour",
+      "player": "Bruno Petković"
+    }
+  ]
+}

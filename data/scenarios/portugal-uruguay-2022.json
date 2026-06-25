@@ -1,0 +1,376 @@
+{
+  "id": "portugal-uruguay-2022",
+  "meta": {
+    "title": "Portugal vs Uruguay — Group Stage",
+    "trigger_label": "Second half — Portugal lead 2-0",
+    "difficulty": 1,
+    "order": 36,
+    "stage": "Group Stage",
+    "group": "H",
+    "date": "2022-11-28",
+    "stadium": "Lusail Stadium"
+  },
+  "scoreline": {
+    "display": "Portugal 2 – 0 Uruguay",
+    "home": 2,
+    "away": 0
+  },
+  "context": "A pivotal moment in this group stage match. Portugal lead Uruguay 2-0. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Portugal",
+  "away_team": "Uruguay",
+  "home_formation": "4-4-2",
+  "away_formation": "5-3-2",
+  "home_players": [
+    {
+      "name": "Diogo Meireles Costa",
+      "number": 22,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 33
+    },
+    {
+      "name": "João Pedro Cavaco Cancelo",
+      "number": 20,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 52
+    },
+    {
+      "name": "Nuno Mendes",
+      "number": 19,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 33
+    },
+    {
+      "name": "Rúben Santos Gato Alves Dias",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Kléper Laveran Lima Ferreira",
+      "number": 3,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 46
+    },
+    {
+      "name": "Rúben Diogo Da Silva Neves",
+      "number": 18,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 57
+    },
+    {
+      "name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "number": 10,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 60
+    },
+    {
+      "name": "William Silva de Carvalho",
+      "number": 14,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 55
+    },
+    {
+      "name": "Bruno Miguel Borges Fernandes",
+      "number": 8,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 62
+    },
+    {
+      "name": "Cristiano Ronaldo dos Santos Aveiro",
+      "number": 7,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 56
+    },
+    {
+      "name": "João Félix Sequeira",
+      "number": 11,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 50
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Sergio Rochet Álvarez",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 36
+    },
+    {
+      "name": "Diego Roberto Godín Leal",
+      "number": 3,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "José María Giménez de Vargas",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Sebastián Coates Nión",
+      "number": 19,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Guillermo Varela Olivera",
+      "number": 13,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 53
+    },
+    {
+      "name": "Mathías Olivera Miramontes",
+      "number": 16,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 55
+    },
+    {
+      "name": "Rodrigo Bentancur Colmán",
+      "number": 6,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 58
+    },
+    {
+      "name": "Matías Vecino Falero",
+      "number": 5,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 56
+    },
+    {
+      "name": "Federico Santiago Valverde Dipetta",
+      "number": 15,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 47
+    },
+    {
+      "name": "Edinson Roberto Cavani Gómez",
+      "number": 21,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 61
+    },
+    {
+      "name": "Darwin Gabriel Núñez Ribeiro",
+      "number": 11,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 62
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "Portugal won 2-0. Bruno Miguel Borges Fernandes (53'), Bruno Miguel Borges Fernandes (92')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between Portugal and Uruguay (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between Portugal and Uruguay (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between Portugal and Uruguay (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between Portugal and Uruguay (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Bruno Miguel Borges Fernandes": "Bruno Miguel Borges Fernandes at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Darwin Gabriel Núñez Ribeiro": "Darwin Gabriel Núñez Ribeiro at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Edinson Roberto Cavani Gómez": "Edinson Roberto Cavani Gómez at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Bernardo Mota Veiga de Carvalho e Silva": "Bernardo Mota Veiga de Carvalho e Silva at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Diogo Meireles Costa": "Diogo Meireles Costa at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages.",
+    "Nuno Mendes": "Nuno Mendes at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "João Félix Sequeira",
+      "attacker_team": "Portugal",
+      "defender": "Sebastián Coates Nión",
+      "defender_team": "Uruguay",
+      "advantage": "João Félix Sequeira",
+      "diff": "+6",
+      "critical": false
+    },
+    {
+      "attacker": "Darwin Gabriel Núñez Ribeiro",
+      "attacker_team": "Uruguay",
+      "defender": "Kléper Laveran Lima Ferreira",
+      "defender_team": "Portugal",
+      "advantage": "Darwin Gabriel Núñez Ribeiro",
+      "diff": "+12",
+      "critical": true
+    },
+    {
+      "attacker": "Bruno Miguel Borges Fernandes",
+      "attacker_team": "Portugal",
+      "defender": "Rodrigo Bentancur Colmán",
+      "defender_team": "Uruguay",
+      "advantage": "Rodrigo Bentancur Colmán",
+      "diff": "-9",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 5,
+      "type": "yellow_card",
+      "description": "Rodrigo Bentancur Colmán (Uruguay) shown a yellow card card — Foul",
+      "player": "Rodrigo Bentancur Colmán"
+    },
+    {
+      "minute": 37,
+      "type": "yellow_card",
+      "description": "Rúben Diogo Da Silva Neves (Portugal) shown a yellow card card — Foul",
+      "player": "Rúben Diogo Da Silva Neves"
+    },
+    {
+      "minute": 41,
+      "type": "substitution",
+      "description": "Raphaël Adelino José Guerreiro replaces Nuno Mendes (Injury)",
+      "player": "Raphaël Adelino José Guerreiro"
+    },
+    {
+      "minute": 43,
+      "type": "yellow_card",
+      "description": "Mathías Olivera Miramontes (Uruguay) shown a yellow card card — Bad Behaviour",
+      "player": "Mathías Olivera Miramontes"
+    },
+    {
+      "minute": 53,
+      "type": "goal",
+      "description": "Bruno Miguel Borges Fernandes scores for Portugal!",
+      "player": "Bruno Miguel Borges Fernandes"
+    },
+    {
+      "minute": 61,
+      "type": "substitution",
+      "description": "Giorgian Daniel De Arrascaeta Benedetti replaces Matías Vecino Falero (Tactical)",
+      "player": "Giorgian Daniel De Arrascaeta Benedetti"
+    },
+    {
+      "minute": 61,
+      "type": "substitution",
+      "description": "Facundo Pellistri Rebollo replaces Diego Roberto Godín Leal (Tactical)",
+      "player": "Facundo Pellistri Rebollo"
+    },
+    {
+      "minute": 68,
+      "type": "substitution",
+      "description": "Rafael Alexandre Conceição Leão replaces Rúben Diogo Da Silva Neves (Tactical)",
+      "player": "Rafael Alexandre Conceição Leão"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Maximiliano Gómez González replaces Darwin Gabriel Núñez Ribeiro (Tactical)",
+      "player": "Maximiliano Gómez González"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "description": "Luis Alberto Suárez Díaz replaces Edinson Roberto Cavani Gómez (Tactical)",
+      "player": "Luis Alberto Suárez Díaz"
+    },
+    {
+      "minute": 76,
+      "type": "yellow_card",
+      "description": "João Félix Sequeira (Portugal) shown a yellow card card — Foul",
+      "player": "João Félix Sequeira"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Gonçalo Matias Ramos replaces Cristiano Ronaldo dos Santos Aveiro (Tactical)",
+      "player": "Gonçalo Matias Ramos"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Matheus Luiz Nunes replaces João Félix Sequeira (Tactical)",
+      "player": "Matheus Luiz Nunes"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "João Maria Lobo Alves Palhinha Gonçalves replaces William Silva de Carvalho (Tactical)",
+      "player": "João Maria Lobo Alves Palhinha Gonçalves"
+    },
+    {
+      "minute": 85,
+      "type": "substitution",
+      "description": "Matías Nicolás Viña Susperreguy replaces Mathías Olivera Miramontes (Tactical)",
+      "player": "Matías Nicolás Viña Susperreguy"
+    },
+    {
+      "minute": 88,
+      "type": "yellow_card",
+      "description": "Rúben Santos Gato Alves Dias (Portugal) shown a yellow card card — Bad Behaviour",
+      "player": "Rúben Santos Gato Alves Dias"
+    },
+    {
+      "minute": 92,
+      "type": "goal",
+      "description": "Bruno Miguel Borges Fernandes scores for Portugal! (Penalty)",
+      "player": "Bruno Miguel Borges Fernandes"
+    }
+  ]
+}

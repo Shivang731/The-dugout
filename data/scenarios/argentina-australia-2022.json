@@ -1,0 +1,390 @@
+{
+  "id": "argentina-australia-2022",
+  "meta": {
+    "title": "Argentina vs Australia — Round of 16",
+    "trigger_label": "Second half — Argentina lead 2-1",
+    "difficulty": 2,
+    "order": 69,
+    "stage": "Round of 16",
+    "group": null,
+    "date": "2022-12-03",
+    "stadium": "Ahmad bin Ali Stadium"
+  },
+  "scoreline": {
+    "display": "Argentina 2 – 1 Australia",
+    "home": 2,
+    "away": 1
+  },
+  "context": "A pivotal moment in this round of 16 match. Argentina lead Australia 2-1. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Argentina",
+  "away_team": "Australia",
+  "home_formation": "4-3-3",
+  "away_formation": "4-4-2",
+  "home_players": [
+    {
+      "name": "Damián Emiliano Martínez",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 44
+    },
+    {
+      "name": "Marcos Javier Acuña",
+      "number": 8,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 56
+    },
+    {
+      "name": "Nahuel Molina Lucero",
+      "number": 26,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 50
+    },
+    {
+      "name": "Nicolás Hernán Otamendi",
+      "number": 19,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 46
+    },
+    {
+      "name": "Cristian Gabriel Romero",
+      "number": 13,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Enzo Fernandez",
+      "number": 24,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 49
+    },
+    {
+      "name": "Rodrigo Javier De Paul",
+      "number": 7,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 50
+    },
+    {
+      "name": "Alexis Mac Allister",
+      "number": 20,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 55
+    },
+    {
+      "name": "Alejandro Darío Gómez",
+      "number": 17,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 55
+    },
+    {
+      "name": "Julián Álvarez",
+      "number": 9,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 63
+    },
+    {
+      "name": "Lionel Andrés Messi Cuccittini",
+      "number": 10,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 59
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Mathew Ryan",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 30
+    },
+    {
+      "name": "Aziz Eraltay Behich",
+      "number": 16,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 44
+    },
+    {
+      "name": "Miloš Degenek",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 48
+    },
+    {
+      "name": "Harry Souttar",
+      "number": 19,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Kye Rowles",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Mathew Leckie",
+      "number": 7,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 46
+    },
+    {
+      "name": "Riley McGree",
+      "number": 14,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 49
+    },
+    {
+      "name": "Aaron Mooy",
+      "number": 13,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 52
+    },
+    {
+      "name": "Keanu Baccus",
+      "number": 26,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 51
+    },
+    {
+      "name": "Jackson Irvine",
+      "number": 22,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 62
+    },
+    {
+      "name": "Mitchell Thomas Duke",
+      "number": 15,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 60
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "Argentina won 2-1. Lionel Andrés Messi Cuccittini (34'), Julián Álvarez (56'), None (76')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this round of 16 match between Argentina and Australia (2-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this round of 16 match between Argentina and Australia (2-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this round of 16 match between Argentina and Australia (2-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this round of 16 match between Argentina and Australia (2-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Julián Álvarez": "Julián Álvarez at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Jackson Irvine": "Jackson Irvine at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Mitchell Thomas Duke": "Mitchell Thomas Duke at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Lionel Andrés Messi Cuccittini": "Lionel Andrés Messi Cuccittini at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Mathew Ryan": "Mathew Ryan at 30/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Alejandro Darío Gómez",
+      "attacker_team": "Argentina",
+      "defender": "Miloš Degenek",
+      "defender_team": "Australia",
+      "advantage": "Alejandro Darío Gómez",
+      "diff": "+20",
+      "critical": true
+    },
+    {
+      "attacker": "Julián Álvarez",
+      "attacker_team": "Argentina",
+      "defender": "Aziz Eraltay Behich",
+      "defender_team": "Australia",
+      "advantage": "Aziz Eraltay Behich",
+      "diff": "-12",
+      "critical": true
+    },
+    {
+      "attacker": "Lionel Andrés Messi Cuccittini",
+      "attacker_team": "Argentina",
+      "defender": "Kye Rowles",
+      "defender_team": "Australia",
+      "advantage": "Lionel Andrés Messi Cuccittini",
+      "diff": "+1",
+      "critical": false
+    },
+    {
+      "attacker": "Mitchell Thomas Duke",
+      "attacker_team": "Australia",
+      "defender": "Cristian Gabriel Romero",
+      "defender_team": "Argentina",
+      "advantage": "Mitchell Thomas Duke",
+      "diff": "+13",
+      "critical": true
+    },
+    {
+      "attacker": "Riley McGree",
+      "attacker_team": "Australia",
+      "defender": "Nahuel Molina Lucero",
+      "defender_team": "Argentina",
+      "advantage": "Nahuel Molina Lucero",
+      "diff": "-1",
+      "critical": false
+    },
+    {
+      "attacker": "Mathew Leckie",
+      "attacker_team": "Australia",
+      "defender": "Marcos Javier Acuña",
+      "defender_team": "Argentina",
+      "advantage": "Mathew Leckie",
+      "diff": "+8",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 14,
+      "type": "yellow_card",
+      "description": "Jackson Irvine (Australia) shown a yellow card card — Foul",
+      "player": "Jackson Irvine"
+    },
+    {
+      "minute": 34,
+      "type": "goal",
+      "description": "Lionel Andrés Messi Cuccittini scores for Argentina!",
+      "player": "Lionel Andrés Messi Cuccittini"
+    },
+    {
+      "minute": 37,
+      "type": "yellow_card",
+      "description": "Miloš Degenek (Australia) shown a yellow card card — Foul",
+      "player": "Miloš Degenek"
+    },
+    {
+      "minute": 49,
+      "type": "substitution",
+      "description": "Lisandro Martínez replaces Alejandro Darío Gómez (Tactical)",
+      "player": "Lisandro Martínez"
+    },
+    {
+      "minute": 56,
+      "type": "goal",
+      "description": "Julián Álvarez scores for Argentina!",
+      "player": "Julián Álvarez"
+    },
+    {
+      "minute": 57,
+      "type": "substitution",
+      "description": "Craig Goodwin replaces Riley McGree (Tactical)",
+      "player": "Craig Goodwin"
+    },
+    {
+      "minute": 57,
+      "type": "substitution",
+      "description": "Ajdin Hrustic replaces Keanu Baccus (Tactical)",
+      "player": "Ajdin Hrustic"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Lautaro Javier Martínez replaces Julián Álvarez (Tactical)",
+      "player": "Lautaro Javier Martínez"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Nicolás Alejandro Tagliafico replaces Marcos Javier Acuña (Tactical)",
+      "player": "Nicolás Alejandro Tagliafico"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Jamie MacLaren replaces Mitchell Thomas Duke (Tactical)",
+      "player": "Jamie MacLaren"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Garang Kuol replaces Mathew Leckie (Tactical)",
+      "player": "Garang Kuol"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Fran Karačić replaces Miloš Degenek (Tactical)",
+      "player": "Fran Karačić"
+    },
+    {
+      "minute": 76,
+      "type": "goal",
+      "description": "None scores for Australia! (Own Goal)",
+      "player": null
+    },
+    {
+      "minute": 79,
+      "type": "substitution",
+      "description": "Exequiel Alejandro Palacios replaces Nahuel Molina Lucero (Tactical)",
+      "player": "Exequiel Alejandro Palacios"
+    },
+    {
+      "minute": 79,
+      "type": "substitution",
+      "description": "Gonzalo Ariel Montiel replaces Alexis Mac Allister (Tactical)",
+      "player": "Gonzalo Ariel Montiel"
+    }
+  ]
+}

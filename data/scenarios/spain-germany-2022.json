@@ -1,0 +1,390 @@
+{
+  "id": "spain-germany-2022",
+  "meta": {
+    "title": "Spain vs Germany — Group Stage",
+    "trigger_label": "Second half — Spain locked at 1-1, a moment of brilliance needed",
+    "difficulty": 1,
+    "order": 39,
+    "stage": "Group Stage",
+    "group": "E",
+    "date": "2022-11-27",
+    "stadium": "Al Bayt Stadium"
+  },
+  "scoreline": {
+    "display": "Spain 1 – 1 Germany",
+    "home": 1,
+    "away": 1
+  },
+  "context": "A tense moment in this group stage match. Spain and Germany are locked at 1-1. One tactical shift could be the difference between glory and heartbreak.",
+  "home_team": "Spain",
+  "away_team": "Germany",
+  "home_formation": "4-3-3",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Unai Simón Mendibil",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 34
+    },
+    {
+      "name": "Jordi Alba Ramos",
+      "number": 18,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 40
+    },
+    {
+      "name": "Daniel Carvajal Ramos",
+      "number": 20,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 54
+    },
+    {
+      "name": "Aymeric Laporte",
+      "number": 24,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Rodrigo Hernández Cascante",
+      "number": 16,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 51
+    },
+    {
+      "name": "Sergio Busquets i Burgos",
+      "number": 5,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 48
+    },
+    {
+      "name": "Pedro González López",
+      "number": 26,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 45
+    },
+    {
+      "name": "Pablo Martín Páez Gavira",
+      "number": 9,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 46
+    },
+    {
+      "name": "Ferrán Torres García",
+      "number": 11,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 45
+    },
+    {
+      "name": "Daniel Olmo Carvajal",
+      "number": 21,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 64
+    },
+    {
+      "name": "Marco Asensio Willemsen",
+      "number": 10,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 51
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Manuel Neuer",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 37
+    },
+    {
+      "name": "Thilo Kehrer",
+      "number": 5,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 50
+    },
+    {
+      "name": "David Raum",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 50
+    },
+    {
+      "name": "Antonio Rüdiger",
+      "number": 2,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Niklas Süle",
+      "number": 15,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Joshua Kimmich",
+      "number": 6,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Leon Goretzka",
+      "number": 8,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 60
+    },
+    {
+      "name": "İlkay Gündoğan",
+      "number": 21,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 62
+    },
+    {
+      "name": "Serge Gnabry",
+      "number": 10,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 63
+    },
+    {
+      "name": "Jamal Musiala",
+      "number": 14,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 55
+    },
+    {
+      "name": "Thomas Müller",
+      "number": 13,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 57
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Make an attacking substitution to break the deadlock",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Push the full-backs higher, create overloads out wide",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Stay patient, maintain shape, look for a moment of magic",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Go ultra-attacking — bring on an extra striker",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "The match ended 1-1. Álvaro Borja Morata Martín (61'), Niclas Füllkrug (82')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Make an attacking substitution to break the deadlock**\nRisk level: High. This is the positive choice. An attacking substitution signals intent and can break the deadlock. In the context of this group stage match between Spain and Germany (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Push the full-backs higher, create overloads out wide**\nRisk level: Medium. This is the width-based approach. Overlapping full-backs create numerical advantages in wide areas. In the context of this group stage match between Spain and Germany (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Stay patient, maintain shape, look for a moment of magic**\nRisk level: Medium. This is the patient choice. Maintaining shape avoids risk but may not be enough to win. In the context of this group stage match between Spain and Germany (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Go ultra-attacking — bring on an extra striker**\nRisk level: Very High. This is the all-out attacking option. An extra striker increases goal threat but sacrifices midfield control. In the context of this group stage match between Spain and Germany (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Daniel Olmo Carvajal": "Daniel Olmo Carvajal at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Serge Gnabry": "Serge Gnabry at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "İlkay Gündoğan": "İlkay Gündoğan at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Leon Goretzka": "Leon Goretzka at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Unai Simón Mendibil": "Unai Simón Mendibil at 34/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Daniel Olmo Carvajal",
+      "attacker_team": "Spain",
+      "defender": "Thilo Kehrer",
+      "defender_team": "Germany",
+      "advantage": "Daniel Olmo Carvajal",
+      "diff": "+4",
+      "critical": false
+    },
+    {
+      "attacker": "Jamal Musiala",
+      "attacker_team": "Germany",
+      "defender": "Daniel Carvajal Ramos",
+      "defender_team": "Spain",
+      "advantage": "Daniel Carvajal Ramos",
+      "diff": "-6",
+      "critical": false
+    },
+    {
+      "attacker": "Ferrán Torres García",
+      "attacker_team": "Spain",
+      "defender": "David Raum",
+      "defender_team": "Germany",
+      "advantage": "David Raum",
+      "diff": "-12",
+      "critical": false
+    },
+    {
+      "attacker": "Serge Gnabry",
+      "attacker_team": "Germany",
+      "defender": "Jordi Alba Ramos",
+      "defender_team": "Spain",
+      "advantage": "Serge Gnabry",
+      "diff": "+11",
+      "critical": false
+    },
+    {
+      "attacker": "Marco Asensio Willemsen",
+      "attacker_team": "Spain",
+      "defender": "Niklas Süle",
+      "defender_team": "Germany",
+      "advantage": "Niklas Süle",
+      "diff": "-7",
+      "critical": false
+    },
+    {
+      "attacker": "Thomas Müller",
+      "attacker_team": "Germany",
+      "defender": "Rodrigo Hernández Cascante",
+      "defender_team": "Spain",
+      "advantage": "Thomas Müller",
+      "diff": "+1",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 36,
+      "type": "yellow_card",
+      "description": "Thilo Kehrer (Germany) shown a yellow card card — Foul",
+      "player": "Thilo Kehrer"
+    },
+    {
+      "minute": 43,
+      "type": "yellow_card",
+      "description": "Sergio Busquets i Burgos (Spain) shown a yellow card card — Foul",
+      "player": "Sergio Busquets i Burgos"
+    },
+    {
+      "minute": 53,
+      "type": "substitution",
+      "description": "Álvaro Borja Morata Martín replaces Ferrán Torres García (Tactical)",
+      "player": "Álvaro Borja Morata Martín"
+    },
+    {
+      "minute": 56,
+      "type": "yellow_card",
+      "description": "Leon Goretzka (Germany) shown a yellow card card — Foul",
+      "player": "Leon Goretzka"
+    },
+    {
+      "minute": 59,
+      "type": "yellow_card",
+      "description": "Joshua Kimmich (Germany) shown a yellow card card — Foul",
+      "player": "Joshua Kimmich"
+    },
+    {
+      "minute": 61,
+      "type": "goal",
+      "description": "Álvaro Borja Morata Martín scores for Spain!",
+      "player": "Álvaro Borja Morata Martín"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Jorge Resurrección Merodio replaces Marco Asensio Willemsen (Tactical)",
+      "player": "Jorge Resurrección Merodio"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Nicholas Williams Arthuer replaces Pablo Martín Páez Gavira (Tactical)",
+      "player": "Nicholas Williams Arthuer"
+    },
+    {
+      "minute": 69,
+      "type": "substitution",
+      "description": "Leroy Sané replaces İlkay Gündoğan (Tactical)",
+      "player": "Leroy Sané"
+    },
+    {
+      "minute": 69,
+      "type": "substitution",
+      "description": "Niclas Füllkrug replaces Thomas Müller (Tactical)",
+      "player": "Niclas Füllkrug"
+    },
+    {
+      "minute": 69,
+      "type": "substitution",
+      "description": "Lukas Klostermann replaces Thilo Kehrer (Tactical)",
+      "player": "Lukas Klostermann"
+    },
+    {
+      "minute": 81,
+      "type": "substitution",
+      "description": "Alejandro Balde Martínez replaces Jordi Alba Ramos (Tactical)",
+      "player": "Alejandro Balde Martínez"
+    },
+    {
+      "minute": 82,
+      "type": "goal",
+      "description": "Niclas Füllkrug scores for Germany!",
+      "player": "Niclas Füllkrug"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Jonas Hofmann replaces Serge Gnabry (Tactical)",
+      "player": "Jonas Hofmann"
+    },
+    {
+      "minute": 86,
+      "type": "substitution",
+      "description": "Nico Schlotterbeck replaces David Raum (Tactical)",
+      "player": "Nico Schlotterbeck"
+    }
+  ]
+}

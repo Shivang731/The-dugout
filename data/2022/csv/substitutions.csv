@@ -1,0 +1,588 @@
+match_id,minute,second,team,player_off,player_in,reason
+3857278,47,1,Iran,Milad Mohammadi,Ali Karimi,Injury
+3857278,45,0,United States,Christian Pulisic,Brenden Aaronson,Tactical
+3857278,45,0,Iran,Sardar Azmoun,Saman Ghoddos,Tactical
+3857278,64,48,United States,Weston McKennie,Kellyn Kai Perry-Acosta,Tactical
+3857278,70,36,Iran,Ahmad Nourollahi,Mehdi Torabi,Tactical
+3857278,71,3,Iran,Ehsan Hajsafi,Abolfazl Jalali,Tactical
+3857278,76,55,United States,Joshua Sargent,Haji Wright,Injury
+3857278,76,56,Iran,Ali Gholizadeh,Karim Ansarifard,Tactical
+3857278,81,8,United States,Timothy Weah,Walker Zimmerman,Tactical
+3857278,81,9,United States,Sergino Dest,Shaquell Moore,Tactical
+3857254,45,32,Denmark,Thomas Delaney,Mikkel Damsgaard,Injury
+3857254,63,59,Denmark,Simon Thorup Kjær,Mathias Jensen,Tactical
+3857254,64,28,Denmark,Andreas Skov Olsen,Jesper Lindstrøm,Tactical
+3857254,64,28,Denmark,Kasper Dolberg,Andreas Evald Cornelius,Tactical
+3857254,66,43,Tunisia,Anis Ben Slimane,Naïm Sliti,Tactical
+3857254,79,47,Tunisia,Youssef Msakni,Hannibal Mejbri,Tactical
+3857254,80,1,Tunisia,Issam Jebali,Taha Yassine Khenissi,Tactical
+3857254,87,17,Tunisia,Mohamed Dräger,Wajdi Kechrida,Tactical
+3857254,87,46,Tunisia,Aïssa Bilal Laïdouni,Ferjani Sassi,Tactical
+3869253,45,0,South Korea,Jin-Su Kim,Chul Hong,Tactical
+3869253,45,0,South Korea,Woo-Young Jung,Jun-Ho Son,Tactical
+3869253,62,33,Brazil,Éder Gabriel Militão,Daniel Alves da Silva,Tactical
+3869253,64,26,South Korea,In-Beom Hwang,Seung-Ho Paik,Tactical
+3869253,71,44,Brazil,Danilo Luiz da Silva,Gleison Bremer Silva Nascimento,Tactical
+3869253,71,46,Brazil,Vinícius José Paixão de Oliveira Júnior,Gabriel Teodoro Martinelli Silva,Tactical
+3869253,73,28,South Korea,Jae-Sung Lee,Kang-In Lee,Tactical
+3869253,79,31,South Korea,Gue-Sung Cho,Ui-Jo Hwang,Tactical
+3869253,79,53,Brazil,Alisson Ramsés Becker,Weverton Pereira da Silva,Tactical
+3869253,80,17,Brazil,Neymar da Silva Santos Junior,Rodrygo Silva de Goes,Tactical
+3869684,45,0,Morocco,Abdelhamid Sabiri,Ilias Chair,Tactical
+3869684,55,2,Morocco,Bilal El Khannous,Azzedine Ounahi,Tactical
+3869684,61,4,Croatia,Andrej Kramarić,Nikola Vlašić,Injury
+3869684,63,17,Morocco,Sofiane Boufal,Anass Zaroury,Tactical
+3869684,63,24,Morocco,Achraf Dari,Badr Banoun,Injury
+3869684,66,48,Morocco,Jawad El Yamiq,Selim Amallah,Injury
+3869684,66,55,Croatia,Lovro Majer,Mario Pašalić,Tactical
+3869684,66,58,Croatia,Marko Livaja,Bruno Petković,Tactical
+3869684,94,52,Croatia,Mislav Oršić,Kristijan Jakić,Tactical
+3857257,45,0,Australia,Craig Goodwin,Keanu Baccus,Tactical
+3857257,45,0,Denmark,Rasmus Nissen Kristensen,Alexander Hartmann Bah,Tactical
+3857257,58,13,Denmark,Martin Braithwaite Christensen,Kasper Dolberg,Tactical
+3857257,58,30,Denmark,Mathias Jensen,Mikkel Damsgaard,Tactical
+3857257,68,56,Denmark,Andreas Skov Olsen,Robert Skov,Tactical
+3857257,69,21,Denmark,Joakim Mæhle,Andreas Evald Cornelius,Tactical
+3857257,73,15,Australia,Riley McGree,Bailey Wright,Tactical
+3857257,81,52,Australia,Mitchell Thomas Duke,Jamie MacLaren,Tactical
+3857257,88,8,Australia,Mathew Leckie,Ajdin Hrustic,Tactical
+3857282,45,0,Wales,Daniel James,Kieffer Roberto Francisco Moore,Tactical
+3857282,65,12,United States,Weston McKennie,Brenden Aaronson,Tactical
+3857282,73,29,United States,Joshua Sargent,Haji Wright,Tactical
+3857282,74,15,United States,Sergino Dest,DeAndre Yedlin,Tactical
+3857282,74,15,United States,Yunus Dimoara Musah,Kellyn Kai Perry-Acosta,Injury
+3857282,78,19,Wales,Neco Williams,Brennan Johnson,Tactical
+3857282,87,33,United States,Timothy Weah,Jordan Morris,Tactical
+3857282,92,35,Wales,Harry Wilson,Sorba Thomas,Tactical
+3857282,94,42,Wales,Ethan Ampadu,Joseff Morrell,Injury
+3857296,45,0,Belgium,Dries Mertens,Romelu Lukaku Menama,Tactical
+3857296,58,5,Belgium,Leandro Trossard,Thorgan Hazard,Tactical
+3857296,63,16,Croatia,Marko Livaja,Bruno Petković,Tactical
+3857296,63,42,Croatia,Andrej Kramarić,Mario Pašalić,Tactical
+3857296,71,30,Belgium,Yannick Ferreira Carrasco,Jeremy Doku,Tactical
+3857296,71,37,Belgium,Leander Dendoncker,Youri Tielemans,Tactical
+3857296,86,37,Belgium,Thomas Meunier,Eden Hazard,Tactical
+3857296,90,54,Croatia,Mateo Kovačić,Lovro Majer,Tactical
+3869254,45,0,Switzerland,Fabian Lukas Schär,Eray Ervin Cömert,Tactical
+3869254,53,36,Switzerland,Remo Freuler,Denis Lemi Zakaria Lako Lado,Tactical
+3869254,53,54,Switzerland,Djibril Sow,Haris Seferović,Tactical
+3869254,65,43,Switzerland,Ruben Vargas,Noah Okafor,Tactical
+3869254,72,35,Portugal,Gonçalo Matias Ramos,Ricardo Jorge Luz Horta,Tactical
+3869254,72,49,Portugal,João Félix Sequeira,Cristiano Ronaldo dos Santos Aveiro,Tactical
+3869254,73,4,Portugal,Otávio Edmilson da Silva Monteiro,Vitor Machado Ferreira,Tactical
+3869254,80,39,Portugal,Bernardo Mota Veiga de Carvalho e Silva,Rúben Diogo Da Silva Neves,Tactical
+3869254,86,40,Portugal,Bruno Miguel Borges Fernandes,Rafael Alexandre Conceição Leão,Tactical
+3869254,88,36,Switzerland,Breel-Donald Embolo,Ardon Jashari,Tactical
+3857279,12,2,France,Lucas Hernández Pi,Theo Bernard François Hernández,Injury
+3857279,55,35,Australia,Mitchell Thomas Duke,Jason Cummings,Tactical
+3857279,72,25,Australia,Riley McGree,Awer Denis Bul Mabil,Tactical
+3857279,72,40,Australia,Craig Goodwin,Garang Kuol,Tactical
+3857279,76,9,France,Aurélien Djani Tchouaméni,Youssouf Fofana,Tactical
+3857279,76,19,France,Ousmane Dembélé,Kingsley Coman,Tactical
+3857279,84,3,Australia,Jackson Irvine,Keanu Baccus,Tactical
+3857279,84,7,Australia,Nathaniel Atkinson,Miloš Degenek,Tactical
+3857279,88,34,France,Benjamin Pavard,Jules Koundé,Tactical
+3857279,88,35,France,Olivier Giroud,Marcus Thuram,Tactical
+3857272,67,51,England,Raheem Sterling,Jack Grealish,Tactical
+3857272,68,17,England,Jude Bellingham,Jordan Brian Henderson,Tactical
+3857272,76,42,United States,Weston McKennie,Brenden Aaronson,Tactical
+3857272,77,13,United States,Sergino Dest,Shaquell Moore,Tactical
+3857272,77,42,England,Bukayo Saka,Marcus Rashford,Tactical
+3857272,82,21,United States,Timothy Weah,Giovanni Reyna,Tactical
+3857272,82,30,United States,Haji Wright,Joshua Sargent,Tactical
+3857277,45,0,Croatia,Nikola Vlašić,Mario Pašalić,Tactical
+3857277,59,52,Morocco,Noussair Mazraoui,Yahia Attiyat allah,Injury
+3857277,64,46,Morocco,Sofiane Boufal,Abdessamad Ezzalzouli,Tactical
+3857277,69,58,Croatia,Andrej Kramarić,Marko Livaja,Tactical
+3857277,78,43,Croatia,Mateo Kovačić,Lovro Majer,Tactical
+3857277,80,46,Morocco,Youssef En-Nesyri,Abderrazak Hamdallah,Tactical
+3857277,81,13,Morocco,Azzedine Ounahi,Abdelhamid Sabiri,Tactical
+3857277,89,16,Croatia,Ivan Perišić,Mislav Oršić,Tactical
+3869118,45,0,Senegal,Pathé Ismaël Ciss,Pape Gueye,Tactical
+3869118,45,0,Senegal,Krépin Diatta,Pape Matar Sarr,Tactical
+3869118,45,1,Senegal,Iliman Ndiaye,Cheikh Ahmadou Bamba Mbacke Dieng,Tactical
+3869118,64,19,England,Bukayo Saka,Marcus Rashford,Tactical
+3869118,64,27,England,Philip Foden,Jack Grealish,Tactical
+3869118,71,7,Senegal,Boulaye Dia,Famara Diedhiou,Tactical
+3869118,75,55,England,Jude Bellingham,Mason Mount,Tactical
+3869118,76,10,England,John Stones,Eric Dier,Tactical
+3869118,81,9,England,Jordan Brian Henderson,Kalvin Phillips,Tactical
+3869118,83,54,Senegal,Ismail Jakobs,Fodé Ballo Touré,Tactical
+3857264,45,0,Poland,Karol Świderski,Michał Skóraś,Tactical
+3857264,45,0,Poland,Przemysław Frankowski,Jakub Kamiński,Tactical
+3857264,58,18,Argentina,Ángel Fabián Di María Hernández,Leandro Daniel Paredes,Tactical
+3857264,58,27,Argentina,Marcos Javier Acuña,Nicolás Alejandro Tagliafico,Tactical
+3857264,61,45,Poland,Krystian Bielik,Damian Szymański,Tactical
+3857264,72,0,Poland,Bartosz Bereszyński,Artur Jędrzejczyk,Tactical
+3857264,78,5,Argentina,Julián Álvarez,Lautaro Javier Martínez,Tactical
+3857264,78,24,Argentina,Enzo Fernandez,Germán Alejandro Pezzella,Tactical
+3857264,82,47,Argentina,Alexis Mac Allister,Thiago Ezequiel Almada,Tactical
+3857264,82,57,Poland,Grzegorz Krychowiak,Krzysztof Piątek,Tactical
+3857288,45,0,Tunisia,Mohamed Dräger,Ferjani Sassi,Tactical
+3857288,63,1,Australia,Mitchell Thomas Duke,Jamie MacLaren,Tactical
+3857288,63,5,Australia,Riley McGree,Ajdin Hrustic,Tactical
+3857288,66,47,Tunisia,Aïssa Bilal Laïdouni,Wahbi Khazri,Tactical
+3857288,72,43,Tunisia,Issam Jebali,Taha Yassine Khenissi,Tactical
+3857288,72,43,Tunisia,Dylan Daniel Mahmoud Bronn,Wajdi Kechrida,Tactical
+3857288,74,49,Australia,Fran Karačić,Miloš Degenek,Tactical
+3857288,84,28,Australia,Mathew Leckie,Keanu Baccus,Tactical
+3857288,84,32,Australia,Craig Goodwin,Awer Denis Bul Mabil,Tactical
+3857292,45,0,Costa Rica,Brandon Aguilera Zamora,Youstin Delfin Salas Gómez,Tactical
+3857292,45,0,Germany,Leon Goretzka,Lukas Klostermann,Tactical
+3857292,53,56,Germany,İlkay Gündoğan,Niclas Füllkrug,Tactical
+3857292,65,51,Germany,Thomas Müller,Kai Havertz,Tactical
+3857292,65,52,Germany,David Raum,Mario Götze,Tactical
+3857292,73,14,Costa Rica,Johan Alberto Venegas Ulloa,Ronald Alberto Matarrita Ulate,Tactical
+3857292,73,30,Costa Rica,Keysher Fuller Spence,Jewison Bennette,Tactical
+3857292,92,29,Costa Rica,Bryan Oviedo,Anthony Daniel Contreras Enríquez,Tactical
+3857292,92,32,Costa Rica,Yeltsin Ignacio Tejeda Valverde,Roan Roberto Wilson Gordon,Tactical
+3857292,93,37,Germany,Niklas Süle,Matthias Ginter,Tactical
+3869685,40,32,France,Ousmane Dembélé,Randal Kolo Muani,Tactical
+3869685,41,1,France,Olivier Giroud,Marcus Thuram,Tactical
+3869685,63,51,Argentina,Ángel Fabián Di María Hernández,Marcos Javier Acuña,Tactical
+3869685,70,27,France,Theo Bernard François Hernández,Eduardo Camavinga,Tactical
+3869685,70,29,France,Antoine Griezmann,Kingsley Coman,Tactical
+3869685,90,0,Argentina,Nahuel Molina Lucero,Gonzalo Ariel Montiel,Tactical
+3869685,95,10,France,Adrien Rabiot,Youssouf Fofana,Tactical
+3869685,101,37,Argentina,Rodrigo Javier De Paul,Leandro Daniel Paredes,Tactical
+3869685,101,49,Argentina,Julián Álvarez,Lautaro Javier Martínez,Tactical
+3869685,112,28,France,Raphaël Varane,Ibrahima Konaté,Injury
+3869685,115,22,Argentina,Alexis Mac Allister,Germán Alejandro Pezzella,Tactical
+3869685,120,35,France,Jules Koundé,Axel Disasi,Tactical
+3869685,120,46,Argentina,Nicolás Alejandro Tagliafico,Paulo Bruno Exequiel Dybala,Tactical
+3869486,50,43,Portugal,Raphaël Adelino José Guerreiro,João Pedro Cavaco Cancelo,Tactical
+3869486,50,47,Portugal,Rúben Diogo Da Silva Neves,Cristiano Ronaldo dos Santos Aveiro,Tactical
+3869486,56,57,Morocco,Romain Saïss,Achraf Dari,Injury
+3869486,63,46,Morocco,Selim Amallah,Walid Cheddira,Tactical
+3869486,64,0,Morocco,Youssef En-Nesyri,Badr Banoun,Tactical
+3869486,68,21,Portugal,Gonçalo Matias Ramos,Rafael Alexandre Conceição Leão,Tactical
+3869486,68,29,Portugal,Otávio Edmilson da Silva Monteiro,Vitor Machado Ferreira,Tactical
+3869486,78,40,Portugal,José Diogo Dalot Teixeira,Ricardo Jorge Luz Horta,Tactical
+3869486,80,35,Morocco,Hakim Ziyech,Zakaria Aboukhlal,Tactical
+3869486,80,52,Morocco,Sofiane Boufal,Yahya Jabrane,Tactical
+3869552,20,36,Morocco,Romain Saïss,Selim Amallah,Injury
+3869552,45,0,Morocco,Noussair Mazraoui,Yahia Attiyat allah,Tactical
+3869552,64,45,France,Olivier Giroud,Marcus Thuram,Tactical
+3869552,65,43,Morocco,Youssef En-Nesyri,Abderrazak Hamdallah,Tactical
+3869552,66,5,Morocco,Sofiane Boufal,Zakaria Aboukhlal,Tactical
+3869552,77,31,Morocco,Selim Amallah,Abdessamad Ezzalzouli,Tactical
+3869552,78,7,France,Ousmane Dembélé,Randal Kolo Muani,Tactical
+3857295,45,0,Japan,Yuto Nagatomo,Hiroki Ito,Tactical
+3857295,45,0,Japan,Ayase Ueda,Takuma Asano,Tactical
+3857295,61,34,Japan,Miki Yamane,Kaoru Mitoma,Tactical
+3857295,64,4,Costa Rica,Gerson Torres Barrantes,Brandon Aguilera Zamora,Tactical
+3857295,64,27,Costa Rica,Anthony Daniel Contreras Enríquez,Jewison Bennette,Tactical
+3857295,66,11,Japan,Ritsu Doan,Junya Ito,Tactical
+3857295,81,49,Japan,Yuki Soma,Takumi Minamino,Tactical
+3857295,88,49,Costa Rica,Celso Borges Mora,Youstin Delfin Salas Gómez,Tactical
+3857295,94,20,Costa Rica,Joel Nathaniel Campbell Samuels,Daniel Alonso Chacón Salas,Tactical
+3857281,45,0,Canada,Cyle Larin,Jonathan Osorio,Tactical
+3857281,45,0,Canada,Stephen Antunes Eustáquio,Ismael Koné,Injury
+3857281,59,58,Croatia,Marko Livaja,Bruno Petković,Tactical
+3857281,61,25,Canada,Richie Laryea,David Junior Hoilett,Tactical
+3857281,72,11,Croatia,Andrej Kramarić,Nikola Vlašić,Tactical
+3857281,72,27,Canada,Jonathan David,Lucas Daniel Cavallini,Tactical
+3857281,72,28,Canada,Atiba Hutchinson,Sam Adekugbe,Tactical
+3857281,85,20,Croatia,Ivan Perišić,Mislav Oršić,Tactical
+3857281,85,25,Croatia,Luka Modrić,Mario Pašalić,Tactical
+3857281,85,42,Croatia,Mateo Kovačić,Lovro Majer,Tactical
+3857287,63,36,Uruguay,Luis Alberto Suárez Díaz,Edinson Roberto Cavani Gómez,Tactical
+3857287,73,34,South Korea,Ui-Jo Hwang,Gue-Sung Cho,Tactical
+3857287,73,38,South Korea,Jae-Sung Lee,Jun-Ho Son,Tactical
+3857287,74,3,South Korea,Sang-Ho Na,Kang-In Lee,Tactical
+3857287,77,50,Uruguay,Matías Vecino Falero,Diego Nicolás De La Cruz Arcosa,Tactical
+3857287,78,17,Uruguay,Mathías Olivera Miramontes,Matías Nicolás Viña Susperreguy,Tactical
+3857287,87,22,Uruguay,Facundo Pellistri Rebollo,Guillermo Varela Olivera,Tactical
+3857299,45,0,South Korea,Woo-Yeong Jeong,Sang-Ho Na,Tactical
+3857299,56,19,South Korea,Chang-Hoon Kwon,Kang-In Lee,Tactical
+3857299,77,46,Ghana,Tariq Lamptey,Denis Odoi,Tactical
+3857299,77,47,Ghana,André Ayew Pelé,Daniel-Kofi Kyereh,Tactical
+3857299,77,48,Ghana,Jordan Ayew,Kamaldeen Sulemana,Tactical
+3857299,78,9,South Korea,Woo-Young Jung,Ui-Jo Hwang,Tactical
+3857299,82,8,Ghana,Mohammed Kudus,Alexander Djiku,Tactical
+3857299,87,31,Ghana,Gideon Mensah,Abdul Rahman Baba,Injury
+3857299,91,42,South Korea,Min Jae Kim,Kyung-Won Kwon,Tactical
+3857294,63,47,Qatar,Hassan Khalid Al Heidos,Ali Assadalla Thaimn Qambar,Injury
+3857294,63,49,Qatar,Assim Omer Al Haj Madibo,Karim Boudiaf,Tactical
+3857294,64,12,Qatar,Almoez Ali Zainalabiddin Abdulla,Mohammed Muntari,Tactical
+3857294,65,24,Netherlands,Davy Klaassen,Steven Berghuis,Tactical
+3857294,65,45,Netherlands,Memphis Depay,Vincent Janssen,Tactical
+3857294,82,6,Netherlands,Cody Mathès Gakpo,Wout Weghorst,Tactical
+3857294,82,10,Netherlands,Marten de Roon,Teun Koopmeiners,Tactical
+3857294,84,28,Qatar,Abdulaziz Hatem Mohammed Abdullah,Ahmed Alaa Eldin Abdelmotaal,Tactical
+3857294,84,35,Qatar,Ismaeel Mohammad Mohammad,Mosaab Khoder Jibril,Tactical
+3857294,85,59,Netherlands,Frenkie de Jong,Kenneth Taylor,Tactical
+3869220,62,33,Spain,Pablo Martín Páez Gavira,Carlos Soler Barragán,Tactical
+3869220,62,34,Spain,Marco Asensio Willemsen,Álvaro Borja Morata Martín,Tactical
+3869220,65,52,Morocco,Sofiane Boufal,Abdessamad Ezzalzouli,Tactical
+3869220,75,4,Spain,Ferrán Torres García,Nicholas Williams Arthuer,Tactical
+3869220,81,35,Morocco,Selim Amallah,Walid Cheddira,Tactical
+3869220,81,37,Morocco,Youssef En-Nesyri,Abdelhamid Sabiri,Tactical
+3869220,82,50,Morocco,Noussair Mazraoui,Yahia Attiyat allah,Tactical
+3869220,84,0,Morocco,Nayef Aguerd,Jawad El Yamiq,Injury
+3869220,97,21,Spain,Daniel Olmo Carvajal,Anssumane Fati,Tactical
+3869220,97,30,Spain,Jordi Alba Ramos,Alejandro Balde Martínez,Tactical
+3869220,117,54,Spain,Nicholas Williams Arthuer,Pablo Sarabia García,Tactical
+3869220,119,30,Morocco,Azzedine Ounahi,Badr Banoun,Tactical
+3857297,45,0,Saudi Arabia,Sami Khalil Al Naji,Nawaf Shaker Al Abid,Tactical
+3857297,62,8,Poland,Piotr Zieliński,Jakub Kamiński,Tactical
+3857297,64,45,Saudi Arabia,Mohammed Al Burayk,Sultan Abdullah Salim Al Ghannam,Tactical
+3857297,70,37,Poland,Arkadiusz Milik,Krzysztof Piątek,Tactical
+3857297,84,56,Saudi Arabia,Abdulelah Saad Hameed Al-Malki,Abdulrahman Al-Obood,Tactical
+3857297,85,0,Saudi Arabia,Saleh Khalid Al Shehri,Nasser Al Dawsari,Tactical
+3857297,94,41,Saudi Arabia,Nawaf Shaker Al Abid,Hattan Babhir,Tactical
+3857263,53,25,Spain,Ferrán Torres García,Álvaro Borja Morata Martín,Tactical
+3857263,65,14,Spain,Marco Asensio Willemsen,Jorge Resurrección Merodio,Tactical
+3857263,65,37,Spain,Pablo Martín Páez Gavira,Nicholas Williams Arthuer,Tactical
+3857263,69,2,Germany,İlkay Gündoğan,Leroy Sané,Tactical
+3857263,69,15,Germany,Thomas Müller,Niclas Füllkrug,Tactical
+3857263,69,20,Germany,Thilo Kehrer,Lukas Klostermann,Tactical
+3857263,81,51,Spain,Jordi Alba Ramos,Alejandro Balde Martínez,Tactical
+3857263,84,17,Germany,Serge Gnabry,Jonas Hofmann,Tactical
+3857263,86,17,Germany,David Raum,Nico Schlotterbeck,Tactical
+3857283,59,39,Belgium,Eden Hazard,Dries Mertens,Tactical
+3857283,59,40,Belgium,Amadou Onana,Youri Tielemans,Tactical
+3857283,66,36,Morocco,Selim Amallah,Yahia Attiyat allah,Tactical
+3857283,66,38,Morocco,Achraf Hakimi Mouh,Abdelhamid Sabiri,Tactical
+3857283,71,38,Morocco,Sofiane Boufal,Zakaria Aboukhlal,Tactical
+3857283,71,40,Morocco,Youssef En-Nesyri,Abderrazak Hamdallah,Tactical
+3857283,74,1,Belgium,Michy Batshuayi Tunga,Charles De Ketelaere,Tactical
+3857283,74,3,Belgium,Thorgan Hazard,Leandro Trossard,Tactical
+3857283,77,37,Morocco,Azzedine Ounahi,Jawad El Yamiq,Tactical
+3857283,80,42,Belgium,Thomas Meunier,Romelu Lukaku Menama,Tactical
+3869321,45,0,Netherlands,Steven Bergwijn,Steven Berghuis,Tactical
+3869321,45,0,Netherlands,Marten de Roon,Teun Koopmeiners,Tactical
+3869321,64,1,Netherlands,Daley Blind,Luuk de Jong,Tactical
+3869321,65,47,Argentina,Rodrigo Javier De Paul,Leandro Daniel Paredes,Tactical
+3869321,77,9,Argentina,Marcos Javier Acuña,Nicolás Alejandro Tagliafico,Tactical
+3869321,77,28,Argentina,Cristian Gabriel Romero,Germán Alejandro Pezzella,Tactical
+3869321,77,57,Netherlands,Memphis Depay,Wout Weghorst,Tactical
+3869321,80,55,Argentina,Julián Álvarez,Lautaro Javier Martínez,Tactical
+3869321,105,0,Argentina,Nahuel Molina Lucero,Gonzalo Ariel Montiel,Tactical
+3869321,111,1,Argentina,Lisandro Martínez,Ángel Fabián Di María Hernández,Tactical
+3869321,112,41,Netherlands,Cody Mathès Gakpo,Noa Lang,Tactical
+3857265,45,0,Poland,Nicola Zalewski,Krystian Bielik,Tactical
+3857265,70,15,Mexico,Héctor Miguel Herrera López,Carlos Alberto Rodríguez Gómez,Tactical
+3857265,70,18,Mexico,Henry Josué Martín Mex,Raúl Alonso Jiménez Rodríguez,Tactical
+3857265,71,10,Poland,Sebastian Szymański,Przemysław Frankowski,Tactical
+3857265,83,48,Mexico,Ernesto Alexis Vega Rojas,Carlos Uriel Antuna Romero,Tactical
+3857265,87,0,Poland,Piotr Zieliński,Arkadiusz Milik,Tactical
+3857301,63,43,Senegal,Krépin Diatta,Pathé Ismaël Ciss,Tactical
+3857301,68,19,Qatar,Karim Boudiaf,Abdulaziz Hatem Mohammed Abdullah,Tactical
+3857301,73,47,Senegal,Famara Diedhiou,Cheikh Ahmadou Bamba Mbacke Dieng,Tactical
+3857301,73,57,Senegal,Ismaïla Sarr,Iliman Ndiaye,Tactical
+3857301,74,17,Qatar,Hassan Khalid Al Heidos,Mohammed Muntari,Tactical
+3857301,76,57,Senegal,Ismail Jakobs,Pape Abou Cissé,Tactical
+3857301,76,58,Senegal,Nampalys Mendy,Pape Matar Sarr,Tactical
+3857301,82,8,Qatar,Homam Alamin Ahmed,Tarek Salman Salman,Tactical
+3857301,82,14,Qatar,Pedro Miguel Correia,Mohammed Waed Abdulwahhab Al Bayati,Tactical
+3857258,56,23,Serbia,Nemanja Gudelj,Ivan Ilić,Tactical
+3857258,56,44,Serbia,Andrija Živković,Nemanja Radonjić,Tactical
+3857258,65,8,Serbia,Saša Lukić,Darko Lazović,Tactical
+3857258,65,19,Serbia,Filip Mladenović,Dušan Vlahović,Tactical
+3857258,74,48,Brazil,Lucas Tolentino Coelho de Lima,Frederico Rodrigues Santos,Tactical
+3857258,75,12,Brazil,Vinícius José Paixão de Oliveira Júnior,Rodrygo Silva de Goes,Tactical
+3857258,78,19,Brazil,Richarlison de Andrade,Gabriel Fernando de Jesus,Tactical
+3857258,79,9,Brazil,Neymar da Silva Santos Junior,Antony Matheus dos Santos,Injury
+3857258,82,54,Serbia,Aleksandar Mitrović,Nemanja Maksimović,Tactical
+3857258,86,54,Brazil,Raphael Dias Belloli,Gabriel Teodoro Martinelli Silva,Tactical
+3869151,49,7,Argentina,Alejandro Darío Gómez,Lisandro Martínez,Tactical
+3869151,57,52,Australia,Riley McGree,Craig Goodwin,Tactical
+3869151,57,52,Australia,Keanu Baccus,Ajdin Hrustic,Tactical
+3869151,71,0,Argentina,Julián Álvarez,Lautaro Javier Martínez,Tactical
+3869151,71,19,Argentina,Marcos Javier Acuña,Nicolás Alejandro Tagliafico,Tactical
+3869151,71,48,Australia,Mitchell Thomas Duke,Jamie MacLaren,Tactical
+3869151,71,48,Australia,Mathew Leckie,Garang Kuol,Tactical
+3869151,71,49,Australia,Miloš Degenek,Fran Karačić,Tactical
+3869151,79,15,Argentina,Nahuel Molina Lucero,Exequiel Alejandro Palacios,Tactical
+3869151,79,17,Argentina,Alexis Mac Allister,Gonzalo Ariel Montiel,Tactical
+3857286,67,6,Ecuador,Romario Andrés Ibarra Mina,Jeremy Leonel Sarmiento Morante,Tactical
+3857286,71,1,Qatar,Hassan Khalid Al Heidos,Mohammed Waed Abdulwahhab Al Bayati,Tactical
+3857286,71,10,Qatar,Almoez Ali Zainalabiddin Abdulla,Mohammed Muntari,Tactical
+3857286,75,57,Ecuador,Enner Remberto Valencia Lastra,José Adoni Cifuentes Charcopa,Injury
+3857286,89,10,Ecuador,Michael Steveen Estrada Martínez,Kevin José Rodríguez Cortez,Tactical
+3857286,89,54,Ecuador,Moisés Isaac Caicedo Corozo,Alan Steven Franco Palma,Tactical
+3857267,45,0,Ecuador,Carlos Armando Gruezo Arboleda,José Adoni Cifuentes Charcopa,Tactical
+3857267,45,0,Ecuador,Alan Steven Franco Palma,Jeremy Leonel Sarmiento Morante,Tactical
+3857267,63,16,Ecuador,Michael Steveen Estrada Martínez,Djorkaeff Neicer Reasco González,Tactical
+3857267,73,51,Senegal,Pathé Ismaël Ciss,Nampalys Mendy,Tactical
+3857267,74,3,Senegal,Iliman Ndiaye,Cheikh Ahmadou Bamba Mbacke Dieng,Tactical
+3857267,84,46,Ecuador,Angelo Smit Preciado Quiñónez,Jackson Gabriel Porozo Vernaza,Tactical
+3857267,94,43,Senegal,Boulaye Dia,Pape Abou Cissé,Tactical
+3869117,45,0,Netherlands,Marten de Roon,Steven Bergwijn,Tactical
+3869117,45,0,Netherlands,Davy Klaassen,Teun Koopmeiners,Tactical
+3869117,45,0,United States,Jesus Ferreira,Giovanni Reyna,Tactical
+3869117,66,51,United States,Timothy Weah,Brenden Aaronson,Tactical
+3869117,66,51,United States,Weston McKennie,Haji Wright,Tactical
+3869117,74,57,United States,Sergino Dest,DeAndre Yedlin,Tactical
+3869117,82,1,Netherlands,Memphis Depay,Xavi Simons,Tactical
+3869117,91,14,United States,Antonee Robinson,Jordan Morris,Tactical
+3869117,92,55,Netherlands,Nathan Aké,Matthijs de Ligt,Tactical
+3869117,92,55,Netherlands,Cody Mathès Gakpo,Wout Weghorst,Tactical
+3857269,45,0,Brazil,Lucas Tolentino Coelho de Lima,Rodrygo Silva de Goes,Tactical
+3857269,57,40,Brazil,Frederico Rodrigues Santos,Bruno Guimarães Rodriguez Moura,Tactical
+3857269,57,52,Switzerland,Ruben Vargas,Edimilson Fernandes,Tactical
+3857269,58,15,Switzerland,Fabian Rieder,Renato Steffen,Tactical
+3857269,72,40,Brazil,Richarlison de Andrade,Gabriel Fernando de Jesus,Tactical
+3857269,72,59,Brazil,Raphael Dias Belloli,Antony Matheus dos Santos,Tactical
+3857269,74,43,Switzerland,Djibril Sow,Michel Aebischer,Tactical
+3857269,74,47,Switzerland,Breel-Donald Embolo,Haris Seferović,Tactical
+3857269,85,19,Switzerland,Silvan Widmer,Fabian Frei,Tactical
+3857269,85,22,Brazil,Alex Sandro Lobo Silva,Alex Nicolao Telles,Tactical
+3857275,59,4,Tunisia,Wahbi Khazri,Issam Jebali,Injury
+3857275,62,34,France,Raphaël Varane,William Saliba,Tactical
+3857275,62,35,France,Kingsley Coman,Kylian Mbappé Lottin,Tactical
+3857275,62,43,France,Jordan Veretout,Adrien Rabiot,Tactical
+3857275,72,16,France,Youssouf Fofana,Antoine Griezmann,Tactical
+3857275,73,52,Tunisia,Mohamed Ali Ben Romdhane,Ghilane Chalali,Tactical
+3857275,78,6,France,Mattéo Guendouzi Olié,Ousmane Dembélé,Tactical
+3857275,82,56,Tunisia,Anis Ben Slimane,Ali Abdi,Tactical
+3857268,45,0,Belgium,Youri Tielemans,Amadou Onana,Tactical
+3857268,45,0,Belgium,Yannick Ferreira Carrasco,Thomas Meunier,Tactical
+3857268,57,24,Canada,David Junior Hoilett,Cyle Larin,Tactical
+3857268,57,41,Canada,Atiba Hutchinson,Ismael Koné,Tactical
+3857268,61,49,Belgium,Eden Hazard,Leandro Trossard,Tactical
+3857268,73,12,Canada,Richie Laryea,Sam Adekugbe,Tactical
+3857268,77,53,Belgium,Michy Batshuayi Tunga,Ikoma Loïs Openda,Tactical
+3857268,80,10,Canada,Tajon Buchanan,Liam Millar,Tactical
+3857268,80,21,Canada,Stephen Antunes Eustáquio,Jonathan Osorio,Tactical
+3869219,61,19,Croatia,Bruno Petković,Ante Budimir,Tactical
+3869219,63,17,Japan,Yuto Nagatomo,Kaoru Mitoma,Tactical
+3869219,63,29,Japan,Daizen Maeda,Takuma Asano,Tactical
+3869219,67,50,Croatia,Andrej Kramarić,Mario Pašalić,Tactical
+3869219,73,54,Japan,Daichi Kamada,Hiroki Sakai,Tactical
+3869219,86,9,Japan,Ritsu Doan,Takumi Minamino,Tactical
+3869219,98,21,Croatia,Luka Modrić,Lovro Majer,Tactical
+3869219,98,25,Croatia,Mateo Kovačić,Nikola Vlašić,Tactical
+3869219,105,0,Japan,Hidemasa Morita,Ao Tanaka,Tactical
+3869219,105,0,Croatia,Ivan Perišić,Mislav Oršić,Tactical
+3869219,105,0,Croatia,Ante Budimir,Marko Livaja,Tactical
+3857293,33,45,Uruguay,Rodrigo Bentancur Colmán,Matías Vecino Falero,Injury
+3857293,45,0,Ghana,André Ayew Pelé,Osman Bukari,Tactical
+3857293,45,0,Ghana,Jordan Ayew,Kamaldeen Sulemana,Tactical
+3857293,65,13,Uruguay,Luis Alberto Suárez Díaz,Edinson Roberto Cavani Gómez,Tactical
+3857293,65,27,Uruguay,Facundo Pellistri Rebollo,Diego Nicolás De La Cruz Arcosa,Tactical
+3857293,71,45,Ghana,Iñaki Williams Arthuer,Antoine Semenyo,Tactical
+3857293,71,56,Ghana,Salis Abdul Samed,Daniel-Kofi Kyereh,Tactical
+3857293,79,31,Uruguay,Giorgian Daniel De Arrascaeta Benedetti,Agustín Canobbio Graviz,Tactical
+3857293,79,41,Uruguay,Darwin Gabriel Núñez Ribeiro,Maximiliano Gómez González,Tactical
+3857293,97,8,Ghana,Mohammed Kudus,Abdul Fatawu Issahaku,Tactical
+3857274,45,0,Netherlands,Steven Bergwijn,Memphis Depay,Tactical
+3857274,68,56,Netherlands,Davy Klaassen,Steven Berghuis,Tactical
+3857274,73,23,Ecuador,Michael Steveen Estrada Martínez,Jeremy Leonel Sarmiento Morante,Tactical
+3857274,78,56,Netherlands,Cody Mathès Gakpo,Wout Weghorst,Tactical
+3857274,79,2,Netherlands,Teun Koopmeiners,Marten de Roon,Tactical
+3857274,89,2,Ecuador,Enner Remberto Valencia Lastra,Kevin José Rodríguez Cortez,Injury
+3857274,89,9,Ecuador,Gonzalo Jordy Plata Jiménez,Romario Andrés Ibarra Mina,Tactical
+3869152,63,47,Poland,Sebastian Szymański,Arkadiusz Milik,Tactical
+3869152,65,40,France,Aurélien Djani Tchouaméni,Youssouf Fofana,Tactical
+3869152,70,17,Poland,Jakub Kamiński,Nicola Zalewski,Tactical
+3869152,70,28,Poland,Grzegorz Krychowiak,Krystian Bielik,Tactical
+3869152,75,40,France,Ousmane Dembélé,Kingsley Coman,Tactical
+3869152,75,48,France,Olivier Giroud,Marcus Thuram,Tactical
+3869152,86,13,Poland,Jakub Piotr Kiwior,Jan Bednarek,Tactical
+3869152,86,14,Poland,Przemysław Frankowski,Kamil Grosicki,Tactical
+3869152,91,35,France,Jules Koundé,Axel Disasi,Tactical
+3857260,36,2,Saudi Arabia,Ali Albulayhi,Riyadh Sharahili,Injury
+3857260,45,0,Mexico,Ernesto Alexis Vega Rojas,Carlos Uriel Antuna Romero,Tactical
+3857260,45,0,Saudi Arabia,Ali Al Hassan,Abdullah Mohammed Madu,Tactical
+3857260,61,3,Saudi Arabia,Saleh Khalid Al Shehri,Abdulrahman Al-Obood,Tactical
+3857260,76,23,Mexico,Orbelín Pineda Alvarado,Carlos Alberto Rodríguez Gómez,Tactical
+3857260,76,28,Mexico,Henry Josué Martín Mex,Raúl Alonso Jiménez Rodríguez,Tactical
+3857260,85,43,Mexico,Jorge Eduardo Sánchez Ramos,Kevin Nahin Álvarez Campos,Tactical
+3857260,85,51,Mexico,Edson Omar Álvarez Velázquez,Rogelio Gabriel Funes Mori,Tactical
+3857260,87,23,Saudi Arabia,Sultan Abdullah Salim Al Ghannam,Hattan Babhir,Tactical
+3857289,40,52,Mexico,José Andrés Guardado Hernández,Érick Gabriel Gutiérrez Galaviz,Injury
+3857289,56,46,Argentina,Guido Rodríguez,Enzo Fernandez,Tactical
+3857289,62,26,Argentina,Lautaro Javier Martínez,Julián Álvarez,Tactical
+3857289,62,32,Argentina,Gonzalo Ariel Montiel,Nahuel Molina Lucero,Tactical
+3857289,65,21,Mexico,Kevin Nahin Álvarez Campos,Raúl Alonso Jiménez Rodríguez,Tactical
+3857289,65,22,Mexico,Ernesto Alexis Vega Rojas,Carlos Uriel Antuna Romero,Tactical
+3857289,68,16,Argentina,Alexis Mac Allister,Exequiel Alejandro Palacios,Tactical
+3857289,68,48,Argentina,Ángel Fabián Di María Hernández,Cristian Gabriel Romero,Tactical
+3857289,72,18,Mexico,Hirving Rodrigo Lozano Bahena,Roberto Carlos Alvarado Hernández,Tactical
+3857255,45,0,Japan,Takefusa Kubo,Ritsu Doan,Tactical
+3857255,45,0,Spain,César Azpilicueta Tanco,Daniel Carvajal Ramos,Tactical
+3857255,45,0,Japan,Yuto Nagatomo,Kaoru Mitoma,Tactical
+3857255,56,6,Spain,Nicholas Williams Arthuer,Ferrán Torres García,Tactical
+3857255,56,17,Spain,Álvaro Borja Morata Martín,Marco Asensio Willemsen,Tactical
+3857255,61,2,Japan,Daizen Maeda,Takuma Asano,Tactical
+3857255,67,13,Spain,Pablo Martín Páez Gavira,Anssumane Fati,Tactical
+3857255,68,49,Japan,Daichi Kamada,Takehiro Tomiyasu,Tactical
+3857255,68,54,Spain,Alejandro Balde Martínez,Jordi Alba Ramos,Tactical
+3857255,86,30,Japan,Ao Tanaka,Wataru Endo,Tactical
+3857298,55,49,Portugal,Otávio Edmilson da Silva Monteiro,William Silva de Carvalho,Injury
+3857298,65,40,Ghana,Alidu Seidu,Tariq Lamptey,Tactical
+3857298,75,40,Ghana,Mohammed Kudus,Osman Bukari,Tactical
+3857298,76,22,Ghana,André Ayew Pelé,Jordan Ayew,Tactical
+3857298,76,46,Portugal,Rúben Diogo Da Silva Neves,Rafael Alexandre Conceição Leão,Tactical
+3857298,87,18,Portugal,Cristiano Ronaldo dos Santos Aveiro,Gonçalo Matias Ramos,Tactical
+3857298,87,23,Portugal,João Félix Sequeira,João Mário Naval da Costa Eduardo,Tactical
+3857298,87,31,Portugal,Bernardo Mota Veiga de Carvalho e Silva,João Maria Lobo Alves Palhinha Gonçalves,Tactical
+3857298,91,43,Ghana,Alexander Djiku,Antoine Semenyo,Tactical
+3857298,92,6,Ghana,Salis Abdul Samed,Daniel-Kofi Kyereh,Tactical
+3857300,47,39,Saudi Arabia,Salman Mohammed Al Faraj,Nawaf Shaker Al Abid,Injury
+3857300,58,14,Argentina,Cristian Gabriel Romero,Lisandro Martínez,Tactical
+3857300,58,15,Argentina,Alejandro Darío Gómez,Julián Álvarez,Tactical
+3857300,58,24,Argentina,Leandro Daniel Paredes,Enzo Fernandez,Tactical
+3857300,70,1,Argentina,Nicolás Alejandro Tagliafico,Marcos Javier Acuña,Tactical
+3857300,77,21,Saudi Arabia,Saleh Khalid Al Shehri,Sultan Abdullah Salim Al Ghannam,Tactical
+3857300,87,44,Saudi Arabia,Nawaf Shaker Al Abid,Abdulelah Al Amri,Tactical
+3857300,88,25,Saudi Arabia,Firas Tariq Nasser Al Albirakan,Haitham Mohammed Asiri,Tactical
+3857300,98,36,Saudi Arabia,Yasir Gharsan Al Shahrani,Mohammed Al Burayk,Injury
+3857261,35,56,Wales,Neco Williams,Connor Roberts,Injury
+3857261,45,0,Wales,Gareth Frank Bale,Brennan Johnson,Tactical
+3857261,56,50,England,Kyle Walker,Trent Alexander-Arnold,Tactical
+3857261,57,6,England,Harry Kane,Callum Wilson,Tactical
+3857261,57,13,England,Declan Rice,Kalvin Phillips,Tactical
+3857261,58,37,Wales,Ben Davies,Joseff Morrell,Injury
+3857261,64,50,England,Luke Shaw,Kieran Trippier,Tactical
+3857261,75,1,England,Marcus Rashford,Jack Grealish,Tactical
+3857261,76,15,Wales,Daniel James,Harry Wilson,Tactical
+3857261,80,20,Wales,Joe Allen,Rubin Colwill,Injury
+3869519,45,0,Croatia,Borna Sosa,Mislav Oršić,Tactical
+3869519,45,0,Croatia,Mario Pašalić,Nikola Vlašić,Tactical
+3869519,49,43,Croatia,Marcelo Brozović,Bruno Petković,Tactical
+3869519,61,28,Argentina,Leandro Daniel Paredes,Lisandro Martínez,Tactical
+3869519,71,47,Croatia,Andrej Kramarić,Marko Livaja,Tactical
+3869519,73,38,Argentina,Rodrigo Javier De Paul,Exequiel Alejandro Palacios,Tactical
+3869519,73,47,Argentina,Julián Álvarez,Paulo Bruno Exequiel Dybala,Tactical
+3869519,80,40,Croatia,Luka Modrić,Lovro Majer,Tactical
+3869519,85,36,Argentina,Alexis Mac Allister,Ángel Martín Correa,Tactical
+3869519,85,57,Argentina,Nahuel Molina Lucero,Juan Marcos Foyth,Tactical
+3857291,45,0,Costa Rica,Carlos Manuel Martínez Castro,Kendall Jamaal Waston Manley,Tactical
+3857291,56,24,Spain,Ferrán Torres García,Álvaro Borja Morata Martín,Tactical
+3857291,56,31,Spain,Pedro González López,Carlos Soler Barragán,Tactical
+3857291,60,47,Costa Rica,Anthony Daniel Contreras Enríquez,Álvaro José Zamora Mata,Tactical
+3857291,60,53,Costa Rica,Jewison Bennette,Bryan Ruiz González,Tactical
+3857291,63,18,Spain,Jordi Alba Ramos,Alejandro Balde Martínez,Tactical
+3857291,63,24,Spain,Sergio Busquets i Burgos,Jorge Resurrección Merodio,Tactical
+3857291,68,26,Spain,Marco Asensio Willemsen,Nicholas Williams Arthuer,Tactical
+3857291,71,12,Costa Rica,Celso Borges Mora,Brandon Aguilera Zamora,Tactical
+3857291,81,4,Costa Rica,Bryan Oviedo,Ronald Alberto Matarrita Ulate,Tactical
+3857262,64,26,Portugal,Matheus Luiz Nunes,João Maria Lobo Alves Palhinha Gonçalves,Tactical
+3857262,64,42,Portugal,Rúben Diogo Da Silva Neves,Rafael Alexandre Conceição Leão,Tactical
+3857262,64,56,Portugal,Cristiano Ronaldo dos Santos Aveiro,André Miguel Valente Silva,Tactical
+3857262,65,23,South Korea,Jae-Sung Lee,Hee-Chan Hwang,Tactical
+3857262,80,31,South Korea,Young-Gwon Kim,Jun-Ho Son,Injury
+3857262,81,13,South Korea,Kang-In Lee,Ui-Jo Hwang,Tactical
+3857262,81,13,Portugal,João Mário Naval da Costa Eduardo,William Silva de Carvalho,Tactical
+3857262,81,13,Portugal,Vitor Machado Ferreira,Bernardo Mota Veiga de Carvalho e Silva,Tactical
+3857262,92,46,South Korea,Gue-Sung Cho,Yu-Min Cho,Tactical
+3857284,45,0,Japan,Takefusa Kubo,Takehiro Tomiyasu,Tactical
+3857284,56,33,Japan,Yuto Nagatomo,Kaoru Mitoma,Tactical
+3857284,56,39,Japan,Daizen Maeda,Takuma Asano,Tactical
+3857284,66,37,Germany,Thomas Müller,Jonas Hofmann,Tactical
+3857284,67,5,Germany,İlkay Gündoğan,Leon Goretzka,Tactical
+3857284,70,38,Japan,Ao Tanaka,Ritsu Doan,Tactical
+3857284,73,53,Japan,Hiroki Sakai,Takumi Minamino,Injury
+3857284,78,13,Germany,Jamal Musiala,Mario Götze,Tactical
+3857284,78,14,Germany,Kai Havertz,Niclas Füllkrug,Tactical
+3857284,89,1,Germany,Serge Gnabry,Youssoufa Moukoko,Tactical
+3857259,54,39,Cameroon,Martin Hongla Yma II,Vincent Paté Aboubakar,Tactical
+3857259,55,25,Serbia,Strahinja Pavlović,Stefan Mitrović,Tactical
+3857259,66,59,Cameroon,Karl Brillant Toko Ekambi,Christian Mougang Bassogog,Tactical
+3857259,67,1,Cameroon,Pierre Kunde Malong,Gaël Ondoua,Tactical
+3857259,77,41,Serbia,Andrija Živković,Nemanja Radonjić,Tactical
+3857259,77,44,Serbia,Milos Veljkovic,Srđan Babić,Tactical
+3857259,78,25,Serbia,Sergej Milinković-Savić,Marko Grujić,Tactical
+3857259,80,19,Cameroon,André-Frank Zambo Anguissa,Samuel Yves Oum Gwet,Tactical
+3857259,80,21,Cameroon,Bryan Mbeumo,Georges-Kévin Nkoudou Mbida,Tactical
+3857259,90,53,Serbia,Filip Kostić,Filip Đuričić,Tactical
+3857276,59,47,Canada,Cyle Larin,Jonathan David,Tactical
+3857276,59,51,Canada,Mark Anthony Kaye,Atiba Hutchinson,Tactical
+3857276,60,12,Canada,Sam Adekugbe,Ismael Koné,Tactical
+3857276,64,10,Morocco,Sofiane Boufal,Zakaria Aboukhlal,Tactical
+3857276,64,28,Morocco,Abdelhamid Sabiri,Selim Amallah,Tactical
+3857276,65,4,Canada,Jonathan Osorio,Richie Laryea,Tactical
+3857276,75,24,Canada,David Junior Hoilett,David Wallace Wotherspoon,Tactical
+3857276,75,36,Morocco,Hakim Ziyech,Abderrazak Hamdallah,Tactical
+3857276,75,48,Morocco,Azzedine Ounahi,Jawad El Yamiq,Tactical
+3857276,84,55,Morocco,Achraf Hakimi Mouh,Yahya Jabrane,Tactical
+3857290,67,53,Cameroon,Martin Hongla Yma II,Gaël Ondoua,Tactical
+3857290,70,58,Switzerland,Djibril Sow,Fabian Frei,Tactical
+3857290,71,10,Switzerland,Xherdan Shaqiri,Noah Okafor,Tactical
+3857290,71,22,Switzerland,Breel-Donald Embolo,Haris Seferović,Tactical
+3857290,73,27,Cameroon,Karl Brillant Toko Ekambi,Georges-Kévin Nkoudou Mbida,Tactical
+3857290,73,40,Cameroon,Jean-Eric Maxim Choupo-Moting,Vincent Paté Aboubakar,Tactical
+3857290,80,31,Switzerland,Ruben Vargas,Fabian Rieder,Tactical
+3857290,80,44,Cameroon,Bryan Mbeumo,Nicolas Moumi Ngamaleu,Tactical
+3857290,89,53,Switzerland,Ricardo Iván Rodríguez Araya,Eray Ervin Cömert,Tactical
+3857273,56,53,Wales,Connor Roberts,Brennan Johnson,Tactical
+3857273,56,54,Wales,Harry Wilson,Daniel James,Tactical
+3857273,67,18,Iran,Sardar Azmoun,Karim Ansarifard,Tactical
+3857273,75,43,Iran,Ali Gholizadeh,Alireza Jahanbakhsh,Tactical
+3857273,75,48,Iran,Ehsan Hajsafi,Mehdi Torabi,Tactical
+3857273,76,52,Wales,Ethan Ampadu,Joe Allen,Tactical
+3857273,77,24,Iran,Ahmad Nourollahi,Roozbeh Cheshmi,Injury
+3857273,82,11,Iran,Saeid Ezatolahi Afagh,Ali Karimi,Injury
+3857273,86,48,Wales,Aaron Ramsey,Daniel Ward,Tactical
+3857256,54,2,Serbia,Milos Veljkovic,Nemanja Gudelj,Tactical
+3857256,54,15,Serbia,Dušan Vlahović,Luka Jović,Tactical
+3857256,66,59,Serbia,Sergej Milinković-Savić,Nemanja Maksimović,Tactical
+3857256,67,51,Switzerland,Djibril Sow,Edimilson Fernandes,Tactical
+3857256,68,17,Switzerland,Xherdan Shaqiri,Denis Lemi Zakaria Lako Lado,Tactical
+3857256,77,35,Serbia,Dušan Tadić,Filip Đuričić,Tactical
+3857256,77,40,Serbia,Andrija Živković,Nemanja Radonjić,Tactical
+3857256,82,51,Switzerland,Ruben Vargas,Christian Fassnacht,Tactical
+3857256,95,24,Switzerland,Breel-Donald Embolo,Noah Okafor,Tactical
+3869420,55,11,Brazil,Raphael Dias Belloli,Antony Matheus dos Santos,Tactical
+3869420,63,42,Brazil,Vinícius José Paixão de Oliveira Júnior,Rodrygo Silva de Goes,Tactical
+3869420,71,50,Croatia,Mario Pašalić,Nikola Vlašić,Tactical
+3869420,71,54,Croatia,Andrej Kramarić,Bruno Petković,Tactical
+3869420,83,18,Brazil,Richarlison de Andrade,Pedro Guilherme Abreu dos Santos,Tactical
+3869420,105,0,Croatia,Mateo Kovačić,Lovro Majer,Tactical
+3869420,105,0,Brazil,Lucas Tolentino Coelho de Lima,Frederico Rodrigues Santos,Tactical
+3869420,105,1,Brazil,Éder Gabriel Militão,Alex Sandro Lobo Silva,Tactical
+3869420,109,25,Croatia,Borna Sosa,Ante Budimir,Tactical
+3869420,113,6,Croatia,Marcelo Brozović,Mislav Oršić,Tactical
+3869354,78,37,France,Ousmane Dembélé,Kingsley Coman,Tactical
+3869354,78,48,England,Jordan Brian Henderson,Mason Mount,Tactical
+3869354,78,51,England,Bukayo Saka,Raheem Sterling,Tactical
+3869354,84,28,England,Philip Foden,Marcus Rashford,Tactical
+3869354,97,4,England,John Stones,Jack Grealish,Injury
+3857266,45,0,Denmark,Andreas Evald Cornelius,Martin Braithwaite Christensen,Tactical
+3857266,61,59,France,Olivier Giroud,Marcus Thuram,Tactical
+3857266,72,57,Denmark,Mikkel Damsgaard,Kasper Dolberg,Tactical
+3857266,73,51,France,Raphaël Varane,Ibrahima Konaté,Tactical
+3857266,74,10,France,Ousmane Dembélé,Kingsley Coman,Tactical
+3857266,84,16,Denmark,Jesper Lindstrøm,Christian Nørgaard,Tactical
+3857266,91,37,Denmark,Rasmus Nissen Kristensen,Alexander Hartmann Bah,Tactical
+3857266,92,13,France,Antoine Griezmann,Youssouf Fofana,Tactical
+3857280,54,9,Brazil,Alex Nicolao Telles,Marcos Aoás Corrêa,Injury
+3857280,54,25,Brazil,Frederico Rodrigues Santos,Bruno Guimarães Rodriguez Moura,Tactical
+3857280,54,25,Brazil,Rodrygo Silva de Goes,Éverton Augusto de Barros Ribeiro,Tactical
+3857280,63,9,Cameroon,Bryan Mbeumo,Karl Brillant Toko Ekambi,Tactical
+3857280,63,33,Brazil,Gabriel Fernando de Jesus,Pedro Guilherme Abreu dos Santos,Tactical
+3857280,67,25,Cameroon,Pierre Kunde Malong,Jules Olivier Ntcham,Tactical
+3857280,78,41,Brazil,Antony Matheus dos Santos,Raphael Dias Belloli,Tactical
+3857280,84,57,Cameroon,Nicolas Moumi Ngamaleu,Jerome Ngom Mbekeli,Tactical
+3857285,61,23,Netherlands,Vincent Janssen,Memphis Depay,Tactical
+3857285,61,25,Senegal,Abdou Diallo,Ismail Jakobs,Injury
+3857285,68,11,Senegal,Boulaye Dia,Cheikh Ahmadou Bamba Mbacke Dieng,Tactical
+3857285,73,11,Senegal,Cheikhou Kouyaté,Pape Gueye,Injury
+3857285,73,12,Senegal,Krépin Diatta,Nicolas Jackson,Tactical
+3857285,78,5,Netherlands,Steven Bergwijn,Davy Klaassen,Tactical
+3857285,78,14,Netherlands,Steven Berghuis,Teun Koopmeiners,Tactical
+3857285,93,35,Netherlands,Cody Mathès Gakpo,Marten de Roon,Tactical
+3857271,19,12,Iran,Alireza Safar Beiranvand,Seyed Hossein Hosseini,Tactical
+3857271,45,0,Iran,Ali Karimi,Saeid Ezatolahi Afagh,Tactical
+3857271,45,0,Iran,Alireza Jahanbakhsh,Ali Gholizadeh,Tactical
+3857271,45,0,Iran,Roozbeh Cheshmi,Mohammad Hossein Kanani Zadegan,Tactical
+3857271,62,50,Iran,Milad Mohammadi,Mehdi Torabi,Tactical
+3857271,70,27,England,Raheem Sterling,Jack Grealish,Tactical
+3857271,70,27,England,Bukayo Saka,Marcus Rashford,Tactical
+3857271,70,28,England,Harry Maguire,Eric Dier,Injury
+3857271,70,28,England,Mason Mount,Phil Foden,Tactical
+3857271,75,10,England,Harry Kane,Callum Wilson,Tactical
+3857271,76,42,Iran,Ahmad Nourollahi,Sardar Azmoun,Tactical
+3857270,41,29,Portugal,Nuno Mendes,Raphaël Adelino José Guerreiro,Injury
+3857270,61,33,Uruguay,Matías Vecino Falero,Giorgian Daniel De Arrascaeta Benedetti,Tactical
+3857270,61,43,Uruguay,Diego Roberto Godín Leal,Facundo Pellistri Rebollo,Tactical
+3857270,68,54,Portugal,Rúben Diogo Da Silva Neves,Rafael Alexandre Conceição Leão,Tactical
+3857270,71,45,Uruguay,Darwin Gabriel Núñez Ribeiro,Maximiliano Gómez González,Tactical
+3857270,72,59,Uruguay,Edinson Roberto Cavani Gómez,Luis Alberto Suárez Díaz,Tactical
+3857270,82,0,Portugal,Cristiano Ronaldo dos Santos Aveiro,Gonçalo Matias Ramos,Tactical
+3857270,82,0,Portugal,João Félix Sequeira,Matheus Luiz Nunes,Tactical
+3857270,82,2,Portugal,William Silva de Carvalho,João Maria Lobo Alves Palhinha Gonçalves,Tactical
+3857270,85,11,Uruguay,Mathías Olivera Miramontes,Matías Nicolás Viña Susperreguy,Tactical

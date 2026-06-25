@@ -1,0 +1,374 @@
+{
+  "id": "france-denmark-2022",
+  "meta": {
+    "title": "France vs Denmark — Group Stage",
+    "trigger_label": "Second half — France lead 2-1",
+    "difficulty": 1,
+    "order": 33,
+    "stage": "Group Stage",
+    "group": "D",
+    "date": "2022-11-26",
+    "stadium": "Stadium 974"
+  },
+  "scoreline": {
+    "display": "France 2 – 1 Denmark",
+    "home": 2,
+    "away": 1
+  },
+  "context": "A pivotal moment in this group stage match. France lead Denmark 2-1. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "France",
+  "away_team": "Denmark",
+  "home_formation": "4-3-3",
+  "away_formation": "5-4-1",
+  "home_players": [
+    {
+      "name": "Hugo Lloris",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 39
+    },
+    {
+      "name": "Jules Koundé",
+      "number": 5,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 45
+    },
+    {
+      "name": "Theo Bernard François Hernández",
+      "number": 22,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 45
+    },
+    {
+      "name": "Raphaël Varane",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 50
+    },
+    {
+      "name": "Dayotchanculle Upamecano",
+      "number": 18,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 40
+    },
+    {
+      "name": "Adrien Rabiot",
+      "number": 14,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 53
+    },
+    {
+      "name": "Aurélien Djani Tchouaméni",
+      "number": 8,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 58
+    },
+    {
+      "name": "Antoine Griezmann",
+      "number": 7,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 59
+    },
+    {
+      "name": "Kylian Mbappé Lottin",
+      "number": 10,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 57
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "number": 11,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 59
+    },
+    {
+      "name": "Olivier Giroud",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 55
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Kasper Schmeichel",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 36
+    },
+    {
+      "name": "Andreas Christensen",
+      "number": 6,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 50
+    },
+    {
+      "name": "Joachim Andersen",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Victor Nelsson",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Rasmus Nissen Kristensen",
+      "number": 13,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 48
+    },
+    {
+      "name": "Joakim Mæhle",
+      "number": 5,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 41
+    },
+    {
+      "name": "Christian Dannemann Eriksen",
+      "number": 10,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 58
+    },
+    {
+      "name": "Pierre-Emile Højbjerg",
+      "number": 23,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Mikkel Damsgaard",
+      "number": 14,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 60
+    },
+    {
+      "name": "Jesper Lindstrøm",
+      "number": 25,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 66
+    },
+    {
+      "name": "Andreas Evald Cornelius",
+      "number": 21,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 52
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "France won 2-1. Kylian Mbappé Lottin (60'), Andreas Christensen (67'), Kylian Mbappé Lottin (85')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between France and Denmark (2-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between France and Denmark (2-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between France and Denmark (2-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between France and Denmark (2-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Jesper Lindstrøm": "Jesper Lindstrøm at 66/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Mikkel Damsgaard": "Mikkel Damsgaard at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Antoine Griezmann": "Antoine Griezmann at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Ousmane Dembélé": "Ousmane Dembélé at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Mikkel Damsgaard",
+      "attacker_team": "Denmark",
+      "defender": "Jules Koundé",
+      "defender_team": "France",
+      "advantage": "Jules Koundé",
+      "diff": "-14",
+      "critical": true
+    },
+    {
+      "attacker": "Jesper Lindstrøm",
+      "attacker_team": "Denmark",
+      "defender": "Theo Bernard François Hernández",
+      "defender_team": "France",
+      "advantage": "Theo Bernard François Hernández",
+      "diff": "-10",
+      "critical": false
+    },
+    {
+      "attacker": "Olivier Giroud",
+      "attacker_team": "France",
+      "defender": "Victor Nelsson",
+      "defender_team": "Denmark",
+      "advantage": "Olivier Giroud",
+      "diff": "+17",
+      "critical": true
+    },
+    {
+      "attacker": "Andreas Evald Cornelius",
+      "attacker_team": "Denmark",
+      "defender": "Dayotchanculle Upamecano",
+      "defender_team": "France",
+      "advantage": "Andreas Evald Cornelius",
+      "diff": "+14",
+      "critical": true
+    },
+    {
+      "attacker": "Antoine Griezmann",
+      "attacker_team": "France",
+      "defender": "Pierre-Emile Højbjerg",
+      "defender_team": "Denmark",
+      "advantage": "Even",
+      "diff": "+0",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 19,
+      "type": "yellow_card",
+      "description": "Andreas Christensen (Denmark) shown a yellow card card — Foul",
+      "player": "Andreas Christensen"
+    },
+    {
+      "minute": 22,
+      "type": "yellow_card",
+      "description": "Andreas Evald Cornelius (Denmark) shown a yellow card card — Foul",
+      "player": "Andreas Evald Cornelius"
+    },
+    {
+      "minute": 42,
+      "type": "yellow_card",
+      "description": "Jules Koundé (France) shown a yellow card card — Foul",
+      "player": "Jules Koundé"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Martin Braithwaite Christensen replaces Andreas Evald Cornelius (Tactical)",
+      "player": "Martin Braithwaite Christensen"
+    },
+    {
+      "minute": 60,
+      "type": "goal",
+      "description": "Kylian Mbappé Lottin scores for France!",
+      "player": "Kylian Mbappé Lottin"
+    },
+    {
+      "minute": 61,
+      "type": "substitution",
+      "description": "Marcus Thuram replaces Olivier Giroud (Tactical)",
+      "player": "Marcus Thuram"
+    },
+    {
+      "minute": 67,
+      "type": "goal",
+      "description": "Andreas Christensen scores for Denmark!",
+      "player": "Andreas Christensen"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "description": "Kasper Dolberg replaces Mikkel Damsgaard (Tactical)",
+      "player": "Kasper Dolberg"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Ibrahima Konaté replaces Raphaël Varane (Tactical)",
+      "player": "Ibrahima Konaté"
+    },
+    {
+      "minute": 74,
+      "type": "substitution",
+      "description": "Kingsley Coman replaces Ousmane Dembélé (Tactical)",
+      "player": "Kingsley Coman"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Christian Nørgaard replaces Jesper Lindstrøm (Tactical)",
+      "player": "Christian Nørgaard"
+    },
+    {
+      "minute": 85,
+      "type": "goal",
+      "description": "Kylian Mbappé Lottin scores for France!",
+      "player": "Kylian Mbappé Lottin"
+    },
+    {
+      "minute": 91,
+      "type": "substitution",
+      "description": "Alexander Hartmann Bah replaces Rasmus Nissen Kristensen (Tactical)",
+      "player": "Alexander Hartmann Bah"
+    },
+    {
+      "minute": 92,
+      "type": "substitution",
+      "description": "Youssouf Fofana replaces Antoine Griezmann (Tactical)",
+      "player": "Youssouf Fofana"
+    }
+  ]
+}

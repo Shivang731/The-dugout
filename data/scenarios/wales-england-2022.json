@@ -1,0 +1,390 @@
+{
+  "id": "wales-england-2022",
+  "meta": {
+    "title": "Wales vs England — Group Stage",
+    "trigger_label": "Second half — Wales trail 0-3",
+    "difficulty": 1,
+    "order": 51,
+    "stage": "Group Stage",
+    "group": "B",
+    "date": "2022-11-29",
+    "stadium": "Ahmad bin Ali Stadium"
+  },
+  "scoreline": {
+    "display": "Wales 0 – 3 England",
+    "home": 0,
+    "away": 3
+  },
+  "context": "A pivotal moment in this group stage match. Wales trail England 0-3. Something has to change. The manager must decide how to respond.",
+  "home_team": "Wales",
+  "away_team": "England",
+  "home_formation": "4-3-3",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Daniel Ward",
+      "number": 12,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 35
+    },
+    {
+      "name": "Ben Davies",
+      "number": 4,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 45
+    },
+    {
+      "name": "Neco Williams",
+      "number": 3,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 21
+    },
+    {
+      "name": "Chris Mepham",
+      "number": 5,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Joe Rodon",
+      "number": 6,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 54
+    },
+    {
+      "name": "Ethan Ampadu",
+      "number": 15,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 48
+    },
+    {
+      "name": "Joe Allen",
+      "number": 7,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 49
+    },
+    {
+      "name": "Aaron Ramsey",
+      "number": 10,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 52
+    },
+    {
+      "name": "Gareth Frank Bale",
+      "number": 11,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 47
+    },
+    {
+      "name": "Daniel James",
+      "number": 20,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 62
+    },
+    {
+      "name": "Kieffer Roberto Francisco Moore",
+      "number": 13,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 54
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Jordan Pickford",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 32
+    },
+    {
+      "name": "Kyle Walker",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 41
+    },
+    {
+      "name": "Luke Shaw",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 44
+    },
+    {
+      "name": "John Stones",
+      "number": 5,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 54
+    },
+    {
+      "name": "Harry Maguire",
+      "number": 6,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Declan Rice",
+      "number": 4,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 54
+    },
+    {
+      "name": "Jordan Brian Henderson",
+      "number": 8,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 49
+    },
+    {
+      "name": "Jude Bellingham",
+      "number": 22,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 52
+    },
+    {
+      "name": "Marcus Rashford",
+      "number": 11,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 59
+    },
+    {
+      "name": "Phil Foden",
+      "number": 20,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 59
+    },
+    {
+      "name": "Harry Kane",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 53
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "England won 3-0. Marcus Rashford (49'), Phil Foden (50'), Marcus Rashford (67')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Wales and England (0-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Wales and England (0-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Wales and England (0-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Wales and England (0-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Daniel James": "Daniel James at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Marcus Rashford": "Marcus Rashford at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Phil Foden": "Phil Foden at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Neco Williams": "Neco Williams at 21/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages.",
+    "Jordan Pickford": "Jordan Pickford at 32/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Daniel James",
+      "attacker_team": "Wales",
+      "defender": "Kyle Walker",
+      "defender_team": "England",
+      "advantage": "Daniel James",
+      "diff": "+10",
+      "critical": false
+    },
+    {
+      "attacker": "Marcus Rashford",
+      "attacker_team": "England",
+      "defender": "Neco Williams",
+      "defender_team": "Wales",
+      "advantage": "Neco Williams",
+      "diff": "-12",
+      "critical": false
+    },
+    {
+      "attacker": "Gareth Frank Bale",
+      "attacker_team": "Wales",
+      "defender": "Luke Shaw",
+      "defender_team": "England",
+      "advantage": "Even",
+      "diff": "+0",
+      "critical": false
+    },
+    {
+      "attacker": "Phil Foden",
+      "attacker_team": "England",
+      "defender": "Ben Davies",
+      "defender_team": "Wales",
+      "advantage": "Ben Davies",
+      "diff": "-8",
+      "critical": false
+    },
+    {
+      "attacker": "Kieffer Roberto Francisco Moore",
+      "attacker_team": "Wales",
+      "defender": "Harry Maguire",
+      "defender_team": "England",
+      "advantage": "Harry Maguire",
+      "diff": "-11",
+      "critical": false
+    },
+    {
+      "attacker": "Harry Kane",
+      "attacker_team": "England",
+      "defender": "Joe Rodon",
+      "defender_team": "Wales",
+      "advantage": "Joe Rodon",
+      "diff": "-15",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 28,
+      "type": "yellow_card",
+      "description": "Daniel James (Wales) shown a yellow card card — Foul",
+      "player": "Daniel James"
+    },
+    {
+      "minute": 35,
+      "type": "substitution",
+      "description": "Connor Roberts replaces Neco Williams (Injury)",
+      "player": "Connor Roberts"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Brennan Johnson replaces Gareth Frank Bale (Tactical)",
+      "player": "Brennan Johnson"
+    },
+    {
+      "minute": 49,
+      "type": "goal",
+      "description": "Marcus Rashford scores for England!",
+      "player": "Marcus Rashford"
+    },
+    {
+      "minute": 50,
+      "type": "goal",
+      "description": "Phil Foden scores for England!",
+      "player": "Phil Foden"
+    },
+    {
+      "minute": 56,
+      "type": "substitution",
+      "description": "Trent Alexander-Arnold replaces Kyle Walker (Tactical)",
+      "player": "Trent Alexander-Arnold"
+    },
+    {
+      "minute": 57,
+      "type": "substitution",
+      "description": "Callum Wilson replaces Harry Kane (Tactical)",
+      "player": "Callum Wilson"
+    },
+    {
+      "minute": 57,
+      "type": "substitution",
+      "description": "Kalvin Phillips replaces Declan Rice (Tactical)",
+      "player": "Kalvin Phillips"
+    },
+    {
+      "minute": 58,
+      "type": "substitution",
+      "description": "Joseff Morrell replaces Ben Davies (Injury)",
+      "player": "Joseff Morrell"
+    },
+    {
+      "minute": 60,
+      "type": "yellow_card",
+      "description": "Aaron Ramsey (Wales) shown a yellow card card — Foul",
+      "player": "Aaron Ramsey"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Kieran Trippier replaces Luke Shaw (Tactical)",
+      "player": "Kieran Trippier"
+    },
+    {
+      "minute": 67,
+      "type": "goal",
+      "description": "Marcus Rashford scores for England!",
+      "player": "Marcus Rashford"
+    },
+    {
+      "minute": 75,
+      "type": "substitution",
+      "description": "Jack Grealish replaces Marcus Rashford (Tactical)",
+      "player": "Jack Grealish"
+    },
+    {
+      "minute": 76,
+      "type": "substitution",
+      "description": "Harry Wilson replaces Daniel James (Tactical)",
+      "player": "Harry Wilson"
+    },
+    {
+      "minute": 80,
+      "type": "substitution",
+      "description": "Rubin Colwill replaces Joe Allen (Injury)",
+      "player": "Rubin Colwill"
+    }
+  ]
+}

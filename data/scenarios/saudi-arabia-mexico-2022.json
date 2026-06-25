@@ -1,0 +1,414 @@
+{
+  "id": "saudi-arabia-mexico-2022",
+  "meta": {
+    "title": "Saudi Arabia vs Mexico — Group Stage",
+    "trigger_label": "Second half — Saudi Arabia trail 1-2",
+    "difficulty": 1,
+    "order": 51,
+    "stage": "Group Stage",
+    "group": "C",
+    "date": "2022-11-30",
+    "stadium": "Lusail Stadium"
+  },
+  "scoreline": {
+    "display": "Saudi Arabia 1 – 2 Mexico",
+    "home": 1,
+    "away": 2
+  },
+  "context": "A pivotal moment in this group stage match. Saudi Arabia trail Mexico 1-2. Something has to change. The manager must decide how to respond.",
+  "home_team": "Saudi Arabia",
+  "away_team": "Mexico",
+  "home_formation": "4-4-2",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Mohammed Khalil Al Owais",
+      "number": 21,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 43
+    },
+    {
+      "name": "Ali Albulayhi",
+      "number": 5,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 21
+    },
+    {
+      "name": "Sultan Abdullah Salim Al Ghannam",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 52
+    },
+    {
+      "name": "Abdulelah Al Amri",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Hassan Mohammed Al-Tambakti",
+      "number": 17,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Salem Mohammed Al Dawsari",
+      "number": 10,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 57
+    },
+    {
+      "name": "Firas Tariq Nasser Al Albirakan",
+      "number": 9,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 55
+    },
+    {
+      "name": "Ali Al Hassan",
+      "number": 15,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 38
+    },
+    {
+      "name": "Saud Abdullah Abdul Hamid",
+      "number": 12,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 48
+    },
+    {
+      "name": "Mohammed Kanoo",
+      "number": 23,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 64
+    },
+    {
+      "name": "Saleh Khalid Al Shehri",
+      "number": 11,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 61
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Francisco Guillermo Ochoa Magaña",
+      "number": 13,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 39
+    },
+    {
+      "name": "Jesús Daniel Gallardo Vasconcelos",
+      "number": 23,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 42
+    },
+    {
+      "name": "Jorge Eduardo Sánchez Ramos",
+      "number": 19,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 41
+    },
+    {
+      "name": "Héctor Alfredo Moreno Herrera",
+      "number": 15,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "César Jasib Montes Castro",
+      "number": 3,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 51
+    },
+    {
+      "name": "Edson Omar Álvarez Velázquez",
+      "number": 4,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 54
+    },
+    {
+      "name": "Luis Gerardo Chávez Magallón",
+      "number": 24,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 45
+    },
+    {
+      "name": "Orbelín Pineda Alvarado",
+      "number": 17,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 57
+    },
+    {
+      "name": "Hirving Rodrigo Lozano Bahena",
+      "number": 22,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 54
+    },
+    {
+      "name": "Ernesto Alexis Vega Rojas",
+      "number": 10,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 44
+    },
+    {
+      "name": "Henry Josué Martín Mex",
+      "number": 20,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 61
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Mexico won 2-1. Henry Josué Martín Mex (46'), Luis Gerardo Chávez Magallón (51'), Salem Mohammed Al Dawsari (94')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Saudi Arabia and Mexico (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Saudi Arabia and Mexico (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Saudi Arabia and Mexico (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Saudi Arabia and Mexico (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Mohammed Kanoo": "Mohammed Kanoo at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Saleh Khalid Al Shehri": "Saleh Khalid Al Shehri at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Henry Josué Martín Mex": "Henry Josué Martín Mex at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Salem Mohammed Al Dawsari": "Salem Mohammed Al Dawsari at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Ali Albulayhi": "Ali Albulayhi at 21/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Ernesto Alexis Vega Rojas",
+      "attacker_team": "Mexico",
+      "defender": "Sultan Abdullah Salim Al Ghannam",
+      "defender_team": "Saudi Arabia",
+      "advantage": "Sultan Abdullah Salim Al Ghannam",
+      "diff": "-10",
+      "critical": false
+    },
+    {
+      "attacker": "Hirving Rodrigo Lozano Bahena",
+      "attacker_team": "Mexico",
+      "defender": "Ali Albulayhi",
+      "defender_team": "Saudi Arabia",
+      "advantage": "Hirving Rodrigo Lozano Bahena",
+      "diff": "+1",
+      "critical": false
+    },
+    {
+      "attacker": "Saleh Khalid Al Shehri",
+      "attacker_team": "Saudi Arabia",
+      "defender": "César Jasib Montes Castro",
+      "defender_team": "Mexico",
+      "advantage": "César Jasib Montes Castro",
+      "diff": "-11",
+      "critical": true
+    },
+    {
+      "attacker": "Henry Josué Martín Mex",
+      "attacker_team": "Mexico",
+      "defender": "Hassan Mohammed Al-Tambakti",
+      "defender_team": "Saudi Arabia",
+      "advantage": "Hassan Mohammed Al-Tambakti",
+      "diff": "-11",
+      "critical": true
+    },
+    {
+      "attacker": "Salem Mohammed Al Dawsari",
+      "attacker_team": "Saudi Arabia",
+      "defender": "Jorge Eduardo Sánchez Ramos",
+      "defender_team": "Mexico",
+      "advantage": "Salem Mohammed Al Dawsari",
+      "diff": "+13",
+      "critical": true
+    },
+    {
+      "attacker": "Firas Tariq Nasser Al Albirakan",
+      "attacker_team": "Saudi Arabia",
+      "defender": "Jesús Daniel Gallardo Vasconcelos",
+      "defender_team": "Mexico",
+      "advantage": "Jesús Daniel Gallardo Vasconcelos",
+      "diff": "-7",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 14,
+      "type": "yellow_card",
+      "description": "Edson Omar Álvarez Velázquez (Mexico) shown a yellow card card — Foul",
+      "player": "Edson Omar Álvarez Velázquez"
+    },
+    {
+      "minute": 27,
+      "type": "yellow_card",
+      "description": "Saleh Khalid Al Shehri (Saudi Arabia) shown a yellow card card — Foul",
+      "player": "Saleh Khalid Al Shehri"
+    },
+    {
+      "minute": 33,
+      "type": "yellow_card",
+      "description": "Ali Al Hassan (Saudi Arabia) shown a yellow card card — Foul",
+      "player": "Ali Al Hassan"
+    },
+    {
+      "minute": 36,
+      "type": "substitution",
+      "description": "Riyadh Sharahili replaces Ali Albulayhi (Injury)",
+      "player": "Riyadh Sharahili"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Carlos Uriel Antuna Romero replaces Ernesto Alexis Vega Rojas (Tactical)",
+      "player": "Carlos Uriel Antuna Romero"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Abdullah Mohammed Madu replaces Ali Al Hassan (Tactical)",
+      "player": "Abdullah Mohammed Madu"
+    },
+    {
+      "minute": 46,
+      "type": "goal",
+      "description": "Henry Josué Martín Mex scores for Mexico!",
+      "player": "Henry Josué Martín Mex"
+    },
+    {
+      "minute": 51,
+      "type": "goal",
+      "description": "Luis Gerardo Chávez Magallón scores for Mexico!",
+      "player": "Luis Gerardo Chávez Magallón"
+    },
+    {
+      "minute": 51,
+      "type": "yellow_card",
+      "description": "Hassan Mohammed Al-Tambakti (Saudi Arabia) shown a yellow card card — Foul",
+      "player": "Hassan Mohammed Al-Tambakti"
+    },
+    {
+      "minute": 61,
+      "type": "substitution",
+      "description": "Abdulrahman Al-Obood replaces Saleh Khalid Al Shehri (Tactical)",
+      "player": "Abdulrahman Al-Obood"
+    },
+    {
+      "minute": 76,
+      "type": "substitution",
+      "description": "Carlos Alberto Rodríguez Gómez replaces Orbelín Pineda Alvarado (Tactical)",
+      "player": "Carlos Alberto Rodríguez Gómez"
+    },
+    {
+      "minute": 76,
+      "type": "substitution",
+      "description": "Raúl Alonso Jiménez Rodríguez replaces Henry Josué Martín Mex (Tactical)",
+      "player": "Raúl Alonso Jiménez Rodríguez"
+    },
+    {
+      "minute": 80,
+      "type": "yellow_card",
+      "description": "Abdullah Mohammed Madu (Saudi Arabia) shown a yellow card card — Foul",
+      "player": "Abdullah Mohammed Madu"
+    },
+    {
+      "minute": 85,
+      "type": "substitution",
+      "description": "Kevin Nahin Álvarez Campos replaces Jorge Eduardo Sánchez Ramos (Tactical)",
+      "player": "Kevin Nahin Álvarez Campos"
+    },
+    {
+      "minute": 85,
+      "type": "substitution",
+      "description": "Rogelio Gabriel Funes Mori replaces Edson Omar Álvarez Velázquez (Tactical)",
+      "player": "Rogelio Gabriel Funes Mori"
+    },
+    {
+      "minute": 87,
+      "type": "substitution",
+      "description": "Hattan Babhir replaces Sultan Abdullah Salim Al Ghannam (Tactical)",
+      "player": "Hattan Babhir"
+    },
+    {
+      "minute": 90,
+      "type": "yellow_card",
+      "description": "Abdulelah Al Amri (Saudi Arabia) shown a yellow card card — Foul",
+      "player": "Abdulelah Al Amri"
+    },
+    {
+      "minute": 94,
+      "type": "goal",
+      "description": "Salem Mohammed Al Dawsari scores for Saudi Arabia!",
+      "player": "Salem Mohammed Al Dawsari"
+    },
+    {
+      "minute": 96,
+      "type": "yellow_card",
+      "description": "Hattan Babhir (Saudi Arabia) shown a yellow card card — Foul",
+      "player": "Hattan Babhir"
+    }
+  ]
+}

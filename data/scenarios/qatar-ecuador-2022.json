@@ -1,0 +1,347 @@
+{
+  "id": "qatar-ecuador-2022",
+  "meta": {
+    "title": "Qatar vs Ecuador — Group Stage",
+    "trigger_label": "Second half — Qatar trail 0-2",
+    "difficulty": 1,
+    "order": 20,
+    "stage": "Group Stage",
+    "group": "A",
+    "date": "2022-11-20",
+    "stadium": "Al Bayt Stadium"
+  },
+  "scoreline": {
+    "display": "Qatar 0 – 2 Ecuador",
+    "home": 0,
+    "away": 2
+  },
+  "context": "A pivotal moment in this group stage match. Qatar trail Ecuador 0-2. Something has to change. The manager must decide how to respond.",
+  "home_team": "Qatar",
+  "away_team": "Ecuador",
+  "home_formation": "5-3-2",
+  "away_formation": "4-4-2",
+  "home_players": [
+    {
+      "name": "Saad Abdullah Al Sheeb",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 38
+    },
+    {
+      "name": "Boualem Khoukhi",
+      "number": 16,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Abdelkarim Hassan Al Haj Fadlalla",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Bassam Hisham Al Rawi",
+      "number": 15,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Pedro Miguel Correia",
+      "number": 2,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 40
+    },
+    {
+      "name": "Homam Alamin Ahmed",
+      "number": 14,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 53
+    },
+    {
+      "name": "Karim Boudiaf",
+      "number": 12,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 45
+    },
+    {
+      "name": "Hassan Khalid Al Heidos",
+      "number": 10,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 58
+    },
+    {
+      "name": "Abdulaziz Hatem Mohammed Abdullah",
+      "number": 6,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 55
+    },
+    {
+      "name": "Akram Hassan Afif",
+      "number": 11,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 61
+    },
+    {
+      "name": "Almoez Ali Zainalabiddin Abdulla",
+      "number": 19,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 51
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Hernán Ismael Galíndez",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 42
+    },
+    {
+      "name": "Pervis Josué Estupiñán Tenorio",
+      "number": 7,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 51
+    },
+    {
+      "name": "Angelo Smit Preciado Quiñónez",
+      "number": 17,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 41
+    },
+    {
+      "name": "Felix Eduardo Torres Caicedo",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Piero Martín Hincapié Reyna",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Romario Andrés Ibarra Mina",
+      "number": 10,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 56
+    },
+    {
+      "name": "Gonzalo Jordy Plata Jiménez",
+      "number": 19,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 53
+    },
+    {
+      "name": "Jhegson Sebastián Méndez Carabalí",
+      "number": 20,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 47
+    },
+    {
+      "name": "Moisés Isaac Caicedo Corozo",
+      "number": 23,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 52
+    },
+    {
+      "name": "Enner Remberto Valencia Lastra",
+      "number": 13,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 57
+    },
+    {
+      "name": "Michael Steveen Estrada Martínez",
+      "number": 11,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 51
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "C",
+    "description": "Ecuador won 2-0. Enner Remberto Valencia Lastra (15'), Enner Remberto Valencia Lastra (30')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Qatar and Ecuador (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Qatar and Ecuador (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Qatar and Ecuador (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Qatar and Ecuador (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Akram Hassan Afif": "Akram Hassan Afif at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Hassan Khalid Al Heidos": "Hassan Khalid Al Heidos at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Enner Remberto Valencia Lastra": "Enner Remberto Valencia Lastra at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Romario Andrés Ibarra Mina": "Romario Andrés Ibarra Mina at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Almoez Ali Zainalabiddin Abdulla",
+      "attacker_team": "Qatar",
+      "defender": "Piero Martín Hincapié Reyna",
+      "defender_team": "Ecuador",
+      "advantage": "Piero Martín Hincapié Reyna",
+      "diff": "-1",
+      "critical": false
+    },
+    {
+      "attacker": "Michael Steveen Estrada Martínez",
+      "attacker_team": "Ecuador",
+      "defender": "Bassam Hisham Al Rawi",
+      "defender_team": "Qatar",
+      "advantage": "Michael Steveen Estrada Martínez",
+      "diff": "+5",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 14,
+      "type": "yellow_card",
+      "description": "Saad Abdullah Al Sheeb (Qatar) shown a yellow card card — Foul",
+      "player": "Saad Abdullah Al Sheeb"
+    },
+    {
+      "minute": 15,
+      "type": "goal",
+      "description": "Enner Remberto Valencia Lastra scores for Ecuador! (Penalty)",
+      "player": "Enner Remberto Valencia Lastra"
+    },
+    {
+      "minute": 21,
+      "type": "yellow_card",
+      "description": "Almoez Ali Zainalabiddin Abdulla (Qatar) shown a yellow card card — Foul",
+      "player": "Almoez Ali Zainalabiddin Abdulla"
+    },
+    {
+      "minute": 28,
+      "type": "yellow_card",
+      "description": "Moisés Isaac Caicedo Corozo (Ecuador) shown a yellow card card — Foul",
+      "player": "Moisés Isaac Caicedo Corozo"
+    },
+    {
+      "minute": 30,
+      "type": "goal",
+      "description": "Enner Remberto Valencia Lastra scores for Ecuador!",
+      "player": "Enner Remberto Valencia Lastra"
+    },
+    {
+      "minute": 35,
+      "type": "yellow_card",
+      "description": "Karim Boudiaf (Qatar) shown a yellow card card — Foul",
+      "player": "Karim Boudiaf"
+    },
+    {
+      "minute": 55,
+      "type": "yellow_card",
+      "description": "Jhegson Sebastián Méndez Carabalí (Ecuador) shown a yellow card card — Foul",
+      "player": "Jhegson Sebastián Méndez Carabalí"
+    },
+    {
+      "minute": 67,
+      "type": "substitution",
+      "description": "Jeremy Leonel Sarmiento Morante replaces Romario Andrés Ibarra Mina (Tactical)",
+      "player": "Jeremy Leonel Sarmiento Morante"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Mohammed Waed Abdulwahhab Al Bayati replaces Hassan Khalid Al Heidos (Tactical)",
+      "player": "Mohammed Waed Abdulwahhab Al Bayati"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Mohammed Muntari replaces Almoez Ali Zainalabiddin Abdulla (Tactical)",
+      "player": "Mohammed Muntari"
+    },
+    {
+      "minute": 75,
+      "type": "substitution",
+      "description": "José Adoni Cifuentes Charcopa replaces Enner Remberto Valencia Lastra (Injury)",
+      "player": "José Adoni Cifuentes Charcopa"
+    },
+    {
+      "minute": 76,
+      "type": "yellow_card",
+      "description": "Akram Hassan Afif (Qatar) shown a yellow card card — Foul",
+      "player": "Akram Hassan Afif"
+    },
+    {
+      "minute": 89,
+      "type": "substitution",
+      "description": "Kevin José Rodríguez Cortez replaces Michael Steveen Estrada Martínez (Tactical)",
+      "player": "Kevin José Rodríguez Cortez"
+    },
+    {
+      "minute": 89,
+      "type": "substitution",
+      "description": "Alan Steven Franco Palma replaces Moisés Isaac Caicedo Corozo (Tactical)",
+      "player": "Alan Steven Franco Palma"
+    }
+  ]
+}

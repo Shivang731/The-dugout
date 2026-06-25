@@ -1,0 +1,360 @@
+{
+  "id": "argentina-mexico-2022",
+  "meta": {
+    "title": "Argentina vs Mexico — Group Stage",
+    "trigger_label": "Second half — Argentina lead 2-0",
+    "difficulty": 1,
+    "order": 39,
+    "stage": "Group Stage",
+    "group": "C",
+    "date": "2022-11-26",
+    "stadium": "Lusail Stadium"
+  },
+  "scoreline": {
+    "display": "Argentina 2 – 0 Mexico",
+    "home": 2,
+    "away": 0
+  },
+  "context": "A pivotal moment in this group stage match. Argentina lead Mexico 2-0. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Argentina",
+  "away_team": "Mexico",
+  "home_formation": "4-4-2",
+  "away_formation": "5-3-2",
+  "home_players": [
+    {
+      "name": "Damián Emiliano Martínez",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 45
+    },
+    {
+      "name": "Marcos Javier Acuña",
+      "number": 8,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 55
+    },
+    {
+      "name": "Gonzalo Ariel Montiel",
+      "number": 4,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "Nicolás Hernán Otamendi",
+      "number": 19,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 51
+    },
+    {
+      "name": "Lisandro Martínez",
+      "number": 25,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Ángel Fabián Di María Hernández",
+      "number": 11,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 56
+    },
+    {
+      "name": "Alexis Mac Allister",
+      "number": 20,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 61
+    },
+    {
+      "name": "Rodrigo Javier De Paul",
+      "number": 7,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 48
+    },
+    {
+      "name": "Guido Rodríguez",
+      "number": 18,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 52
+    },
+    {
+      "name": "Lionel Andrés Messi Cuccittini",
+      "number": 10,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 61
+    },
+    {
+      "name": "Lautaro Javier Martínez",
+      "number": 22,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 66
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Francisco Guillermo Ochoa Magaña",
+      "number": 13,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 31
+    },
+    {
+      "name": "Héctor Alfredo Moreno Herrera",
+      "number": 15,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Néstor Alejandro Araújo Razo",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "César Jasib Montes Castro",
+      "number": 3,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 50
+    },
+    {
+      "name": "Jesús Daniel Gallardo Vasconcelos",
+      "number": 23,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 49
+    },
+    {
+      "name": "Kevin Nahin Álvarez Campos",
+      "number": 26,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 56
+    },
+    {
+      "name": "Héctor Miguel Herrera López",
+      "number": 16,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 54
+    },
+    {
+      "name": "José Andrés Guardado Hernández",
+      "number": 18,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 37
+    },
+    {
+      "name": "Luis Gerardo Chávez Magallón",
+      "number": 24,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 54
+    },
+    {
+      "name": "Hirving Rodrigo Lozano Bahena",
+      "number": 22,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 50
+    },
+    {
+      "name": "Ernesto Alexis Vega Rojas",
+      "number": 10,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 57
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "Argentina won 2-0. Lionel Andrés Messi Cuccittini (63'), Enzo Fernandez (86')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between Argentina and Mexico (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between Argentina and Mexico (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between Argentina and Mexico (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between Argentina and Mexico (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Lautaro Javier Martínez": "Lautaro Javier Martínez at 66/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Alexis Mac Allister": "Alexis Mac Allister at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Lionel Andrés Messi Cuccittini": "Lionel Andrés Messi Cuccittini at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Ernesto Alexis Vega Rojas": "Ernesto Alexis Vega Rojas at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Francisco Guillermo Ochoa Magaña": "Francisco Guillermo Ochoa Magaña at 31/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Lautaro Javier Martínez",
+      "attacker_team": "Argentina",
+      "defender": "César Jasib Montes Castro",
+      "defender_team": "Mexico",
+      "advantage": "César Jasib Montes Castro",
+      "diff": "-12",
+      "critical": false
+    },
+    {
+      "attacker": "Ernesto Alexis Vega Rojas",
+      "attacker_team": "Mexico",
+      "defender": "Lisandro Martínez",
+      "defender_team": "Argentina",
+      "advantage": "Lisandro Martínez",
+      "diff": "-5",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 21,
+      "type": "yellow_card",
+      "description": "Néstor Alejandro Araújo Razo (Mexico) shown a yellow card card — Foul",
+      "player": "Néstor Alejandro Araújo Razo"
+    },
+    {
+      "minute": 40,
+      "type": "substitution",
+      "description": "Érick Gabriel Gutiérrez Galaviz replaces José Andrés Guardado Hernández (Injury)",
+      "player": "Érick Gabriel Gutiérrez Galaviz"
+    },
+    {
+      "minute": 42,
+      "type": "yellow_card",
+      "description": "Gonzalo Ariel Montiel (Argentina) shown a yellow card card — Foul",
+      "player": "Gonzalo Ariel Montiel"
+    },
+    {
+      "minute": 49,
+      "type": "yellow_card",
+      "description": "Érick Gabriel Gutiérrez Galaviz (Mexico) shown a yellow card card — Foul",
+      "player": "Érick Gabriel Gutiérrez Galaviz"
+    },
+    {
+      "minute": 56,
+      "type": "substitution",
+      "description": "Enzo Fernandez replaces Guido Rodríguez (Tactical)",
+      "player": "Enzo Fernandez"
+    },
+    {
+      "minute": 62,
+      "type": "substitution",
+      "description": "Julián Álvarez replaces Lautaro Javier Martínez (Tactical)",
+      "player": "Julián Álvarez"
+    },
+    {
+      "minute": 62,
+      "type": "substitution",
+      "description": "Nahuel Molina Lucero replaces Gonzalo Ariel Montiel (Tactical)",
+      "player": "Nahuel Molina Lucero"
+    },
+    {
+      "minute": 63,
+      "type": "goal",
+      "description": "Lionel Andrés Messi Cuccittini scores for Argentina!",
+      "player": "Lionel Andrés Messi Cuccittini"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Raúl Alonso Jiménez Rodríguez replaces Kevin Nahin Álvarez Campos (Tactical)",
+      "player": "Raúl Alonso Jiménez Rodríguez"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Carlos Uriel Antuna Romero replaces Ernesto Alexis Vega Rojas (Tactical)",
+      "player": "Carlos Uriel Antuna Romero"
+    },
+    {
+      "minute": 65,
+      "type": "yellow_card",
+      "description": "Héctor Miguel Herrera López (Mexico) shown a yellow card card — Foul",
+      "player": "Héctor Miguel Herrera López"
+    },
+    {
+      "minute": 68,
+      "type": "substitution",
+      "description": "Exequiel Alejandro Palacios replaces Alexis Mac Allister (Tactical)",
+      "player": "Exequiel Alejandro Palacios"
+    },
+    {
+      "minute": 68,
+      "type": "substitution",
+      "description": "Cristian Gabriel Romero replaces Ángel Fabián Di María Hernández (Tactical)",
+      "player": "Cristian Gabriel Romero"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "description": "Roberto Carlos Alvarado Hernández replaces Hirving Rodrigo Lozano Bahena (Tactical)",
+      "player": "Roberto Carlos Alvarado Hernández"
+    },
+    {
+      "minute": 86,
+      "type": "goal",
+      "description": "Enzo Fernandez scores for Argentina!",
+      "player": "Enzo Fernandez"
+    },
+    {
+      "minute": 88,
+      "type": "yellow_card",
+      "description": "Roberto Carlos Alvarado Hernández (Mexico) shown a yellow card card — Foul",
+      "player": "Roberto Carlos Alvarado Hernández"
+    }
+  ]
+}

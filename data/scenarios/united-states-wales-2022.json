@@ -1,0 +1,365 @@
+{
+  "id": "united-states-wales-2022",
+  "meta": {
+    "title": "United States vs Wales — Group Stage",
+    "trigger_label": "Second half — United States locked at 1-1, a moment of brilliance needed",
+    "difficulty": 1,
+    "order": 25,
+    "stage": "Group Stage",
+    "group": "B",
+    "date": "2022-11-21",
+    "stadium": "Ahmad bin Ali Stadium"
+  },
+  "scoreline": {
+    "display": "United States 1 – 1 Wales",
+    "home": 1,
+    "away": 1
+  },
+  "context": "A tense moment in this group stage match. United States and Wales are locked at 1-1. One tactical shift could be the difference between glory and heartbreak.",
+  "home_team": "United States",
+  "away_team": "Wales",
+  "home_formation": "4-3-3",
+  "away_formation": "5-3-2",
+  "home_players": [
+    {
+      "name": "Matthew Charles Turner",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 45
+    },
+    {
+      "name": "Antonee Robinson",
+      "number": 5,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 41
+    },
+    {
+      "name": "Sergino Dest",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 50
+    },
+    {
+      "name": "Walker Zimmerman",
+      "number": 3,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Tim Ream",
+      "number": 13,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Tyler Adams",
+      "number": 4,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Weston McKennie",
+      "number": 8,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 52
+    },
+    {
+      "name": "Yunus Dimoara Musah",
+      "number": 6,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 52
+    },
+    {
+      "name": "Timothy Weah",
+      "number": 21,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 52
+    },
+    {
+      "name": "Christian Pulisic",
+      "number": 10,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 66
+    },
+    {
+      "name": "Joshua Sargent",
+      "number": 24,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 60
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Wayne Hennessey",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 39
+    },
+    {
+      "name": "Ben Davies",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Chris Mepham",
+      "number": 5,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Joe Rodon",
+      "number": 6,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 48
+    },
+    {
+      "name": "Connor Roberts",
+      "number": 14,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 42
+    },
+    {
+      "name": "Neco Williams",
+      "number": 3,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 45
+    },
+    {
+      "name": "Ethan Ampadu",
+      "number": 15,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 54
+    },
+    {
+      "name": "Aaron Ramsey",
+      "number": 10,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 61
+    },
+    {
+      "name": "Harry Wilson",
+      "number": 8,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 54
+    },
+    {
+      "name": "Gareth Frank Bale",
+      "number": 11,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 54
+    },
+    {
+      "name": "Daniel James",
+      "number": 20,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 41
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Make an attacking substitution to break the deadlock",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Push the full-backs higher, create overloads out wide",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Stay patient, maintain shape, look for a moment of magic",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Go ultra-attacking — bring on an extra striker",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "The match ended 1-1. Timothy Weah (35'), Gareth Frank Bale (81')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Make an attacking substitution to break the deadlock**\nRisk level: High. This is the positive choice. An attacking substitution signals intent and can break the deadlock. In the context of this group stage match between United States and Wales (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Push the full-backs higher, create overloads out wide**\nRisk level: Medium. This is the width-based approach. Overlapping full-backs create numerical advantages in wide areas. In the context of this group stage match between United States and Wales (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Stay patient, maintain shape, look for a moment of magic**\nRisk level: Medium. This is the patient choice. Maintaining shape avoids risk but may not be enough to win. In the context of this group stage match between United States and Wales (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Go ultra-attacking — bring on an extra striker**\nRisk level: Very High. This is the all-out attacking option. An extra striker increases goal threat but sacrifices midfield control. In the context of this group stage match between United States and Wales (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Christian Pulisic": "Christian Pulisic at 66/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Aaron Ramsey": "Aaron Ramsey at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Joshua Sargent": "Joshua Sargent at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Walker Zimmerman": "Walker Zimmerman at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Joshua Sargent",
+      "attacker_team": "United States",
+      "defender": "Joe Rodon",
+      "defender_team": "Wales",
+      "advantage": "Joshua Sargent",
+      "diff": "+2",
+      "critical": false
+    },
+    {
+      "attacker": "Daniel James",
+      "attacker_team": "Wales",
+      "defender": "Tim Ream",
+      "defender_team": "United States",
+      "advantage": "Tim Ream",
+      "diff": "-2",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 10,
+      "type": "yellow_card",
+      "description": "Sergino Dest (United States) shown a yellow card card — Foul",
+      "player": "Sergino Dest"
+    },
+    {
+      "minute": 12,
+      "type": "yellow_card",
+      "description": "Weston McKennie (United States) shown a yellow card card — Foul",
+      "player": "Weston McKennie"
+    },
+    {
+      "minute": 35,
+      "type": "goal",
+      "description": "Timothy Weah scores for United States!",
+      "player": "Timothy Weah"
+    },
+    {
+      "minute": 39,
+      "type": "yellow_card",
+      "description": "Gareth Frank Bale (Wales) shown a yellow card card — Foul",
+      "player": "Gareth Frank Bale"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Kieffer Roberto Francisco Moore replaces Daniel James (Tactical)",
+      "player": "Kieffer Roberto Francisco Moore"
+    },
+    {
+      "minute": 46,
+      "type": "yellow_card",
+      "description": "Chris Mepham (Wales) shown a yellow card card — Foul",
+      "player": "Chris Mepham"
+    },
+    {
+      "minute": 50,
+      "type": "yellow_card",
+      "description": "Tim Ream (United States) shown a yellow card card — Foul",
+      "player": "Tim Ream"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Brenden Aaronson replaces Weston McKennie (Tactical)",
+      "player": "Brenden Aaronson"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Haji Wright replaces Joshua Sargent (Tactical)",
+      "player": "Haji Wright"
+    },
+    {
+      "minute": 74,
+      "type": "substitution",
+      "description": "DeAndre Yedlin replaces Sergino Dest (Tactical)",
+      "player": "DeAndre Yedlin"
+    },
+    {
+      "minute": 74,
+      "type": "substitution",
+      "description": "Kellyn Kai Perry-Acosta replaces Yunus Dimoara Musah (Injury)",
+      "player": "Kellyn Kai Perry-Acosta"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Brennan Johnson replaces Neco Williams (Tactical)",
+      "player": "Brennan Johnson"
+    },
+    {
+      "minute": 81,
+      "type": "goal",
+      "description": "Gareth Frank Bale scores for Wales! (Penalty)",
+      "player": "Gareth Frank Bale"
+    },
+    {
+      "minute": 87,
+      "type": "substitution",
+      "description": "Jordan Morris replaces Timothy Weah (Tactical)",
+      "player": "Jordan Morris"
+    },
+    {
+      "minute": 92,
+      "type": "substitution",
+      "description": "Sorba Thomas replaces Harry Wilson (Tactical)",
+      "player": "Sorba Thomas"
+    },
+    {
+      "minute": 94,
+      "type": "substitution",
+      "description": "Joseff Morrell replaces Ethan Ampadu (Injury)",
+      "player": "Joseff Morrell"
+    },
+    {
+      "minute": 99,
+      "type": "yellow_card",
+      "description": "Kellyn Kai Perry-Acosta (United States) shown a yellow card card — Foul",
+      "player": "Kellyn Kai Perry-Acosta"
+    }
+  ]
+}

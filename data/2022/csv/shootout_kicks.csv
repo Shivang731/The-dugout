@@ -1,0 +1,42 @@
+match_id,kick_order,team,player,outcome,scored
+3869685,0,France,Kylian Mbappé Lottin,Goal,True
+3869685,1,Argentina,Lionel Andrés Messi Cuccittini,Goal,True
+3869685,2,France,Kingsley Coman,Saved,False
+3869685,3,Argentina,Paulo Bruno Exequiel Dybala,Goal,True
+3869685,4,France,Aurélien Djani Tchouaméni,Off T,False
+3869685,5,Argentina,Leandro Daniel Paredes,Goal,True
+3869685,6,France,Randal Kolo Muani,Goal,True
+3869685,7,Argentina,Gonzalo Ariel Montiel,Goal,True
+3869220,8,Morocco,Abdelhamid Sabiri,Goal,True
+3869220,9,Spain,Pablo Sarabia García,Post,False
+3869220,10,Morocco,Hakim Ziyech,Goal,True
+3869220,11,Spain,Carlos Soler Barragán,Saved,False
+3869220,12,Morocco,Badr Banoun,Saved,False
+3869220,13,Spain,Sergio Busquets i Burgos,Saved,False
+3869220,14,Morocco,Achraf Hakimi Mouh,Goal,True
+3869321,15,Netherlands,Virgil van Dijk,Saved,False
+3869321,16,Argentina,Lionel Andrés Messi Cuccittini,Goal,True
+3869321,17,Netherlands,Steven Berghuis,Saved,False
+3869321,18,Argentina,Leandro Daniel Paredes,Goal,True
+3869321,19,Netherlands,Teun Koopmeiners,Goal,True
+3869321,20,Argentina,Gonzalo Ariel Montiel,Goal,True
+3869321,21,Netherlands,Wout Weghorst,Goal,True
+3869321,22,Argentina,Enzo Fernandez,Off T,False
+3869321,23,Netherlands,Luuk de Jong,Goal,True
+3869321,24,Argentina,Lautaro Javier Martínez,Goal,True
+3869219,25,Japan,Takumi Minamino,Saved,False
+3869219,26,Croatia,Nikola Vlašić,Goal,True
+3869219,27,Japan,Kaoru Mitoma,Saved,False
+3869219,28,Croatia,Marcelo Brozović,Goal,True
+3869219,29,Japan,Takuma Asano,Goal,True
+3869219,30,Croatia,Marko Livaja,Post,False
+3869219,31,Japan,Maya Yoshida,Saved,False
+3869219,32,Croatia,Mario Pašalić,Goal,True
+3869420,33,Croatia,Nikola Vlašić,Goal,True
+3869420,34,Brazil,Rodrygo Silva de Goes,Saved,False
+3869420,35,Croatia,Lovro Majer,Goal,True
+3869420,36,Brazil,Carlos Henrique Casimiro,Goal,True
+3869420,37,Croatia,Luka Modrić,Goal,True
+3869420,38,Brazil,Pedro Guilherme Abreu dos Santos,Goal,True
+3869420,39,Croatia,Mislav Oršić,Goal,True
+3869420,40,Brazil,Marcos Aoás Corrêa,Post,False

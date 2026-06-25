@@ -1,0 +1,379 @@
+{
+  "id": "japan-spain-2022",
+  "meta": {
+    "title": "Japan vs Spain — Group Stage",
+    "trigger_label": "Second half — Japan lead 2-1",
+    "difficulty": 1,
+    "order": 55,
+    "stage": "Group Stage",
+    "group": "E",
+    "date": "2022-12-01",
+    "stadium": "Sheikh Khalifa International Stadium"
+  },
+  "scoreline": {
+    "display": "Japan 2 – 1 Spain",
+    "home": 2,
+    "away": 1
+  },
+  "context": "A pivotal moment in this group stage match. Japan lead Spain 2-1. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Japan",
+  "away_team": "Spain",
+  "home_formation": "5-4-1",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Shūichi Gonda",
+      "number": 12,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 37
+    },
+    {
+      "name": "Maya Yoshida",
+      "number": 22,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Ko Itakura",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Shogo Taniguchi",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Yuto Nagatomo",
+      "number": 5,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 33
+    },
+    {
+      "name": "Junya Ito",
+      "number": 14,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 53
+    },
+    {
+      "name": "Ao Tanaka",
+      "number": 17,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 51
+    },
+    {
+      "name": "Hidemasa Morita",
+      "number": 13,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 53
+    },
+    {
+      "name": "Daichi Kamada",
+      "number": 15,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 52
+    },
+    {
+      "name": "Takefusa Kubo",
+      "number": 11,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 47
+    },
+    {
+      "name": "Daizen Maeda",
+      "number": 25,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 50
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Unai Simón Mendibil",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 46
+    },
+    {
+      "name": "César Azpilicueta Tanco",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 31
+    },
+    {
+      "name": "Alejandro Balde Martínez",
+      "number": 14,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "Rodrigo Hernández Cascante",
+      "number": 16,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Pau Francisco Torres",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 51
+    },
+    {
+      "name": "Sergio Busquets i Burgos",
+      "number": 5,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 60
+    },
+    {
+      "name": "Pedro González López",
+      "number": 26,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 50
+    },
+    {
+      "name": "Pablo Martín Páez Gavira",
+      "number": 9,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 57
+    },
+    {
+      "name": "Daniel Olmo Carvajal",
+      "number": 21,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 60
+    },
+    {
+      "name": "Nicholas Williams Arthuer",
+      "number": 12,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 61
+    },
+    {
+      "name": "Álvaro Borja Morata Martín",
+      "number": 7,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 46
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "Japan won 2-1. Álvaro Borja Morata Martín (11'), Ritsu Doan (47'), Ao Tanaka (50')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between Japan and Spain (2-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between Japan and Spain (2-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between Japan and Spain (2-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between Japan and Spain (2-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Nicholas Williams Arthuer": "Nicholas Williams Arthuer at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Sergio Busquets i Burgos": "Sergio Busquets i Burgos at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Daniel Olmo Carvajal": "Daniel Olmo Carvajal at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Pablo Martín Páez Gavira": "Pablo Martín Páez Gavira at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "César Azpilicueta Tanco": "César Azpilicueta Tanco at 31/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages.",
+    "Yuto Nagatomo": "Yuto Nagatomo at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Daichi Kamada",
+      "attacker_team": "Japan",
+      "defender": "César Azpilicueta Tanco",
+      "defender_team": "Spain",
+      "advantage": "Daichi Kamada",
+      "diff": "+6",
+      "critical": false
+    },
+    {
+      "attacker": "Takefusa Kubo",
+      "attacker_team": "Japan",
+      "defender": "Alejandro Balde Martínez",
+      "defender_team": "Spain",
+      "advantage": "Takefusa Kubo",
+      "diff": "+4",
+      "critical": false
+    },
+    {
+      "attacker": "Daizen Maeda",
+      "attacker_team": "Japan",
+      "defender": "Pau Francisco Torres",
+      "defender_team": "Spain",
+      "advantage": "Daizen Maeda",
+      "diff": "+16",
+      "critical": true
+    },
+    {
+      "attacker": "Álvaro Borja Morata Martín",
+      "attacker_team": "Spain",
+      "defender": "Shogo Taniguchi",
+      "defender_team": "Japan",
+      "advantage": "Shogo Taniguchi",
+      "diff": "-9",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 11,
+      "type": "goal",
+      "description": "Álvaro Borja Morata Martín scores for Spain!",
+      "player": "Álvaro Borja Morata Martín"
+    },
+    {
+      "minute": 38,
+      "type": "yellow_card",
+      "description": "Ko Itakura (Japan) shown a yellow card card — Foul",
+      "player": "Ko Itakura"
+    },
+    {
+      "minute": 43,
+      "type": "yellow_card",
+      "description": "Shogo Taniguchi (Japan) shown a yellow card card — Foul",
+      "player": "Shogo Taniguchi"
+    },
+    {
+      "minute": 44,
+      "type": "yellow_card",
+      "description": "Maya Yoshida (Japan) shown a yellow card card — Foul",
+      "player": "Maya Yoshida"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Ritsu Doan replaces Takefusa Kubo (Tactical)",
+      "player": "Ritsu Doan"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Daniel Carvajal Ramos replaces César Azpilicueta Tanco (Tactical)",
+      "player": "Daniel Carvajal Ramos"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Kaoru Mitoma replaces Yuto Nagatomo (Tactical)",
+      "player": "Kaoru Mitoma"
+    },
+    {
+      "minute": 47,
+      "type": "goal",
+      "description": "Ritsu Doan scores for Japan!",
+      "player": "Ritsu Doan"
+    },
+    {
+      "minute": 50,
+      "type": "goal",
+      "description": "Ao Tanaka scores for Japan!",
+      "player": "Ao Tanaka"
+    },
+    {
+      "minute": 56,
+      "type": "substitution",
+      "description": "Ferrán Torres García replaces Nicholas Williams Arthuer (Tactical)",
+      "player": "Ferrán Torres García"
+    },
+    {
+      "minute": 56,
+      "type": "substitution",
+      "description": "Marco Asensio Willemsen replaces Álvaro Borja Morata Martín (Tactical)",
+      "player": "Marco Asensio Willemsen"
+    },
+    {
+      "minute": 61,
+      "type": "substitution",
+      "description": "Takuma Asano replaces Daizen Maeda (Tactical)",
+      "player": "Takuma Asano"
+    },
+    {
+      "minute": 67,
+      "type": "substitution",
+      "description": "Anssumane Fati replaces Pablo Martín Páez Gavira (Tactical)",
+      "player": "Anssumane Fati"
+    },
+    {
+      "minute": 68,
+      "type": "substitution",
+      "description": "Takehiro Tomiyasu replaces Daichi Kamada (Tactical)",
+      "player": "Takehiro Tomiyasu"
+    },
+    {
+      "minute": 68,
+      "type": "substitution",
+      "description": "Jordi Alba Ramos replaces Alejandro Balde Martínez (Tactical)",
+      "player": "Jordi Alba Ramos"
+    },
+    {
+      "minute": 86,
+      "type": "substitution",
+      "description": "Wataru Endo replaces Ao Tanaka (Tactical)",
+      "player": "Wataru Endo"
+    }
+  ]
+}

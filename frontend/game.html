@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dugout</title>
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="stylesheet" href="/static/css/game.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+</head>
+<body>
+  <div class="app" id="app">
+
+    <!-- ===== LEFT SIDEBAR ===== -->
+    <aside class="left-sidebar">
+      <div class="logo-section">
+        <div class="logo-icon">◇</div>
+        <div>
+          <div class="logo-text">THE DUGOUT</div>
+          <div class="logo-sub">Understand the Game</div>
+        </div>
+      </div>
+
+      <nav class="nav-items">
+        <a class="nav-item active" href="#">
+          <span class="nav-dot">●</span> Scenarios
+        </a>
+        <a class="nav-item" href="#">
+          <span class="nav-dot">●</span> Learning
+        </a>
+        <a class="nav-item" href="#">
+          <span class="nav-dot">●</span> Concepts
+        </a>
+        <a class="nav-item" href="#">
+          <span class="nav-dot">●</span> Glossary
+        </a>
+        <a class="nav-item" href="#">
+          <span class="nav-dot">●</span> My Journey
+        </a>
+      </nav>
+
+      <div class="progress-section">
+        <h4 class="progress-heading">PROGRESS</h4>
+        <div class="progress-item">
+          <div class="progress-row">
+            <span class="progress-label">Scenarios Completed</span>
+            <span class="progress-value">0/64</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:0%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-row">
+            <span class="progress-label">Concepts Learned</span>
+            <span class="progress-value">0/12</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:0%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-row">
+            <span class="progress-label">Tactical IQ</span>
+            <span class="progress-value">—</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:0%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-row">
+            <span class="progress-label">Current Level</span>
+            <span class="progress-value">1</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:25%"></div></div>
+        </div>
+      </div>
+
+      <div class="free-card">
+        <div class="free-badge">100% FREE</div>
+        <p class="free-text">The Dugout is and will always be free.</p>
+        <p class="free-sub">Football understanding for everyone.</p>
+        <div class="stadium-art">
+          <div class="stadium-roof"></div>
+          <div class="stadium-arc"></div>
+        </div>
+      </div>
+
+      <a href="/static/index.html" class="back-link">← All Scenarios</a>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+
+      <!-- Scoreboard -->
+      <header class="scoreboard">
+        <div class="scoreboard-left">
+          <div class="team-block home">
+            <span class="team-name">SENEGAL</span>
+            <span class="team-score" id="home-score">0</span>
+          </div>
+          <div class="score-divider">–</div>
+          <div class="team-block away">
+            <span class="team-name">NETHERLANDS</span>
+            <span class="team-score" id="away-score">2</span>
+          </div>
+        </div>
+        <div class="scoreboard-mid">
+          <span id="match-stage">Group Stage</span>
+          <span class="meta-dot">•</span>
+          <span id="match-stadium">Al Thumama Stadium</span>
+        </div>
+        <div class="scoreboard-right">
+          <span class="minute-display" id="match-minute">67'</span>
+          <span class="half-display">Second Half</span>
+        </div>
+      </header>
+
+      <!-- Pitch Section -->
+      <div class="pitch-section">
+        <div class="pitch-header-controls">
+          <div class="formation-labels">
+            <span class="formation home" id="home-formation">SENEGAL 4-3-3</span>
+            <span class="formation away" id="away-formation">NETHERLANDS 5-3-2</span>
+          </div>
+          <div class="pitch-controls">
+            <div class="mode-toggles">
+              <button class="mode-btn active" data-mode="shape" onclick="setDisplayMode('shape')">Shape</button>
+              <button class="mode-btn" data-mode="live" onclick="setDisplayMode('live')">Live</button>
+            </div>
+            <div class="overlay-toggles">
+              <button class="overlay-btn active" data-overlay="shape" onclick="setOverlay('shape')">Shape</button>
+              <button class="overlay-btn" data-overlay="pressing" onclick="setOverlay('pressing')">Pressing</button>
+              <button class="overlay-btn" data-overlay="attack" onclick="setOverlay('attack')">Attack Zones</button>
+              <button class="overlay-btn" data-overlay="passing" onclick="setOverlay('passing')">Passing Lanes</button>
+              <button class="overlay-btn" data-overlay="defensive" onclick="setOverlay('defensive')">Defensive Block</button>
+            </div>
+            <div class="view-toggles">
+              <button class="view-btn active" id="view-2d" onclick="setView('2d')">2D</button>
+              <button class="view-btn" id="view-3d" onclick="setView('3d')">3D</button>
+            </div>
+            <div class="cam-toggles hidden" id="cam-toggles">
+              <button class="cam-btn active" data-cam="broadcast" onclick="setCameraMode('broadcast')">Broadcast</button>
+              <button class="cam-btn" data-cam="tactical" onclick="setCameraMode('tactical')">Tactical</button>
+              <button class="cam-btn" data-cam="free" onclick="setCameraMode('free')">Free</button>
+              <button class="cam-btn reset-cam" onclick="setCameraMode('broadcast')">↺ Reset</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Momentum Bar -->
+        <div class="momentum-bar" id="momentum-bar">
+          <div class="momentum-label">MOMENTUM</div>
+          <div class="momentum-tracks">
+            <div class="momentum-team home-mom">
+              <span class="mom-name" id="mom-home-name">SENEGAL</span>
+              <div class="mom-track"><div class="mom-fill home-fill" id="mom-home-fill" style="width:50%"></div></div>
+              <span class="mom-pct" id="mom-home-pct">50%</span>
+            </div>
+            <div class="momentum-team away-mom">
+              <span class="mom-pct" id="mom-away-pct">50%</span>
+              <div class="mom-track"><div class="mom-fill away-fill" id="mom-away-fill" style="width:50%"></div></div>
+              <span class="mom-name" id="mom-away-name">NETHERLANDS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pitch-wrap">
+          <div id="pitch-container"></div>
+          <div class="pitch-loading" id="pitch-loading">
+            <div class="spinner"></div>
+          </div>
+        </div>
+
+        <div class="pitch-legend">
+          <span class="legend-item">
+            <span class="dot home-dot"></span> Senegal shape
+          </span>
+          <span class="legend-item">
+            <span class="dot away-dot"></span> Netherlands shape
+          </span>
+          <span class="legend-item ball-indicator">
+            <span class="ball-icon">⚽</span> Ball position
+          </span>
+        </div>
+
+        <div class="preview-label" id="preview-label">Previewing tactical change…</div>
+
+        <!-- Events timeline -->
+        <div class="events-timeline" id="events-timeline"></div>
+      </div>
+
+      <!-- Match Story -->
+      <div class="match-story" id="match-story">
+        <div class="story-left">
+          <div class="story-flag">🏳️</div>
+          <div class="story-content">
+            <h4 class="story-title">A crucial moment.</h4>
+            <p class="story-text" id="story-text">Senegal are controlling possession but struggling to create high-quality chances. Netherlands are sitting deep and defending with a compact shape.</p>
+          </div>
+        </div>
+        <div class="story-right">
+          <div class="goal-label">YOUR GOAL</div>
+          <p class="goal-text">Find the best tactical adjustment to get back into the game.</p>
+        </div>
+      </div>
+
+      <!-- Tactical Choice Section -->
+      <div class="choice-section" id="choice-section">
+        <div class="choice-header">
+          <h2 class="choice-title">What would you do?</h2>
+          <div class="choice-timer" id="choice-timer">1:00</div>
+        </div>
+        <div class="choice-cards" id="choice-cards"></div>
+      </div>
+
+      <!-- Result Reveal (hidden initially) -->
+      <div class="result-section hidden" id="result-section">
+        <div class="result-badge">Post-Match Analysis</div>
+        <h3 class="result-heading">What Actually Happened</h3>
+        <div class="result-row">
+          <span class="result-label">Manager Choice</span>
+          <span class="result-value" id="result-choice">—</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">Why</span>
+          <p class="result-text" id="result-why-text">—</p>
+        </div>
+        <div class="result-row">
+          <span class="result-label">Outcome</span>
+          <p class="result-text" id="result-outcome-text">—</p>
+        </div>
+        <div class="result-actions">
+          <button class="btn-primary" onclick="nextScenario()">Next Match →</button>
+          <button class="btn-secondary" onclick="closeResult()">Back to Pitch</button>
+        </div>
+      </div>
+
+      <!-- Bottom Tip Bar -->
+      <div class="tip-bar">
+        <span class="tip-label">Coach Tip:</span>
+        <span class="tip-text">There is no perfect choice in football. Every decision has trade-offs.</span>
+      </div>
+    </main>
+
+    <!-- ===== RIGHT SIDEBAR ===== -->
+    <aside class="right-sidebar">
+
+      <!-- Card 1: AI Insight -->
+      <div class="sidebar-card">
+        <div class="card-header">
+          <span class="card-icon">◇</span>
+          <h3>AI Insight</h3>
+        </div>
+        <div class="card-body" id="ai-insight">
+          <p>Senegal have 61% possession but only 5 shots with 0.9 xG.</p>
+          <p>Netherlands are defending deep in a 5-3-2.</p>
+          <p class="highlight-green">A second striker could improve penalty box presence.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Tactical Story -->
+      <div class="sidebar-card">
+        <div class="card-header">
+          <span class="card-icon">○</span>
+          <h3>Tactical Story</h3>
+        </div>
+        <div class="card-body">
+          <div class="timeline-item">
+            <span class="tl-minute" id="tl-minute">67'</span>
+            <span class="tl-text">Senegal need two goals</span>
+          </div>
+          <p class="tl-description" id="tl-description">They dominate possession. The next decision could change momentum.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Attack Zones (populated dynamically) -->
+      <div class="sidebar-card">
+        <div class="card-header">
+          <span class="card-icon">▤</span>
+          <h3>Attack Zones</h3>
+        </div>
+        <div class="card-body">
+          <div class="attack-zones-visual">
+            <div class="mini-pitch">
+              <div class="spinner"></div>
+            </div>
+            <div class="zone-stats">
+              <div class="zone-stat"><span class="zone-dot l"></span> Left <span class="zone-pct">—</span></div>
+              <div class="zone-stat"><span class="zone-dot c"></span> Central <span class="zone-pct">—</span></div>
+              <div class="zone-stat"><span class="zone-dot r"></span> Right <span class="zone-pct">—</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Concept to Learn -->
+      <div class="sidebar-card concept-card">
+        <div class="card-header">
+          <span class="card-icon">◇</span>
+          <h3>Concept to Learn</h3>
+        </div>
+        <div class="card-body">
+          <div class="concept-row">
+            <div class="concept-text">
+              <h4 class="concept-name" id="concept-name">Overloads</h4>
+              <p class="concept-def" id="concept-def">Creating numerical superiority in a specific area to create chances.</p>
+              <p class="concept-why" id="concept-why">Why it matters here: Creating overloads near the penalty area breaks down defensive blocks.</p>
+              <button class="learn-btn" onclick="openConceptLibrary()">Learn More</button>
+            </div>
+            <div class="concept-diagram">
+              <svg viewBox="0 0 60 60" width="60" height="60">
+                <circle cx="20" cy="20" r="5" fill="#3B82F6" opacity="0.6"/>
+                <circle cx="30" cy="18" r="5" fill="#3B82F6" opacity="0.6"/>
+                <circle cx="25" cy="28" r="5" fill="#3B82F6" opacity="0.6"/>
+                <circle cx="40" cy="22" r="5" fill="#8BF55A" opacity="0.4"/>
+                <circle cx="42" cy="32" r="5" fill="#8BF55A" opacity="0.4"/>
+                <line x1="20" y1="20" x2="30" y2="18" stroke="#3B82F6" stroke-width="1"/>
+                <line x1="30" y1="18" x2="25" y2="28" stroke="#3B82F6" stroke-width="1"/>
+                <line x1="20" y1="20" x2="25" y2="28" stroke="#3B82F6" stroke-width="1"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <div class="player-tooltip hidden" id="player-tooltip"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="/static/js/pitch.js"></script>
+  <script src="/static/js/pitch2d.js"></script>
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/game.js"></script>
+</body>
+</html>

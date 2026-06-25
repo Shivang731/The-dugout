@@ -1,0 +1,389 @@
+{
+  "id": "morocco-portugal-2022",
+  "meta": {
+    "title": "Morocco vs Portugal — Quarter-finals",
+    "trigger_label": "Second half — Morocco lead 1-0",
+    "difficulty": 3,
+    "order": 76,
+    "stage": "Quarter-finals",
+    "group": null,
+    "date": "2022-12-10",
+    "stadium": "Al Thumama Stadium"
+  },
+  "scoreline": {
+    "display": "Morocco 1 – 0 Portugal",
+    "home": 1,
+    "away": 0
+  },
+  "context": "A pivotal moment in this quarter-finals match. Morocco lead Portugal 1-0. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Morocco",
+  "away_team": "Portugal",
+  "home_formation": "4-1-4-1",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Yassine Bounou",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 40
+    },
+    {
+      "name": "Achraf Hakimi Mouh",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 48
+    },
+    {
+      "name": "Yahia Attiyat allah",
+      "number": 25,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 51
+    },
+    {
+      "name": "Romain Saïss",
+      "number": 6,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Jawad El Yamiq",
+      "number": 18,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Sofiane Boufal",
+      "number": 17,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 55
+    },
+    {
+      "name": "Hakim Ziyech",
+      "number": 7,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 59
+    },
+    {
+      "name": "Sofyan Amrabat",
+      "number": 4,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 54
+    },
+    {
+      "name": "Selim Amallah",
+      "number": 15,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 50
+    },
+    {
+      "name": "Azzedine Ounahi",
+      "number": 8,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 58
+    },
+    {
+      "name": "Youssef En-Nesyri",
+      "number": 19,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 52
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Diogo Meireles Costa",
+      "number": 22,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 40
+    },
+    {
+      "name": "Raphaël Adelino José Guerreiro",
+      "number": 5,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 39
+    },
+    {
+      "name": "José Diogo Dalot Teixeira",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 54
+    },
+    {
+      "name": "Rúben Santos Gato Alves Dias",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Kléper Laveran Lima Ferreira",
+      "number": 3,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Rúben Diogo Da Silva Neves",
+      "number": 18,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 43
+    },
+    {
+      "name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "number": 10,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 47
+    },
+    {
+      "name": "Otávio Edmilson da Silva Monteiro",
+      "number": 25,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 48
+    },
+    {
+      "name": "Bruno Miguel Borges Fernandes",
+      "number": 8,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 51
+    },
+    {
+      "name": "João Félix Sequeira",
+      "number": 11,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 52
+    },
+    {
+      "name": "Gonçalo Matias Ramos",
+      "number": 26,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 52
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "Morocco won 1-0. Youssef En-Nesyri (41')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this quarter-finals match between Morocco and Portugal (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this quarter-finals match between Morocco and Portugal (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this quarter-finals match between Morocco and Portugal (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this quarter-finals match between Morocco and Portugal (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Hakim Ziyech": "Hakim Ziyech at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Azzedine Ounahi": "Azzedine Ounahi at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Rúben Santos Gato Alves Dias": "Rúben Santos Gato Alves Dias at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Sofiane Boufal": "Sofiane Boufal at 55/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "João Félix Sequeira",
+      "attacker_team": "Portugal",
+      "defender": "Achraf Hakimi Mouh",
+      "defender_team": "Morocco",
+      "advantage": "João Félix Sequeira",
+      "diff": "+9",
+      "critical": false
+    },
+    {
+      "attacker": "Bruno Miguel Borges Fernandes",
+      "attacker_team": "Portugal",
+      "defender": "Yahia Attiyat allah",
+      "defender_team": "Morocco",
+      "advantage": "Even",
+      "diff": "+0",
+      "critical": false
+    },
+    {
+      "attacker": "Youssef En-Nesyri",
+      "attacker_team": "Morocco",
+      "defender": "Kléper Laveran Lima Ferreira",
+      "defender_team": "Portugal",
+      "advantage": "Youssef En-Nesyri",
+      "diff": "+13",
+      "critical": true
+    },
+    {
+      "attacker": "Gonçalo Matias Ramos",
+      "attacker_team": "Portugal",
+      "defender": "Jawad El Yamiq",
+      "defender_team": "Morocco",
+      "advantage": "Jawad El Yamiq",
+      "diff": "-7",
+      "critical": true
+    },
+    {
+      "attacker": "Sofiane Boufal",
+      "attacker_team": "Morocco",
+      "defender": "José Diogo Dalot Teixeira",
+      "defender_team": "Portugal",
+      "advantage": "José Diogo Dalot Teixeira",
+      "diff": "-5",
+      "critical": true
+    },
+    {
+      "attacker": "Hakim Ziyech",
+      "attacker_team": "Morocco",
+      "defender": "Raphaël Adelino José Guerreiro",
+      "defender_team": "Portugal",
+      "advantage": "Hakim Ziyech",
+      "diff": "+7",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 41,
+      "type": "goal",
+      "description": "Youssef En-Nesyri scores for Morocco!",
+      "player": "Youssef En-Nesyri"
+    },
+    {
+      "minute": 50,
+      "type": "substitution",
+      "description": "João Pedro Cavaco Cancelo replaces Raphaël Adelino José Guerreiro (Tactical)",
+      "player": "João Pedro Cavaco Cancelo"
+    },
+    {
+      "minute": 50,
+      "type": "substitution",
+      "description": "Cristiano Ronaldo dos Santos Aveiro replaces Rúben Diogo Da Silva Neves (Tactical)",
+      "player": "Cristiano Ronaldo dos Santos Aveiro"
+    },
+    {
+      "minute": 56,
+      "type": "substitution",
+      "description": "Achraf Dari replaces Romain Saïss (Injury)",
+      "player": "Achraf Dari"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Walid Cheddira replaces Selim Amallah (Tactical)",
+      "player": "Walid Cheddira"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Badr Banoun replaces Youssef En-Nesyri (Tactical)",
+      "player": "Badr Banoun"
+    },
+    {
+      "minute": 68,
+      "type": "substitution",
+      "description": "Rafael Alexandre Conceição Leão replaces Gonçalo Matias Ramos (Tactical)",
+      "player": "Rafael Alexandre Conceição Leão"
+    },
+    {
+      "minute": 68,
+      "type": "substitution",
+      "description": "Vitor Machado Ferreira replaces Otávio Edmilson da Silva Monteiro (Tactical)",
+      "player": "Vitor Machado Ferreira"
+    },
+    {
+      "minute": 69,
+      "type": "yellow_card",
+      "description": "Achraf Dari (Morocco) shown a yellow card card — Foul",
+      "player": "Achraf Dari"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Ricardo Jorge Luz Horta replaces José Diogo Dalot Teixeira (Tactical)",
+      "player": "Ricardo Jorge Luz Horta"
+    },
+    {
+      "minute": 80,
+      "type": "substitution",
+      "description": "Zakaria Aboukhlal replaces Hakim Ziyech (Tactical)",
+      "player": "Zakaria Aboukhlal"
+    },
+    {
+      "minute": 80,
+      "type": "substitution",
+      "description": "Yahya Jabrane replaces Sofiane Boufal (Tactical)",
+      "player": "Yahya Jabrane"
+    },
+    {
+      "minute": 86,
+      "type": "yellow_card",
+      "description": "Vitor Machado Ferreira (Portugal) shown a yellow card card — Foul",
+      "player": "Vitor Machado Ferreira"
+    },
+    {
+      "minute": 90,
+      "type": "yellow_card",
+      "description": "Walid Cheddira (Morocco) shown a yellow card card — Foul",
+      "player": "Walid Cheddira"
+    },
+    {
+      "minute": 92,
+      "type": "yellow_card",
+      "description": "Walid Cheddira (Morocco) shown a second yellow card — Foul",
+      "player": "Walid Cheddira"
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "id": "netherlands-ecuador-2022",
+  "meta": {
+    "title": "Netherlands vs Ecuador — Group Stage",
+    "trigger_label": "Second half — Netherlands locked at 1-1, a moment of brilliance needed",
+    "difficulty": 1,
+    "order": 29,
+    "stage": "Group Stage",
+    "group": "A",
+    "date": "2022-11-25",
+    "stadium": "Sheikh Khalifa International Stadium"
+  },
+  "scoreline": {
+    "display": "Netherlands 1 – 1 Ecuador",
+    "home": 1,
+    "away": 1
+  },
+  "context": "A tense moment in this group stage match. Netherlands and Ecuador are locked at 1-1. One tactical shift could be the difference between glory and heartbreak.",
+  "home_team": "Netherlands",
+  "away_team": "Ecuador",
+  "home_formation": "5-3-2",
+  "away_formation": "5-4-1",
+  "home_players": [
+    {
+      "name": "Andries Noppert",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 41
+    },
+    {
+      "name": "Nathan Aké",
+      "number": 5,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 50
+    },
+    {
+      "name": "Virgil van Dijk",
+      "number": 4,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 47
+    },
+    {
+      "name": "Jurriën David Norman Timber",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Daley Blind",
+      "number": 17,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 56
+    },
+    {
+      "name": "Denzel Dumfries",
+      "number": 22,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 44
+    },
+    {
+      "name": "Teun Koopmeiners",
+      "number": 20,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Frenkie de Jong",
+      "number": 21,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Davy Klaassen",
+      "number": 14,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 61
+    },
+    {
+      "name": "Steven Bergwijn",
+      "number": 7,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 51
+    },
+    {
+      "name": "Cody Mathès Gakpo",
+      "number": 8,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 64
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Hernán Ismael Galíndez",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 45
+    },
+    {
+      "name": "Felix Eduardo Torres Caicedo",
+      "number": 2,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 54
+    },
+    {
+      "name": "Piero Martín Hincapié Reyna",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Jackson Gabriel Porozo Vernaza",
+      "number": 25,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Pervis Josué Estupiñán Tenorio",
+      "number": 7,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 44
+    },
+    {
+      "name": "Angelo Smit Preciado Quiñónez",
+      "number": 17,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 55
+    },
+    {
+      "name": "Jhegson Sebastián Méndez Carabalí",
+      "number": 20,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 48
+    },
+    {
+      "name": "Moisés Isaac Caicedo Corozo",
+      "number": 23,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 48
+    },
+    {
+      "name": "Enner Remberto Valencia Lastra",
+      "number": 13,
+      "pos": "LAM",
+      "x": 0.325,
+      "y": 0.43,
+      "fatigue": 58
+    },
+    {
+      "name": "Gonzalo Jordy Plata Jiménez",
+      "number": 19,
+      "pos": "RAM",
+      "x": 0.675,
+      "y": 0.43,
+      "fatigue": 63
+    },
+    {
+      "name": "Michael Steveen Estrada Martínez",
+      "number": 11,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 64
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Make an attacking substitution to break the deadlock",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Push the full-backs higher, create overloads out wide",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Stay patient, maintain shape, look for a moment of magic",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Go ultra-attacking — bring on an extra striker",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "The match ended 1-1. Cody Mathès Gakpo (5'), Enner Remberto Valencia Lastra (48')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Make an attacking substitution to break the deadlock**\nRisk level: High. This is the positive choice. An attacking substitution signals intent and can break the deadlock. In the context of this group stage match between Netherlands and Ecuador (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Push the full-backs higher, create overloads out wide**\nRisk level: Medium. This is the width-based approach. Overlapping full-backs create numerical advantages in wide areas. In the context of this group stage match between Netherlands and Ecuador (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Stay patient, maintain shape, look for a moment of magic**\nRisk level: Medium. This is the patient choice. Maintaining shape avoids risk but may not be enough to win. In the context of this group stage match between Netherlands and Ecuador (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Go ultra-attacking — bring on an extra striker**\nRisk level: Very High. This is the all-out attacking option. An extra striker increases goal threat but sacrifices midfield control. In the context of this group stage match between Netherlands and Ecuador (1-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Cody Mathès Gakpo": "Cody Mathès Gakpo at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Michael Steveen Estrada Martínez": "Michael Steveen Estrada Martínez at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Gonzalo Jordy Plata Jiménez": "Gonzalo Jordy Plata Jiménez at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Davy Klaassen": "Davy Klaassen at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Cody Mathès Gakpo",
+      "attacker_team": "Netherlands",
+      "defender": "Jackson Gabriel Porozo Vernaza",
+      "defender_team": "Ecuador",
+      "advantage": "Cody Mathès Gakpo",
+      "diff": "+7",
+      "critical": false
+    },
+    {
+      "attacker": "Michael Steveen Estrada Martínez",
+      "attacker_team": "Ecuador",
+      "defender": "Jurriën David Norman Timber",
+      "defender_team": "Netherlands",
+      "advantage": "Michael Steveen Estrada Martínez",
+      "diff": "+11",
+      "critical": true
+    },
+    {
+      "attacker": "Davy Klaassen",
+      "attacker_team": "Netherlands",
+      "defender": "Moisés Isaac Caicedo Corozo",
+      "defender_team": "Ecuador",
+      "advantage": "Davy Klaassen",
+      "diff": "+17",
+      "critical": true
+    },
+    {
+      "attacker": "Gonzalo Jordy Plata Jiménez",
+      "attacker_team": "Ecuador",
+      "defender": "Frenkie de Jong",
+      "defender_team": "Netherlands",
+      "advantage": "Gonzalo Jordy Plata Jiménez",
+      "diff": "+8",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 5,
+      "type": "goal",
+      "description": "Cody Mathès Gakpo scores for Netherlands!",
+      "player": "Cody Mathès Gakpo"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Memphis Depay replaces Steven Bergwijn (Tactical)",
+      "player": "Memphis Depay"
+    },
+    {
+      "minute": 48,
+      "type": "goal",
+      "description": "Enner Remberto Valencia Lastra scores for Ecuador!",
+      "player": "Enner Remberto Valencia Lastra"
+    },
+    {
+      "minute": 56,
+      "type": "yellow_card",
+      "description": "Jhegson Sebastián Méndez Carabalí (Ecuador) shown a yellow card card — Foul",
+      "player": "Jhegson Sebastián Méndez Carabalí"
+    },
+    {
+      "minute": 68,
+      "type": "substitution",
+      "description": "Steven Berghuis replaces Davy Klaassen (Tactical)",
+      "player": "Steven Berghuis"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Jeremy Leonel Sarmiento Morante replaces Michael Steveen Estrada Martínez (Tactical)",
+      "player": "Jeremy Leonel Sarmiento Morante"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Wout Weghorst replaces Cody Mathès Gakpo (Tactical)",
+      "player": "Wout Weghorst"
+    },
+    {
+      "minute": 79,
+      "type": "substitution",
+      "description": "Marten de Roon replaces Teun Koopmeiners (Tactical)",
+      "player": "Marten de Roon"
+    },
+    {
+      "minute": 89,
+      "type": "substitution",
+      "description": "Kevin José Rodríguez Cortez replaces Enner Remberto Valencia Lastra (Injury)",
+      "player": "Kevin José Rodríguez Cortez"
+    },
+    {
+      "minute": 89,
+      "type": "substitution",
+      "description": "Romario Andrés Ibarra Mina replaces Gonzalo Jordy Plata Jiménez (Tactical)",
+      "player": "Romario Andrés Ibarra Mina"
+    }
+  ]
+}

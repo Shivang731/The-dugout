@@ -1,0 +1,350 @@
+{
+  "id": "netherlands-qatar-2022",
+  "meta": {
+    "title": "Netherlands vs Qatar — Group Stage",
+    "trigger_label": "Second half — Netherlands lead 2-0",
+    "difficulty": 1,
+    "order": 57,
+    "stage": "Group Stage",
+    "group": "A",
+    "date": "2022-11-29",
+    "stadium": "Al Bayt Stadium"
+  },
+  "scoreline": {
+    "display": "Netherlands 2 – 0 Qatar",
+    "home": 2,
+    "away": 0
+  },
+  "context": "A pivotal moment in this group stage match. Netherlands lead Qatar 2-0. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Netherlands",
+  "away_team": "Qatar",
+  "home_formation": "5-3-2",
+  "away_formation": "5-3-2",
+  "home_players": [
+    {
+      "name": "Andries Noppert",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 37
+    },
+    {
+      "name": "Nathan Aké",
+      "number": 5,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Virgil van Dijk",
+      "number": 4,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Jurriën David Norman Timber",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Daley Blind",
+      "number": 17,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 44
+    },
+    {
+      "name": "Denzel Dumfries",
+      "number": 22,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 46
+    },
+    {
+      "name": "Marten de Roon",
+      "number": 15,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 48
+    },
+    {
+      "name": "Frenkie de Jong",
+      "number": 21,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 55
+    },
+    {
+      "name": "Davy Klaassen",
+      "number": 14,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 53
+    },
+    {
+      "name": "Memphis Depay",
+      "number": 10,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 53
+    },
+    {
+      "name": "Cody Mathès Gakpo",
+      "number": 8,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 57
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Meshaal Aissa Barsham",
+      "number": 22,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 40
+    },
+    {
+      "name": "Boualem Khoukhi",
+      "number": 16,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 47
+    },
+    {
+      "name": "Abdelkarim Hassan Al Haj Fadlalla",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Pedro Miguel Correia",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 40
+    },
+    {
+      "name": "Ismaeel Mohammad Mohammad",
+      "number": 17,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 54
+    },
+    {
+      "name": "Homam Alamin Ahmed",
+      "number": 14,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 46
+    },
+    {
+      "name": "Assim Omer Al Haj Madibo",
+      "number": 23,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 47
+    },
+    {
+      "name": "Hassan Khalid Al Heidos",
+      "number": 10,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 50
+    },
+    {
+      "name": "Abdulaziz Hatem Mohammed Abdullah",
+      "number": 6,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 48
+    },
+    {
+      "name": "Akram Hassan Afif",
+      "number": 11,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 66
+    },
+    {
+      "name": "Almoez Ali Zainalabiddin Abdulla",
+      "number": 19,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 62
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "C",
+    "description": "Netherlands won 2-0. Cody Mathès Gakpo (25'), Frenkie de Jong (48')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between Netherlands and Qatar (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between Netherlands and Qatar (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between Netherlands and Qatar (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between Netherlands and Qatar (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Akram Hassan Afif": "Akram Hassan Afif at 66/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Almoez Ali Zainalabiddin Abdulla": "Almoez Ali Zainalabiddin Abdulla at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Cody Mathès Gakpo": "Cody Mathès Gakpo at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Nathan Aké": "Nathan Aké at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Cody Mathès Gakpo",
+      "attacker_team": "Netherlands",
+      "defender": "Pedro Miguel Correia",
+      "defender_team": "Qatar",
+      "advantage": "Cody Mathès Gakpo",
+      "diff": "+10",
+      "critical": false
+    },
+    {
+      "attacker": "Almoez Ali Zainalabiddin Abdulla",
+      "attacker_team": "Qatar",
+      "defender": "Jurriën David Norman Timber",
+      "defender_team": "Netherlands",
+      "advantage": "Almoez Ali Zainalabiddin Abdulla",
+      "diff": "+7",
+      "critical": false
+    },
+    {
+      "attacker": "Davy Klaassen",
+      "attacker_team": "Netherlands",
+      "defender": "Assim Omer Al Haj Madibo",
+      "defender_team": "Qatar",
+      "advantage": "Davy Klaassen",
+      "diff": "+14",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 25,
+      "type": "goal",
+      "description": "Cody Mathès Gakpo scores for Netherlands!",
+      "player": "Cody Mathès Gakpo"
+    },
+    {
+      "minute": 48,
+      "type": "goal",
+      "description": "Frenkie de Jong scores for Netherlands!",
+      "player": "Frenkie de Jong"
+    },
+    {
+      "minute": 51,
+      "type": "yellow_card",
+      "description": "Nathan Aké (Netherlands) shown a yellow card card — Foul",
+      "player": "Nathan Aké"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Ali Assadalla Thaimn Qambar replaces Hassan Khalid Al Heidos (Injury)",
+      "player": "Ali Assadalla Thaimn Qambar"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Karim Boudiaf replaces Assim Omer Al Haj Madibo (Tactical)",
+      "player": "Karim Boudiaf"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Mohammed Muntari replaces Almoez Ali Zainalabiddin Abdulla (Tactical)",
+      "player": "Mohammed Muntari"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Steven Berghuis replaces Davy Klaassen (Tactical)",
+      "player": "Steven Berghuis"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Vincent Janssen replaces Memphis Depay (Tactical)",
+      "player": "Vincent Janssen"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Wout Weghorst replaces Cody Mathès Gakpo (Tactical)",
+      "player": "Wout Weghorst"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Teun Koopmeiners replaces Marten de Roon (Tactical)",
+      "player": "Teun Koopmeiners"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Ahmed Alaa Eldin Abdelmotaal replaces Abdulaziz Hatem Mohammed Abdullah (Tactical)",
+      "player": "Ahmed Alaa Eldin Abdelmotaal"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Mosaab Khoder Jibril replaces Ismaeel Mohammad Mohammad (Tactical)",
+      "player": "Mosaab Khoder Jibril"
+    },
+    {
+      "minute": 85,
+      "type": "substitution",
+      "description": "Kenneth Taylor replaces Frenkie de Jong (Tactical)",
+      "player": "Kenneth Taylor"
+    }
+  ]
+}

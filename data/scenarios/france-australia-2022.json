@@ -1,0 +1,408 @@
+{
+  "id": "france-australia-2022",
+  "meta": {
+    "title": "France vs Australia — Group Stage",
+    "trigger_label": "Second half — France lead 4-1",
+    "difficulty": 1,
+    "order": 22,
+    "stage": "Group Stage",
+    "group": "D",
+    "date": "2022-11-22",
+    "stadium": "Al Janoub Stadium   "
+  },
+  "scoreline": {
+    "display": "France 4 – 1 Australia",
+    "home": 4,
+    "away": 1
+  },
+  "context": "A pivotal moment in this group stage match. France lead Australia 4-1. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "France",
+  "away_team": "Australia",
+  "home_formation": "4-3-3",
+  "away_formation": "4-1-4-1",
+  "home_players": [
+    {
+      "name": "Hugo Lloris",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 44
+    },
+    {
+      "name": "Benjamin Pavard",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 50
+    },
+    {
+      "name": "Lucas Hernández Pi",
+      "number": 21,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 52
+    },
+    {
+      "name": "Dayotchanculle Upamecano",
+      "number": 18,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Ibrahima Konaté",
+      "number": 24,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 40
+    },
+    {
+      "name": "Adrien Rabiot",
+      "number": 14,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 56
+    },
+    {
+      "name": "Aurélien Djani Tchouaméni",
+      "number": 8,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 46
+    },
+    {
+      "name": "Antoine Griezmann",
+      "number": 7,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 56
+    },
+    {
+      "name": "Kylian Mbappé Lottin",
+      "number": 10,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 57
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "number": 11,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 56
+    },
+    {
+      "name": "Olivier Giroud",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 61
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Mathew Ryan",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 33
+    },
+    {
+      "name": "Aziz Eraltay Behich",
+      "number": 16,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 49
+    },
+    {
+      "name": "Nathaniel Atkinson",
+      "number": 3,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 49
+    },
+    {
+      "name": "Harry Souttar",
+      "number": 19,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Kye Rowles",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Mathew Leckie",
+      "number": 7,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 52
+    },
+    {
+      "name": "Craig Goodwin",
+      "number": 23,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 48
+    },
+    {
+      "name": "Aaron Mooy",
+      "number": 13,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 46
+    },
+    {
+      "name": "Jackson Irvine",
+      "number": 22,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 56
+    },
+    {
+      "name": "Riley McGree",
+      "number": 14,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 45
+    },
+    {
+      "name": "Mitchell Thomas Duke",
+      "number": 15,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 48
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "France won 4-1. Craig Goodwin (8'), Adrien Rabiot (26'), Olivier Giroud (31'), Kylian Mbappé Lottin (67'), Olivier Giroud (70')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between France and Australia (4-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between France and Australia (4-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between France and Australia (4-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between France and Australia (4-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Olivier Giroud": "Olivier Giroud at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Kylian Mbappé Lottin": "Kylian Mbappé Lottin at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Adrien Rabiot": "Adrien Rabiot at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Antoine Griezmann": "Antoine Griezmann at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Mathew Ryan": "Mathew Ryan at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Kylian Mbappé Lottin",
+      "attacker_team": "France",
+      "defender": "Nathaniel Atkinson",
+      "defender_team": "Australia",
+      "advantage": "Kylian Mbappé Lottin",
+      "diff": "+12",
+      "critical": false
+    },
+    {
+      "attacker": "Ousmane Dembélé",
+      "attacker_team": "France",
+      "defender": "Aziz Eraltay Behich",
+      "defender_team": "Australia",
+      "advantage": "Ousmane Dembélé",
+      "diff": "+14",
+      "critical": true
+    },
+    {
+      "attacker": "Olivier Giroud",
+      "attacker_team": "France",
+      "defender": "Kye Rowles",
+      "defender_team": "Australia",
+      "advantage": "Kye Rowles",
+      "diff": "-6",
+      "critical": false
+    },
+    {
+      "attacker": "Mitchell Thomas Duke",
+      "attacker_team": "Australia",
+      "defender": "Ibrahima Konaté",
+      "defender_team": "France",
+      "advantage": "Mitchell Thomas Duke",
+      "diff": "+18",
+      "critical": true
+    },
+    {
+      "attacker": "Craig Goodwin",
+      "attacker_team": "Australia",
+      "defender": "Benjamin Pavard",
+      "defender_team": "France",
+      "advantage": "Craig Goodwin",
+      "diff": "+2",
+      "critical": false
+    },
+    {
+      "attacker": "Mathew Leckie",
+      "attacker_team": "Australia",
+      "defender": "Lucas Hernández Pi",
+      "defender_team": "France",
+      "advantage": "Mathew Leckie",
+      "diff": "+19",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 8,
+      "type": "goal",
+      "description": "Craig Goodwin scores for Australia!",
+      "player": "Craig Goodwin"
+    },
+    {
+      "minute": 12,
+      "type": "substitution",
+      "description": "Theo Bernard François Hernández replaces Lucas Hernández Pi (Injury)",
+      "player": "Theo Bernard François Hernández"
+    },
+    {
+      "minute": 26,
+      "type": "goal",
+      "description": "Adrien Rabiot scores for France!",
+      "player": "Adrien Rabiot"
+    },
+    {
+      "minute": 31,
+      "type": "goal",
+      "description": "Olivier Giroud scores for France!",
+      "player": "Olivier Giroud"
+    },
+    {
+      "minute": 54,
+      "type": "yellow_card",
+      "description": "Mitchell Thomas Duke (Australia) shown a yellow card card — Foul",
+      "player": "Mitchell Thomas Duke"
+    },
+    {
+      "minute": 55,
+      "type": "substitution",
+      "description": "Jason Cummings replaces Mitchell Thomas Duke (Tactical)",
+      "player": "Jason Cummings"
+    },
+    {
+      "minute": 67,
+      "type": "goal",
+      "description": "Kylian Mbappé Lottin scores for France!",
+      "player": "Kylian Mbappé Lottin"
+    },
+    {
+      "minute": 70,
+      "type": "goal",
+      "description": "Olivier Giroud scores for France!",
+      "player": "Olivier Giroud"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "description": "Awer Denis Bul Mabil replaces Riley McGree (Tactical)",
+      "player": "Awer Denis Bul Mabil"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "description": "Garang Kuol replaces Craig Goodwin (Tactical)",
+      "player": "Garang Kuol"
+    },
+    {
+      "minute": 76,
+      "type": "substitution",
+      "description": "Youssouf Fofana replaces Aurélien Djani Tchouaméni (Tactical)",
+      "player": "Youssouf Fofana"
+    },
+    {
+      "minute": 76,
+      "type": "substitution",
+      "description": "Kingsley Coman replaces Ousmane Dembélé (Tactical)",
+      "player": "Kingsley Coman"
+    },
+    {
+      "minute": 79,
+      "type": "yellow_card",
+      "description": "Jackson Irvine (Australia) shown a yellow card card — Foul",
+      "player": "Jackson Irvine"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Keanu Baccus replaces Jackson Irvine (Tactical)",
+      "player": "Keanu Baccus"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Miloš Degenek replaces Nathaniel Atkinson (Tactical)",
+      "player": "Miloš Degenek"
+    },
+    {
+      "minute": 88,
+      "type": "substitution",
+      "description": "Jules Koundé replaces Benjamin Pavard (Tactical)",
+      "player": "Jules Koundé"
+    },
+    {
+      "minute": 88,
+      "type": "substitution",
+      "description": "Marcus Thuram replaces Olivier Giroud (Tactical)",
+      "player": "Marcus Thuram"
+    },
+    {
+      "minute": 93,
+      "type": "yellow_card",
+      "description": "Aaron Mooy (Australia) shown a yellow card card — Foul",
+      "player": "Aaron Mooy"
+    }
+  ]
+}

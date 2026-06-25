@@ -1,0 +1,387 @@
+{
+  "id": "qatar-senegal-2022",
+  "meta": {
+    "title": "Qatar vs Senegal — Group Stage",
+    "trigger_label": "Second half — Qatar trail 1-3",
+    "difficulty": 1,
+    "order": 33,
+    "stage": "Group Stage",
+    "group": "A",
+    "date": "2022-11-25",
+    "stadium": "Al Thumama Stadium"
+  },
+  "scoreline": {
+    "display": "Qatar 1 – 3 Senegal",
+    "home": 1,
+    "away": 3
+  },
+  "context": "A pivotal moment in this group stage match. Qatar trail Senegal 1-3. Something has to change. The manager must decide how to respond.",
+  "home_team": "Qatar",
+  "away_team": "Senegal",
+  "home_formation": "5-3-2",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Meshaal Aissa Barsham",
+      "number": 22,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 32
+    },
+    {
+      "name": "Boualem Khoukhi",
+      "number": 16,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 48
+    },
+    {
+      "name": "Abdelkarim Hassan Al Haj Fadlalla",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Pedro Miguel Correia",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Ismaeel Mohammad Mohammad",
+      "number": 17,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 42
+    },
+    {
+      "name": "Homam Alamin Ahmed",
+      "number": 14,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 54
+    },
+    {
+      "name": "Assim Omer Al Haj Madibo",
+      "number": 23,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 46
+    },
+    {
+      "name": "Hassan Khalid Al Heidos",
+      "number": 10,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 51
+    },
+    {
+      "name": "Karim Boudiaf",
+      "number": 12,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 49
+    },
+    {
+      "name": "Akram Hassan Afif",
+      "number": 11,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 60
+    },
+    {
+      "name": "Almoez Ali Zainalabiddin Abdulla",
+      "number": 19,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 55
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Edouard Mendy",
+      "number": 16,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 44
+    },
+    {
+      "name": "Youssouf Sabaly",
+      "number": 21,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 51
+    },
+    {
+      "name": "Ismail Jakobs",
+      "number": 14,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 53
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "number": 3,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Abdou Diallo",
+      "number": 22,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Idrissa Gana Gueye",
+      "number": 5,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 57
+    },
+    {
+      "name": "Nampalys Mendy",
+      "number": 6,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 49
+    },
+    {
+      "name": "Boulaye Dia",
+      "number": 9,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 54
+    },
+    {
+      "name": "Ismaïla Sarr",
+      "number": 18,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 62
+    },
+    {
+      "name": "Krépin Diatta",
+      "number": 15,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 52
+    },
+    {
+      "name": "Famara Diedhiou",
+      "number": 19,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 60
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Senegal won 3-1. Boulaye Dia (40'), Famara Diedhiou (47'), Mohammed Muntari (77'), Cheikh Ahmadou Bamba Mbacke Dieng (83')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Qatar and Senegal (1-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Qatar and Senegal (1-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Qatar and Senegal (1-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Qatar and Senegal (1-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Ismaïla Sarr": "Ismaïla Sarr at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Akram Hassan Afif": "Akram Hassan Afif at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Famara Diedhiou": "Famara Diedhiou at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Idrissa Gana Gueye": "Idrissa Gana Gueye at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Meshaal Aissa Barsham": "Meshaal Aissa Barsham at 32/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Almoez Ali Zainalabiddin Abdulla",
+      "attacker_team": "Qatar",
+      "defender": "Abdou Diallo",
+      "defender_team": "Senegal",
+      "advantage": "Abdou Diallo",
+      "diff": "-7",
+      "critical": false
+    },
+    {
+      "attacker": "Famara Diedhiou",
+      "attacker_team": "Senegal",
+      "defender": "Pedro Miguel Correia",
+      "defender_team": "Qatar",
+      "advantage": "Famara Diedhiou",
+      "diff": "+18",
+      "critical": true
+    },
+    {
+      "attacker": "Boulaye Dia",
+      "attacker_team": "Senegal",
+      "defender": "Assim Omer Al Haj Madibo",
+      "defender_team": "Qatar",
+      "advantage": "Assim Omer Al Haj Madibo",
+      "diff": "-10",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 19,
+      "type": "yellow_card",
+      "description": "Ismaeel Mohammad Mohammad (Qatar) shown a yellow card card — Foul",
+      "player": "Ismaeel Mohammad Mohammad"
+    },
+    {
+      "minute": 29,
+      "type": "yellow_card",
+      "description": "Boulaye Dia (Senegal) shown a yellow card card — Foul",
+      "player": "Boulaye Dia"
+    },
+    {
+      "minute": 40,
+      "type": "goal",
+      "description": "Boulaye Dia scores for Senegal!",
+      "player": "Boulaye Dia"
+    },
+    {
+      "minute": 46,
+      "type": "yellow_card",
+      "description": "Homam Alamin Ahmed (Qatar) shown a yellow card card — Foul",
+      "player": "Homam Alamin Ahmed"
+    },
+    {
+      "minute": 47,
+      "type": "goal",
+      "description": "Famara Diedhiou scores for Senegal!",
+      "player": "Famara Diedhiou"
+    },
+    {
+      "minute": 51,
+      "type": "yellow_card",
+      "description": "Ismail Jakobs (Senegal) shown a yellow card card — Foul",
+      "player": "Ismail Jakobs"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Pathé Ismaël Ciss replaces Krépin Diatta (Tactical)",
+      "player": "Pathé Ismaël Ciss"
+    },
+    {
+      "minute": 68,
+      "type": "substitution",
+      "description": "Abdulaziz Hatem Mohammed Abdullah replaces Karim Boudiaf (Tactical)",
+      "player": "Abdulaziz Hatem Mohammed Abdullah"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Cheikh Ahmadou Bamba Mbacke Dieng replaces Famara Diedhiou (Tactical)",
+      "player": "Cheikh Ahmadou Bamba Mbacke Dieng"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Iliman Ndiaye replaces Ismaïla Sarr (Tactical)",
+      "player": "Iliman Ndiaye"
+    },
+    {
+      "minute": 74,
+      "type": "substitution",
+      "description": "Mohammed Muntari replaces Hassan Khalid Al Heidos (Tactical)",
+      "player": "Mohammed Muntari"
+    },
+    {
+      "minute": 76,
+      "type": "substitution",
+      "description": "Pape Abou Cissé replaces Ismail Jakobs (Tactical)",
+      "player": "Pape Abou Cissé"
+    },
+    {
+      "minute": 76,
+      "type": "substitution",
+      "description": "Pape Matar Sarr replaces Nampalys Mendy (Tactical)",
+      "player": "Pape Matar Sarr"
+    },
+    {
+      "minute": 77,
+      "type": "goal",
+      "description": "Mohammed Muntari scores for Qatar!",
+      "player": "Mohammed Muntari"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Tarek Salman Salman replaces Homam Alamin Ahmed (Tactical)",
+      "player": "Tarek Salman Salman"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Mohammed Waed Abdulwahhab Al Bayati replaces Pedro Miguel Correia (Tactical)",
+      "player": "Mohammed Waed Abdulwahhab Al Bayati"
+    },
+    {
+      "minute": 83,
+      "type": "goal",
+      "description": "Cheikh Ahmadou Bamba Mbacke Dieng scores for Senegal!",
+      "player": "Cheikh Ahmadou Bamba Mbacke Dieng"
+    },
+    {
+      "minute": 86,
+      "type": "yellow_card",
+      "description": "Pathé Ismaël Ciss (Senegal) shown a yellow card card — Foul",
+      "player": "Pathé Ismaël Ciss"
+    },
+    {
+      "minute": 90,
+      "type": "yellow_card",
+      "description": "Assim Omer Al Haj Madibo (Qatar) shown a yellow card card — Foul",
+      "player": "Assim Omer Al Haj Madibo"
+    }
+  ]
+}

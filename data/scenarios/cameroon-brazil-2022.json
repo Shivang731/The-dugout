@@ -1,0 +1,396 @@
+{
+  "id": "cameroon-brazil-2022",
+  "meta": {
+    "title": "Cameroon vs Brazil — Group Stage",
+    "trigger_label": "Second half — Cameroon lead 1-0",
+    "difficulty": 1,
+    "order": 51,
+    "stage": "Group Stage",
+    "group": "G",
+    "date": "2022-12-02",
+    "stadium": "Lusail Stadium"
+  },
+  "scoreline": {
+    "display": "Cameroon 1 – 0 Brazil",
+    "home": 1,
+    "away": 0
+  },
+  "context": "A pivotal moment in this group stage match. Cameroon lead Brazil 1-0. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Cameroon",
+  "away_team": "Brazil",
+  "home_formation": "4-4-2",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Devis Rogers Epassy Mboka",
+      "number": 16,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 35
+    },
+    {
+      "name": "Nouhou Tolo",
+      "number": 25,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 41
+    },
+    {
+      "name": "Ngoran Suiru Fai Collins",
+      "number": 19,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "Enzo Ebosse",
+      "number": 24,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 54
+    },
+    {
+      "name": "Christopher Wooh",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 51
+    },
+    {
+      "name": "Bryan Mbeumo",
+      "number": 20,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 49
+    },
+    {
+      "name": "Nicolas Moumi Ngamaleu",
+      "number": 6,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 58
+    },
+    {
+      "name": "André-Frank Zambo Anguissa",
+      "number": 8,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 55
+    },
+    {
+      "name": "Pierre Kunde Malong",
+      "number": 15,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 61
+    },
+    {
+      "name": "Jean-Eric Maxim Choupo-Moting",
+      "number": 13,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 57
+    },
+    {
+      "name": "Vincent Paté Aboubakar",
+      "number": 10,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 60
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Ederson Santana de Moraes",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 33
+    },
+    {
+      "name": "Daniel Alves da Silva",
+      "number": 13,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 55
+    },
+    {
+      "name": "Alex Nicolao Telles",
+      "number": 16,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 47
+    },
+    {
+      "name": "Gleison Bremer Silva Nascimento",
+      "number": 24,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Éder Gabriel Militão",
+      "number": 14,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Fábio Henrique Tavares",
+      "number": 15,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Frederico Rodrigues Santos",
+      "number": 8,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 47
+    },
+    {
+      "name": "Rodrygo Silva de Goes",
+      "number": 21,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 61
+    },
+    {
+      "name": "Antony Matheus dos Santos",
+      "number": 19,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 62
+    },
+    {
+      "name": "Gabriel Teodoro Martinelli Silva",
+      "number": 26,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 64
+    },
+    {
+      "name": "Gabriel Fernando de Jesus",
+      "number": 18,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 65
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Cameroon won 1-0. Vincent Paté Aboubakar (91')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between Cameroon and Brazil (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between Cameroon and Brazil (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between Cameroon and Brazil (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between Cameroon and Brazil (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Gabriel Fernando de Jesus": "Gabriel Fernando de Jesus at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Gabriel Teodoro Martinelli Silva": "Gabriel Teodoro Martinelli Silva at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Antony Matheus dos Santos": "Antony Matheus dos Santos at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Pierre Kunde Malong": "Pierre Kunde Malong at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Ederson Santana de Moraes": "Ederson Santana de Moraes at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Gabriel Teodoro Martinelli Silva",
+      "attacker_team": "Brazil",
+      "defender": "Ngoran Suiru Fai Collins",
+      "defender_team": "Cameroon",
+      "advantage": "Gabriel Teodoro Martinelli Silva",
+      "diff": "+13",
+      "critical": true
+    },
+    {
+      "attacker": "Antony Matheus dos Santos",
+      "attacker_team": "Brazil",
+      "defender": "Nouhou Tolo",
+      "defender_team": "Cameroon",
+      "advantage": "Antony Matheus dos Santos",
+      "diff": "+5",
+      "critical": true
+    },
+    {
+      "attacker": "Vincent Paté Aboubakar",
+      "attacker_team": "Cameroon",
+      "defender": "Éder Gabriel Militão",
+      "defender_team": "Brazil",
+      "advantage": "Vincent Paté Aboubakar",
+      "diff": "+16",
+      "critical": true
+    },
+    {
+      "attacker": "Gabriel Fernando de Jesus",
+      "attacker_team": "Brazil",
+      "defender": "Christopher Wooh",
+      "defender_team": "Cameroon",
+      "advantage": "Christopher Wooh",
+      "diff": "-14",
+      "critical": true
+    },
+    {
+      "attacker": "Nicolas Moumi Ngamaleu",
+      "attacker_team": "Cameroon",
+      "defender": "Daniel Alves da Silva",
+      "defender_team": "Brazil",
+      "advantage": "Daniel Alves da Silva",
+      "diff": "-9",
+      "critical": false
+    },
+    {
+      "attacker": "Bryan Mbeumo",
+      "attacker_team": "Cameroon",
+      "defender": "Alex Nicolao Telles",
+      "defender_team": "Brazil",
+      "advantage": "Alex Nicolao Telles",
+      "diff": "-13",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 5,
+      "type": "yellow_card",
+      "description": "Nouhou Tolo (Cameroon) shown a yellow card card — Foul",
+      "player": "Nouhou Tolo"
+    },
+    {
+      "minute": 6,
+      "type": "yellow_card",
+      "description": "Éder Gabriel Militão (Brazil) shown a yellow card card — Foul",
+      "player": "Éder Gabriel Militão"
+    },
+    {
+      "minute": 27,
+      "type": "yellow_card",
+      "description": "Pierre Kunde Malong (Cameroon) shown a yellow card card — Foul",
+      "player": "Pierre Kunde Malong"
+    },
+    {
+      "minute": 31,
+      "type": "yellow_card",
+      "description": "Ngoran Suiru Fai Collins (Cameroon) shown a yellow card card — Foul",
+      "player": "Ngoran Suiru Fai Collins"
+    },
+    {
+      "minute": 54,
+      "type": "substitution",
+      "description": "Marcos Aoás Corrêa replaces Alex Nicolao Telles (Injury)",
+      "player": "Marcos Aoás Corrêa"
+    },
+    {
+      "minute": 54,
+      "type": "substitution",
+      "description": "Bruno Guimarães Rodriguez Moura replaces Frederico Rodrigues Santos (Tactical)",
+      "player": "Bruno Guimarães Rodriguez Moura"
+    },
+    {
+      "minute": 54,
+      "type": "substitution",
+      "description": "Éverton Augusto de Barros Ribeiro replaces Rodrygo Silva de Goes (Tactical)",
+      "player": "Éverton Augusto de Barros Ribeiro"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Karl Brillant Toko Ekambi replaces Bryan Mbeumo (Tactical)",
+      "player": "Karl Brillant Toko Ekambi"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Pedro Guilherme Abreu dos Santos replaces Gabriel Fernando de Jesus (Tactical)",
+      "player": "Pedro Guilherme Abreu dos Santos"
+    },
+    {
+      "minute": 67,
+      "type": "substitution",
+      "description": "Jules Olivier Ntcham replaces Pierre Kunde Malong (Tactical)",
+      "player": "Jules Olivier Ntcham"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Raphael Dias Belloli replaces Antony Matheus dos Santos (Tactical)",
+      "player": "Raphael Dias Belloli"
+    },
+    {
+      "minute": 80,
+      "type": "yellow_card",
+      "description": "Vincent Paté Aboubakar (Cameroon) shown a yellow card card — Foul",
+      "player": "Vincent Paté Aboubakar"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Jerome Ngom Mbekeli replaces Nicolas Moumi Ngamaleu (Tactical)",
+      "player": "Jerome Ngom Mbekeli"
+    },
+    {
+      "minute": 84,
+      "type": "yellow_card",
+      "description": "Bruno Guimarães Rodriguez Moura (Brazil) shown a yellow card card — Foul",
+      "player": "Bruno Guimarães Rodriguez Moura"
+    },
+    {
+      "minute": 91,
+      "type": "goal",
+      "description": "Vincent Paté Aboubakar scores for Cameroon!",
+      "player": "Vincent Paté Aboubakar"
+    },
+    {
+      "minute": 92,
+      "type": "yellow_card",
+      "description": "Vincent Paté Aboubakar (Cameroon) shown a second yellow card — Bad Behaviour",
+      "player": "Vincent Paté Aboubakar"
+    }
+  ]
+}

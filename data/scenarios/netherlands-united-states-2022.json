@@ -1,0 +1,368 @@
+{
+  "id": "netherlands-united-states-2022",
+  "meta": {
+    "title": "Netherlands vs United States — Round of 16",
+    "trigger_label": "Second half — Netherlands lead 3-1",
+    "difficulty": 2,
+    "order": 65,
+    "stage": "Round of 16",
+    "group": null,
+    "date": "2022-12-03",
+    "stadium": "Sheikh Khalifa International Stadium"
+  },
+  "scoreline": {
+    "display": "Netherlands 3 – 1 United States",
+    "home": 3,
+    "away": 1
+  },
+  "context": "A pivotal moment in this round of 16 match. Netherlands lead United States 3-1. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Netherlands",
+  "away_team": "United States",
+  "home_formation": "5-3-2",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Andries Noppert",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 39
+    },
+    {
+      "name": "Nathan Aké",
+      "number": 5,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 54
+    },
+    {
+      "name": "Virgil van Dijk",
+      "number": 4,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Jurriën David Norman Timber",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 50
+    },
+    {
+      "name": "Daley Blind",
+      "number": 17,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 55
+    },
+    {
+      "name": "Denzel Dumfries",
+      "number": 22,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 54
+    },
+    {
+      "name": "Marten de Roon",
+      "number": 15,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 39
+    },
+    {
+      "name": "Frenkie de Jong",
+      "number": 21,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 54
+    },
+    {
+      "name": "Davy Klaassen",
+      "number": 14,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 40
+    },
+    {
+      "name": "Memphis Depay",
+      "number": 10,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 54
+    },
+    {
+      "name": "Cody Mathès Gakpo",
+      "number": 8,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 63
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Matthew Charles Turner",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 36
+    },
+    {
+      "name": "Antonee Robinson",
+      "number": 5,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 46
+    },
+    {
+      "name": "Sergino Dest",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 50
+    },
+    {
+      "name": "Walker Zimmerman",
+      "number": 3,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Tim Ream",
+      "number": 13,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Tyler Adams",
+      "number": 4,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 61
+    },
+    {
+      "name": "Weston McKennie",
+      "number": 8,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 58
+    },
+    {
+      "name": "Yunus Dimoara Musah",
+      "number": 6,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 61
+    },
+    {
+      "name": "Timothy Weah",
+      "number": 21,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 55
+    },
+    {
+      "name": "Christian Pulisic",
+      "number": 10,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 62
+    },
+    {
+      "name": "Jesus Ferreira",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 47
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "Netherlands won 3-1. Memphis Depay (9'), Daley Blind (45'), Haji Wright (75'), Denzel Dumfries (80')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this round of 16 match between Netherlands and United States (3-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this round of 16 match between Netherlands and United States (3-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this round of 16 match between Netherlands and United States (3-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this round of 16 match between Netherlands and United States (3-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Cody Mathès Gakpo": "Cody Mathès Gakpo at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Christian Pulisic": "Christian Pulisic at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Tyler Adams": "Tyler Adams at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Yunus Dimoara Musah": "Yunus Dimoara Musah at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Cody Mathès Gakpo",
+      "attacker_team": "Netherlands",
+      "defender": "Tim Ream",
+      "defender_team": "United States",
+      "advantage": "Cody Mathès Gakpo",
+      "diff": "+17",
+      "critical": true
+    },
+    {
+      "attacker": "Jesus Ferreira",
+      "attacker_team": "United States",
+      "defender": "Jurriën David Norman Timber",
+      "defender_team": "Netherlands",
+      "advantage": "Jesus Ferreira",
+      "diff": "+9",
+      "critical": false
+    },
+    {
+      "attacker": "Davy Klaassen",
+      "attacker_team": "Netherlands",
+      "defender": "Tyler Adams",
+      "defender_team": "United States",
+      "advantage": "Even",
+      "diff": "+0",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 9,
+      "type": "goal",
+      "description": "Memphis Depay scores for Netherlands!",
+      "player": "Memphis Depay"
+    },
+    {
+      "minute": 45,
+      "type": "goal",
+      "description": "Daley Blind scores for Netherlands!",
+      "player": "Daley Blind"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Steven Bergwijn replaces Marten de Roon (Tactical)",
+      "player": "Steven Bergwijn"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Teun Koopmeiners replaces Davy Klaassen (Tactical)",
+      "player": "Teun Koopmeiners"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Giovanni Reyna replaces Jesus Ferreira (Tactical)",
+      "player": "Giovanni Reyna"
+    },
+    {
+      "minute": 59,
+      "type": "yellow_card",
+      "description": "Teun Koopmeiners (Netherlands) shown a yellow card card — Foul",
+      "player": "Teun Koopmeiners"
+    },
+    {
+      "minute": 66,
+      "type": "substitution",
+      "description": "Brenden Aaronson replaces Timothy Weah (Tactical)",
+      "player": "Brenden Aaronson"
+    },
+    {
+      "minute": 66,
+      "type": "substitution",
+      "description": "Haji Wright replaces Weston McKennie (Tactical)",
+      "player": "Haji Wright"
+    },
+    {
+      "minute": 74,
+      "type": "substitution",
+      "description": "DeAndre Yedlin replaces Sergino Dest (Tactical)",
+      "player": "DeAndre Yedlin"
+    },
+    {
+      "minute": 75,
+      "type": "goal",
+      "description": "Haji Wright scores for United States!",
+      "player": "Haji Wright"
+    },
+    {
+      "minute": 80,
+      "type": "goal",
+      "description": "Denzel Dumfries scores for Netherlands!",
+      "player": "Denzel Dumfries"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Xavi Simons replaces Memphis Depay (Tactical)",
+      "player": "Xavi Simons"
+    },
+    {
+      "minute": 86,
+      "type": "yellow_card",
+      "description": "Frenkie de Jong (Netherlands) shown a yellow card card — Foul",
+      "player": "Frenkie de Jong"
+    },
+    {
+      "minute": 91,
+      "type": "substitution",
+      "description": "Jordan Morris replaces Antonee Robinson (Tactical)",
+      "player": "Jordan Morris"
+    },
+    {
+      "minute": 92,
+      "type": "substitution",
+      "description": "Matthijs de Ligt replaces Nathan Aké (Tactical)",
+      "player": "Matthijs de Ligt"
+    },
+    {
+      "minute": 92,
+      "type": "substitution",
+      "description": "Wout Weghorst replaces Cody Mathès Gakpo (Tactical)",
+      "player": "Wout Weghorst"
+    }
+  ]
+}

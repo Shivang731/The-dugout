@@ -1,0 +1,383 @@
+{
+  "id": "poland-argentina-2022",
+  "meta": {
+    "title": "Poland vs Argentina — Group Stage",
+    "trigger_label": "Second half — Poland trail 0-2",
+    "difficulty": 1,
+    "order": 54,
+    "stage": "Group Stage",
+    "group": "C",
+    "date": "2022-11-30",
+    "stadium": "Stadium 974"
+  },
+  "scoreline": {
+    "display": "Poland 0 – 2 Argentina",
+    "home": 0,
+    "away": 2
+  },
+  "context": "A pivotal moment in this group stage match. Poland trail Argentina 0-2. Something has to change. The manager must decide how to respond.",
+  "home_team": "Poland",
+  "away_team": "Argentina",
+  "home_formation": "4-4-2",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Wojciech Szczęsny",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 43
+    },
+    {
+      "name": "Matty Cash",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 40
+    },
+    {
+      "name": "Bartosz Bereszyński",
+      "number": 18,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 51
+    },
+    {
+      "name": "Kamil Glik",
+      "number": 15,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 48
+    },
+    {
+      "name": "Jakub Piotr Kiwior",
+      "number": 14,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 47
+    },
+    {
+      "name": "Piotr Zieliński",
+      "number": 20,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 60
+    },
+    {
+      "name": "Przemysław Frankowski",
+      "number": 24,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 36
+    },
+    {
+      "name": "Grzegorz Krychowiak",
+      "number": 10,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 61
+    },
+    {
+      "name": "Krystian Bielik",
+      "number": 6,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 45
+    },
+    {
+      "name": "Robert Lewandowski",
+      "number": 9,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 61
+    },
+    {
+      "name": "Karol Świderski",
+      "number": 16,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 48
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Damián Emiliano Martínez",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 42
+    },
+    {
+      "name": "Marcos Javier Acuña",
+      "number": 8,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 45
+    },
+    {
+      "name": "Nahuel Molina Lucero",
+      "number": 26,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 48
+    },
+    {
+      "name": "Nicolás Hernán Otamendi",
+      "number": 19,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Cristian Gabriel Romero",
+      "number": 13,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 47
+    },
+    {
+      "name": "Enzo Fernandez",
+      "number": 24,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 52
+    },
+    {
+      "name": "Rodrigo Javier De Paul",
+      "number": 7,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 46
+    },
+    {
+      "name": "Alexis Mac Allister",
+      "number": 20,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 57
+    },
+    {
+      "name": "Ángel Fabián Di María Hernández",
+      "number": 11,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 53
+    },
+    {
+      "name": "Julián Álvarez",
+      "number": 9,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 61
+    },
+    {
+      "name": "Lionel Andrés Messi Cuccittini",
+      "number": 10,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 61
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Argentina won 2-0. Alexis Mac Allister (45'), Julián Álvarez (66')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Poland and Argentina (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Poland and Argentina (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Poland and Argentina (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Poland and Argentina (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Grzegorz Krychowiak": "Grzegorz Krychowiak at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Robert Lewandowski": "Robert Lewandowski at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Julián Álvarez": "Julián Álvarez at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Lionel Andrés Messi Cuccittini": "Lionel Andrés Messi Cuccittini at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Julián Álvarez",
+      "attacker_team": "Argentina",
+      "defender": "Matty Cash",
+      "defender_team": "Poland",
+      "advantage": "Matty Cash",
+      "diff": "-6",
+      "critical": false
+    },
+    {
+      "attacker": "Ángel Fabián Di María Hernández",
+      "attacker_team": "Argentina",
+      "defender": "Bartosz Bereszyński",
+      "defender_team": "Poland",
+      "advantage": "Bartosz Bereszyński",
+      "diff": "-3",
+      "critical": false
+    },
+    {
+      "attacker": "Karol Świderski",
+      "attacker_team": "Poland",
+      "defender": "Cristian Gabriel Romero",
+      "defender_team": "Argentina",
+      "advantage": "Karol Świderski",
+      "diff": "+16",
+      "critical": true
+    },
+    {
+      "attacker": "Lionel Andrés Messi Cuccittini",
+      "attacker_team": "Argentina",
+      "defender": "Jakub Piotr Kiwior",
+      "defender_team": "Poland",
+      "advantage": "Lionel Andrés Messi Cuccittini",
+      "diff": "+19",
+      "critical": true
+    },
+    {
+      "attacker": "Przemysław Frankowski",
+      "attacker_team": "Poland",
+      "defender": "Nahuel Molina Lucero",
+      "defender_team": "Argentina",
+      "advantage": "Przemysław Frankowski",
+      "diff": "+4",
+      "critical": true
+    },
+    {
+      "attacker": "Piotr Zieliński",
+      "attacker_team": "Poland",
+      "defender": "Marcos Javier Acuña",
+      "defender_team": "Argentina",
+      "advantage": "Marcos Javier Acuña",
+      "diff": "-13",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 45,
+      "type": "goal",
+      "description": "Alexis Mac Allister scores for Argentina!",
+      "player": "Alexis Mac Allister"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Michał Skóraś replaces Karol Świderski (Tactical)",
+      "player": "Michał Skóraś"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Jakub Kamiński replaces Przemysław Frankowski (Tactical)",
+      "player": "Jakub Kamiński"
+    },
+    {
+      "minute": 48,
+      "type": "yellow_card",
+      "description": "Marcos Javier Acuña (Argentina) shown a yellow card card — Foul",
+      "player": "Marcos Javier Acuña"
+    },
+    {
+      "minute": 58,
+      "type": "substitution",
+      "description": "Leandro Daniel Paredes replaces Ángel Fabián Di María Hernández (Tactical)",
+      "player": "Leandro Daniel Paredes"
+    },
+    {
+      "minute": 58,
+      "type": "substitution",
+      "description": "Nicolás Alejandro Tagliafico replaces Marcos Javier Acuña (Tactical)",
+      "player": "Nicolás Alejandro Tagliafico"
+    },
+    {
+      "minute": 61,
+      "type": "substitution",
+      "description": "Damian Szymański replaces Krystian Bielik (Tactical)",
+      "player": "Damian Szymański"
+    },
+    {
+      "minute": 66,
+      "type": "goal",
+      "description": "Julián Álvarez scores for Argentina!",
+      "player": "Julián Álvarez"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "description": "Artur Jędrzejczyk replaces Bartosz Bereszyński (Tactical)",
+      "player": "Artur Jędrzejczyk"
+    },
+    {
+      "minute": 77,
+      "type": "yellow_card",
+      "description": "Grzegorz Krychowiak (Poland) shown a yellow card card — Foul",
+      "player": "Grzegorz Krychowiak"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Lautaro Javier Martínez replaces Julián Álvarez (Tactical)",
+      "player": "Lautaro Javier Martínez"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Germán Alejandro Pezzella replaces Enzo Fernandez (Tactical)",
+      "player": "Germán Alejandro Pezzella"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Thiago Ezequiel Almada replaces Alexis Mac Allister (Tactical)",
+      "player": "Thiago Ezequiel Almada"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Krzysztof Piątek replaces Grzegorz Krychowiak (Tactical)",
+      "player": "Krzysztof Piątek"
+    }
+  ]
+}

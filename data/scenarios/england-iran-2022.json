@@ -1,0 +1,417 @@
+{
+  "id": "england-iran-2022",
+  "meta": {
+    "title": "England vs Iran — Group Stage",
+    "trigger_label": "Second half — England lead 6-2",
+    "difficulty": 1,
+    "order": 15,
+    "stage": "Group Stage",
+    "group": "B",
+    "date": "2022-11-21",
+    "stadium": "Sheikh Khalifa International Stadium"
+  },
+  "scoreline": {
+    "display": "England 6 – 2 Iran",
+    "home": 6,
+    "away": 2
+  },
+  "context": "A pivotal moment in this group stage match. England lead Iran 6-2. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "England",
+  "away_team": "Iran",
+  "home_formation": "4-3-3",
+  "away_formation": "5-4-1",
+  "home_players": [
+    {
+      "name": "Jordan Pickford",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 40
+    },
+    {
+      "name": "Kieran Trippier",
+      "number": 12,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 54
+    },
+    {
+      "name": "Luke Shaw",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 48
+    },
+    {
+      "name": "John Stones",
+      "number": 5,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Harry Maguire",
+      "number": 6,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Declan Rice",
+      "number": 4,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 46
+    },
+    {
+      "name": "Jude Bellingham",
+      "number": 22,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Mason Mount",
+      "number": 19,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 52
+    },
+    {
+      "name": "Raheem Sterling",
+      "number": 10,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 64
+    },
+    {
+      "name": "Bukayo Saka",
+      "number": 17,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 50
+    },
+    {
+      "name": "Harry Kane",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 58
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Alireza Safar Beiranvand",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 5
+    },
+    {
+      "name": "Morteza Pouraliganji",
+      "number": 8,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 48
+    },
+    {
+      "name": "Roozbeh Cheshmi",
+      "number": 15,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Seyed Majid Hosseini",
+      "number": 19,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Milad Mohammadi",
+      "number": 5,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 46
+    },
+    {
+      "name": "Sadegh Moharrami",
+      "number": 2,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 56
+    },
+    {
+      "name": "Ahmad Nourollahi",
+      "number": 21,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 60
+    },
+    {
+      "name": "Ali Karimi",
+      "number": 18,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 41
+    },
+    {
+      "name": "Ehsan Hajsafi",
+      "number": 3,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 52
+    },
+    {
+      "name": "Alireza Jahanbakhsh",
+      "number": 7,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 39
+    },
+    {
+      "name": "Mehdi Taremi",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 54
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "England won 6-2. Jude Bellingham (34'), Bukayo Saka (42'), Raheem Sterling (45'), Bukayo Saka (61'), Mehdi Taremi (64'), Marcus Rashford (70'), Jack Grealish (89'), Mehdi Taremi (102')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between England and Iran (6-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between England and Iran (6-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between England and Iran (6-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between England and Iran (6-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Raheem Sterling": "Raheem Sterling at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Ahmad Nourollahi": "Ahmad Nourollahi at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Harry Kane": "Harry Kane at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Sadegh Moharrami": "Sadegh Moharrami at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Alireza Safar Beiranvand": "Alireza Safar Beiranvand at 5/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Ehsan Hajsafi",
+      "attacker_team": "Iran",
+      "defender": "Kieran Trippier",
+      "defender_team": "England",
+      "advantage": "Kieran Trippier",
+      "diff": "-7",
+      "critical": false
+    },
+    {
+      "attacker": "Alireza Jahanbakhsh",
+      "attacker_team": "Iran",
+      "defender": "Luke Shaw",
+      "defender_team": "England",
+      "advantage": "Alireza Jahanbakhsh",
+      "diff": "+20",
+      "critical": true
+    },
+    {
+      "attacker": "Harry Kane",
+      "attacker_team": "England",
+      "defender": "Seyed Majid Hosseini",
+      "defender_team": "Iran",
+      "advantage": "Seyed Majid Hosseini",
+      "diff": "-5",
+      "critical": false
+    },
+    {
+      "attacker": "Mehdi Taremi",
+      "attacker_team": "Iran",
+      "defender": "Harry Maguire",
+      "defender_team": "England",
+      "advantage": "Mehdi Taremi",
+      "diff": "+12",
+      "critical": false
+    },
+    {
+      "attacker": "Mason Mount",
+      "attacker_team": "England",
+      "defender": "Ali Karimi",
+      "defender_team": "Iran",
+      "advantage": "Mason Mount",
+      "diff": "+19",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 19,
+      "type": "substitution",
+      "description": "Seyed Hossein Hosseini replaces Alireza Safar Beiranvand (Tactical)",
+      "player": "Seyed Hossein Hosseini"
+    },
+    {
+      "minute": 24,
+      "type": "yellow_card",
+      "description": "Alireza Jahanbakhsh (Iran) shown a yellow card card — Foul",
+      "player": "Alireza Jahanbakhsh"
+    },
+    {
+      "minute": 34,
+      "type": "goal",
+      "description": "Jude Bellingham scores for England!",
+      "player": "Jude Bellingham"
+    },
+    {
+      "minute": 42,
+      "type": "goal",
+      "description": "Bukayo Saka scores for England!",
+      "player": "Bukayo Saka"
+    },
+    {
+      "minute": 45,
+      "type": "goal",
+      "description": "Raheem Sterling scores for England!",
+      "player": "Raheem Sterling"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Saeid Ezatolahi Afagh replaces Ali Karimi (Tactical)",
+      "player": "Saeid Ezatolahi Afagh"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Ali Gholizadeh replaces Alireza Jahanbakhsh (Tactical)",
+      "player": "Ali Gholizadeh"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Mohammad Hossein Kanani Zadegan replaces Roozbeh Cheshmi (Tactical)",
+      "player": "Mohammad Hossein Kanani Zadegan"
+    },
+    {
+      "minute": 47,
+      "type": "yellow_card",
+      "description": "Morteza Pouraliganji (Iran) shown a yellow card card — Foul",
+      "player": "Morteza Pouraliganji"
+    },
+    {
+      "minute": 61,
+      "type": "goal",
+      "description": "Bukayo Saka scores for England!",
+      "player": "Bukayo Saka"
+    },
+    {
+      "minute": 62,
+      "type": "substitution",
+      "description": "Mehdi Torabi replaces Milad Mohammadi (Tactical)",
+      "player": "Mehdi Torabi"
+    },
+    {
+      "minute": 64,
+      "type": "goal",
+      "description": "Mehdi Taremi scores for Iran!",
+      "player": "Mehdi Taremi"
+    },
+    {
+      "minute": 70,
+      "type": "goal",
+      "description": "Marcus Rashford scores for England!",
+      "player": "Marcus Rashford"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Jack Grealish replaces Raheem Sterling (Tactical)",
+      "player": "Jack Grealish"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Marcus Rashford replaces Bukayo Saka (Tactical)",
+      "player": "Marcus Rashford"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Eric Dier replaces Harry Maguire (Injury)",
+      "player": "Eric Dier"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Phil Foden replaces Mason Mount (Tactical)",
+      "player": "Phil Foden"
+    },
+    {
+      "minute": 75,
+      "type": "substitution",
+      "description": "Callum Wilson replaces Harry Kane (Tactical)",
+      "player": "Callum Wilson"
+    },
+    {
+      "minute": 76,
+      "type": "substitution",
+      "description": "Sardar Azmoun replaces Ahmad Nourollahi (Tactical)",
+      "player": "Sardar Azmoun"
+    },
+    {
+      "minute": 89,
+      "type": "goal",
+      "description": "Jack Grealish scores for England!",
+      "player": "Jack Grealish"
+    },
+    {
+      "minute": 102,
+      "type": "goal",
+      "description": "Mehdi Taremi scores for Iran! (Penalty)",
+      "player": "Mehdi Taremi"
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "id": "germany-japan-2022",
+  "meta": {
+    "title": "Germany vs Japan — Group Stage",
+    "trigger_label": "Second half — Germany trail 1-2",
+    "difficulty": 1,
+    "order": 10,
+    "stage": "Group Stage",
+    "group": "E",
+    "date": "2022-11-23",
+    "stadium": "Sheikh Khalifa International Stadium"
+  },
+  "scoreline": {
+    "display": "Germany 1 – 2 Japan",
+    "home": 1,
+    "away": 2
+  },
+  "context": "A pivotal moment in this group stage match. Germany trail Japan 1-2. Something has to change. The manager must decide how to respond.",
+  "home_team": "Germany",
+  "away_team": "Japan",
+  "home_formation": "4-3-3",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Manuel Neuer",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 31
+    },
+    {
+      "name": "Niklas Süle",
+      "number": 15,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "David Raum",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 42
+    },
+    {
+      "name": "Antonio Rüdiger",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Nico Schlotterbeck",
+      "number": 23,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Joshua Kimmich",
+      "number": 6,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 58
+    },
+    {
+      "name": "İlkay Gündoğan",
+      "number": 21,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 52
+    },
+    {
+      "name": "Thomas Müller",
+      "number": 13,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 64
+    },
+    {
+      "name": "Serge Gnabry",
+      "number": 10,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 63
+    },
+    {
+      "name": "Jamal Musiala",
+      "number": 14,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 53
+    },
+    {
+      "name": "Kai Havertz",
+      "number": 7,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 56
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Shūichi Gonda",
+      "number": 12,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 37
+    },
+    {
+      "name": "Hiroki Sakai",
+      "number": 19,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 40
+    },
+    {
+      "name": "Yuto Nagatomo",
+      "number": 5,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 51
+    },
+    {
+      "name": "Maya Yoshida",
+      "number": 22,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Ko Itakura",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 47
+    },
+    {
+      "name": "Wataru Endo",
+      "number": 6,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 51
+    },
+    {
+      "name": "Ao Tanaka",
+      "number": 17,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 49
+    },
+    {
+      "name": "Daichi Kamada",
+      "number": 15,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 52
+    },
+    {
+      "name": "Junya Ito",
+      "number": 14,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 59
+    },
+    {
+      "name": "Takefusa Kubo",
+      "number": 11,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 46
+    },
+    {
+      "name": "Daizen Maeda",
+      "number": 25,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 62
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Japan won 2-1. İlkay Gündoğan (32'), Ritsu Doan (74'), Takuma Asano (82')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Germany and Japan (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Germany and Japan (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Germany and Japan (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Germany and Japan (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Thomas Müller": "Thomas Müller at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Serge Gnabry": "Serge Gnabry at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Daizen Maeda": "Daizen Maeda at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Junya Ito": "Junya Ito at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Manuel Neuer": "Manuel Neuer at 31/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Jamal Musiala",
+      "attacker_team": "Germany",
+      "defender": "Hiroki Sakai",
+      "defender_team": "Japan",
+      "advantage": "Jamal Musiala",
+      "diff": "+19",
+      "critical": true
+    },
+    {
+      "attacker": "Takefusa Kubo",
+      "attacker_team": "Japan",
+      "defender": "Niklas Süle",
+      "defender_team": "Germany",
+      "advantage": "Takefusa Kubo",
+      "diff": "+16",
+      "critical": true
+    },
+    {
+      "attacker": "Serge Gnabry",
+      "attacker_team": "Germany",
+      "defender": "Yuto Nagatomo",
+      "defender_team": "Japan",
+      "advantage": "Serge Gnabry",
+      "diff": "+13",
+      "critical": true
+    },
+    {
+      "attacker": "Junya Ito",
+      "attacker_team": "Japan",
+      "defender": "David Raum",
+      "defender_team": "Germany",
+      "advantage": "David Raum",
+      "diff": "-10",
+      "critical": false
+    },
+    {
+      "attacker": "Kai Havertz",
+      "attacker_team": "Germany",
+      "defender": "Ko Itakura",
+      "defender_team": "Japan",
+      "advantage": "Kai Havertz",
+      "diff": "+12",
+      "critical": false
+    },
+    {
+      "attacker": "Daizen Maeda",
+      "attacker_team": "Japan",
+      "defender": "Nico Schlotterbeck",
+      "defender_team": "Germany",
+      "advantage": "Daizen Maeda",
+      "diff": "+1",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 32,
+      "type": "goal",
+      "description": "İlkay Gündoğan scores for Germany! (Penalty)",
+      "player": "İlkay Gündoğan"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Takehiro Tomiyasu replaces Takefusa Kubo (Tactical)",
+      "player": "Takehiro Tomiyasu"
+    },
+    {
+      "minute": 56,
+      "type": "substitution",
+      "description": "Kaoru Mitoma replaces Yuto Nagatomo (Tactical)",
+      "player": "Kaoru Mitoma"
+    },
+    {
+      "minute": 56,
+      "type": "substitution",
+      "description": "Takuma Asano replaces Daizen Maeda (Tactical)",
+      "player": "Takuma Asano"
+    },
+    {
+      "minute": 66,
+      "type": "substitution",
+      "description": "Jonas Hofmann replaces Thomas Müller (Tactical)",
+      "player": "Jonas Hofmann"
+    },
+    {
+      "minute": 67,
+      "type": "substitution",
+      "description": "Leon Goretzka replaces İlkay Gündoğan (Tactical)",
+      "player": "Leon Goretzka"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Ritsu Doan replaces Ao Tanaka (Tactical)",
+      "player": "Ritsu Doan"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Takumi Minamino replaces Hiroki Sakai (Injury)",
+      "player": "Takumi Minamino"
+    },
+    {
+      "minute": 74,
+      "type": "goal",
+      "description": "Ritsu Doan scores for Japan!",
+      "player": "Ritsu Doan"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Mario Götze replaces Jamal Musiala (Tactical)",
+      "player": "Mario Götze"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Niclas Füllkrug replaces Kai Havertz (Tactical)",
+      "player": "Niclas Füllkrug"
+    },
+    {
+      "minute": 82,
+      "type": "goal",
+      "description": "Takuma Asano scores for Japan!",
+      "player": "Takuma Asano"
+    },
+    {
+      "minute": 89,
+      "type": "substitution",
+      "description": "Youssoufa Moukoko replaces Serge Gnabry (Tactical)",
+      "player": "Youssoufa Moukoko"
+    }
+  ]
+}

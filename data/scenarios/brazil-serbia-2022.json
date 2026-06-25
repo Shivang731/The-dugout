@@ -1,0 +1,372 @@
+{
+  "id": "brazil-serbia-2022",
+  "meta": {
+    "title": "Brazil vs Serbia — Group Stage",
+    "trigger_label": "Second half — Brazil lead 2-0",
+    "difficulty": 1,
+    "order": 18,
+    "stage": "Group Stage",
+    "group": "G",
+    "date": "2022-11-24",
+    "stadium": "Lusail Stadium"
+  },
+  "scoreline": {
+    "display": "Brazil 2 – 0 Serbia",
+    "home": 2,
+    "away": 0
+  },
+  "context": "A pivotal moment in this group stage match. Brazil lead Serbia 2-0. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Brazil",
+  "away_team": "Serbia",
+  "home_formation": "4-3-3",
+  "away_formation": "5-4-1",
+  "home_players": [
+    {
+      "name": "Alisson Ramsés Becker",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 32
+    },
+    {
+      "name": "Danilo Luiz da Silva",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 51
+    },
+    {
+      "name": "Alex Sandro Lobo Silva",
+      "number": 6,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 50
+    },
+    {
+      "name": "Thiago Emiliano da Silva",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Marcos Aoás Corrêa",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Carlos Henrique Casimiro",
+      "number": 5,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 61
+    },
+    {
+      "name": "Lucas Tolentino Coelho de Lima",
+      "number": 7,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 52
+    },
+    {
+      "name": "Neymar da Silva Santos Junior",
+      "number": 10,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 61
+    },
+    {
+      "name": "Raphael Dias Belloli",
+      "number": 11,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 57
+    },
+    {
+      "name": "Vinícius José Paixão de Oliveira Júnior",
+      "number": 20,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 50
+    },
+    {
+      "name": "Richarlison de Andrade",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 58
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Vanja Milinković Savić",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 39
+    },
+    {
+      "name": "Nikola Milenković",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Milos Veljkovic",
+      "number": 5,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Strahinja Pavlović",
+      "number": 2,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 40
+    },
+    {
+      "name": "Andrija Živković",
+      "number": 14,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 48
+    },
+    {
+      "name": "Filip Mladenović",
+      "number": 25,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 51
+    },
+    {
+      "name": "Saša Lukić",
+      "number": 16,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 47
+    },
+    {
+      "name": "Nemanja Gudelj",
+      "number": 8,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 42
+    },
+    {
+      "name": "Dušan Tadić",
+      "number": 10,
+      "pos": "RAM",
+      "x": 0.675,
+      "y": 0.43,
+      "fatigue": 63
+    },
+    {
+      "name": "Sergej Milinković-Savić",
+      "number": 20,
+      "pos": "LAM",
+      "x": 0.325,
+      "y": 0.43,
+      "fatigue": 58
+    },
+    {
+      "name": "Aleksandar Mitrović",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 61
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "B",
+    "description": "Brazil won 2-0. Richarlison de Andrade (61'), Richarlison de Andrade (72')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between Brazil and Serbia (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between Brazil and Serbia (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between Brazil and Serbia (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between Brazil and Serbia (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Dušan Tadić": "Dušan Tadić at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Carlos Henrique Casimiro": "Carlos Henrique Casimiro at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Neymar da Silva Santos Junior": "Neymar da Silva Santos Junior at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Aleksandar Mitrović": "Aleksandar Mitrović at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Alisson Ramsés Becker": "Alisson Ramsés Becker at 32/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Richarlison de Andrade",
+      "attacker_team": "Brazil",
+      "defender": "Strahinja Pavlović",
+      "defender_team": "Serbia",
+      "advantage": "Richarlison de Andrade",
+      "diff": "+12",
+      "critical": true
+    },
+    {
+      "attacker": "Aleksandar Mitrović",
+      "attacker_team": "Serbia",
+      "defender": "Marcos Aoás Corrêa",
+      "defender_team": "Brazil",
+      "advantage": "Aleksandar Mitrović",
+      "diff": "+16",
+      "critical": true
+    },
+    {
+      "attacker": "Neymar da Silva Santos Junior",
+      "attacker_team": "Brazil",
+      "defender": "Nemanja Gudelj",
+      "defender_team": "Serbia",
+      "advantage": "Neymar da Silva Santos Junior",
+      "diff": "+18",
+      "critical": true
+    },
+    {
+      "attacker": "Sergej Milinković-Savić",
+      "attacker_team": "Serbia",
+      "defender": "Lucas Tolentino Coelho de Lima",
+      "defender_team": "Brazil",
+      "advantage": "Sergej Milinković-Savić",
+      "diff": "+4",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 5,
+      "type": "yellow_card",
+      "description": "Strahinja Pavlović (Serbia) shown a yellow card card — Foul",
+      "player": "Strahinja Pavlović"
+    },
+    {
+      "minute": 48,
+      "type": "yellow_card",
+      "description": "Nemanja Gudelj (Serbia) shown a yellow card card — Foul",
+      "player": "Nemanja Gudelj"
+    },
+    {
+      "minute": 56,
+      "type": "substitution",
+      "description": "Ivan Ilić replaces Nemanja Gudelj (Tactical)",
+      "player": "Ivan Ilić"
+    },
+    {
+      "minute": 56,
+      "type": "substitution",
+      "description": "Nemanja Radonjić replaces Andrija Živković (Tactical)",
+      "player": "Nemanja Radonjić"
+    },
+    {
+      "minute": 61,
+      "type": "goal",
+      "description": "Richarlison de Andrade scores for Brazil!",
+      "player": "Richarlison de Andrade"
+    },
+    {
+      "minute": 63,
+      "type": "yellow_card",
+      "description": "Saša Lukić (Serbia) shown a yellow card card — Bad Behaviour",
+      "player": "Saša Lukić"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Darko Lazović replaces Saša Lukić (Tactical)",
+      "player": "Darko Lazović"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Dušan Vlahović replaces Filip Mladenović (Tactical)",
+      "player": "Dušan Vlahović"
+    },
+    {
+      "minute": 72,
+      "type": "goal",
+      "description": "Richarlison de Andrade scores for Brazil!",
+      "player": "Richarlison de Andrade"
+    },
+    {
+      "minute": 74,
+      "type": "substitution",
+      "description": "Frederico Rodrigues Santos replaces Lucas Tolentino Coelho de Lima (Tactical)",
+      "player": "Frederico Rodrigues Santos"
+    },
+    {
+      "minute": 75,
+      "type": "substitution",
+      "description": "Rodrygo Silva de Goes replaces Vinícius José Paixão de Oliveira Júnior (Tactical)",
+      "player": "Rodrygo Silva de Goes"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "description": "Gabriel Fernando de Jesus replaces Richarlison de Andrade (Tactical)",
+      "player": "Gabriel Fernando de Jesus"
+    },
+    {
+      "minute": 79,
+      "type": "substitution",
+      "description": "Antony Matheus dos Santos replaces Neymar da Silva Santos Junior (Injury)",
+      "player": "Antony Matheus dos Santos"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Nemanja Maksimović replaces Aleksandar Mitrović (Tactical)",
+      "player": "Nemanja Maksimović"
+    },
+    {
+      "minute": 86,
+      "type": "substitution",
+      "description": "Gabriel Teodoro Martinelli Silva replaces Raphael Dias Belloli (Tactical)",
+      "player": "Gabriel Teodoro Martinelli Silva"
+    }
+  ]
+}

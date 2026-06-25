@@ -1,0 +1,173 @@
+match_id,minute,second,period,team,player,body_part,shot_type,own_goal,x,y
+3857278,37,49,1,United States,Christian Pulisic,Right Foot,Open Play,False,115.1,38.7
+3869253,6,41,1,Brazil,Vinícius José Paixão de Oliveira Júnior,Right Foot,Open Play,False,110.0,29.9
+3869253,12,18,1,Brazil,Neymar da Silva Santos Junior,Right Foot,Penalty,False,108.0,40.0
+3869253,28,13,1,Brazil,Richarlison de Andrade,Left Foot,Open Play,False,110.7,43.3
+3869253,35,45,1,Brazil,Lucas Tolentino Coelho de Lima,Right Foot,Open Play,False,110.0,44.8
+3869253,75,47,2,South Korea,Seung-Ho Paik,Left Foot,Open Play,False,93.7,39.8
+3869684,6,28,1,Croatia,Joško Gvardiol,Head,Open Play,False,108.8,38.0
+3869684,8,17,1,Morocco,Achraf Dari,Head,Open Play,False,115.6,39.0
+3869684,41,43,1,Croatia,Mislav Oršić,Right Foot,Open Play,False,106.5,21.3
+3857257,59,56,2,Australia,Mathew Leckie,Left Foot,Open Play,False,105.7,31.5
+3857282,35,12,1,United States,Timothy Weah,Right Foot,Open Play,False,107.7,37.8
+3857282,81,33,2,Wales,Gareth Frank Bale,Left Foot,Penalty,False,108.0,40.0
+3869254,16,43,1,Portugal,Gonçalo Matias Ramos,Left Foot,Open Play,False,111.3,27.5
+3869254,32,35,1,Portugal,Kléper Laveran Lima Ferreira,Head,Open Play,False,114.3,40.0
+3869254,50,5,2,Portugal,Gonçalo Matias Ramos,Left Foot,Open Play,False,115.8,44.4
+3869254,54,55,2,Portugal,Raphaël Adelino José Guerreiro,Left Foot,Open Play,False,110.9,32.4
+3869254,57,5,2,Switzerland,Manuel Obafemi Akanji,Right Foot,Open Play,False,118.7,35.4
+3869254,66,12,2,Portugal,Gonçalo Matias Ramos,Right Foot,Open Play,False,112.6,45.8
+3869254,91,12,2,Portugal,Rafael Alexandre Conceição Leão,Right Foot,Open Play,False,105.0,21.7
+3857279,8,24,1,Australia,Craig Goodwin,Left Foot,Open Play,False,114.2,31.3
+3857279,26,2,1,France,Adrien Rabiot,Head,Open Play,False,111.6,42.0
+3857279,31,18,1,France,Olivier Giroud,Right Foot,Open Play,False,110.5,39.2
+3857279,67,3,2,France,Kylian Mbappé Lottin,Head,Open Play,False,113.5,42.2
+3857279,70,50,2,France,Olivier Giroud,Head,Open Play,False,113.5,42.6
+3869118,38,0,1,England,Jordan Brian Henderson,Left Foot,Open Play,False,107.6,38.0
+3869118,47,17,1,England,Harry Kane,Right Foot,Open Play,False,104.3,50.7
+3869118,56,43,2,England,Bukayo Saka,Left Foot,Open Play,False,111.0,35.9
+3857264,45,53,2,Argentina,Alexis Mac Allister,Right Foot,Open Play,False,106.0,46.7
+3857264,66,57,2,Argentina,Julián Álvarez,Right Foot,Open Play,False,106.0,33.5
+3857288,22,50,1,Australia,Mitchell Thomas Duke,Head,Open Play,False,110.1,32.5
+3857292,9,31,1,Germany,Serge Gnabry,Head,Open Play,False,111.9,33.1
+3857292,57,39,2,Costa Rica,Yeltsin Ignacio Tejeda Valverde,Right Foot,Open Play,False,114.3,38.1
+3857292,69,7,2,Costa Rica,,,Own Goal,True,,
+3857292,72,4,2,Germany,Kai Havertz,Right Foot,Open Play,False,109.3,42.6
+3857292,84,2,2,Germany,Kai Havertz,Left Foot,Open Play,False,113.1,37.6
+3857292,88,13,2,Germany,Niclas Füllkrug,Left Foot,Open Play,False,114.8,42.5
+3869685,22,24,1,Argentina,Lionel Andrés Messi Cuccittini,Left Foot,Penalty,False,108.0,40.0
+3869685,35,22,1,Argentina,Ángel Fabián Di María Hernández,Left Foot,Open Play,False,111.8,32.1
+3869685,79,24,2,France,Kylian Mbappé Lottin,Right Foot,Penalty,False,108.0,40.0
+3869685,80,59,2,France,Kylian Mbappé Lottin,Right Foot,Open Play,False,104.8,30.1
+3869685,107,58,4,Argentina,Lionel Andrés Messi Cuccittini,Right Foot,Open Play,False,116.6,43.0
+3869685,117,5,4,France,Kylian Mbappé Lottin,Right Foot,Penalty,False,108.0,40.0
+3869486,41,36,1,Morocco,Youssef En-Nesyri,Head,Open Play,False,112.6,39.7
+3869552,4,40,1,France,Theo Bernard François Hernández,Left Foot,Open Play,False,115.7,31.5
+3869552,78,49,2,France,Randal Kolo Muani,Right Foot,Open Play,False,115.6,43.8
+3857295,80,8,2,Costa Rica,Keysher Fuller Spence,Left Foot,Open Play,False,102.6,47.5
+3857281,1,8,1,Canada,Alphonso Davies,Head,Open Play,False,109.6,36.4
+3857281,35,53,1,Croatia,Andrej Kramarić,Left Foot,Open Play,False,114.1,29.4
+3857281,43,32,1,Croatia,Marko Livaja,Right Foot,Open Play,False,101.0,39.1
+3857281,69,36,2,Croatia,Andrej Kramarić,Left Foot,Open Play,False,106.8,47.1
+3857281,93,26,2,Croatia,Lovro Majer,Left Foot,Open Play,False,109.2,45.4
+3857299,23,43,1,Ghana,Mohamed Salisu,Left Foot,Open Play,False,115.5,37.9
+3857299,33,49,1,Ghana,Mohammed Kudus,Head,Open Play,False,113.1,41.8
+3857299,57,19,2,South Korea,Gue-Sung Cho,Head,Open Play,False,112.6,38.4
+3857299,60,7,2,South Korea,Gue-Sung Cho,Head,Open Play,False,115.5,43.7
+3857299,67,52,2,Ghana,Mohammed Kudus,Left Foot,Open Play,False,108.4,48.6
+3857294,25,55,1,Netherlands,Cody Mathès Gakpo,Right Foot,Open Play,False,103.3,39.8
+3857294,48,55,2,Netherlands,Frenkie de Jong,Right Foot,Open Play,False,117.6,40.3
+3857297,38,57,1,Poland,Piotr Zieliński,Right Foot,Open Play,False,111.9,44.7
+3857297,81,28,2,Poland,Robert Lewandowski,Left Foot,Open Play,False,107.2,44.6
+3857263,61,33,2,Spain,Álvaro Borja Morata Martín,Right Foot,Open Play,False,113.2,34.3
+3857263,82,25,2,Germany,Niclas Füllkrug,Right Foot,Open Play,False,110.8,51.9
+3857283,72,37,2,Morocco,Romain Saïss,Other,Open Play,False,118.0,36.4
+3857283,91,51,2,Morocco,Zakaria Aboukhlal,Right Foot,Open Play,False,110.3,46.8
+3869321,34,4,1,Argentina,Nahuel Molina Lucero,Right Foot,Open Play,False,109.1,42.4
+3869321,72,39,2,Argentina,Lionel Andrés Messi Cuccittini,Left Foot,Penalty,False,108.0,40.0
+3869321,82,17,2,Netherlands,Wout Weghorst,Head,Open Play,False,108.7,46.4
+3869321,100,32,2,Netherlands,Wout Weghorst,Left Foot,Open Play,False,111.8,39.9
+3857301,40,20,1,Senegal,Boulaye Dia,Right Foot,Open Play,False,107.2,33.3
+3857301,47,51,2,Senegal,Famara Diedhiou,Head,Open Play,False,112.5,48.1
+3857301,77,39,2,Qatar,Mohammed Muntari,Head,Open Play,False,110.1,38.7
+3857301,83,6,2,Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,Right Foot,Open Play,False,107.8,45.3
+3857258,61,58,2,Brazil,Richarlison de Andrade,Right Foot,Open Play,False,114.5,41.8
+3857258,72,54,2,Brazil,Richarlison de Andrade,Right Foot,Open Play,False,107.1,39.6
+3869151,34,35,1,Argentina,Lionel Andrés Messi Cuccittini,Left Foot,Open Play,False,104.2,48.9
+3869151,56,41,2,Argentina,Julián Álvarez,Right Foot,Open Play,False,110.4,50.3
+3869151,76,11,2,Australia,,,Own Goal,True,,
+3857286,15,49,1,Ecuador,Enner Remberto Valencia Lastra,Right Foot,Penalty,False,108.1,40.1
+3857286,30,44,1,Ecuador,Enner Remberto Valencia Lastra,Head,Open Play,False,109.6,38.0
+3857267,43,41,1,Senegal,Ismaïla Sarr,Right Foot,Penalty,False,108.0,40.0
+3857267,66,58,2,Ecuador,Moisés Isaac Caicedo Corozo,Right Foot,Open Play,False,117.2,35.6
+3857267,69,30,2,Senegal,Kalidou Koulibaly,Right Foot,Open Play,False,114.3,46.0
+3869117,9,31,1,Netherlands,Memphis Depay,Right Foot,Open Play,False,104.9,43.7
+3869117,45,36,1,Netherlands,Daley Blind,Right Foot,Open Play,False,107.6,38.5
+3869117,75,20,2,United States,Haji Wright,Right Foot,Open Play,False,115.1,45.2
+3869117,80,28,2,Netherlands,Denzel Dumfries,Left Foot,Open Play,False,113.5,44.3
+3857269,82,15,2,Brazil,Carlos Henrique Casimiro,Right Foot,Open Play,False,106.3,29.4
+3857275,57,20,2,Tunisia,Wahbi Khazri,Left Foot,Open Play,False,103.3,37.8
+3857268,43,32,1,Belgium,Michy Batshuayi Tunga,Left Foot,Open Play,False,109.0,36.1
+3869219,42,54,1,Japan,Daizen Maeda,Left Foot,Open Play,False,113.5,44.3
+3869219,54,54,2,Croatia,Ivan Perišić,Head,Open Play,False,106.0,34.1
+3857293,25,30,1,Uruguay,Giorgian Daniel De Arrascaeta Benedetti,Head,Open Play,False,118.0,42.7
+3857293,31,2,1,Uruguay,Giorgian Daniel De Arrascaeta Benedetti,Right Foot,Open Play,False,110.8,31.2
+3857274,5,3,1,Netherlands,Cody Mathès Gakpo,Left Foot,Open Play,False,100.6,31.0
+3857274,48,44,2,Ecuador,Enner Remberto Valencia Lastra,Right Foot,Open Play,False,116.0,38.1
+3869152,43,28,1,France,Olivier Giroud,Left Foot,Open Play,False,105.6,32.3
+3869152,73,56,2,France,Kylian Mbappé Lottin,Right Foot,Open Play,False,104.8,28.6
+3869152,90,5,2,France,Kylian Mbappé Lottin,Right Foot,Open Play,False,106.2,25.2
+3869152,98,36,2,Poland,Robert Lewandowski,Right Foot,Penalty,False,108.0,40.0
+3857260,46,52,2,Mexico,Henry Josué Martín Mex,Left Foot,Open Play,False,116.7,40.2
+3857260,51,56,2,Mexico,Luis Gerardo Chávez Magallón,Left Foot,Free Kick,False,86.7,41.3
+3857260,94,40,2,Saudi Arabia,Salem Mohammed Al Dawsari,Right Foot,Open Play,False,110.9,45.2
+3857289,63,32,2,Argentina,Lionel Andrés Messi Cuccittini,Left Foot,Open Play,False,94.9,37.4
+3857289,86,39,2,Argentina,Enzo Fernandez,Right Foot,Open Play,False,106.5,22.8
+3857255,11,0,1,Spain,Álvaro Borja Morata Martín,Head,Open Play,False,115.3,38.3
+3857255,47,48,2,Japan,Ritsu Doan,Left Foot,Open Play,False,100.5,55.8
+3857255,50,14,2,Japan,Ao Tanaka,Other,Open Play,False,118.7,40.2
+3857298,64,20,2,Portugal,Cristiano Ronaldo dos Santos Aveiro,Right Foot,Penalty,False,108.1,40.1
+3857298,72,11,2,Ghana,André Ayew Pelé,Right Foot,Open Play,False,115.6,39.8
+3857298,77,6,2,Portugal,João Félix Sequeira,Right Foot,Open Play,False,107.5,52.6
+3857298,79,21,2,Portugal,Rafael Alexandre Conceição Leão,Right Foot,Open Play,False,111.7,28.3
+3857298,88,28,2,Ghana,Osman Bukari,Head,Open Play,False,113.5,40.2
+3857300,9,15,1,Argentina,Lionel Andrés Messi Cuccittini,Left Foot,Penalty,False,108.0,40.0
+3857300,47,40,2,Saudi Arabia,Saleh Khalid Al Shehri,Left Foot,Open Play,False,108.0,29.6
+3857300,52,44,2,Saudi Arabia,Salem Mohammed Al Dawsari,Right Foot,Open Play,False,102.4,25.3
+3857261,49,17,2,England,Marcus Rashford,Right Foot,Free Kick,False,96.1,29.3
+3857261,50,53,2,England,Phil Foden,Left Foot,Open Play,False,114.5,34.1
+3857261,67,40,2,England,Marcus Rashford,Left Foot,Open Play,False,109.9,50.3
+3869519,33,27,1,Argentina,Lionel Andrés Messi Cuccittini,Left Foot,Penalty,False,108.0,40.0
+3869519,38,26,1,Argentina,Julián Álvarez,Right Foot,Open Play,False,112.7,37.4
+3869519,68,46,2,Argentina,Julián Álvarez,Right Foot,Open Play,False,113.3,45.4
+3857291,10,52,1,Spain,Daniel Olmo Carvajal,Right Foot,Open Play,False,112.3,39.3
+3857291,20,32,1,Spain,Marco Asensio Willemsen,Left Foot,Open Play,False,105.8,33.4
+3857291,30,9,1,Spain,Ferrán Torres García,Right Foot,Penalty,False,108.1,40.1
+3857291,53,41,2,Spain,Ferrán Torres García,Left Foot,Open Play,False,114.7,49.4
+3857291,73,59,2,Spain,Pablo Martín Páez Gavira,Right Foot,Open Play,False,103.0,45.8
+3857291,89,11,2,Spain,Carlos Soler Barragán,Right Foot,Open Play,False,109.7,40.1
+3857291,91,57,2,Spain,Álvaro Borja Morata Martín,Left Foot,Open Play,False,104.0,36.4
+3857262,4,53,1,Portugal,Ricardo Jorge Luz Horta,Right Foot,Open Play,False,113.6,47.0
+3857262,26,43,1,South Korea,Young-Gwon Kim,Left Foot,Open Play,False,116.7,38.0
+3857262,90,28,2,South Korea,Hee-Chan Hwang,Right Foot,Open Play,False,108.3,44.6
+3857284,32,35,1,Germany,İlkay Gündoğan,Right Foot,Penalty,False,108.0,40.0
+3857284,74,46,2,Japan,Ritsu Doan,Left Foot,Open Play,False,112.1,41.5
+3857284,82,42,2,Japan,Takuma Asano,Right Foot,Open Play,False,117.7,50.2
+3857259,28,7,1,Cameroon,Jean-Charles Castelletto,Right Foot,Open Play,False,118.5,43.2
+3857259,45,22,1,Serbia,Strahinja Pavlović,Head,Open Play,False,110.7,42.8
+3857259,47,52,1,Serbia,Sergej Milinković-Savić,Left Foot,Open Play,False,99.6,46.7
+3857259,52,26,2,Serbia,Aleksandar Mitrović,Right Foot,Open Play,False,113.6,40.2
+3857259,62,52,2,Cameroon,Vincent Paté Aboubakar,Right Foot,Open Play,False,104.4,49.0
+3857259,65,25,2,Cameroon,Jean-Eric Maxim Choupo-Moting,Left Foot,Open Play,False,111.0,37.0
+3857276,3,29,1,Morocco,Hakim Ziyech,Left Foot,Open Play,False,83.9,45.0
+3857276,22,36,1,Morocco,Youssef En-Nesyri,Right Foot,Open Play,False,107.6,53.2
+3857276,39,50,1,Canada,,,Own Goal,True,,
+3857290,47,33,2,Switzerland,Breel-Donald Embolo,Right Foot,Open Play,False,111.9,39.5
+3857273,97,56,2,Iran,Roozbeh Cheshmi,Right Foot,Open Play,False,95.1,37.5
+3857273,100,37,2,Iran,Ramin Rezaeian,Right Foot,Open Play,False,104.8,45.3
+3857256,19,11,1,Switzerland,Xherdan Shaqiri,Left Foot,Open Play,False,107.5,50.6
+3857256,25,56,1,Serbia,Aleksandar Mitrović,Head,Open Play,False,108.3,38.6
+3857256,34,28,1,Serbia,Dušan Vlahović,Left Foot,Open Play,False,106.2,31.8
+3857256,43,41,1,Switzerland,Breel-Donald Embolo,Right Foot,Open Play,False,114.4,36.9
+3857256,47,38,2,Switzerland,Remo Freuler,Left Foot,Open Play,False,107.2,41.2
+3869420,105,35,3,Brazil,Neymar da Silva Santos Junior,Right Foot,Open Play,False,116.5,47.2
+3869420,116,2,4,Croatia,Bruno Petković,Left Foot,Open Play,False,103.2,38.6
+3869354,16,22,1,France,Aurélien Djani Tchouaméni,Right Foot,Open Play,False,92.5,43.5
+3869354,53,27,2,England,Harry Kane,Right Foot,Penalty,False,108.1,40.1
+3869354,77,10,2,France,Olivier Giroud,Head,Open Play,False,114.7,36.4
+3857266,60,25,2,France,Kylian Mbappé Lottin,Right Foot,Open Play,False,110.8,31.3
+3857266,67,15,2,Denmark,Andreas Christensen,Head,Open Play,False,113.0,37.6
+3857266,85,9,2,France,Kylian Mbappé Lottin,Other,Open Play,False,117.8,36.5
+3857280,91,48,2,Cameroon,Vincent Paté Aboubakar,Head,Open Play,False,106.7,40.7
+3857285,83,50,2,Netherlands,Cody Mathès Gakpo,Head,Open Play,False,112.3,39.0
+3857285,98,18,2,Netherlands,Davy Klaassen,Left Foot,Open Play,False,109.5,34.8
+3857271,34,9,1,England,Jude Bellingham,Head,Open Play,False,112.0,38.0
+3857271,42,46,1,England,Bukayo Saka,Left Foot,Open Play,False,104.1,38.5
+3857271,45,17,1,England,Raheem Sterling,Right Foot,Open Play,False,111.0,42.8
+3857271,61,26,2,England,Bukayo Saka,Left Foot,Open Play,False,105.3,46.3
+3857271,64,33,2,Iran,Mehdi Taremi,Right Foot,Open Play,False,109.7,48.0
+3857271,70,51,2,England,Marcus Rashford,Left Foot,Open Play,False,109.7,47.7
+3857271,89,1,2,England,Jack Grealish,Right Foot,Open Play,False,112.0,39.9
+3857271,102,30,2,Iran,Mehdi Taremi,Right Foot,Penalty,False,108.0,40.0
+3857270,53,40,2,Portugal,Bruno Miguel Borges Fernandes,Right Foot,Open Play,False,99.4,14.6
+3857270,92,19,2,Portugal,Bruno Miguel Borges Fernandes,Right Foot,Penalty,False,108.0,40.0

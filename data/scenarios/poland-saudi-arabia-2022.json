@@ -1,0 +1,383 @@
+{
+  "id": "poland-saudi-arabia-2022",
+  "meta": {
+    "title": "Poland vs Saudi Arabia — Group Stage",
+    "trigger_label": "Second half — Poland lead 2-0",
+    "difficulty": 1,
+    "order": 31,
+    "stage": "Group Stage",
+    "group": "C",
+    "date": "2022-11-26",
+    "stadium": "Education City Stadium "
+  },
+  "scoreline": {
+    "display": "Poland 2 – 0 Saudi Arabia",
+    "home": 2,
+    "away": 0
+  },
+  "context": "A pivotal moment in this group stage match. Poland lead Saudi Arabia 2-0. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Poland",
+  "away_team": "Saudi Arabia",
+  "home_formation": "4-4-2",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Wojciech Szczęsny",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 38
+    },
+    {
+      "name": "Matty Cash",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 45
+    },
+    {
+      "name": "Bartosz Bereszyński",
+      "number": 18,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "Kamil Glik",
+      "number": 15,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 54
+    },
+    {
+      "name": "Jakub Piotr Kiwior",
+      "number": 14,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Piotr Zieliński",
+      "number": 20,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 47
+    },
+    {
+      "name": "Przemysław Frankowski",
+      "number": 24,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 59
+    },
+    {
+      "name": "Grzegorz Krychowiak",
+      "number": 10,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 55
+    },
+    {
+      "name": "Krystian Bielik",
+      "number": 6,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 54
+    },
+    {
+      "name": "Arkadiusz Milik",
+      "number": 7,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 55
+    },
+    {
+      "name": "Robert Lewandowski",
+      "number": 9,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 53
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Mohammed Khalil Al Owais",
+      "number": 21,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 37
+    },
+    {
+      "name": "Mohammed Al Burayk",
+      "number": 6,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 51
+    },
+    {
+      "name": "Saud Abdullah Abdul Hamid",
+      "number": 12,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 44
+    },
+    {
+      "name": "Ali Albulayhi",
+      "number": 5,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Abdulelah Al Amri",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Mohammed Kanoo",
+      "number": 23,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 47
+    },
+    {
+      "name": "Abdulelah Saad Hameed Al-Malki",
+      "number": 8,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 47
+    },
+    {
+      "name": "Sami Khalil Al Naji",
+      "number": 16,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 48
+    },
+    {
+      "name": "Salem Mohammed Al Dawsari",
+      "number": 10,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 55
+    },
+    {
+      "name": "Firas Tariq Nasser Al Albirakan",
+      "number": 9,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 66
+    },
+    {
+      "name": "Saleh Khalid Al Shehri",
+      "number": 11,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 53
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "C",
+    "description": "Poland won 2-0. Piotr Zieliński (38'), Robert Lewandowski (81')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between Poland and Saudi Arabia (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between Poland and Saudi Arabia (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between Poland and Saudi Arabia (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between Poland and Saudi Arabia (2-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Firas Tariq Nasser Al Albirakan": "Firas Tariq Nasser Al Albirakan at 66/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Przemysław Frankowski": "Przemysław Frankowski at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Jakub Piotr Kiwior": "Jakub Piotr Kiwior at 55/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Grzegorz Krychowiak": "Grzegorz Krychowiak at 55/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Salem Mohammed Al Dawsari",
+      "attacker_team": "Saudi Arabia",
+      "defender": "Matty Cash",
+      "defender_team": "Poland",
+      "advantage": "Salem Mohammed Al Dawsari",
+      "diff": "+18",
+      "critical": true
+    },
+    {
+      "attacker": "Firas Tariq Nasser Al Albirakan",
+      "attacker_team": "Saudi Arabia",
+      "defender": "Bartosz Bereszyński",
+      "defender_team": "Poland",
+      "advantage": "Bartosz Bereszyński",
+      "diff": "-6",
+      "critical": false
+    },
+    {
+      "attacker": "Robert Lewandowski",
+      "attacker_team": "Poland",
+      "defender": "Abdulelah Al Amri",
+      "defender_team": "Saudi Arabia",
+      "advantage": "Abdulelah Al Amri",
+      "diff": "-5",
+      "critical": false
+    },
+    {
+      "attacker": "Saleh Khalid Al Shehri",
+      "attacker_team": "Saudi Arabia",
+      "defender": "Jakub Piotr Kiwior",
+      "defender_team": "Poland",
+      "advantage": "Jakub Piotr Kiwior",
+      "diff": "-1",
+      "critical": false
+    },
+    {
+      "attacker": "Przemysław Frankowski",
+      "attacker_team": "Poland",
+      "defender": "Saud Abdullah Abdul Hamid",
+      "defender_team": "Saudi Arabia",
+      "advantage": "Przemysław Frankowski",
+      "diff": "+18",
+      "critical": true
+    },
+    {
+      "attacker": "Piotr Zieliński",
+      "attacker_team": "Poland",
+      "defender": "Mohammed Al Burayk",
+      "defender_team": "Saudi Arabia",
+      "advantage": "Piotr Zieliński",
+      "diff": "+3",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 14,
+      "type": "yellow_card",
+      "description": "Jakub Piotr Kiwior (Poland) shown a yellow card card — Foul",
+      "player": "Jakub Piotr Kiwior"
+    },
+    {
+      "minute": 15,
+      "type": "yellow_card",
+      "description": "Matty Cash (Poland) shown a yellow card card — Foul",
+      "player": "Matty Cash"
+    },
+    {
+      "minute": 18,
+      "type": "yellow_card",
+      "description": "Arkadiusz Milik (Poland) shown a yellow card card — Foul",
+      "player": "Arkadiusz Milik"
+    },
+    {
+      "minute": 19,
+      "type": "yellow_card",
+      "description": "Abdulelah Saad Hameed Al-Malki (Saudi Arabia) shown a yellow card card — Bad Behaviour",
+      "player": "Abdulelah Saad Hameed Al-Malki"
+    },
+    {
+      "minute": 38,
+      "type": "goal",
+      "description": "Piotr Zieliński scores for Poland!",
+      "player": "Piotr Zieliński"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Nawaf Shaker Al Abid replaces Sami Khalil Al Naji (Tactical)",
+      "player": "Nawaf Shaker Al Abid"
+    },
+    {
+      "minute": 48,
+      "type": "yellow_card",
+      "description": "Abdulelah Al Amri (Saudi Arabia) shown a yellow card card — Foul",
+      "player": "Abdulelah Al Amri"
+    },
+    {
+      "minute": 62,
+      "type": "substitution",
+      "description": "Jakub Kamiński replaces Piotr Zieliński (Tactical)",
+      "player": "Jakub Kamiński"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Sultan Abdullah Salim Al Ghannam replaces Mohammed Al Burayk (Tactical)",
+      "player": "Sultan Abdullah Salim Al Ghannam"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Krzysztof Piątek replaces Arkadiusz Milik (Tactical)",
+      "player": "Krzysztof Piątek"
+    },
+    {
+      "minute": 81,
+      "type": "goal",
+      "description": "Robert Lewandowski scores for Poland!",
+      "player": "Robert Lewandowski"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Abdulrahman Al-Obood replaces Abdulelah Saad Hameed Al-Malki (Tactical)",
+      "player": "Abdulrahman Al-Obood"
+    },
+    {
+      "minute": 85,
+      "type": "substitution",
+      "description": "Nasser Al Dawsari replaces Saleh Khalid Al Shehri (Tactical)",
+      "player": "Nasser Al Dawsari"
+    },
+    {
+      "minute": 94,
+      "type": "substitution",
+      "description": "Hattan Babhir replaces Nawaf Shaker Al Abid (Tactical)",
+      "player": "Hattan Babhir"
+    }
+  ]
+}

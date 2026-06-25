@@ -1,0 +1,1752 @@
+[
+  {
+    "match_id": 3857278,
+    "minute": 43,
+    "second": 5,
+    "team": "Iran",
+    "player": "Ramin Rezaeian"
+  },
+  {
+    "match_id": 3857278,
+    "minute": 51,
+    "second": 6,
+    "team": "United States",
+    "player": "Weston McKennie"
+  },
+  {
+    "match_id": 3857278,
+    "minute": 57,
+    "second": 57,
+    "team": "Iran",
+    "player": "Ahmad Nourollahi"
+  },
+  {
+    "match_id": 3857254,
+    "minute": 22,
+    "second": 28,
+    "team": "Tunisia",
+    "player": "Dylan Daniel Mahmoud Bronn"
+  },
+  {
+    "match_id": 3857254,
+    "minute": 54,
+    "second": 38,
+    "team": "Denmark",
+    "player": "Rasmus Nissen Kristensen"
+  },
+  {
+    "match_id": 3869253,
+    "minute": 0,
+    "second": 38,
+    "team": "South Korea",
+    "player": "Heung-Min Son"
+  },
+  {
+    "match_id": 3869253,
+    "minute": 4,
+    "second": 5,
+    "team": "South Korea",
+    "player": "Young-Gwon Kim"
+  },
+  {
+    "match_id": 3869253,
+    "minute": 5,
+    "second": 33,
+    "team": "South Korea",
+    "player": "Woo-Young Jung"
+  },
+  {
+    "match_id": 3869253,
+    "minute": 67,
+    "second": 34,
+    "team": "South Korea",
+    "player": "Gue-Sung Cho"
+  },
+  {
+    "match_id": 3869253,
+    "minute": 79,
+    "second": 6,
+    "team": "South Korea",
+    "player": "Min Jae Kim"
+  },
+  {
+    "match_id": 3869684,
+    "minute": 25,
+    "second": 48,
+    "team": "Croatia",
+    "player": "Lovro Majer"
+  },
+  {
+    "match_id": 3869684,
+    "minute": 29,
+    "second": 27,
+    "team": "Croatia",
+    "player": "Ivan Peri\u0161i\u0107"
+  },
+  {
+    "match_id": 3869684,
+    "minute": 87,
+    "second": 5,
+    "team": "Morocco",
+    "player": "Sofyan Amrabat"
+  },
+  {
+    "match_id": 3869684,
+    "minute": 91,
+    "second": 29,
+    "team": "Morocco",
+    "player": "Sofyan Amrabat"
+  },
+  {
+    "match_id": 3857257,
+    "minute": 17,
+    "second": 7,
+    "team": "Denmark",
+    "player": "Christian Dannemann Eriksen"
+  },
+  {
+    "match_id": 3857257,
+    "minute": 25,
+    "second": 47,
+    "team": "Denmark",
+    "player": "Joachim Andersen"
+  },
+  {
+    "match_id": 3857257,
+    "minute": 70,
+    "second": 21,
+    "team": "Denmark",
+    "player": "Christian Dannemann Eriksen"
+  },
+  {
+    "match_id": 3857257,
+    "minute": 73,
+    "second": 39,
+    "team": "Australia",
+    "player": "Kye Rowles"
+  },
+  {
+    "match_id": 3857282,
+    "minute": 46,
+    "second": 22,
+    "team": "United States",
+    "player": "Tyler Adams"
+  },
+  {
+    "match_id": 3857282,
+    "minute": 98,
+    "second": 18,
+    "team": "Wales",
+    "player": "Ben Davies"
+  },
+  {
+    "match_id": 3857296,
+    "minute": 10,
+    "second": 0,
+    "team": "Croatia",
+    "player": "Borna Sosa"
+  },
+  {
+    "match_id": 3857296,
+    "minute": 14,
+    "second": 26,
+    "team": "Croatia",
+    "player": "Luka Modri\u0107"
+  },
+  {
+    "match_id": 3857296,
+    "minute": 28,
+    "second": 18,
+    "team": "Croatia",
+    "player": "Dejan Lovren"
+  },
+  {
+    "match_id": 3857296,
+    "minute": 79,
+    "second": 37,
+    "team": "Croatia",
+    "player": "Bruno Petkovi\u0107"
+  },
+  {
+    "match_id": 3869254,
+    "minute": 2,
+    "second": 15,
+    "team": "Portugal",
+    "player": "Kl\u00e9per Laveran Lima Ferreira"
+  },
+  {
+    "match_id": 3869254,
+    "minute": 25,
+    "second": 16,
+    "team": "Portugal",
+    "player": "Jos\u00e9 Diogo Dalot Teixeira"
+  },
+  {
+    "match_id": 3869254,
+    "minute": 30,
+    "second": 20,
+    "team": "Switzerland",
+    "player": "Remo Freuler"
+  },
+  {
+    "match_id": 3869254,
+    "minute": 78,
+    "second": 35,
+    "team": "Switzerland",
+    "player": "Manuel Obafemi Akanji"
+  },
+  {
+    "match_id": 3869254,
+    "minute": 83,
+    "second": 10,
+    "team": "Portugal",
+    "player": "William Silva de Carvalho"
+  },
+  {
+    "match_id": 3869254,
+    "minute": 89,
+    "second": 55,
+    "team": "Switzerland",
+    "player": "Haris Seferovi\u0107"
+  },
+  {
+    "match_id": 3857272,
+    "minute": 75,
+    "second": 55,
+    "team": "England",
+    "player": "Harry Kane"
+  },
+  {
+    "match_id": 3857277,
+    "minute": 47,
+    "second": 28,
+    "team": "Croatia",
+    "player": "Jo\u0161ko Gvardiol"
+  },
+  {
+    "match_id": 3857288,
+    "minute": 16,
+    "second": 34,
+    "team": "Tunisia",
+    "player": "Ali Abdi"
+  },
+  {
+    "match_id": 3857288,
+    "minute": 56,
+    "second": 42,
+    "team": "Tunisia",
+    "player": "Ferjani Sassi"
+  },
+  {
+    "match_id": 3857288,
+    "minute": 67,
+    "second": 59,
+    "team": "Tunisia",
+    "player": "Yassine Meriah"
+  },
+  {
+    "match_id": 3857292,
+    "minute": 3,
+    "second": 57,
+    "team": "Germany",
+    "player": "Jamal Musiala"
+  },
+  {
+    "match_id": 3857292,
+    "minute": 7,
+    "second": 28,
+    "team": "Costa Rica",
+    "player": "Keylor Navas Gamboa"
+  },
+  {
+    "match_id": 3857292,
+    "minute": 18,
+    "second": 20,
+    "team": "Costa Rica",
+    "player": "Joel Nathaniel Campbell Samuels"
+  },
+  {
+    "match_id": 3857292,
+    "minute": 25,
+    "second": 21,
+    "team": "Germany",
+    "player": "Serge Gnabry"
+  },
+  {
+    "match_id": 3857292,
+    "minute": 41,
+    "second": 4,
+    "team": "Germany",
+    "player": "Jamal Musiala"
+  },
+  {
+    "match_id": 3857292,
+    "minute": 48,
+    "second": 36,
+    "team": "Costa Rica",
+    "player": "Celso Borges Mora"
+  },
+  {
+    "match_id": 3857292,
+    "minute": 72,
+    "second": 58,
+    "team": "Costa Rica",
+    "player": "Joel Nathaniel Campbell Samuels"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 2,
+    "second": 28,
+    "team": "Argentina",
+    "player": "Rodrigo Javier De Paul"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 13,
+    "second": 53,
+    "team": "Argentina",
+    "player": "Nicol\u00e1s Alejandro Tagliafico"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 29,
+    "second": 6,
+    "team": "Argentina",
+    "player": "Lionel Andr\u00e9s Messi Cuccittini"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 58,
+    "second": 55,
+    "team": "France",
+    "player": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 90,
+    "second": 18,
+    "team": "France",
+    "player": "Dayotchanculle Upamecano"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 95,
+    "second": 58,
+    "team": "France",
+    "player": "Dayotchanculle Upamecano"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 100,
+    "second": 26,
+    "team": "France",
+    "player": "Jules Kound\u00e9"
+  },
+  {
+    "match_id": 3869685,
+    "minute": 121,
+    "second": 59,
+    "team": "Argentina",
+    "player": "Lionel Andr\u00e9s Messi Cuccittini"
+  },
+  {
+    "match_id": 3869486,
+    "minute": 32,
+    "second": 44,
+    "team": "Portugal",
+    "player": "Rapha\u00ebl Adelino Jos\u00e9 Guerreiro"
+  },
+  {
+    "match_id": 3869486,
+    "minute": 40,
+    "second": 32,
+    "team": "Portugal",
+    "player": "Bernardo Mota Veiga de Carvalho e Silva"
+  },
+  {
+    "match_id": 3869486,
+    "minute": 58,
+    "second": 46,
+    "team": "Morocco",
+    "player": "Sofiane Boufal"
+  },
+  {
+    "match_id": 3869486,
+    "minute": 89,
+    "second": 58,
+    "team": "Morocco",
+    "player": "Sofyan Amrabat"
+  },
+  {
+    "match_id": 3869552,
+    "minute": 10,
+    "second": 43,
+    "team": "France",
+    "player": "Antoine Griezmann"
+  },
+  {
+    "match_id": 3869552,
+    "minute": 30,
+    "second": 6,
+    "team": "Morocco",
+    "player": "Sofiane Boufal"
+  },
+  {
+    "match_id": 3869552,
+    "minute": 32,
+    "second": 23,
+    "team": "France",
+    "player": "Olivier Giroud"
+  },
+  {
+    "match_id": 3869552,
+    "minute": 59,
+    "second": 26,
+    "team": "France",
+    "player": "Olivier Giroud"
+  },
+  {
+    "match_id": 3869552,
+    "minute": 68,
+    "second": 27,
+    "team": "France",
+    "player": "Jules Kound\u00e9"
+  },
+  {
+    "match_id": 3869552,
+    "minute": 89,
+    "second": 18,
+    "team": "Morocco",
+    "player": "Azzedine Ounahi"
+  },
+  {
+    "match_id": 3869552,
+    "minute": 94,
+    "second": 12,
+    "team": "Morocco",
+    "player": "Hakim Ziyech"
+  },
+  {
+    "match_id": 3857295,
+    "minute": 72,
+    "second": 24,
+    "team": "Costa Rica",
+    "player": "Yeltsin Ignacio Tejeda Valverde"
+  },
+  {
+    "match_id": 3857295,
+    "minute": 78,
+    "second": 48,
+    "team": "Costa Rica",
+    "player": "Brandon Aguilera Zamora"
+  },
+  {
+    "match_id": 3857281,
+    "minute": 8,
+    "second": 29,
+    "team": "Canada",
+    "player": "Alphonso Davies"
+  },
+  {
+    "match_id": 3857281,
+    "minute": 25,
+    "second": 33,
+    "team": "Croatia",
+    "player": "Marcelo Brozovi\u0107"
+  },
+  {
+    "match_id": 3857281,
+    "minute": 42,
+    "second": 57,
+    "team": "Canada",
+    "player": "Kamal Miller"
+  },
+  {
+    "match_id": 3857281,
+    "minute": 73,
+    "second": 52,
+    "team": "Canada",
+    "player": "Alphonso Davies"
+  },
+  {
+    "match_id": 3857287,
+    "minute": 48,
+    "second": 39,
+    "team": "Uruguay",
+    "player": "Jos\u00e9 Mar\u00eda Gim\u00e9nez de Vargas"
+  },
+  {
+    "match_id": 3857299,
+    "minute": 37,
+    "second": 27,
+    "team": "South Korea",
+    "player": "Woo-Yeong Jeong"
+  },
+  {
+    "match_id": 3857299,
+    "minute": 65,
+    "second": 38,
+    "team": "Ghana",
+    "player": "Salis Abdul Samed"
+  },
+  {
+    "match_id": 3857294,
+    "minute": 2,
+    "second": 5,
+    "team": "Netherlands",
+    "player": "Virgil van Dijk"
+  },
+  {
+    "match_id": 3857294,
+    "minute": 15,
+    "second": 52,
+    "team": "Netherlands",
+    "player": "Memphis Depay"
+  },
+  {
+    "match_id": 3857294,
+    "minute": 40,
+    "second": 1,
+    "team": "Netherlands",
+    "player": "Marten de Roon"
+  },
+  {
+    "match_id": 3857294,
+    "minute": 84,
+    "second": 9,
+    "team": "Netherlands",
+    "player": "Teun Koopmeiners"
+  },
+  {
+    "match_id": 3869220,
+    "minute": 16,
+    "second": 45,
+    "team": "Morocco",
+    "player": "Youssef En-Nesyri"
+  },
+  {
+    "match_id": 3869220,
+    "minute": 24,
+    "second": 44,
+    "team": "Spain",
+    "player": "Daniel Olmo Carvajal"
+  },
+  {
+    "match_id": 3869220,
+    "minute": 28,
+    "second": 57,
+    "team": "Morocco",
+    "player": "Yassine Bounou"
+  },
+  {
+    "match_id": 3869220,
+    "minute": 49,
+    "second": 45,
+    "team": "Spain",
+    "player": "Marcos Llorente Moreno"
+  },
+  {
+    "match_id": 3869220,
+    "minute": 55,
+    "second": 35,
+    "team": "Morocco",
+    "player": "Sofyan Amrabat"
+  },
+  {
+    "match_id": 3869220,
+    "minute": 72,
+    "second": 27,
+    "team": "Spain",
+    "player": "Carlos Soler Barrag\u00e1n"
+  },
+  {
+    "match_id": 3869220,
+    "minute": 87,
+    "second": 55,
+    "team": "Spain",
+    "player": "Carlos Soler Barrag\u00e1n"
+  },
+  {
+    "match_id": 3869220,
+    "minute": 92,
+    "second": 22,
+    "team": "Morocco",
+    "player": "Hakim Ziyech"
+  },
+  {
+    "match_id": 3869220,
+    "minute": 94,
+    "second": 18,
+    "team": "Morocco",
+    "player": "Sofyan Amrabat"
+  },
+  {
+    "match_id": 3857263,
+    "minute": 9,
+    "second": 54,
+    "team": "Germany",
+    "player": "Leon Goretzka"
+  },
+  {
+    "match_id": 3857263,
+    "minute": 15,
+    "second": 40,
+    "team": "Germany",
+    "player": "Antonio R\u00fcdiger"
+  },
+  {
+    "match_id": 3857263,
+    "minute": 32,
+    "second": 35,
+    "team": "Spain",
+    "player": "Jordi Alba Ramos"
+  },
+  {
+    "match_id": 3857263,
+    "minute": 37,
+    "second": 5,
+    "team": "Germany",
+    "player": "Leon Goretzka"
+  },
+  {
+    "match_id": 3857263,
+    "minute": 38,
+    "second": 58,
+    "team": "Germany",
+    "player": "Joshua Kimmich"
+  },
+  {
+    "match_id": 3857263,
+    "minute": 46,
+    "second": 39,
+    "team": "Germany",
+    "player": "David Raum"
+  },
+  {
+    "match_id": 3857263,
+    "minute": 74,
+    "second": 40,
+    "team": "Spain",
+    "player": "Jorge Resurrecci\u00f3n Merodio"
+  },
+  {
+    "match_id": 3857283,
+    "minute": 21,
+    "second": 24,
+    "team": "Belgium",
+    "player": "Thorgan Hazard"
+  },
+  {
+    "match_id": 3857283,
+    "minute": 24,
+    "second": 57,
+    "team": "Morocco",
+    "player": "Achraf Hakimi Mouh"
+  },
+  {
+    "match_id": 3857283,
+    "minute": 39,
+    "second": 29,
+    "team": "Belgium",
+    "player": "Amadou Onana"
+  },
+  {
+    "match_id": 3857283,
+    "minute": 46,
+    "second": 5,
+    "team": "Morocco",
+    "player": "Hakim Ziyech"
+  },
+  {
+    "match_id": 3857283,
+    "minute": 62,
+    "second": 15,
+    "team": "Belgium",
+    "player": "Thorgan Hazard"
+  },
+  {
+    "match_id": 3857283,
+    "minute": 94,
+    "second": 32,
+    "team": "Morocco",
+    "player": "Sofyan Amrabat"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 26,
+    "second": 41,
+    "team": "Argentina",
+    "player": "Dami\u00e1n Emiliano Mart\u00ednez"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 83,
+    "second": 59,
+    "team": "Argentina",
+    "player": "Germ\u00e1n Alejandro Pezzella"
+  },
+  {
+    "match_id": 3869321,
+    "minute": 107,
+    "second": 1,
+    "team": "Netherlands",
+    "player": "Cody Math\u00e8s Gakpo"
+  },
+  {
+    "match_id": 3857265,
+    "minute": 17,
+    "second": 16,
+    "team": "Mexico",
+    "player": "Henry Josu\u00e9 Mart\u00edn Mex"
+  },
+  {
+    "match_id": 3857265,
+    "minute": 59,
+    "second": 21,
+    "team": "Mexico",
+    "player": "Ernesto Alexis Vega Rojas"
+  },
+  {
+    "match_id": 3857265,
+    "minute": 91,
+    "second": 1,
+    "team": "Mexico",
+    "player": "Jes\u00fas Daniel Gallardo Vasconcelos"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 5,
+    "second": 41,
+    "team": "Qatar",
+    "player": "Meshaal Aissa Barsham"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 9,
+    "second": 7,
+    "team": "Senegal",
+    "player": "Idrissa Gana Gueye"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 27,
+    "second": 57,
+    "team": "Senegal",
+    "player": "Isma\u00efla Sarr"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 42,
+    "second": 54,
+    "team": "Senegal",
+    "player": "Youssouf Sabaly"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 50,
+    "second": 43,
+    "team": "Qatar",
+    "player": "Akram Hassan Afif"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 52,
+    "second": 18,
+    "team": "Qatar",
+    "player": "Pedro Miguel Correia"
+  },
+  {
+    "match_id": 3857301,
+    "minute": 63,
+    "second": 1,
+    "team": "Qatar",
+    "player": "Almoez Ali Zainalabiddin Abdulla"
+  },
+  {
+    "match_id": 3857258,
+    "minute": 83,
+    "second": 23,
+    "team": "Brazil",
+    "player": "Raphael Dias Belloli"
+  },
+  {
+    "match_id": 3869151,
+    "minute": 12,
+    "second": 38,
+    "team": "Argentina",
+    "player": "Nahuel Molina Lucero"
+  },
+  {
+    "match_id": 3869151,
+    "minute": 78,
+    "second": 30,
+    "team": "Argentina",
+    "player": "Lionel Andr\u00e9s Messi Cuccittini"
+  },
+  {
+    "match_id": 3869151,
+    "minute": 84,
+    "second": 11,
+    "team": "Argentina",
+    "player": "Exequiel Alejandro Palacios"
+  },
+  {
+    "match_id": 3869151,
+    "minute": 97,
+    "second": 17,
+    "team": "Argentina",
+    "player": "Lautaro Javier Mart\u00ednez"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 2,
+    "second": 38,
+    "team": "Ecuador",
+    "player": "Michael Steveen Estrada Mart\u00ednez"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 13,
+    "second": 42,
+    "team": "Ecuador",
+    "player": "Michael Steveen Estrada Mart\u00ednez"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 17,
+    "second": 13,
+    "team": "Qatar",
+    "player": "Pedro Miguel Correia"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 19,
+    "second": 3,
+    "team": "Ecuador",
+    "player": "Piero Mart\u00edn Hincapi\u00e9 Reyna"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 52,
+    "second": 6,
+    "team": "Qatar",
+    "player": "Boualem Khoukhi"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 62,
+    "second": 44,
+    "team": "Qatar",
+    "player": "Abdulaziz Hatem Mohammed Abdullah"
+  },
+  {
+    "match_id": 3857286,
+    "minute": 78,
+    "second": 29,
+    "team": "Ecuador",
+    "player": "Piero Mart\u00edn Hincapi\u00e9 Reyna"
+  },
+  {
+    "match_id": 3857267,
+    "minute": 3,
+    "second": 40,
+    "team": "Senegal",
+    "player": "Pape Gueye"
+  },
+  {
+    "match_id": 3857267,
+    "minute": 40,
+    "second": 27,
+    "team": "Senegal",
+    "player": "Boulaye Dia"
+  },
+  {
+    "match_id": 3857267,
+    "minute": 61,
+    "second": 1,
+    "team": "Senegal",
+    "player": "Boulaye Dia"
+  },
+  {
+    "match_id": 3869117,
+    "minute": 19,
+    "second": 49,
+    "team": "United States",
+    "player": "Jesus Ferreira"
+  },
+  {
+    "match_id": 3869117,
+    "minute": 36,
+    "second": 14,
+    "team": "United States",
+    "player": "Tyler Adams"
+  },
+  {
+    "match_id": 3869117,
+    "minute": 71,
+    "second": 28,
+    "team": "United States",
+    "player": "Giovanni Reyna"
+  },
+  {
+    "match_id": 3857269,
+    "minute": 33,
+    "second": 23,
+    "team": "Brazil",
+    "player": "Lucas Tolentino Coelho de Lima"
+  },
+  {
+    "match_id": 3857269,
+    "minute": 45,
+    "second": 56,
+    "team": "Brazil",
+    "player": "Alex Sandro Lobo Silva"
+  },
+  {
+    "match_id": 3857269,
+    "minute": 63,
+    "second": 29,
+    "team": "Brazil",
+    "player": "Richarlison de Andrade"
+  },
+  {
+    "match_id": 3857269,
+    "minute": 65,
+    "second": 50,
+    "team": "Switzerland",
+    "player": "Silvan Widmer"
+  },
+  {
+    "match_id": 3857275,
+    "minute": 7,
+    "second": 36,
+    "team": "Tunisia",
+    "player": "Wahbi Khazri"
+  },
+  {
+    "match_id": 3857275,
+    "minute": 26,
+    "second": 21,
+    "team": "Tunisia",
+    "player": "Ali Ma\u00e2loul"
+  },
+  {
+    "match_id": 3857275,
+    "minute": 41,
+    "second": 47,
+    "team": "Tunisia",
+    "player": "Anis Ben Slimane"
+  },
+  {
+    "match_id": 3857275,
+    "minute": 63,
+    "second": 57,
+    "team": "France",
+    "player": "Randal Kolo Muani"
+  },
+  {
+    "match_id": 3857275,
+    "minute": 97,
+    "second": 47,
+    "team": "France",
+    "player": "Antoine Griezmann"
+  },
+  {
+    "match_id": 3857268,
+    "minute": 12,
+    "second": 55,
+    "team": "Canada",
+    "player": "Tajon Buchanan"
+  },
+  {
+    "match_id": 3869219,
+    "minute": 18,
+    "second": 24,
+    "team": "Japan",
+    "player": "Ritsu Doan"
+  },
+  {
+    "match_id": 3869219,
+    "minute": 68,
+    "second": 6,
+    "team": "Japan",
+    "player": "Junya Ito"
+  },
+  {
+    "match_id": 3869219,
+    "minute": 81,
+    "second": 30,
+    "team": "Japan",
+    "player": "Sh\u016bichi Gonda"
+  },
+  {
+    "match_id": 3857293,
+    "minute": 54,
+    "second": 47,
+    "team": "Uruguay",
+    "player": "Federico Santiago Valverde Dipetta"
+  },
+  {
+    "match_id": 3857293,
+    "minute": 88,
+    "second": 10,
+    "team": "Uruguay",
+    "player": "Diego Nicol\u00e1s De La Cruz Arcosa"
+  },
+  {
+    "match_id": 3857293,
+    "minute": 91,
+    "second": 42,
+    "team": "Ghana",
+    "player": "Mohammed Kudus"
+  },
+  {
+    "match_id": 3857274,
+    "minute": 32,
+    "second": 34,
+    "team": "Ecuador",
+    "player": "Jhegson Sebasti\u00e1n M\u00e9ndez Carabal\u00ed"
+  },
+  {
+    "match_id": 3857274,
+    "minute": 42,
+    "second": 10,
+    "team": "Ecuador",
+    "player": "Felix Eduardo Torres Caicedo"
+  },
+  {
+    "match_id": 3857274,
+    "minute": 47,
+    "second": 49,
+    "team": "Ecuador",
+    "player": "Jackson Gabriel Porozo Vernaza"
+  },
+  {
+    "match_id": 3857274,
+    "minute": 72,
+    "second": 47,
+    "team": "Netherlands",
+    "player": "Memphis Depay"
+  },
+  {
+    "match_id": 3869152,
+    "minute": 28,
+    "second": 9,
+    "team": "France",
+    "player": "Antoine Griezmann"
+  },
+  {
+    "match_id": 3869152,
+    "minute": 63,
+    "second": 0,
+    "team": "France",
+    "player": "Antoine Griezmann"
+  },
+  {
+    "match_id": 3869152,
+    "minute": 93,
+    "second": 42,
+    "team": "Poland",
+    "player": "Arkadiusz Milik"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 7,
+    "second": 59,
+    "team": "Mexico",
+    "player": "Henry Josu\u00e9 Mart\u00edn Mex"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 44,
+    "second": 23,
+    "team": "Mexico",
+    "player": "C\u00e9sar Jasib Montes Castro"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 46,
+    "second": 50,
+    "team": "Mexico",
+    "player": "Jes\u00fas Daniel Gallardo Vasconcelos"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 55,
+    "second": 15,
+    "team": "Mexico",
+    "player": "Hirving Rodrigo Lozano Bahena"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 73,
+    "second": 53,
+    "team": "Saudi Arabia",
+    "player": "Firas Tariq Nasser Al Albirakan"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 74,
+    "second": 35,
+    "team": "Mexico",
+    "player": "Luis Gerardo Ch\u00e1vez Magall\u00f3n"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 75,
+    "second": 13,
+    "team": "Saudi Arabia",
+    "player": "Salem Mohammed Al Dawsari"
+  },
+  {
+    "match_id": 3857260,
+    "minute": 86,
+    "second": 38,
+    "team": "Mexico",
+    "player": "Carlos Alberto Rodr\u00edguez G\u00f3mez"
+  },
+  {
+    "match_id": 3857289,
+    "minute": 16,
+    "second": 56,
+    "team": "Argentina",
+    "player": "Lisandro Mart\u00ednez"
+  },
+  {
+    "match_id": 3857289,
+    "minute": 24,
+    "second": 11,
+    "team": "Argentina",
+    "player": "Rodrigo Javier De Paul"
+  },
+  {
+    "match_id": 3857289,
+    "minute": 29,
+    "second": 11,
+    "team": "Mexico",
+    "player": "Francisco Guillermo Ochoa Maga\u00f1a"
+  },
+  {
+    "match_id": 3857289,
+    "minute": 47,
+    "second": 39,
+    "team": "Mexico",
+    "player": "Francisco Guillermo Ochoa Maga\u00f1a"
+  },
+  {
+    "match_id": 3857289,
+    "minute": 51,
+    "second": 50,
+    "team": "Mexico",
+    "player": "C\u00e9sar Jasib Montes Castro"
+  },
+  {
+    "match_id": 3857289,
+    "minute": 67,
+    "second": 49,
+    "team": "Mexico",
+    "player": "Ra\u00fal Alonso Jim\u00e9nez Rodr\u00edguez"
+  },
+  {
+    "match_id": 3857255,
+    "minute": 23,
+    "second": 53,
+    "team": "Spain",
+    "player": "C\u00e9sar Azpilicueta Tanco"
+  },
+  {
+    "match_id": 3857255,
+    "minute": 24,
+    "second": 55,
+    "team": "Japan",
+    "player": "Yuto Nagatomo"
+  },
+  {
+    "match_id": 3857255,
+    "minute": 34,
+    "second": 1,
+    "team": "Japan",
+    "player": "Yuto Nagatomo"
+  },
+  {
+    "match_id": 3857255,
+    "minute": 49,
+    "second": 32,
+    "team": "Spain",
+    "player": "Pau Francisco Torres"
+  },
+  {
+    "match_id": 3857298,
+    "minute": 49,
+    "second": 43,
+    "team": "Ghana",
+    "player": "Abdul Rahman Baba"
+  },
+  {
+    "match_id": 3857298,
+    "minute": 82,
+    "second": 11,
+    "team": "Portugal",
+    "player": "Jo\u00e3o F\u00e9lix Sequeira"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 17,
+    "second": 43,
+    "team": "Argentina",
+    "player": "Lionel Andr\u00e9s Messi Cuccittini"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 20,
+    "second": 22,
+    "team": "Argentina",
+    "player": "Nicol\u00e1s Alejandro Tagliafico"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 21,
+    "second": 40,
+    "team": "Argentina",
+    "player": "Alejandro Dar\u00edo G\u00f3mez"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 23,
+    "second": 9,
+    "team": "Argentina",
+    "player": "Nahuel Molina Lucero"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 26,
+    "second": 53,
+    "team": "Argentina",
+    "player": "Alejandro Dar\u00edo G\u00f3mez"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 31,
+    "second": 21,
+    "team": "Argentina",
+    "player": "Alejandro Dar\u00edo G\u00f3mez"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 34,
+    "second": 9,
+    "team": "Argentina",
+    "player": "Lionel Andr\u00e9s Messi Cuccittini"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 46,
+    "second": 39,
+    "team": "Argentina",
+    "player": "Leandro Daniel Paredes"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 82,
+    "second": 22,
+    "team": "Argentina",
+    "player": "Marcos Javier Acu\u00f1a"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 90,
+    "second": 47,
+    "team": "Argentina",
+    "player": "Rodrigo Javier De Paul"
+  },
+  {
+    "match_id": 3857300,
+    "minute": 93,
+    "second": 12,
+    "team": "Saudi Arabia",
+    "player": "Salem Mohammed Al Dawsari"
+  },
+  {
+    "match_id": 3857261,
+    "minute": 55,
+    "second": 43,
+    "team": "Wales",
+    "player": "Daniel James"
+  },
+  {
+    "match_id": 3857261,
+    "minute": 64,
+    "second": 11,
+    "team": "England",
+    "player": "Trent Alexander-Arnold"
+  },
+  {
+    "match_id": 3869519,
+    "minute": 46,
+    "second": 55,
+    "team": "Argentina",
+    "player": "Nicol\u00e1s Alejandro Tagliafico"
+  },
+  {
+    "match_id": 3857291,
+    "minute": 16,
+    "second": 1,
+    "team": "Costa Rica",
+    "player": "Joel Nathaniel Campbell Samuels"
+  },
+  {
+    "match_id": 3857291,
+    "minute": 32,
+    "second": 55,
+    "team": "Costa Rica",
+    "player": "Joel Nathaniel Campbell Samuels"
+  },
+  {
+    "match_id": 3857291,
+    "minute": 34,
+    "second": 17,
+    "team": "Spain",
+    "player": "Jordi Alba Ramos"
+  },
+  {
+    "match_id": 3857291,
+    "minute": 40,
+    "second": 47,
+    "team": "Costa Rica",
+    "player": "Jewison Bennette"
+  },
+  {
+    "match_id": 3857291,
+    "minute": 44,
+    "second": 21,
+    "team": "Spain",
+    "player": "Marco Asensio Willemsen"
+  },
+  {
+    "match_id": 3857291,
+    "minute": 54,
+    "second": 59,
+    "team": "Costa Rica",
+    "player": "Bryan Oviedo"
+  },
+  {
+    "match_id": 3857291,
+    "minute": 61,
+    "second": 40,
+    "team": "Costa Rica",
+    "player": "\u00d3scar Esau Duarte Gait\u00e1n"
+  },
+  {
+    "match_id": 3857291,
+    "minute": 66,
+    "second": 27,
+    "team": "Costa Rica",
+    "player": "Bryan Ruiz Gonz\u00e1lez"
+  },
+  {
+    "match_id": 3857291,
+    "minute": 73,
+    "second": 2,
+    "team": "Costa Rica",
+    "player": "Bryan Ruiz Gonz\u00e1lez"
+  },
+  {
+    "match_id": 3857291,
+    "minute": 80,
+    "second": 42,
+    "team": "Spain",
+    "player": "Jorge Resurrecci\u00f3n Merodio"
+  },
+  {
+    "match_id": 3857262,
+    "minute": 14,
+    "second": 20,
+    "team": "Portugal",
+    "player": "Kl\u00e9per Laveran Lima Ferreira"
+  },
+  {
+    "match_id": 3857262,
+    "minute": 16,
+    "second": 10,
+    "team": "South Korea",
+    "player": "Jin-Su Kim"
+  },
+  {
+    "match_id": 3857262,
+    "minute": 29,
+    "second": 29,
+    "team": "Portugal",
+    "player": "Kl\u00e9per Laveran Lima Ferreira"
+  },
+  {
+    "match_id": 3857262,
+    "minute": 46,
+    "second": 34,
+    "team": "Portugal",
+    "player": "Kl\u00e9per Laveran Lima Ferreira"
+  },
+  {
+    "match_id": 3857262,
+    "minute": 51,
+    "second": 48,
+    "team": "Portugal",
+    "player": "Vitor Machado Ferreira"
+  },
+  {
+    "match_id": 3857262,
+    "minute": 67,
+    "second": 41,
+    "team": "Portugal",
+    "player": "Jo\u00e3o M\u00e1rio Naval da Costa Eduardo"
+  },
+  {
+    "match_id": 3857284,
+    "minute": 7,
+    "second": 17,
+    "team": "Japan",
+    "player": "Junya Ito"
+  },
+  {
+    "match_id": 3857284,
+    "minute": 19,
+    "second": 51,
+    "team": "Germany",
+    "player": "\u0130lkay G\u00fcndo\u011fan"
+  },
+  {
+    "match_id": 3857284,
+    "minute": 39,
+    "second": 19,
+    "team": "Japan",
+    "player": "Yuto Nagatomo"
+  },
+  {
+    "match_id": 3857284,
+    "minute": 48,
+    "second": 36,
+    "team": "Germany",
+    "player": "Kai Havertz"
+  },
+  {
+    "match_id": 3857284,
+    "minute": 54,
+    "second": 11,
+    "team": "Japan",
+    "player": "Yuto Nagatomo"
+  },
+  {
+    "match_id": 3857284,
+    "minute": 54,
+    "second": 49,
+    "team": "Germany",
+    "player": "David Raum"
+  },
+  {
+    "match_id": 3857284,
+    "minute": 62,
+    "second": 29,
+    "team": "Germany",
+    "player": "Nico Schlotterbeck"
+  },
+  {
+    "match_id": 3857284,
+    "minute": 64,
+    "second": 14,
+    "team": "Japan",
+    "player": "Hiroki Sakai"
+  },
+  {
+    "match_id": 3857259,
+    "minute": 38,
+    "second": 30,
+    "team": "Serbia",
+    "player": "Filip Kosti\u0107"
+  },
+  {
+    "match_id": 3857259,
+    "minute": 48,
+    "second": 12,
+    "team": "Serbia",
+    "player": "Du\u0161an Tadi\u0107"
+  },
+  {
+    "match_id": 3857259,
+    "minute": 48,
+    "second": 49,
+    "team": "Serbia",
+    "player": "Andrija \u017divkovi\u0107"
+  },
+  {
+    "match_id": 3857259,
+    "minute": 90,
+    "second": 32,
+    "team": "Serbia",
+    "player": "Du\u0161an Tadi\u0107"
+  },
+  {
+    "match_id": 3857276,
+    "minute": 5,
+    "second": 15,
+    "team": "Canada",
+    "player": "Alphonso Davies"
+  },
+  {
+    "match_id": 3857276,
+    "minute": 16,
+    "second": 1,
+    "team": "Morocco",
+    "player": "Yassine Bounou"
+  },
+  {
+    "match_id": 3857276,
+    "minute": 30,
+    "second": 4,
+    "team": "Morocco",
+    "player": "Azzedine Ounahi"
+  },
+  {
+    "match_id": 3857276,
+    "minute": 39,
+    "second": 20,
+    "team": "Morocco",
+    "player": "Azzedine Ounahi"
+  },
+  {
+    "match_id": 3857276,
+    "minute": 47,
+    "second": 18,
+    "team": "Morocco",
+    "player": "Nayef Aguerd"
+  },
+  {
+    "match_id": 3857276,
+    "minute": 65,
+    "second": 52,
+    "team": "Canada",
+    "player": "David Junior Hoilett"
+  },
+  {
+    "match_id": 3857276,
+    "minute": 67,
+    "second": 23,
+    "team": "Canada",
+    "player": "Kamal Miller"
+  },
+  {
+    "match_id": 3857276,
+    "minute": 91,
+    "second": 54,
+    "team": "Canada",
+    "player": "Milan Borjan"
+  },
+  {
+    "match_id": 3857290,
+    "minute": 6,
+    "second": 33,
+    "team": "Cameroon",
+    "player": "Nouhou Tolo"
+  },
+  {
+    "match_id": 3857290,
+    "minute": 12,
+    "second": 32,
+    "team": "Switzerland",
+    "player": "Xherdan Shaqiri"
+  },
+  {
+    "match_id": 3857290,
+    "minute": 13,
+    "second": 41,
+    "team": "Cameroon",
+    "player": "Nicolas Alexis Julio N'Koulou Ndoubena"
+  },
+  {
+    "match_id": 3857290,
+    "minute": 57,
+    "second": 40,
+    "team": "Switzerland",
+    "player": "Breel-Donald Embolo"
+  },
+  {
+    "match_id": 3857273,
+    "minute": 14,
+    "second": 55,
+    "team": "Iran",
+    "player": "Sardar Azmoun"
+  },
+  {
+    "match_id": 3857273,
+    "minute": 43,
+    "second": 19,
+    "team": "Wales",
+    "player": "Ethan Ampadu"
+  },
+  {
+    "match_id": 3857273,
+    "minute": 49,
+    "second": 38,
+    "team": "Wales",
+    "player": "Aaron Ramsey"
+  },
+  {
+    "match_id": 3857273,
+    "minute": 91,
+    "second": 20,
+    "team": "Iran",
+    "player": "Alireza Jahanbakhsh"
+  },
+  {
+    "match_id": 3869420,
+    "minute": 10,
+    "second": 27,
+    "team": "Brazil",
+    "player": "Marcos Ao\u00e1s Corr\u00eaa"
+  },
+  {
+    "match_id": 3869420,
+    "minute": 43,
+    "second": 59,
+    "team": "Croatia",
+    "player": "Jo\u0161ko Gvardiol"
+  },
+  {
+    "match_id": 3869420,
+    "minute": 45,
+    "second": 45,
+    "team": "Croatia",
+    "player": "Josip Juranovi\u0107"
+  },
+  {
+    "match_id": 3869420,
+    "minute": 47,
+    "second": 10,
+    "team": "Brazil",
+    "player": "Carlos Henrique Casimiro"
+  },
+  {
+    "match_id": 3869420,
+    "minute": 50,
+    "second": 5,
+    "team": "Croatia",
+    "player": "Andrej Kramari\u0107"
+  },
+  {
+    "match_id": 3869420,
+    "minute": 102,
+    "second": 58,
+    "team": "Brazil",
+    "player": "Danilo Luiz da Silva"
+  },
+  {
+    "match_id": 3869354,
+    "minute": 5,
+    "second": 17,
+    "team": "England",
+    "player": "Luke Shaw"
+  },
+  {
+    "match_id": 3869354,
+    "minute": 49,
+    "second": 49,
+    "team": "France",
+    "player": "Hugo Lloris"
+  },
+  {
+    "match_id": 3869354,
+    "minute": 71,
+    "second": 50,
+    "team": "France",
+    "player": "Adrien Rabiot"
+  },
+  {
+    "match_id": 3857266,
+    "minute": 52,
+    "second": 24,
+    "team": "France",
+    "player": "Jules Kound\u00e9"
+  },
+  {
+    "match_id": 3857266,
+    "minute": 54,
+    "second": 50,
+    "team": "Denmark",
+    "player": "Jesper Lindstr\u00f8m"
+  },
+  {
+    "match_id": 3857280,
+    "minute": 8,
+    "second": 59,
+    "team": "Brazil",
+    "player": "Gleison Bremer Silva Nascimento"
+  },
+  {
+    "match_id": 3857285,
+    "minute": 12,
+    "second": 50,
+    "team": "Senegal",
+    "player": "Idrissa Gana Gueye"
+  },
+  {
+    "match_id": 3857285,
+    "minute": 72,
+    "second": 37,
+    "team": "Senegal",
+    "player": "Kr\u00e9pin Diatta"
+  },
+  {
+    "match_id": 3857285,
+    "minute": 94,
+    "second": 47,
+    "team": "Netherlands",
+    "player": "Denzel Dumfries"
+  },
+  {
+    "match_id": 3857271,
+    "minute": 23,
+    "second": 51,
+    "team": "England",
+    "player": "Jordan Pickford"
+  },
+  {
+    "match_id": 3857271,
+    "minute": 47,
+    "second": 13,
+    "team": "England",
+    "player": "Jude Bellingham"
+  },
+  {
+    "match_id": 3857271,
+    "minute": 86,
+    "second": 23,
+    "team": "Iran",
+    "player": "Seyed Hossein Hosseini"
+  },
+  {
+    "match_id": 3857271,
+    "minute": 87,
+    "second": 15,
+    "team": "Iran",
+    "player": "Seyed Hossein Hosseini"
+  },
+  {
+    "match_id": 3857270,
+    "minute": 28,
+    "second": 31,
+    "team": "Portugal",
+    "player": "R\u00faben Diogo Da Silva Neves"
+  },
+  {
+    "match_id": 3857270,
+    "minute": 45,
+    "second": 54,
+    "team": "Portugal",
+    "player": "Diogo Meireles Costa"
+  },
+  {
+    "match_id": 3857270,
+    "minute": 55,
+    "second": 12,
+    "team": "Portugal",
+    "player": "Diogo Meireles Costa"
+  }
+]

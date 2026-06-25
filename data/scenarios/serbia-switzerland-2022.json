@@ -1,0 +1,433 @@
+{
+  "id": "serbia-switzerland-2022",
+  "meta": {
+    "title": "Serbia vs Switzerland — Group Stage",
+    "trigger_label": "Second half — Serbia trail 2-3",
+    "difficulty": 1,
+    "order": 43,
+    "stage": "Group Stage",
+    "group": "G",
+    "date": "2022-12-02",
+    "stadium": "Stadium 974"
+  },
+  "scoreline": {
+    "display": "Serbia 2 – 3 Switzerland",
+    "home": 2,
+    "away": 3
+  },
+  "context": "A pivotal moment in this group stage match. Serbia trail Switzerland 2-3. Something has to change. The manager must decide how to respond.",
+  "home_team": "Serbia",
+  "away_team": "Switzerland",
+  "home_formation": "5-3-2",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Vanja Milinković Savić",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 30
+    },
+    {
+      "name": "Nikola Milenković",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Milos Veljkovic",
+      "number": 5,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 39
+    },
+    {
+      "name": "Strahinja Pavlović",
+      "number": 2,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Filip Kostić",
+      "number": 17,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 43
+    },
+    {
+      "name": "Andrija Živković",
+      "number": 14,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 46
+    },
+    {
+      "name": "Sergej Milinković-Savić",
+      "number": 20,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 51
+    },
+    {
+      "name": "Saša Lukić",
+      "number": 16,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Dušan Tadić",
+      "number": 10,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 56
+    },
+    {
+      "name": "Aleksandar Mitrović",
+      "number": 9,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 57
+    },
+    {
+      "name": "Dušan Vlahović",
+      "number": 18,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 48
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Gregor Kobel",
+      "number": 21,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 34
+    },
+    {
+      "name": "Ricardo Iván Rodríguez Araya",
+      "number": 13,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 42
+    },
+    {
+      "name": "Silvan Widmer",
+      "number": 3,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 48
+    },
+    {
+      "name": "Fabian Lukas Schär",
+      "number": 22,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Manuel Obafemi Akanji",
+      "number": 5,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Granit Xhaka",
+      "number": 10,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 56
+    },
+    {
+      "name": "Remo Freuler",
+      "number": 8,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 48
+    },
+    {
+      "name": "Djibril Sow",
+      "number": 15,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 51
+    },
+    {
+      "name": "Xherdan Shaqiri",
+      "number": 23,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 55
+    },
+    {
+      "name": "Ruben Vargas",
+      "number": 17,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 58
+    },
+    {
+      "name": "Breel-Donald Embolo",
+      "number": 7,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 60
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Switzerland won 3-2. Xherdan Shaqiri (19'), Aleksandar Mitrović (25'), Dušan Vlahović (34'), Breel-Donald Embolo (43'), Remo Freuler (47')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Serbia and Switzerland (2-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Serbia and Switzerland (2-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Serbia and Switzerland (2-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Serbia and Switzerland (2-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Breel-Donald Embolo": "Breel-Donald Embolo at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Ruben Vargas": "Ruben Vargas at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Aleksandar Mitrović": "Aleksandar Mitrović at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Nikola Milenković": "Nikola Milenković at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Vanja Milinković Savić": "Vanja Milinković Savić at 30/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages.",
+    "Gregor Kobel": "Gregor Kobel at 34/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Dušan Vlahović",
+      "attacker_team": "Serbia",
+      "defender": "Manuel Obafemi Akanji",
+      "defender_team": "Switzerland",
+      "advantage": "Manuel Obafemi Akanji",
+      "diff": "-4",
+      "critical": true
+    },
+    {
+      "attacker": "Breel-Donald Embolo",
+      "attacker_team": "Switzerland",
+      "defender": "Strahinja Pavlović",
+      "defender_team": "Serbia",
+      "advantage": "Breel-Donald Embolo",
+      "diff": "+10",
+      "critical": false
+    },
+    {
+      "attacker": "Dušan Tadić",
+      "attacker_team": "Serbia",
+      "defender": "Remo Freuler",
+      "defender_team": "Switzerland",
+      "advantage": "Dušan Tadić",
+      "diff": "+2",
+      "critical": false
+    },
+    {
+      "attacker": "Djibril Sow",
+      "attacker_team": "Switzerland",
+      "defender": "Saša Lukić",
+      "defender_team": "Serbia",
+      "advantage": "Djibril Sow",
+      "diff": "+15",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 14,
+      "type": "yellow_card",
+      "description": "Silvan Widmer (Switzerland) shown a yellow card card — Foul",
+      "player": "Silvan Widmer"
+    },
+    {
+      "minute": 19,
+      "type": "goal",
+      "description": "Xherdan Shaqiri scores for Switzerland!",
+      "player": "Xherdan Shaqiri"
+    },
+    {
+      "minute": 25,
+      "type": "goal",
+      "description": "Aleksandar Mitrović scores for Serbia!",
+      "player": "Aleksandar Mitrović"
+    },
+    {
+      "minute": 33,
+      "type": "yellow_card",
+      "description": "Ruben Vargas (Switzerland) shown a yellow card card — Foul",
+      "player": "Ruben Vargas"
+    },
+    {
+      "minute": 34,
+      "type": "goal",
+      "description": "Dušan Vlahović scores for Serbia!",
+      "player": "Dušan Vlahović"
+    },
+    {
+      "minute": 43,
+      "type": "goal",
+      "description": "Breel-Donald Embolo scores for Switzerland!",
+      "player": "Breel-Donald Embolo"
+    },
+    {
+      "minute": 46,
+      "type": "yellow_card",
+      "description": "Sergej Milinković-Savić (Serbia) shown a yellow card card — Foul",
+      "player": "Sergej Milinković-Savić"
+    },
+    {
+      "minute": 47,
+      "type": "goal",
+      "description": "Remo Freuler scores for Switzerland!",
+      "player": "Remo Freuler"
+    },
+    {
+      "minute": 54,
+      "type": "substitution",
+      "description": "Nemanja Gudelj replaces Milos Veljkovic (Tactical)",
+      "player": "Nemanja Gudelj"
+    },
+    {
+      "minute": 54,
+      "type": "substitution",
+      "description": "Luka Jović replaces Dušan Vlahović (Tactical)",
+      "player": "Luka Jović"
+    },
+    {
+      "minute": 55,
+      "type": "yellow_card",
+      "description": "Strahinja Pavlović (Serbia) shown a yellow card card — Foul",
+      "player": "Strahinja Pavlović"
+    },
+    {
+      "minute": 66,
+      "type": "substitution",
+      "description": "Nemanja Maksimović replaces Sergej Milinković-Savić (Tactical)",
+      "player": "Nemanja Maksimović"
+    },
+    {
+      "minute": 66,
+      "type": "yellow_card",
+      "description": "Predrag Rajković (Serbia) shown a yellow card card — Bad Behaviour",
+      "player": "Predrag Rajković"
+    },
+    {
+      "minute": 67,
+      "type": "substitution",
+      "description": "Edimilson Fernandes replaces Djibril Sow (Tactical)",
+      "player": "Edimilson Fernandes"
+    },
+    {
+      "minute": 68,
+      "type": "substitution",
+      "description": "Denis Lemi Zakaria Lako Lado replaces Xherdan Shaqiri (Tactical)",
+      "player": "Denis Lemi Zakaria Lako Lado"
+    },
+    {
+      "minute": 77,
+      "type": "substitution",
+      "description": "Filip Đuričić replaces Dušan Tadić (Tactical)",
+      "player": "Filip Đuričić"
+    },
+    {
+      "minute": 77,
+      "type": "substitution",
+      "description": "Nemanja Radonjić replaces Andrija Živković (Tactical)",
+      "player": "Nemanja Radonjić"
+    },
+    {
+      "minute": 80,
+      "type": "yellow_card",
+      "description": "Nemanja Gudelj (Serbia) shown a yellow card card — Foul",
+      "player": "Nemanja Gudelj"
+    },
+    {
+      "minute": 81,
+      "type": "yellow_card",
+      "description": "Aleksandar Mitrović (Serbia) shown a yellow card card — Bad Behaviour",
+      "player": "Aleksandar Mitrović"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Christian Fassnacht replaces Ruben Vargas (Tactical)",
+      "player": "Christian Fassnacht"
+    },
+    {
+      "minute": 94,
+      "type": "yellow_card",
+      "description": "Nikola Milenković (Serbia) shown a yellow card card — Bad Behaviour",
+      "player": "Nikola Milenković"
+    },
+    {
+      "minute": 94,
+      "type": "yellow_card",
+      "description": "Granit Xhaka (Switzerland) shown a yellow card card — Bad Behaviour",
+      "player": "Granit Xhaka"
+    },
+    {
+      "minute": 95,
+      "type": "substitution",
+      "description": "Noah Okafor replaces Breel-Donald Embolo (Tactical)",
+      "player": "Noah Okafor"
+    },
+    {
+      "minute": 98,
+      "type": "yellow_card",
+      "description": "Fabian Lukas Schär (Switzerland) shown a yellow card card — Foul",
+      "player": "Fabian Lukas Schär"
+    },
+    {
+      "minute": 99,
+      "type": "yellow_card",
+      "description": "Saša Lukić (Serbia) shown a yellow card card — Foul",
+      "player": "Saša Lukić"
+    }
+  ]
+}

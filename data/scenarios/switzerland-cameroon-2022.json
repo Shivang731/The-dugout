@@ -1,0 +1,377 @@
+{
+  "id": "switzerland-cameroon-2022",
+  "meta": {
+    "title": "Switzerland vs Cameroon — Group Stage",
+    "trigger_label": "Second half — Switzerland lead 1-0",
+    "difficulty": 1,
+    "order": 21,
+    "stage": "Group Stage",
+    "group": "G",
+    "date": "2022-11-24",
+    "stadium": "Al Janoub Stadium   "
+  },
+  "scoreline": {
+    "display": "Switzerland 1 – 0 Cameroon",
+    "home": 1,
+    "away": 0
+  },
+  "context": "A pivotal moment in this group stage match. Switzerland lead Cameroon 1-0. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "Switzerland",
+  "away_team": "Cameroon",
+  "home_formation": "4-3-3",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Yann Sommer",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 41
+    },
+    {
+      "name": "Ricardo Iván Rodríguez Araya",
+      "number": 13,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 56
+    },
+    {
+      "name": "Silvan Widmer",
+      "number": 3,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 45
+    },
+    {
+      "name": "Manuel Obafemi Akanji",
+      "number": 5,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Nico Elvedi",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Granit Xhaka",
+      "number": 10,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 59
+    },
+    {
+      "name": "Remo Freuler",
+      "number": 8,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 59
+    },
+    {
+      "name": "Djibril Sow",
+      "number": 15,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 55
+    },
+    {
+      "name": "Xherdan Shaqiri",
+      "number": 23,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 59
+    },
+    {
+      "name": "Ruben Vargas",
+      "number": 17,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 58
+    },
+    {
+      "name": "Breel-Donald Embolo",
+      "number": 7,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 62
+    }
+  ],
+  "away_players": [
+    {
+      "name": "André Onana",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 42
+    },
+    {
+      "name": "Nouhou Tolo",
+      "number": 25,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 49
+    },
+    {
+      "name": "Ngoran Suiru Fai Collins",
+      "number": 19,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 52
+    },
+    {
+      "name": "Jean-Charles Castelletto",
+      "number": 21,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Nicolas Alexis Julio N'Koulou Ndoubena",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Samuel Yves Oum Gwet",
+      "number": 14,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 56
+    },
+    {
+      "name": "André-Frank Zambo Anguissa",
+      "number": 8,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 53
+    },
+    {
+      "name": "Martin Hongla Yma II",
+      "number": 18,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 49
+    },
+    {
+      "name": "Karl Brillant Toko Ekambi",
+      "number": 12,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 51
+    },
+    {
+      "name": "Bryan Mbeumo",
+      "number": 20,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 61
+    },
+    {
+      "name": "Jean-Eric Maxim Choupo-Moting",
+      "number": 13,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 59
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "Switzerland won 1-0. Breel-Donald Embolo (47')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this group stage match between Switzerland and Cameroon (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this group stage match between Switzerland and Cameroon (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this group stage match between Switzerland and Cameroon (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this group stage match between Switzerland and Cameroon (1-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Breel-Donald Embolo": "Breel-Donald Embolo at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Bryan Mbeumo": "Bryan Mbeumo at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Granit Xhaka": "Granit Xhaka at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Remo Freuler": "Remo Freuler at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Ruben Vargas",
+      "attacker_team": "Switzerland",
+      "defender": "Ngoran Suiru Fai Collins",
+      "defender_team": "Cameroon",
+      "advantage": "Ruben Vargas",
+      "diff": "+5",
+      "critical": false
+    },
+    {
+      "attacker": "Karl Brillant Toko Ekambi",
+      "attacker_team": "Cameroon",
+      "defender": "Silvan Widmer",
+      "defender_team": "Switzerland",
+      "advantage": "Silvan Widmer",
+      "diff": "-4",
+      "critical": false
+    },
+    {
+      "attacker": "Xherdan Shaqiri",
+      "attacker_team": "Switzerland",
+      "defender": "Nouhou Tolo",
+      "defender_team": "Cameroon",
+      "advantage": "Xherdan Shaqiri",
+      "diff": "+19",
+      "critical": true
+    },
+    {
+      "attacker": "Bryan Mbeumo",
+      "attacker_team": "Cameroon",
+      "defender": "Ricardo Iván Rodríguez Araya",
+      "defender_team": "Switzerland",
+      "advantage": "Bryan Mbeumo",
+      "diff": "+8",
+      "critical": false
+    },
+    {
+      "attacker": "Breel-Donald Embolo",
+      "attacker_team": "Switzerland",
+      "defender": "Nicolas Alexis Julio N'Koulou Ndoubena",
+      "defender_team": "Cameroon",
+      "advantage": "Breel-Donald Embolo",
+      "diff": "+2",
+      "critical": false
+    },
+    {
+      "attacker": "Jean-Eric Maxim Choupo-Moting",
+      "attacker_team": "Cameroon",
+      "defender": "Nico Elvedi",
+      "defender_team": "Switzerland",
+      "advantage": "Jean-Eric Maxim Choupo-Moting",
+      "diff": "+1",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 35,
+      "type": "yellow_card",
+      "description": "Ngoran Suiru Fai Collins (Cameroon) shown a yellow card card — Foul",
+      "player": "Ngoran Suiru Fai Collins"
+    },
+    {
+      "minute": 47,
+      "type": "goal",
+      "description": "Breel-Donald Embolo scores for Switzerland!",
+      "player": "Breel-Donald Embolo"
+    },
+    {
+      "minute": 63,
+      "type": "yellow_card",
+      "description": "Nico Elvedi (Switzerland) shown a yellow card card — Foul",
+      "player": "Nico Elvedi"
+    },
+    {
+      "minute": 67,
+      "type": "substitution",
+      "description": "Gaël Ondoua replaces Martin Hongla Yma II (Tactical)",
+      "player": "Gaël Ondoua"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Fabian Frei replaces Djibril Sow (Tactical)",
+      "player": "Fabian Frei"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Noah Okafor replaces Xherdan Shaqiri (Tactical)",
+      "player": "Noah Okafor"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Haris Seferović replaces Breel-Donald Embolo (Tactical)",
+      "player": "Haris Seferović"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Georges-Kévin Nkoudou Mbida replaces Karl Brillant Toko Ekambi (Tactical)",
+      "player": "Georges-Kévin Nkoudou Mbida"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Vincent Paté Aboubakar replaces Jean-Eric Maxim Choupo-Moting (Tactical)",
+      "player": "Vincent Paté Aboubakar"
+    },
+    {
+      "minute": 80,
+      "type": "substitution",
+      "description": "Fabian Rieder replaces Ruben Vargas (Tactical)",
+      "player": "Fabian Rieder"
+    },
+    {
+      "minute": 80,
+      "type": "substitution",
+      "description": "Nicolas Moumi Ngamaleu replaces Bryan Mbeumo (Tactical)",
+      "player": "Nicolas Moumi Ngamaleu"
+    },
+    {
+      "minute": 82,
+      "type": "yellow_card",
+      "description": "Manuel Obafemi Akanji (Switzerland) shown a yellow card card — Foul",
+      "player": "Manuel Obafemi Akanji"
+    },
+    {
+      "minute": 89,
+      "type": "substitution",
+      "description": "Eray Ervin Cömert replaces Ricardo Iván Rodríguez Araya (Tactical)",
+      "player": "Eray Ervin Cömert"
+    }
+  ]
+}

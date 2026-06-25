@@ -1,0 +1,351 @@
+{
+  "id": "tunisia-australia-2022",
+  "meta": {
+    "title": "Tunisia vs Australia — Group Stage",
+    "trigger_label": "Second half — Tunisia trail 0-1",
+    "difficulty": 1,
+    "order": 32,
+    "stage": "Group Stage",
+    "group": "D",
+    "date": "2022-11-26",
+    "stadium": "Al Janoub Stadium   "
+  },
+  "scoreline": {
+    "display": "Tunisia 0 – 1 Australia",
+    "home": 0,
+    "away": 1
+  },
+  "context": "A pivotal moment in this group stage match. Tunisia trail Australia 0-1. Something has to change. The manager must decide how to respond.",
+  "home_team": "Tunisia",
+  "away_team": "Australia",
+  "home_formation": "5-4-1",
+  "away_formation": "4-4-2",
+  "home_players": [
+    {
+      "name": "Aymen Dahmen",
+      "number": 16,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 36
+    },
+    {
+      "name": "Yassine Meriah",
+      "number": 4,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Dylan Daniel Mahmoud Bronn",
+      "number": 6,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Montassar Omar Talbi",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 46
+    },
+    {
+      "name": "Mohamed Dräger",
+      "number": 20,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 28
+    },
+    {
+      "name": "Ali Abdi",
+      "number": 24,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 43
+    },
+    {
+      "name": "Ellyes Joris Skhiri",
+      "number": 17,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 57
+    },
+    {
+      "name": "Aïssa Bilal Laïdouni",
+      "number": 14,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 57
+    },
+    {
+      "name": "Naïm Sliti",
+      "number": 23,
+      "pos": "RAM",
+      "x": 0.675,
+      "y": 0.43,
+      "fatigue": 65
+    },
+    {
+      "name": "Youssef Msakni",
+      "number": 7,
+      "pos": "LAM",
+      "x": 0.325,
+      "y": 0.43,
+      "fatigue": 58
+    },
+    {
+      "name": "Issam Jebali",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 52
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Mathew Ryan",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 35
+    },
+    {
+      "name": "Aziz Eraltay Behich",
+      "number": 16,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 42
+    },
+    {
+      "name": "Fran Karačić",
+      "number": 5,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 54
+    },
+    {
+      "name": "Harry Souttar",
+      "number": 19,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 54
+    },
+    {
+      "name": "Kye Rowles",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 51
+    },
+    {
+      "name": "Mathew Leckie",
+      "number": 7,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 46
+    },
+    {
+      "name": "Craig Goodwin",
+      "number": 23,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 56
+    },
+    {
+      "name": "Aaron Mooy",
+      "number": 13,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Jackson Irvine",
+      "number": 22,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 59
+    },
+    {
+      "name": "Riley McGree",
+      "number": 14,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 61
+    },
+    {
+      "name": "Mitchell Thomas Duke",
+      "number": 15,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 51
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Australia won 1-0. Mitchell Thomas Duke (22')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Tunisia and Australia (0-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Tunisia and Australia (0-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Tunisia and Australia (0-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Tunisia and Australia (0-1), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Naïm Sliti": "Naïm Sliti at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Riley McGree": "Riley McGree at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Jackson Irvine": "Jackson Irvine at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Youssef Msakni": "Youssef Msakni at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Mohamed Dräger": "Mohamed Dräger at 28/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Issam Jebali",
+      "attacker_team": "Tunisia",
+      "defender": "Kye Rowles",
+      "defender_team": "Australia",
+      "advantage": "Kye Rowles",
+      "diff": "-6",
+      "critical": false
+    },
+    {
+      "attacker": "Mitchell Thomas Duke",
+      "attacker_team": "Australia",
+      "defender": "Montassar Omar Talbi",
+      "defender_team": "Tunisia",
+      "advantage": "Mitchell Thomas Duke",
+      "diff": "+8",
+      "critical": false
+    },
+    {
+      "attacker": "Youssef Msakni",
+      "attacker_team": "Tunisia",
+      "defender": "Jackson Irvine",
+      "defender_team": "Australia",
+      "advantage": "Jackson Irvine",
+      "diff": "-11",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 22,
+      "type": "goal",
+      "description": "Mitchell Thomas Duke scores for Australia!",
+      "player": "Mitchell Thomas Duke"
+    },
+    {
+      "minute": 25,
+      "type": "yellow_card",
+      "description": "Aïssa Bilal Laïdouni (Tunisia) shown a yellow card card — Foul",
+      "player": "Aïssa Bilal Laïdouni"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Ferjani Sassi replaces Mohamed Dräger (Tactical)",
+      "player": "Ferjani Sassi"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Jamie MacLaren replaces Mitchell Thomas Duke (Tactical)",
+      "player": "Jamie MacLaren"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Ajdin Hrustic replaces Riley McGree (Tactical)",
+      "player": "Ajdin Hrustic"
+    },
+    {
+      "minute": 63,
+      "type": "yellow_card",
+      "description": "Ali Abdi (Tunisia) shown a yellow card card — Foul",
+      "player": "Ali Abdi"
+    },
+    {
+      "minute": 66,
+      "type": "substitution",
+      "description": "Wahbi Khazri replaces Aïssa Bilal Laïdouni (Tactical)",
+      "player": "Wahbi Khazri"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "description": "Taha Yassine Khenissi replaces Issam Jebali (Tactical)",
+      "player": "Taha Yassine Khenissi"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "description": "Wajdi Kechrida replaces Dylan Daniel Mahmoud Bronn (Tactical)",
+      "player": "Wajdi Kechrida"
+    },
+    {
+      "minute": 74,
+      "type": "substitution",
+      "description": "Miloš Degenek replaces Fran Karačić (Tactical)",
+      "player": "Miloš Degenek"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Keanu Baccus replaces Mathew Leckie (Tactical)",
+      "player": "Keanu Baccus"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Awer Denis Bul Mabil replaces Craig Goodwin (Tactical)",
+      "player": "Awer Denis Bul Mabil"
+    },
+    {
+      "minute": 91,
+      "type": "yellow_card",
+      "description": "Ferjani Sassi (Tunisia) shown a yellow card card — Foul",
+      "player": "Ferjani Sassi"
+    }
+  ]
+}

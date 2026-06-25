@@ -1,0 +1,1776 @@
+match_id,minute,second,team,player,card,advantage,offensive
+3857278,0,7,United States,Weston McKennie,,False,False
+3857278,8,3,Iran,Ramin Rezaeian,,False,False
+3857278,9,23,Iran,Ehsan Hajsafi,,False,False
+3857278,19,13,Iran,Mehdi Taremi,,False,False
+3857278,26,47,Iran,Ramin Rezaeian,,True,False
+3857278,33,23,Iran,Sardar Azmoun,,True,False
+3857278,33,29,United States,Antonee Robinson,,True,False
+3857278,41,47,Iran,Ramin Rezaeian,,False,False
+3857278,42,18,United States,Tyler Adams,Yellow Card,False,False
+3857278,43,39,United States,Yunus Dimoara Musah,,False,False
+3857278,48,43,Iran,Sardar Azmoun,,False,True
+3857278,50,7,Iran,Ali Gholizadeh,,False,False
+3857278,45,22,United States,Joshua Sargent,,False,True
+3857278,46,22,Iran,Seyed Majid Hosseini,,True,False
+3857278,48,55,Iran,Saman Ghoddos,,False,False
+3857278,53,29,Iran,Ali Karimi,,True,False
+3857278,53,53,Iran,Mehdi Taremi,,False,False
+3857278,59,20,Iran,Saeid Ezatolahi Afagh,,False,False
+3857278,60,34,United States,Weston McKennie,,False,False
+3857278,60,52,United States,Tyler Adams,,True,False
+3857278,62,23,Iran,Ali Karimi,,True,False
+3857278,63,47,United States,Joshua Sargent,,True,False
+3857278,64,6,Iran,Mehdi Taremi,,False,False
+3857278,66,27,Iran,Morteza Pouraliganji,,False,False
+3857278,66,57,Iran,Ramin Rezaeian,,False,False
+3857278,76,14,Iran,Seyed Majid Hosseini,Yellow Card,False,False
+3857278,77,41,United States,Yunus Dimoara Musah,,False,False
+3857278,80,10,United States,Timothy Weah,,False,False
+3857278,81,49,United States,Yunus Dimoara Musah,,False,True
+3857278,84,39,Iran,Saman Ghoddos,,True,False
+3857278,89,2,Iran,Ali Karimi,,False,False
+3857278,91,43,United States,Yunus Dimoara Musah,,False,False
+3857278,95,26,Iran,Abolfazl Jalali,Yellow Card,False,False
+3857278,97,18,United States,Haji Wright,,False,False
+3857254,1,56,Denmark,Thomas Delaney,,True,False
+3857254,3,52,Denmark,Christian Dannemann Eriksen,,True,False
+3857254,7,17,Denmark,Joachim Andersen,,False,False
+3857254,15,43,Denmark,Kasper Dolberg,,False,False
+3857254,20,28,Tunisia,Ali Abdi,,False,False
+3857254,23,45,Denmark,Rasmus Nissen Kristensen,Yellow Card,False,False
+3857254,29,45,Tunisia,Yassine Meriah,,False,False
+3857254,31,31,Denmark,Christian Dannemann Eriksen,,True,False
+3857254,35,10,Tunisia,Yassine Meriah,,False,False
+3857254,43,18,Denmark,Kasper Dolberg,,False,False
+3857254,43,34,Denmark,Joachim Andersen,,True,False
+3857254,43,46,Tunisia,Issam Jebali,,False,False
+3857254,47,40,Tunisia,Issam Jebali,,False,False
+3857254,48,3,Denmark,Joakim Mæhle,,False,False
+3857254,59,11,Denmark,Joachim Andersen,,False,False
+3857254,66,57,Tunisia,Aïssa Bilal Laïdouni,,False,True
+3857254,77,15,Denmark,Mathias Jensen,Yellow Card,False,False
+3857254,77,57,Tunisia,Ellyes Joris Skhiri,,False,False
+3857254,84,57,Tunisia,Taha Yassine Khenissi,Yellow Card,False,False
+3857254,86,47,Tunisia,Mohamed Dräger,,False,False
+3857254,92,14,Denmark,Mathias Jensen,,False,False
+3857254,96,38,Tunisia,Taha Yassine Khenissi,,False,False
+3857254,97,2,Denmark,Mikkel Damsgaard,,False,False
+3869253,2,59,South Korea,Gue-Sung Cho,,False,False
+3869253,4,45,Brazil,Raphael Dias Belloli,,False,False
+3869253,8,58,South Korea,Gue-Sung Cho,,False,False
+3869253,10,12,South Korea,Woo-Young Jung,,False,False
+3869253,22,26,South Korea,Heung-Min Son,,False,False
+3869253,23,38,Brazil,Carlos Henrique Casimiro,,False,False
+3869253,34,21,Brazil,Carlos Henrique Casimiro,,False,False
+3869253,43,31,South Korea,Woo-Young Jung,Yellow Card,False,False
+3869253,49,16,South Korea,In-Beom Hwang,,False,False
+3869253,55,46,South Korea,Jun-Ho Son,,False,False
+3869253,57,43,Brazil,Danilo Luiz da Silva,,False,False
+3869253,60,31,Brazil,Richarlison de Andrade,,False,False
+3869253,63,2,Brazil,Richarlison de Andrade,,False,False
+3869253,64,7,South Korea,Hee-Chan Hwang,,False,False
+3869253,68,38,South Korea,Hee-Chan Hwang,,False,False
+3869253,69,40,South Korea,Jun-Ho Son,,False,False
+3869253,73,8,Brazil,Richarlison de Andrade,,False,False
+3869253,74,56,Brazil,Gleison Bremer Silva Nascimento,,False,False
+3869253,77,8,South Korea,Hee-Chan Hwang,,False,False
+3869253,87,8,South Korea,Seung-Ho Paik,,False,False
+3869684,2,58,Croatia,Joško Gvardiol,,False,False
+3869684,5,36,Morocco,Sofyan Amrabat,,False,False
+3869684,7,34,Croatia,Joško Gvardiol,,False,False
+3869684,17,59,Croatia,Mislav Oršić,,False,False
+3869684,24,10,Croatia,Lovro Majer,,False,False
+3869684,25,9,Morocco,Yahia Attiyat allah,,False,False
+3869684,27,57,Morocco,Youssef En-Nesyri,,False,False
+3869684,34,21,Croatia,Joško Gvardiol,,False,False
+3869684,40,11,Morocco,Abdelhamid Sabiri,,True,False
+3869684,43,21,Morocco,Youssef En-Nesyri,,True,False
+3869684,45,24,Croatia,Lovro Majer,,False,False
+3869684,46,1,Morocco,Hakim Ziyech,,False,False
+3869684,48,44,Croatia,Mislav Oršić,,True,False
+3869684,50,55,Croatia,Mislav Oršić,,False,False
+3869684,54,31,Morocco,Sofyan Amrabat,,True,False
+3869684,54,41,Croatia,Lovro Majer,,False,False
+3869684,56,12,Morocco,Jawad El Yamiq,,False,False
+3869684,60,41,Morocco,Sofiane Boufal,,False,False
+3869684,64,29,Croatia,Marko Livaja,,False,False
+3869684,68,14,Morocco,Yahia Attiyat allah,,False,False
+3869684,72,58,Morocco,Badr Banoun,,False,False
+3869684,74,46,Morocco,Achraf Hakimi Mouh,,False,False
+3869684,77,57,Morocco,Selim Amallah,,False,False
+3869684,83,39,Morocco,Selim Amallah,,False,False
+3869684,87,52,Croatia,Mario Pašalić,,False,False
+3869684,88,26,Croatia,Josip Stanišić,,False,False
+3869684,89,13,Morocco,Achraf Hakimi Mouh,,True,False
+3869684,89,21,Croatia,Bruno Petković,,False,False
+3869684,95,5,Croatia,Bruno Petković,,False,False
+3857257,1,35,Denmark,Andreas Skov Olsen,,False,False
+3857257,3,4,Australia,Aziz Eraltay Behich,Yellow Card,False,False
+3857257,8,15,Denmark,Jesper Lindstrøm,,False,False
+3857257,16,27,Australia,Riley McGree,,False,False
+3857257,20,49,Denmark,Andreas Christensen,,False,False
+3857257,22,14,Australia,Riley McGree,,False,False
+3857257,24,51,Australia,Riley McGree,,False,False
+3857257,27,30,Denmark,Jesper Lindstrøm,,False,False
+3857257,34,49,Australia,Mathew Leckie,,False,False
+3857257,36,25,Australia,Mitchell Thomas Duke,,False,False
+3857257,42,49,Denmark,Christian Dannemann Eriksen,,False,False
+3857257,45,33,Denmark,Andreas Skov Olsen,,False,False
+3857257,53,2,Australia,Mitchell Thomas Duke,,False,False
+3857257,54,37,Australia,Mathew Leckie,,False,False
+3857257,56,51,Australia,Miloš Degenek,Yellow Card,False,False
+3857257,63,41,Australia,Mathew Leckie,,False,False
+3857257,65,13,Denmark,Jesper Lindstrøm,,False,False
+3857257,72,33,Denmark,Andreas Evald Cornelius,,False,False
+3857257,74,36,Denmark,Robert Skov,Yellow Card,False,False
+3857257,77,52,Australia,Mitchell Thomas Duke,,True,False
+3857257,83,10,Australia,Jamie MacLaren,,False,True
+3857257,89,17,Denmark,Mikkel Damsgaard,,False,False
+3857282,1,39,Wales,Joe Rodon,,False,False
+3857282,6,25,United States,Weston McKennie,,False,False
+3857282,10,28,United States,Sergino Dest,Yellow Card,False,False
+3857282,12,3,United States,Weston McKennie,Yellow Card,False,False
+3857282,15,3,United States,Joshua Sargent,,True,False
+3857282,24,14,United States,Tyler Adams,,False,False
+3857282,30,29,United States,Tyler Adams,,False,False
+3857282,32,37,Wales,Chris Mepham,,False,False
+3857282,39,5,Wales,Gareth Frank Bale,Yellow Card,False,False
+3857282,40,22,United States,Antonee Robinson,,False,False
+3857282,41,1,United States,Weston McKennie,,False,False
+3857282,43,14,United States,Yunus Dimoara Musah,,True,False
+3857282,46,53,Wales,Chris Mepham,Yellow Card,False,False
+3857282,47,34,United States,Tyler Adams,,False,False
+3857282,49,19,Wales,Gareth Frank Bale,,False,False
+3857282,50,15,United States,Tim Ream,Yellow Card,False,False
+3857282,57,42,Wales,Ethan Ampadu,,False,False
+3857282,59,35,United States,Weston McKennie,,False,False
+3857282,62,48,United States,Yunus Dimoara Musah,,False,False
+3857282,79,50,United States,Walker Zimmerman,,False,False
+3857282,83,9,United States,Brenden Aaronson,,False,False
+3857282,84,36,Wales,Kieffer Roberto Francisco Moore,,False,False
+3857282,86,31,United States,Antonee Robinson,,False,False
+3857282,87,56,Wales,Kieffer Roberto Francisco Moore,,False,False
+3857282,88,45,Wales,Harry Wilson,,False,False
+3857282,94,55,Wales,Joseff Morrell,,False,False
+3857282,99,52,United States,Kellyn Kai Perry-Acosta,Yellow Card,False,False
+3857296,6,33,Belgium,Axel Witsel,,False,False
+3857296,8,15,Croatia,Joško Gvardiol,,False,False
+3857296,9,13,Croatia,Marko Livaja,,False,True
+3857296,13,48,Belgium,Axel Witsel,,False,False
+3857296,29,22,Croatia,Ivan Perišić,,True,False
+3857296,31,8,Belgium,Axel Witsel,,True,False
+3857296,34,30,Croatia,Marcelo Brozović,,True,False
+3857296,35,19,Croatia,Marko Livaja,,False,False
+3857296,38,17,Belgium,Axel Witsel,,False,False
+3857296,41,21,Croatia,Marko Livaja,,True,False
+3857296,43,24,Croatia,Luka Modrić,,False,False
+3857296,47,34,Belgium,Leander Dendoncker,,False,False
+3857296,54,28,Croatia,Marko Livaja,,False,False
+3857296,60,37,Belgium,Romelu Lukaku Menama,,False,False
+3857296,65,56,Belgium,Leander Dendoncker,Yellow Card,False,False
+3857296,67,45,Croatia,Joško Gvardiol,,True,False
+3857296,69,22,Croatia,Marcelo Brozović,,False,False
+3857296,74,25,Belgium,Youri Tielemans,,False,False
+3857296,83,49,Belgium,Timothy Castagne,,False,False
+3857296,87,49,Croatia,Mario Pašalić,,False,False
+3857296,92,2,Belgium,Youri Tielemans,,False,False
+3869254,5,36,Switzerland,Djibril Sow,,False,False
+3869254,7,54,Portugal,Kléper Laveran Lima Ferreira,,False,False
+3869254,11,5,Portugal,Bruno Miguel Borges Fernandes,,True,False
+3869254,19,18,Switzerland,Remo Freuler,,False,False
+3869254,22,46,Portugal,Kléper Laveran Lima Ferreira,,False,False
+3869254,28,19,Portugal,Rúben Santos Gato Alves Dias,,False,False
+3869254,34,43,Switzerland,Manuel Obafemi Akanji,,True,False
+3869254,38,31,Portugal,Rúben Santos Gato Alves Dias,,False,False
+3869254,38,57,Switzerland,Remo Freuler,,False,False
+3869254,40,6,Portugal,Otávio Edmilson da Silva Monteiro,,False,False
+3869254,42,3,Switzerland,Fabian Lukas Schär,Yellow Card,True,False
+3869254,46,37,Switzerland,Remo Freuler,,True,False
+3869254,49,17,Portugal,William Silva de Carvalho,,False,False
+3869254,54,19,Switzerland,Breel-Donald Embolo,,False,False
+3869254,54,48,Switzerland,Manuel Obafemi Akanji,,True,False
+3869254,58,28,Switzerland,Eray Ervin Cömert,Yellow Card,False,False
+3869254,62,26,Switzerland,Xherdan Shaqiri,,False,False
+3869254,64,10,Portugal,Otávio Edmilson da Silva Monteiro,,False,False
+3869254,64,45,Portugal,William Silva de Carvalho,,True,False
+3869254,67,59,Switzerland,Denis Lemi Zakaria Lako Lado,,False,False
+3869254,68,24,Switzerland,Eray Ervin Cömert,,True,False
+3869254,69,20,Portugal,Otávio Edmilson da Silva Monteiro,,False,False
+3869254,72,8,Switzerland,Eray Ervin Cömert,,False,False
+3869254,74,25,Portugal,Raphaël Adelino José Guerreiro,,False,False
+3869254,74,39,Portugal,William Silva de Carvalho,,False,False
+3869254,74,51,Switzerland,Eray Ervin Cömert,,False,False
+3869254,81,21,Portugal,Raphaël Adelino José Guerreiro,,False,False
+3869254,85,0,Switzerland,Noah Okafor,,False,False
+3869254,93,50,Portugal,Ricardo Jorge Luz Horta,,False,False
+3857279,15,23,France,Theo Bernard François Hernández,,False,False
+3857279,16,41,France,Adrien Rabiot,,False,False
+3857279,22,30,Australia,Riley McGree,,False,False
+3857279,45,49,Australia,Mitchell Thomas Duke,,False,False
+3857279,48,30,Australia,Craig Goodwin,,False,False
+3857279,50,36,Australia,Riley McGree,,False,False
+3857279,52,15,Australia,Jackson Irvine,,False,False
+3857279,54,4,Australia,Mitchell Thomas Duke,Yellow Card,False,False
+3857279,60,5,Australia,Jackson Irvine,,True,False
+3857279,63,39,Australia,Riley McGree,,False,False
+3857279,69,56,Australia,Jackson Irvine,,False,False
+3857279,77,39,France,Olivier Giroud,,False,False
+3857279,79,7,Australia,Jackson Irvine,Yellow Card,False,False
+3857279,82,30,Australia,Garang Kuol,,False,False
+3857279,86,24,Australia,Aziz Eraltay Behich,,True,False
+3857279,87,25,Australia,Aaron Mooy,,True,False
+3857279,93,51,Australia,Aaron Mooy,Yellow Card,False,False
+3857279,96,6,France,Kylian Mbappé Lottin,,False,True
+3857272,1,32,England,Luke Shaw,,False,False
+3857272,4,35,United States,Yunus Dimoara Musah,,False,False
+3857272,17,11,United States,Yunus Dimoara Musah,,False,False
+3857272,23,59,England,Mason Mount,,False,False
+3857272,24,33,England,Kieran Trippier,,True,False
+3857272,26,53,England,Kieran Trippier,,False,False
+3857272,29,51,England,John Stones,,False,False
+3857272,30,54,United States,Weston McKennie,,False,False
+3857272,32,48,United States,Walker Zimmerman,,False,False
+3857272,36,23,England,Mason Mount,,True,False
+3857272,36,39,United States,Christian Pulisic,,False,True
+3857272,38,47,United States,Sergino Dest,,False,False
+3857272,49,49,United States,Tyler Adams,,False,False
+3857272,55,44,England,Bukayo Saka,,False,False
+3857272,58,33,United States,Yunus Dimoara Musah,,False,False
+3857272,62,4,England,Mason Mount,,False,False
+3857272,64,20,United States,Sergino Dest,,False,False
+3857272,70,5,England,Harry Maguire,,False,False
+3857272,72,32,United States,Sergino Dest,,False,False
+3857272,79,15,United States,Shaquell Moore,,False,False
+3857272,81,54,United States,Shaquell Moore,,False,False
+3857272,83,39,United States,Shaquell Moore,,False,False
+3857272,84,34,England,Luke Shaw,,False,False
+3857272,86,29,United States,Tyler Adams,,True,False
+3857272,89,37,United States,Christian Pulisic,,False,False
+3857272,91,39,United States,Yunus Dimoara Musah,,False,False
+3857272,93,45,England,Harry Maguire,,False,False
+3857277,1,53,Morocco,Sofiane Boufal,,False,False
+3857277,7,30,Croatia,Marcelo Brozović,,False,False
+3857277,8,34,Morocco,Hakim Ziyech,,False,False
+3857277,18,25,Croatia,Luka Modrić,,False,False
+3857277,24,28,Morocco,Noussair Mazraoui,,False,False
+3857277,26,2,Morocco,Hakim Ziyech,,False,False
+3857277,28,24,Croatia,Marcelo Brozović,,False,False
+3857277,29,1,Croatia,Luka Modrić,,False,False
+3857277,35,24,Croatia,Marcelo Brozović,,False,False
+3857277,36,26,Croatia,Nikola Vlašić,,False,False
+3857277,37,30,Morocco,Sofyan Amrabat,,False,False
+3857277,39,40,Croatia,Luka Modrić,,False,False
+3857277,44,24,Morocco,Sofiane Boufal,,False,False
+3857277,45,30,Morocco,Achraf Hakimi Mouh,,True,False
+3857277,49,14,Morocco,Sofyan Amrabat,,False,False
+3857277,62,38,Croatia,Luka Modrić,,True,False
+3857277,62,45,Croatia,Luka Modrić,,False,False
+3857277,68,5,Morocco,Selim Amallah,,True,False
+3857277,69,37,Morocco,Abdessamad Ezzalzouli,,False,False
+3857277,74,47,Morocco,Abdessamad Ezzalzouli,,False,False
+3857277,76,2,Croatia,Ivan Perišić,,False,False
+3857277,77,27,Morocco,Sofyan Amrabat,Yellow Card,False,False
+3857277,79,12,Morocco,Selim Amallah,,False,False
+3857277,80,3,Croatia,Joško Gvardiol,,False,False
+3857277,87,8,Morocco,Yahia Attiyat allah,,False,False
+3857277,89,37,Croatia,Borna Sosa,,False,False
+3857277,92,40,Morocco,Hakim Ziyech,,False,False
+3857277,93,45,Morocco,Selim Amallah,,True,False
+3857277,94,46,Morocco,Abdessamad Ezzalzouli,,False,False
+3857277,95,10,Morocco,Selim Amallah,,False,False
+3869118,4,59,Senegal,Pathé Ismaël Ciss,,False,False
+3869118,6,12,Senegal,Krépin Diatta,,False,False
+3869118,7,13,England,Declan Rice,,False,False
+3869118,9,46,Senegal,Krépin Diatta,,False,False
+3869118,13,7,Senegal,Abdou Diallo,,True,False
+3869118,15,30,Senegal,Krépin Diatta,,False,False
+3869118,29,12,England,John Stones,,False,False
+3869118,31,7,Senegal,Abdou Diallo,,False,False
+3869118,32,48,England,Luke Shaw,,False,False
+3869118,35,48,England,Kyle Walker,,False,False
+3869118,45,47,England,Bukayo Saka,,False,False
+3869118,47,52,England,Jude Bellingham,,False,False
+3869118,59,42,England,Jude Bellingham,,False,False
+3869118,61,56,England,Luke Shaw,,False,False
+3869118,63,19,Senegal,Pape Gueye,,False,False
+3869118,65,2,England,Harry Maguire,,False,False
+3869118,66,17,Senegal,Nampalys Mendy,,False,False
+3869118,66,56,Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,,False,False
+3869118,67,51,England,Harry Kane,,False,False
+3869118,70,51,Senegal,Pape Gueye,,False,False
+3869118,72,24,England,Luke Shaw,,False,False
+3869118,75,8,Senegal,Kalidou Koulibaly,Yellow Card,False,False
+3869118,76,28,Senegal,Pape Gueye,,False,False
+3869118,77,52,England,Eric Dier,,False,False
+3869118,80,30,Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,,False,False
+3869118,81,50,England,Kyle Walker,,False,False
+3869118,85,40,England,Mason Mount,,False,False
+3869118,88,21,England,Mason Mount,,False,False
+3869118,91,20,England,Declan Rice,,False,False
+3857264,2,1,Argentina,Nicolás Hernán Otamendi,,False,False
+3857264,4,7,Poland,Krystian Bielik,,False,False
+3857264,8,48,Poland,Krystian Bielik,,True,False
+3857264,8,57,Argentina,Cristian Gabriel Romero,,False,False
+3857264,12,52,Argentina,Nahuel Molina Lucero,,False,False
+3857264,19,11,Argentina,Nicolás Hernán Otamendi,,False,False
+3857264,23,59,Argentina,Rodrigo Javier De Paul,,False,False
+3857264,35,15,Poland,Wojciech Szczęsny,,False,False
+3857264,44,1,Poland,Grzegorz Krychowiak,,True,False
+3857264,46,59,Argentina,Marcos Javier Acuña,,False,False
+3857264,47,40,Argentina,Cristian Gabriel Romero,,False,False
+3857264,48,12,Argentina,Marcos Javier Acuña,Yellow Card,False,False
+3857264,49,29,Poland,Bartosz Bereszyński,,False,False
+3857264,51,29,Argentina,Rodrigo Javier De Paul,,False,False
+3857264,65,47,Poland,Michał Skóraś,,False,False
+3857264,66,29,Poland,Damian Szymański,,True,False
+3857264,70,47,Argentina,Cristian Gabriel Romero,,False,False
+3857264,77,37,Poland,Grzegorz Krychowiak,Yellow Card,False,False
+3857264,84,16,Argentina,Leandro Daniel Paredes,,False,False
+3857264,88,4,Argentina,Rodrigo Javier De Paul,,False,False
+3857264,94,29,Poland,Robert Lewandowski,,False,False
+3857288,4,37,Tunisia,Mohamed Dräger,,False,False
+3857288,9,32,Tunisia,Issam Jebali,,False,False
+3857288,13,14,Australia,Aziz Eraltay Behich,,False,False
+3857288,19,34,Australia,Aaron Mooy,,False,False
+3857288,24,25,Tunisia,Issam Jebali,,False,True
+3857288,25,16,Tunisia,Aïssa Bilal Laïdouni,Yellow Card,False,False
+3857288,27,11,Australia,Fran Karačić,,False,False
+3857288,29,2,Tunisia,Mohamed Dräger,,False,False
+3857288,30,4,Australia,Jackson Irvine,,False,False
+3857288,30,44,Tunisia,Montassar Omar Talbi,,False,False
+3857288,32,31,Tunisia,Dylan Daniel Mahmoud Bronn,,False,False
+3857288,34,37,Australia,Riley McGree,,True,False
+3857288,34,47,Australia,Mathew Leckie,,False,False
+3857288,39,20,Australia,Mathew Leckie,,False,False
+3857288,40,51,Tunisia,Montassar Omar Talbi,,False,False
+3857288,42,22,Tunisia,Ali Abdi,,False,False
+3857288,46,12,Tunisia,Montassar Omar Talbi,,False,False
+3857288,48,35,Tunisia,Ali Abdi,,False,False
+3857288,49,30,Australia,Aaron Mooy,,False,False
+3857288,49,58,Australia,Fran Karačić,,False,False
+3857288,50,12,Australia,Kye Rowles,,False,False
+3857288,51,57,Australia,Jackson Irvine,,False,False
+3857288,53,29,Australia,Mathew Leckie,,False,False
+3857288,58,12,Australia,Riley McGree,,False,False
+3857288,62,44,Australia,Riley McGree,,False,False
+3857288,63,50,Tunisia,Ali Abdi,Yellow Card,False,False
+3857288,67,6,Australia,Ajdin Hrustic,,False,False
+3857288,75,12,Australia,Jackson Irvine,,False,False
+3857288,82,24,Tunisia,Ali Abdi,,False,False
+3857288,90,1,Tunisia,Taha Yassine Khenissi,,False,False
+3857288,91,57,Tunisia,Ferjani Sassi,Yellow Card,False,False
+3857292,7,1,Germany,Jamal Musiala,,False,False
+3857292,12,48,Germany,İlkay Gündoğan,,False,False
+3857292,14,33,Costa Rica,Joel Nathaniel Campbell Samuels,,False,False
+3857292,17,28,Germany,David Raum,,False,False
+3857292,19,11,Germany,İlkay Gündoğan,,False,False
+3857292,23,23,Germany,David Raum,,False,False
+3857292,39,27,Germany,Joshua Kimmich,,False,False
+3857292,62,22,Costa Rica,Johan Alberto Venegas Ulloa,,False,False
+3857292,68,27,Germany,Lukas Klostermann,,False,False
+3857292,75,12,Costa Rica,Óscar Esau Duarte Gaitán,Yellow Card,True,False
+3857292,81,11,Germany,Kai Havertz,,False,False
+3857292,81,50,Costa Rica,Ronald Alberto Matarrita Ulate,,False,False
+3857292,99,39,Germany,Kai Havertz,,False,False
+3869685,0,19,France,Adrien Rabiot,,False,False
+3869685,0,49,France,Aurélien Djani Tchouaméni,,False,False
+3869685,1,36,Argentina,Rodrigo Javier De Paul,,False,False
+3869685,3,13,France,Dayotchanculle Upamecano,,False,False
+3869685,5,44,Argentina,Lionel Andrés Messi Cuccittini,,False,False
+3869685,6,42,Argentina,Julián Álvarez,,False,False
+3869685,8,41,Argentina,Cristian Gabriel Romero,,False,False
+3869685,12,5,Argentina,Julián Álvarez,,False,False
+3869685,18,11,Argentina,Rodrigo Javier De Paul,,False,False
+3869685,19,3,France,Olivier Giroud,,False,False
+3869685,20,53,France,Ousmane Dembélé,,False,False
+3869685,25,32,Argentina,Cristian Gabriel Romero,,False,False
+3869685,26,52,France,Theo Bernard François Hernández,,False,False
+3869685,37,9,Argentina,Julián Álvarez,,False,False
+3869685,37,51,France,Jules Koundé,,False,False
+3869685,40,11,France,Jules Koundé,,False,False
+3869685,41,12,France,Randal Kolo Muani,,False,False
+3869685,41,39,France,Randal Kolo Muani,,False,False
+3869685,44,8,Argentina,Julián Álvarez,,False,False
+3869685,46,34,France,Theo Bernard François Hernández,,False,False
+3869685,51,21,Argentina,Enzo Fernandez,Yellow Card,False,False
+3869685,54,12,France,Adrien Rabiot,Yellow Card,False,False
+3869685,56,3,Argentina,Nicolás Alejandro Tagliafico,,False,False
+3869685,57,27,France,Kylian Mbappé Lottin,,False,False
+3869685,60,27,Argentina,Julián Álvarez,,False,False
+3869685,62,35,Argentina,Nicolás Alejandro Tagliafico,,False,False
+3869685,68,40,Argentina,Enzo Fernandez,,False,False
+3869685,73,9,France,Aurélien Djani Tchouaméni,,False,False
+3869685,74,48,Argentina,Julián Álvarez,,True,False
+3869685,76,10,France,Eduardo Camavinga,,False,False
+3869685,78,13,Argentina,Nicolás Hernán Otamendi,,False,False
+3869685,84,45,Argentina,Julián Álvarez,,False,False
+3869685,85,46,Argentina,Nicolás Hernán Otamendi,,False,False
+3869685,86,24,France,Marcus Thuram,Yellow Card,False,True
+3869685,87,19,Argentina,Julián Álvarez,,False,False
+3869685,91,34,Argentina,Cristian Gabriel Romero,,False,False
+3869685,93,42,Argentina,Enzo Fernandez,,True,False
+3869685,95,48,Argentina,Nicolás Alejandro Tagliafico,,False,False
+3869685,97,33,Argentina,Marcos Javier Acuña,Yellow Card,False,False
+3869685,90,36,France,Adrien Rabiot,,False,False
+3869685,91,16,France,Marcus Thuram,,False,False
+3869685,92,52,Argentina,Lionel Andrés Messi Cuccittini,,False,False
+3869685,94,34,Argentina,Marcos Javier Acuña,,False,False
+3869685,95,27,Argentina,Enzo Fernandez,,False,False
+3869685,99,11,Argentina,Gonzalo Ariel Montiel,,False,False
+3869685,101,19,France,Randal Kolo Muani,,False,False
+3869685,113,27,Argentina,Leandro Daniel Paredes,Yellow Card,False,False
+3869685,115,39,Argentina,Gonzalo Ariel Montiel,Yellow Card,False,False
+3869486,3,24,Morocco,Yahia Attiyat allah,,False,False
+3869486,7,39,Morocco,Selim Amallah,,True,False
+3869486,11,43,Morocco,Sofyan Amrabat,,False,False
+3869486,19,18,Portugal,Gonçalo Matias Ramos,,False,False
+3869486,22,52,Portugal,Bruno Miguel Borges Fernandes,,False,False
+3869486,24,48,Portugal,Rúben Diogo Da Silva Neves,,False,False
+3869486,35,54,Portugal,Rúben Diogo Da Silva Neves,,False,False
+3869486,36,35,Portugal,João Félix Sequeira,,False,False
+3869486,38,3,Morocco,Sofiane Boufal,,False,True
+3869486,39,35,Morocco,Sofyan Amrabat,,False,False
+3869486,43,29,Portugal,Rúben Santos Gato Alves Dias,,False,False
+3869486,47,2,Morocco,Selim Amallah,,False,False
+3869486,47,51,Portugal,Kléper Laveran Lima Ferreira,,False,False
+3869486,59,0,Morocco,Yahia Attiyat allah,,False,False
+3869486,62,26,Morocco,Selim Amallah,,True,False
+3869486,64,55,Morocco,Badr Banoun,,False,False
+3869486,65,32,Morocco,Achraf Hakimi Mouh,,True,False
+3869486,66,52,Morocco,Achraf Hakimi Mouh,,False,False
+3869486,69,17,Morocco,Walid Cheddira,,False,False
+3869486,69,40,Morocco,Achraf Dari,Yellow Card,False,False
+3869486,75,40,Morocco,Walid Cheddira,,False,True
+3869486,83,6,Morocco,Walid Cheddira,,False,False
+3869486,83,43,Portugal,Ricardo Jorge Luz Horta,,False,False
+3869486,84,27,Morocco,Achraf Hakimi Mouh,,False,False
+3869486,86,30,Portugal,Vitor Machado Ferreira,Yellow Card,False,False
+3869486,90,51,Morocco,Walid Cheddira,Yellow Card,False,False
+3869486,92,9,Morocco,Walid Cheddira,Second Yellow,False,False
+3869552,13,54,France,Youssouf Fofana,,False,False
+3869552,19,48,France,Kylian Mbappé Lottin,,False,True
+3869552,22,47,Morocco,Sofiane Boufal,,False,False
+3869552,24,9,France,Ibrahima Konaté,,False,False
+3869552,25,17,France,Ousmane Dembélé,,True,False
+3869552,25,36,France,Ousmane Dembélé,,False,False
+3869552,26,14,Morocco,Sofiane Boufal,Yellow Card,False,False
+3869552,28,49,Morocco,Selim Amallah,,False,False
+3869552,31,53,France,Kylian Mbappé Lottin,,False,False
+3869552,32,15,Morocco,Achraf Dari,,True,False
+3869552,36,22,Morocco,Sofyan Amrabat,,False,False
+3869552,46,10,France,Jules Koundé,,False,False
+3869552,46,53,France,Youssouf Fofana,,False,False
+3869552,47,39,France,Kylian Mbappé Lottin,,False,False
+3869552,45,5,France,Kylian Mbappé Lottin,,True,False
+3869552,45,14,France,Jules Koundé,,False,False
+3869552,46,39,Morocco,Selim Amallah,,True,False
+3869552,60,33,Morocco,Yahia Attiyat allah,,False,False
+3869552,67,36,Morocco,Achraf Hakimi Mouh,,False,False
+3869552,68,59,Morocco,Yahia Attiyat allah,,True,False
+3869552,69,44,Morocco,Achraf Dari,,False,False
+3869552,71,50,Morocco,Sofyan Amrabat,,False,False
+3869552,74,0,Morocco,Selim Amallah,,False,False
+3869552,81,11,Morocco,Yahia Attiyat allah,,False,False
+3869552,83,23,France,Ibrahima Konaté,,False,False
+3869552,86,31,France,Marcus Thuram,,False,False
+3869552,91,39,France,Kylian Mbappé Lottin,,True,False
+3869552,95,34,Morocco,Sofyan Amrabat,,False,False
+3857295,1,46,Japan,Yuto Nagatomo,,False,False
+3857295,2,56,Japan,Hidemasa Morita,,False,False
+3857295,3,44,Japan,Yuki Soma,,False,False
+3857295,4,21,Japan,Miki Yamane,,False,False
+3857295,5,3,Japan,Ritsu Doan,,False,False
+3857295,7,2,Costa Rica,Keysher Fuller Spence,,False,False
+3857295,13,22,Japan,Yuto Nagatomo,,False,False
+3857295,18,21,Costa Rica,Gerson Torres Barrantes,,True,False
+3857295,20,52,Japan,Miki Yamane,,True,False
+3857295,21,47,Japan,Wataru Endo,,False,False
+3857295,30,44,Japan,Yuto Nagatomo,,False,False
+3857295,31,10,Costa Rica,Francisco Javier Calvo Quesada,,False,False
+3857295,35,0,Costa Rica,Keysher Fuller Spence,,False,False
+3857295,36,33,Costa Rica,Kendall Jamaal Waston Manley,,True,False
+3857295,36,43,Japan,Ayase Ueda,,False,False
+3857295,37,33,Costa Rica,Yeltsin Ignacio Tejeda Valverde,,True,False
+3857295,38,24,Japan,Yuto Nagatomo,,False,False
+3857295,40,50,Costa Rica,Anthony Daniel Contreras Enríquez,Yellow Card,False,False
+3857295,43,11,Japan,Miki Yamane,Yellow Card,False,False
+3857295,44,18,Japan,Daichi Kamada,,False,False
+3857295,44,49,Costa Rica,Gerson Torres Barrantes,,False,False
+3857295,45,28,Japan,Ritsu Doan,,False,False
+3857295,47,23,Japan,Hiroki Ito,,False,False
+3857295,54,32,Japan,Hiroki Ito,,False,False
+3857295,60,53,Costa Rica,Celso Borges Mora,Yellow Card,False,False
+3857295,63,19,Costa Rica,Francisco Javier Calvo Quesada,,False,False
+3857295,67,16,Japan,Yuki Soma,,False,False
+3857295,69,37,Costa Rica,Francisco Javier Calvo Quesada,Yellow Card,False,False
+3857295,72,47,Japan,Wataru Endo,,False,False
+3857295,73,36,Japan,Takuma Asano,,False,False
+3857295,75,51,Japan,Hiroki Ito,,False,False
+3857295,76,5,Japan,Junya Ito,,True,False
+3857295,83,6,Japan,Ko Itakura,Yellow Card,False,False
+3857295,91,26,Costa Rica,Bryan Oviedo,,True,False
+3857295,92,31,Japan,Wataru Endo,Yellow Card,False,False
+3857295,93,48,Japan,Kaoru Mitoma,,False,False
+3857295,95,6,Costa Rica,Bryan Oviedo,,False,False
+3857281,3,54,Canada,Steven de Sousa Vitoria,,False,False
+3857281,7,6,Croatia,Luka Modrić,,True,False
+3857281,13,9,Croatia,Borna Sosa,,False,False
+3857281,14,40,Canada,Alphonso Davies,,False,False
+3857281,16,45,Croatia,Ivan Perišić,,False,False
+3857281,24,26,Canada,Richie Laryea,,False,False
+3857281,28,2,Croatia,Marko Livaja,,False,False
+3857281,30,1,Croatia,Dejan Lovren,,False,False
+3857281,37,17,Croatia,Ivan Perišić,,False,False
+3857281,46,39,Croatia,Ivan Perišić,,False,False
+3857281,51,12,Canada,Tajon Buchanan,Yellow Card,False,False
+3857281,54,39,Croatia,Luka Modrić,,False,False
+3857281,55,5,Croatia,Dejan Lovren,Yellow Card,True,False
+3857281,61,40,Croatia,Joško Gvardiol,,False,False
+3857281,71,8,Croatia,Ivan Perišić,,False,False
+3857281,80,42,Canada,Lucas Daniel Cavallini,,False,False
+3857281,83,51,Croatia,Luka Modrić,,False,False
+3857281,85,13,Croatia,Marcelo Brozović,,False,False
+3857281,90,25,Canada,Steven de Sousa Vitoria,,False,False
+3857281,91,16,Croatia,Lovro Majer,,False,False
+3857281,95,21,Croatia,Marcelo Brozović,,False,False
+3857287,1,59,Uruguay,Darwin Gabriel Núñez Ribeiro,,False,False
+3857287,3,40,Uruguay,Matías Vecino Falero,,False,False
+3857287,5,22,South Korea,Sang-Ho Na,,False,False
+3857287,10,6,South Korea,Sang-Ho Na,,False,False
+3857287,20,49,South Korea,Woo-Young Jung,,False,False
+3857287,24,0,South Korea,Woo-Young Jung,,False,False
+3857287,27,44,Uruguay,Facundo Pellistri Rebollo,,False,False
+3857287,44,31,South Korea,In-Beom Hwang,,False,False
+3857287,46,8,Uruguay,Facundo Pellistri Rebollo,,False,False
+3857287,52,21,South Korea,Woo-Young Jung,,False,False
+3857287,53,38,South Korea,Woo-Young Jung,,False,False
+3857287,55,38,Uruguay,José Martín Cáceres Silva,Yellow Card,False,False
+3857287,79,39,South Korea,Gue-Sung Cho,,False,False
+3857287,82,43,South Korea,In-Beom Hwang,,False,False
+3857287,87,45,South Korea,Gue-Sung Cho,Yellow Card,False,False
+3857287,88,55,South Korea,Kang-In Lee,,True,False
+3857287,94,2,Uruguay,Matías Nicolás Viña Susperreguy,,False,False
+3857287,96,48,Uruguay,Guillermo Varela Olivera,,False,True
+3857299,1,10,South Korea,Moon-Hwan Kim,,False,False
+3857299,2,50,South Korea,Woo-Young Jung,,False,False
+3857299,4,1,South Korea,In-Beom Hwang,,False,False
+3857299,5,37,Ghana,Tariq Lamptey,,False,False
+3857299,13,9,South Korea,Woo-Yeong Jeong,,False,False
+3857299,19,16,South Korea,Jin-Su Kim,,False,False
+3857299,19,59,Ghana,Daniel Amartey,Yellow Card,False,True
+3857299,22,46,South Korea,In-Beom Hwang,,False,False
+3857299,26,27,South Korea,Woo-Young Jung,,True,False
+3857299,26,30,South Korea,Woo-Young Jung,Yellow Card,False,False
+3857299,28,20,Ghana,Mohamed Salisu,,False,False
+3857299,31,5,Ghana,Iñaki Williams Arthuer,,False,False
+3857299,45,16,South Korea,Gue-Sung Cho,,False,False
+3857299,62,2,South Korea,In-Beom Hwang,,False,False
+3857299,67,12,South Korea,Kang-In Lee,,False,False
+3857299,70,17,South Korea,Woo-Young Jung,,False,False
+3857299,72,28,Ghana,Tariq Lamptey,Yellow Card,False,False
+3857299,76,30,South Korea,Young-Gwon Kim,Yellow Card,False,False
+3857299,85,3,Ghana,Salis Abdul Samed,,False,False
+3857299,92,3,South Korea,Gue-Sung Cho,,True,False
+3857299,92,19,Ghana,Iñaki Williams Arthuer,,False,False
+3857299,94,24,Ghana,Kamaldeen Sulemana,,False,False
+3857299,95,42,South Korea,Gue-Sung Cho,,False,False
+3857299,97,5,Ghana,Iñaki Williams Arthuer,,False,False
+3857299,98,13,Ghana,Abdul Rahman Baba,,True,False
+3857294,7,19,Netherlands,Davy Klaassen,,False,False
+3857294,8,40,Netherlands,Daley Blind,,False,False
+3857294,10,17,Netherlands,Denzel Dumfries,,False,False
+3857294,12,11,Netherlands,Memphis Depay,,False,False
+3857294,12,38,Qatar,Abdelkarim Hassan Al Haj Fadlalla,,False,False
+3857294,17,1,Netherlands,Memphis Depay,,False,True
+3857294,18,46,Qatar,Homam Alamin Ahmed,,False,False
+3857294,20,21,Netherlands,Denzel Dumfries,,False,False
+3857294,31,47,Netherlands,Denzel Dumfries,,False,False
+3857294,33,9,Netherlands,Marten de Roon,,False,False
+3857294,36,14,Qatar,Homam Alamin Ahmed,,False,False
+3857294,38,12,Qatar,Assim Omer Al Haj Madibo,,False,False
+3857294,43,13,Qatar,Abdulaziz Hatem Mohammed Abdullah,,False,False
+3857294,45,16,Netherlands,Denzel Dumfries,,False,False
+3857294,51,15,Netherlands,Nathan Aké,Yellow Card,False,False
+3857294,54,47,Netherlands,Jurriën David Norman Timber,,False,False
+3857294,56,41,Qatar,Hassan Khalid Al Heidos,,False,False
+3857294,60,55,Netherlands,Daley Blind,,False,False
+3857294,61,42,Qatar,Hassan Khalid Al Heidos,,False,False
+3857294,66,6,Netherlands,Vincent Janssen,,False,False
+3857294,67,15,Netherlands,Cody Mathès Gakpo,,False,True
+3857294,72,15,Netherlands,Jurriën David Norman Timber,,False,False
+3857294,81,26,Qatar,Mohammed Muntari,,False,False
+3857294,86,48,Netherlands,Wout Weghorst,,False,False
+3857294,88,44,Netherlands,Teun Koopmeiners,,False,False
+3857294,89,21,Netherlands,Teun Koopmeiners,,False,False
+3857294,93,9,Netherlands,Wout Weghorst,,False,False
+3869220,0,15,Morocco,Hakim Ziyech,,False,False
+3869220,8,5,Spain,Pablo Martín Páez Gavira,,False,False
+3869220,9,48,Spain,Marcos Llorente Moreno,,False,False
+3869220,12,23,Spain,Rodrigo Hernández Cascante,,False,False
+3869220,12,43,Spain,Pablo Martín Páez Gavira,,False,False
+3869220,18,32,Spain,Jordi Alba Ramos,,False,False
+3869220,19,6,Morocco,Selim Amallah,,False,False
+3869220,20,11,Spain,Daniel Olmo Carvajal,,False,False
+3869220,26,41,Morocco,Romain Saïss,,False,False
+3869220,28,34,Spain,Pedro González López,,False,False
+3869220,31,2,Spain,Rodrigo Hernández Cascante,,False,False
+3869220,35,7,Spain,Pablo Martín Páez Gavira,,False,False
+3869220,37,46,Morocco,Sofiane Boufal,,True,False
+3869220,40,49,Spain,Pablo Martín Páez Gavira,,False,False
+3869220,46,26,Morocco,Noussair Mazraoui,,False,False
+3869220,48,49,Morocco,Hakim Ziyech,,False,False
+3869220,50,57,Morocco,Achraf Hakimi Mouh,,False,False
+3869220,51,43,Spain,Daniel Olmo Carvajal,,False,False
+3869220,53,2,Morocco,Achraf Hakimi Mouh,,False,False
+3869220,57,45,Morocco,Hakim Ziyech,,False,False
+3869220,58,22,Morocco,Achraf Hakimi Mouh,,True,False
+3869220,60,28,Morocco,Nayef Aguerd,,False,False
+3869220,75,53,Spain,Aymeric Laporte,Yellow Card,False,False
+3869220,82,52,Spain,Jordi Alba Ramos,,False,False
+3869220,89,5,Morocco,Romain Saïss,Yellow Card,True,False
+3869220,89,12,Morocco,Azzedine Ounahi,,False,False
+3869220,91,26,Spain,Álvaro Borja Morata Martín,,False,False
+3869220,94,2,Morocco,Azzedine Ounahi,,False,False
+3869220,91,6,Morocco,Yahia Attiyat allah,,False,False
+3869220,93,25,Morocco,Hakim Ziyech,,False,True
+3869220,95,16,Morocco,Romain Saïss,,False,False
+3869220,101,7,Morocco,Abdessamad Ezzalzouli,,False,False
+3869220,111,52,Morocco,Walid Cheddira,,True,False
+3857297,1,2,Poland,Piotr Zieliński,,False,False
+3857297,3,34,Saudi Arabia,Abdulelah Saad Hameed Al-Malki,,False,False
+3857297,10,32,Saudi Arabia,Mohammed Kanoo,,False,False
+3857297,11,20,Poland,Matty Cash,,False,False
+3857297,14,31,Poland,Jakub Piotr Kiwior,Yellow Card,False,False
+3857297,15,31,Poland,Matty Cash,Yellow Card,False,False
+3857297,17,35,Saudi Arabia,Saleh Khalid Al Shehri,,False,False
+3857297,18,47,Poland,Arkadiusz Milik,Yellow Card,False,False
+3857297,28,4,Saudi Arabia,Abdulelah Saad Hameed Al-Malki,,False,False
+3857297,29,54,Saudi Arabia,Mohammed Kanoo,,False,True
+3857297,33,0,Saudi Arabia,Saleh Khalid Al Shehri,,False,False
+3857297,34,29,Poland,Robert Lewandowski,,False,True
+3857297,42,29,Poland,Krystian Bielik,,False,False
+3857297,48,23,Saudi Arabia,Abdulelah Al Amri,Yellow Card,False,False
+3857297,51,5,Poland,Piotr Zieliński,,False,False
+3857297,46,52,Poland,Grzegorz Krychowiak,,False,False
+3857297,48,7,Saudi Arabia,Abdulelah Saad Hameed Al-Malki,,False,False
+3857297,51,18,Poland,Matty Cash,,False,True
+3857297,52,28,Saudi Arabia,Saleh Khalid Al Shehri,,False,False
+3857297,53,14,Poland,Krystian Bielik,,False,False
+3857297,56,36,Saudi Arabia,Nawaf Shaker Al Abid,,False,False
+3857297,60,52,Poland,Robert Lewandowski,,False,False
+3857297,63,43,Saudi Arabia,Saud Abdullah Abdul Hamid,,False,False
+3857297,64,34,Saudi Arabia,Mohammed Kanoo,,False,False
+3857297,65,8,Poland,Matty Cash,,False,False
+3857297,66,27,Poland,Grzegorz Krychowiak,,True,False
+3857297,66,35,Poland,Krystian Bielik,,False,False
+3857297,69,25,Poland,Jakub Kamiński,,False,False
+3857297,70,55,Saudi Arabia,Abdulelah Al Amri,,False,False
+3857297,75,30,Poland,Krystian Bielik,,False,False
+3857297,76,47,Saudi Arabia,Sultan Abdullah Salim Al Ghannam,,False,False
+3857297,80,24,Saudi Arabia,Firas Tariq Nasser Al Albirakan,,False,False
+3857297,84,25,Poland,Jakub Kamiński,,False,False
+3857297,88,28,Saudi Arabia,Nasser Al Dawsari,,False,False
+3857263,1,48,Spain,Marco Asensio Willemsen,,False,False
+3857263,2,42,Germany,Thilo Kehrer,,False,False
+3857263,3,13,Germany,Leon Goretzka,,False,False
+3857263,9,51,Spain,Pablo Martín Páez Gavira,,True,False
+3857263,13,47,Germany,Leon Goretzka,,False,False
+3857263,21,54,Germany,Joshua Kimmich,,True,False
+3857263,22,4,Spain,Ferrán Torres García,,False,False
+3857263,23,17,Germany,Serge Gnabry,,False,False
+3857263,26,23,Spain,Rodrigo Hernández Cascante,,False,False
+3857263,27,18,Germany,David Raum,,False,False
+3857263,29,2,Spain,Marco Asensio Willemsen,,False,False
+3857263,33,56,Germany,David Raum,,False,False
+3857263,36,5,Germany,Thilo Kehrer,Yellow Card,False,False
+3857263,37,32,Spain,Pablo Martín Páez Gavira,,False,False
+3857263,38,10,Spain,Jordi Alba Ramos,,False,False
+3857263,43,28,Spain,Sergio Busquets i Burgos,Yellow Card,False,False
+3857263,45,51,Germany,Thilo Kehrer,,False,False
+3857263,46,22,Germany,Thilo Kehrer,,True,False
+3857263,47,24,Spain,Pablo Martín Páez Gavira,,False,False
+3857263,49,17,Spain,Sergio Busquets i Burgos,,False,False
+3857263,56,58,Germany,Leon Goretzka,Yellow Card,False,False
+3857263,59,8,Germany,Joshua Kimmich,Yellow Card,False,False
+3857263,59,51,Spain,Pablo Martín Páez Gavira,,False,False
+3857263,63,27,Germany,Serge Gnabry,,False,False
+3857263,64,48,Spain,Daniel Olmo Carvajal,,False,False
+3857263,68,31,Germany,Leon Goretzka,,True,False
+3857263,79,6,Spain,Rodrigo Hernández Cascante,,False,False
+3857263,91,54,Spain,Daniel Olmo Carvajal,,False,False
+3857263,94,41,Germany,Nico Schlotterbeck,,True,False
+3857283,1,7,Morocco,Nayef Aguerd,,False,False
+3857283,10,2,Morocco,Romain Saïss,,False,False
+3857283,14,51,Morocco,Sofyan Amrabat,,False,False
+3857283,18,41,Belgium,Amadou Onana,,False,False
+3857283,21,48,Belgium,Thomas Meunier,,False,False
+3857283,22,56,Belgium,Michy Batshuayi Tunga,,False,False
+3857283,27,52,Belgium,Amadou Onana,Yellow Card,False,False
+3857283,29,43,Morocco,Selim Amallah,,False,False
+3857283,30,57,Morocco,Selim Amallah,,False,False
+3857283,37,14,Morocco,Sofyan Amrabat,,False,False
+3857283,37,52,Morocco,Romain Saïss,,False,False
+3857283,42,45,Morocco,Selim Amallah,,False,True
+3857283,44,18,Morocco,Noussair Mazraoui,,False,False
+3857283,44,59,Belgium,Thorgan Hazard,,False,False
+3857283,47,30,Belgium,Thorgan Hazard,,False,False
+3857283,48,48,Belgium,Timothy Castagne,,False,False
+3857283,59,19,Morocco,Hakim Ziyech,,False,False
+3857283,67,45,Belgium,Michy Batshuayi Tunga,,False,True
+3857283,71,8,Belgium,Thomas Meunier,,False,False
+3857283,79,25,Morocco,Abderrazak Hamdallah,,False,False
+3857283,79,59,Morocco,Hakim Ziyech,,False,False
+3857283,85,25,Morocco,Jawad El Yamiq,,True,False
+3857283,86,9,Belgium,Axel Witsel,,False,False
+3857283,87,12,Morocco,Sofyan Amrabat,,True,False
+3857283,88,21,Morocco,Abdelhamid Sabiri,,False,False
+3857283,94,38,Morocco,Abdelhamid Sabiri,Yellow Card,False,False
+3869321,0,9,Netherlands,Marten de Roon,,False,False
+3869321,5,1,Argentina,Nicolás Hernán Otamendi,,False,False
+3869321,11,49,Netherlands,Jurriën David Norman Timber,,False,False
+3869321,12,54,Argentina,Cristian Gabriel Romero,,False,False
+3869321,18,33,Netherlands,Denzel Dumfries,,False,False
+3869321,24,37,Netherlands,Denzel Dumfries,,False,False
+3869321,25,53,Netherlands,Jurriën David Norman Timber,,True,False
+3869321,25,56,Netherlands,Cody Mathès Gakpo,,False,False
+3869321,27,5,Netherlands,Cody Mathès Gakpo,,False,False
+3869321,39,26,Argentina,Julián Álvarez,,True,False
+3869321,39,44,Argentina,Enzo Fernandez,,False,False
+3869321,40,40,Netherlands,Virgil van Dijk,,False,False
+3869321,42,21,Argentina,Marcos Javier Acuña,Yellow Card,False,False
+3869321,44,24,Argentina,Cristian Gabriel Romero,Yellow Card,False,False
+3869321,46,35,Argentina,Julián Álvarez,,False,False
+3869321,47,56,Netherlands,Marten de Roon,,False,False
+3869321,45,43,Netherlands,Frenkie de Jong,,False,False
+3869321,48,14,Argentina,Rodrigo Javier De Paul,,False,False
+3869321,51,39,Netherlands,Memphis Depay,,True,False
+3869321,51,45,Netherlands,Memphis Depay,,True,False
+3869321,54,14,Netherlands,Nathan Aké,,True,False
+3869321,54,18,Argentina,Lionel Andrés Messi Cuccittini,,False,False
+3869321,56,3,Argentina,Rodrigo Javier De Paul,,True,False
+3869321,60,51,Netherlands,Virgil van Dijk,,False,False
+3869321,67,54,Argentina,Lionel Andrés Messi Cuccittini,,False,False
+3869321,69,10,Netherlands,Teun Koopmeiners,,False,False
+3869321,70,40,Netherlands,Denzel Dumfries,,False,False
+3869321,76,43,Netherlands,Steven Berghuis,,False,False
+3869321,79,6,Netherlands,Wout Weghorst,,False,False
+3869321,80,37,Argentina,Leandro Daniel Paredes,,False,False
+3869321,82,49,Netherlands,Wout Weghorst,,False,False
+3869321,87,2,Netherlands,Steven Berghuis,,False,False
+3869321,87,57,Argentina,Leandro Daniel Paredes,Yellow Card,False,False
+3869321,90,39,Argentina,Nicolás Hernán Otamendi,,False,False
+3869321,93,35,Argentina,Enzo Fernandez,,False,False
+3869321,95,2,Netherlands,Denzel Dumfries,,False,False
+3869321,97,15,Argentina,Lautaro Javier Martínez,,True,False
+3869321,97,40,Netherlands,Steven Berghuis,,False,False
+3869321,98,36,Argentina,Lionel Andrés Messi Cuccittini,,False,False
+3869321,99,7,Argentina,Germán Alejandro Pezzella,,False,False
+3869321,102,29,Netherlands,Cody Mathès Gakpo,,True,False
+3869321,92,9,Netherlands,Cody Mathès Gakpo,,False,False
+3869321,94,5,Argentina,Leandro Daniel Paredes,,False,False
+3869321,97,4,Netherlands,Jurriën David Norman Timber,,False,False
+3869321,98,25,Argentina,Nicolás Hernán Otamendi,,False,False
+3869321,99,10,Netherlands,Denzel Dumfries,,False,False
+3869321,99,57,Netherlands,Luuk de Jong,,True,False
+3869321,99,59,Netherlands,Jurriën David Norman Timber,,False,False
+3869321,102,33,Netherlands,Denzel Dumfries,,False,False
+3869321,102,56,Netherlands,Jurriën David Norman Timber,,False,False
+3869321,104,33,Netherlands,Denzel Dumfries,,True,False
+3869321,105,22,Netherlands,Cody Mathès Gakpo,,False,False
+3869321,106,51,Argentina,Nicolás Alejandro Tagliafico,,True,False
+3869321,108,33,Netherlands,Cody Mathès Gakpo,,False,False
+3869321,110,6,Netherlands,Wout Weghorst,,False,False
+3869321,111,20,Argentina,Germán Alejandro Pezzella,Yellow Card,False,False
+3869321,112,15,Netherlands,Nathan Aké,,False,False
+3869321,113,14,Netherlands,Frenkie de Jong,,False,False
+3869321,116,25,Netherlands,Luuk de Jong,,False,False
+3857265,0,17,Poland,Jakub Kamiński,,False,False
+3857265,1,22,Poland,Piotr Zieliński,,False,False
+3857265,3,8,Mexico,Hirving Rodrigo Lozano Bahena,,False,False
+3857265,4,45,Poland,Robert Lewandowski,,False,False
+3857265,13,45,Poland,Kamil Glik,,False,False
+3857265,16,48,Poland,Matty Cash,,False,False
+3857265,22,17,Mexico,Henry Josué Martín Mex,,False,False
+3857265,24,49,Mexico,Jorge Eduardo Sánchez Ramos,,False,False
+3857265,25,9,Poland,Bartosz Bereszyński,,False,False
+3857265,26,23,Poland,Grzegorz Krychowiak,,False,False
+3857265,27,14,Mexico,Jesús Daniel Gallardo Vasconcelos,,False,False
+3857265,28,10,Mexico,Jorge Eduardo Sánchez Ramos,Yellow Card,False,False
+3857265,37,26,Poland,Grzegorz Krychowiak,,False,False
+3857265,41,48,Mexico,Hirving Rodrigo Lozano Bahena,,False,False
+3857265,47,54,Mexico,César Jasib Montes Castro,,False,False
+3857265,48,23,Mexico,Jorge Eduardo Sánchez Ramos,,False,False
+3857265,53,9,Mexico,Héctor Alfredo Moreno Herrera,Yellow Card,False,False
+3857265,62,54,Poland,Sebastian Szymański,,False,False
+3857265,64,41,Poland,Jakub Kamiński,,False,False
+3857265,67,6,Poland,Matty Cash,,False,False
+3857265,69,47,Poland,Grzegorz Krychowiak,,False,False
+3857265,71,23,Mexico,Carlos Alberto Rodríguez Gómez,,False,False
+3857265,72,56,Poland,Jakub Kamiński,,False,False
+3857265,74,34,Poland,Bartosz Bereszyński,,False,True
+3857265,75,9,Poland,Przemysław Frankowski,Yellow Card,False,False
+3857265,76,8,Mexico,César Jasib Montes Castro,,False,False
+3857265,80,15,Mexico,Edson Omar Álvarez Velázquez,,False,False
+3857265,86,23,Mexico,Hirving Rodrigo Lozano Bahena,,False,False
+3857265,92,20,Mexico,Hirving Rodrigo Lozano Bahena,,False,False
+3857301,12,16,Qatar,Abdelkarim Hassan Al Haj Fadlalla,,True,False
+3857301,13,19,Senegal,Kalidou Koulibaly,,False,False
+3857301,19,12,Qatar,Ismaeel Mohammad Mohammad,Yellow Card,False,False
+3857301,21,5,Qatar,Almoez Ali Zainalabiddin Abdulla,,False,False
+3857301,21,53,Senegal,Famara Diedhiou,,False,False
+3857301,23,8,Qatar,Homam Alamin Ahmed,,False,False
+3857301,29,42,Senegal,Boulaye Dia,Yellow Card,False,False
+3857301,32,36,Qatar,Boualem Khoukhi,,False,False
+3857301,36,38,Senegal,Krépin Diatta,,False,False
+3857301,46,26,Qatar,Homam Alamin Ahmed,Yellow Card,False,False
+3857301,49,48,Senegal,Famara Diedhiou,,False,False
+3857301,50,20,Senegal,Youssouf Sabaly,,False,False
+3857301,51,45,Senegal,Ismail Jakobs,Yellow Card,False,False
+3857301,53,53,Senegal,Ismail Jakobs,,False,False
+3857301,65,27,Qatar,Hassan Khalid Al Heidos,,True,False
+3857301,71,19,Senegal,Nampalys Mendy,,False,False
+3857301,72,45,Qatar,Pedro Miguel Correia,,False,False
+3857301,74,43,Qatar,Mohammed Muntari,,True,False
+3857301,75,5,Senegal,Boulaye Dia,,False,False
+3857301,76,31,Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,,False,False
+3857301,80,0,Qatar,Akram Hassan Afif,,False,False
+3857301,86,47,Senegal,Pathé Ismaël Ciss,Yellow Card,False,False
+3857301,89,45,Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,,True,False
+3857301,90,3,Qatar,Assim Omer Al Haj Madibo,Yellow Card,True,False
+3857258,0,23,Serbia,Aleksandar Mitrović,,False,False
+3857258,0,45,Brazil,Neymar da Silva Santos Junior,,False,False
+3857258,1,5,Brazil,Raphael Dias Belloli,,False,False
+3857258,5,29,Serbia,Strahinja Pavlović,Yellow Card,False,False
+3857258,7,23,Brazil,Richarlison de Andrade,,True,False
+3857258,10,25,Brazil,Lucas Tolentino Coelho de Lima,,False,False
+3857258,15,57,Brazil,Alex Sandro Lobo Silva,,False,False
+3857258,16,41,Serbia,Nikola Milenković,,False,False
+3857258,18,5,Serbia,Saša Lukić,,False,False
+3857258,27,4,Serbia,Nikola Milenković,,False,False
+3857258,31,26,Serbia,Saša Lukić,,False,False
+3857258,41,57,Serbia,Andrija Živković,,False,False
+3857258,48,10,Serbia,Nemanja Gudelj,Yellow Card,False,False
+3857258,55,58,Serbia,Saša Lukić,,False,False
+3857258,58,58,Serbia,Dušan Tadić,,False,False
+3857258,63,45,Serbia,Nikola Milenković,,False,False
+3857258,88,37,Brazil,Gabriel Teodoro Martinelli Silva,,False,False
+3857258,93,17,Brazil,Frederico Rodrigues Santos,,False,False
+3857258,96,13,Brazil,Gabriel Fernando de Jesus,,False,False
+3869151,4,36,Australia,Mitchell Thomas Duke,,False,False
+3869151,6,38,Australia,Keanu Baccus,,False,False
+3869151,8,45,Australia,Keanu Baccus,,False,False
+3869151,9,44,Argentina,Julián Álvarez,,False,False
+3869151,10,39,Australia,Aaron Mooy,,True,False
+3869151,13,47,Australia,Keanu Baccus,,True,False
+3869151,14,11,Australia,Jackson Irvine,Yellow Card,False,False
+3869151,28,29,Australia,Mathew Leckie,,False,False
+3869151,30,45,Argentina,Marcos Javier Acuña,,False,False
+3869151,33,27,Australia,Aziz Eraltay Behich,,False,False
+3869151,36,31,Australia,Keanu Baccus,,False,False
+3869151,37,20,Australia,Miloš Degenek,Yellow Card,False,False
+3869151,38,18,Argentina,Marcos Javier Acuña,,False,False
+3869151,46,26,Australia,Mitchell Thomas Duke,,False,False
+3869151,51,14,Australia,Keanu Baccus,,False,False
+3869151,53,34,Australia,Riley McGree,,False,False
+3869151,54,11,Argentina,Julián Álvarez,,False,True
+3869151,59,38,Australia,Mathew Leckie,,False,False
+3869151,61,28,Argentina,Cristian Gabriel Romero,,False,False
+3869151,66,31,Argentina,Nicolás Hernán Otamendi,,False,False
+3869151,68,54,Argentina,Marcos Javier Acuña,,False,True
+3869151,72,32,Argentina,Lautaro Javier Martínez,,True,False
+3869151,74,40,Australia,Jackson Irvine,,True,False
+3869151,76,55,Australia,Aaron Mooy,,False,False
+3869151,81,39,Argentina,Enzo Fernandez,,False,False
+3869151,85,47,Australia,Fran Karačić,,False,False
+3869151,89,5,Australia,Harry Souttar,,False,False
+3857286,0,25,Ecuador,Pervis Josué Estupiñán Tenorio,,False,False
+3857286,1,26,Qatar,Pedro Miguel Correia,,False,False
+3857286,9,24,Qatar,Bassam Hisham Al Rawi,,False,False
+3857286,14,17,Qatar,Saad Abdullah Al Sheeb,Yellow Card,False,False
+3857286,18,45,Qatar,Abdulaziz Hatem Mohammed Abdullah,,False,False
+3857286,21,6,Qatar,Almoez Ali Zainalabiddin Abdulla,Yellow Card,False,False
+3857286,23,43,Ecuador,Pervis Josué Estupiñán Tenorio,,False,False
+3857286,24,44,Qatar,Homam Alamin Ahmed,,False,False
+3857286,28,29,Ecuador,Moisés Isaac Caicedo Corozo,Yellow Card,False,False
+3857286,33,21,Qatar,Pedro Miguel Correia,,False,False
+3857286,35,47,Qatar,Karim Boudiaf,Yellow Card,False,False
+3857286,38,51,Ecuador,Enner Remberto Valencia Lastra,,False,False
+3857286,45,16,Ecuador,Angelo Smit Preciado Quiñónez,,False,False
+3857286,47,28,Qatar,Abdulaziz Hatem Mohammed Abdullah,,False,False
+3857286,48,51,Ecuador,Angelo Smit Preciado Quiñónez,,False,False
+3857286,49,22,Ecuador,Jhegson Sebastián Méndez Carabalí,,False,False
+3857286,47,27,Ecuador,Jhegson Sebastián Méndez Carabalí,,False,False
+3857286,50,15,Qatar,Karim Boudiaf,,True,False
+3857286,52,44,Qatar,Bassam Hisham Al Rawi,,True,False
+3857286,54,11,Ecuador,Pervis Josué Estupiñán Tenorio,,False,False
+3857286,55,37,Ecuador,Jhegson Sebastián Méndez Carabalí,Yellow Card,False,False
+3857286,57,54,Qatar,Abdulaziz Hatem Mohammed Abdullah,,False,False
+3857286,66,50,Qatar,Karim Boudiaf,,False,False
+3857286,69,45,Qatar,Hassan Khalid Al Heidos,,False,False
+3857286,71,33,Qatar,Pedro Miguel Correia,,False,False
+3857286,76,47,Ecuador,José Adoni Cifuentes Charcopa,,False,False
+3857286,76,55,Qatar,Akram Hassan Afif,Yellow Card,False,False
+3857286,80,14,Ecuador,Gonzalo Jordy Plata Jiménez,,False,False
+3857286,81,46,Qatar,Mohammed Waed Abdulwahhab Al Bayati,,False,False
+3857286,83,22,Ecuador,José Adoni Cifuentes Charcopa,,False,False
+3857286,92,30,Ecuador,Kevin José Rodríguez Cortez,,False,False
+3857267,0,54,Ecuador,Angelo Smit Preciado Quiñónez,,False,False
+3857267,7,1,Ecuador,Angelo Smit Preciado Quiñónez,,False,False
+3857267,8,49,Senegal,Idrissa Gana Gueye,,False,False
+3857267,14,36,Ecuador,Angelo Smit Preciado Quiñónez,,False,False
+3857267,15,28,Ecuador,Michael Steveen Estrada Martínez,,False,False
+3857267,16,3,Senegal,Ismaïla Sarr,,False,False
+3857267,18,22,Ecuador,Gonzalo Jordy Plata Jiménez,,False,False
+3857267,18,54,Senegal,Ismaïla Sarr,,False,False
+3857267,26,44,Ecuador,Gonzalo Jordy Plata Jiménez,,False,False
+3857267,29,34,Ecuador,Michael Steveen Estrada Martínez,,False,False
+3857267,35,26,Ecuador,Michael Steveen Estrada Martínez,,False,False
+3857267,35,40,Ecuador,Pervis Josué Estupiñán Tenorio,,False,False
+3857267,40,54,Ecuador,Angelo Smit Preciado Quiñónez,,False,False
+3857267,41,16,Ecuador,Piero Martín Hincapié Reyna,,False,False
+3857267,49,10,Ecuador,Enner Remberto Valencia Lastra,,False,False
+3857267,45,54,Senegal,Pathé Ismaël Ciss,,False,False
+3857267,49,18,Senegal,Pathé Ismaël Ciss,,False,False
+3857267,49,57,Ecuador,Angelo Smit Preciado Quiñónez,,False,False
+3857267,51,3,Ecuador,Jeremy Leonel Sarmiento Morante,,False,False
+3857267,57,45,Senegal,Boulaye Dia,,False,False
+3857267,58,45,Ecuador,Gonzalo Jordy Plata Jiménez,,False,False
+3857267,59,31,Ecuador,Angelo Smit Preciado Quiñónez,,False,False
+3857267,61,43,Ecuador,José Adoni Cifuentes Charcopa,,False,False
+3857267,64,39,Ecuador,Djorkaeff Neicer Reasco González,,False,False
+3857267,65,30,Senegal,Idrissa Gana Gueye,Yellow Card,False,False
+3857267,68,45,Ecuador,Jeremy Leonel Sarmiento Morante,,False,False
+3857267,84,28,Senegal,Boulaye Dia,,False,False
+3857267,85,8,Senegal,Nampalys Mendy,,False,False
+3857267,85,59,Ecuador,Felix Eduardo Torres Caicedo,,False,False
+3857267,87,0,Ecuador,Piero Martín Hincapié Reyna,,False,False
+3857267,90,37,Ecuador,Jackson Gabriel Porozo Vernaza,,False,False
+3857267,93,13,Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,,False,True
+3857267,95,57,Ecuador,Pervis Josué Estupiñán Tenorio,,False,False
+3869117,13,47,Netherlands,Denzel Dumfries,,False,True
+3869117,29,55,Netherlands,Jurriën David Norman Timber,,False,False
+3869117,35,11,United States,Walker Zimmerman,,False,False
+3869117,39,43,Netherlands,Jurriën David Norman Timber,,False,False
+3869117,49,51,Netherlands,Jurriën David Norman Timber,,False,False
+3869117,54,50,Netherlands,Steven Bergwijn,,False,False
+3869117,58,1,Netherlands,Virgil van Dijk,,False,False
+3869117,59,24,Netherlands,Teun Koopmeiners,Yellow Card,False,False
+3869117,61,24,Netherlands,Virgil van Dijk,,False,False
+3869117,67,54,United States,Brenden Aaronson,,False,False
+3869117,79,3,Netherlands,Frenkie de Jong,,True,False
+3869117,83,16,Netherlands,Cody Mathès Gakpo,,False,False
+3869117,84,3,United States,DeAndre Yedlin,,False,False
+3869117,86,34,Netherlands,Frenkie de Jong,Yellow Card,False,False
+3869117,90,41,United States,DeAndre Yedlin,,False,False
+3869117,95,27,United States,Brenden Aaronson,,False,False
+3857269,0,22,Switzerland,Fabian Rieder,,False,False
+3857269,2,10,Switzerland,Silvan Widmer,,False,False
+3857269,3,53,Brazil,Carlos Henrique Casimiro,,False,False
+3857269,10,39,Switzerland,Nico Elvedi,,False,False
+3857269,13,4,Brazil,Alex Sandro Lobo Silva,,False,False
+3857269,13,50,Brazil,Carlos Henrique Casimiro,,False,False
+3857269,16,45,Switzerland,Fabian Rieder,,False,False
+3857269,18,6,Switzerland,Fabian Rieder,,False,False
+3857269,22,6,Brazil,Thiago Emiliano da Silva,,False,False
+3857269,25,8,Switzerland,Silvan Widmer,,False,False
+3857269,28,22,Switzerland,Ruben Vargas,,False,False
+3857269,30,51,Switzerland,Remo Freuler,,False,False
+3857269,46,42,Brazil,Thiago Emiliano da Silva,,False,False
+3857269,47,44,Brazil,Éder Gabriel Militão,,False,False
+3857269,49,51,Switzerland,Fabian Rieder,Yellow Card,False,False
+3857269,51,24,Brazil,Frederico Rodrigues Santos,Yellow Card,False,False
+3857269,56,47,Switzerland,Ruben Vargas,,False,False
+3857269,58,51,Brazil,Éder Gabriel Militão,,False,False
+3857269,60,23,Switzerland,Manuel Obafemi Akanji,,False,False
+3857269,67,22,Brazil,Carlos Henrique Casimiro,,False,False
+3857269,68,19,Switzerland,Manuel Obafemi Akanji,,False,False
+3857269,74,25,Switzerland,Silvan Widmer,,False,False
+3857269,78,4,Switzerland,Ricardo Iván Rodríguez Araya,,False,False
+3857269,86,12,Switzerland,Michel Aebischer,,True,False
+3857269,87,35,Switzerland,Nico Elvedi,,False,False
+3857269,89,0,Switzerland,Granit Xhaka,,False,False
+3857269,90,48,Brazil,Éder Gabriel Militão,,False,False
+3857269,92,48,Switzerland,Granit Xhaka,,False,False
+3857275,6,49,France,Aurélien Djani Tchouaméni,,False,False
+3857275,13,31,France,Jordan Veretout,,False,False
+3857275,15,23,France,Eduardo Camavinga,,False,False
+3857275,27,20,Tunisia,Wajdi Kechrida,Yellow Card,False,False
+3857275,28,50,France,Youssouf Fofana,,True,False
+3857275,32,54,France,Jordan Veretout,,False,False
+3857275,35,13,Tunisia,Mohamed Ali Ben Romdhane,,False,False
+3857275,37,13,Tunisia,Wahbi Khazri,,True,False
+3857275,40,39,Tunisia,Aïssa Bilal Laïdouni,,True,False
+3857275,46,1,Tunisia,Ellyes Joris Skhiri,,False,False
+3857275,46,59,Tunisia,Yassine Meriah,,False,False
+3857275,53,49,Tunisia,Wajdi Kechrida,,False,False
+3857275,59,28,France,Randal Kolo Muani,,False,False
+3857275,65,34,France,Aurélien Djani Tchouaméni,,False,False
+3857275,69,57,Tunisia,Issam Jebali,,False,False
+3857275,71,23,France,Randal Kolo Muani,,True,False
+3857275,74,17,Tunisia,Anis Ben Slimane,,False,False
+3857275,77,5,Tunisia,Aïssa Bilal Laïdouni,,False,False
+3857275,78,23,Tunisia,Ellyes Joris Skhiri,,True,False
+3857275,81,55,Tunisia,Aïssa Bilal Laïdouni,,False,False
+3857275,82,21,Tunisia,Ellyes Joris Skhiri,,False,False
+3857275,85,32,Tunisia,Issam Jebali,,False,False
+3857275,91,10,Tunisia,Ghilane Chalali,,False,False
+3857275,93,45,Tunisia,Issam Jebali,,False,False
+3857268,2,19,Canada,Tajon Buchanan,,False,False
+3857268,4,1,Belgium,Michy Batshuayi Tunga,,False,False
+3857268,7,10,Belgium,Yannick Ferreira Carrasco,Yellow Card,False,False
+3857268,14,33,Canada,Jonathan David,,True,False
+3857268,16,50,Canada,Alistair Johnston,,False,False
+3857268,19,20,Canada,Tajon Buchanan,,False,False
+3857268,21,9,Canada,Atiba Hutchinson,,False,False
+3857268,21,56,Canada,Richie Laryea,,False,False
+3857268,24,57,Canada,Alistair Johnston,,False,False
+3857268,26,26,Canada,Alphonso Davies,,False,False
+3857268,27,0,Canada,Stephen Antunes Eustáquio,,False,False
+3857268,40,11,Canada,Atiba Hutchinson,,False,False
+3857268,45,12,Belgium,Michy Batshuayi Tunga,,False,False
+3857268,45,22,Canada,Steven de Sousa Vitoria,,False,False
+3857268,46,46,Belgium,Axel Witsel,,False,False
+3857268,47,8,Belgium,Amadou Onana,,False,False
+3857268,52,52,Belgium,Thomas Meunier,Yellow Card,False,False
+3857268,55,48,Belgium,Amadou Onana,Yellow Card,False,True
+3857268,58,23,Canada,Alphonso Davies,,False,False
+3857268,59,19,Belgium,Thomas Meunier,,False,False
+3857268,64,18,Belgium,Leander Dendoncker,,False,False
+3857268,71,32,Belgium,Michy Batshuayi Tunga,,False,False
+3857268,78,43,Belgium,Timothy Castagne,,False,False
+3857268,80,37,Canada,Alphonso Davies,Yellow Card,False,False
+3857268,81,37,Canada,Liam Millar,,False,False
+3857268,82,38,Canada,Alistair Johnston,Yellow Card,False,False
+3869219,0,58,Croatia,Dejan Lovren,,False,False
+3869219,11,51,Japan,Yuto Nagatomo,,False,False
+3869219,15,18,Croatia,Luka Modrić,,False,True
+3869219,17,17,Croatia,Joško Gvardiol,,False,False
+3869219,20,47,Japan,Maya Yoshida,,False,False
+3869219,22,2,Japan,Ritsu Doan,,False,False
+3869219,34,13,Japan,Yuto Nagatomo,,False,False
+3869219,38,27,Japan,Maya Yoshida,,False,False
+3869219,49,56,Croatia,Ivan Perišić,,False,False
+3869219,61,2,Croatia,Borna Barišić,,False,False
+3869219,70,4,Croatia,Borna Barišić,,False,False
+3869219,70,46,Japan,Takuma Asano,,False,False
+3869219,73,8,Japan,Hidemasa Morita,,False,False
+3869219,75,38,Croatia,Ante Budimir,,False,True
+3869219,77,23,Croatia,Borna Barišić,,False,False
+3869219,78,30,Croatia,Marcelo Brozović,,False,False
+3869219,80,38,Japan,Wataru Endo,,False,False
+3869219,82,1,Croatia,Ante Budimir,,False,False
+3869219,82,40,Japan,Hidemasa Morita,,False,False
+3869219,87,3,Croatia,Ivan Perišić,,False,False
+3869219,87,39,Japan,Hiroki Sakai,,False,False
+3869219,89,30,Croatia,Mateo Kovačić,Yellow Card,False,False
+3869219,90,40,Japan,Hiroki Sakai,,False,False
+3869219,91,13,Croatia,Ante Budimir,,False,False
+3869219,94,35,Japan,Takehiro Tomiyasu,,False,False
+3869219,97,19,Croatia,Luka Modrić,,False,False
+3869219,101,9,Croatia,Borna Barišić,,False,False
+3869219,109,0,Japan,Ao Tanaka,,False,False
+3869219,115,26,Croatia,Borna Barišić,Yellow Card,False,False
+3857293,0,42,Ghana,Mohammed Kudus,,False,False
+3857293,4,42,Ghana,Jordan Ayew,,False,True
+3857293,6,25,Uruguay,Rodrigo Bentancur Colmán,,False,False
+3857293,7,9,Ghana,Abdul Rahman Baba,,False,False
+3857293,9,6,Uruguay,Federico Santiago Valverde Dipetta,,False,False
+3857293,11,47,Ghana,Salis Abdul Samed,,False,False
+3857293,15,3,Uruguay,Sergio Rochet Álvarez,,False,False
+3857293,21,17,Uruguay,Rodrigo Bentancur Colmán,,False,False
+3857293,29,14,Uruguay,Rodrigo Bentancur Colmán,,False,False
+3857293,29,55,Ghana,Alidu Seidu,,False,False
+3857293,38,34,Uruguay,Federico Santiago Valverde Dipetta,,False,False
+3857293,41,19,Ghana,Mohamed Salisu,,False,False
+3857293,43,12,Ghana,Thomas Teye Partey,,False,False
+3857293,44,54,Uruguay,Guillermo Varela Olivera,,False,False
+3857293,48,48,Ghana,Jordan Ayew,,False,False
+3857293,50,45,Uruguay,Mathías Olivera Miramontes,,False,False
+3857293,52,35,Ghana,Salis Abdul Samed,,False,False
+3857293,53,7,Ghana,Abdul Rahman Baba,,False,False
+3857293,53,50,Ghana,Mohamed Salisu,,False,False
+3857293,59,32,Uruguay,Federico Santiago Valverde Dipetta,,False,False
+3857293,61,29,Ghana,Salis Abdul Samed,,False,False
+3857293,62,7,Uruguay,Guillermo Varela Olivera,,False,False
+3857293,66,32,Ghana,Mohammed Kudus,,False,False
+3857293,72,51,Ghana,Antoine Semenyo,,True,False
+3857293,75,55,Ghana,Daniel Amartey,,True,False
+3857293,83,32,Ghana,Abdul Rahman Baba,,False,False
+3857293,85,2,Ghana,Kamaldeen Sulemana,Yellow Card,False,False
+3857293,86,4,Uruguay,Sebastián Coates Nión,Yellow Card,False,False
+3857293,90,45,Ghana,Antoine Semenyo,,True,False
+3857293,91,11,Ghana,Thomas Teye Partey,,False,False
+3857293,92,41,Ghana,Abdul Rahman Baba,,False,False
+3857293,98,27,Ghana,Alidu Seidu,Yellow Card,False,False
+3857274,6,3,Netherlands,Jurriën David Norman Timber,,False,False
+3857274,9,57,Netherlands,Jurriën David Norman Timber,,False,False
+3857274,12,10,Netherlands,Steven Bergwijn,,False,False
+3857274,13,26,Ecuador,Michael Steveen Estrada Martínez,,False,False
+3857274,19,15,Netherlands,Denzel Dumfries,,False,False
+3857274,20,0,Netherlands,Denzel Dumfries,,True,False
+3857274,21,11,Netherlands,Teun Koopmeiners,,False,False
+3857274,21,47,Netherlands,Denzel Dumfries,,False,False
+3857274,25,31,Netherlands,Jurriën David Norman Timber,,False,False
+3857274,28,31,Ecuador,Pervis Josué Estupiñán Tenorio,,False,False
+3857274,30,54,Ecuador,Moisés Isaac Caicedo Corozo,,False,False
+3857274,36,45,Ecuador,Moisés Isaac Caicedo Corozo,,False,True
+3857274,38,24,Ecuador,Piero Martín Hincapié Reyna,,False,False
+3857274,42,59,Netherlands,Frenkie de Jong,,False,False
+3857274,45,17,Ecuador,Piero Martín Hincapié Reyna,,False,False
+3857274,46,1,Netherlands,Jurriën David Norman Timber,,False,False
+3857274,46,33,Netherlands,Teun Koopmeiners,,False,False
+3857274,53,28,Ecuador,Michael Steveen Estrada Martínez,,False,False
+3857274,56,13,Ecuador,Jhegson Sebastián Méndez Carabalí,Yellow Card,True,False
+3857274,56,20,Ecuador,Piero Martín Hincapié Reyna,,False,False
+3857274,60,31,Netherlands,Denzel Dumfries,,False,False
+3857274,66,20,Ecuador,Michael Steveen Estrada Martínez,,False,False
+3857274,70,18,Netherlands,Cody Mathès Gakpo,,False,False
+3857274,74,3,Ecuador,Enner Remberto Valencia Lastra,,False,False
+3857274,74,23,Netherlands,Steven Berghuis,,False,False
+3857274,76,33,Netherlands,Jurriën David Norman Timber,,False,False
+3857274,78,24,Netherlands,Jurriën David Norman Timber,,False,False
+3857274,84,41,Ecuador,Pervis Josué Estupiñán Tenorio,,False,False
+3857274,85,0,Ecuador,Moisés Isaac Caicedo Corozo,,False,False
+3869152,0,18,Poland,Bartosz Bereszyński,,False,False
+3869152,2,37,Poland,Przemysław Frankowski,,True,False
+3869152,6,17,France,Theo Bernard François Hernández,,False,False
+3869152,11,35,Poland,Robert Lewandowski,,False,False
+3869152,15,35,France,Adrien Rabiot,,False,False
+3869152,24,42,France,Ousmane Dembélé,,False,False
+3869152,30,55,France,Aurélien Djani Tchouaméni,Yellow Card,False,False
+3869152,35,33,France,Dayotchanculle Upamecano,,False,False
+3869152,39,44,Poland,Grzegorz Krychowiak,,False,False
+3869152,46,53,Poland,Kamil Glik,,False,False
+3869152,46,14,Poland,Bartosz Bereszyński,Yellow Card,False,False
+3869152,49,11,France,Olivier Giroud,,True,False
+3869152,56,47,France,Raphaël Varane,,False,False
+3869152,60,16,Poland,Grzegorz Krychowiak,,True,False
+3869152,69,45,France,Dayotchanculle Upamecano,,False,False
+3869152,80,9,Poland,Nicola Zalewski,,False,False
+3869152,81,43,Poland,Robert Lewandowski,,False,False
+3869152,84,59,France,Kylian Mbappé Lottin,,False,False
+3869152,86,52,France,Youssouf Fofana,,False,False
+3869152,87,44,Poland,Matty Cash,Yellow Card,False,False
+3869152,95,3,France,Dayotchanculle Upamecano,,False,False
+3857260,2,46,Mexico,Edson Omar Álvarez Velázquez,,False,False
+3857260,10,23,Saudi Arabia,Saleh Khalid Al Shehri,,False,False
+3857260,11,35,Mexico,Luis Gerardo Chávez Magallón,,False,False
+3857260,14,56,Mexico,Edson Omar Álvarez Velázquez,Yellow Card,False,False
+3857260,17,14,Saudi Arabia,Mohammed Kanoo,,False,False
+3857260,23,56,Saudi Arabia,Ali Al Hassan,,False,False
+3857260,27,44,Saudi Arabia,Saleh Khalid Al Shehri,Yellow Card,False,False
+3857260,29,2,Mexico,Jesús Daniel Gallardo Vasconcelos,,False,False
+3857260,31,49,Saudi Arabia,Abdulelah Al Amri,,False,False
+3857260,33,10,Saudi Arabia,Salem Mohammed Al Dawsari,,False,False
+3857260,33,22,Saudi Arabia,Ali Al Hassan,Yellow Card,False,False
+3857260,37,11,Mexico,Jorge Eduardo Sánchez Ramos,,False,False
+3857260,39,16,Saudi Arabia,Riyadh Sharahili,,True,False
+3857260,39,52,Saudi Arabia,Riyadh Sharahili,,False,False
+3857260,43,1,Mexico,Henry Josué Martín Mex,,False,False
+3857260,43,44,Saudi Arabia,Sultan Abdullah Salim Al Ghannam,,False,False
+3857260,46,7,Mexico,César Jasib Montes Castro,,False,False
+3857260,47,21,Mexico,Orbelín Pineda Alvarado,,False,False
+3857260,50,31,Mexico,Henry Josué Martín Mex,,False,False
+3857260,45,16,Saudi Arabia,Riyadh Sharahili,,False,False
+3857260,47,58,Mexico,Edson Omar Álvarez Velázquez,,False,False
+3857260,49,42,Saudi Arabia,Riyadh Sharahili,,False,False
+3857260,51,0,Saudi Arabia,Hassan Mohammed Al-Tambakti,Yellow Card,False,False
+3857260,57,6,Saudi Arabia,Hassan Mohammed Al-Tambakti,,False,False
+3857260,60,48,Mexico,Orbelín Pineda Alvarado,,False,False
+3857260,68,39,Saudi Arabia,Mohammed Kanoo,,False,False
+3857260,71,1,Saudi Arabia,Riyadh Sharahili,,False,False
+3857260,72,7,Mexico,Héctor Alfredo Moreno Herrera,,False,True
+3857260,73,5,Mexico,Hirving Rodrigo Lozano Bahena,,False,False
+3857260,80,27,Saudi Arabia,Abdullah Mohammed Madu,Yellow Card,False,False
+3857260,83,4,Saudi Arabia,Salem Mohammed Al Dawsari,,False,False
+3857260,83,52,Mexico,Jorge Eduardo Sánchez Ramos,,False,False
+3857260,87,36,Mexico,César Jasib Montes Castro,,False,False
+3857260,90,23,Saudi Arabia,Abdulelah Al Amri,Yellow Card,False,False
+3857260,92,43,Saudi Arabia,Hattan Babhir,,False,False
+3857260,93,25,Mexico,Rogelio Gabriel Funes Mori,,False,False
+3857260,95,35,Mexico,Rogelio Gabriel Funes Mori,,False,False
+3857260,96,47,Saudi Arabia,Hattan Babhir,Yellow Card,False,False
+3857260,97,15,Mexico,Raúl Alonso Jiménez Rodríguez,,False,False
+3857289,1,3,Mexico,José Andrés Guardado Hernández,,False,False
+3857289,4,16,Mexico,Ernesto Alexis Vega Rojas,,False,True
+3857289,8,23,Argentina,Gonzalo Ariel Montiel,,False,False
+3857289,10,15,Mexico,Luis Gerardo Chávez Magallón,,False,False
+3857289,13,17,Mexico,José Andrés Guardado Hernández,,False,False
+3857289,15,25,Mexico,Héctor Miguel Herrera López,,False,False
+3857289,19,11,Argentina,Nicolás Hernán Otamendi,,False,False
+3857289,21,29,Mexico,Néstor Alejandro Araújo Razo,Yellow Card,False,False
+3857289,27,11,Argentina,Marcos Javier Acuña,,False,True
+3857289,30,24,Mexico,Hirving Rodrigo Lozano Bahena,,False,False
+3857289,31,6,Mexico,Héctor Miguel Herrera López,,False,False
+3857289,32,24,Mexico,Ernesto Alexis Vega Rojas,,False,False
+3857289,33,51,Argentina,Lisandro Martínez,,False,False
+3857289,34,59,Mexico,Hirving Rodrigo Lozano Bahena,,False,False
+3857289,42,35,Argentina,Gonzalo Ariel Montiel,Yellow Card,False,False
+3857289,46,55,Argentina,Lionel Andrés Messi Cuccittini,,False,False
+3857289,45,45,Mexico,Néstor Alejandro Araújo Razo,,False,False
+3857289,46,23,Argentina,Alexis Mac Allister,,False,False
+3857289,49,25,Mexico,Érick Gabriel Gutiérrez Galaviz,Yellow Card,False,False
+3857289,53,0,Argentina,Lionel Andrés Messi Cuccittini,,False,False
+3857289,58,24,Argentina,Lisandro Martínez,,False,False
+3857289,65,53,Mexico,Héctor Miguel Herrera López,Yellow Card,False,False
+3857289,70,23,Argentina,Julián Álvarez,,False,False
+3857289,73,40,Mexico,Luis Gerardo Chávez Magallón,,False,False
+3857289,74,40,Argentina,Nicolás Hernán Otamendi,,False,False
+3857289,76,50,Mexico,Raúl Alonso Jiménez Rodríguez,,True,False
+3857289,78,4,Mexico,Héctor Miguel Herrera López,,False,False
+3857289,79,2,Mexico,Jesús Daniel Gallardo Vasconcelos,,False,False
+3857289,80,47,Argentina,Exequiel Alejandro Palacios,,False,False
+3857289,88,35,Argentina,Enzo Fernandez,,False,False
+3857289,88,47,Mexico,Roberto Carlos Alvarado Hernández,Yellow Card,False,False
+3857289,89,26,Mexico,Héctor Alfredo Moreno Herrera,,False,False
+3857289,90,20,Mexico,Héctor Miguel Herrera López,,True,False
+3857289,90,40,Argentina,Nicolás Hernán Otamendi,,False,False
+3857289,93,5,Argentina,Lionel Andrés Messi Cuccittini,,False,False
+3857289,95,26,Mexico,Jesús Daniel Gallardo Vasconcelos,,False,False
+3857255,6,34,Spain,Pau Francisco Torres,,False,False
+3857255,10,26,Japan,Daichi Kamada,,True,False
+3857255,17,50,Spain,Daniel Olmo Carvajal,,False,False
+3857255,19,48,Japan,Shogo Taniguchi,,False,False
+3857255,27,6,Japan,Hidemasa Morita,,False,False
+3857255,29,57,Spain,Alejandro Balde Martínez,,True,False
+3857255,31,24,Japan,Daizen Maeda,,False,False
+3857255,32,27,Japan,Shogo Taniguchi,,False,False
+3857255,38,24,Japan,Ko Itakura,Yellow Card,False,False
+3857255,43,31,Japan,Shogo Taniguchi,Yellow Card,False,False
+3857255,44,20,Japan,Maya Yoshida,Yellow Card,False,False
+3857255,45,23,Spain,Alejandro Balde Martínez,,False,False
+3857255,54,0,Spain,Rodrigo Hernández Cascante,,False,False
+3857255,54,50,Spain,Rodrigo Hernández Cascante,,False,False
+3857255,61,48,Japan,Ritsu Doan,,True,False
+3857255,63,50,Spain,Pedro González López,,False,False
+3857255,69,2,Japan,Kaoru Mitoma,,False,False
+3857255,81,38,Spain,Sergio Busquets i Burgos,,False,False
+3857255,82,39,Japan,Kaoru Mitoma,,False,False
+3857298,1,28,Portugal,Cristiano Ronaldo dos Santos Aveiro,,False,False
+3857298,2,37,Ghana,Abdul Rahman Baba,,False,False
+3857298,10,46,Ghana,Thomas Teye Partey,,False,False
+3857298,14,29,Portugal,Rúben Diogo Da Silva Neves,,False,False
+3857298,19,17,Ghana,Alidu Seidu,,False,False
+3857298,23,39,Portugal,Rúben Diogo Da Silva Neves,,False,False
+3857298,24,51,Portugal,João Félix Sequeira,,False,False
+3857298,26,3,Ghana,Alexander Djiku,,True,False
+3857298,26,30,Ghana,Iñaki Williams Arthuer,,False,False
+3857298,29,3,Ghana,Salis Abdul Samed,,False,False
+3857298,30,26,Portugal,Cristiano Ronaldo dos Santos Aveiro,,False,False
+3857298,31,14,Ghana,Daniel Amartey,,False,False
+3857298,31,42,Ghana,Abdul Rahman Baba,,False,False
+3857298,33,35,Ghana,André Ayew Pelé,,False,False
+3857298,37,38,Ghana,Mohamed Salisu,,False,False
+3857298,41,36,Portugal,João Félix Sequeira,,False,False
+3857298,42,35,Ghana,Mohamed Salisu,,False,False
+3857298,43,12,Portugal,Otávio Edmilson da Silva Monteiro,,False,False
+3857298,44,55,Ghana,Mohammed Kudus,Yellow Card,False,False
+3857298,45,46,Portugal,João Félix Sequeira,,False,False
+3857298,47,43,Portugal,Otávio Edmilson da Silva Monteiro,,False,False
+3857298,48,14,Ghana,André Ayew Pelé,Yellow Card,False,False
+3857298,50,35,Portugal,Bernardo Mota Veiga de Carvalho e Silva,,True,False
+3857298,51,6,Ghana,Abdul Rahman Baba,,False,False
+3857298,51,26,Ghana,Alidu Seidu,,False,False
+3857298,53,40,Portugal,Otávio Edmilson da Silva Monteiro,,False,False
+3857298,56,40,Ghana,Alidu Seidu,Yellow Card,False,False
+3857298,60,24,Portugal,Rúben Santos Gato Alves Dias,,False,False
+3857298,61,55,Ghana,Mohamed Salisu,,False,False
+3857298,69,31,Ghana,Tariq Lamptey,,False,False
+3857298,81,43,Portugal,Rafael Alexandre Conceição Leão,,False,False
+3857298,89,30,Portugal,Danilo Luís Hélio Pereira,Yellow Card,False,False
+3857298,93,18,Ghana,Osman Bukari,,False,False
+3857298,94,28,Portugal,Bruno Miguel Borges Fernandes,Yellow Card,False,False
+3857298,96,35,Ghana,Daniel Amartey,,False,False
+3857300,2,41,Argentina,Leandro Daniel Paredes,,False,False
+3857300,3,17,Saudi Arabia,Abdulelah Saad Hameed Al-Malki,,False,False
+3857300,5,59,Saudi Arabia,Saud Abdullah Abdul Hamid,,False,False
+3857300,14,17,Argentina,Alejandro Darío Gómez,,False,False
+3857300,21,24,Saudi Arabia,Saleh Khalid Al Shehri,,True,False
+3857300,24,32,Saudi Arabia,Saleh Khalid Al Shehri,,False,False
+3857300,25,7,Saudi Arabia,Saud Abdullah Abdul Hamid,,False,False
+3857300,28,45,Argentina,Cristian Gabriel Romero,,False,False
+3857300,30,21,Argentina,Rodrigo Javier De Paul,,False,False
+3857300,34,59,Saudi Arabia,Mohammed Kanoo,,False,False
+3857300,35,56,Saudi Arabia,Salem Mohammed Al Dawsari,,False,False
+3857300,38,50,Saudi Arabia,Abdulelah Saad Hameed Al-Malki,,False,False
+3857300,40,51,Saudi Arabia,Abdulelah Saad Hameed Al-Malki,,False,False
+3857300,49,20,Saudi Arabia,Ali Albulayhi,,False,False
+3857300,50,36,Saudi Arabia,Saud Abdullah Abdul Hamid,,False,False
+3857300,54,32,Saudi Arabia,Abdulelah Saad Hameed Al-Malki,,False,False
+3857300,55,6,Saudi Arabia,Nawaf Shaker Al Abid,,False,False
+3857300,55,14,Saudi Arabia,Mohammed Kanoo,,False,False
+3857300,56,40,Argentina,Lionel Andrés Messi Cuccittini,,False,False
+3857300,57,48,Saudi Arabia,Saud Abdullah Abdul Hamid,,False,False
+3857300,59,8,Argentina,Lautaro Javier Martínez,,False,False
+3857300,63,54,Saudi Arabia,Firas Tariq Nasser Al Albirakan,,False,False
+3857300,66,24,Saudi Arabia,Abdulelah Saad Hameed Al-Malki,Yellow Card,False,False
+3857300,73,44,Argentina,Nahuel Molina Lucero,,False,False
+3857300,76,37,Saudi Arabia,Saud Abdullah Abdul Hamid,,False,False
+3857300,78,1,Saudi Arabia,Mohammed Kanoo,,False,False
+3857300,81,2,Saudi Arabia,Saud Abdullah Abdul Hamid,Yellow Card,False,False
+3857300,88,55,Saudi Arabia,Yasir Gharsan Al Shahrani,,False,False
+3857300,89,10,Saudi Arabia,Haitham Mohammed Asiri,,False,False
+3857261,5,18,England,Jordan Brian Henderson,,False,False
+3857261,6,31,England,Declan Rice,,False,False
+3857261,13,1,Wales,Neco Williams,,False,False
+3857261,16,24,Wales,Chris Mepham,,False,False
+3857261,20,15,Wales,Kieffer Roberto Francisco Moore,,False,False
+3857261,21,0,Wales,Neco Williams,,True,False
+3857261,22,11,Wales,Ben Davies,,False,False
+3857261,26,36,England,Phil Foden,,False,False
+3857261,27,54,Wales,Joe Allen,,True,False
+3857261,28,4,England,Jordan Brian Henderson,,False,False
+3857261,28,39,Wales,Daniel James,Yellow Card,False,False
+3857261,36,12,England,Harry Maguire,,False,False
+3857261,43,10,Wales,Aaron Ramsey,,False,False
+3857261,45,45,England,Kyle Walker,,False,False
+3857261,46,34,Wales,Brennan Johnson,,False,False
+3857261,47,56,Wales,Joe Rodon,,False,False
+3857261,52,33,Wales,Aaron Ramsey,,False,False
+3857261,53,16,England,Jordan Brian Henderson,,True,False
+3857261,56,24,Wales,Brennan Johnson,,False,False
+3857261,60,34,Wales,Aaron Ramsey,Yellow Card,False,False
+3857261,72,19,England,Phil Foden,,True,False
+3857261,75,39,Wales,Joseff Morrell,,True,False
+3857261,76,0,England,Trent Alexander-Arnold,,False,False
+3857261,78,29,England,Kalvin Phillips,,False,False
+3857261,82,1,England,Harry Maguire,,False,False
+3857261,86,54,Wales,Chris Mepham,,False,False
+3857261,87,36,Wales,Ethan Ampadu,,False,False
+3857261,88,0,Wales,Kieffer Roberto Francisco Moore,,False,False
+3857261,89,2,Wales,Ethan Ampadu,,False,False
+3857261,91,33,Wales,Chris Mepham,,False,False
+3869519,5,53,Argentina,Cristian Gabriel Romero,,True,False
+3869519,6,0,Croatia,Mario Pašalić,,False,False
+3869519,12,21,Croatia,Luka Modrić,,False,False
+3869519,18,25,Argentina,Cristian Gabriel Romero,,False,False
+3869519,25,55,Argentina,Lionel Andrés Messi Cuccittini,,True,False
+3869519,25,59,Argentina,Rodrigo Javier De Paul,,True,False
+3869519,26,3,Argentina,Nicolás Alejandro Tagliafico,,False,False
+3869519,31,10,Croatia,Dominik Livaković,Yellow Card,False,False
+3869519,35,13,Argentina,Julián Álvarez,,False,False
+3869519,37,21,Argentina,Enzo Fernandez,,True,False
+3869519,40,36,Croatia,Marcelo Brozović,,True,False
+3869519,49,7,Croatia,Marcelo Brozović,,False,False
+3869519,46,5,Argentina,Nicolás Hernán Otamendi,,False,False
+3869519,49,15,Argentina,Nicolás Alejandro Tagliafico,,False,False
+3869519,52,50,Argentina,Rodrigo Javier De Paul,,False,False
+3869519,57,9,Argentina,Julián Álvarez,,False,False
+3869519,60,31,Argentina,Leandro Daniel Paredes,,False,False
+3869519,63,16,Croatia,Josip Juranović,,False,False
+3869519,64,29,Argentina,Lionel Andrés Messi Cuccittini,,False,False
+3869519,65,36,Argentina,Julián Álvarez,,False,False
+3869519,66,29,Croatia,Mislav Oršić,,False,False
+3869519,67,31,Argentina,Cristian Gabriel Romero,Yellow Card,False,False
+3869519,70,52,Argentina,Nicolás Hernán Otamendi,,False,False
+3869519,72,53,Argentina,Nicolás Alejandro Tagliafico,,False,False
+3869519,77,14,Argentina,Exequiel Alejandro Palacios,,True,False
+3869519,82,1,Croatia,Marko Livaja,,False,False
+3869519,86,53,Argentina,Paulo Bruno Exequiel Dybala,,False,False
+3869519,89,16,Croatia,Nikola Vlašić,,True,False
+3869519,89,22,Croatia,Lovro Majer,,False,False
+3869519,91,51,Argentina,Exequiel Alejandro Palacios,,False,False
+3857291,3,22,Spain,Aymeric Laporte,,False,False
+3857291,14,23,Costa Rica,Francisco Javier Calvo Quesada,,False,False
+3857291,15,21,Spain,Marco Asensio Willemsen,,False,False
+3857291,17,17,Spain,Jordi Alba Ramos,,False,False
+3857291,28,51,Costa Rica,Óscar Esau Duarte Gaitán,,False,False
+3857291,32,8,Spain,Daniel Olmo Carvajal,,False,False
+3857291,37,55,Costa Rica,Carlos Manuel Martínez Castro,,False,False
+3857291,38,38,Costa Rica,Óscar Esau Duarte Gaitán,,True,False
+3857291,43,37,Costa Rica,Bryan Oviedo,,False,False
+3857291,45,32,Costa Rica,Joel Nathaniel Campbell Samuels,,False,False
+3857291,55,34,Costa Rica,Celso Borges Mora,,False,False
+3857291,60,28,Costa Rica,Francisco Javier Calvo Quesada,,False,False
+3857291,67,18,Costa Rica,Francisco Javier Calvo Quesada,Yellow Card,False,False
+3857291,77,29,Spain,Pablo Martín Páez Gavira,,False,False
+3857291,77,58,Costa Rica,Kendall Jamaal Waston Manley,,False,False
+3857291,81,23,Spain,César Azpilicueta Tanco,,False,True
+3857291,85,1,Costa Rica,Brandon Aguilera Zamora,,False,False
+3857291,86,6,Spain,Aymeric Laporte,,False,False
+3857291,90,21,Spain,César Azpilicueta Tanco,,False,False
+3857291,91,28,Costa Rica,Óscar Esau Duarte Gaitán,,True,False
+3857291,93,43,Costa Rica,Brandon Aguilera Zamora,,False,False
+3857291,96,7,Costa Rica,Joel Nathaniel Campbell Samuels,Yellow Card,False,False
+3857262,0,20,Portugal,António João Pereira Albuquerque Tavares Silva,,False,False
+3857262,1,21,South Korea,Jae-Sung Lee,,False,False
+3857262,11,39,South Korea,Jae-Sung Lee,,False,False
+3857262,17,52,Portugal,João Pedro Cavaco Cancelo,,False,False
+3857262,25,26,Portugal,Matheus Luiz Nunes,,False,False
+3857262,28,16,South Korea,In-Beom Hwang,,False,False
+3857262,28,47,South Korea,Woo-Young Jung,,False,False
+3857262,35,42,South Korea,Kang-In Lee,Yellow Card,False,False
+3857262,37,31,Portugal,Ricardo Jorge Luz Horta,,False,False
+3857262,56,38,Portugal,Matheus Luiz Nunes,,False,False
+3857262,67,6,South Korea,Woo-Young Jung,,False,False
+3857262,68,33,Portugal,Rafael Alexandre Conceição Leão,,False,False
+3857262,72,7,Portugal,João Maria Lobo Alves Palhinha Gonçalves,,False,False
+3857262,74,18,South Korea,Gue-Sung Cho,,False,False
+3857262,76,24,Portugal,António João Pereira Albuquerque Tavares Silva,,False,False
+3857262,81,24,South Korea,Jun-Ho Son,,False,False
+3857262,82,30,Portugal,William Silva de Carvalho,,False,False
+3857262,86,50,South Korea,Jun-Ho Son,,False,False
+3857262,87,27,Portugal,José Diogo Dalot Teixeira,,False,False
+3857284,18,5,Japan,Takefusa Kubo,,False,False
+3857284,18,36,Germany,Kai Havertz,,False,False
+3857284,29,19,Japan,Takefusa Kubo,,False,False
+3857284,30,43,Japan,Shūichi Gonda,,False,False
+3857284,33,53,Germany,Kai Havertz,,False,False
+3857284,35,42,Germany,Nico Schlotterbeck,,True,False
+3857284,41,44,Japan,Wataru Endo,,False,False
+3857284,45,3,Germany,David Raum,,False,False
+3857284,45,52,Japan,Ko Itakura,,False,False
+3857284,47,49,Germany,İlkay Gündoğan,,False,False
+3857284,48,18,Japan,Daizen Maeda,,False,False
+3857284,50,31,Japan,Maya Yoshida,,True,False
+3857284,55,55,Japan,Ko Itakura,,False,False
+3857284,57,38,Japan,Hiroki Sakai,,False,False
+3857284,61,34,Japan,Ko Itakura,,False,False
+3857284,63,14,Japan,Takuma Asano,,False,False
+3857284,71,55,Germany,Leon Goretzka,,False,False
+3857284,82,7,Germany,Nico Schlotterbeck,,False,False
+3857284,84,8,Japan,Wataru Endo,,False,False
+3857284,87,56,Japan,Wataru Endo,,False,False
+3857284,94,21,Japan,Takuma Asano,,False,False
+3857284,96,13,Japan,Takumi Minamino,,False,False
+3857259,11,26,Serbia,Filip Kostić,,False,False
+3857259,13,25,Cameroon,Pierre Kunde Malong,,False,False
+3857259,14,23,Serbia,Nikola Milenković,,False,False
+3857259,19,35,Cameroon,Ngoran Suiru Fai Collins,,False,False
+3857259,22,39,Cameroon,André-Frank Zambo Anguissa,,False,False
+3857259,23,18,Cameroon,Nicolas Alexis Julio N'Koulou Ndoubena,Yellow Card,False,False
+3857259,25,18,Serbia,Strahinja Pavlović,,False,False
+3857259,30,43,Cameroon,Ngoran Suiru Fai Collins,,True,False
+3857259,30,51,Serbia,Dušan Tadić,,False,False
+3857259,35,26,Serbia,Filip Kostić,,True,False
+3857259,44,38,Cameroon,Martin Hongla Yma II,,False,False
+3857259,45,56,Serbia,Dušan Tadić,,False,False
+3857259,50,34,Serbia,Andrija Živković,,False,False
+3857259,54,1,Serbia,Strahinja Pavlović,,False,False
+3857259,58,52,Serbia,Dušan Tadić,,False,False
+3857259,67,44,Serbia,Nikola Milenković,,False,False
+3857259,70,46,Serbia,Dušan Tadić,,False,False
+3857259,72,35,Cameroon,Vincent Paté Aboubakar,,False,False
+3857259,74,17,Cameroon,Gaël Ondoua,,False,False
+3857259,76,6,Serbia,Nikola Milenković,,True,False
+3857259,81,25,Serbia,Marko Grujić,,True,False
+3857259,84,50,Cameroon,Jean-Charles Castelletto,,False,False
+3857259,92,0,Serbia,Dušan Tadić,,False,False
+3857259,92,53,Serbia,Nikola Milenković,Yellow Card,False,False
+3857259,95,13,Serbia,Dušan Tadić,,False,False
+3857276,6,41,Canada,Jonathan Osorio,,True,False
+3857276,6,43,Canada,David Junior Hoilett,Yellow Card,False,False
+3857276,9,41,Canada,Cyle Larin,,False,False
+3857276,19,27,Morocco,Sofiane Boufal,,False,False
+3857276,25,39,Canada,Jonathan Osorio,Yellow Card,False,False
+3857276,27,52,Canada,Cyle Larin,,False,False
+3857276,28,23,Canada,Mark Anthony Kaye,,False,False
+3857276,29,17,Morocco,Sofiane Boufal,,False,False
+3857276,32,46,Morocco,Sofiane Boufal,,False,False
+3857276,38,7,Canada,Steven de Sousa Vitoria,,False,False
+3857276,42,10,Canada,Alistair Johnston,,False,False
+3857276,42,49,Morocco,Youssef En-Nesyri,,False,False
+3857276,46,25,Canada,Sam Adekugbe,Yellow Card,False,False
+3857276,49,15,Canada,Steven de Sousa Vitoria,,False,False
+3857276,45,42,Canada,Tajon Buchanan,,False,False
+3857276,46,12,Morocco,Azzedine Ounahi,,False,False
+3857276,50,32,Morocco,Sofiane Boufal,,False,False
+3857276,53,8,Canada,Alistair Johnston,,False,False
+3857276,54,26,Morocco,Hakim Ziyech,,False,False
+3857276,55,7,Morocco,Sofiane Boufal,,False,False
+3857276,69,28,Morocco,Sofyan Amrabat,,False,False
+3857276,77,6,Morocco,Sofyan Amrabat,,False,False
+3857276,79,15,Canada,Steven de Sousa Vitoria,,True,False
+3857276,83,11,Canada,Tajon Buchanan,,False,False
+3857276,83,49,Canada,Steven de Sousa Vitoria,Yellow Card,False,False
+3857276,86,32,Morocco,Zakaria Aboukhlal,,False,False
+3857276,87,14,Morocco,Sofyan Amrabat,,False,False
+3857276,87,53,Canada,Tajon Buchanan,,False,False
+3857276,88,41,Morocco,Abderrazak Hamdallah,,True,False
+3857276,88,44,Morocco,Abderrazak Hamdallah,,False,False
+3857276,89,45,Morocco,Abderrazak Hamdallah,,False,False
+3857290,5,42,Switzerland,Remo Freuler,,False,False
+3857290,19,13,Switzerland,Ricardo Iván Rodríguez Araya,,False,False
+3857290,20,23,Cameroon,André-Frank Zambo Anguissa,,False,False
+3857290,20,43,Cameroon,Nouhou Tolo,,False,False
+3857290,28,4,Cameroon,Ngoran Suiru Fai Collins,,False,False
+3857290,30,51,Switzerland,Ruben Vargas,,True,False
+3857290,34,21,Cameroon,André-Frank Zambo Anguissa,,False,False
+3857290,35,21,Cameroon,Ngoran Suiru Fai Collins,Yellow Card,False,False
+3857290,37,12,Switzerland,Djibril Sow,,True,False
+3857290,46,52,Switzerland,Djibril Sow,,False,False
+3857290,48,59,Switzerland,Ricardo Iván Rodríguez Araya,,False,False
+3857290,50,17,Cameroon,Nicolas Alexis Julio N'Koulou Ndoubena,,False,False
+3857290,52,31,Switzerland,Ricardo Iván Rodríguez Araya,,False,False
+3857290,63,29,Switzerland,Nico Elvedi,Yellow Card,False,False
+3857290,64,39,Switzerland,Remo Freuler,,False,False
+3857290,67,9,Switzerland,Ricardo Iván Rodríguez Araya,,False,False
+3857290,67,32,Switzerland,Ruben Vargas,,False,False
+3857290,75,41,Cameroon,Nouhou Tolo,,False,False
+3857290,77,13,Switzerland,Haris Seferović,,False,False
+3857290,78,13,Switzerland,Fabian Frei,,False,False
+3857290,82,49,Switzerland,Manuel Obafemi Akanji,Yellow Card,False,False
+3857290,85,40,Cameroon,Nicolas Moumi Ngamaleu,,False,False
+3857290,89,34,Cameroon,Gaël Ondoua,,False,False
+3857290,95,55,Cameroon,Georges-Kévin Nkoudou Mbida,,False,False
+3857273,0,28,Wales,Ethan Ampadu,,False,False
+3857273,7,40,Wales,Chris Mepham,,False,False
+3857273,16,56,Iran,Milad Mohammadi,,False,False
+3857273,20,56,Iran,Ali Gholizadeh,,False,False
+3857273,21,36,Wales,Ethan Ampadu,,False,False
+3857273,25,53,Iran,Ali Gholizadeh,,False,False
+3857273,30,15,Iran,Saeid Ezatolahi Afagh,,False,False
+3857273,33,51,Wales,Kieffer Roberto Francisco Moore,,False,False
+3857273,37,27,Wales,Neco Williams,,False,False
+3857273,39,12,Wales,Chris Mepham,,False,False
+3857273,47,31,Wales,Joe Rodon,Yellow Card,False,False
+3857273,53,5,Iran,Morteza Pouraliganji,,False,False
+3857273,56,30,Iran,Milad Mohammadi,,False,False
+3857273,65,50,Iran,Seyed Majid Hosseini,,False,False
+3857273,77,52,Wales,Neco Williams,,False,False
+3857273,83,43,Wales,Wayne Hennessey,Red Card,False,False
+3857273,90,25,Iran,Seyed Majid Hosseini,,False,False
+3857273,92,26,Iran,Ali Karimi,,False,False
+3857273,94,20,Iran,Alireza Jahanbakhsh,Yellow Card,False,False
+3857256,5,26,Serbia,Nikola Milenković,,False,False
+3857256,12,48,Serbia,Saša Lukić,,False,False
+3857256,14,27,Switzerland,Silvan Widmer,Yellow Card,False,False
+3857256,18,37,Serbia,Strahinja Pavlović,,False,False
+3857256,21,36,Switzerland,Breel-Donald Embolo,,False,False
+3857256,23,9,Serbia,Saša Lukić,,True,False
+3857256,25,2,Serbia,Milos Veljkovic,,False,False
+3857256,28,56,Serbia,Filip Kostić,,False,False
+3857256,33,22,Switzerland,Ruben Vargas,Yellow Card,False,False
+3857256,38,36,Switzerland,Granit Xhaka,,False,False
+3857256,45,5,Switzerland,Manuel Obafemi Akanji,,False,False
+3857256,46,35,Serbia,Sergej Milinković-Savić,Yellow Card,False,False
+3857256,49,18,Switzerland,Remo Freuler,,False,False
+3857256,52,2,Switzerland,Breel-Donald Embolo,,False,False
+3857256,53,34,Switzerland,Granit Xhaka,,False,False
+3857256,55,0,Serbia,Strahinja Pavlović,Yellow Card,False,False
+3857256,55,35,Serbia,Saša Lukić,,False,False
+3857256,57,0,Switzerland,Xherdan Shaqiri,,False,False
+3857256,58,39,Serbia,Sergej Milinković-Savić,,False,False
+3857256,61,31,Serbia,Filip Kostić,,False,False
+3857256,70,4,Serbia,Aleksandar Mitrović,,False,False
+3857256,73,36,Serbia,Nemanja Gudelj,,False,False
+3857256,76,10,Serbia,Luka Jović,,False,False
+3857256,78,41,Serbia,Strahinja Pavlović,,False,False
+3857256,79,41,Serbia,Saša Lukić,,False,False
+3857256,80,29,Serbia,Nemanja Gudelj,Yellow Card,False,False
+3857256,86,58,Serbia,Saša Lukić,,True,False
+3857256,87,51,Serbia,Saša Lukić,,False,False
+3857256,88,56,Switzerland,Ricardo Iván Rodríguez Araya,,False,False
+3857256,93,7,Switzerland,Granit Xhaka,,False,False
+3857256,97,17,Serbia,Nikola Milenković,,False,False
+3857256,97,50,Switzerland,Noah Okafor,,False,False
+3857256,98,17,Switzerland,Fabian Lukas Schär,Yellow Card,False,False
+3857256,99,3,Serbia,Saša Lukić,Yellow Card,True,False
+3857256,99,23,Switzerland,Edimilson Fernandes,,False,False
+3869420,2,7,Brazil,Carlos Henrique Casimiro,,False,False
+3869420,3,2,Croatia,Luka Modrić,,False,True
+3869420,6,50,Croatia,Ivan Perišić,,False,False
+3869420,7,14,Croatia,Borna Sosa,,False,False
+3869420,8,2,Croatia,Mateo Kovačić,,False,False
+3869420,23,13,Brazil,Lucas Tolentino Coelho de Lima,,False,False
+3869420,24,6,Brazil,Danilo Luiz da Silva,Yellow Card,False,False
+3869420,25,25,Croatia,Marcelo Brozović,,False,False
+3869420,27,40,Croatia,Joško Gvardiol,,False,False
+3869420,30,14,Croatia,Marcelo Brozović,Yellow Card,False,False
+3869420,31,24,Brazil,Éder Gabriel Militão,,False,False
+3869420,35,45,Brazil,Lucas Tolentino Coelho de Lima,,False,False
+3869420,40,21,Croatia,Marcelo Brozović,,False,False
+3869420,44,54,Brazil,Richarlison de Andrade,,False,False
+3869420,45,7,Croatia,Luka Modrić,,False,False
+3869420,46,8,Croatia,Mario Pašalić,,False,False
+3869420,50,57,Brazil,Éder Gabriel Militão,,False,False
+3869420,64,29,Croatia,Marcelo Brozović,,False,False
+3869420,67,21,Brazil,Carlos Henrique Casimiro,Yellow Card,False,False
+3869420,69,58,Brazil,Antony Matheus dos Santos,,False,False
+3869420,71,0,Croatia,Andrej Kramarić,,False,False
+3869420,74,46,Croatia,Ivan Perišić,,False,False
+3869420,76,16,Brazil,Marcos Aoás Corrêa,Yellow Card,False,False
+3869420,76,50,Croatia,Nikola Vlašić,,False,False
+3869420,77,52,Brazil,Richarlison de Andrade,,False,False
+3869420,82,41,Brazil,Danilo Luiz da Silva,,False,False
+3869420,91,30,Brazil,Antony Matheus dos Santos,,False,False
+3869420,92,38,Croatia,Luka Modrić,,False,False
+3869420,92,18,Croatia,Nikola Vlašić,,False,False
+3869420,93,5,Brazil,Neymar da Silva Santos Junior,,False,False
+3869420,93,56,Croatia,Borna Sosa,,False,False
+3869420,96,33,Brazil,Lucas Tolentino Coelho de Lima,,False,False
+3869420,97,3,Brazil,Rodrygo Silva de Goes,,False,False
+3869420,97,32,Croatia,Nikola Vlašić,,False,False
+3869420,99,33,Croatia,Mateo Kovačić,,False,False
+3869420,104,51,Croatia,Nikola Vlašić,,True,False
+3869420,105,40,Brazil,Rodrygo Silva de Goes,,False,False
+3869420,108,20,Brazil,Neymar da Silva Santos Junior,,False,False
+3869420,110,47,Croatia,Ante Budimir,,False,False
+3869420,111,54,Brazil,Rodrygo Silva de Goes,,False,False
+3869420,112,6,Brazil,Pedro Guilherme Abreu dos Santos,,False,False
+3869420,114,18,Croatia,Bruno Petković,,False,False
+3869420,115,52,Brazil,Carlos Henrique Casimiro,,True,False
+3869420,118,6,Brazil,Alex Sandro Lobo Silva,,False,False
+3869420,119,1,Brazil,Neymar da Silva Santos Junior,,False,False
+3869420,120,11,Brazil,Pedro Guilherme Abreu dos Santos,,False,False
+3869420,120,32,Croatia,Ivan Perišić,,False,False
+3869420,121,23,Brazil,Frederico Rodrigues Santos,,False,True
+3869354,4,23,France,Ousmane Dembélé,,False,False
+3869354,18,43,France,Adrien Rabiot,,False,False
+3869354,31,38,France,Adrien Rabiot,,False,False
+3869354,32,35,France,Antoine Griezmann,,False,False
+3869354,35,52,France,Antoine Griezmann,,False,False
+3869354,37,59,England,Jordan Brian Henderson,,False,False
+3869354,40,13,France,Ousmane Dembélé,,False,False
+3869354,42,15,France,Antoine Griezmann,Yellow Card,False,False
+3869354,45,48,France,Ousmane Dembélé,Yellow Card,True,False
+3869354,48,14,England,Bukayo Saka,,False,False
+3869354,48,44,England,Jordan Brian Henderson,,False,False
+3869354,51,28,France,Aurélien Djani Tchouaméni,,False,False
+3869354,62,1,France,Aurélien Djani Tchouaméni,,False,False
+3869354,63,21,England,Jordan Brian Henderson,,False,False
+3869354,64,38,England,Jude Bellingham,,False,False
+3869354,68,25,France,Theo Bernard François Hernández,,False,False
+3869354,71,4,England,Bukayo Saka,,False,False
+3869354,72,27,England,Bukayo Saka,,False,False
+3869354,79,43,France,Theo Bernard François Hernández,Yellow Card,False,False
+3869354,85,15,England,Jude Bellingham,,False,False
+3869354,86,4,France,Olivier Giroud,,False,False
+3869354,86,39,France,Adrien Rabiot,,False,False
+3869354,88,42,England,Harry Maguire,Yellow Card,False,False
+3869354,89,53,England,Mason Mount,,False,False
+3869354,98,27,France,Kingsley Coman,,False,False
+3857266,2,35,France,Aurélien Djani Tchouaméni,,False,False
+3857266,11,21,Denmark,Joachim Andersen,,False,False
+3857266,12,51,France,Ousmane Dembélé,,False,False
+3857266,19,3,Denmark,Andreas Christensen,Yellow Card,False,False
+3857266,21,25,France,Adrien Rabiot,,False,False
+3857266,22,15,Denmark,Andreas Evald Cornelius,Yellow Card,False,False
+3857266,34,3,Denmark,Andreas Evald Cornelius,,False,False
+3857266,40,13,Denmark,Andreas Evald Cornelius,,False,False
+3857266,42,6,France,Jules Koundé,Yellow Card,False,False
+3857266,45,21,Denmark,Jesper Lindstrøm,,False,False
+3857266,46,46,Denmark,Christian Dannemann Eriksen,,False,False
+3857266,55,53,Denmark,Joachim Andersen,,True,False
+3857266,57,33,Denmark,Rasmus Nissen Kristensen,,False,False
+3857266,88,36,Denmark,Rasmus Nissen Kristensen,,True,False
+3857266,95,15,Denmark,Alexander Hartmann Bah,,False,False
+3857280,2,37,Cameroon,Bryan Mbeumo,,False,True
+3857280,4,11,Cameroon,Nicolas Moumi Ngamaleu,,False,False
+3857280,5,9,Cameroon,Nouhou Tolo,Yellow Card,False,False
+3857280,6,24,Brazil,Éder Gabriel Militão,Yellow Card,False,False
+3857280,16,58,Brazil,Alex Nicolao Telles,,False,False
+3857280,17,25,Brazil,Daniel Alves da Silva,,False,False
+3857280,20,28,Cameroon,André-Frank Zambo Anguissa,,False,False
+3857280,23,31,Cameroon,Pierre Kunde Malong,,False,False
+3857280,25,25,Brazil,Fábio Henrique Tavares,,False,False
+3857280,26,7,Brazil,Fábio Henrique Tavares,,False,False
+3857280,27,44,Cameroon,Pierre Kunde Malong,,True,False
+3857280,27,49,Cameroon,Pierre Kunde Malong,Yellow Card,False,False
+3857280,31,43,Cameroon,Enzo Ebosse,,True,False
+3857280,31,47,Cameroon,Ngoran Suiru Fai Collins,Yellow Card,False,False
+3857280,37,1,Cameroon,Ngoran Suiru Fai Collins,,True,False
+3857280,42,4,Brazil,Daniel Alves da Silva,,False,False
+3857280,45,20,Cameroon,Christopher Wooh,,False,False
+3857280,47,20,Brazil,Frederico Rodrigues Santos,,True,False
+3857280,57,3,Cameroon,Nicolas Moumi Ngamaleu,,False,False
+3857280,57,48,Brazil,Gleison Bremer Silva Nascimento,,False,False
+3857280,59,11,Brazil,Daniel Alves da Silva,,False,False
+3857280,60,4,Cameroon,André-Frank Zambo Anguissa,,False,False
+3857280,62,45,Brazil,Éder Gabriel Militão,,False,False
+3857280,65,35,Brazil,Bruno Guimarães Rodriguez Moura,,False,False
+3857280,68,27,Brazil,Daniel Alves da Silva,,False,False
+3857280,69,34,Cameroon,Vincent Paté Aboubakar,,False,False
+3857280,70,44,Cameroon,Christopher Wooh,,False,False
+3857280,73,6,Brazil,Gabriel Teodoro Martinelli Silva,,False,False
+3857280,75,39,Cameroon,André-Frank Zambo Anguissa,,False,False
+3857280,78,19,Brazil,Daniel Alves da Silva,,False,False
+3857280,80,29,Cameroon,Vincent Paté Aboubakar,Yellow Card,False,False
+3857280,84,21,Brazil,Bruno Guimarães Rodriguez Moura,Yellow Card,False,False
+3857285,4,3,Netherlands,Daley Blind,,False,False
+3857285,6,5,Netherlands,Matthijs de Ligt,,False,False
+3857285,14,47,Netherlands,Vincent Janssen,,False,False
+3857285,17,22,Netherlands,Daley Blind,,True,False
+3857285,18,53,Netherlands,Nathan Aké,,False,False
+3857285,20,57,Senegal,Ismaïla Sarr,,False,False
+3857285,24,6,Netherlands,Matthijs de Ligt,,False,False
+3857285,27,19,Netherlands,Virgil van Dijk,,False,False
+3857285,30,29,Senegal,Pape Abou Cissé,,False,False
+3857285,33,50,Senegal,Abdou Diallo,,False,False
+3857285,36,37,Netherlands,Nathan Aké,,False,False
+3857285,38,18,Netherlands,Matthijs de Ligt,,True,False
+3857285,40,12,Netherlands,Matthijs de Ligt,,False,False
+3857285,47,15,Senegal,Nampalys Mendy,,False,False
+3857285,45,42,Senegal,Cheikhou Kouyaté,,False,False
+3857285,47,34,Senegal,Youssouf Sabaly,,False,False
+3857285,51,7,Senegal,Kalidou Koulibaly,,False,False
+3857285,51,58,Senegal,Abdou Diallo,,False,False
+3857285,53,31,Netherlands,Frenkie de Jong,,True,False
+3857285,55,48,Netherlands,Matthijs de Ligt,Yellow Card,False,False
+3857285,64,2,Netherlands,Cody Mathès Gakpo,,False,False
+3857285,66,13,Netherlands,Denzel Dumfries,,False,False
+3857285,76,32,Netherlands,Denzel Dumfries,,False,False
+3857285,77,22,Senegal,Nicolas Jackson,,False,False
+3857285,77,45,Senegal,Youssouf Sabaly,,False,False
+3857285,89,12,Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,,False,False
+3857285,93,48,Senegal,Nampalys Mendy,Yellow Card,False,False
+3857285,95,15,Senegal,Idrissa Gana Gueye,Yellow Card,False,False
+3857285,97,32,Netherlands,Denzel Dumfries,,False,False
+3857271,6,41,Iran,Mehdi Taremi,,False,False
+3857271,20,39,England,Jude Bellingham,,False,False
+3857271,22,40,Iran,Ahmad Nourollahi,,False,False
+3857271,24,19,Iran,Alireza Jahanbakhsh,Yellow Card,False,False
+3857271,24,55,Iran,Ali Karimi,,False,False
+3857271,26,7,England,Bukayo Saka,,False,False
+3857271,27,42,Iran,Seyed Majid Hosseini,,False,False
+3857271,37,29,Iran,Roozbeh Cheshmi,,False,False
+3857271,39,56,England,Bukayo Saka,,False,False
+3857271,45,9,Iran,Roozbeh Cheshmi,,True,False
+3857271,46,47,Iran,Ali Karimi,,False,False
+3857271,56,33,Iran,Morteza Pouraliganji,,False,False
+3857271,57,13,Iran,Ahmad Nourollahi,,False,False
+3857271,58,31,Iran,Sadegh Moharrami,,True,False
+3857271,58,57,Iran,Alireza Jahanbakhsh,,False,False
+3857271,45,49,England,Mason Mount,,False,False
+3857271,47,43,Iran,Morteza Pouraliganji,,True,False
+3857271,47,47,Iran,Morteza Pouraliganji,Yellow Card,False,False
+3857271,56,14,England,Mason Mount,,False,False
+3857271,58,17,Iran,Mehdi Taremi,,False,True
+3857271,61,21,Iran,Milad Mohammadi,,True,False
+3857271,73,5,Iran,Sadegh Moharrami,,False,False
+3857271,73,58,Iran,Ahmad Nourollahi,,True,False
+3857271,75,25,Iran,Ehsan Hajsafi,,False,False
+3857271,83,51,England,John Stones,,False,False
+3857271,93,51,Iran,Sadegh Moharrami,,False,False
+3857271,96,7,Iran,Morteza Pouraliganji,,False,False
+3857271,96,39,England,Marcus Rashford,,False,False
+3857271,98,10,England,Phil Foden,,False,False
+3857271,99,1,England,John Stones,,False,False
+3857270,0,16,Uruguay,Federico Santiago Valverde Dipetta,,False,False
+3857270,4,46,Uruguay,José María Giménez de Vargas,,False,False
+3857270,5,17,Uruguay,Federico Santiago Valverde Dipetta,,False,False
+3857270,5,34,Uruguay,Rodrigo Bentancur Colmán,Yellow Card,False,False
+3857270,9,42,Portugal,João Félix Sequeira,,False,True
+3857270,11,35,Uruguay,José María Giménez de Vargas,,False,False
+3857270,12,3,Uruguay,Rodrigo Bentancur Colmán,,False,False
+3857270,16,31,Uruguay,Matías Vecino Falero,,False,False
+3857270,37,45,Portugal,Rúben Diogo Da Silva Neves,Yellow Card,False,False
+3857270,42,34,Uruguay,Federico Santiago Valverde Dipetta,,False,False
+3857270,43,40,Uruguay,Mathías Olivera Miramontes,,False,True
+3857270,46,53,Uruguay,Matías Vecino Falero,,False,False
+3857270,45,33,Uruguay,Sebastián Coates Nión,,False,False
+3857270,46,37,Portugal,Bernardo Mota Veiga de Carvalho e Silva,,False,False
+3857270,47,53,Uruguay,Matías Vecino Falero,,False,False
+3857270,52,19,Uruguay,José María Giménez de Vargas,,False,False
+3857270,61,14,Uruguay,Darwin Gabriel Núñez Ribeiro,,False,False
+3857270,62,41,Portugal,Bruno Miguel Borges Fernandes,,True,False
+3857270,64,57,Portugal,João Félix Sequeira,,False,False
+3857270,68,9,Portugal,João Félix Sequeira,,False,False
+3857270,76,12,Portugal,João Félix Sequeira,Yellow Card,False,False
+3857270,84,29,Portugal,João Maria Lobo Alves Palhinha Gonçalves,,False,False
+3857270,85,2,Portugal,João Pedro Cavaco Cancelo,,False,False
+3857270,85,25,Portugal,Rafael Alexandre Conceição Leão,,False,False
+3857270,86,25,Portugal,Gonçalo Matias Ramos,,False,False
+3857270,88,2,Uruguay,José María Giménez de Vargas,,False,True
+3857270,98,36,Uruguay,Maximiliano Gómez González,,False,False

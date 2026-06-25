@@ -1,0 +1,384 @@
+{
+  "id": "england-senegal-2022",
+  "meta": {
+    "title": "England vs Senegal — Round of 16",
+    "trigger_label": "Second half — England lead 3-0",
+    "difficulty": 2,
+    "order": 67,
+    "stage": "Round of 16",
+    "group": null,
+    "date": "2022-12-04",
+    "stadium": "Al Bayt Stadium"
+  },
+  "scoreline": {
+    "display": "England 3 – 0 Senegal",
+    "home": 3,
+    "away": 0
+  },
+  "context": "A pivotal moment in this round of 16 match. England lead Senegal 3-0. The game hangs in the balance — every decision from the touchline could decide the outcome.",
+  "home_team": "England",
+  "away_team": "Senegal",
+  "home_formation": "4-3-3",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Jordan Pickford",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 30
+    },
+    {
+      "name": "Kyle Walker",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 46
+    },
+    {
+      "name": "Luke Shaw",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "John Stones",
+      "number": 5,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Harry Maguire",
+      "number": 6,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Declan Rice",
+      "number": 4,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 46
+    },
+    {
+      "name": "Jordan Brian Henderson",
+      "number": 8,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 53
+    },
+    {
+      "name": "Jude Bellingham",
+      "number": 22,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 52
+    },
+    {
+      "name": "Philip Foden",
+      "number": 20,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 64
+    },
+    {
+      "name": "Bukayo Saka",
+      "number": 17,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 50
+    },
+    {
+      "name": "Harry Kane",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 50
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Edouard Mendy",
+      "number": 16,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 31
+    },
+    {
+      "name": "Youssouf Sabaly",
+      "number": 21,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 56
+    },
+    {
+      "name": "Ismail Jakobs",
+      "number": 14,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 49
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "number": 3,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 54
+    },
+    {
+      "name": "Abdou Diallo",
+      "number": 22,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 40
+    },
+    {
+      "name": "Nampalys Mendy",
+      "number": 6,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 49
+    },
+    {
+      "name": "Pathé Ismaël Ciss",
+      "number": 11,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 41
+    },
+    {
+      "name": "Iliman Ndiaye",
+      "number": 13,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 48
+    },
+    {
+      "name": "Ismaïla Sarr",
+      "number": 18,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 54
+    },
+    {
+      "name": "Krépin Diatta",
+      "number": 15,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 49
+    },
+    {
+      "name": "Boulaye Dia",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 59
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Defensive substitution — bring on a fresh center-back, sit deep",
+      "risk": "Medium"
+    },
+    {
+      "label": "B",
+      "action": "Drop deeper as a unit, protect the lead, counter-attack",
+      "risk": "Low"
+    },
+    {
+      "label": "C",
+      "action": "Keep attacking — the best defense is a good offense",
+      "risk": "High"
+    },
+    {
+      "label": "D",
+      "action": "Bring on a defensive midfielder, switch to 5-4-1",
+      "risk": "Low"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "England won 3-0. Jordan Brian Henderson (38'), Harry Kane (47'), Bukayo Saka (56')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Defensive substitution — bring on a fresh center-back, sit deep**\nRisk level: Medium. This is the safe, professional choice that protects the lead without abandoning attacking threat. In the context of this round of 16 match between England and Senegal (3-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Drop deeper as a unit, protect the lead, counter-attack**\nRisk level: Low. This is a solid conservative choice that prioritizes defensive stability. Low risk of conceding, but may invite pressure. In the context of this round of 16 match between England and Senegal (3-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Keep attacking — the best defense is a good offense**\nRisk level: High. This is the aggressive choice. Keeping attacking intent when leading can catch opponents off guard but leaves defensive gaps. In the context of this round of 16 match between England and Senegal (3-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Bring on a defensive midfielder, switch to 5-4-1**\nRisk level: Low. This is the ultra-defensive option. Maximum security at the back, but surrenders possession and invites sustained pressure. In the context of this round of 16 match between England and Senegal (3-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Philip Foden": "Philip Foden at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Boulaye Dia": "Boulaye Dia at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Youssouf Sabaly": "Youssouf Sabaly at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Jordan Pickford": "Jordan Pickford at 30/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages.",
+    "Edouard Mendy": "Edouard Mendy at 31/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Philip Foden",
+      "attacker_team": "England",
+      "defender": "Youssouf Sabaly",
+      "defender_team": "Senegal",
+      "advantage": "Youssouf Sabaly",
+      "diff": "-2",
+      "critical": false
+    },
+    {
+      "attacker": "Ismaïla Sarr",
+      "attacker_team": "Senegal",
+      "defender": "Kyle Walker",
+      "defender_team": "England",
+      "advantage": "Ismaïla Sarr",
+      "diff": "+7",
+      "critical": false
+    },
+    {
+      "attacker": "Bukayo Saka",
+      "attacker_team": "England",
+      "defender": "Ismail Jakobs",
+      "defender_team": "Senegal",
+      "advantage": "Bukayo Saka",
+      "diff": "+17",
+      "critical": true
+    },
+    {
+      "attacker": "Krépin Diatta",
+      "attacker_team": "Senegal",
+      "defender": "Luke Shaw",
+      "defender_team": "England",
+      "advantage": "Luke Shaw",
+      "diff": "-6",
+      "critical": true
+    },
+    {
+      "attacker": "Harry Kane",
+      "attacker_team": "England",
+      "defender": "Abdou Diallo",
+      "defender_team": "Senegal",
+      "advantage": "Abdou Diallo",
+      "diff": "-1",
+      "critical": false
+    },
+    {
+      "attacker": "Boulaye Dia",
+      "attacker_team": "Senegal",
+      "defender": "Harry Maguire",
+      "defender_team": "England",
+      "advantage": "Boulaye Dia",
+      "diff": "+1",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 38,
+      "type": "goal",
+      "description": "Jordan Brian Henderson scores for England!",
+      "player": "Jordan Brian Henderson"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Pape Gueye replaces Pathé Ismaël Ciss (Tactical)",
+      "player": "Pape Gueye"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Pape Matar Sarr replaces Krépin Diatta (Tactical)",
+      "player": "Pape Matar Sarr"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Cheikh Ahmadou Bamba Mbacke Dieng replaces Iliman Ndiaye (Tactical)",
+      "player": "Cheikh Ahmadou Bamba Mbacke Dieng"
+    },
+    {
+      "minute": 47,
+      "type": "goal",
+      "description": "Harry Kane scores for England!",
+      "player": "Harry Kane"
+    },
+    {
+      "minute": 56,
+      "type": "goal",
+      "description": "Bukayo Saka scores for England!",
+      "player": "Bukayo Saka"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Marcus Rashford replaces Bukayo Saka (Tactical)",
+      "player": "Marcus Rashford"
+    },
+    {
+      "minute": 64,
+      "type": "substitution",
+      "description": "Jack Grealish replaces Philip Foden (Tactical)",
+      "player": "Jack Grealish"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Famara Diedhiou replaces Boulaye Dia (Tactical)",
+      "player": "Famara Diedhiou"
+    },
+    {
+      "minute": 75,
+      "type": "substitution",
+      "description": "Mason Mount replaces Jude Bellingham (Tactical)",
+      "player": "Mason Mount"
+    },
+    {
+      "minute": 75,
+      "type": "yellow_card",
+      "description": "Kalidou Koulibaly (Senegal) shown a yellow card card — Foul",
+      "player": "Kalidou Koulibaly"
+    },
+    {
+      "minute": 76,
+      "type": "substitution",
+      "description": "Eric Dier replaces John Stones (Tactical)",
+      "player": "Eric Dier"
+    },
+    {
+      "minute": 81,
+      "type": "substitution",
+      "description": "Kalvin Phillips replaces Jordan Brian Henderson (Tactical)",
+      "player": "Kalvin Phillips"
+    },
+    {
+      "minute": 83,
+      "type": "substitution",
+      "description": "Fodé Ballo Touré replaces Ismail Jakobs (Tactical)",
+      "player": "Fodé Ballo Touré"
+    }
+  ]
+}

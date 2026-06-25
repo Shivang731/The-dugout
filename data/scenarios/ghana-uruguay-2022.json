@@ -1,0 +1,415 @@
+{
+  "id": "ghana-uruguay-2022",
+  "meta": {
+    "title": "Ghana vs Uruguay — Group Stage",
+    "trigger_label": "Second half — Ghana trail 0-2",
+    "difficulty": 1,
+    "order": 47,
+    "stage": "Group Stage",
+    "group": "H",
+    "date": "2022-12-02",
+    "stadium": "Al Janoub Stadium   "
+  },
+  "scoreline": {
+    "display": "Ghana 0 – 2 Uruguay",
+    "home": 0,
+    "away": 2
+  },
+  "context": "A pivotal moment in this group stage match. Ghana trail Uruguay 0-2. Something has to change. The manager must decide how to respond.",
+  "home_team": "Ghana",
+  "away_team": "Uruguay",
+  "home_formation": "4-3-3",
+  "away_formation": "4-4-2",
+  "home_players": [
+    {
+      "name": "Lawrence Ati-Zigi",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 39
+    },
+    {
+      "name": "Abdul Rahman Baba",
+      "number": 17,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 52
+    },
+    {
+      "name": "Alidu Seidu",
+      "number": 26,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 51
+    },
+    {
+      "name": "Daniel Amartey",
+      "number": 18,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 49
+    },
+    {
+      "name": "Mohamed Salisu",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Thomas Teye Partey",
+      "number": 5,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 55
+    },
+    {
+      "name": "Salis Abdul Samed",
+      "number": 21,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 54
+    },
+    {
+      "name": "André Ayew Pelé",
+      "number": 10,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 44
+    },
+    {
+      "name": "Jordan Ayew",
+      "number": 9,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 49
+    },
+    {
+      "name": "Iñaki Williams Arthuer",
+      "number": 19,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 50
+    },
+    {
+      "name": "Mohammed Kudus",
+      "number": 20,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 58
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Sergio Rochet Álvarez",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 31
+    },
+    {
+      "name": "Guillermo Varela Olivera",
+      "number": 13,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 46
+    },
+    {
+      "name": "Mathías Olivera Miramontes",
+      "number": 16,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 55
+    },
+    {
+      "name": "José María Giménez de Vargas",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Sebastián Coates Nión",
+      "number": 19,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Giorgian Daniel De Arrascaeta Benedetti",
+      "number": 10,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 53
+    },
+    {
+      "name": "Facundo Pellistri Rebollo",
+      "number": 8,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 50
+    },
+    {
+      "name": "Rodrigo Bentancur Colmán",
+      "number": 6,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 23
+    },
+    {
+      "name": "Federico Santiago Valverde Dipetta",
+      "number": 15,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 54
+    },
+    {
+      "name": "Luis Alberto Suárez Díaz",
+      "number": 9,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 61
+    },
+    {
+      "name": "Darwin Gabriel Núñez Ribeiro",
+      "number": 11,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 53
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Uruguay won 2-0. Giorgian Daniel De Arrascaeta Benedetti (25'), Giorgian Daniel De Arrascaeta Benedetti (31')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Ghana and Uruguay (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Ghana and Uruguay (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Ghana and Uruguay (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Ghana and Uruguay (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Luis Alberto Suárez Díaz": "Luis Alberto Suárez Díaz at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Mohammed Kudus": "Mohammed Kudus at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "José María Giménez de Vargas": "José María Giménez de Vargas at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Thomas Teye Partey": "Thomas Teye Partey at 55/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Rodrigo Bentancur Colmán": "Rodrigo Bentancur Colmán at 23/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages.",
+    "Sergio Rochet Álvarez": "Sergio Rochet Álvarez at 31/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Jordan Ayew",
+      "attacker_team": "Ghana",
+      "defender": "Guillermo Varela Olivera",
+      "defender_team": "Uruguay",
+      "advantage": "Jordan Ayew",
+      "diff": "+15",
+      "critical": true
+    },
+    {
+      "attacker": "Iñaki Williams Arthuer",
+      "attacker_team": "Ghana",
+      "defender": "Mathías Olivera Miramontes",
+      "defender_team": "Uruguay",
+      "advantage": "Mathías Olivera Miramontes",
+      "diff": "-12",
+      "critical": false
+    },
+    {
+      "attacker": "Mohammed Kudus",
+      "attacker_team": "Ghana",
+      "defender": "Sebastián Coates Nión",
+      "defender_team": "Uruguay",
+      "advantage": "Sebastián Coates Nión",
+      "diff": "-11",
+      "critical": false
+    },
+    {
+      "attacker": "Darwin Gabriel Núñez Ribeiro",
+      "attacker_team": "Uruguay",
+      "defender": "Mohamed Salisu",
+      "defender_team": "Ghana",
+      "advantage": "Mohamed Salisu",
+      "diff": "-3",
+      "critical": false
+    },
+    {
+      "attacker": "Giorgian Daniel De Arrascaeta Benedetti",
+      "attacker_team": "Uruguay",
+      "defender": "Alidu Seidu",
+      "defender_team": "Ghana",
+      "advantage": "Giorgian Daniel De Arrascaeta Benedetti",
+      "diff": "+9",
+      "critical": false
+    },
+    {
+      "attacker": "Facundo Pellistri Rebollo",
+      "attacker_team": "Uruguay",
+      "defender": "Abdul Rahman Baba",
+      "defender_team": "Ghana",
+      "advantage": "Facundo Pellistri Rebollo",
+      "diff": "+11",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 18,
+      "type": "yellow_card",
+      "description": "Darwin Gabriel Núñez Ribeiro (Uruguay) shown a yellow card card — Bad Behaviour",
+      "player": "Darwin Gabriel Núñez Ribeiro"
+    },
+    {
+      "minute": 25,
+      "type": "goal",
+      "description": "Giorgian Daniel De Arrascaeta Benedetti scores for Uruguay!",
+      "player": "Giorgian Daniel De Arrascaeta Benedetti"
+    },
+    {
+      "minute": 31,
+      "type": "goal",
+      "description": "Giorgian Daniel De Arrascaeta Benedetti scores for Uruguay!",
+      "player": "Giorgian Daniel De Arrascaeta Benedetti"
+    },
+    {
+      "minute": 33,
+      "type": "substitution",
+      "description": "Matías Vecino Falero replaces Rodrigo Bentancur Colmán (Injury)",
+      "player": "Matías Vecino Falero"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Osman Bukari replaces André Ayew Pelé (Tactical)",
+      "player": "Osman Bukari"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Kamaldeen Sulemana replaces Jordan Ayew (Tactical)",
+      "player": "Kamaldeen Sulemana"
+    },
+    {
+      "minute": 59,
+      "type": "yellow_card",
+      "description": "Luis Alberto Suárez Díaz (Uruguay) shown a yellow card card — Bad Behaviour",
+      "player": "Luis Alberto Suárez Díaz"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Edinson Roberto Cavani Gómez replaces Luis Alberto Suárez Díaz (Tactical)",
+      "player": "Edinson Roberto Cavani Gómez"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Diego Nicolás De La Cruz Arcosa replaces Facundo Pellistri Rebollo (Tactical)",
+      "player": "Diego Nicolás De La Cruz Arcosa"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Antoine Semenyo replaces Iñaki Williams Arthuer (Tactical)",
+      "player": "Antoine Semenyo"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Daniel-Kofi Kyereh replaces Salis Abdul Samed (Tactical)",
+      "player": "Daniel-Kofi Kyereh"
+    },
+    {
+      "minute": 79,
+      "type": "substitution",
+      "description": "Agustín Canobbio Graviz replaces Giorgian Daniel De Arrascaeta Benedetti (Tactical)",
+      "player": "Agustín Canobbio Graviz"
+    },
+    {
+      "minute": 79,
+      "type": "substitution",
+      "description": "Maximiliano Gómez González replaces Darwin Gabriel Núñez Ribeiro (Tactical)",
+      "player": "Maximiliano Gómez González"
+    },
+    {
+      "minute": 85,
+      "type": "yellow_card",
+      "description": "Kamaldeen Sulemana (Ghana) shown a yellow card card — Foul",
+      "player": "Kamaldeen Sulemana"
+    },
+    {
+      "minute": 86,
+      "type": "yellow_card",
+      "description": "Sebastián Coates Nión (Uruguay) shown a yellow card card — Foul",
+      "player": "Sebastián Coates Nión"
+    },
+    {
+      "minute": 97,
+      "type": "substitution",
+      "description": "Abdul Fatawu Issahaku replaces Mohammed Kudus (Tactical)",
+      "player": "Abdul Fatawu Issahaku"
+    },
+    {
+      "minute": 98,
+      "type": "yellow_card",
+      "description": "Alidu Seidu (Ghana) shown a yellow card card — Foul",
+      "player": "Alidu Seidu"
+    },
+    {
+      "minute": 100,
+      "type": "yellow_card",
+      "description": "José María Giménez de Vargas (Uruguay) shown a yellow card card — Bad Behaviour",
+      "player": "José María Giménez de Vargas"
+    },
+    {
+      "minute": 100,
+      "type": "yellow_card",
+      "description": "Edinson Roberto Cavani Gómez (Uruguay) shown a yellow card card — Bad Behaviour",
+      "player": "Edinson Roberto Cavani Gómez"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE DUGOUT — World Cup 2022 Turning Points</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="stylesheet" href="/static/css/index.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+</head>
+<body>
+  <div class="app">
+
+    <!-- ===== LEFT SIDEBAR ===== -->
+    <aside class="left-sidebar">
+      <div class="logo-section">
+        <div class="logo-icon">◇</div>
+        <div>
+          <div class="logo-text">THE DUGOUT</div>
+          <div class="logo-sub">Understand the Game</div>
+        </div>
+      </div>
+
+      <nav class="nav-items" id="stage-nav">
+        <a class="nav-item active" data-stage="All" onclick="setStageFilter('All')">
+          <span class="nav-dot">●</span> Home
+        </a>
+      </nav>
+
+      <div class="progress-section">
+        <h4 class="progress-heading">LEARNING PROGRESS</h4>
+        <div class="progress-item">
+          <div class="progress-row">
+            <span class="progress-label">Scenarios Completed</span>
+            <span class="progress-value" id="scenarios-done">0/64</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:0%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-row">
+            <span class="progress-label">Concepts Learned</span>
+            <span class="progress-value">0/12</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:0%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-row">
+            <span class="progress-label">Tactical IQ</span>
+            <span class="progress-value">—</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:0%"></div></div>
+        </div>
+      </div>
+
+      <div class="free-card">
+        <div class="free-badge">100% FREE</div>
+        <p class="free-text">The Dugout is and will always be free.</p>
+        <p class="free-sub">Football understanding for everyone.</p>
+        <div class="stadium-art">
+          <div class="stadium-roof"></div>
+          <div class="stadium-arc"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===== CENTER CONTENT ===== -->
+    <main class="center-content">
+
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <h1 class="hero-title">THE DUGOUT</h1>
+        <p class="hero-sub">You are the manager.</p>
+        <p class="hero-desc">Step into football's biggest moments and learn the tactical decisions behind them.</p>
+        <div class="hero-stats">
+          <span class="hero-stat">64 World Cup 2022 turning points</span>
+          <span class="hero-stat">60 seconds to decide</span>
+        </div>
+        <div class="hero-actions">
+          <a href="/static/game.html?scenario=argentina-france-2022" class="hero-btn primary">★ Start From Final</a>
+          <button class="hero-btn secondary" onclick="document.getElementById('scenario-grid').scrollIntoView({behavior:'smooth'})">Browse All Matches</button>
+        </div>
+      </div>
+
+      <!-- Tournament Timeline -->
+      <div class="timeline-section">
+        <div class="timeline" id="tournament-timeline"></div>
+      </div>
+
+      <!-- Scenario Browser -->
+      <div class="scenario-browser">
+        <div class="browser-header">
+          <h2 class="browser-title">Match Scenarios</h2>
+          <div class="browser-count" id="match-count">0 matches</div>
+        </div>
+        <div class="scenario-grid" id="scenario-grid">
+          <div class="spinner"></div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- ===== RIGHT PANEL ===== -->
+    <aside class="right-panel">
+      <div class="panel-card welcome-card">
+        <h3 class="panel-title">Your Journey</h3>
+        <p class="panel-text">Every decision you make will be analysed and compared to what the real manager did.</p>
+        <div class="journey-stats">
+          <div class="journey-stat">
+            <span class="journey-num" id="total-decided">0</span>
+            <span class="journey-label">Decisions Made</span>
+          </div>
+          <div class="journey-stat">
+            <span class="journey-num" id="total-correct">0</span>
+            <span class="journey-label">Matched Manager</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-card">
+        <h3 class="panel-title">About</h3>
+        <p class="panel-text">Each scenario captures a real turning point from the 2022 FIFA World Cup. Your job is to analyse the situation and make the tactical decision you think is right.</p>
+        <p class="panel-text">After you choose, you will see what the actual manager decided and learn why.</p>
+      </div>
+
+      <div class="panel-card">
+        <h3 class="panel-title">How It Works</h3>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">1</span>
+            <span class="step-text">Choose a match moment</span>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <span class="step-text">Analyse the tactical situation</span>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <span class="step-text">Make your decision</span>
+          </div>
+          <div class="step">
+            <span class="step-num">4</span>
+            <span class="step-text">Learn from the outcome</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-card start-card">
+        <a href="/static/game.html?scenario=argentina-france-2022" class="start-btn">★ Start From Final</a>
+      </div>
+    </aside>
+
+  </div>
+
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/scenarios.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      const scenarios = await listScenarios();
+      renderScenarioCards(scenarios);
+      buildStageNav(scenarios);
+      buildTimeline(scenarios);
+      updateProgress(scenarios);
+    } catch (e) {
+      document.getElementById('scenario-grid').innerHTML = '<div class="scenario-empty">Could not load matches.</div>';
+    }
+  });
+
+  function buildStageNav(scenarios) {
+    const stages = ['Group Stage', 'Round of 16', 'Quarter-finals', 'Semi-finals', '3rd Place Final', 'Final'];
+    const icons = {'Group Stage': '📋', 'Round of 16': '🥈', 'Quarter-finals': '⚔', 'Semi-finals': '🔥', '3rd Place Final': '🥉', 'Final': '🏆'};
+    const nav = document.getElementById('stage-nav');
+    stages.forEach(stage => {
+      const count = scenarios.filter(s => (s.meta && s.meta.stage) === stage).length;
+      if (count === 0) return;
+      const a = document.createElement('a');
+      a.className = 'nav-item';
+      a.dataset.stage = stage;
+      a.innerHTML = `<span class="nav-dot">●</span> ${icons[stage] || ''} ${stage} <span class="nav-count">${count}</span>`;
+      a.onclick = () => setStageFilter(stage);
+      nav.appendChild(a);
+    });
+  }
+
+  function buildTimeline(scenarios) {
+    const stages = ['Group Stage', 'Round of 16', 'Quarter-finals', 'Semi-finals', '3rd Place Final', 'Final'];
+    const timeline = document.getElementById('tournament-timeline');
+    stages.forEach((stage, i) => {
+      const count = scenarios.filter(s => (s.meta && s.meta.stage) === stage).length;
+      if (count === 0) return;
+      const dot = document.createElement('div');
+      dot.className = 'tl-stage';
+      dot.innerHTML = `<div class="tl-dot"></div><div class="tl-label">${stage}</div><div class="tl-count">${count}</div>`;
+      if (i < stages.length - 1) {
+        const hasNext = stages.slice(i+1).some(s => scenarios.filter(x => (x.meta && x.meta.stage) === s).length > 0);
+        if (hasNext) dot.innerHTML += '<div class="tl-line"></div>';
+      }
+      timeline.appendChild(dot);
+    });
+  }
+
+  function updateProgress(scenarios) {
+    const decisions = JSON.parse(localStorage.getItem('dugout_decisions') || '{}');
+    const decided = Object.keys(decisions).length;
+    document.getElementById('scenarios-done').textContent = `${decided}/${scenarios.length}`;
+    document.querySelector('.progress-fill').style.width = `${(decided/scenarios.length)*100}%`;
+    document.getElementById('total-decided').textContent = decided;
+
+    let correct = 0;
+    scenarios.forEach(s => {
+      if (decisions[s.id] && s.real_decision && decisions[s.id] === s.real_decision.option) correct++;
+    });
+    document.getElementById('total-correct').textContent = correct;
+  }
+  </script>
+</body>
+</html>

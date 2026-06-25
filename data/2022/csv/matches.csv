@@ -1,0 +1,65 @@
+match_id,date,kickoff,stage,group,match_week,home_team,away_team,home_score,away_score,home_manager,away_manager,stadium,stadium_country,referee,referee_country,home_possession_pct_proxy,away_possession_pct_proxy
+3857286,2022-11-20,16:00:00.000,Group Stage,A,1,Qatar,Ecuador,0,2,Félix Sánchez Bas,Gustavo Julio Alfaro,Al Bayt Stadium,Qatar,Daniele Orsato,Italy,47.4,52.6
+3857271,2022-11-21,13:00:00.000,Group Stage,B,1,England,Iran,6,2,Gareth Southgate,Carlos Manuel Brito Leal Queiróz,Sheikh Khalifa International Stadium,Qatar,Raphael Claus,Brazil,77.4,22.6
+3857285,2022-11-21,16:00:00.000,Group Stage,A,1,Senegal,Netherlands,0,2,Aliou Cissé,Louis van Gaal,Al Thumama Stadium,Qatar,Wilton Pereira Sampaio,Brazil,46.7,53.3
+3857282,2022-11-21,19:00:00.000,Group Stage,B,1,United States,Wales,1,1,Gregg Berhalter,Robert Page,Ahmad bin Ali Stadium,Qatar,Abdulrahman Ibrahim Al Jassim,Qatar,57.9,42.1
+3857300,2022-11-22,10:00:00.000,Group Stage,C,1,Argentina,Saudi Arabia,1,2,Lionel Sebastián Scaloni,Hervé Renard,Lusail Stadium,Qatar,Slavko Vinčić,Slovenia,69.3,30.7
+3857254,2022-11-22,13:00:00.000,Group Stage,D,1,Denmark,Tunisia,0,0,Kasper Hjulmand,Jalel Kadri,Education City Stadium ,Qatar,César Arturo Ramos Palazuelos,Mexico,60.8,39.2
+3857265,2022-11-22,16:00:00.000,Group Stage,C,1,Mexico,Poland,0,0,Gerardo Daniel Martino,Czesław Michniewicz,Stadium 974,Qatar,Chris Beath,Australia,60.0,40.0
+3857279,2022-11-22,19:00:00.000,Group Stage,D,1,France,Australia,4,1,Didier Deschamps,Graham James Arnold,Al Janoub Stadium   ,Qatar,Victor Miguel de Freitas Gomes,South Africa,61.6,38.4
+3857277,2022-11-23,10:00:00.000,Group Stage,,1,Morocco,Croatia,0,0,Walid Regragui,Zlatko Dalić,Al Bayt Stadium,Qatar,Fernando Andrés Rapallini,Argentina,35.9,64.1
+3857284,2022-11-23,13:00:00.000,Group Stage,E,1,Germany,Japan,1,2,Hans-Dieter Flick,Hajime Moriyasu,Sheikh Khalifa International Stadium,Qatar,Ivan Arcides Barton Cisneros,El Salvador,73.8,26.2
+3857291,2022-11-23,16:00:00.000,Group Stage,E,1,Spain,Costa Rica,7,0,Luis Enrique Martínez García,Luis Fernando Suárez Guzman,Al Thumama Stadium,Qatar,,,81.3,18.7
+3857268,2022-11-23,19:00:00.000,Group Stage,F,1,Belgium,Canada,1,0,Roberto Martínez Montoliú,John Herdman,Ahmad bin Ali Stadium,Qatar,Janny Sikazwe,Zambia,52.7,47.3
+3857290,2022-11-24,10:00:00.000,Group Stage,G,1,Switzerland,Cameroon,1,0,Murat Yakin,Rigobert Song Bahanag,Al Janoub Stadium   ,Qatar,Facundo Tello Figueroa,Argentina,50.7,49.3
+3857287,2022-11-24,13:00:00.000,Group Stage,H,1,Uruguay,South Korea,0,0,Diego Martín Alonso López,Paulo Jorge Gomes Bento,Education City Stadium ,Qatar,Clément Turpin,France,55.2,44.8
+3857298,2022-11-24,16:00:00.000,Group Stage,H,1,Portugal,Ghana,3,2,Fernando Manuel Fernandes da Costa Santos,Otto Addo,Stadium 974,Qatar,Ismail Elfath,United States of America,61.6,38.4
+3857258,2022-11-24,19:00:00.000,Group Stage,G,1,Brazil,Serbia,2,0,Adenor Leonardo Bacchi,Dragan Stojković,Lusail Stadium,Qatar,Alireza Faghani,Australia,58.1,41.9
+3857273,2022-11-25,10:00:00.000,Group Stage,B,2,Wales,Iran,0,2,Robert Page,Carlos Manuel Brito Leal Queiróz,Ahmad bin Ali Stadium,Qatar,Mario Alberto Escobar Toca,Guatemala,60.6,39.4
+3857301,2022-11-25,13:00:00.000,Group Stage,A,2,Qatar,Senegal,1,3,Félix Sánchez Bas,Aliou Cissé,Al Thumama Stadium,Qatar,Antonio Miguel Mateu Lahoz,Spain,45.2,54.8
+3857274,2022-11-25,16:00:00.000,Group Stage,A,2,Netherlands,Ecuador,1,1,Louis van Gaal,Gustavo Julio Alfaro,Sheikh Khalifa International Stadium,Qatar,Mustapha Ghorbal,Algeria,54.4,45.6
+3857272,2022-11-25,19:00:00.000,Group Stage,B,2,England,United States,0,0,Gareth Southgate,Gregg Berhalter,Al Bayt Stadium,Qatar,Jesús Valenzuela Sáez,Venezuela (Bolivarian Republic),56.1,43.9
+3857288,2022-11-26,10:00:00.000,Group Stage,D,2,Tunisia,Australia,0,1,Jalel Kadri,Graham James Arnold,Al Janoub Stadium   ,Qatar,Daniel Siebert,Germany,57.6,42.4
+3857297,2022-11-26,13:00:00.000,Group Stage,C,2,Poland,Saudi Arabia,2,0,Czesław Michniewicz,Hervé Renard,Education City Stadium ,Qatar,Wilton Pereira Sampaio,Brazil,36.7,63.3
+3857266,2022-11-26,16:00:00.000,Group Stage,D,2,France,Denmark,2,1,Didier Deschamps,Kasper Hjulmand,Stadium 974,Qatar,Szymon Marciniak,Poland,48.8,51.2
+3857289,2022-11-26,19:00:00.000,Group Stage,C,2,Argentina,Mexico,2,0,Lionel Sebastián Scaloni,Gerardo Daniel Martino,Lusail Stadium,Qatar,Daniele Orsato,Italy,58.5,41.5
+3857295,2022-11-27,10:00:00.000,Group Stage,E,2,Japan,Costa Rica,0,1,Hajime Moriyasu,Luis Fernando Suárez Guzman,Ahmad bin Ali Stadium,Qatar,Michael Oliver,England,56.8,43.2
+3857283,2022-11-27,13:00:00.000,Group Stage,F,2,Belgium,Morocco,0,2,Roberto Martínez Montoliú,Walid Regragui,Al Thumama Stadium,Qatar,César Arturo Ramos Palazuelos,Mexico,67.0,33.0
+3857281,2022-11-27,16:00:00.000,Group Stage,F,2,Croatia,Canada,4,1,Zlatko Dalić,John Herdman,Sheikh Khalifa International Stadium,Qatar,Andrés Matonte,Uruguay,48.9,51.1
+3857263,2022-11-27,19:00:00.000,Group Stage,E,2,Spain,Germany,1,1,Luis Enrique Martínez García,Hans-Dieter Flick,Al Bayt Stadium,Qatar,Danny Desmond Makkelie,Netherlands,64.1,35.9
+3857259,2022-11-28,10:00:00.000,Group Stage,G,2,Cameroon,Serbia,3,3,Rigobert Song Bahanag,Dragan Stojković,Al Janoub Stadium   ,Qatar,Mohamed Abdulla Hassan Mohd,United Arab Emirates,42.4,57.6
+3857299,2022-11-28,13:00:00.000,Group Stage,H,2,South Korea,Ghana,2,3,Paulo Jorge Gomes Bento,Otto Addo,Education City Stadium ,Qatar,Anthony Taylor,England,64.0,36.0
+3857269,2022-11-28,16:00:00.000,Group Stage,G,2,Brazil,Switzerland,1,0,Adenor Leonardo Bacchi,Murat Yakin,Stadium 974,Qatar,Ivan Arcides Barton Cisneros,El Salvador,53.8,46.2
+3857270,2022-11-28,19:00:00.000,Group Stage,H,2,Portugal,Uruguay,2,0,Fernando Manuel Fernandes da Costa Santos,Diego Martín Alonso López,Lusail Stadium,Qatar,Alireza Faghani,Australia,58.8,41.2
+3857294,2022-11-29,15:00:00.000,Group Stage,A,3,Netherlands,Qatar,2,0,Louis van Gaal,Félix Sánchez Bas,Al Bayt Stadium,Qatar,Bakary Papa Gassama,Gambia,63.1,36.9
+3857267,2022-11-29,15:00:00.000,Group Stage,A,3,Ecuador,Senegal,1,2,Gustavo Julio Alfaro,Aliou Cissé,Sheikh Khalifa International Stadium,Qatar,Clément Turpin,France,59.9,40.1
+3857278,2022-11-29,19:00:00.000,Group Stage,B,3,Iran,United States,0,1,Carlos Manuel Brito Leal Queiróz,Gregg Berhalter,Al Thumama Stadium,Qatar,Antonio Miguel Mateu Lahoz,Spain,49.9,50.1
+3857261,2022-11-29,19:00:00.000,Group Stage,B,3,Wales,England,0,3,Robert Page,Gareth Southgate,Ahmad bin Ali Stadium,Qatar,Slavko Vinčić,Slovenia,35.8,64.2
+3857275,2022-11-30,15:00:00.000,Group Stage,D,3,Tunisia,France,1,0,Jalel Kadri,Didier Deschamps,Education City Stadium ,Qatar,Matthew Conger,New Zealand,35.3,64.7
+3857257,2022-11-30,15:00:00.000,Group Stage,D,3,Australia,Denmark,1,0,Graham James Arnold,Kasper Hjulmand,Al Janoub Stadium   ,Qatar,Mustapha Ghorbal,Algeria,32.9,67.1
+3857260,2022-11-30,19:00:00.000,Group Stage,C,3,Saudi Arabia,Mexico,1,2,Hervé Renard,Gerardo Daniel Martino,Lusail Stadium,Qatar,Michael Oliver,England,39.8,60.2
+3857264,2022-11-30,19:00:00.000,Group Stage,C,3,Poland,Argentina,0,2,Czesław Michniewicz,Lionel Sebastián Scaloni,Stadium 974,Qatar,Danny Desmond Makkelie,Netherlands,27.0,73.0
+3857276,2022-12-01,15:00:00.000,Group Stage,F,3,Canada,Morocco,1,2,John Herdman,Walid Regragui,Al Thumama Stadium,Qatar,Raphael Claus,Brazil,58.8,41.2
+3857296,2022-12-01,15:00:00.000,Group Stage,F,3,Croatia,Belgium,0,0,Zlatko Dalić,Roberto Martínez Montoliú,Ahmad bin Ali Stadium,Qatar,Anthony Taylor,England,49.2,50.8
+3857255,2022-12-01,19:00:00.000,Group Stage,E,3,Japan,Spain,2,1,Hajime Moriyasu,Luis Enrique Martínez García,Sheikh Khalifa International Stadium,Qatar,Victor Miguel de Freitas Gomes,South Africa,18.8,81.2
+3857292,2022-12-01,19:00:00.000,Group Stage,E,3,Costa Rica,Germany,2,4,Luis Fernando Suárez Guzman,Hans-Dieter Flick,Al Bayt Stadium,Qatar,Stéphanie Frappart,France,32.8,67.2
+3857293,2022-12-02,15:00:00.000,Group Stage,H,3,Ghana,Uruguay,0,2,Otto Addo,Diego Martín Alonso López,Al Janoub Stadium   ,Qatar,Daniel Siebert,Germany,51.2,48.8
+3857262,2022-12-02,15:00:00.000,Group Stage,H,3,South Korea,Portugal,2,1,Paulo Jorge Gomes Bento,Fernando Manuel Fernandes da Costa Santos,Education City Stadium ,Qatar,Facundo Tello Figueroa,Argentina,38.5,61.5
+3857256,2022-12-02,19:00:00.000,Group Stage,G,3,Serbia,Switzerland,2,3,Dragan Stojković,Murat Yakin,Stadium 974,Qatar,Fernando Andrés Rapallini,Argentina,53.9,46.1
+3857280,2022-12-02,19:00:00.000,Group Stage,G,3,Cameroon,Brazil,1,0,Rigobert Song Bahanag,Adenor Leonardo Bacchi,Lusail Stadium,Qatar,Ismail Elfath,United States of America,36.0,64.0
+3869117,2022-12-03,17:00:00.000,Round of 16,,4,Netherlands,United States,3,1,Louis van Gaal,Gregg Berhalter,Sheikh Khalifa International Stadium,Qatar,Wilton Pereira Sampaio,Brazil,41.5,58.5
+3869151,2022-12-03,21:00:00.000,Round of 16,,4,Argentina,Australia,2,1,Lionel Sebastián Scaloni,Graham James Arnold,Ahmad bin Ali Stadium,Qatar,Szymon Marciniak,Poland,60.4,39.6
+3869152,2022-12-04,17:00:00.000,Round of 16,,4,France,Poland,3,1,Didier Deschamps,Czesław Michniewicz,Al Thumama Stadium,Qatar,Jesús Valenzuela Sáez,Venezuela (Bolivarian Republic),54.9,45.1
+3869118,2022-12-04,21:00:00.000,Round of 16,,4,England,Senegal,3,0,Gareth Southgate,Aliou Cissé,Al Bayt Stadium,Qatar,Ivan Arcides Barton Cisneros,El Salvador,60.5,39.5
+3869219,2022-12-05,17:00:00.000,Round of 16,,4,Japan,Croatia,1,1,Hajime Moriyasu,Zlatko Dalić,Al Janoub Stadium   ,Qatar,Ismail Elfath,United States of America,42.2,57.8
+3869253,2022-12-05,21:00:00.000,Round of 16,,4,Brazil,South Korea,4,1,Adenor Leonardo Bacchi,Paulo Jorge Gomes Bento,Stadium 974,Qatar,Clément Turpin,France,53.6,46.4
+3869220,2022-12-06,17:00:00.000,Round of 16,,4,Morocco,Spain,0,0,Hoalid Regragui,Luis Enrique Martínez García,Education City Stadium ,Qatar,Fernando Andrés Rapallini,Argentina,25.5,74.5
+3869254,2022-12-06,21:00:00.000,Round of 16,,4,Portugal,Switzerland,6,1,Fernando Manuel Fernandes da Costa Santos,Murat Yakin,Lusail Stadium,Qatar,César Arturo Ramos Palazuelos,Mexico,48.0,52.0
+3869420,2022-12-09,17:00:00.000,Quarter-finals,,5,Croatia,Brazil,1,1,Zlatko Dalić,Telê Santana da Silva,Education City Stadium ,Qatar,Michael Oliver,England,49.7,50.3
+3869321,2022-12-09,19:00:00.000,Quarter-finals,,5,Netherlands,Argentina,2,2,Louis van Gaal,Lionel Sebastián Scaloni,Lusail Stadium,Qatar,Antonio Miguel Mateu Lahoz,Spain,51.9,48.1
+3869486,2022-12-10,17:00:00.000,Quarter-finals,,5,Morocco,Portugal,1,0,Hoalid Regragui,Fernando Manuel Fernandes da Costa Santos,Al Thumama Stadium,Qatar,Facundo Tello Figueroa,Argentina,25.4,74.6
+3869354,2022-12-10,21:00:00.000,Quarter-finals,,5,England,France,1,2,Gareth Southgate,Didier Deschamps,Al Bayt Stadium,Qatar,Wilton Pereira Sampaio,Brazil,57.3,42.7
+3869519,2022-12-13,21:00:00.000,Semi-finals,,6,Argentina,Croatia,3,0,Lionel Sebastián Scaloni,Zlatko Dalić,Lusail Stadium,Qatar,Daniele Orsato,Italy,40.0,60.0
+3869552,2022-12-14,21:00:00.000,Semi-finals,,6,France,Morocco,2,0,Didier Deschamps,Hoalid Regragui,Al Bayt Stadium,Qatar,César Arturo Ramos Palazuelos,Mexico,38.6,61.4
+3869684,2022-12-17,17:00:00.000,3rd Place Final,,7,Croatia,Morocco,2,1,Zlatko Dalić,Walid Regragui,Sheikh Khalifa International Stadium,Qatar,Abdulrahman Ibrahim Al Jassim,Qatar,50.8,49.2
+3869685,2022-12-18,17:00:00.000,Final,,7,Argentina,France,3,3,Lionel Sebastián Scaloni,Didier Deschamps,Lusail Stadium,Qatar,Szymon Marciniak,Poland,54.9,45.1

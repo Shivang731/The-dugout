@@ -1,0 +1,363 @@
+{
+  "id": "wales-iran-2022",
+  "meta": {
+    "title": "Wales vs Iran — Group Stage",
+    "trigger_label": "Second half — Wales trail 0-2",
+    "difficulty": 1,
+    "order": 38,
+    "stage": "Group Stage",
+    "group": "B",
+    "date": "2022-11-25",
+    "stadium": "Ahmad bin Ali Stadium"
+  },
+  "scoreline": {
+    "display": "Wales 0 – 2 Iran",
+    "home": 0,
+    "away": 2
+  },
+  "context": "A pivotal moment in this group stage match. Wales trail Iran 0-2. Something has to change. The manager must decide how to respond.",
+  "home_team": "Wales",
+  "away_team": "Iran",
+  "home_formation": "5-3-2",
+  "away_formation": "4-1-4-1",
+  "home_players": [
+    {
+      "name": "Wayne Hennessey",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 30
+    },
+    {
+      "name": "Ben Davies",
+      "number": 4,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Chris Mepham",
+      "number": 5,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Joe Rodon",
+      "number": 6,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Connor Roberts",
+      "number": 14,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 43
+    },
+    {
+      "name": "Neco Williams",
+      "number": 3,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 51
+    },
+    {
+      "name": "Ethan Ampadu",
+      "number": 15,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 46
+    },
+    {
+      "name": "Aaron Ramsey",
+      "number": 10,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 47
+    },
+    {
+      "name": "Harry Wilson",
+      "number": 8,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 53
+    },
+    {
+      "name": "Kieffer Roberto Francisco Moore",
+      "number": 13,
+      "pos": "LCF",
+      "x": 0.28,
+      "y": 0.57,
+      "fatigue": 53
+    },
+    {
+      "name": "Gareth Frank Bale",
+      "number": 11,
+      "pos": "RCF",
+      "x": 0.72,
+      "y": 0.57,
+      "fatigue": 55
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Seyed Hossein Hosseini",
+      "number": 24,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 41
+    },
+    {
+      "name": "Ramin Rezaeian",
+      "number": 23,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 47
+    },
+    {
+      "name": "Milad Mohammadi",
+      "number": 5,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 42
+    },
+    {
+      "name": "Morteza Pouraliganji",
+      "number": 8,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 50
+    },
+    {
+      "name": "Seyed Majid Hosseini",
+      "number": 19,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Ehsan Hajsafi",
+      "number": 3,
+      "pos": "LM",
+      "x": 0.04,
+      "y": 0.4,
+      "fatigue": 61
+    },
+    {
+      "name": "Ali Gholizadeh",
+      "number": 17,
+      "pos": "RM",
+      "x": 0.96,
+      "y": 0.4,
+      "fatigue": 56
+    },
+    {
+      "name": "Saeid Ezatolahi Afagh",
+      "number": 6,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 49
+    },
+    {
+      "name": "Ahmad Nourollahi",
+      "number": 21,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 51
+    },
+    {
+      "name": "Mehdi Taremi",
+      "number": 9,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 52
+    },
+    {
+      "name": "Sardar Azmoun",
+      "number": 20,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 65
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Iran won 2-0. Roozbeh Cheshmi (97'), Ramin Rezaeian (100')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Wales and Iran (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Wales and Iran (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Wales and Iran (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Wales and Iran (0-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Sardar Azmoun": "Sardar Azmoun at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Ehsan Hajsafi": "Ehsan Hajsafi at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Ali Gholizadeh": "Ali Gholizadeh at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Gareth Frank Bale": "Gareth Frank Bale at 55/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Wayne Hennessey": "Wayne Hennessey at 30/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Gareth Frank Bale",
+      "attacker_team": "Wales",
+      "defender": "Seyed Majid Hosseini",
+      "defender_team": "Iran",
+      "advantage": "Gareth Frank Bale",
+      "diff": "+14",
+      "critical": true
+    },
+    {
+      "attacker": "Sardar Azmoun",
+      "attacker_team": "Iran",
+      "defender": "Joe Rodon",
+      "defender_team": "Wales",
+      "advantage": "Sardar Azmoun",
+      "diff": "+13",
+      "critical": true
+    },
+    {
+      "attacker": "Mehdi Taremi",
+      "attacker_team": "Iran",
+      "defender": "Ethan Ampadu",
+      "defender_team": "Wales",
+      "advantage": "Mehdi Taremi",
+      "diff": "+5",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 47,
+      "type": "yellow_card",
+      "description": "Joe Rodon (Wales) shown a yellow card card — Foul",
+      "player": "Joe Rodon"
+    },
+    {
+      "minute": 56,
+      "type": "substitution",
+      "description": "Brennan Johnson replaces Connor Roberts (Tactical)",
+      "player": "Brennan Johnson"
+    },
+    {
+      "minute": 56,
+      "type": "substitution",
+      "description": "Daniel James replaces Harry Wilson (Tactical)",
+      "player": "Daniel James"
+    },
+    {
+      "minute": 67,
+      "type": "substitution",
+      "description": "Karim Ansarifard replaces Sardar Azmoun (Tactical)",
+      "player": "Karim Ansarifard"
+    },
+    {
+      "minute": 75,
+      "type": "substitution",
+      "description": "Alireza Jahanbakhsh replaces Ali Gholizadeh (Tactical)",
+      "player": "Alireza Jahanbakhsh"
+    },
+    {
+      "minute": 75,
+      "type": "substitution",
+      "description": "Mehdi Torabi replaces Ehsan Hajsafi (Tactical)",
+      "player": "Mehdi Torabi"
+    },
+    {
+      "minute": 76,
+      "type": "substitution",
+      "description": "Joe Allen replaces Ethan Ampadu (Tactical)",
+      "player": "Joe Allen"
+    },
+    {
+      "minute": 77,
+      "type": "substitution",
+      "description": "Roozbeh Cheshmi replaces Ahmad Nourollahi (Injury)",
+      "player": "Roozbeh Cheshmi"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Ali Karimi replaces Saeid Ezatolahi Afagh (Injury)",
+      "player": "Ali Karimi"
+    },
+    {
+      "minute": 83,
+      "type": "yellow_card",
+      "description": "Wayne Hennessey (Wales) shown a red card card — Foul",
+      "player": "Wayne Hennessey"
+    },
+    {
+      "minute": 86,
+      "type": "substitution",
+      "description": "Daniel Ward replaces Aaron Ramsey (Tactical)",
+      "player": "Daniel Ward"
+    },
+    {
+      "minute": 94,
+      "type": "yellow_card",
+      "description": "Ramin Rezaeian (Iran) shown a yellow card card — Bad Behaviour",
+      "player": "Ramin Rezaeian"
+    },
+    {
+      "minute": 94,
+      "type": "yellow_card",
+      "description": "Alireza Jahanbakhsh (Iran) shown a yellow card card — Foul",
+      "player": "Alireza Jahanbakhsh"
+    },
+    {
+      "minute": 97,
+      "type": "goal",
+      "description": "Roozbeh Cheshmi scores for Iran!",
+      "player": "Roozbeh Cheshmi"
+    },
+    {
+      "minute": 100,
+      "type": "goal",
+      "description": "Ramin Rezaeian scores for Iran!",
+      "player": "Ramin Rezaeian"
+    }
+  ]
+}

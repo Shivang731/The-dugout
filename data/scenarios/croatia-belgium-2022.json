@@ -1,0 +1,353 @@
+{
+  "id": "croatia-belgium-2022",
+  "meta": {
+    "title": "Croatia vs Belgium — Group Stage",
+    "trigger_label": "Second half — Croatia locked at 0-0, a moment of brilliance needed",
+    "difficulty": 1,
+    "order": 54,
+    "stage": "Group Stage",
+    "group": "F",
+    "date": "2022-12-01",
+    "stadium": "Ahmad bin Ali Stadium"
+  },
+  "scoreline": {
+    "display": "Croatia 0 – 0 Belgium",
+    "home": 0,
+    "away": 0
+  },
+  "context": "A tense moment in this group stage match. Croatia and Belgium are locked at 0-0. One tactical shift could be the difference between glory and heartbreak.",
+  "home_team": "Croatia",
+  "away_team": "Belgium",
+  "home_formation": "4-3-3",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Dominik Livaković",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 37
+    },
+    {
+      "name": "Borna Sosa",
+      "number": 19,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 41
+    },
+    {
+      "name": "Josip Juranović",
+      "number": 22,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "Dejan Lovren",
+      "number": 6,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Joško Gvardiol",
+      "number": 20,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Marcelo Brozović",
+      "number": 11,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 60
+    },
+    {
+      "name": "Mateo Kovačić",
+      "number": 8,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 50
+    },
+    {
+      "name": "Luka Modrić",
+      "number": 10,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 46
+    },
+    {
+      "name": "Andrej Kramarić",
+      "number": 9,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 56
+    },
+    {
+      "name": "Ivan Perišić",
+      "number": 4,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 58
+    },
+    {
+      "name": "Marko Livaja",
+      "number": 14,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 53
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Thibaut Courtois",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 45
+    },
+    {
+      "name": "Thomas Meunier",
+      "number": 15,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 53
+    },
+    {
+      "name": "Timothy Castagne",
+      "number": 21,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 55
+    },
+    {
+      "name": "Jan Vertonghen",
+      "number": 5,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Toby Alderweireld",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Axel Witsel",
+      "number": 6,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 57
+    },
+    {
+      "name": "Leander Dendoncker",
+      "number": 19,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 53
+    },
+    {
+      "name": "Dries Mertens",
+      "number": 14,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 42
+    },
+    {
+      "name": "Kevin De Bruyne",
+      "number": 7,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 55
+    },
+    {
+      "name": "Yannick Ferreira Carrasco",
+      "number": 11,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 64
+    },
+    {
+      "name": "Leandro Trossard",
+      "number": 17,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 49
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Make an attacking substitution to break the deadlock",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Push the full-backs higher, create overloads out wide",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Stay patient, maintain shape, look for a moment of magic",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Go ultra-attacking — bring on an extra striker",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "The match ended 0-0. No goals."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Make an attacking substitution to break the deadlock**\nRisk level: High. This is the positive choice. An attacking substitution signals intent and can break the deadlock. In the context of this group stage match between Croatia and Belgium (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Push the full-backs higher, create overloads out wide**\nRisk level: Medium. This is the width-based approach. Overlapping full-backs create numerical advantages in wide areas. In the context of this group stage match between Croatia and Belgium (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Stay patient, maintain shape, look for a moment of magic**\nRisk level: Medium. This is the patient choice. Maintaining shape avoids risk but may not be enough to win. In the context of this group stage match between Croatia and Belgium (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Go ultra-attacking — bring on an extra striker**\nRisk level: Very High. This is the all-out attacking option. An extra striker increases goal threat but sacrifices midfield control. In the context of this group stage match between Croatia and Belgium (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Yannick Ferreira Carrasco": "Yannick Ferreira Carrasco at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Marcelo Brozović": "Marcelo Brozović at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Ivan Perišić": "Ivan Perišić at 58/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Axel Witsel": "Axel Witsel at 57/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed."
+  },
+  "matchups": [
+    {
+      "attacker": "Ivan Perišić",
+      "attacker_team": "Croatia",
+      "defender": "Thomas Meunier",
+      "defender_team": "Belgium",
+      "advantage": "Thomas Meunier",
+      "diff": "-6",
+      "critical": false
+    },
+    {
+      "attacker": "Yannick Ferreira Carrasco",
+      "attacker_team": "Belgium",
+      "defender": "Josip Juranović",
+      "defender_team": "Croatia",
+      "advantage": "Josip Juranović",
+      "diff": "-9",
+      "critical": true
+    },
+    {
+      "attacker": "Andrej Kramarić",
+      "attacker_team": "Croatia",
+      "defender": "Timothy Castagne",
+      "defender_team": "Belgium",
+      "advantage": "Andrej Kramarić",
+      "diff": "+7",
+      "critical": false
+    },
+    {
+      "attacker": "Kevin De Bruyne",
+      "attacker_team": "Belgium",
+      "defender": "Borna Sosa",
+      "defender_team": "Croatia",
+      "advantage": "Kevin De Bruyne",
+      "diff": "+11",
+      "critical": false
+    },
+    {
+      "attacker": "Marko Livaja",
+      "attacker_team": "Croatia",
+      "defender": "Toby Alderweireld",
+      "defender_team": "Belgium",
+      "advantage": "Toby Alderweireld",
+      "diff": "-1",
+      "critical": false
+    },
+    {
+      "attacker": "Leandro Trossard",
+      "attacker_team": "Belgium",
+      "defender": "Joško Gvardiol",
+      "defender_team": "Croatia",
+      "advantage": "Leandro Trossard",
+      "diff": "+9",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Romelu Lukaku Menama replaces Dries Mertens (Tactical)",
+      "player": "Romelu Lukaku Menama"
+    },
+    {
+      "minute": 58,
+      "type": "substitution",
+      "description": "Thorgan Hazard replaces Leandro Trossard (Tactical)",
+      "player": "Thorgan Hazard"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Bruno Petković replaces Marko Livaja (Tactical)",
+      "player": "Bruno Petković"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Mario Pašalić replaces Andrej Kramarić (Tactical)",
+      "player": "Mario Pašalić"
+    },
+    {
+      "minute": 65,
+      "type": "yellow_card",
+      "description": "Leander Dendoncker (Belgium) shown a yellow card card — Foul",
+      "player": "Leander Dendoncker"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Jeremy Doku replaces Yannick Ferreira Carrasco (Tactical)",
+      "player": "Jeremy Doku"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "description": "Youri Tielemans replaces Leander Dendoncker (Tactical)",
+      "player": "Youri Tielemans"
+    },
+    {
+      "minute": 86,
+      "type": "substitution",
+      "description": "Eden Hazard replaces Thomas Meunier (Tactical)",
+      "player": "Eden Hazard"
+    },
+    {
+      "minute": 90,
+      "type": "substitution",
+      "description": "Lovro Majer replaces Mateo Kovačić (Tactical)",
+      "player": "Lovro Majer"
+    }
+  ]
+}

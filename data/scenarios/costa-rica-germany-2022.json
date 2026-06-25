@@ -1,0 +1,393 @@
+{
+  "id": "costa-rica-germany-2022",
+  "meta": {
+    "title": "Costa Rica vs Germany — Group Stage",
+    "trigger_label": "Second half — Costa Rica trail 2-4",
+    "difficulty": 1,
+    "order": 47,
+    "stage": "Group Stage",
+    "group": "E",
+    "date": "2022-12-01",
+    "stadium": "Al Bayt Stadium"
+  },
+  "scoreline": {
+    "display": "Costa Rica 2 – 4 Germany",
+    "home": 2,
+    "away": 4
+  },
+  "context": "A pivotal moment in this group stage match. Costa Rica trail Germany 2-4. Something has to change. The manager must decide how to respond.",
+  "home_team": "Costa Rica",
+  "away_team": "Germany",
+  "home_formation": "5-4-1",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Keylor Navas Gamboa",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 44
+    },
+    {
+      "name": "Óscar Esau Duarte Gaitán",
+      "number": 6,
+      "pos": "CB",
+      "x": 0.5,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Kendall Jamaal Waston Manley",
+      "number": 19,
+      "pos": "RCB",
+      "x": 0.85,
+      "y": 0.1,
+      "fatigue": 54
+    },
+    {
+      "name": "Juan Pablo Vargas Campos",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.15,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Bryan Oviedo",
+      "number": 8,
+      "pos": "LWB",
+      "x": 0.03,
+      "y": 0.22,
+      "fatigue": 41
+    },
+    {
+      "name": "Keysher Fuller Spence",
+      "number": 4,
+      "pos": "RWB",
+      "x": 0.97,
+      "y": 0.22,
+      "fatigue": 49
+    },
+    {
+      "name": "Celso Borges Mora",
+      "number": 5,
+      "pos": "RDM",
+      "x": 0.7,
+      "y": 0.3,
+      "fatigue": 61
+    },
+    {
+      "name": "Yeltsin Ignacio Tejeda Valverde",
+      "number": 17,
+      "pos": "LDM",
+      "x": 0.3,
+      "y": 0.3,
+      "fatigue": 51
+    },
+    {
+      "name": "Joel Nathaniel Campbell Samuels",
+      "number": 12,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 51
+    },
+    {
+      "name": "Brandon Aguilera Zamora",
+      "number": 20,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 48
+    },
+    {
+      "name": "Johan Alberto Venegas Ulloa",
+      "number": 11,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 64
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Manuel Neuer",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 33
+    },
+    {
+      "name": "Joshua Kimmich",
+      "number": 6,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 55
+    },
+    {
+      "name": "David Raum",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 55
+    },
+    {
+      "name": "Antonio Rüdiger",
+      "number": 2,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Niklas Süle",
+      "number": 15,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Leon Goretzka",
+      "number": 8,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 37
+    },
+    {
+      "name": "İlkay Gündoğan",
+      "number": 21,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 45
+    },
+    {
+      "name": "Jamal Musiala",
+      "number": 14,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 56
+    },
+    {
+      "name": "Leroy Sané",
+      "number": 19,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 50
+    },
+    {
+      "name": "Serge Gnabry",
+      "number": 10,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 50
+    },
+    {
+      "name": "Thomas Müller",
+      "number": 13,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 55
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Germany won 4-2. Serge Gnabry (9'), Yeltsin Ignacio Tejeda Valverde (57'), None (69'), Kai Havertz (72'), Kai Havertz (84'), Niclas Füllkrug (88')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Costa Rica and Germany (2-4), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Costa Rica and Germany (2-4), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Costa Rica and Germany (2-4), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Costa Rica and Germany (2-4), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Johan Alberto Venegas Ulloa": "Johan Alberto Venegas Ulloa at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Celso Borges Mora": "Celso Borges Mora at 61/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Jamal Musiala": "Jamal Musiala at 56/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Juan Pablo Vargas Campos": "Juan Pablo Vargas Campos at 55/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Manuel Neuer": "Manuel Neuer at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Brandon Aguilera Zamora",
+      "attacker_team": "Costa Rica",
+      "defender": "Joshua Kimmich",
+      "defender_team": "Germany",
+      "advantage": "Joshua Kimmich",
+      "diff": "-15",
+      "critical": true
+    },
+    {
+      "attacker": "Joel Nathaniel Campbell Samuels",
+      "attacker_team": "Costa Rica",
+      "defender": "David Raum",
+      "defender_team": "Germany",
+      "advantage": "David Raum",
+      "diff": "-1",
+      "critical": false
+    },
+    {
+      "attacker": "Johan Alberto Venegas Ulloa",
+      "attacker_team": "Costa Rica",
+      "defender": "Niklas Süle",
+      "defender_team": "Germany",
+      "advantage": "Johan Alberto Venegas Ulloa",
+      "diff": "+4",
+      "critical": false
+    },
+    {
+      "attacker": "Thomas Müller",
+      "attacker_team": "Germany",
+      "defender": "Juan Pablo Vargas Campos",
+      "defender_team": "Costa Rica",
+      "advantage": "Thomas Müller",
+      "diff": "+2",
+      "critical": false
+    },
+    {
+      "attacker": "Jamal Musiala",
+      "attacker_team": "Germany",
+      "defender": "Yeltsin Ignacio Tejeda Valverde",
+      "defender_team": "Costa Rica",
+      "advantage": "Jamal Musiala",
+      "diff": "+9",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 9,
+      "type": "goal",
+      "description": "Serge Gnabry scores for Germany!",
+      "player": "Serge Gnabry"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Youstin Delfin Salas Gómez replaces Brandon Aguilera Zamora (Tactical)",
+      "player": "Youstin Delfin Salas Gómez"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Lukas Klostermann replaces Leon Goretzka (Tactical)",
+      "player": "Lukas Klostermann"
+    },
+    {
+      "minute": 53,
+      "type": "substitution",
+      "description": "Niclas Füllkrug replaces İlkay Gündoğan (Tactical)",
+      "player": "Niclas Füllkrug"
+    },
+    {
+      "minute": 57,
+      "type": "goal",
+      "description": "Yeltsin Ignacio Tejeda Valverde scores for Costa Rica!",
+      "player": "Yeltsin Ignacio Tejeda Valverde"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Kai Havertz replaces Thomas Müller (Tactical)",
+      "player": "Kai Havertz"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Mario Götze replaces David Raum (Tactical)",
+      "player": "Mario Götze"
+    },
+    {
+      "minute": 69,
+      "type": "goal",
+      "description": "None scores for Costa Rica! (Own Goal)",
+      "player": null
+    },
+    {
+      "minute": 72,
+      "type": "goal",
+      "description": "Kai Havertz scores for Germany!",
+      "player": "Kai Havertz"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Ronald Alberto Matarrita Ulate replaces Johan Alberto Venegas Ulloa (Tactical)",
+      "player": "Ronald Alberto Matarrita Ulate"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Jewison Bennette replaces Keysher Fuller Spence (Tactical)",
+      "player": "Jewison Bennette"
+    },
+    {
+      "minute": 75,
+      "type": "yellow_card",
+      "description": "Óscar Esau Duarte Gaitán (Costa Rica) shown a yellow card card — Foul",
+      "player": "Óscar Esau Duarte Gaitán"
+    },
+    {
+      "minute": 84,
+      "type": "goal",
+      "description": "Kai Havertz scores for Germany!",
+      "player": "Kai Havertz"
+    },
+    {
+      "minute": 88,
+      "type": "goal",
+      "description": "Niclas Füllkrug scores for Germany!",
+      "player": "Niclas Füllkrug"
+    },
+    {
+      "minute": 92,
+      "type": "substitution",
+      "description": "Anthony Daniel Contreras Enríquez replaces Bryan Oviedo (Tactical)",
+      "player": "Anthony Daniel Contreras Enríquez"
+    },
+    {
+      "minute": 92,
+      "type": "substitution",
+      "description": "Roan Roberto Wilson Gordon replaces Yeltsin Ignacio Tejeda Valverde (Tactical)",
+      "player": "Roan Roberto Wilson Gordon"
+    },
+    {
+      "minute": 93,
+      "type": "substitution",
+      "description": "Matthias Ginter replaces Niklas Süle (Tactical)",
+      "player": "Matthias Ginter"
+    }
+  ]
+}

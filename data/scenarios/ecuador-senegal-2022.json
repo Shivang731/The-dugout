@@ -1,0 +1,366 @@
+{
+  "id": "ecuador-senegal-2022",
+  "meta": {
+    "title": "Ecuador vs Senegal — Group Stage",
+    "trigger_label": "Second half — Ecuador trail 1-2",
+    "difficulty": 1,
+    "order": 57,
+    "stage": "Group Stage",
+    "group": "A",
+    "date": "2022-11-29",
+    "stadium": "Sheikh Khalifa International Stadium"
+  },
+  "scoreline": {
+    "display": "Ecuador 1 – 2 Senegal",
+    "home": 1,
+    "away": 2
+  },
+  "context": "A pivotal moment in this group stage match. Ecuador trail Senegal 1-2. Something has to change. The manager must decide how to respond.",
+  "home_team": "Ecuador",
+  "away_team": "Senegal",
+  "home_formation": "4-3-3",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Hernán Ismael Galíndez",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 39
+    },
+    {
+      "name": "Pervis Josué Estupiñán Tenorio",
+      "number": 7,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 44
+    },
+    {
+      "name": "Angelo Smit Preciado Quiñónez",
+      "number": 17,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "Felix Eduardo Torres Caicedo",
+      "number": 2,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 56
+    },
+    {
+      "name": "Piero Martín Hincapié Reyna",
+      "number": 3,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 52
+    },
+    {
+      "name": "Carlos Armando Gruezo Arboleda",
+      "number": 8,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 37
+    },
+    {
+      "name": "Moisés Isaac Caicedo Corozo",
+      "number": 23,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 49
+    },
+    {
+      "name": "Alan Steven Franco Palma",
+      "number": 21,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 33
+    },
+    {
+      "name": "Enner Remberto Valencia Lastra",
+      "number": 13,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 65
+    },
+    {
+      "name": "Gonzalo Jordy Plata Jiménez",
+      "number": 19,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 66
+    },
+    {
+      "name": "Michael Steveen Estrada Martínez",
+      "number": 11,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 65
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Edouard Mendy",
+      "number": 16,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 45
+    },
+    {
+      "name": "Youssouf Sabaly",
+      "number": 21,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 47
+    },
+    {
+      "name": "Ismail Jakobs",
+      "number": 14,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 49
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "number": 3,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 55
+    },
+    {
+      "name": "Abdou Diallo",
+      "number": 22,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 43
+    },
+    {
+      "name": "Pape Gueye",
+      "number": 26,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 56
+    },
+    {
+      "name": "Pathé Ismaël Ciss",
+      "number": 11,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 59
+    },
+    {
+      "name": "Idrissa Gana Gueye",
+      "number": 5,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 53
+    },
+    {
+      "name": "Ismaïla Sarr",
+      "number": 18,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 57
+    },
+    {
+      "name": "Iliman Ndiaye",
+      "number": 13,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 64
+    },
+    {
+      "name": "Boulaye Dia",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 52
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Double substitution — inject fresh legs into attack and midfield",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Switch to a back 3, push full-backs forward for overloads",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Hold shape, trust the system, make changes at 75th minute",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Triple substitution — all-out attacking change, gamble everything",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "D",
+    "description": "Senegal won 2-1. Ismaïla Sarr (43'), Moisés Isaac Caicedo Corozo (66'), Kalidou Koulibaly (69')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Double substitution — inject fresh legs into attack and midfield**\nRisk level: High. This is the proactive choice. Fresh legs can exploit tiring defenders and create new attacking patterns. In the context of this group stage match between Ecuador and Senegal (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Switch to a back 3, push full-backs forward for overloads**\nRisk level: Medium. This is the structural change. A back 3 gives more attacking width but requires the midfield to cover more ground. In the context of this group stage match between Ecuador and Senegal (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Hold shape, trust the system, make changes at 75th minute**\nRisk level: Medium. This is the patient approach. Trusting the system avoids panic but may waste precious time on the clock. In the context of this group stage match between Ecuador and Senegal (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Triple substitution — all-out attacking change, gamble everything**\nRisk level: Very High. This is the desperate gamble. Maximum attacking intent but leaves the team dangerously exposed to counter-attacks. In the context of this group stage match between Ecuador and Senegal (1-2), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Gonzalo Jordy Plata Jiménez": "Gonzalo Jordy Plata Jiménez at 66/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Enner Remberto Valencia Lastra": "Enner Remberto Valencia Lastra at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Michael Steveen Estrada Martínez": "Michael Steveen Estrada Martínez at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Iliman Ndiaye": "Iliman Ndiaye at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Alan Steven Franco Palma": "Alan Steven Franco Palma at 33/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Enner Remberto Valencia Lastra",
+      "attacker_team": "Ecuador",
+      "defender": "Youssouf Sabaly",
+      "defender_team": "Senegal",
+      "advantage": "Enner Remberto Valencia Lastra",
+      "diff": "+13",
+      "critical": true
+    },
+    {
+      "attacker": "Ismaïla Sarr",
+      "attacker_team": "Senegal",
+      "defender": "Angelo Smit Preciado Quiñónez",
+      "defender_team": "Ecuador",
+      "advantage": "Angelo Smit Preciado Quiñónez",
+      "diff": "-8",
+      "critical": false
+    },
+    {
+      "attacker": "Gonzalo Jordy Plata Jiménez",
+      "attacker_team": "Ecuador",
+      "defender": "Ismail Jakobs",
+      "defender_team": "Senegal",
+      "advantage": "Even",
+      "diff": "+0",
+      "critical": false
+    },
+    {
+      "attacker": "Iliman Ndiaye",
+      "attacker_team": "Senegal",
+      "defender": "Pervis Josué Estupiñán Tenorio",
+      "defender_team": "Ecuador",
+      "advantage": "Iliman Ndiaye",
+      "diff": "+7",
+      "critical": false
+    },
+    {
+      "attacker": "Michael Steveen Estrada Martínez",
+      "attacker_team": "Ecuador",
+      "defender": "Abdou Diallo",
+      "defender_team": "Senegal",
+      "advantage": "Michael Steveen Estrada Martínez",
+      "diff": "+12",
+      "critical": true
+    },
+    {
+      "attacker": "Boulaye Dia",
+      "attacker_team": "Senegal",
+      "defender": "Piero Martín Hincapié Reyna",
+      "defender_team": "Ecuador",
+      "advantage": "Piero Martín Hincapié Reyna",
+      "diff": "-7",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 43,
+      "type": "goal",
+      "description": "Ismaïla Sarr scores for Senegal! (Penalty)",
+      "player": "Ismaïla Sarr"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "José Adoni Cifuentes Charcopa replaces Carlos Armando Gruezo Arboleda (Tactical)",
+      "player": "José Adoni Cifuentes Charcopa"
+    },
+    {
+      "minute": 45,
+      "type": "substitution",
+      "description": "Jeremy Leonel Sarmiento Morante replaces Alan Steven Franco Palma (Tactical)",
+      "player": "Jeremy Leonel Sarmiento Morante"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Djorkaeff Neicer Reasco González replaces Michael Steveen Estrada Martínez (Tactical)",
+      "player": "Djorkaeff Neicer Reasco González"
+    },
+    {
+      "minute": 65,
+      "type": "yellow_card",
+      "description": "Idrissa Gana Gueye (Senegal) shown a yellow card card — Foul",
+      "player": "Idrissa Gana Gueye"
+    },
+    {
+      "minute": 66,
+      "type": "goal",
+      "description": "Moisés Isaac Caicedo Corozo scores for Ecuador!",
+      "player": "Moisés Isaac Caicedo Corozo"
+    },
+    {
+      "minute": 69,
+      "type": "goal",
+      "description": "Kalidou Koulibaly scores for Senegal!",
+      "player": "Kalidou Koulibaly"
+    },
+    {
+      "minute": 73,
+      "type": "substitution",
+      "description": "Nampalys Mendy replaces Pathé Ismaël Ciss (Tactical)",
+      "player": "Nampalys Mendy"
+    },
+    {
+      "minute": 74,
+      "type": "substitution",
+      "description": "Cheikh Ahmadou Bamba Mbacke Dieng replaces Iliman Ndiaye (Tactical)",
+      "player": "Cheikh Ahmadou Bamba Mbacke Dieng"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Jackson Gabriel Porozo Vernaza replaces Angelo Smit Preciado Quiñónez (Tactical)",
+      "player": "Jackson Gabriel Porozo Vernaza"
+    },
+    {
+      "minute": 94,
+      "type": "substitution",
+      "description": "Pape Abou Cissé replaces Boulaye Dia (Tactical)",
+      "player": "Pape Abou Cissé"
+    }
+  ]
+}

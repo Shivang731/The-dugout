@@ -1,0 +1,462 @@
+{
+  "id": "argentina-france-2022",
+  "meta": {
+    "title": "Argentina vs France — Final",
+    "trigger_label": "Second half — Argentina locked at 3-3, a moment of brilliance needed",
+    "difficulty": 5,
+    "order": 95,
+    "stage": "Final",
+    "group": null,
+    "date": "2022-12-18",
+    "stadium": "Lusail Stadium"
+  },
+  "scoreline": {
+    "display": "Argentina 3 – 3 France",
+    "home": 3,
+    "away": 3
+  },
+  "context": "A tense moment in this final match. Argentina and France are locked at 3-3. One tactical shift could be the difference between glory and heartbreak.",
+  "home_team": "Argentina",
+  "away_team": "France",
+  "home_formation": "4-3-3",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Damián Emiliano Martínez",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 37
+    },
+    {
+      "name": "Nicolás Alejandro Tagliafico",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 40
+    },
+    {
+      "name": "Nahuel Molina Lucero",
+      "number": 26,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 41
+    },
+    {
+      "name": "Nicolás Hernán Otamendi",
+      "number": 19,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Cristian Gabriel Romero",
+      "number": 13,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 44
+    },
+    {
+      "name": "Enzo Fernandez",
+      "number": 24,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 57
+    },
+    {
+      "name": "Rodrigo Javier De Paul",
+      "number": 7,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 61
+    },
+    {
+      "name": "Alexis Mac Allister",
+      "number": 20,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 57
+    },
+    {
+      "name": "Ángel Fabián Di María Hernández",
+      "number": 11,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 65
+    },
+    {
+      "name": "Lionel Andrés Messi Cuccittini",
+      "number": 10,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 62
+    },
+    {
+      "name": "Julián Álvarez",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 63
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Hugo Lloris",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 34
+    },
+    {
+      "name": "Jules Koundé",
+      "number": 5,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 52
+    },
+    {
+      "name": "Theo Bernard François Hernández",
+      "number": 22,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 56
+    },
+    {
+      "name": "Raphaël Varane",
+      "number": 4,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Dayotchanculle Upamecano",
+      "number": 18,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 42
+    },
+    {
+      "name": "Adrien Rabiot",
+      "number": 14,
+      "pos": "LDM",
+      "x": 0.325,
+      "y": 0.3,
+      "fatigue": 56
+    },
+    {
+      "name": "Aurélien Djani Tchouaméni",
+      "number": 8,
+      "pos": "RDM",
+      "x": 0.675,
+      "y": 0.3,
+      "fatigue": 45
+    },
+    {
+      "name": "Antoine Griezmann",
+      "number": 7,
+      "pos": "CAM",
+      "x": 0.5,
+      "y": 0.43,
+      "fatigue": 61
+    },
+    {
+      "name": "Kylian Mbappé Lottin",
+      "number": 10,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 64
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "number": 11,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 39
+    },
+    {
+      "name": "Olivier Giroud",
+      "number": 9,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 35
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Make an attacking substitution to break the deadlock",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Push the full-backs higher, create overloads out wide",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Stay patient, maintain shape, look for a moment of magic",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Go ultra-attacking — bring on an extra striker",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "The match went to penalties after a 3-3 draw. Lionel Andrés Messi Cuccittini (22'), Ángel Fabián Di María Hernández (35'), Kylian Mbappé Lottin (79'), Kylian Mbappé Lottin (80'), Lionel Andrés Messi Cuccittini (107'), Kylian Mbappé Lottin (117')."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Make an attacking substitution to break the deadlock**\nRisk level: High. This is the positive choice. An attacking substitution signals intent and can break the deadlock. In the context of this final match between Argentina and France (3-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Push the full-backs higher, create overloads out wide**\nRisk level: Medium. This is the width-based approach. Overlapping full-backs create numerical advantages in wide areas. In the context of this final match between Argentina and France (3-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Stay patient, maintain shape, look for a moment of magic**\nRisk level: Medium. This is the patient choice. Maintaining shape avoids risk but may not be enough to win. In the context of this final match between Argentina and France (3-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Go ultra-attacking — bring on an extra striker**\nRisk level: Very High. This is the all-out attacking option. An extra striker increases goal threat but sacrifices midfield control. In the context of this final match between Argentina and France (3-3), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Ángel Fabián Di María Hernández": "Ángel Fabián Di María Hernández at 65/100 fatigue — looks exhausted. His movement has dropped significantly and he is struggling to track back. The manager must consider whether to keep him on or make a change.",
+    "Kylian Mbappé Lottin": "Kylian Mbappé Lottin at 64/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Julián Álvarez": "Julián Álvarez at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Lionel Andrés Messi Cuccittini": "Lionel Andrés Messi Cuccittini at 62/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Hugo Lloris": "Hugo Lloris at 34/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Ángel Fabián Di María Hernández",
+      "attacker_team": "Argentina",
+      "defender": "Jules Koundé",
+      "defender_team": "France",
+      "advantage": "Jules Koundé",
+      "diff": "-8",
+      "critical": false
+    },
+    {
+      "attacker": "Kylian Mbappé Lottin",
+      "attacker_team": "France",
+      "defender": "Nahuel Molina Lucero",
+      "defender_team": "Argentina",
+      "advantage": "Even",
+      "diff": "+0",
+      "critical": false
+    },
+    {
+      "attacker": "Lionel Andrés Messi Cuccittini",
+      "attacker_team": "Argentina",
+      "defender": "Theo Bernard François Hernández",
+      "defender_team": "France",
+      "advantage": "Theo Bernard François Hernández",
+      "diff": "-6",
+      "critical": false
+    },
+    {
+      "attacker": "Ousmane Dembélé",
+      "attacker_team": "France",
+      "defender": "Nicolás Alejandro Tagliafico",
+      "defender_team": "Argentina",
+      "advantage": "Ousmane Dembélé",
+      "diff": "+3",
+      "critical": true
+    },
+    {
+      "attacker": "Julián Álvarez",
+      "attacker_team": "Argentina",
+      "defender": "Dayotchanculle Upamecano",
+      "defender_team": "France",
+      "advantage": "Dayotchanculle Upamecano",
+      "diff": "-8",
+      "critical": false
+    },
+    {
+      "attacker": "Olivier Giroud",
+      "attacker_team": "France",
+      "defender": "Cristian Gabriel Romero",
+      "defender_team": "Argentina",
+      "advantage": "Olivier Giroud",
+      "diff": "+15",
+      "critical": true
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 22,
+      "type": "goal",
+      "description": "Lionel Andrés Messi Cuccittini scores for Argentina! (Penalty)",
+      "player": "Lionel Andrés Messi Cuccittini"
+    },
+    {
+      "minute": 35,
+      "type": "goal",
+      "description": "Ángel Fabián Di María Hernández scores for Argentina!",
+      "player": "Ángel Fabián Di María Hernández"
+    },
+    {
+      "minute": 40,
+      "type": "substitution",
+      "description": "Randal Kolo Muani replaces Ousmane Dembélé (Tactical)",
+      "player": "Randal Kolo Muani"
+    },
+    {
+      "minute": 41,
+      "type": "substitution",
+      "description": "Marcus Thuram replaces Olivier Giroud (Tactical)",
+      "player": "Marcus Thuram"
+    },
+    {
+      "minute": 51,
+      "type": "yellow_card",
+      "description": "Enzo Fernandez (Argentina) shown a yellow card card — Foul",
+      "player": "Enzo Fernandez"
+    },
+    {
+      "minute": 54,
+      "type": "yellow_card",
+      "description": "Adrien Rabiot (France) shown a yellow card card — Foul",
+      "player": "Adrien Rabiot"
+    },
+    {
+      "minute": 63,
+      "type": "substitution",
+      "description": "Marcos Javier Acuña replaces Ángel Fabián Di María Hernández (Tactical)",
+      "player": "Marcos Javier Acuña"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Eduardo Camavinga replaces Theo Bernard François Hernández (Tactical)",
+      "player": "Eduardo Camavinga"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "description": "Kingsley Coman replaces Antoine Griezmann (Tactical)",
+      "player": "Kingsley Coman"
+    },
+    {
+      "minute": 79,
+      "type": "goal",
+      "description": "Kylian Mbappé Lottin scores for France! (Penalty)",
+      "player": "Kylian Mbappé Lottin"
+    },
+    {
+      "minute": 80,
+      "type": "goal",
+      "description": "Kylian Mbappé Lottin scores for France!",
+      "player": "Kylian Mbappé Lottin"
+    },
+    {
+      "minute": 86,
+      "type": "yellow_card",
+      "description": "Marcus Thuram (France) shown a yellow card card — Foul",
+      "player": "Marcus Thuram"
+    },
+    {
+      "minute": 90,
+      "type": "substitution",
+      "description": "Gonzalo Ariel Montiel replaces Nahuel Molina Lucero (Tactical)",
+      "player": "Gonzalo Ariel Montiel"
+    },
+    {
+      "minute": 94,
+      "type": "yellow_card",
+      "description": "Olivier Giroud (France) shown a yellow card card — Bad Behaviour",
+      "player": "Olivier Giroud"
+    },
+    {
+      "minute": 95,
+      "type": "substitution",
+      "description": "Youssouf Fofana replaces Adrien Rabiot (Tactical)",
+      "player": "Youssouf Fofana"
+    },
+    {
+      "minute": 97,
+      "type": "yellow_card",
+      "description": "Marcos Javier Acuña (Argentina) shown a yellow card card — Foul",
+      "player": "Marcos Javier Acuña"
+    },
+    {
+      "minute": 101,
+      "type": "substitution",
+      "description": "Leandro Daniel Paredes replaces Rodrigo Javier De Paul (Tactical)",
+      "player": "Leandro Daniel Paredes"
+    },
+    {
+      "minute": 101,
+      "type": "substitution",
+      "description": "Lautaro Javier Martínez replaces Julián Álvarez (Tactical)",
+      "player": "Lautaro Javier Martínez"
+    },
+    {
+      "minute": 107,
+      "type": "goal",
+      "description": "Lionel Andrés Messi Cuccittini scores for Argentina!",
+      "player": "Lionel Andrés Messi Cuccittini"
+    },
+    {
+      "minute": 112,
+      "type": "substitution",
+      "description": "Ibrahima Konaté replaces Raphaël Varane (Injury)",
+      "player": "Ibrahima Konaté"
+    },
+    {
+      "minute": 113,
+      "type": "yellow_card",
+      "description": "Leandro Daniel Paredes (Argentina) shown a yellow card card — Foul",
+      "player": "Leandro Daniel Paredes"
+    },
+    {
+      "minute": 115,
+      "type": "substitution",
+      "description": "Germán Alejandro Pezzella replaces Alexis Mac Allister (Tactical)",
+      "player": "Germán Alejandro Pezzella"
+    },
+    {
+      "minute": 115,
+      "type": "yellow_card",
+      "description": "Gonzalo Ariel Montiel (Argentina) shown a yellow card card — Foul",
+      "player": "Gonzalo Ariel Montiel"
+    },
+    {
+      "minute": 117,
+      "type": "goal",
+      "description": "Kylian Mbappé Lottin scores for France! (Penalty)",
+      "player": "Kylian Mbappé Lottin"
+    },
+    {
+      "minute": 120,
+      "type": "substitution",
+      "description": "Axel Disasi replaces Jules Koundé (Tactical)",
+      "player": "Axel Disasi"
+    },
+    {
+      "minute": 120,
+      "type": "substitution",
+      "description": "Paulo Bruno Exequiel Dybala replaces Nicolás Alejandro Tagliafico (Tactical)",
+      "player": "Paulo Bruno Exequiel Dybala"
+    },
+    {
+      "minute": 124,
+      "type": "yellow_card",
+      "description": "Damián Emiliano Martínez (Argentina) shown a yellow card card — Bad Behaviour",
+      "player": "Damián Emiliano Martínez"
+    }
+  ]
+}

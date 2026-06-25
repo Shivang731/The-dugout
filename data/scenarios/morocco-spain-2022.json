@@ -1,0 +1,385 @@
+{
+  "id": "morocco-spain-2022",
+  "meta": {
+    "title": "Morocco vs Spain — Round of 16",
+    "trigger_label": "Second half — Morocco locked at 0-0, a moment of brilliance needed",
+    "difficulty": 2,
+    "order": 68,
+    "stage": "Round of 16",
+    "group": null,
+    "date": "2022-12-06",
+    "stadium": "Education City Stadium "
+  },
+  "scoreline": {
+    "display": "Morocco 0 – 0 Spain",
+    "home": 0,
+    "away": 0
+  },
+  "context": "A tense moment in this round of 16 match. Morocco and Spain are locked at 0-0. One tactical shift could be the difference between glory and heartbreak.",
+  "home_team": "Morocco",
+  "away_team": "Spain",
+  "home_formation": "4-3-3",
+  "away_formation": "4-3-3",
+  "home_players": [
+    {
+      "name": "Yassine Bounou",
+      "number": 1,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 30
+    },
+    {
+      "name": "Achraf Hakimi Mouh",
+      "number": 2,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 49
+    },
+    {
+      "name": "Noussair Mazraoui",
+      "number": 3,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 55
+    },
+    {
+      "name": "Romain Saïss",
+      "number": 6,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Nayef Aguerd",
+      "number": 5,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 45
+    },
+    {
+      "name": "Sofyan Amrabat",
+      "number": 4,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 50
+    },
+    {
+      "name": "Selim Amallah",
+      "number": 15,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 59
+    },
+    {
+      "name": "Azzedine Ounahi",
+      "number": 8,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 57
+    },
+    {
+      "name": "Sofiane Boufal",
+      "number": 17,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 56
+    },
+    {
+      "name": "Hakim Ziyech",
+      "number": 7,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 63
+    },
+    {
+      "name": "Youssef En-Nesyri",
+      "number": 19,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 55
+    }
+  ],
+  "away_players": [
+    {
+      "name": "Unai Simón Mendibil",
+      "number": 23,
+      "pos": "GK",
+      "x": 0.5,
+      "y": 0.05,
+      "fatigue": 31
+    },
+    {
+      "name": "Jordi Alba Ramos",
+      "number": 18,
+      "pos": "LB",
+      "x": 0.04,
+      "y": 0.18,
+      "fatigue": 43
+    },
+    {
+      "name": "Marcos Llorente Moreno",
+      "number": 6,
+      "pos": "RB",
+      "x": 0.96,
+      "y": 0.18,
+      "fatigue": 40
+    },
+    {
+      "name": "Aymeric Laporte",
+      "number": 24,
+      "pos": "LCB",
+      "x": 0.175,
+      "y": 0.1,
+      "fatigue": 53
+    },
+    {
+      "name": "Rodrigo Hernández Cascante",
+      "number": 16,
+      "pos": "RCB",
+      "x": 0.825,
+      "y": 0.1,
+      "fatigue": 41
+    },
+    {
+      "name": "Sergio Busquets i Burgos",
+      "number": 5,
+      "pos": "CDM",
+      "x": 0.5,
+      "y": 0.3,
+      "fatigue": 60
+    },
+    {
+      "name": "Pedro González López",
+      "number": 26,
+      "pos": "LCM",
+      "x": 0.325,
+      "y": 0.38,
+      "fatigue": 48
+    },
+    {
+      "name": "Pablo Martín Páez Gavira",
+      "number": 9,
+      "pos": "RCM",
+      "x": 0.675,
+      "y": 0.38,
+      "fatigue": 52
+    },
+    {
+      "name": "Ferrán Torres García",
+      "number": 11,
+      "pos": "RW",
+      "x": 0.96,
+      "y": 0.55,
+      "fatigue": 63
+    },
+    {
+      "name": "Daniel Olmo Carvajal",
+      "number": 21,
+      "pos": "LW",
+      "x": 0.04,
+      "y": 0.55,
+      "fatigue": 50
+    },
+    {
+      "name": "Marco Asensio Willemsen",
+      "number": 10,
+      "pos": "CF",
+      "x": 0.5,
+      "y": 0.55,
+      "fatigue": 50
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "action": "Make an attacking substitution to break the deadlock",
+      "risk": "High"
+    },
+    {
+      "label": "B",
+      "action": "Push the full-backs higher, create overloads out wide",
+      "risk": "Medium"
+    },
+    {
+      "label": "C",
+      "action": "Stay patient, maintain shape, look for a moment of magic",
+      "risk": "Medium"
+    },
+    {
+      "label": "D",
+      "action": "Go ultra-attacking — bring on an extra striker",
+      "risk": "Very High"
+    }
+  ],
+  "real_decision": {
+    "option": "A",
+    "description": "The match went to penalties after a 0-0 draw. No goals."
+  },
+  "pre_generated_explanations": {
+    "A": "**OPTION A — Make an attacking substitution to break the deadlock**\nRisk level: High. This is the positive choice. An attacking substitution signals intent and can break the deadlock. In the context of this round of 16 match between Morocco and Spain (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "B": "**OPTION B — Push the full-backs higher, create overloads out wide**\nRisk level: Medium. This is the width-based approach. Overlapping full-backs create numerical advantages in wide areas. In the context of this round of 16 match between Morocco and Spain (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "C": "**OPTION C — Stay patient, maintain shape, look for a moment of magic**\nRisk level: Medium. This is the patient choice. Maintaining shape avoids risk but may not be enough to win. In the context of this round of 16 match between Morocco and Spain (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch.",
+    "D": "**OPTION D — Go ultra-attacking — bring on an extra striker**\nRisk level: Very High. This is the all-out attacking option. An extra striker increases goal threat but sacrifices midfield control. In the context of this round of 16 match between Morocco and Spain (0-0), this option addresses the tactical challenge but requires precise execution from the players on the pitch."
+  },
+  "fatigue_popups": {
+    "Hakim Ziyech": "Hakim Ziyech at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Ferrán Torres García": "Ferrán Torres García at 63/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Sergio Busquets i Burgos": "Sergio Busquets i Burgos at 60/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Selim Amallah": "Selim Amallah at 59/100 fatigue — starting to tire. His pressing intensity has dropped and he is losing duels he would normally win. A substitution in the next 15-20 minutes may be needed.",
+    "Yassine Bounou": "Yassine Bounou at 30/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages.",
+    "Unai Simón Mendibil": "Unai Simón Mendibil at 31/100 fatigue — looks fresh and sharp. He still has plenty in the tank and could be a decisive factor in the closing stages."
+  },
+  "matchups": [
+    {
+      "attacker": "Sofiane Boufal",
+      "attacker_team": "Morocco",
+      "defender": "Marcos Llorente Moreno",
+      "defender_team": "Spain",
+      "advantage": "Sofiane Boufal",
+      "diff": "+9",
+      "critical": false
+    },
+    {
+      "attacker": "Daniel Olmo Carvajal",
+      "attacker_team": "Spain",
+      "defender": "Achraf Hakimi Mouh",
+      "defender_team": "Morocco",
+      "advantage": "Daniel Olmo Carvajal",
+      "diff": "+5",
+      "critical": false
+    },
+    {
+      "attacker": "Hakim Ziyech",
+      "attacker_team": "Morocco",
+      "defender": "Jordi Alba Ramos",
+      "defender_team": "Spain",
+      "advantage": "Jordi Alba Ramos",
+      "diff": "-9",
+      "critical": true
+    },
+    {
+      "attacker": "Ferrán Torres García",
+      "attacker_team": "Spain",
+      "defender": "Noussair Mazraoui",
+      "defender_team": "Morocco",
+      "advantage": "Ferrán Torres García",
+      "diff": "+1",
+      "critical": false
+    },
+    {
+      "attacker": "Youssef En-Nesyri",
+      "attacker_team": "Morocco",
+      "defender": "Rodrigo Hernández Cascante",
+      "defender_team": "Spain",
+      "advantage": "Youssef En-Nesyri",
+      "diff": "+19",
+      "critical": true
+    },
+    {
+      "attacker": "Marco Asensio Willemsen",
+      "attacker_team": "Spain",
+      "defender": "Nayef Aguerd",
+      "defender_team": "Morocco",
+      "advantage": "Marco Asensio Willemsen",
+      "diff": "+12",
+      "critical": false
+    }
+  ],
+  "replay_events": [
+    {
+      "minute": 62,
+      "type": "substitution",
+      "description": "Carlos Soler Barragán replaces Pablo Martín Páez Gavira (Tactical)",
+      "player": "Carlos Soler Barragán"
+    },
+    {
+      "minute": 62,
+      "type": "substitution",
+      "description": "Álvaro Borja Morata Martín replaces Marco Asensio Willemsen (Tactical)",
+      "player": "Álvaro Borja Morata Martín"
+    },
+    {
+      "minute": 65,
+      "type": "substitution",
+      "description": "Abdessamad Ezzalzouli replaces Sofiane Boufal (Tactical)",
+      "player": "Abdessamad Ezzalzouli"
+    },
+    {
+      "minute": 75,
+      "type": "substitution",
+      "description": "Nicholas Williams Arthuer replaces Ferrán Torres García (Tactical)",
+      "player": "Nicholas Williams Arthuer"
+    },
+    {
+      "minute": 75,
+      "type": "yellow_card",
+      "description": "Aymeric Laporte (Spain) shown a yellow card card — Foul",
+      "player": "Aymeric Laporte"
+    },
+    {
+      "minute": 81,
+      "type": "substitution",
+      "description": "Walid Cheddira replaces Selim Amallah (Tactical)",
+      "player": "Walid Cheddira"
+    },
+    {
+      "minute": 81,
+      "type": "substitution",
+      "description": "Abdelhamid Sabiri replaces Youssef En-Nesyri (Tactical)",
+      "player": "Abdelhamid Sabiri"
+    },
+    {
+      "minute": 82,
+      "type": "substitution",
+      "description": "Yahia Attiyat allah replaces Noussair Mazraoui (Tactical)",
+      "player": "Yahia Attiyat allah"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "description": "Jawad El Yamiq replaces Nayef Aguerd (Injury)",
+      "player": "Jawad El Yamiq"
+    },
+    {
+      "minute": 89,
+      "type": "yellow_card",
+      "description": "Romain Saïss (Morocco) shown a yellow card card — Foul",
+      "player": "Romain Saïss"
+    },
+    {
+      "minute": 97,
+      "type": "substitution",
+      "description": "Anssumane Fati replaces Daniel Olmo Carvajal (Tactical)",
+      "player": "Anssumane Fati"
+    },
+    {
+      "minute": 97,
+      "type": "substitution",
+      "description": "Alejandro Balde Martínez replaces Jordi Alba Ramos (Tactical)",
+      "player": "Alejandro Balde Martínez"
+    },
+    {
+      "minute": 117,
+      "type": "substitution",
+      "description": "Pablo Sarabia García replaces Nicholas Williams Arthuer (Tactical)",
+      "player": "Pablo Sarabia García"
+    },
+    {
+      "minute": 119,
+      "type": "substitution",
+      "description": "Badr Banoun replaces Azzedine Ounahi (Tactical)",
+      "player": "Badr Banoun"
+    }
+  ]
+}
