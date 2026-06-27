@@ -85,22 +85,59 @@ function initMatch() {
 }
 
 function populateMomentum() {
-  const events = currentScenario.replay_events || [];
-  const home = currentScenario.home_team || 'Home';
-  const away = currentScenario.away_team || 'Away';
-  let homeEv = 0, awayEv = 0;
-  events.forEach(e => {
-    const d = (e.description || '').toLowerCase();
-    if (d.includes(home.toLowerCase()) || (d.includes('scores') && !d.includes(away.toLowerCase()))) homeEv++;
-    else awayEv++;
+  const scenario = currentScenario;
+  const events = scenario.replay_events || [];
+  const homeName = (scenario.home_team || '').toLowerCase();
+  const awayName = (scenario.away_team || '').toLowerCase();
+  const hScore = scenario.scoreline?.home || 0;
+  const aScore = scenario.scoreline?.away || 0;
+
+  const totalEvents = events.length;
+  if (!totalEvents) {
+    _updateMomentumBar(50, 50, 'Balanced');
+    return;
+  }
+
+  let homeMom = 0, awayMom = 0;
+  events.forEach((e, idx) => {
+    const desc = (e.description || '').toLowerCase();
+    const recency = 0.5 + (idx / totalEvents) * 0.5;
+    const hasHome = homeName && desc.includes(homeName);
+    const hasAway = awayName && desc.includes(awayName);
+
+    let value = 0;
+    if (e.type === 'goal') value = 3;
+    else if (e.type === 'shot') value = 1.5;
+    else if (desc.includes('save') || desc.includes('dangerous')) value = 1;
+    else if (desc.includes('cross') || desc.includes('through')) value = 0.8;
+    else if (desc.includes('foul') || desc.includes('yellow') || desc.includes('red')) value = 0.3;
+    else value = 0.5;
+
+    value *= recency;
+
+    if (hasHome && !hasAway) homeMom += value;
+    else if (hasAway && !hasHome) awayMom += value;
+    else { homeMom += value * 0.5; awayMom += value * 0.5; }
   });
-  const hScore = currentScenario.scoreline?.home || 0;
-  const aScore = currentScenario.scoreline?.away || 0;
-  const scoreFactor = (hScore + aScore) > 0 ? Math.max(hScore, aScore) / (hScore + aScore) : 0.5;
-  const evFactor = (homeEv + awayEv) > 0 ? homeEv / (homeEv + awayEv) : 0.5;
-  const pct = Math.round((scoreFactor * 0.6 + evFactor * 0.4) * 100);
+
+  const totalGoals = hScore + aScore || 1;
+  const scoreMom = (hScore / totalGoals) * 100;
+  const totalMom = homeMom + awayMom || 1;
+  const eventMom = (homeMom / totalMom) * 100;
+
+  const pct = Math.round(scoreMom * 0.25 + eventMom * 0.75);
   const homePct = Math.min(85, Math.max(15, pct));
   const awayPct = 100 - homePct;
+
+  const diff = homePct - awayPct;
+  const label = diff > 15 ? 'Home Dominating' : diff < -15 ? 'Away Dominating' : diff > 5 ? 'Home Advantaged' : diff < -5 ? 'Away Advantaged' : 'Balanced';
+
+  _updateMomentumBar(homePct, awayPct, label);
+}
+
+function _updateMomentumBar(homePct, awayPct, label) {
+  const home = currentScenario.home_team || 'Home';
+  const away = currentScenario.away_team || 'Away';
 
   document.getElementById('mom-home-name').textContent = home.toUpperCase();
   document.getElementById('mom-away-name').textContent = away.toUpperCase();
@@ -108,6 +145,9 @@ function populateMomentum() {
   document.getElementById('mom-away-fill').style.width = awayPct + '%';
   document.getElementById('mom-home-pct').textContent = homePct + '%';
   document.getElementById('mom-away-pct').textContent = awayPct + '%';
+
+  const lblEl = document.getElementById('mom-label');
+  if (lblEl) lblEl.textContent = label;
 }
 
 function renderEvents() {
@@ -337,48 +377,76 @@ function populateTacticalStory() {
 }
 
 function populateAttackZones() {
-  const el = document.querySelector('.attack-zones-visual');
-  if (!el) return;
+  if (!currentScenario) return;
 
-  const homePlayers = currentScenario.home_players || [];
-  const awayPlayers = currentScenario.away_players || [];
-  const allPlayers = [...homePlayers.map(p => ({ ...p, team: 'home' })), ...awayPlayers.map(p => ({ ...p, team: 'away' }))];
+  const container = document.getElementById('mini-pitch-container');
+  if (!container) return;
 
-  const fieldThird = (x) => {
-    if (x < 0.33) return 'left';
-    if (x < 0.66) return 'center';
-    return 'right';
+  // Create mini-pitch as a lightweight Pitch2D instance
+  if (window.pitchMini) {
+    window.pitchMini.destroy();
+    delete window.pitchMini;
+  }
+  window.pitchMini = new Pitch2D('mini-pitch-container', currentScenario);
+  window.pitchMini.renderFlags = { players: false, ball: false, labels: false, attackZones: true };
+  window.pitchMini._pad = 10;
+
+  // Calculate attack zones once (shared with main overlay & AI insight)
+  const result = computeAttackZones(currentScenario);
+
+  // Animate smooth transition on the mini-pitch
+  window.pitchMini.setAttackZoneData(result);
+
+  // Wire up tooltip on canvas hover
+  const canvas = window.pitchMini.canvas;
+  const tooltip = document.getElementById('pitch-tooltip');
+
+  canvas.onmousemove = function (e) {
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    const cx = mx * scaleX, cy = my * scaleY;
+    const pad = window.pitchMini._pad;
+    const W = canvas.width, H = canvas.height;
+    const ph = H - pad * 2;
+    const pw = W - pad * 2;
+    const cw = pw / 3;
+
+    if (cy < pad || cy > pad + ph || cx < pad || cx > pad + pw) {
+      tooltip.style.display = 'none';
+      canvas.style.cursor = 'default';
+      return;
+    }
+
+    const relX = cx - pad;
+    let channel, pct, raw;
+    if (relX < cw) { channel = 'Left'; pct = result.leftPct; raw = result.leftRaw; }
+    else if (relX < cw * 2) { channel = 'Central'; pct = result.centerPct; raw = result.centerRaw; }
+    else { channel = 'Right'; pct = result.rightPct; raw = result.rightRaw; }
+    canvas.style.cursor = 'pointer';
+
+    const tw = Math.max(tooltip.offsetWidth, 120);
+    let tx = mx + 12, ty = my - 20;
+    if (tx + tw > rect.width - 8) tx = mx - tw - 12;
+    if (ty < 4) ty = 4;
+
+    tooltip.innerHTML = '<div class="tt-channel">' + channel + '</div><div class="tt-stat">' + pct + '% \u00B7 ' + Math.round(raw) + ' weighted actions</div>';
+    tooltip.style.left = tx + 'px';
+    tooltip.style.top = ty + 'px';
+    tooltip.style.display = 'block';
   };
 
-  const zones = { left: 0, center: 0, right: 0 };
-  allPlayers.forEach(p => {
-    const z = fieldThird(p.x);
-    zones[z]++;
-  });
-  const total = allPlayers.length || 1;
-
-  const leftPct = Math.round((zones.left / total) * 100);
-  const centerPct = Math.round((zones.center / total) * 100);
-  const rightPct = 100 - leftPct - centerPct;
-
-  const miniPitch = el.querySelector('.mini-pitch');
-  const zoneStats = el.querySelector('.zone-stats');
-  if (miniPitch) {
-    miniPitch.innerHTML = `
-      <div class="zone-bar left" style="height:${leftPct}%"></div>
-      <div class="zone-bar center" style="height:${centerPct}%"></div>
-      <div class="zone-bar right" style="height:${rightPct}%"></div>
-      <span class="zone-arrow">→</span>
-    `;
-  }
-  if (zoneStats) {
-    zoneStats.innerHTML = `
-      <div class="zone-stat"><span class="zone-dot l"></span> Left <span class="zone-pct">${leftPct}%</span></div>
-      <div class="zone-stat"><span class="zone-dot c"></span> Central <span class="zone-pct">${centerPct}%</span></div>
-      <div class="zone-stat"><span class="zone-dot r"></span> Right <span class="zone-pct">${rightPct}%</span></div>
-    `;
-  }
+  canvas.onmouseleave = function () {
+    tooltip.style.display = 'none';
+    canvas.style.cursor = 'default';
+  };
 }
+
+
+
+
 
 function populateConcept() {
   const h = currentScenario.home_team || '';
@@ -601,8 +669,36 @@ function setCameraMode(mode) {
 function init2DPitch() {
   pitch = new Pitch2D('pitch-container', currentScenario);
   pitch.load(currentScenario.home_players || [], currentScenario.away_players || []);
-  pitch.onPlayerHover = (player, sx, sy) => showTooltip(player, sx, sy);
+  pitch.onPlayerHover = (player, sx, sy, pressCtx) => {
+    if (pressCtx && pressCtx.isActive) {
+      showTooltip(player, sx, sy, {
+        sub: 'Pressure: ' + pressCtx.pressure + '% | ' + (pressCtx.pressure > 70 ? 'Intense' : pressCtx.pressure > 40 ? 'Active' : 'Light'),
+      });
+    } else {
+      showTooltip(player, sx, sy);
+    }
+  };
   pitch.onPlayerLeave = () => hideTooltip();
+  pitch.onPassingHover = (edge, sx, sy) => {
+    const tooltip = document.getElementById('player-tooltip');
+    if (!edge || !tooltip) { hideTooltip(); return; }
+    const recv = edge.receiver;
+    tooltip.innerHTML = `
+      <div class="tooltip-name">Pass to ${recv.name || '#' + recv.number}</div>
+      <div class="tooltip-detail">${edge.category} · ${edge.dist}px · ${edge.completionPct}% completion</div>
+      <div style="font-size:9px;color:#64748B;margin-top:2px">${edge.blocked ? '⚠ Blocked by defender' : edge.pressure === 'High' ? '⚠ High pressure' : edge.pressure === 'Medium' ? '◷ Medium pressure' : '✓ Open lane'}</div>
+    `;
+    tooltip.classList.remove('hidden');
+    const rect = document.getElementById('pitch-container')?.getBoundingClientRect();
+    if (rect) {
+      let left = sx + 14, top = sy - 8;
+      if (left + 180 > window.innerWidth) left = sx - 180;
+      if (top + 90 > window.innerHeight) top = window.innerHeight - 100;
+      if (top < 10) top = 10;
+      tooltip.style.left = left + 'px';
+      tooltip.style.top = top + 'px';
+    }
+  };
   const activeOverlay = document.querySelector('.overlay-btn.active');
   if (activeOverlay && pitch.setOverlay) {
     pitch.setOverlay(activeOverlay.dataset.overlay);
@@ -848,11 +944,13 @@ function nextScenario() {
 }
 
 // ===== PLAYER TOOLTIP =====
-function showTooltip(player, sx, sy) {
+function showTooltip(player, sx, sy, extra) {
   const tooltip = document.getElementById('player-tooltip');
   if (!tooltip) return;
   const fatigue = player.fatigue ?? 50;
   const fColor = fatigue < 40 ? '#22C55E' : fatigue < 65 ? '#F59E0B' : '#EF4444';
+
+  const extraHtml = extra && extra.sub ? `<div style="font-size:9px;color:#FBBF24;margin-top:3px">${extra.sub}</div>` : '';
 
   tooltip.innerHTML = `
     <div class="tooltip-name">${player.name}</div>
@@ -864,6 +962,7 @@ function showTooltip(player, sx, sy) {
       </div>
       <span style="font-size:10px;font-weight:700;color:${fColor}">${fatigue}%</span>
     </div>
+    ${extraHtml}
   `;
 
   const rect = document.getElementById('pitch-container')?.getBoundingClientRect();

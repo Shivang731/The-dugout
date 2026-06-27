@@ -986,6 +986,16 @@
   font-variant-numeric: tabular-nums;
 }
 
+.mom-state-label {
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+  min-width: 90px;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
 .away-mom .mom-pct {
   text-align: right;
 }
@@ -1184,87 +1194,52 @@
 
 /* Attack Zones */
 .attack-zones-visual {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.mini-pitch {
-  width: 48px;
-  height: 72px;
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: 3px;
   position: relative;
   display: flex;
-  align-items: flex-end;
-  gap: 2px;
-  padding: 4px 3px;
-  flex-shrink: 0;
-}
-
-.zone-bar {
-  flex: 1;
-  border-radius: 2px 2px 0 0;
-  min-height: 4px;
-}
-
-.zone-bar.left {
-  background: var(--accent);
-  opacity: 0.6;
-}
-
-.zone-bar.center {
-  background: var(--accent-green);
-  opacity: 0.5;
-}
-
-.zone-bar.right {
-  background: var(--accent);
-  opacity: 0.6;
-}
-
-.zone-arrow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 14px;
-  color: var(--text-muted);
-  opacity: 0.3;
-}
-
-.zone-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  flex: 1;
-}
-
-.zone-stat {
-  display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+}
+
+.mini-pitch-container {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: default;
+}
+.mini-pitch-container canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.pitch-tooltip {
+  display: none;
+  position: absolute;
+  background: rgba(15,23,42,0.92);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 6px;
+  padding: 6px 10px;
+  pointer-events: none;
+  z-index: 50;
+  white-space: nowrap;
   font-size: 11px;
-  color: var(--text-secondary);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
 }
 
-.zone-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  display: inline-block;
+.pitch-tooltip .tt-channel {
+  font-weight: 700;
+  color: #FBBF24;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.zone-dot.l { background: var(--accent); opacity: 0.6; }
-.zone-dot.c { background: var(--accent-green); opacity: 0.5; }
-.zone-dot.r { background: var(--accent); opacity: 0.6; }
-
-.zone-pct {
-  margin-left: auto;
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-  color: var(--text-muted);
+.pitch-tooltip .tt-stat {
+  color: #94A3B8;
+  font-size: 10px;
+  margin-top: 2px;
 }
 
 /* Concept Card */

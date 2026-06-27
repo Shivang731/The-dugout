@@ -182,6 +182,208 @@ function _assignFormationPositions(formationKey, players, isHome) {
   return assignments;
 }
 
+// ── Standalone pitch background renderer (shared by main pitch & mini-pitch) ──
+
+function drawPitchGround(ctx, W, H, p) {
+  const pw = W - p * 2;
+  const ph = H - p * 2;
+  ctx.fillStyle = '#060D0A';
+  ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = '#1A4D20';
+  ctx.fillRect(p - 2, p - 2, pw + 4, ph + 4);
+  ctx.fillStyle = '#0F6B1F';
+  ctx.fillRect(p, p, pw, ph);
+  const stripeCount = 12;
+  const stripeH = ph / stripeCount;
+  for (let i = 0; i < stripeCount; i++) {
+    ctx.fillStyle = i % 2 === 0 ? '#147325' : '#0D5F1A';
+    ctx.fillRect(p, p + i * stripeH, pw, stripeH + 1);
+  }
+
+  const cx = W / 2;
+  const cy = H / 2;
+  ctx.save();
+  const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(W, H) * 0.65);
+  grad.addColorStop(0, 'rgba(0,0,0,0)');
+  grad.addColorStop(0.55, 'rgba(0,0,0,0)');
+  grad.addColorStop(0.8, 'rgba(0,0,0,0.04)');
+  grad.addColorStop(0.93, 'rgba(0,0,0,0.10)');
+  grad.addColorStop(1, 'rgba(0,0,0,0.20)');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+  const grad2 = ctx.createRadialGradient(cx, cy, Math.min(pw, ph) * 0.35, cx, cy, Math.max(pw, ph) * 0.55);
+  grad2.addColorStop(0, 'rgba(255,255,255,0)');
+  grad2.addColorStop(0.7, 'rgba(255,255,255,0)');
+  grad2.addColorStop(0.85, 'rgba(255,255,255,0.012)');
+  grad2.addColorStop(1, 'rgba(255,255,255,0.025)');
+  ctx.fillStyle = grad2;
+  ctx.fillRect(p, p, pw, ph);
+  ctx.restore();
+}
+
+function drawPitchOverlay(ctx, W, H, p) {
+  const pw = W - p * 2;
+  const ph = H - p * 2;
+  const cx = W / 2;
+  const cy = H / 2;
+
+  const bW = pw * 0.16, bH = ph * 0.55;
+  const sW = pw * 0.055, sH = ph * 0.27;
+  const centerR = Math.min(pw, ph) * 0.12;
+  const cornerR = Math.min(pw, ph) * 0.02;
+  const lSpotX = p + bW * 0.67;
+  const rSpotX = W - p - bW * 0.67;
+  const arcR = bW * 0.55;
+  const arcAngle = Math.acos(Math.min(0.999, (bW * 0.33) / arcR));
+  const lineColor = 'rgba(255,255,255,0.75)';
+  const lineWidth = 1.6;
+  const spotR = 3;
+
+  ctx.save();
+  ctx.strokeStyle = lineColor;
+  ctx.lineWidth = lineWidth;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  ctx.setLineDash([]);
+  ctx.beginPath();
+  ctx.moveTo(p, p); ctx.lineTo(W - p, p); ctx.lineTo(W - p, H - p); ctx.lineTo(p, H - p); ctx.closePath();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(cx, p); ctx.lineTo(cx, H - p);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(cx, cy, centerR, 0, Math.PI * 2);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(cx, cy, spotR, 0, Math.PI * 2);
+  ctx.fillStyle = lineColor;
+  ctx.fill();
+  ctx.beginPath();
+  ctx.moveTo(p, cy - bH / 2); ctx.lineTo(p + bW, cy - bH / 2); ctx.lineTo(p + bW, cy + bH / 2); ctx.lineTo(p, cy + bH / 2);
+  ctx.closePath();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(W - p, cy - bH / 2); ctx.lineTo(W - p - bW, cy - bH / 2); ctx.lineTo(W - p - bW, cy + bH / 2); ctx.lineTo(W - p, cy + bH / 2);
+  ctx.closePath();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(p, cy - sH / 2); ctx.lineTo(p + sW, cy - sH / 2); ctx.lineTo(p + sW, cy + sH / 2); ctx.lineTo(p, cy + sH / 2);
+  ctx.closePath();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(W - p, cy - sH / 2); ctx.lineTo(W - p - sW, cy - sH / 2); ctx.lineTo(W - p - sW, cy + sH / 2); ctx.lineTo(W - p, cy + sH / 2);
+  ctx.closePath();
+  ctx.stroke();
+  ctx.beginPath(); ctx.arc(lSpotX, cy, spotR, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(rSpotX, cy, spotR, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(lSpotX, cy, arcR, -arcAngle, arcAngle); ctx.stroke();
+  ctx.beginPath(); ctx.arc(rSpotX, cy, arcR, Math.PI - arcAngle, Math.PI + arcAngle); ctx.stroke();
+  ctx.beginPath(); ctx.arc(p, p, cornerR, 0, Math.PI / 2); ctx.stroke();
+  ctx.beginPath(); ctx.arc(W - p, p, cornerR, Math.PI / 2, Math.PI); ctx.stroke();
+  ctx.beginPath(); ctx.arc(W - p, H - p, cornerR, Math.PI, Math.PI * 1.5); ctx.stroke();
+  ctx.beginPath(); ctx.arc(p, H - p, cornerR, Math.PI * 1.5, Math.PI * 2); ctx.stroke();
+  ctx.restore();
+
+  const goalW = Math.min(H * 0.06, (W - p * 2) * 0.04);
+  const postThick = 2.5;
+  const postDepth = goalW * 0.3;
+  ctx.save();
+  ctx.strokeStyle = 'rgba(255,255,255,0.7)';
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  const hx = p + 1;
+  ctx.lineWidth = postThick;
+  ctx.beginPath(); ctx.moveTo(hx, cy - goalW / 2); ctx.lineTo(hx + postDepth, cy - goalW / 2); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(hx, cy + goalW / 2); ctx.lineTo(hx + postDepth, cy + goalW / 2); ctx.stroke();
+  ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(hx, cy - goalW / 2); ctx.lineTo(hx, cy + goalW / 2); ctx.stroke();
+  ctx.strokeStyle = 'rgba(255,255,255,0.12)';
+  ctx.lineWidth = 0.5;
+  const netLines = 4;
+  for (let i = 1; i <= netLines; i++) {
+    const frac = i / (netLines + 1);
+    ctx.beginPath(); ctx.moveTo(hx + postDepth * frac, cy - goalW / 2 * 0.85); ctx.lineTo(hx + postDepth * frac, cy + goalW / 2 * 0.85); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(hx + 0.5, cy - goalW / 2 + goalW * frac * 0.85); ctx.lineTo(hx + postDepth - 0.5, cy - goalW / 2 + goalW * frac * 0.85); ctx.stroke();
+  }
+  ctx.strokeStyle = 'rgba(255,255,255,0.7)';
+  const ax = W - p - 1;
+  ctx.lineWidth = postThick;
+  ctx.beginPath(); ctx.moveTo(ax, cy - goalW / 2); ctx.lineTo(ax - postDepth, cy - goalW / 2); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(ax, cy + goalW / 2); ctx.lineTo(ax - postDepth, cy + goalW / 2); ctx.stroke();
+  ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(ax, cy - goalW / 2); ctx.lineTo(ax, cy + goalW / 2); ctx.stroke();
+  ctx.strokeStyle = 'rgba(255,255,255,0.12)';
+  ctx.lineWidth = 0.5;
+  for (let i = 1; i <= netLines; i++) {
+    const frac = i / (netLines + 1);
+    ctx.beginPath(); ctx.moveTo(ax - postDepth * frac, cy - goalW / 2 * 0.85); ctx.lineTo(ax - postDepth * frac, cy + goalW / 2 * 0.85); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(ax - 0.5, cy - goalW / 2 + goalW * frac * 0.85); ctx.lineTo(ax - postDepth + 0.5, cy - goalW / 2 + goalW * frac * 0.85); ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function drawPitchBackground(ctx, W, H, p) {
+  drawPitchGround(ctx, W, H, p);
+  drawPitchOverlay(ctx, W, H, p);
+}
+
+// ── Shared attack zone calculation (single source of truth) ──
+// If `players` is provided (e.g., formation-adjusted `homePlayers` from Pitch2D),
+// it takes precedence over `scenario.home_players`.
+function computeAttackZones(scenario, players) {
+  const homePlayers = players || scenario.home_players || [];
+  const events = scenario.replay_events || [];
+  const hName = (scenario.home_team || '').toLowerCase();
+  const hScore = scenario.scoreline?.home || 0;
+  const aScore = scenario.scoreline?.away || 0;
+  const trailing = hScore < aScore;
+
+  const roleWeight = {
+    GK: 0, CB: 0.15, DF: 0.15, LB: 0.35, RB: 0.35, WB: 0.45,
+    DM: 0.3, CM: 0.5, LM: 0.7, RM: 0.7,
+    AM: 0.8, LW: 0.9, RW: 0.9, ST: 1.0, CF: 1.0, FW: 1.0, SS: 0.85,
+  };
+
+  let lw = 0, cw = 0, rw = 0;
+  homePlayers.forEach(p => {
+    if (p.pos === 'GK') return;
+    const w = roleWeight[p.pos] || 0.5;
+    const x = p._tx !== undefined ? p._tx : p.x !== undefined ? p.x : 0.5;
+    if (x < 0.33) lw += w;
+    else if (x < 0.66) cw += w;
+    else rw += w;
+  });
+
+  let evL = 0, evC = 0, evR = 0;
+  events.forEach(e => {
+    const desc = (e.description || '').toLowerCase();
+    if (!desc.includes(hName)) return;
+    if (/\b(left|left.?flank|left.?side)\b/.test(desc)) evL += 1;
+    else if (/\b(right|right.?flank|right.?side)\b/.test(desc)) evR += 1;
+    else if (/\b(through|central|middle)\b/.test(desc)) evC += 1;
+    else if (/\bcross\b/.test(desc)) { evL += 0.5; evR += 0.5; }
+    else if (e.type === 'goal' || e.type === 'shot') evC += 0.8;
+    else evC += 0.4;
+  });
+
+  const posSum = lw + cw + rw || 1;
+  const evSum = evL + evC + evR || 1;
+  const hasEvents = events.length > 0;
+
+  let bl = (lw / posSum) * (hasEvents ? 0.75 : 1) + (hasEvents ? (evL / evSum) * 0.25 : 0);
+  let bc = (cw / posSum) * (hasEvents ? 0.75 : 1) + (hasEvents ? (evC / evSum) * 0.25 : 0);
+  let br = (rw / posSum) * (hasEvents ? 0.75 : 1) + (hasEvents ? (evR / evSum) * 0.25 : 0);
+
+  if (trailing && bc < 0.5) { bc *= 1.1; bl *= 0.95; br *= 0.95; }
+
+  const total = bl + bc + br || 1;
+  const lp = Math.round((bl / total) * 100);
+  const cp = Math.round((bc / total) * 100);
+  const rp = 100 - lp - cp;
+
+  return { leftPct: lp, centerPct: cp, rightPct: rp, leftRaw: Math.round(lw), centerRaw: Math.round(cw), rightRaw: Math.round(rw) };
+}
+
 class Pitch2D {
   constructor(containerId, scenario) {
     this.container = document.getElementById(containerId);
@@ -203,14 +405,40 @@ class Pitch2D {
     this._targetPlayers = null;
     this._animT = 0;
     this._animating = false;
-    this._dpr = Math.min(window.devicePixelRatio || 1, 2);
+    this._dpr = Math.min(window.devicePixelRatio || 1, 3);
+
+    // Render flags — control what this pitch instance draws
+    this.renderFlags = {
+      players: true,
+      ball: true,
+      labels: true,
+      attackZones: false,
+    };
+
+    // Attack zone animation state (interpolated percentages)
+    this._attackZoneData = computeAttackZones(this.scenario);
+    this._attackZoneDisplay = { ...this._attackZoneData };
+    this._attackZoneAnimId = null;
 
     this._W = 0;
     this._H = 0;
     this._pad = 14;
     this._playerR = 16;
 
-    this.ballPos = { x: 0.50, y: 0.45 };
+    this.ball = {
+      pos: { x: 0.50, y: 0.45 },
+      targetPos: null,
+      lastPos: { x: 0.50, y: 0.45 },
+      direction: { x: 0, y: 0 },
+      possession: null,
+      possessionTeam: null,
+      animating: false,
+      animFrom: null,
+      animTo: null,
+      animStart: 0,
+      animDuration: 0,
+      lastEvent: null,
+    };
 
     this._formationAnim = null;
     this._subAnim = null;
@@ -221,6 +449,23 @@ class Pitch2D {
 
     this._overlayAnimId = null;
     this._overlayAnimStart = 0;
+
+    this._selectedPlayer = null;
+    this._passingDirty = true;
+    this._passingGraph = null;
+    this._passingPrevGraph = null;
+    this._passingFadeStart = 0;
+    this._passingHover = null;
+    this._pressingDirty = true;
+    this._pressingState = null;
+    this._defensiveDirty = true;
+    this._defensiveCache = null;
+    this._pitchControlDirty = true;
+    this._pitchControlGrid = null;
+    this._pitchControlDisplay = null;
+    this._pitchControlTick = 0;
+    this.onPlayerSelect = null;
+    this.onPassingHover = null;
 
     this._eventHighlight = null;
     this._highlightAnimId = null;
@@ -247,6 +492,7 @@ class Pitch2D {
   _bindEvents() {
     this.canvas.addEventListener('mousemove', (e) => this._onMouseMove(e));
     this.canvas.addEventListener('mouseleave', () => this._onMouseLeave());
+    this.canvas.addEventListener('click', (e) => this._onClick(e));
   }
 
   _normToCoord(p) {
@@ -267,6 +513,11 @@ class Pitch2D {
   }
 
   load(homePlayers, awayPlayers) {
+    this._selectedPlayer = null;
+    this._passingDirty = true;
+    this._pressingDirty = true;
+    this._defensiveDirty = true;
+    this._pitchControlDirty = true;
     const homeFmt = _fmtToKey(this.scenario.home_formation || '4-3-3');
     const awayFmt = _fmtToKey(this.scenario.away_formation || '4-3-3');
 
@@ -277,6 +528,7 @@ class Pitch2D {
     this.awayPlayers = _assignFormationPositions(awayFmt, rawAway, false);
     this.players = [...this.homePlayers, ...this.awayPlayers];
     this._computeMomentum();
+    this._initBallFromScenario(this.scenario);
     this._draw();
   }
 
@@ -289,15 +541,23 @@ class Pitch2D {
   setOverlay(mode) {
     this._stopOverlayAnim();
     this.overlayMode = mode;
+    if (mode === 'passing') this._passingDirty = true;
+    if (mode === 'pressing') this._pressingDirty = true;
+    if (mode === 'defensive') this._defensiveDirty = true;
+    if (mode === 'attack') {
+      this._attackZoneData = computeAttackZones(this.scenario, this.homePlayers);
+      this.setAttackZoneData(this._attackZoneData);
+    }
     this._overlayAnimStart = performance.now();
     this._draw();
     this._scheduleOverlayAnim();
   }
 
   _scheduleOverlayAnim() {
-    if (this.overlayMode === 'passing' || this.overlayMode === 'pressing') {
+    if (this.overlayMode === 'passing' || this.overlayMode === 'pressing' || this.overlayMode === 'defensive' || this.overlayMode === 'pitch_control') {
       const tick = () => {
-        if (this.overlayMode === 'passing' || this.overlayMode === 'pressing') {
+        if (this.overlayMode === 'passing' || this.overlayMode === 'pressing' || this.overlayMode === 'defensive' || this.overlayMode === 'pitch_control') {
+          if (this.overlayMode === 'defensive') this._defensiveDirty = true;
           this._draw();
           this._overlayAnimId = requestAnimationFrame(tick);
         }
@@ -323,37 +583,33 @@ class Pitch2D {
     const player = [...this.homePlayers, ...this.awayPlayers].find(
       p => p.name && event.player && p.name.toLowerCase().includes(event.player.toLowerCase())
     );
-    if (!player) { this._eventHighlight = null; return; }
 
-    const coord = this._normToCoord(player);
-    const isHome = player.team === 'home';
-
-    let ballTarget = null;
-    let arrowTarget = null;
-
-    if (event.type === 'goal') {
-      const goalX = isHome ? 1.0 : 0.0;
-      ballTarget = { x: goalX, y: 0.5 };
-      arrowTarget = coord;
-    } else if (event.type === 'shot') {
-      const goalX = isHome ? 1.0 : 0.0;
-      ballTarget = { x: goalX, y: 0.5 };
-      arrowTarget = coord;
-    } else {
-      ballTarget = { x: player._tx, y: player._ty };
-      arrowTarget = coord;
+    if (player) {
+      this._setBallFromEvent(event, player);
+      this._updatePossession(event, player);
+      this._passingDirty = true;
     }
 
-    this._eventHighlight = {
-      event,
-      player,
-      coord,
-      isHome,
-      startTime: performance.now(),
-      ballStartPos: { ...this.ballPos },
-      ballTarget,
-      arrowTarget,
-    };
+    // Store highlight for glow/arrow effects only (ball is drawn separately)
+    if (player) {
+      const coord = this._normToCoord(player);
+      const isHome = player.team === 'home';
+      let arrowTarget = null;
+      if (event.type === 'goal' || event.type === 'shot') {
+        arrowTarget = coord;
+      }
+
+      this._eventHighlight = {
+        event,
+        player,
+        coord,
+        isHome,
+        startTime: performance.now(),
+        arrowTarget,
+      };
+    } else {
+      this._eventHighlight = null;
+    }
 
     this._draw();
 
@@ -372,6 +628,7 @@ class Pitch2D {
       cancelAnimationFrame(this._highlightAnimId);
       this._highlightAnimId = null;
     }
+    // Keep ball at its current position (already reflects last event)
     this._draw();
     this._scheduleOverlayAnim();
   }
@@ -393,25 +650,53 @@ class Pitch2D {
   }
 
   _computeMomentum() {
-    const events = this.scenario.replay_events || [];
-    const home = this.scenario.home_team || 'Home';
-    const away = this.scenario.away_team || 'Away';
-    let homeEv = 0, awayEv = 0;
-    events.forEach(e => {
-      const d = (e.description || '').toLowerCase();
-      if (d.includes(home.toLowerCase()) || (d.includes('scores') && !d.includes(away.toLowerCase()))) homeEv++;
-      else awayEv++;
+    const s = this.scenario;
+    const events = s.replay_events || [];
+    const homeName = (s.home_team || '').toLowerCase();
+    const awayName = (s.away_team || '').toLowerCase();
+    const hScore = s.scoreline?.home || 0;
+    const aScore = s.scoreline?.away || 0;
+
+    const totalEvents = events.length;
+    if (!totalEvents) {
+      this.momentum = { home: 50, away: 50, label: 'Balanced' };
+      return;
+    }
+
+    let homeMom = 0, awayMom = 0;
+    events.forEach((e, idx) => {
+      const desc = (e.description || '').toLowerCase();
+      const recency = 0.5 + (idx / totalEvents) * 0.5;
+      const hasHome = homeName && desc.includes(homeName);
+      const hasAway = awayName && desc.includes(awayName);
+
+      let value = 0;
+      if (e.type === 'goal') value = 3;
+      else if (e.type === 'shot') value = 1.5;
+      else if (desc.includes('save') || desc.includes('dangerous')) value = 1;
+      else if (desc.includes('cross') || desc.includes('through')) value = 0.8;
+      else if (desc.includes('foul') || desc.includes('yellow') || desc.includes('red')) value = 0.3;
+      else value = 0.5;
+
+      value *= recency;
+      if (hasHome && !hasAway) homeMom += value;
+      else if (hasAway && !hasHome) awayMom += value;
+      else { homeMom += value * 0.5; awayMom += value * 0.5; }
     });
-    const hScore = this.scenario.scoreline?.home || 0;
-    const aScore = this.scenario.scoreline?.away || 0;
-    const scoreFactor = (hScore + aScore) > 0 ? Math.max(hScore, aScore) / (hScore + aScore) : 0.5;
-    const evFactor = (homeEv + awayEv) > 0 ? homeEv / (homeEv + awayEv) : 0.5;
-    const pct = Math.round((scoreFactor * 0.6 + evFactor * 0.4) * 100);
-    this.momentum = {
-      home: Math.min(85, Math.max(15, pct)),
-      away: Math.min(85, Math.max(15, 100 - pct)),
-      homeName: home, awayName: away,
-    };
+
+    const totalGoals = hScore + aScore || 1;
+    const scoreMom = (hScore / totalGoals) * 100;
+    const totalMom = homeMom + awayMom || 1;
+    const eventMom = (homeMom / totalMom) * 100;
+
+    const pct = Math.round(scoreMom * 0.25 + eventMom * 0.75);
+    const home = Math.min(85, Math.max(15, pct));
+    const away = 100 - home;
+
+    const diff = home - away;
+    const label = diff > 15 ? 'Home Dominating' : diff < -15 ? 'Away Dominating' : diff > 5 ? 'Home Advantaged' : diff < -5 ? 'Away Advantaged' : 'Balanced';
+
+    this.momentum = { home, away, homeName: s.home_team || 'Home', awayName: s.away_team || 'Away', label };
   }
 
   _computePreviewPositions(action) {
@@ -505,7 +790,7 @@ class Pitch2D {
 
     this._startBallNudge(isAttacking, isDefensive);
 
-    if (this._formationAnim || this._subAnim || this._ballAnim) {
+    if (this._formationAnim || this._subAnim || this._ballAnim || this.ball.animating) {
       this._selectionAnimating = true;
       const step = (now) => {
         if (!this._selectionAnimating) return;
@@ -579,27 +864,23 @@ class Pitch2D {
   }
 
   _startBallNudge(isAttacking, isDefensive) {
-    let endX = this.ballPos.x;
-    let endY = this.ballPos.y;
+    const b = this.ball;
+    let tx = b.pos.x;
+    let ty = b.pos.y;
 
     if (isAttacking) {
-      endX = Math.min(0.75, this.ballPos.x + 0.12);
-      endY = this.ballPos.y + (Math.random() - 0.5) * 0.06;
+      tx = Math.min(0.75, b.pos.x + 0.12);
+      ty = b.pos.y + (Math.random() - 0.5) * 0.06;
     } else if (isDefensive) {
-      endX = Math.max(0.25, this.ballPos.x - 0.08);
-      endY = this.ballPos.y + (Math.random() - 0.5) * 0.04;
+      tx = Math.max(0.25, b.pos.x - 0.08);
+      ty = b.pos.y + (Math.random() - 0.5) * 0.04;
     } else {
-      endX = this.ballPos.x + (Math.random() - 0.5) * 0.05;
-      endY = this.ballPos.y + (Math.random() - 0.5) * 0.03;
+      tx = b.pos.x + (Math.random() - 0.5) * 0.05;
+      ty = b.pos.y + (Math.random() - 0.5) * 0.03;
     }
 
-    this._ballAnim = {
-      startX: this.ballPos.x,
-      startY: this.ballPos.y,
-      endX, endY,
-      startTime: 0,
-      duration: 1200,
-    };
+    this._animateBallTo(tx, ty, 1200);
+    this._ballAnim = true; // keep flag for animateSelection check
   }
 
   _updateSelectionAnim(now) {
@@ -681,24 +962,6 @@ class Pitch2D {
       }
     }
 
-    if (this._ballAnim) {
-      if (!this._ballAnim.startTime) this._ballAnim.startTime = now;
-      const elapsed = now - this._ballAnim.startTime;
-      const t = Math.min(1, elapsed / this._ballAnim.duration);
-      const eased = this._easeOutCubic(t);
-
-      this.ballPos.x = this._ballAnim.startX + (this._ballAnim.endX - this._ballAnim.startX) * eased;
-      this.ballPos.y = this._ballAnim.startY + (this._ballAnim.endY - this._ballAnim.startY) * eased;
-
-      if (t >= 1) {
-        this.ballPos.x = this._ballAnim.endX;
-        this.ballPos.y = this._ballAnim.endY;
-        this._ballAnim = null;
-      } else {
-        anyActive = true;
-      }
-    }
-
     this._selectionAnimating = anyActive;
   }
 
@@ -708,231 +971,305 @@ class Pitch2D {
     const H = this._H;
     if (!W || !H) return;
     ctx.clearRect(0, 0, W, H);
-    this._drawGrass(W, H);
-    this._drawPitchLighting(W, H);
-    this._drawPitch(W, H);
-    this._drawGoalLabels(W, H);
-    if (this.displayMode !== 'live') {
+    drawPitchBackground(this.ctx, W, H, this._pad);
+
+    // Layer 2: Pitch Control (behind all tactical overlays)
+    if (this.displayMode !== 'live' && this.overlayMode === 'pitch_control') {
+      this._drawPitchControlOverlay(W, H);
+    }
+
+    // Layer 3-4: Defensive Block, Passing Lanes, Attack Zones, Compactness
+    // (drawn behind players so markings stay readable)
+    if (this.displayMode !== 'live' && this.overlayMode !== 'shape' && this.overlayMode !== 'pressing' && this.overlayMode !== 'pitch_control') {
       this._drawOverlay(W, H);
     }
-    this._drawPlayers(W, H);
-    if (!this._eventHighlight || !this._eventHighlight.ballTarget) {
-      this._drawBall(W, H);
+
+    // Attack zones always render when flagged (mini-pitch companion)
+    if (this.renderFlags.attackZones) {
+      this._drawAttackOverlay(W, H);
     }
-    this._drawEventHighlight(W, H);
+
+    this._updateBallAnimation();
+
+    // Layer 5-6: Players and Ball
+    if (this.renderFlags.players) this._drawPlayers(W, H);
+    if (this.renderFlags.ball) this._drawBall(W, H);
+
+    // Layer 7: Pressing (on top of players)
+    if (this.displayMode !== 'live' && this.overlayMode === 'pressing') {
+      this._drawPressingOverlay(W, H);
+    }
+
+    // Layer 8: Labels
+    if (this.renderFlags.labels) this._drawEventHighlight(W, H);
   }
 
   _drawBall(W, H) {
     const ctx = this.ctx;
     const pad = this._pad;
-    const bx = pad + this.ballPos.x * (W - pad * 2);
-    const by = pad + (1 - this.ballPos.y) * (H - pad * 2);
+    const b = this.ball;
+    const bx = pad + b.pos.x * (W - pad * 2);
+    const by = pad + (1 - b.pos.y) * (H - pad * 2);
+    const r = 8;
 
     ctx.save();
+    ctx.translate(bx, by);
+
+    // Shadow
     ctx.beginPath();
-    ctx.arc(bx + 1.5, by + 1.5, 5, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(0,0,0,0.25)';
+    ctx.arc(2, 2, r + 1, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(0,0,0,0.5)';
     ctx.fill();
 
+    // Outer glow for visibility against grass
+    const glowSize = r * 4;
+    const glow = ctx.createRadialGradient(0, 0, r * 0.5, 0, 0, glowSize);
+    glow.addColorStop(0, 'rgba(255,255,255,0.2)');
+    glow.addColorStop(0.4, 'rgba(255,255,255,0.08)');
+    glow.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = glow;
     ctx.beginPath();
-    ctx.arc(bx, by, 5, 0, Math.PI * 2);
-    ctx.fillStyle = '#FFFFFF';
+    ctx.arc(0, 0, glowSize, 0, Math.PI * 2);
     ctx.fill();
-    ctx.strokeStyle = 'rgba(0,0,0,0.12)';
-    ctx.lineWidth = 0.5;
+
+    // White contrast ring (ensures ball stands out no matter what's behind it)
+    ctx.beginPath();
+    ctx.arc(0, 0, r + 1.5, 0, Math.PI * 2);
+    ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+    ctx.lineWidth = 1.5;
     ctx.stroke();
+
+    // Ball base (white)
+    ctx.beginPath();
+    ctx.arc(0, 0, r, 0, Math.PI * 2);
+    const ballGrad = ctx.createRadialGradient(-r * 0.3, -r * 0.3, 0, 0, 0, r);
+    ballGrad.addColorStop(0, '#FFFFFF');
+    ballGrad.addColorStop(0.6, '#F0F0F0');
+    ballGrad.addColorStop(1, '#C8C8C8');
+    ctx.fillStyle = ballGrad;
+    ctx.fill();
+
+    // Panel seams (pentagon-style pattern)
+    ctx.strokeStyle = 'rgba(40,40,50,0.45)';
+    ctx.lineWidth = 0.8;
+    ctx.beginPath();
+    for (let i = 0; i < 5; i++) {
+      const angle = (i / 5) * Math.PI * 2 - Math.PI / 2;
+      const px = Math.cos(angle) * r * 0.55;
+      const py = Math.sin(angle) * r * 0.55;
+      ctx.moveTo(0, 0);
+      ctx.lineTo(px, py);
+    }
+    ctx.stroke();
+
+    ctx.beginPath();
+    for (let i = 0; i < 5; i++) {
+      const a1 = (i / 5) * Math.PI * 2 - Math.PI / 2;
+      const a2 = ((i + 1) / 5) * Math.PI * 2 - Math.PI / 2;
+      const r1 = r * 0.55;
+      const r2 = r * 1;
+      ctx.moveTo(Math.cos(a1) * r1, Math.sin(a1) * r1);
+      ctx.lineTo(Math.cos(a2) * r2, Math.sin(a2) * r2);
+      ctx.lineTo(Math.cos(a2) * r1, Math.sin(a2) * r1);
+    }
+    ctx.stroke();
+
+    // Highlight (top-left shine)
+    ctx.beginPath();
+    ctx.arc(-r * 0.25, -r * 0.25, r * 0.35, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(255,255,255,0.5)';
+    ctx.fill();
+
+    // Dark outline
+    ctx.beginPath();
+    ctx.arc(0, 0, r, 0, Math.PI * 2);
+    ctx.strokeStyle = 'rgba(0,0,0,0.4)';
+    ctx.lineWidth = 1.2;
+    ctx.stroke();
+
     ctx.restore();
+  }
+
+  // ── Initialize ball position from scenario data ──
+  _initBallFromScenario(scenario) {
+    if (!scenario) return;
+    const events = scenario.replay_events;
+    if (events && events.length > 0) {
+      // Use the most recent event before the match minute
+      const cutoff = typeof getMatchMinute === 'function' ? getMatchMinute(scenario) : 60;
+      const relevant = events.filter(e => (e.minute || 0) <= cutoff);
+      const last = relevant.length > 0 ? relevant[relevant.length - 1] : events[0];
+      this._setBallFromEvent(last, null);
+    } else {
+      // Fallback: ball near center circle
+      this.ball.pos = { x: 0.50, y: 0.50 };
+    }
+    this.ball.lastPos = { ...this.ball.pos };
+  }
+
+  // ── Determine ball target position from an event ──
+  _setBallFromEvent(event, player) {
+    const b = this.ball;
+    b.lastEvent = event;
+
+    // Find player if not provided
+    if (!player && event && event.player) {
+      const found = [...this.homePlayers, ...this.awayPlayers].find(
+        p => p.name && event.player && p.name.toLowerCase().includes(event.player.toLowerCase())
+      );
+      if (found) player = found;
+    }
+
+    // Default: use team centroid if no player found
+    const getTeamCentroid = (isHome) => {
+      const team = isHome ? this.homePlayers : this.awayPlayers;
+      const outfield = team.filter(p => p.pos !== 'GK');
+      if (!outfield.length) return { x: 0.5, y: 0.5 };
+      return {
+        x: outfield.reduce((s, p) => s + p._tx, 0) / outfield.length,
+        y: outfield.reduce((s, p) => s + p._ty, 0) / outfield.length,
+      };
+    };
+
+    let target = { x: 0.50, y: 0.50 };
+    let duration = 800;
+    let isHome = null;
+
+    if (player) isHome = player.team === 'home';
+
+    if (!event) {
+      if (player) target = { x: player._tx, y: player._ty };
+    } else if (event.type === 'goal') {
+      // Ball ends at the goal
+      const goalX = isHome ? 1.0 : 0.0;
+      target = { x: goalX, y: 0.50 };
+      duration = 1000;
+    } else if (event.type === 'shot') {
+      // Ball moves toward goal
+      const goalX = isHome ? 1.0 : 0.0;
+      target = { x: goalX, y: 0.50 };
+      duration = 600;
+    } else if (event.type === 'corner') {
+      // Ball goes to the corner flag
+      const cornerColors = { 'left': 0.0, 'right': 1.0 };
+      const desc = (event.description || '').toLowerCase();
+      const side = desc.includes('right') ? 0.08 : 0.92;
+      const xEnd = isHome ? 1.0 : 0.0;
+      target = { x: xEnd, y: side };
+      duration = 900;
+    } else if (event.type === 'foul') {
+      // Ball at the spot of the foul
+      if (player) target = { x: player._tx, y: player._ty };
+      else target = { x: 0.5, y: 0.5 };
+      duration = 400;
+    } else if (event.type === 'offside') {
+      if (player) target = { x: player._tx, y: player._ty };
+      else target = { x: 0.5, y: 0.5 };
+      duration = 400;
+    } else if (event.type === 'substitution' || event.type === 'yellow_card' || event.type === 'red_card') {
+      // Ball stays where it is
+      target = { ...b.pos };
+      duration = 100;
+    } else {
+      // Default: ball goes to the player involved
+      if (player) target = { x: player._tx, y: player._ty };
+      else {
+        const centroids = [
+          getTeamCentroid(true),
+          getTeamCentroid(false),
+        ];
+        target = {
+          x: (centroids[0].x + centroids[1].x) / 2,
+          y: (centroids[0].y + centroids[1].y) / 2,
+        };
+      }
+      duration = 500;
+    }
+
+    // For goal/shot, first animate to the player then to the goal
+    if (player && (event.type === 'goal' || event.type === 'shot')) {
+      // Start at player position first
+      b.pos = { x: player._tx, y: player._ty };
+      b.lastPos = { ...b.pos };
+      this._animateBallTo(target.x, target.y, duration);
+    } else {
+      this._animateBallTo(target.x, target.y, duration);
+    }
+  }
+
+  // ── Update possession from an event ──
+  _updatePossession(event, player) {
+    const b = this.ball;
+    if (!event) {
+      b.possession = null;
+      b.possessionTeam = null;
+      return;
+    }
+
+    if (event.type === 'substitution' || event.type === 'yellow_card' || event.type === 'red_card') {
+      return; // no change
+    }
+
+    if (player) {
+      b.possession = player;
+      b.possessionTeam = player.team;
+    } else {
+      // Infer team from event description
+      const desc = (event.description || '').toLowerCase();
+      const homeName = (this.scenario.home_team || '').toLowerCase();
+      const awayName = (this.scenario.away_team || '').toLowerCase();
+      if (desc.includes(homeName)) b.possessionTeam = 'home';
+      else if (desc.includes(awayName)) b.possessionTeam = 'away';
+    }
+  }
+
+  // ── Start smooth ball animation toward target ──
+  _animateBallTo(tx, ty, duration) {
+    const b = this.ball;
+    b.animFrom = { ...b.pos };
+    b.animTo = { x: tx, y: ty };
+    b.animStart = 0;
+    b.animDuration = duration || 800;
+    b.animating = true;
+
+    // Update direction vector
+    const dx = tx - b.pos.x;
+    const dy = ty - b.pos.y;
+    const len = Math.sqrt(dx * dx + dy * dy) || 1;
+    b.direction = { x: dx / len, y: dy / len };
+  }
+
+  // ── Step ball animation each frame ──
+  _updateBallAnimation() {
+    const b = this.ball;
+    if (!b.animating || !b.animTo) return;
+
+    const now = performance.now();
+    if (!b.animStart) b.animStart = now;
+
+    const elapsed = now - b.animStart;
+    const t = Math.min(1, elapsed / b.animDuration);
+    const eased = this._easeOutCubic(t);
+
+    b.lastPos = { ...b.pos };
+    b.pos.x = b.animFrom.x + (b.animTo.x - b.animFrom.x) * eased;
+    b.pos.y = b.animFrom.y + (b.animTo.y - b.animFrom.y) * eased;
+
+    if (t >= 1) {
+      b.pos.x = b.animTo.x;
+      b.pos.y = b.animTo.y;
+      b.animating = false;
+      b.animFrom = null;
+      b.animTo = null;
+    }
+  }
+
+  // ── Expose ball state for future overlays ──
+  getBallState() {
+    return { ...this.ball, pos: { ...this.ball.pos }, lastPos: { ...this.ball.lastPos } };
   }
 
   // -- Grass --
-  _drawGrass(W, H) {
-    const ctx = this.ctx;
-    const p = this._pad;
-    const pw = W - p * 2;
-    const ph = H - p * 2;
-
-    // Stadium floor (beyond pitch boundary)
-    ctx.fillStyle = '#0A150E';
-    ctx.fillRect(0, 0, W, H);
-
-    // Narrow artificial turf border around playing surface
-    ctx.fillStyle = '#153D1C';
-    ctx.fillRect(p - 2, p - 2, pw + 4, ph + 4);
-
-    // Base pitch grass
-    ctx.fillStyle = '#1C6E28';
-    ctx.fillRect(p, p, pw, ph);
-
-    // Mowing stripes — 12 alternating horizontal bands (touchline to touchline)
-    const stripeCount = 12;
-    const stripeH = ph / stripeCount;
-    for (let i = 0; i < stripeCount; i++) {
-      ctx.fillStyle = i % 2 === 0 ? '#1F7A2E' : '#196624';
-      ctx.fillRect(p, p + i * stripeH, pw, stripeH + 1);
-    }
-
-    // Subtle grass texture — sparse low-opacity diagonal hatch marks
-    ctx.save();
-    ctx.globalAlpha = 0.025;
-    for (let i = 0; i < 60; i++) {
-      const sx = p + (i * 17 + 3) % pw;
-      const sy = p + (i * 29 + 7) % ph;
-      ctx.strokeStyle = i % 2 === 0 ? '#2A9E38' : '#0D3010';
-      ctx.lineWidth = 0.8;
-      ctx.beginPath();
-      ctx.moveTo(sx, sy);
-      ctx.lineTo(sx + 4, sy + 2);
-      ctx.stroke();
-    }
-    ctx.restore();
-  }
-
-  _drawPitchLighting(W, H) {
-    const ctx = this.ctx;
-    const cx = W / 2;
-    const cy = H / 2;
-
-    ctx.save();
-    const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(W, H) * 0.7);
-    grad.addColorStop(0, 'rgba(0,0,0,0)');
-    grad.addColorStop(0.5, 'rgba(0,0,0,0)');
-    grad.addColorStop(0.78, 'rgba(0,0,0,0.03)');
-    grad.addColorStop(0.92, 'rgba(0,0,0,0.08)');
-    grad.addColorStop(1, 'rgba(0,0,0,0.16)');
-    ctx.fillStyle = grad;
-    ctx.fillRect(0, 0, W, H);
-    ctx.restore();
-  }
-
-  // -- Pitch markings --
-  _drawPitch(W, H) {
-    const ctx = this.ctx;
-    const p = this._pad;
-    const pw = W - p * 2;
-    const ph = H - p * 2;
-    const cx = W / 2;
-    const cy = H / 2;
-
-    const bW = pw * 0.28, bH = ph * 0.2;
-    const sW = pw * 0.093, sH = ph * 0.091;
-    const centerR = Math.min(pw, ph) * 0.12;
-    const cornerR = Math.min(pw, ph) * 0.018;
-
-    const lSpotX = p + (bH / 2) * 0.6;
-    const rSpotX = W - p - (bH / 2) * 0.6;
-    const arcR = bW * 0.55;
-    const dx = bW - (bH / 2) * 0.6;
-    const arcAngle = Math.acos(Math.min(0.999, dx / arcR));
-
-    const lineColor = 'rgba(255,255,255,0.6)';
-    const lineWidth = 1.4;
-    const spotR = 3;
-
-    ctx.save();
-    ctx.strokeStyle = lineColor;
-    ctx.lineWidth = lineWidth;
-    ctx.lineCap = 'round';
-    ctx.lineJoin = 'round';
-    ctx.setLineDash([]);
-
-    // Outer touchlines & goal lines
-    ctx.strokeRect(p, p, pw, ph);
-
-    // Half-way line
-    ctx.beginPath();
-    ctx.moveTo(cx, p);
-    ctx.lineTo(cx, H - p);
-    ctx.stroke();
-
-    // Centre circle
-    ctx.beginPath();
-    ctx.arc(cx, cy, centerR, 0, Math.PI * 2);
-    ctx.stroke();
-
-    // Centre spot
-    ctx.beginPath();
-    ctx.arc(cx, cy, spotR, 0, Math.PI * 2);
-    ctx.fillStyle = lineColor;
-    ctx.fill();
-
-    // Penalty boxes
-    ctx.beginPath();
-    ctx.moveTo(p, cy - bH / 2);
-    ctx.lineTo(p + bW, cy - bH / 2);
-    ctx.lineTo(p + bW, cy + bH / 2);
-    ctx.lineTo(p, cy + bH / 2);
-    ctx.closePath();
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(W - p, cy - bH / 2);
-    ctx.lineTo(W - p - bW, cy - bH / 2);
-    ctx.lineTo(W - p - bW, cy + bH / 2);
-    ctx.lineTo(W - p, cy + bH / 2);
-    ctx.closePath();
-    ctx.stroke();
-
-    // Six-yard boxes
-    ctx.beginPath();
-    ctx.moveTo(p, cy - sH / 2);
-    ctx.lineTo(p + sW, cy - sH / 2);
-    ctx.lineTo(p + sW, cy + sH / 2);
-    ctx.lineTo(p, cy + sH / 2);
-    ctx.closePath();
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(W - p, cy - sH / 2);
-    ctx.lineTo(W - p - sW, cy - sH / 2);
-    ctx.lineTo(W - p - sW, cy + sH / 2);
-    ctx.lineTo(W - p, cy + sH / 2);
-    ctx.closePath();
-    ctx.stroke();
-
-    // Penalty spots
-    ctx.beginPath();
-    ctx.arc(lSpotX, cy, spotR, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.beginPath();
-    ctx.arc(rSpotX, cy, spotR, 0, Math.PI * 2);
-    ctx.fill();
-
-    // Penalty arcs (the "D")
-    ctx.beginPath();
-    ctx.arc(lSpotX, cy, arcR, -arcAngle, arcAngle);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.arc(rSpotX, cy, arcR, Math.PI - arcAngle, Math.PI + arcAngle);
-    ctx.stroke();
-
-    // Corner arcs
-    ctx.beginPath();
-    ctx.arc(p, p, cornerR, 0, Math.PI / 2);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.arc(W - p, p, cornerR, Math.PI / 2, Math.PI);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.arc(W - p, H - p, cornerR, Math.PI, Math.PI * 1.5);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.arc(p, H - p, cornerR, Math.PI * 1.5, Math.PI * 2);
-    ctx.stroke();
-
-    ctx.restore();
-  }
-
-  _drawGoalLabels(W, H) {
-    const ctx = this.ctx;
-    ctx.save();
-    ctx.fillStyle = 'rgba(255,255,255,0.3)';
-    ctx.font = '8px Inter, Arial, sans-serif';
-    ctx.textAlign = 'center';
-    ctx.fillText('← HOME GOAL', this._pad + 30, H - this._pad + 10);
-    ctx.fillText('AWAY GOAL →', W - this._pad - 30, H - this._pad + 10);
-    ctx.restore();
-  }
-
   // -- Overlays --
   _drawOverlay(W, H) {
     if (!this.overlayMode || this.overlayMode === 'shape') return;
@@ -942,68 +1279,205 @@ class Pitch2D {
       case 'passing': this._drawPassingOverlay(W, H); break;
       case 'defensive': this._drawDefensiveOverlay(W, H); break;
       case 'compactness': this._drawCompactnessOverlay(W, H); break;
+      case 'pitch_control': this._drawPitchControlOverlay(W, H); break;
     }
+  }
+
+  // ── PRESSING OVERLAY ──
+  _computePressingState(W, H) {
+    const pressingTeam = this.awayPlayers;
+    const possessionTeam = this.homePlayers;
+    const carrier = this._getBallCarrier(possessionTeam);
+    if (!carrier) return null;
+    const cIdx = this.players.indexOf(carrier);
+    const ballPos = this._getPlayerDisplayPos(carrier, cIdx);
+    const pw = W - this._pad * 2;
+    const maxDist = pw * 0.3;
+
+    const pressingPlayers = pressingTeam
+      .filter(p => p.pos !== 'GK')
+      .map(p => {
+        const idx = this.players.indexOf(p);
+        const pos = this._getPlayerDisplayPos(p, idx);
+        const dx = ballPos.x - pos.x;
+        const dy = ballPos.y - pos.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const pressure = Math.max(0, 100 - (dist / maxDist) * 100);
+        const isActive = pressure > 15;
+        const arrowLen = Math.min(dist * 0.35, (pressure / 100) * dist * 0.55);
+        return {
+          player: p, pos, pressure: Math.round(pressure), distance: Math.round(dist),
+          isActive,
+          arrowTarget: { x: pos.x + dx / (dist || 1) * arrowLen, y: pos.y + dy / (dist || 1) * arrowLen },
+          angle: Math.atan2(dy, dx),
+        };
+      })
+      .sort((a, b) => b.pressure - a.pressure);
+
+    const active = pressingPlayers.filter(p => p.isActive);
+    const avgPressure = pressingPlayers.reduce((s, p) => s + p.pressure, 0) / pressingPlayers.length || 0;
+
+    // Trigger zone
+    let tz = { x: ballPos.x, y: ballPos.y, radius: pw * 0.18, label: 'Mid Block' };
+    if (active.length > 0) {
+      const ax = active.reduce((s, p) => s + p.pos.x, 0) / active.length;
+      const ay = active.reduce((s, p) => s + p.pos.y, 0) / active.length;
+      const third = (ax - this._pad) / pw;
+      tz = { x: ax, y: ay, radius: pw * 0.18, label: third > 0.6 ? 'High Press' : third > 0.3 ? 'Mid Block' : 'Low Block' };
+    }
+
+    // Pressing shape
+    const frontActive = active.filter(p => ['ST','CF','LW','RW','SS','FW','CAM'].includes(p.player.pos));
+    let shapeType = frontActive.length >= 3 ? 'front3' : frontActive.length >= 2 ? 'front2' : 'single';
+    if (shapeType === 'single' && active.filter(p => ['CM','DM','MF','AM'].includes(p.player.pos)).length >= 2) {
+      shapeType = 'midfieldTrap';
+    }
+
+    // Trap detection
+    const trap = this._detectPressingTrap(active, ballPos, possessionTeam, W, H);
+
+    const intensity = avgPressure > 55 ? 'Very High' : avgPressure > 38 ? 'High' : avgPressure > 22 ? 'Medium' : avgPressure > 10 ? 'Low' : 'Very Low';
+
+    return {
+      pressingTeam: 'away', ballCarrier: carrier, ballPos,
+      intensity, intensityValue: Math.round(avgPressure),
+      pressingPlayers, triggerZone: tz,
+      shape: { type: shapeType },
+      trap,
+    };
+  }
+
+  _detectPressingTrap(activePressers, ballPos, possessionTeam, W, H) {
+    const pw = W - this._pad * 2;
+    const receivers = possessionTeam
+      .filter(p => p.pos !== 'GK')
+      .map(p => {
+        const idx = this.players.indexOf(p);
+        const pos = this._getPlayerDisplayPos(p, idx);
+        const dx = pos.x - ballPos.x;
+        const dy = pos.y - ballPos.y;
+        return { player: p, pos, dist: Math.sqrt(dx * dx + dy * dy) };
+      })
+      .filter(r => r.dist < pw * 0.18);
+    for (const receiver of receivers) {
+      const nearby = activePressers.filter(p => {
+        const dx = p.pos.x - receiver.pos.x;
+        const dy = p.pos.y - receiver.pos.y;
+        return Math.sqrt(dx * dx + dy * dy) < pw * 0.1 && p.pressure > 30;
+      });
+      if (nearby.length >= 2) {
+        let trapType = 'central';
+        const frac = (receiver.pos.x - this._pad) / pw;
+        if (frac < 0.25 || frac > 0.75) trapType = 'wide';
+        const touchlineDist = Math.min(receiver.pos.y - this._pad, this._pad + pw - receiver.pos.y);
+        if (touchlineDist < pw * 0.15) trapType = 'sideline';
+        return { detected: true, type: trapType, position: receiver.pos, annotation: 'Pressing Trap' };
+      }
+    }
+    return null;
   }
 
   _drawPressingOverlay(W, H) {
     const ctx = this.ctx;
-    const homeAttackers = this.homePlayers.filter(p => ['LW','RW','ST','FW','CF','SS'].includes(p.pos));
-    const awayDefenders = this.awayPlayers.filter(p => ['CB','DF','LB','RB','WB','GK'].includes(p.pos));
-    if (!homeAttackers.length || !awayDefenders.length) return;
-
     const t = performance.now() / 1000;
-    const dashOffset = -t * 45;
-    const pulse = 0.5 + 0.5 * Math.sin(t * 3);
+
+    if (this._pressingDirty || this._selectionAnimating) {
+      this._pressingState = this._computePressingState(W, H);
+      this._pressingDirty = false;
+    }
+    const ps = this._pressingState;
+    if (!ps || !ps.pressingPlayers.length) return;
 
     ctx.save();
-    ctx.lineCap = 'round';
-    ctx.lineWidth = 1.1;
-    ctx.strokeStyle = '#8BF55A';
-    ctx.globalAlpha = 0.45;
-    ctx.setLineDash([4, 6]);
-    ctx.lineDashOffset = dashOffset;
 
-    homeAttackers.forEach(att => {
-      const aPos = this._normToCoord(att);
-      let closest = null, minDist = Infinity;
-      awayDefenders.forEach(def => {
-        const dPos = this._normToCoord(def);
-        const dist = Math.sqrt((aPos.x - dPos.x) ** 2 + (aPos.y - dPos.y) ** 2);
-        if (dist < minDist) { minDist = dist; closest = dPos; }
-      });
-      if (closest && minDist < W * 0.6) {
-        ctx.beginPath();
-        ctx.moveTo(aPos.x, aPos.y);
-        ctx.lineTo(closest.x, closest.y);
-        ctx.stroke();
-
-        const angle = Math.atan2(closest.y - aPos.y, closest.x - aPos.x);
-        const len = 5;
-        ctx.globalAlpha = 0.3 + 0.3 * pulse;
-        ctx.setLineDash([]);
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.moveTo(closest.x, closest.y);
-        ctx.lineTo(closest.x - len * Math.cos(angle - 0.45), closest.y - len * Math.sin(angle - 0.45));
-        ctx.moveTo(closest.x, closest.y);
-        ctx.lineTo(closest.x - len * Math.cos(angle + 0.45), closest.y - len * Math.sin(angle + 0.45));
-        ctx.stroke();
-
-        ctx.globalAlpha = 0.45;
-        ctx.lineWidth = 1.1;
-        ctx.setLineDash([4, 6]);
-        ctx.lineDashOffset = dashOffset;
-      }
+    // Pressure circles
+    const active = ps.pressingPlayers.filter(p => p.isActive);
+    active.forEach(p => {
+      const radius = 12 + (p.pressure / 100) * 28;
+      const pulse = 0.7 + 0.3 * Math.sin(t * 2 + p.player.number * 0.3);
+      const alpha = 0.08 + (p.pressure / 100) * 0.18;
+      const c = p.pressure > 70 ? '239,68,68' : p.pressure > 40 ? '251,146,60' : '251,191,36';
+      const grad = ctx.createRadialGradient(p.pos.x, p.pos.y, 0, p.pos.x, p.pos.y, radius * pulse);
+      grad.addColorStop(0, `rgba(${c},${alpha * 1.4})`);
+      grad.addColorStop(0.5, `rgba(${c},${alpha})`);
+      grad.addColorStop(1, `rgba(${c},0)`);
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(p.pos.x, p.pos.y, radius * pulse, 0, Math.PI * 2);
+      ctx.fill();
     });
 
-    ctx.restore();
+    // Pressing arrows — curved, max 5, with flow
+    const topP = active.slice(0, Math.min(5, Math.max(2, active.length)));
+    const dashOffset = -t * 50;
+    topP.forEach(p => {
+      const int = p.pressure / 100;
+      ctx.save();
+      ctx.lineCap = 'round';
+      ctx.strokeStyle = p.pressure > 70 ? '#EF4444' : p.pressure > 40 ? '#FB923C' : '#FBBF24';
+      ctx.lineWidth = 0.7 + int * 0.9;
+      ctx.globalAlpha = (0.25 + int * 0.4) * 0.85;
+      ctx.setLineDash([5, 5]);
+      ctx.lineDashOffset = dashOffset;
+      const mx = (p.pos.x + p.arrowTarget.x) / 2;
+      const my = (p.pos.y + p.arrowTarget.y) / 2;
+      const ldx = p.arrowTarget.x - p.pos.x;
+      const ldy = p.arrowTarget.y - p.pos.y;
+      const len = Math.sqrt(ldx * ldx + ldy * ldy) || 1;
+      const curve = Math.min(len * 0.1, 8);
+      const nx = -ldy / len * curve;
+      const ny = ldx / len * curve;
+      ctx.beginPath();
+      ctx.moveTo(p.pos.x, p.pos.y);
+      ctx.quadraticCurveTo(mx + nx, my + ny, p.arrowTarget.x, p.arrowTarget.y);
+      ctx.stroke();
+      // Arrowhead with fade at tip
+      const fadeT = 0.85;
+      const tipX = p.pos.x + ldx * fadeT;
+      const tipY = p.pos.y + ldy * fadeT;
+      ctx.setLineDash([]);
+      ctx.globalAlpha = (0.3 + int * 0.35) * 0.7;
+      ctx.fillStyle = ctx.strokeStyle;
+      ctx.beginPath();
+      const aLen = 4 + int * 3;
+      const aAng = Math.atan2(ldy, ldx);
+      ctx.moveTo(p.arrowTarget.x, p.arrowTarget.y);
+      ctx.lineTo(p.arrowTarget.x - aLen * Math.cos(aAng - 0.5), p.arrowTarget.y - aLen * Math.sin(aAng - 0.5));
+      ctx.lineTo(p.arrowTarget.x - aLen * Math.cos(aAng + 0.5), p.arrowTarget.y - aLen * Math.sin(aAng + 0.5));
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    });
 
+    // Press height label
     ctx.save();
-    ctx.fillStyle = '#8BF55A';
+    ctx.fillStyle = 'rgba(251,191,36,0.3)';
     ctx.font = '7px Inter, Arial, sans-serif';
     ctx.textAlign = 'center';
-    ctx.globalAlpha = 0.5;
-    ctx.fillText('PRESSING DIRECTION →', W / 2, this._pad - 2);
+    ctx.globalAlpha = 0.4 + 0.2 * Math.sin(t * 1.5);
+    ctx.fillText(ps.triggerZone.label + ' · ' + ps.shape.type.replace('front', 'Front ').replace('midfieldTrap','Midfield Trap'), W / 2, this._pad - 2);
+    ctx.restore();
+
+    // Trap annotation
+    if (ps.trap) {
+      const pulse = 0.7 + 0.3 * Math.sin(t * 2);
+      ctx.save();
+      ctx.strokeStyle = `rgba(239,68,68,${0.25 * pulse})`;
+      ctx.lineWidth = 1.5;
+      ctx.setLineDash([3, 5]);
+      ctx.lineDashOffset = -t * 30;
+      ctx.beginPath();
+      ctx.arc(ps.trap.position.x, ps.trap.position.y, 18, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = `rgba(239,68,68,${0.55 * pulse})`;
+      ctx.font = 'bold 8px Inter, Arial, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'bottom';
+      ctx.fillText('⚠ ' + ps.trap.annotation, ps.trap.position.x, ps.trap.position.y - 20);
+      ctx.restore();
+    }
+
     ctx.restore();
   }
 
@@ -1013,42 +1487,405 @@ class Pitch2D {
     const thirdW = (W - pad * 2) / 3;
     const y = pad;
     const h = H - pad * 2;
+    const t = performance.now() / 1000;
+
+    const az = this._attackZoneDisplay;
+    const leftPct = az.leftPct, centerPct = az.centerPct, rightPct = az.rightPct;
+    const maxVal = Math.max(1, leftPct, centerPct, rightPct);
+    const isDominantL = leftPct >= centerPct && leftPct >= rightPct;
+    const isDominantC = centerPct >= leftPct && centerPct >= rightPct;
+    const isDominantR = rightPct >= leftPct && rightPct >= centerPct;
+
     ctx.save();
 
-    const zones = { left: 0, center: 0, right: 0 };
-    const relevant = [...this.homePlayers.filter(p => p.pos !== 'GK'), ...this.awayPlayers.filter(p => p.pos !== 'GK')];
-    relevant.forEach(p => {
-      if (p._tx < 0.33) zones.left++;
-      else if (p._tx < 0.66) zones.center++;
-      else zones.right++;
-    });
-    const total = relevant.length || 1;
-    zones.left = Math.round((zones.left / total) * 100);
-    zones.center = Math.round((zones.center / total) * 100);
-    zones.right = 100 - zones.left - zones.center;
-    const maxVal = Math.max(1, zones.left, zones.center, zones.right);
-
     [
-      { x: pad, w: thirdW, pct: zones.left },
-      { x: pad + thirdW, w: thirdW, pct: zones.center },
-      { x: pad + thirdW * 2, w: thirdW, pct: zones.right }
+      { x: pad, w: thirdW, pct: leftPct, dominant: isDominantL },
+      { x: pad + thirdW, w: thirdW, pct: centerPct, dominant: isDominantC },
+      { x: pad + thirdW * 2, w: thirdW, pct: rightPct, dominant: isDominantR },
     ].forEach(z => {
-      const alpha = 0.04 + Math.min(1, z.pct / maxVal) * 0.14;
+      const intensity = Math.min(1, z.pct / maxVal);
+      let alpha = 0.03 + intensity * 0.2;
+      const baseColor = z.dominant ? '34,197,94' : '59,130,246';
       const grad = ctx.createLinearGradient(z.x, 0, z.x + z.w, 0);
-      grad.addColorStop(0, `rgba(59,130,246,0)`);
-      grad.addColorStop(0.15, `rgba(59,130,246,${alpha * 0.4})`);
-      grad.addColorStop(0.5, `rgba(59,130,246,${alpha})`);
-      grad.addColorStop(0.85, `rgba(59,130,246,${alpha * 0.4})`);
-      grad.addColorStop(1, `rgba(59,130,246,0)`);
+      grad.addColorStop(0, 'rgba(0,0,0,0)');
+      grad.addColorStop(0.15, `rgba(${baseColor},${alpha * 0.4})`);
+      grad.addColorStop(0.5, `rgba(${baseColor},${alpha})`);
+      grad.addColorStop(0.85, `rgba(${baseColor},${alpha * 0.4})`);
+      grad.addColorStop(1, 'rgba(0,0,0,0)');
       ctx.fillStyle = grad;
       ctx.fillRect(z.x, y, z.w, h);
 
-      ctx.fillStyle = '#94A3B8';
-      ctx.font = '8px Inter, Arial, sans-serif';
-      ctx.textAlign = 'center';
-      ctx.globalAlpha = 0.5;
-      ctx.fillText(z.pct + '%', z.x + z.w / 2, y + 12);
+      if (z.dominant && intensity > 0.5) {
+        const glowA = 0.06 * (0.7 + 0.3 * Math.sin(t * 3));
+        const glow = ctx.createRadialGradient(z.x + z.w / 2, y + h * 0.5, 0, z.x + z.w / 2, y + h * 0.5, h * 0.55);
+        glow.addColorStop(0, `rgba(34,197,94,${glowA})`);
+        glow.addColorStop(1, 'rgba(34,197,94,0)');
+        ctx.fillStyle = glow;
+        ctx.fillRect(z.x - 4, y - 4, z.w + 8, h + 8);
+      }
     });
+
+    // Percentage labels
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = `bold ${Math.max(10, h * 0.14)}px Inter, Arial, sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.shadowColor = 'rgba(0,0,0,0.6)';
+    ctx.shadowBlur = 4;
+    ctx.fillText(Math.round(leftPct) + '%', pad + thirdW / 2, y + h * 0.28);
+    ctx.fillText(Math.round(centerPct) + '%', pad + thirdW * 1.5, y + h * 0.28);
+    ctx.fillText(Math.round(rightPct) + '%', pad + thirdW * 2.5, y + h * 0.28);
+
+    ctx.shadowBlur = 0;
+
+    // Channel labels
+    ctx.fillStyle = 'rgba(255,255,255,0.2)';
+    ctx.font = `${Math.max(5, h * 0.07)}px Inter, Arial, sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText('L', pad + thirdW / 2, y + h - 2);
+    ctx.fillText('C', pad + thirdW * 1.5, y + h - 2);
+    ctx.fillText('R', pad + thirdW * 2.5, y + h - 2);
+
+    // Team label
+    if (this.scenario) {
+      const home = this.scenario.home_team || 'Home';
+      ctx.fillStyle = 'rgba(255,255,255,0.22)';
+      ctx.font = `${Math.max(6, h * 0.08)}px Inter, Arial, sans-serif`;
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'top';
+      ctx.fillText(home + ' ATTACK', pad + 2, pad + 2);
+    }
+
+    // Dominant channel label
+    const pLabel = isDominantL ? 'L' : isDominantC ? 'C' : 'R';
+    ctx.fillStyle = `rgba(34,197,94,0.35)`;
+    ctx.font = `bold ${Math.max(6, h * 0.08)}px Inter, Arial, sans-serif`;
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText('PRIMARY ' + pLabel, pad + 2, y + h - 2);
+
+    ctx.restore();
+  }
+
+  setAttackZoneData(data) {
+    const current = this._attackZoneDisplay;
+    const target = {
+      leftPct: data.leftPct, centerPct: data.centerPct, rightPct: data.rightPct,
+    };
+    if (this._attackZoneAnimId) {
+      cancelAnimationFrame(this._attackZoneAnimId);
+      this._attackZoneAnimId = null;
+      current.leftPct = this._attackZoneAnimFrom.leftPct;
+      current.centerPct = this._attackZoneAnimFrom.centerPct;
+      current.rightPct = this._attackZoneAnimFrom.rightPct;
+    }
+    this._attackZoneAnimFrom = { ...current };
+    this._attackZoneAnimTarget = target;
+    this._attackZoneAnimStart = performance.now();
+    this._attackZoneAnimDuration = 450;
+    this._stepAttackZoneAnim();
+  }
+
+  _stepAttackZoneAnim() {
+    const from = this._attackZoneAnimFrom;
+    const to = this._attackZoneAnimTarget;
+    const elapsed = performance.now() - this._attackZoneAnimStart;
+    const raw = Math.min(1, elapsed / this._attackZoneAnimDuration);
+    const eased = 1 - Math.pow(1 - raw, 3);
+
+    this._attackZoneDisplay.leftPct = from.leftPct + (to.leftPct - from.leftPct) * eased;
+    this._attackZoneDisplay.centerPct = from.centerPct + (to.centerPct - from.centerPct) * eased;
+    this._attackZoneDisplay.rightPct = from.rightPct + (to.rightPct - from.rightPct) * eased;
+
+    this._draw();
+
+    if (raw < 1) {
+      this._attackZoneAnimId = requestAnimationFrame(() => this._stepAttackZoneAnim());
+    } else {
+      this._attackZoneDisplay.leftPct = to.leftPct;
+      this._attackZoneDisplay.centerPct = to.centerPct;
+      this._attackZoneDisplay.rightPct = to.rightPct;
+      this._attackZoneAnimId = null;
+      this._draw();
+    }
+  }
+
+  // ── PASSING LANES ──
+  _getPlayerDisplayPos(p, idx) {
+    if (this._targetPlayers && this._animT < 1 && p.team === 'home') {
+      const preview = this._getPreviewPos(p, idx);
+      return this._normToCoord({ ...p, _tx: preview._tx, _ty: preview._ty });
+    }
+    return this._normToCoord(p);
+  }
+
+  _getBallCarrier(teamPlayers) {
+    if (this.ball.possession && teamPlayers.includes(this.ball.possession)) {
+      return this.ball.possession;
+    }
+    if (this.ball.possessionTeam) {
+      const team = this.ball.possessionTeam === 'home' ? this.homePlayers : this.awayPlayers;
+      for (const p of team) {
+        if (this.ball.possession && p.name === this.ball.possession.name) return p;
+      }
+    }
+    const candidates = teamPlayers
+      .filter(p => p.pos !== 'GK')
+      .map(p => {
+        const idx = this.players.indexOf(p);
+        const pos = this._getPlayerDisplayPos(p, idx);
+        const forwardScore = pos.x / (this._W || 1);
+        const centralScore = 1 - Math.abs(pos.y - this._H / 2) / (this._H || 1);
+        return { player: p, score: forwardScore * 0.5 + centralScore * 0.5 };
+      })
+      .sort((a, b) => b.score - a.score);
+    return candidates.length ? candidates[0].player : null;
+  }
+
+  _distToSegment(px, py, ax, ay, bx, by) {
+    const dx = bx - ax, dy = by - ay;
+    const lenSq = dx * dx + dy * dy;
+    if (lenSq === 0) return Math.sqrt((px - ax) ** 2 + (py - ay) ** 2);
+    let t = ((px - ax) * dx + (py - ay) * dy) / lenSq;
+    t = Math.max(0, Math.min(1, t));
+    const cx = ax + t * dx, cy = ay + t * dy;
+    return Math.sqrt((px - cx) ** 2 + (py - cy) ** 2);
+  }
+
+  _evaluatePass(passer, receiver, opponents, W, H, isHome) {
+    const pIdx = this.players.indexOf(passer);
+    const rIdx = this.players.indexOf(receiver);
+    const passerPos = this._getPlayerDisplayPos(passer, pIdx);
+    const receiverPos = this._getPlayerDisplayPos(receiver, rIdx);
+    const dx = receiverPos.x - passerPos.x;
+    const dy = receiverPos.y - passerPos.y;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    const pw = W - this._pad * 2;
+    const ph = H - this._pad * 2;
+    const pitchDiag = Math.sqrt(pw * pw + ph * ph);
+    const normDist = dist / pitchDiag;
+
+    if (dist < pw * 0.02) return null;
+
+    const angle = Math.atan2(dy, dx);
+    const forwardNorm = (isHome ? dx : -dx) / pw;
+    const forwardScore = Math.max(0, Math.min(1, (forwardNorm + 0.3) / 0.6));
+
+    const interceptR = pw * 0.045;
+    let blocked = false;
+    let closestDefDist = Infinity;
+    let blockSeverity = 0;
+    let defsBetween = 0;
+    const defs = opponents.filter(p => p.pos !== 'GK');
+
+    defs.forEach(def => {
+      const dIdx = this.players.indexOf(def);
+      const dPos = this._getPlayerDisplayPos(def, dIdx);
+      const perpDist = this._distToSegment(dPos.x, dPos.y, passerPos.x, passerPos.y, receiverPos.x, receiverPos.y);
+      const along = Math.max(0, Math.min(1, ((dPos.x - passerPos.x) * dx + (dPos.y - passerPos.y) * dy) / (dist * dist || 1)));
+
+      if (perpDist < interceptR && along > 0.05 && along < 0.95) {
+        blocked = true;
+        blockSeverity += (1 - perpDist / interceptR) * (1 - Math.abs(along - 0.5) * 1.5);
+        defsBetween++;
+        closestDefDist = Math.min(closestDefDist, perpDist);
+      }
+    });
+
+    const nearbyDefs = defs.filter(def => {
+      const dIdx = this.players.indexOf(def);
+      const dPos = this._getPlayerDisplayPos(def, dIdx);
+      return Math.sqrt((dPos.x - receiverPos.x) ** 2 + (dPos.y - receiverPos.y) ** 2) < pw * 0.12;
+    }).length;
+    const spaceScore = Math.max(0, 1 - nearbyDefs / 4);
+
+    const obstructionScore = blocked ? Math.max(0, 1 - Math.min(1, blockSeverity)) : 1;
+    const distScore = Math.max(0, 1 - normDist / 0.6);
+    const rawConfidence = forwardScore * 25 + distScore * 25 + obstructionScore * 30 + spaceScore * 20;
+    const confidence = Math.round(Math.max(0, Math.min(100, rawConfidence)));
+
+    let category = 'blocked';
+    if (!blocked && confidence >= 60) category = 'safe';
+    else if (!blocked && confidence >= 30) category = 'risky';
+
+    return {
+      passer, receiver, passerPos, receiverPos,
+      dist, angle, forwardNorm, blocked, confidence, category,
+      defsBetween, spaceScore,
+      completionPct: blocked ? Math.round(15 + confidence * 0.3) : Math.round(60 + confidence * 0.35),
+      pressure: confidence >= 65 ? 'Low' : confidence >= 40 ? 'Medium' : 'High',
+    };
+  }
+
+  _computePassingGraph(W, H) {
+    const pw = W - this._pad * 2;
+
+    // Determine ball carrier and team
+    let carrier = null;
+    let isHomePossession = true;
+
+    if (this._selectedPlayer) {
+      carrier = this._selectedPlayer;
+      isHomePossession = carrier.team === 'home';
+    } else if (this.ball.possession) {
+      carrier = this.ball.possession;
+      isHomePossession = carrier.team === 'home';
+    } else {
+      const guessTeam = this.ball.possessionTeam || 'home';
+      const team = guessTeam === 'home' ? this.homePlayers : this.awayPlayers;
+      carrier = this._getBallCarrier(team);
+      isHomePossession = guessTeam === 'home';
+    }
+
+    if (!carrier) return null;
+    const cIdx = this.players.indexOf(carrier);
+
+    const teammates = (isHomePossession ? this.homePlayers : this.awayPlayers)
+      .filter(p => p !== carrier && p.pos !== 'GK');
+    const opponents = (isHomePossession ? this.awayPlayers : this.homePlayers)
+      .filter(p => p.pos !== 'GK');
+
+    const carrierPos = this._getPlayerDisplayPos(carrier, cIdx);
+    const maxRange = pw * 0.55;
+
+    const edges = [];
+    for (const rec of teammates) {
+      const recIdx = this.players.indexOf(rec);
+      const recPos = this._getPlayerDisplayPos(rec, recIdx);
+      const dx = recPos.x - carrierPos.x;
+      const dy = recPos.y - carrierPos.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+
+      if (dist > maxRange || dist < pw * 0.02) continue;
+
+      const result = this._evaluatePass(carrier, rec, opponents, W, H, isHomePossession);
+      if (result) edges.push(result);
+    }
+
+    edges.sort((a, b) => b.confidence - a.confidence);
+
+    const blocked = edges.filter(e => e.blocked).slice(0, 2);
+    const safeRisky = edges.filter(e => !e.blocked).slice(0, 5);
+    const displayEdges = [...safeRisky, ...blocked];
+
+    return { edges: displayEdges, carrier, carrierPos, isHome: isHomePossession };
+  }
+
+  _drawBallCarrierIndicator(p, ctx, t) {
+    const idx = this.players.indexOf(p);
+    const pos = this._getPlayerDisplayPos(p, idx);
+    const pulse = 0.6 + 0.4 * Math.sin(t * 4);
+    const isHome = p.team === 'home';
+    const color = isHome ? '59,130,246' : '139,245,90';
+
+    ctx.save();
+
+    // Glow beneath player
+    const grad = ctx.createRadialGradient(pos.x, pos.y, this._playerR * 0.3, pos.x, pos.y, this._playerR * 2.5);
+    grad.addColorStop(0, `rgba(${color},${0.15 * pulse})`);
+    grad.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(pos.x, pos.y, this._playerR * 2.5, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Outer pulsing ring (bright)
+    ctx.strokeStyle = `rgba(${color},${0.5 * pulse})`;
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(pos.x, pos.y, this._playerR + 5, 0, Math.PI * 2);
+    ctx.stroke();
+
+    // Secondary ring
+    ctx.strokeStyle = `rgba(255,255,255,${0.2 * pulse})`;
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.arc(pos.x, pos.y, this._playerR + 10, 0, Math.PI * 2);
+    ctx.stroke();
+
+    // "BALL" label above
+    ctx.fillStyle = `rgba(255,255,255,${0.5 + 0.3 * pulse})`;
+    ctx.font = 'bold 6px Inter, Arial, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText('● BALL', pos.x, pos.y - this._playerR - 12);
+
+    ctx.restore();
+  }
+
+  _drawPassOption(edge, ctx, t, W, H, fadeAlpha) {
+    const alpha = fadeAlpha !== undefined ? fadeAlpha : 1;
+    ctx.save();
+    ctx.lineCap = 'round';
+
+    const mx = (edge.passerPos.x + edge.receiverPos.x) / 2;
+    const my = (edge.passerPos.y + edge.receiverPos.y) / 2;
+    const dx = edge.receiverPos.x - edge.passerPos.x;
+    const dy = edge.receiverPos.y - edge.passerPos.y;
+    const len = Math.sqrt(dx * dx + dy * dy) || 1;
+    const curve = Math.min(len * 0.08, 8);
+    const nx = -dy / len * curve;
+    const ny = dx / len * curve;
+
+    let color, dashPattern, lineWidth, baseAlpha;
+    if (edge.blocked) {
+      color = '#EF4444'; dashPattern = [3, 5]; lineWidth = 0.8; baseAlpha = 0.35;
+    } else if (edge.category === 'safe') {
+      color = '#22C55E'; dashPattern = []; lineWidth = 1.2; baseAlpha = 0.65;
+    } else {
+      color = '#F59E0B'; dashPattern = [5, 4]; lineWidth = 0.8; baseAlpha = 0.5;
+    }
+
+    ctx.globalAlpha = baseAlpha * alpha;
+    ctx.strokeStyle = color;
+    ctx.lineWidth = lineWidth;
+    ctx.setLineDash(dashPattern);
+    ctx.lineDashOffset = -t * 35;
+
+    ctx.beginPath();
+    ctx.moveTo(edge.passerPos.x, edge.passerPos.y);
+    ctx.quadraticCurveTo(mx + nx, my + ny, edge.receiverPos.x, edge.receiverPos.y);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Blocked indicator: X mark at midpoint
+    if (edge.blocked) {
+      ctx.globalAlpha = 0.6 * alpha;
+      ctx.strokeStyle = '#EF4444';
+      ctx.lineWidth = 1.0;
+      const xSize = 5;
+      ctx.beginPath();
+      ctx.moveTo(mx - xSize, my - xSize);
+      ctx.lineTo(mx + xSize, my + xSize);
+      ctx.moveTo(mx + xSize, my - xSize);
+      ctx.lineTo(mx - xSize, my + xSize);
+      ctx.stroke();
+    }
+
+    // Confidence label on hover
+    if (this._passingHover === edge) {
+      ctx.globalAlpha = 0.9;
+      ctx.strokeStyle = '#FFFFFF';
+      ctx.lineWidth = 1.5;
+      ctx.setLineDash([]);
+      ctx.beginPath();
+      ctx.moveTo(edge.passerPos.x, edge.passerPos.y);
+      ctx.quadraticCurveTo(mx + nx, my + ny, edge.receiverPos.x, edge.receiverPos.y);
+      ctx.stroke();
+
+      ctx.fillStyle = 'rgba(0,0,0,0.8)';
+      const label = `${edge.confidence}% · ${edge.pressure}`;
+      ctx.font = 'bold 9px Inter, Arial, sans-serif';
+      const tw = ctx.measureText(label).width;
+      const lx = mx + nx * 1.5;
+      const ly = my + ny * 1.5;
+      ctx.fillRect(lx - tw / 2 - 4, ly - 8, tw + 8, 16);
+      ctx.fillStyle = edge.category === 'safe' ? '#22C55E' : edge.category === 'risky' ? '#F59E0B' : '#EF4444';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(label, lx, ly);
+    }
 
     ctx.restore();
   }
@@ -1056,121 +1893,381 @@ class Pitch2D {
   _drawPassingOverlay(W, H) {
     const ctx = this.ctx;
     const t = performance.now() / 1000;
-    const dashOffset = -t * 35;
+
+    // Handle fade transitions
+    if (this._passingDirty) {
+      if (this._passingGraph && this._passingGraph.edges.length) {
+        this._passingPrevGraph = this._passingGraph;
+        this._passingFadeStart = performance.now();
+      }
+      this._passingGraph = this._computePassingGraph(W, H);
+      this._passingDirty = false;
+    }
+
+    const graph = this._passingGraph;
+    if (!graph || !graph.edges.length) {
+      if (!this._passingPrevGraph) return;
+      this._passingPrevGraph = null;
+      this._draw();
+      return;
+    }
+
+    const fadeDur = 300;
+    let fadeAlpha = 1;
+    if (this._passingPrevGraph && this._passingFadeStart) {
+      const elapsed = performance.now() - this._passingFadeStart;
+      fadeAlpha = Math.max(0, 1 - elapsed / fadeDur);
+      if (elapsed >= fadeDur) {
+        this._passingPrevGraph = null;
+        this._passingFadeStart = 0;
+      }
+    }
 
     ctx.save();
-    ctx.lineCap = 'round';
-    ctx.lineWidth = 0.6;
 
-    const drawConns = (players, color) => {
-      const mids = players.filter(p => ['CM','DM','AM','MF'].includes(p.pos));
-      if (mids.length < 2) return;
-
-      ctx.globalAlpha = 0.4;
-      ctx.strokeStyle = color;
-      ctx.setLineDash([5, 7]);
-      ctx.lineDashOffset = dashOffset;
-
-      for (let i = 0; i < mids.length; i++) {
-        for (let j = i + 1; j < mids.length; j++) {
-          const a = this._normToCoord(mids[i]);
-          const b = this._normToCoord(mids[j]);
-          const mx = (a.x + b.x) / 2;
-          const my = (a.y + b.y) / 2;
-          const dx = b.x - a.x;
-          const dy = b.y - a.y;
-          const len = Math.sqrt(dx * dx + dy * dy);
-          const curve = Math.min(len * 0.12, 14);
-          const nx = -dy / len * curve;
-          const ny = dx / len * curve;
-
-          ctx.beginPath();
-          ctx.moveTo(a.x, a.y);
-          ctx.quadraticCurveTo(mx + nx, my + ny, b.x, b.y);
-          ctx.stroke();
-        }
-      }
-
-      ctx.globalAlpha = 0.15;
-      ctx.setLineDash([3, 10]);
-      ctx.lineDashOffset = dashOffset;
-
-      const fwd = players.filter(p => ['LW','RW','ST','FW','CF'].includes(p.pos));
-      mids.forEach(m => {
-        fwd.forEach(f => {
-          const a = this._normToCoord(m);
-          const b = this._normToCoord(f);
-          const mx = (a.x + b.x) / 2;
-          const my = (a.y + b.y) / 2;
-          const dx = b.x - a.x;
-          const dy = b.y - a.y;
-          const len = Math.sqrt(dx * dx + dy * dy);
-          const curve = Math.min(len * 0.1, 10);
-          const nx = -dy / len * curve;
-          const ny = dx / len * curve;
-
-          ctx.beginPath();
-          ctx.moveTo(a.x, a.y);
-          ctx.quadraticCurveTo(mx + nx, my + ny, b.x, b.y);
-          ctx.stroke();
-        });
+    // Draw previous graph fading out
+    if (this._passingPrevGraph && fadeAlpha > 0.01) {
+      ctx.globalAlpha = fadeAlpha;
+      this._passingPrevGraph.edges.forEach(edge => {
+        this._drawPassOption(edge, ctx, t, W, H, fadeAlpha);
       });
-    };
+    }
 
-    drawConns(this.homePlayers, '#3B82F6');
-    drawConns(this.awayPlayers, '#8BF55A');
+    // Draw current graph
+    ctx.globalAlpha = 1;
+    graph.edges.forEach(edge => {
+      this._drawPassOption(edge, ctx, t, W, H, 1);
+    });
+
+    // Ball carrier indicator
+    if (graph.carrier) {
+      this._drawBallCarrierIndicator(graph.carrier, ctx, t);
+    }
+
+    // Legend
+    const legendY = this._pad + 2;
+    const legendX = W - this._pad - 160;
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+    ctx.font = '6px Inter, Arial, sans-serif';
+
+    const legendItems = [
+      { label: 'Safe', color: '#22C55E', alpha: 0.65 },
+      { label: 'Risky', color: '#F59E0B', alpha: 0.5 },
+      { label: 'Blocked', color: '#EF4444', alpha: 0.2 },
+    ];
+    legendItems.forEach((item, i) => {
+      const lx = legendX + i * 48;
+      ctx.globalAlpha = item.alpha;
+      ctx.fillStyle = item.color;
+      ctx.fillRect(lx, legendY, 10, 3);
+      ctx.globalAlpha = 0.5;
+      ctx.fillStyle = 'rgba(255,255,255,0.5)';
+      ctx.fillText(item.label, lx + 13, legendY - 1);
+    });
 
     ctx.restore();
   }
 
+  // ── DEFENSIVE BLOCK (fully data-driven) ──
   _drawDefensiveOverlay(W, H) {
     const ctx = this.ctx;
-    const pad = this._pad;
+    const state = this._computeDefensiveState(W, H);
+    if (!state) return;
+
     ctx.save();
 
-    const homeDef = this.homePlayers.filter(p => ['CB','DF','LB','RB','WB'].includes(p.pos) || p.pos === 'DM');
-    const awayDef = this.awayPlayers.filter(p => ['CB','DF','LB','RB','WB'].includes(p.pos) || p.pos === 'DM');
+    // 1. Translucent convex hull of defending players
+    this._drawDefBlockPolygon(ctx, state);
 
-    const drawBlock = (players, color, strokeColor, label) => {
-      if (players.length < 2) return;
-      const coords = players.map(p => this._normToCoord(p));
-      const avgX = coords.reduce((s, c) => s + c.x, 0) / coords.length;
-      const minY = Math.min(...coords.map(c => c.y));
-      const maxY = Math.max(...coords.map(c => c.y));
+    // 2. Defensive line (vertical guideline at back-line depth)
+    this._drawDefLine(ctx, state, W, H);
 
-      const blockW = W * 0.22;
-      const blockH = Math.max(maxY - minY + 24, H * 0.18);
-      const bx = Math.min(avgX - blockW * 0.25, avgX - blockW * 0.3) + blockW * 0.4;
-      const by = (minY + maxY) / 2 - blockH / 2;
-      const rr = 8;
+    // 3. Minimal label: block height + compact
+    this._drawDefBlockLabel(ctx, state, W, H);
 
-      ctx.filter = 'blur(5px)';
-      ctx.fillStyle = color;
-      ctx.beginPath();
-      ctx.roundRect(bx, by, blockW, blockH, rr);
-      ctx.fill();
-      ctx.filter = 'none';
+    ctx.restore();
+  }
 
-      ctx.lineCap = 'round';
-      ctx.lineJoin = 'round';
-      ctx.strokeStyle = strokeColor;
-      ctx.lineWidth = 0.8;
-      ctx.setLineDash([3, 4]);
-      ctx.beginPath();
-      ctx.roundRect(bx, by, blockW, blockH, rr);
-      ctx.stroke();
-      ctx.setLineDash([]);
+  _detectDefendingTeam() {
+    if (this.ball.possessionTeam) {
+      return this.ball.possessionTeam === 'home' ? 'away' : 'home';
+    }
+    const homeAvg = this.homePlayers.reduce((s, p) => s + p._tx, 0) / this.homePlayers.length;
+    const awayAvg = this.awayPlayers.reduce((s, p) => s + (1 - p._tx), 0) / this.awayPlayers.length;
+    return homeAvg < awayAvg ? 'home' : 'away';
+  }
 
-      ctx.fillStyle = '#64748B';
-      ctx.font = '6px Inter, Arial, sans-serif';
-      ctx.textAlign = 'center';
-      ctx.globalAlpha = 0.6;
-      ctx.fillText(label, bx + blockW / 2, minY - 6);
+  _cross(o, a, b) {
+    return (a.x - o.x) * (b.y - o.y) - (a.y - o.y) * (b.x - o.x);
+  }
+
+  _convexHull(points) {
+    if (points.length < 3) return points;
+    const sorted = [...points].sort((a, b) => a.x - b.x || a.y - b.y);
+    const lower = [];
+    for (const p of sorted) {
+      while (lower.length >= 2 && this._cross(lower[lower.length - 2], lower[lower.length - 1], p) <= 0)
+        lower.pop();
+      lower.push(p);
+    }
+    const upper = [];
+    for (let i = sorted.length - 1; i >= 0; i--) {
+      const p = sorted[i];
+      while (upper.length >= 2 && this._cross(upper[upper.length - 2], upper[upper.length - 1], p) <= 0)
+        upper.pop();
+      upper.push(p);
+    }
+    lower.pop();
+    upper.pop();
+    return lower.concat(upper);
+  }
+
+  _computeDefensiveState(W, H) {
+    const defendingTeam = this._detectDefendingTeam();
+    const players = defendingTeam === 'home' ? this.homePlayers : this.awayPlayers;
+    const outfield = players.filter(p => p.pos !== 'GK');
+    if (outfield.length < 2) return null;
+
+    const pw = W - this._pad * 2;
+    const ph = H - this._pad * 2;
+    const isHome = defendingTeam === 'home';
+
+    const pts = outfield.map(p => {
+      const idx = this.players.indexOf(p);
+      return this._getPlayerDisplayPos(p, idx);
+    });
+
+    // Convex hull of all outfield players
+    const hull = this._convexHull(pts);
+
+    // Defensive line: average x of the deepest 3-4 players
+    const sortedByX = [...pts].sort((a, b) => isHome ? a.x - b.x : b.x - a.x);
+    const backCount = Math.min(4, Math.max(2, Math.floor(outfield.length * 0.4)));
+    const backPlayers = sortedByX.slice(0, backCount);
+    const defLineX = backPlayers.reduce((s, p) => s + p.x, 0) / backCount;
+
+    // Width: y-spread normalized to pitch height
+    const yVals = pts.map(p => p.y);
+    const yMin = Math.min(...yVals);
+    const yMax = Math.max(...yVals);
+    const widthNorm = (yMax - yMin) / ph;
+    const widthLabel =
+      widthNorm < 0.25 ? 'Very Narrow' :
+      widthNorm < 0.35 ? 'Narrow' :
+      widthNorm < 0.50 ? 'Balanced' :
+      widthNorm < 0.65 ? 'Wide' :
+      'Very Wide';
+
+    // Depth: how far def line is from own goal (0 = on goal line)
+    const normDefLineX = (defLineX - this._pad) / pw;
+    const depthFromGoal = isHome ? normDefLineX : 1 - normDefLineX;
+    const blockHeightLabel =
+      depthFromGoal < 0.18 ? 'Low Block' :
+      depthFromGoal < 0.35 ? 'Mid Block' :
+      'High Block';
+
+    // Compactness: average pairwise distance / pitch diagonal
+    let totalDist = 0, count = 0;
+    for (let i = 0; i < pts.length; i++) {
+      for (let j = i + 1; j < pts.length; j++) {
+        const dx = pts[i].x - pts[j].x;
+        const dy = pts[i].y - pts[j].y;
+        totalDist += Math.sqrt(dx * dx + dy * dy);
+        count++;
+      }
+    }
+    const avgDist = count > 0 ? totalDist / count : 0;
+    const maxDist = Math.sqrt(pw * pw + ph * ph);
+    const compactness = avgDist / maxDist;
+    const compactLabel =
+      compactness < 0.12 ? 'Very Compact' :
+      compactness < 0.18 ? 'Compact' :
+      compactness < 0.26 ? 'Balanced' :
+      compactness < 0.35 ? 'Stretched' :
+      'Very Stretched';
+
+    return {
+      team: defendingTeam, isHome, hull, defLineX,
+      widthNorm, widthLabel,
+      blockHeightLabel,
+      compactLabel, compactness,
+    };
+  }
+
+  _drawDefBlockPolygon(ctx, state) {
+    const { hull } = state;
+    if (!hull || hull.length < 3) return;
+
+    const color = state.isHome ? '59,130,246' : '34,197,94';
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(hull[0].x, hull[0].y);
+    for (let i = 1; i < hull.length; i++) {
+      ctx.lineTo(hull[i].x, hull[i].y);
+    }
+    ctx.closePath();
+
+    // Blurred inner glow for smooth tactical feel
+    ctx.filter = 'blur(6px)';
+    ctx.fillStyle = `rgba(${color},0.14)`;
+    ctx.fill();
+    ctx.filter = 'none';
+
+    // Solid fill layer
+    ctx.fillStyle = `rgba(${color},0.08)`;
+    ctx.fill();
+
+    ctx.strokeStyle = `rgba(${color},0.60)`;
+    ctx.lineWidth = 1.5;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  _drawDefLine(ctx, state, W, H) {
+    const color = state.isHome ? '59,130,246' : '34,197,94';
+    const pulse = 0.6 + 0.4 * (0.5 + 0.5 * Math.sin(performance.now() * 0.002));
+
+    ctx.save();
+    ctx.strokeStyle = `rgba(${color},${0.5 * pulse})`;
+    ctx.lineWidth = 2.0;
+    ctx.setLineDash([6, 4]);
+    ctx.lineCap = 'round';
+    ctx.beginPath();
+    ctx.moveTo(state.defLineX, this._pad);
+    ctx.lineTo(state.defLineX, H - this._pad);
+    ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.restore();
+  }
+
+  _drawDefBlockLabel(ctx, state) {
+    ctx.save();
+    const labelX = state.defLineX + 8;
+    const labelY = this._pad + 18;
+
+    ctx.fillStyle = 'rgba(0,0,0,0.40)';
+    ctx.beginPath();
+    ctx.roundRect(labelX - 2, labelY - 2, 82, 24, 3);
+    ctx.fill();
+
+    ctx.fillStyle = 'rgba(255,255,255,0.85)';
+    ctx.font = 'bold 8px Inter, Arial, sans-serif';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+    ctx.fillText(state.blockHeightLabel, labelX, labelY);
+
+    ctx.fillStyle = 'rgba(255,255,255,0.55)';
+    ctx.font = '6px Inter, Arial, sans-serif';
+    ctx.fillText(state.compactLabel + ' · ' + state.widthLabel, labelX, labelY + 11);
+
+    ctx.restore();
+  }
+
+  // ── PITCH CONTROL (influence-based territory model) ──
+  _drawPitchControlOverlay(W, H) {
+    const ctx = this.ctx;
+    const pw = W - this._pad * 2;
+    const ph = H - this._pad * 2;
+    const gridW = 40, gridH = 25;
+    const cellW = pw / gridW, cellH = ph / gridH;
+
+    if (!this._pitchControlDisplay) {
+      this._pitchControlGrid = new Float32Array(gridW * gridH);
+      this._pitchControlDisplay = new Float32Array(gridW * gridH);
+    }
+
+    // Recompute grid ~8fps or when dirty (possession/event change)
+    if (this._pitchControlDirty || (++this._pitchControlTick & 7) === 0) {
+      this._computeControlGrid(gridW, gridH, cellW, cellH);
+      this._pitchControlDirty = false;
+    }
+
+    // Smooth lerp toward target
+    const rate = 0.06;
+    const display = this._pitchControlDisplay;
+    const target = this._pitchControlGrid;
+    for (let i = 0; i < display.length; i++) {
+      display[i] += (target[i] - display[i]) * rate;
+    }
+
+    // Render as flowing territory (not blocky heatmap)
+    this._renderControlTerritory(ctx, display, gridW, gridH, cellW, cellH);
+  }
+
+  _computeControlGrid(gridW, gridH, cellW, cellH) {
+    const roleWeight = {
+      GK: 0.5, CB: 1.0, DF: 1.0, LB: 0.9, RB: 0.9, WB: 0.85,
+      DM: 1.0, CM: 0.9, LM: 0.8, RM: 0.8,
+      AM: 0.8, LW: 0.7, RW: 0.7,
+      ST: 0.6, CF: 0.7, FW: 0.6, SS: 0.7,
     };
 
-    drawBlock(homeDef, 'rgba(59,130,246,0.06)', 'rgba(59,130,246,0.25)', 'HOME BLOCK');
-    drawBlock(awayDef, 'rgba(139,245,90,0.06)', 'rgba(139,245,90,0.25)', 'AWAY BLOCK');
+    const homePts = this.homePlayers.map(p => {
+      const idx = this.players.indexOf(p);
+      return { pos: this._getPlayerDisplayPos(p, idx), w: roleWeight[p.pos] || 0.8 };
+    });
+    const awayPts = this.awayPlayers.map(p => {
+      const idx = this.players.indexOf(p);
+      return { pos: this._getPlayerDisplayPos(p, idx), w: roleWeight[p.pos] || 0.8 };
+    });
 
+    const pitchDiag = Math.sqrt((cellW * gridW) ** 2 + (cellH * gridH) ** 2);
+    const sigmaSq = (pitchDiag * 0.10) ** 2;
+
+    for (let gy = 0; gy < gridH; gy++) {
+      const cy = this._pad + (gy + 0.5) * cellH;
+      for (let gx = 0; gx < gridW; gx++) {
+        const cx = this._pad + (gx + 0.5) * cellW;
+        let homeInf = 0, awayInf = 0;
+
+        for (const { pos, w } of homePts) {
+          const dx = cx - pos.x, dy = cy - pos.y;
+          homeInf += w / (1 + (dx * dx + dy * dy) / sigmaSq);
+        }
+        for (const { pos, w } of awayPts) {
+          const dx = cx - pos.x, dy = cy - pos.y;
+          awayInf += w / (1 + (dx * dx + dy * dy) / sigmaSq);
+        }
+
+        const total = homeInf + awayInf;
+        this._pitchControlGrid[gy * gridW + gx] = total > 0.001 ? (homeInf - awayInf) / total : 0;
+      }
+    }
+  }
+
+  _renderControlTerritory(ctx, display, gridW, gridH, cellW, cellH) {
+    const off = document.createElement('canvas');
+    const scale = 2;
+    off.width = gridW * scale;
+    off.height = gridH * scale;
+    const offCtx = off.getContext('2d');
+
+    for (let gy = 0; gy < gridH; gy++) {
+      for (let gx = 0; gx < gridW; gx++) {
+        const val = display[gy * gridW + gx];
+        const px = gx * scale, py = gy * scale;
+
+        if (val > 0.04) {
+          const a = Math.min(val * 0.5, 0.18);
+          offCtx.fillStyle = `rgba(59,130,246,${a})`;
+        } else if (val < -0.04) {
+          const a = Math.min(-val * 0.5, 0.18);
+          offCtx.fillStyle = `rgba(249,115,22,${a})`;
+        } else {
+          offCtx.fillStyle = `rgba(160,160,160,${0.04})`;
+        }
+        offCtx.fillRect(px, py, scale, scale);
+      }
+    }
+
+    ctx.save();
+    ctx.filter = 'blur(8px)';
+    ctx.drawImage(off, this._pad, this._pad, cellW * gridW, cellH * gridH);
+    ctx.filter = 'none';
     ctx.restore();
   }
 
@@ -1276,42 +2373,6 @@ class Pitch2D {
                    eh.coord.y + ny * Math.max(len * 0.6, 30) - 6 * Math.sin(Math.atan2(ny, nx) + 0.45));
         ctx.closePath();
         ctx.fill();
-      }
-    }
-
-    // 4. Animated ball
-    if (eh.ballTarget) {
-      const t = Math.min(1, elapsed / 0.7);
-      const ease = 1 - Math.pow(1 - t, 3);
-      const bxNorm = eh.ballStartPos.x + (eh.ballTarget.x - eh.ballStartPos.x) * ease;
-      const byNorm = eh.ballStartPos.y + (eh.ballTarget.y - eh.ballStartPos.y) * ease;
-      const pad = this._pad;
-      const pw = W - pad * 2;
-      const ph = H - pad * 2;
-      const bx = pad + bxNorm * pw;
-      const by = pad + (1 - byNorm) * ph;
-
-      ctx.beginPath();
-      ctx.arc(bx + 1.5, by + 1.5, 5, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(0,0,0,0.25)';
-      ctx.fill();
-      ctx.beginPath();
-      ctx.arc(bx, by, 5, 0, Math.PI * 2);
-      ctx.fillStyle = '#FFFFFF';
-      ctx.fill();
-      ctx.strokeStyle = `rgba(255,255,255,${0.3 * fadeIn})`;
-      ctx.lineWidth = 0.5;
-      ctx.stroke();
-
-      const trailAlpha = 0.25 * ease * (1 - ease) * 4 * fadeIn;
-      if (trailAlpha > 0.01) {
-        ctx.strokeStyle = `rgba(255,255,255,${trailAlpha})`;
-        ctx.lineWidth = 1.5;
-        ctx.setLineDash([]);
-        ctx.beginPath();
-        ctx.moveTo(pad + eh.ballStartPos.x * pw, pad + (1 - eh.ballStartPos.y) * ph);
-        ctx.lineTo(bx, by);
-        ctx.stroke();
       }
     }
 
@@ -1458,8 +2519,36 @@ class Pitch2D {
     if (hit !== this.hovered) {
       this.hovered = hit;
       this._draw();
-      if (hit && this.onPlayerHover) this.onPlayerHover(hit, e.clientX, e.clientY);
-      else if (!hit && this.onPlayerLeave) this.onPlayerLeave();
+      if (hit && this.onPlayerHover) {
+        let pCtx = null;
+        if (this.overlayMode === 'pressing' && this._pressingState) {
+          pCtx = this._pressingState.pressingPlayers.find(p => p.player === hit) || null;
+        }
+        this.onPlayerHover(hit, e.clientX, e.clientY, pCtx);
+      } else if (!hit && this.onPlayerLeave) this.onPlayerLeave();
+    }
+
+    // Passing lane hover detection
+    if (this.overlayMode === 'passing' && this._passingGraph && this._passingGraph.edges.length) {
+      const hoverThreshold = 8;
+      let hoveredEdge = null;
+      for (const edge of this._passingGraph.edges) {
+        if (edge.blocked) continue;
+        const d = this._distToSegment(mx, my, edge.passerPos.x, edge.passerPos.y,
+          edge.receiverPos.x, edge.receiverPos.y);
+        if (d < hoverThreshold) { hoveredEdge = edge; break; }
+      }
+      if (hoveredEdge !== this._passingHover) {
+        this._passingHover = hoveredEdge;
+        this._draw();
+        if (hoveredEdge && this.onPassingHover) {
+          this.onPassingHover(hoveredEdge, e.clientX, e.clientY);
+        } else if (!hoveredEdge && this.onPassingHover) {
+          this.onPassingHover(null, e.clientX, e.clientY);
+        }
+      }
+    } else if (this._passingHover) {
+      this._passingHover = null;
     }
   }
 
@@ -1469,6 +2558,56 @@ class Pitch2D {
       this._draw();
       if (this.onPlayerLeave) this.onPlayerLeave();
     }
+    if (this._passingHover) {
+      this._passingHover = null;
+      this._draw();
+      if (this.onPassingHover) this.onPassingHover(null, 0, 0);
+    }
+  }
+
+  _onClick(e) {
+    const rect = this.canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+    const hit = this._hitTest(mx, my);
+    if (hit) {
+      if (this._selectedPlayer === hit) {
+        this._selectedPlayer = null;
+        this._stopSelectionAnim();
+      } else {
+        this._selectedPlayer = hit;
+        this._startSelectionAnim();
+      }
+      this._passingDirty = true;
+      if (this.overlayMode === 'passing') this._draw();
+      if (this.onPlayerSelect) this.onPlayerSelect(this._selectedPlayer);
+    } else {
+      if (this._selectedPlayer) {
+        this._selectedPlayer = null;
+        this._stopSelectionAnim();
+        this._passingDirty = true;
+        if (this.overlayMode === 'passing') this._draw();
+        if (this.onPlayerSelect) this.onPlayerSelect(null);
+      }
+    }
+  }
+
+  _startSelectionAnim() {
+    if (this._selectionAnimId) return;
+    const tick = () => {
+      if (!this._selectedPlayer) { this._selectionAnimId = null; return; }
+      if (this._selectionAnimating) { this._selectionAnimId = requestAnimationFrame(tick); return; }
+      this._draw();
+      this._selectionAnimId = requestAnimationFrame(tick);
+    };
+    this._selectionAnimId = requestAnimationFrame(tick);
+  }
+
+  _stopSelectionAnim() {
+    if (this._selectionAnimId) {
+      cancelAnimationFrame(this._selectionAnimId);
+      this._selectionAnimId = null;
+    }
   }
 
   destroy() {
@@ -1476,6 +2615,10 @@ class Pitch2D {
     if (this._selectionAnimId) {
       cancelAnimationFrame(this._selectionAnimId);
       this._selectionAnimId = null;
+    }
+    if (this._attackZoneAnimId) {
+      cancelAnimationFrame(this._attackZoneAnimId);
+      this._attackZoneAnimId = null;
     }
     this.canvas.remove();
     this.players = [];

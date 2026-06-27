@@ -121,15 +121,13 @@
           <div class="pitch-controls">
             <div class="mode-toggles">
               <button class="mode-btn active" data-mode="shape" onclick="setDisplayMode('shape')">Shape</button>
-              <button class="mode-btn" data-mode="live" onclick="setDisplayMode('live')">Live</button>
             </div>
             <div class="overlay-toggles">
               <button class="overlay-btn active" data-overlay="shape" onclick="setOverlay('shape')">Shape</button>
               <button class="overlay-btn" data-overlay="pressing" onclick="setOverlay('pressing')">Pressing</button>
-              <button class="overlay-btn" data-overlay="attack" onclick="setOverlay('attack')">Attack Zones</button>
               <button class="overlay-btn" data-overlay="passing" onclick="setOverlay('passing')">Passing Lanes</button>
               <button class="overlay-btn" data-overlay="defensive" onclick="setOverlay('defensive')">Defensive Block</button>
-              <button class="overlay-btn" data-overlay="compactness" onclick="setOverlay('compactness')">Compactness</button>
+              <button class="overlay-btn" data-overlay="pitch_control" onclick="setOverlay('pitch_control')">Pitch Control</button>
             </div>
             <div class="view-toggles">
               <button class="view-btn active" id="view-2d" onclick="setView('2d')">2D</button>
@@ -147,6 +145,7 @@
         <!-- Momentum Bar -->
         <div class="momentum-bar" id="momentum-bar">
           <div class="momentum-label">MOMENTUM</div>
+          <span class="mom-state-label" id="mom-label">Balanced</span>
           <div class="momentum-tracks">
             <div class="momentum-team home-mom">
               <span class="mom-name" id="mom-home-name">SENEGAL</span>
@@ -278,14 +277,8 @@
         </div>
         <div class="card-body">
           <div class="attack-zones-visual">
-            <div class="mini-pitch">
-              <div class="spinner"></div>
-            </div>
-            <div class="zone-stats">
-              <div class="zone-stat"><span class="zone-dot l"></span> Left <span class="zone-pct">—</span></div>
-              <div class="zone-stat"><span class="zone-dot c"></span> Central <span class="zone-pct">—</span></div>
-              <div class="zone-stat"><span class="zone-dot r"></span> Right <span class="zone-pct">—</span></div>
-            </div>
+            <div id="mini-pitch-container" class="mini-pitch-container"></div>
+            <div id="pitch-tooltip" class="pitch-tooltip"></div>
           </div>
         </div>
       </div>
