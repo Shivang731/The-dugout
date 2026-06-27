@@ -1437,6 +1437,9 @@ class Pitch3D {
     this._animTime = 0;
     this._currentOverlay = 'shape';
     this._highlightCircles = [];
+    this._replaying = false;
+    this._replayCreatedPlayers = [];
+    this._replayLabel = null;
 
     this._setupScene();
     this._setupLights();
@@ -2157,6 +2160,258 @@ class Pitch3D {
     });
   }
 
+  // ===== HISTORICAL REPLAY SYSTEM =====
+  playReplayEvents(events, scenario) {
+    if (!events || !events.length || !this._ballData) return;
+    const cutOffMinute = typeof getMatchMinute === 'function' ? getMatchMinute(scenario) : 67;
+    const filtered = events.filter(e => (e.minute || 0) > cutOffMinute);
+    if (!filtered.length) return;
+    this._replaying = true;
+
+    const allPlayerData = [
+      ...(scenario.home_players || []).map(p => ({ ...p, team: 'home' })),
+      ...(scenario.away_players || []).map(p => ({ ...p, team: 'away' })),
+    ];
+
+    const finalHome = scenario.scoreline?.home || 0;
+    const finalAway = scenario.scoreline?.away || 0;
+    let postHome = 0, postAway = 0;
+    filtered.forEach(e => {
+      if (e.type === 'goal') {
+        const t = this._getEventTeam(e.player, allPlayerData);
+        if (t === 'home') postHome++; else postAway++;
+      }
+    });
+
+    this._replayScore = { home: finalHome - postHome, away: finalAway - postAway };
+    const homeEl = document.getElementById('home-score');
+    const awayEl = document.getElementById('away-score');
+    if (homeEl) homeEl.textContent = this._replayScore.home;
+    if (awayEl) awayEl.textContent = this._replayScore.away;
+
+    this._replayBallStartPos = {
+      x: this._ballData.group.position.x,
+      z: this._ballData.group.position.z,
+    };
+
+    this._runReplaySequence(filtered, allPlayerData);
+  }
+
+  _getEventTeam(playerName, allPlayerData) {
+    if (!playerName) return 'home';
+    const m = allPlayerData.find(p => p.name === playerName);
+    return m ? m.team : 'home';
+  }
+
+  _findPlayerMesh(playerName) {
+    return this.players.find(p => p.data && p.data.name === playerName) || null;
+  }
+
+  _delay(ms) {
+    return new Promise(r => setTimeout(r, ms));
+  }
+
+  async _runReplaySequence(events, allPlayerData) {
+    for (const event of events) {
+      if (!this._replaying || !this._running) break;
+      const team = this._getEventTeam(event.player, allPlayerData);
+      switch (event.type) {
+        case 'goal':
+          await this._animateReplayGoal(event, team);
+          break;
+        case 'substitution':
+          await this._animateReplaySub(event, team);
+          break;
+        case 'yellow_card':
+          await this._animateReplayYellow(event, team);
+          break;
+        default:
+          await this._delay(600);
+          continue;
+      }
+      await this._delay(900);
+    }
+    this._showReplayComplete();
+  }
+
+  async _animateReplayGoal(event, team) {
+    const isHome = team === 'home';
+    const targetZ = isHome ? HALF_L - 1.5 : -HALF_L + 1.5;
+    const targetX = 0;
+    const dur = 1800;
+    const startX = this._ballData.group.position.x;
+    const startZ = this._ballData.group.position.z;
+    const startTime = performance.now();
+
+    const flashMat = new THREE.MeshBasicMaterial({
+      color: 0xffffff, transparent: true, opacity: 0, side: THREE.DoubleSide,
+    });
+    const flash = new THREE.Mesh(new THREE.PlaneGeometry(8, 4), flashMat);
+    flash.rotation.x = -Math.PI / 2;
+    flash.position.set(targetX, 0.05, targetZ);
+    this.scene.add(flash);
+
+    let didIncrement = false;
+
+    return new Promise(resolve => {
+      const step = (now) => {
+        const t = Math.min(1, (now - startTime) / dur);
+        const ease = 1 - Math.pow(1 - t, 3);
+        this._ballData.group.position.x = startX + (targetX - startX) * ease;
+        this._ballData.group.position.z = startZ + (targetZ - startZ) * ease;
+        if (t > 0.6 && t < 0.85) {
+          flash.material.opacity = ((t - 0.6) / 0.25) * 0.7;
+        } else if (t >= 0.85) {
+          flash.material.opacity = Math.max(0, (1 - (t - 0.85) / 0.15) * 0.7);
+        }
+        if (!didIncrement && t >= 0.7) {
+          didIncrement = true;
+          if (isHome) {
+            this._replayScore.home++;
+            const el = document.getElementById('home-score');
+            if (el) el.textContent = this._replayScore.home;
+          } else {
+            this._replayScore.away++;
+            const el = document.getElementById('away-score');
+            if (el) el.textContent = this._replayScore.away;
+          }
+        }
+        if (t < 1) {
+          requestAnimationFrame(step);
+        } else {
+          this.scene.remove(flash);
+          flash.geometry.dispose();
+          flash.material.dispose();
+          resolve();
+        }
+      };
+      requestAnimationFrame(step);
+    });
+  }
+
+  async _animateReplaySub(event, team) {
+    const m = event.description.match(/replaces (.+?) \(/);
+    if (!m) return;
+    const outName = m[1].trim();
+    const inName = event.player;
+    if (!inName) return;
+    const outPlayer = this._findPlayerMesh(outName);
+    if (!outPlayer) return;
+
+    const posX = outPlayer.group.position.x;
+    const posZ = outPlayer.group.position.z;
+
+    const origOpacity = [];
+    outPlayer.group.traverse(child => {
+      if (child.isMesh && child.material) {
+        const mats = Array.isArray(child.material) ? child.material : [child.material];
+        mats.forEach(mat => {
+          origOpacity.push({ mesh: child, mat, opacity: mat.opacity });
+          mat.transparent = true;
+        });
+      }
+    });
+
+    const fadeDur = 500;
+    const fadeStart = performance.now();
+    await new Promise(resolve => {
+      const step = (now) => {
+        const t = Math.min(1, (now - fadeStart) / fadeDur);
+        origOpacity.forEach(({ mat }) => { mat.opacity = 1 - t; });
+        if (t < 1) requestAnimationFrame(step); else resolve();
+      };
+      requestAnimationFrame(step);
+    });
+
+    const subData = {
+      name: inName, number: '?', pos: 'SUB',
+      x: 0.5, y: 0.5, team, fatigue: 50,
+    };
+    const { group, hitMesh, glow, data } = _buildPlayerFigure(subData, this.scenario);
+    group.position.set(posX, 0, posZ);
+    this.scene.add(group);
+    const newPlayer = { group, data: subData, hitMesh, glow };
+    this.players.push(newPlayer);
+    this._replayCreatedPlayers.push(newPlayer);
+
+    group.traverse(child => {
+      if (child.isMesh && child.material) {
+        const mats = Array.isArray(child.material) ? child.material : [child.material];
+        mats.forEach(mat => { mat.transparent = true; mat.opacity = 0; });
+      }
+    });
+
+    const fadeInStart = performance.now();
+    await new Promise(resolve => {
+      const step = (now) => {
+        const t = Math.min(1, (now - fadeInStart) / fadeDur);
+        group.traverse(child => {
+          if (child.isMesh && child.material) {
+            const mats = Array.isArray(child.material) ? child.material : [child.material];
+            mats.forEach(mat => { mat.transparent = true; mat.opacity = t; });
+          }
+        });
+        if (t < 1) requestAnimationFrame(step); else resolve();
+      };
+      requestAnimationFrame(step);
+    });
+  }
+
+  async _animateReplayYellow(event, team) {
+    const player = this._findPlayerMesh(event.player);
+    if (!player) return;
+    const colored = [];
+    player.group.traverse(child => {
+      if (child.isMesh && child.material && child.material.color) {
+        colored.push({ mesh: child, color: child.material.color.getHex() });
+        child.material.color.setHex(0xffd700);
+      }
+    });
+    await this._delay(200);
+    const restoreStart = performance.now();
+    const restoreDur = 400;
+    return new Promise(resolve => {
+      const step = (now) => {
+        const t = Math.min(1, (now - restoreStart) / restoreDur);
+        const gold = new THREE.Color(0xffd700);
+        colored.forEach(({ mesh, color }) => {
+          mesh.material.color.lerpColors(gold, new THREE.Color(color), t);
+        });
+        if (t < 1) requestAnimationFrame(step); else resolve();
+      };
+      requestAnimationFrame(step);
+    });
+  }
+
+  _showReplayComplete() {
+    this._replaying = false;
+    if (this._replayLabel) {
+      this.scene.remove(this._replayLabel);
+      if (this._replayLabel.material.map) this._replayLabel.material.map.dispose();
+      this._replayLabel.material.dispose();
+    }
+    const canvas = document.createElement('canvas');
+    canvas.width = 512;
+    canvas.height = 128;
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, 512, 128);
+    ctx.font = '700 44px Arial, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.shadowColor = 'rgba(0,0,0,0.9)';
+    ctx.shadowBlur = 16;
+    ctx.fillStyle = '#22c55e';
+    ctx.fillText('◆ Showing: Real Outcome', 256, 64);
+    const tex = new THREE.CanvasTexture(canvas);
+    tex.needsUpdate = true;
+    const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false, sizeAttenuation: true });
+    const sprite = new THREE.Sprite(mat);
+    sprite.scale.set(3.5, 0.7, 1);
+    sprite.position.set(0, 3.5, 0);
+    this.scene.add(sprite);
+    this._replayLabel = sprite;
+  }
+
   // ===== INTERACTION =====
   _setHover(item) {
     this.hovered = item;
@@ -2293,17 +2548,28 @@ class Pitch3D {
 
   destroy() {
     this._running = false;
+    this._replaying = false;
     this._clearHighlights();
     this._clearLabels();
     this._clearPassingLines();
     this._clearHighlightCircles();
     _clearPlayers(this.scene, this.players);
+    if (this._replayCreatedPlayers.length) {
+      _clearPlayers(this.scene, this._replayCreatedPlayers);
+      this._replayCreatedPlayers = [];
+    }
     if (this._ballData) {
       this.scene.remove(this._ballData.group);
       this._ballData = null;
     }
     if (this._crowdGroup) {
       this.scene.remove(this._crowdGroup);
+    }
+    if (this._replayLabel) {
+      this.scene.remove(this._replayLabel);
+      if (this._replayLabel.material.map) this._replayLabel.material.map.dispose();
+      this._replayLabel.material.dispose();
+      this._replayLabel = null;
     }
     this._arrowMeshes.forEach(m => {
       this.scene.remove(m);

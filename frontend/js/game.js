@@ -132,7 +132,7 @@ function renderEvents() {
     const cls = e.type === 'goal' ? 'goal' : e.type === 'yellow_card' ? 'yellow_card' : e.type === 'substitution' ? 'substitution' : '';
     const desc = (e.description || '').substring(0, 25);
     return `
-      <div class="event-pin ${cls}" title="${e.description || ''}">
+      <div class="event-pin ${cls}" data-index="${i}" title="${e.description || ''}">
         <span class="event-minute">${e.minute || '?'}'</span>
         <span class="event-icon">${icon}</span>
         <span class="event-desc">${desc}</span>
@@ -140,6 +140,17 @@ function renderEvents() {
       ${i < events.length - 1 ? '<span class="timeline-line"></span>' : ''}
     `;
   }).join('');
+
+  el.querySelectorAll('.event-pin').forEach(pin => {
+    pin.addEventListener('mouseenter', () => {
+      const idx = parseInt(pin.dataset.index);
+      const event = events[idx];
+      if (pitch && pitch.highlightEvent) pitch.highlightEvent(event);
+    });
+    pin.addEventListener('mouseleave', () => {
+      if (pitch && pitch.clearEventHighlight) pitch.clearEventHighlight();
+    });
+  });
 }
 
 // ===== OVERLAY CONTROL =====
@@ -732,6 +743,15 @@ async function selectOption(label) {
   decisionMade = true;
   if (timerId) { clearInterval(timerId); timerId = null; }
 
+  clearOptionPreview();
+
+  const chosenOpt = (currentScenario.options || []).find(o => o.label === label);
+  const action = chosenOpt ? chosenOpt.action : '';
+
+  if (currentView === '2d' && pitch && pitch.animateSelection) {
+    pitch.animateSelection(action);
+  }
+
   const cards = document.querySelectorAll('.option-card');
   cards.forEach(el => {
     if (el.dataset.label === label) el.classList.add('selected', 'locked');
@@ -800,6 +820,11 @@ async function showResult(choice) {
   }
 
   resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  // Fire 3D historical replay in parallel (doesn't block text panel)
+  if (currentView === '3d' && pitch3d && pitch3d.playReplayEvents) {
+    pitch3d.playReplayEvents(currentScenario.replay_events || [], currentScenario);
+  }
 }
 
 // ===== NAVIGATION =====
