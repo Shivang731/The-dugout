@@ -420,6 +420,11 @@ class Pitch2D {
     this._attackZoneDisplay = { ...this._attackZoneData };
     this._attackZoneAnimId = null;
 
+    // Highlighted zones (for AI Insight sync)
+    this.highlightZones = [];
+    this._highlightZonesFade = 0;
+    this._highlightZonesAnimId = null;
+
     this._W = 0;
     this._H = 0;
     this._pad = 14;
@@ -449,6 +454,23 @@ class Pitch2D {
 
     this._overlayAnimId = null;
     this._overlayAnimStart = 0;
+    this._overlayPrevMode = null;
+    this._overlayPrevData = null;
+    this._overlayTransStart = 0;
+    this._overlayTransDuration = 250;
+    this._inOverlayTrans = false;
+
+    // Replay interpolation
+    this._replayKeyframes = [];
+    this._replayIndex = -1;
+    this._replayPlaying = false;
+    this._replaySpeed = 1;
+    this._replayNextTime = 0;
+    this._replayAnimId = null;
+
+    // Idle player bob
+    this._bobTime = 0;
+    this._bobAnimId = null;
 
     this._selectedPlayer = null;
     this._passingDirty = true;
@@ -461,7 +483,7 @@ class Pitch2D {
     this._defensiveDirty = true;
     this._defensiveCache = null;
     this._pitchControlDirty = true;
-    this._pitchControlGrid = null;
+    this._pitchControlHomeRatio = null;
     this._pitchControlDisplay = null;
     this._pitchControlTick = 0;
     this.onPlayerSelect = null;
@@ -530,6 +552,7 @@ class Pitch2D {
     this._computeMomentum();
     this._initBallFromScenario(this.scenario);
     this._draw();
+    this._scheduleOverlayAnim();
   }
 
   setDisplayMode(mode) {
@@ -540,36 +563,196 @@ class Pitch2D {
 
   setOverlay(mode) {
     this._stopOverlayAnim();
+    const prevMode = this.overlayMode;
+    if (prevMode === mode) return;
+    this._overlayPrevMode = prevMode;
+    this._overlayPrevData = this._captureOverlayState(prevMode);
     this.overlayMode = mode;
     if (mode === 'passing') this._passingDirty = true;
     if (mode === 'pressing') this._pressingDirty = true;
     if (mode === 'defensive') this._defensiveDirty = true;
+    if (mode === 'pitch_control') this._pitchControlDirty = true;
     if (mode === 'attack') {
       this._attackZoneData = computeAttackZones(this.scenario, this.homePlayers);
       this.setAttackZoneData(this._attackZoneData);
     }
-    this._overlayAnimStart = performance.now();
+    this._inOverlayTrans = true;
+    this._overlayTransStart = performance.now();
     this._draw();
     this._scheduleOverlayAnim();
   }
 
   _scheduleOverlayAnim() {
-    if (this.overlayMode === 'passing' || this.overlayMode === 'pressing' || this.overlayMode === 'defensive' || this.overlayMode === 'pitch_control') {
+    if (this.overlayMode === 'passing' || this.overlayMode === 'pressing' || this.overlayMode === 'defensive' || this.overlayMode === 'pitch_control' || this._inOverlayTrans) {
       const tick = () => {
-        if (this.overlayMode === 'passing' || this.overlayMode === 'pressing' || this.overlayMode === 'defensive' || this.overlayMode === 'pitch_control') {
+        if (!this._overlayAnimId) return;
+        if (this.overlayMode === 'passing' || this.overlayMode === 'pressing' || this.overlayMode === 'defensive' || this.overlayMode === 'pitch_control' || this._inOverlayTrans) {
           if (this.overlayMode === 'defensive') this._defensiveDirty = true;
           this._draw();
           this._overlayAnimId = requestAnimationFrame(tick);
         }
       };
       this._overlayAnimId = requestAnimationFrame(tick);
+    } else {
+      this._ensureIdleAnim();
     }
+  }
+
+  _captureOverlayState(mode) {
+    return { mode };
   }
 
   _stopOverlayAnim() {
     if (this._overlayAnimId) {
       cancelAnimationFrame(this._overlayAnimId);
       this._overlayAnimId = null;
+    }
+    if (this._idleAnimId) {
+      cancelAnimationFrame(this._idleAnimId);
+      this._idleAnimId = null;
+    }
+  }
+
+  _ensureIdleAnim() {
+    if (this._idleAnimId || this._overlayAnimId || this._replayAnimId) return;
+    let lastTick = 0;
+    const tick = (now) => {
+      if (this._idleAnimId !== tick) return;
+      if (this._overlayAnimId || this._replayAnimId || this._eventHighlight) {
+        this._idleAnimId = null;
+        return;
+      }
+      if (now - lastTick > 50) {
+        lastTick = now;
+        this._bobTime = now / 1000;
+        this._draw();
+      }
+      if (!this._overlayAnimId && !this._replayAnimId && !this._eventHighlight) {
+        this._idleAnimId = requestAnimationFrame(tick);
+      }
+    };
+    this._idleAnimId = requestAnimationFrame(tick);
+  }
+
+  // ── Replay Interpolation Engine ──
+
+  computeReplayKeyframes(events) {
+    const keyframes = [];
+    const homeName = (this.scenario.home_team || '').toLowerCase();
+    for (let i = 0; i < events.length; i++) {
+      const e = events[i];
+      const desc = (e.description || '').toLowerCase();
+      const isHomeEvent = desc.includes(homeName);
+      const eType = (e.type || '').toLowerCase();
+
+      let ballX = 0.5, ballY = 0.5;
+      if (eType === 'goal' || eType === 'shot') {
+        ballX = 0.82 + Math.random() * 0.08;
+        ballY = 0.3 + Math.random() * 0.4;
+      } else if (eType === 'corner') {
+        ballX = 0.88; ballY = Math.random() > 0.5 ? 0.08 : 0.92;
+      } else if (eType === 'foul') {
+        ballX = 0.4 + Math.random() * 0.3;
+        ballY = 0.2 + Math.random() * 0.6;
+      } else if (eType === 'offside') {
+        ballX = 0.72 + Math.random() * 0.1;
+        ballY = 0.3 + Math.random() * 0.4;
+      } else if (desc.includes('cross') || desc.includes('wing') || desc.includes('wide')) {
+        ballX = 0.7 + Math.random() * 0.12;
+        ballY = Math.random() > 0.5 ? 0.05 + Math.random() * 0.15 : 0.8 + Math.random() * 0.15;
+      } else if (eType === 'substitution') {
+        ballX = 0.5 + Math.random() * 0.1;
+        ballY = 0.4 + Math.random() * 0.2;
+      } else {
+        ballX = 0.4 + Math.random() * 0.25;
+        ballY = 0.3 + Math.random() * 0.4;
+      }
+      if (!isHomeEvent) ballX = 1 - ballX;
+
+      keyframes.push({
+        index: i,
+        event: e,
+        ballX, ballY,
+      });
+    }
+    this._replayKeyframes = keyframes;
+    return keyframes;
+  }
+
+  seekReplay(index) {
+    if (!this._replayKeyframes.length) return;
+    const kf = this._replayKeyframes[Math.min(index, this._replayKeyframes.length - 1)];
+    if (!kf) return;
+    this._replayIndex = index;
+
+    if (!this.ball.animating) {
+      this.ball.lastPos = { ...this.ball.pos };
+    }
+    this.ball.animFrom = { ...this.ball.pos };
+    this.ball.animTo = { x: kf.ballX, y: kf.ballY };
+    this.ball.animStart = 0;
+    this.ball.animDuration = 350 / Math.max(0.5, this._replaySpeed);
+    this.ball.animating = true;
+    this._updateReplayUI();
+  }
+
+  playReplay() {
+    if (this._replayPlaying) return;
+    if (this._replayKeyframes.length === 0) return;
+    this._replayPlaying = true;
+    this._replayIndex = Math.max(0, this._replayIndex);
+    this._replayNextTime = performance.now() + 200;
+    this._tickReplay();
+  }
+
+  pauseReplay() {
+    this._replayPlaying = false;
+    if (this._replayAnimId) {
+      cancelAnimationFrame(this._replayAnimId);
+      this._replayAnimId = null;
+    }
+  }
+
+  setReplaySpeed(speed) {
+    this._replaySpeed = speed;
+  }
+
+  _tickReplay() {
+    if (!this._replayPlaying) return;
+    const now = performance.now();
+    if (now >= this._replayNextTime && this._replayIndex < this._replayKeyframes.length - 1) {
+      this._replayIndex++;
+      this.seekReplay(this._replayIndex);
+      const delay = 2200 / this._replaySpeed;
+      this._replayNextTime = now + delay;
+      this._updateReplayUI();
+    }
+    if (this._replayIndex >= this._replayKeyframes.length - 1) {
+      this._replayPlaying = false;
+      this._updateReplayUI();
+      return;
+    }
+    // Redraw every frame for smooth ball animation
+    this._bobTime = now / 1000;
+    this._draw();
+    this._replayAnimId = requestAnimationFrame(() => this._tickReplay());
+  }
+
+  _updateReplayUI() {
+    const el = document.getElementById('replay-progress');
+    if (el && this._replayKeyframes.length) {
+      const pct = ((this._replayIndex + 1) / this._replayKeyframes.length) * 100;
+      el.style.width = pct + '%';
+    }
+    // Update active event pin
+    document.querySelectorAll('.event-pin').forEach((pin, i) => {
+      pin.classList.toggle('active', i === this._replayIndex);
+    });
+    // Update minute display
+    const kf = this._replayKeyframes[this._replayIndex];
+    if (kf) {
+      const minEl = document.getElementById('match-minute');
+      if (minEl) minEl.textContent = (kf.event.minute || '?') + "'";
     }
   }
 
@@ -970,37 +1153,98 @@ class Pitch2D {
     const W = this._W;
     const H = this._H;
     if (!W || !H) return;
+
+    // Overlay transition progress
+    let transT = 1;
+    let oldOverlayMode = null;
+    if (this._inOverlayTrans) {
+      const elapsed = performance.now() - this._overlayTransStart;
+      transT = Math.min(1, elapsed / this._overlayTransDuration);
+      if (transT >= 1) {
+        this._inOverlayTrans = false;
+        this._overlayPrevMode = null;
+        this._overlayPrevData = null;
+        transT = 1;
+      } else {
+        transT = this._easeOutCubic(transT);
+        oldOverlayMode = this._overlayPrevMode;
+      }
+    }
+
     ctx.clearRect(0, 0, W, H);
     drawPitchBackground(this.ctx, W, H, this._pad);
 
-    // Layer 2: Pitch Control (behind all tactical overlays)
+    // Layer 2: Pitch Control (behind all tactical overlays) — transition-aware
     if (this.displayMode !== 'live' && this.overlayMode === 'pitch_control') {
+      ctx.save();
+      ctx.globalAlpha = this._inOverlayTrans ? transT : 1;
       this._drawPitchControlOverlay(W, H);
+      ctx.restore();
+    }
+    if (oldOverlayMode === 'pitch_control') {
+      ctx.save();
+      ctx.globalAlpha = 1 - transT;
+      this._drawPitchControlOverlay(W, H);
+      ctx.restore();
     }
 
     // Layer 3-4: Defensive Block, Passing Lanes, Attack Zones, Compactness
-    // (drawn behind players so markings stay readable)
-    if (this.displayMode !== 'live' && this.overlayMode !== 'shape' && this.overlayMode !== 'pressing' && this.overlayMode !== 'pitch_control') {
+    // (skipped during transitions — handled by the transition blocks below)
+    if (!this._inOverlayTrans && this.displayMode !== 'live' && this.overlayMode !== 'shape' && this.overlayMode !== 'pressing' && this.overlayMode !== 'pitch_control') {
       this._drawOverlay(W, H);
+    }
+
+    // If transitioning, draw new overlay fading in, old fading out
+    if (this._inOverlayTrans) {
+      // New overlay (excluding pressing/pitch_control which have separate blocks)
+      if (this.overlayMode !== 'shape' && this.overlayMode !== 'pressing' && this.overlayMode !== 'pitch_control') {
+        ctx.save();
+        ctx.globalAlpha = transT;
+        this._drawOverlay(W, H);
+        ctx.restore();
+      }
+      // Old overlay fading out
+      if (oldOverlayMode && oldOverlayMode !== 'shape' && oldOverlayMode !== 'pressing' && oldOverlayMode !== 'pitch_control') {
+        ctx.save();
+        ctx.globalAlpha = 1 - transT;
+        const savedMode = this.overlayMode;
+        this.overlayMode = oldOverlayMode;
+        this._drawOverlay(W, H);
+        this.overlayMode = savedMode;
+        ctx.restore();
+      }
     }
 
     // Attack zones always render when flagged (mini-pitch companion)
     if (this.renderFlags.attackZones) {
       this._drawAttackOverlay(W, H);
     }
-
     this._updateBallAnimation();
+    this._drawHighlights(W, H);
 
-    // Layer 5-6: Players and Ball
+    // Update idle bob and draw players
+    this._bobTime = performance.now() / 1000;
     if (this.renderFlags.players) this._drawPlayers(W, H);
     if (this.renderFlags.ball) this._drawBall(W, H);
 
-    // Layer 7: Pressing (on top of players)
+    // Pressing overlay on top of players
     if (this.displayMode !== 'live' && this.overlayMode === 'pressing') {
+      ctx.save();
+      ctx.globalAlpha = this._inOverlayTrans ? transT : 1;
       this._drawPressingOverlay(W, H);
+      ctx.restore();
     }
 
-    // Layer 8: Labels
+    if (oldOverlayMode === 'pressing') {
+      ctx.save();
+      ctx.globalAlpha = 1 - transT;
+      const savedMode = this.overlayMode;
+      this.overlayMode = 'pressing';
+      this._drawPressingOverlay(W, H);
+      this.overlayMode = savedMode;
+      ctx.restore();
+    }
+
     if (this.renderFlags.labels) this._drawEventHighlight(W, H);
   }
 
@@ -1274,12 +1518,10 @@ class Pitch2D {
   _drawOverlay(W, H) {
     if (!this.overlayMode || this.overlayMode === 'shape') return;
     switch (this.overlayMode) {
-      case 'pressing': this._drawPressingOverlay(W, H); break;
       case 'attack': this._drawAttackOverlay(W, H); break;
       case 'passing': this._drawPassingOverlay(W, H); break;
       case 'defensive': this._drawDefensiveOverlay(W, H); break;
       case 'compactness': this._drawCompactnessOverlay(W, H); break;
-      case 'pitch_control': this._drawPitchControlOverlay(W, H); break;
     }
   }
 
@@ -1385,20 +1627,67 @@ class Pitch2D {
       this._pressingState = this._computePressingState(W, H);
       this._pressingDirty = false;
     }
+
     const ps = this._pressingState;
     if (!ps || !ps.pressingPlayers.length) return;
 
     ctx.save();
 
-    // Pressure circles
     const active = ps.pressingPlayers.filter(p => p.isActive);
+    const bcPos = ps.ballPos;
+
+    // ── 1. Ball carrier highlight (who is getting pressed) ──
+    if (bcPos) {
+      const pulse = 0.7 + 0.3 * Math.sin(t * 3);
+      const grad = ctx.createRadialGradient(bcPos.x, bcPos.y, 0, bcPos.x, bcPos.y, 50 * pulse);
+      grad.addColorStop(0, `rgba(239,68,68,${0.35 * pulse})`);
+      grad.addColorStop(0.5, `rgba(239,68,68,${0.18 * pulse})`);
+      grad.addColorStop(1, 'rgba(239,68,68,0)');
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(bcPos.x, bcPos.y, 50 * pulse, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.strokeStyle = `rgba(239,68,68,${0.6 * pulse})`;
+      ctx.lineWidth = 3;
+      ctx.setLineDash([4, 5]);
+      ctx.lineDashOffset = -t * 50;
+      ctx.beginPath();
+      ctx.arc(bcPos.x, bcPos.y, 32, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      // Ball carrier label
+      const carrier = ps.ballCarrier;
+      const label = carrier ? (carrier.name || '#' + carrier.number) : 'Ball carrier';
+      ctx.fillStyle = `rgba(255,255,255,${0.6 + 0.2 * pulse})`;
+      ctx.font = 'bold 10px Inter, Arial, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'bottom';
+      ctx.shadowColor = 'rgba(0,0,0,0.8)';
+      ctx.shadowBlur = 6;
+      ctx.fillText(label + '  ◉', bcPos.x, bcPos.y - 36);
+      ctx.shadowBlur = 0;
+    }
+
+    // ── 2. Active pressers (who is pressing) ──
     active.forEach(p => {
-      const radius = 12 + (p.pressure / 100) * 28;
-      const pulse = 0.7 + 0.3 * Math.sin(t * 2 + p.player.number * 0.3);
-      const alpha = 0.08 + (p.pressure / 100) * 0.18;
-      const c = p.pressure > 70 ? '239,68,68' : p.pressure > 40 ? '251,146,60' : '251,191,36';
+      const int = p.pressure / 100;
+      const radius = 14 + int * 30;
+      const pulse = 0.85 + 0.15 * Math.sin(t * 2.5 + p.player.number * 0.3);
+      const c = int > 0.7 ? '239,68,68' : int > 0.4 ? '251,146,60' : '251,191,36';
+
+      // Solid outer ring for clear identification
+      ctx.strokeStyle = `rgba(${c},${0.35 + int * 0.4})`;
+      ctx.lineWidth = 1.5 + int * 1.5;
+      ctx.beginPath();
+      ctx.arc(p.pos.x, p.pos.y, (radius + 4) * pulse, 0, Math.PI * 2);
+      ctx.stroke();
+
+      // Inner glow
+      const alpha = 0.12 + int * 0.25;
       const grad = ctx.createRadialGradient(p.pos.x, p.pos.y, 0, p.pos.x, p.pos.y, radius * pulse);
-      grad.addColorStop(0, `rgba(${c},${alpha * 1.4})`);
+      grad.addColorStop(0, `rgba(${c},${alpha * 1.5})`);
       grad.addColorStop(0.5, `rgba(${c},${alpha})`);
       grad.addColorStop(1, `rgba(${c},0)`);
       ctx.fillStyle = grad;
@@ -1407,74 +1696,72 @@ class Pitch2D {
       ctx.fill();
     });
 
-    // Pressing arrows — curved, max 5, with flow
+    // ── 3. Pressing arrows (bolder, darker, solid animated dashes) ──
     const topP = active.slice(0, Math.min(5, Math.max(2, active.length)));
-    const dashOffset = -t * 50;
     topP.forEach(p => {
       const int = p.pressure / 100;
       ctx.save();
       ctx.lineCap = 'round';
-      ctx.strokeStyle = p.pressure > 70 ? '#EF4444' : p.pressure > 40 ? '#FB923C' : '#FBBF24';
-      ctx.lineWidth = 0.7 + int * 0.9;
-      ctx.globalAlpha = (0.25 + int * 0.4) * 0.85;
-      ctx.setLineDash([5, 5]);
-      ctx.lineDashOffset = dashOffset;
+      ctx.strokeStyle = p.pressure > 70 ? '#DC2626' : p.pressure > 40 ? '#EA580C' : '#D97706';
+      ctx.lineWidth = 2.5 + int * 2.5;
+      ctx.globalAlpha = 0.65 + int * 0.35;
+      ctx.setLineDash([6, 5]);
+      ctx.lineDashOffset = -t * 100;
       const mx = (p.pos.x + p.arrowTarget.x) / 2;
       const my = (p.pos.y + p.arrowTarget.y) / 2;
       const ldx = p.arrowTarget.x - p.pos.x;
       const ldy = p.arrowTarget.y - p.pos.y;
       const len = Math.sqrt(ldx * ldx + ldy * ldy) || 1;
-      const curve = Math.min(len * 0.1, 8);
+      const curve = Math.min(len * 0.08, 6);
       const nx = -ldy / len * curve;
       const ny = ldx / len * curve;
       ctx.beginPath();
       ctx.moveTo(p.pos.x, p.pos.y);
       ctx.quadraticCurveTo(mx + nx, my + ny, p.arrowTarget.x, p.arrowTarget.y);
       ctx.stroke();
-      // Arrowhead with fade at tip
-      const fadeT = 0.85;
-      const tipX = p.pos.x + ldx * fadeT;
-      const tipY = p.pos.y + ldy * fadeT;
       ctx.setLineDash([]);
-      ctx.globalAlpha = (0.3 + int * 0.35) * 0.7;
+      ctx.globalAlpha = 0.7 + int * 0.3;
       ctx.fillStyle = ctx.strokeStyle;
       ctx.beginPath();
-      const aLen = 4 + int * 3;
+      const aLen = 8 + int * 6;
       const aAng = Math.atan2(ldy, ldx);
       ctx.moveTo(p.arrowTarget.x, p.arrowTarget.y);
-      ctx.lineTo(p.arrowTarget.x - aLen * Math.cos(aAng - 0.5), p.arrowTarget.y - aLen * Math.sin(aAng - 0.5));
-      ctx.lineTo(p.arrowTarget.x - aLen * Math.cos(aAng + 0.5), p.arrowTarget.y - aLen * Math.sin(aAng + 0.5));
+      ctx.lineTo(p.arrowTarget.x - aLen * Math.cos(aAng - 0.55), p.arrowTarget.y - aLen * Math.sin(aAng - 0.55));
+      ctx.lineTo(p.arrowTarget.x - aLen * Math.cos(aAng + 0.55), p.arrowTarget.y - aLen * Math.sin(aAng + 0.55));
       ctx.closePath();
       ctx.fill();
       ctx.restore();
     });
 
-    // Press height label
+    // ── 4. Intensity label ──
     ctx.save();
-    ctx.fillStyle = 'rgba(251,191,36,0.3)';
-    ctx.font = '7px Inter, Arial, sans-serif';
+    ctx.fillStyle = 'rgba(255,255,255,0.5)';
+    ctx.font = 'bold 8px Inter, Arial, sans-serif';
     ctx.textAlign = 'center';
-    ctx.globalAlpha = 0.4 + 0.2 * Math.sin(t * 1.5);
-    ctx.fillText(ps.triggerZone.label + ' · ' + ps.shape.type.replace('front', 'Front ').replace('midfieldTrap','Midfield Trap'), W / 2, this._pad - 2);
+    ctx.textBaseline = 'top';
+    ctx.fillText(
+      ps.triggerZone.label + ' · ' + ps.shape.type.replace('front', 'Front ').replace('midfieldTrap', 'Midfield Trap'),
+      W / 2, this._pad + 2
+    );
     ctx.restore();
 
-    // Trap annotation
+    // ── 5. Trap annotation ──
     if (ps.trap) {
       const pulse = 0.7 + 0.3 * Math.sin(t * 2);
       ctx.save();
-      ctx.strokeStyle = `rgba(239,68,68,${0.25 * pulse})`;
-      ctx.lineWidth = 1.5;
-      ctx.setLineDash([3, 5]);
-      ctx.lineDashOffset = -t * 30;
+      ctx.strokeStyle = `rgba(239,68,68,${0.4 * pulse})`;
+      ctx.lineWidth = 2;
+      ctx.setLineDash([4, 6]);
+      ctx.lineDashOffset = -t * 40;
       ctx.beginPath();
-      ctx.arc(ps.trap.position.x, ps.trap.position.y, 18, 0, Math.PI * 2);
+      ctx.arc(ps.trap.position.x, ps.trap.position.y, 22, 0, Math.PI * 2);
       ctx.stroke();
       ctx.setLineDash([]);
-      ctx.fillStyle = `rgba(239,68,68,${0.55 * pulse})`;
-      ctx.font = 'bold 8px Inter, Arial, sans-serif';
+      ctx.fillStyle = `rgba(239,68,68,${0.7 * pulse})`;
+      ctx.font = 'bold 9px Inter, Arial, sans-serif';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'bottom';
-      ctx.fillText('⚠ ' + ps.trap.annotation, ps.trap.position.x, ps.trap.position.y - 20);
+      ctx.fillText('⚠ ' + ps.trap.annotation, ps.trap.position.x, ps.trap.position.y - 24);
       ctx.restore();
     }
 
@@ -1525,9 +1812,9 @@ class Pitch2D {
       }
     });
 
-    // Percentage labels
+    // Percentage labels (capped so they don't balloon on large pitches)
     ctx.fillStyle = '#FFFFFF';
-    ctx.font = `bold ${Math.max(10, h * 0.14)}px Inter, Arial, sans-serif`;
+    ctx.font = `bold ${Math.max(10, Math.min(22, h * 0.14))}px Inter, Arial, sans-serif`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.shadowColor = 'rgba(0,0,0,0.6)';
@@ -1540,7 +1827,7 @@ class Pitch2D {
 
     // Channel labels
     ctx.fillStyle = 'rgba(255,255,255,0.2)';
-    ctx.font = `${Math.max(5, h * 0.07)}px Inter, Arial, sans-serif`;
+    ctx.font = `${Math.max(5, Math.min(11, h * 0.07))}px Inter, Arial, sans-serif`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'bottom';
     ctx.fillText('L', pad + thirdW / 2, y + h - 2);
@@ -1551,7 +1838,7 @@ class Pitch2D {
     if (this.scenario) {
       const home = this.scenario.home_team || 'Home';
       ctx.fillStyle = 'rgba(255,255,255,0.22)';
-      ctx.font = `${Math.max(6, h * 0.08)}px Inter, Arial, sans-serif`;
+      ctx.font = `${Math.max(6, Math.min(13, h * 0.08))}px Inter, Arial, sans-serif`;
       ctx.textAlign = 'left';
       ctx.textBaseline = 'top';
       ctx.fillText(home + ' ATTACK', pad + 2, pad + 2);
@@ -1560,7 +1847,7 @@ class Pitch2D {
     // Dominant channel label
     const pLabel = isDominantL ? 'L' : isDominantC ? 'C' : 'R';
     ctx.fillStyle = `rgba(34,197,94,0.35)`;
-    ctx.font = `bold ${Math.max(6, h * 0.08)}px Inter, Arial, sans-serif`;
+    ctx.font = `bold ${Math.max(6, Math.min(12, h * 0.08))}px Inter, Arial, sans-serif`;
     ctx.textAlign = 'left';
     ctx.textBaseline = 'bottom';
     ctx.fillText('PRIMARY ' + pLabel, pad + 2, y + h - 2);
@@ -1609,6 +1896,66 @@ class Pitch2D {
       this._attackZoneAnimId = null;
       this._draw();
     }
+  }
+
+  // ── Zone highlighting (for AI Insight sync) ──
+  setHighlightedZones(zones) {
+    this.highlightZones = zones || [];
+    this._highlightZonesFade = 0;
+    if (this._highlightZonesAnimId) {
+      cancelAnimationFrame(this._highlightZonesAnimId);
+      this._highlightZonesAnimId = null;
+    }
+    if (this.highlightZones.length === 0) { this._draw(); return; }
+    this._stepHighlightFade();
+  }
+
+  clearHighlightedZones() {
+    this.setHighlightedZones([]);
+  }
+
+  _stepHighlightFade() {
+    this._highlightZonesFade = Math.min(1, this._highlightZonesFade + 0.04);
+    this._draw();
+    if (this._highlightZonesFade < 1) {
+      this._highlightZonesAnimId = requestAnimationFrame(() => this._stepHighlightFade());
+    } else {
+      this._highlightZonesAnimId = null;
+    }
+  }
+
+  _drawHighlights(W, H) {
+    if (!this.highlightZones || this.highlightZones.length === 0) return;
+    const ctx = this.ctx;
+    const alpha = 0.08 * this._highlightZonesFade;
+    const pulse = 0.7 + 0.3 * Math.sin(performance.now() / 1000 * 2);
+
+    this.highlightZones.forEach(z => {
+      const x = this._pad + z.x * (W - this._pad * 2);
+      const y = this._pad + z.y * (H - this._pad * 2);
+      const w = (z.w || 0.33) * (W - this._pad * 2);
+      const h = (z.h || 1) * (H - this._pad * 2);
+
+      ctx.save();
+      ctx.fillStyle = `rgba(59,130,246,${alpha * pulse})`;
+      ctx.fillRect(x, y, w, h);
+
+      ctx.strokeStyle = `rgba(59,130,246,${0.15 * this._highlightZonesFade})`;
+      ctx.lineWidth = 1.5;
+      ctx.setLineDash([4, 4]);
+      ctx.strokeRect(x, y, w, h);
+      ctx.setLineDash([]);
+
+      if (z.label) {
+        ctx.fillStyle = `rgba(255,255,255,${0.5 * this._highlightZonesFade})`;
+        ctx.font = '9px Inter, Arial, sans-serif';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'bottom';
+        ctx.fillText(z.label, x + 4, y + h - 4);
+      }
+
+      ctx.restore();
+    });
   }
 
   // ── PASSING LANES ──
@@ -2167,40 +2514,37 @@ class Pitch2D {
     ctx.restore();
   }
 
-  // ── PITCH CONTROL (influence-based territory model) ──
+  // ── PITCH CONTROL (Voronoi-style territorial map) ──
   _drawPitchControlOverlay(W, H) {
     const ctx = this.ctx;
     const pw = W - this._pad * 2;
     const ph = H - this._pad * 2;
-    const gridW = 40, gridH = 25;
+    const gridW = 100, gridH = 64;
     const cellW = pw / gridW, cellH = ph / gridH;
 
-    if (!this._pitchControlDisplay) {
-      this._pitchControlGrid = new Float32Array(gridW * gridH);
+    if (!this._pitchControlHomeRatio) {
+      this._pitchControlHomeRatio = new Float32Array(gridW * gridH);
       this._pitchControlDisplay = new Float32Array(gridW * gridH);
     }
 
-    // Recompute grid ~8fps or when dirty (possession/event change)
     if (this._pitchControlDirty || (++this._pitchControlTick & 7) === 0) {
       this._computeControlGrid(gridW, gridH, cellW, cellH);
       this._pitchControlDirty = false;
     }
 
-    // Smooth lerp toward target
-    const rate = 0.06;
+    const rate = 0.08;
     const display = this._pitchControlDisplay;
-    const target = this._pitchControlGrid;
+    const target = this._pitchControlHomeRatio;
     for (let i = 0; i < display.length; i++) {
       display[i] += (target[i] - display[i]) * rate;
     }
 
-    // Render as flowing territory (not blocky heatmap)
     this._renderControlTerritory(ctx, display, gridW, gridH, cellW, cellH);
   }
 
   _computeControlGrid(gridW, gridH, cellW, cellH) {
     const roleWeight = {
-      GK: 0.5, CB: 1.0, DF: 1.0, LB: 0.9, RB: 0.9, WB: 0.85,
+      GK: 0.3, CB: 1.0, DF: 1.0, LB: 0.85, RB: 0.85, WB: 0.8,
       DM: 1.0, CM: 0.9, LM: 0.8, RM: 0.8,
       AM: 0.8, LW: 0.7, RW: 0.7,
       ST: 0.6, CF: 0.7, FW: 0.6, SS: 0.7,
@@ -2216,7 +2560,7 @@ class Pitch2D {
     });
 
     const pitchDiag = Math.sqrt((cellW * gridW) ** 2 + (cellH * gridH) ** 2);
-    const sigmaSq = (pitchDiag * 0.10) ** 2;
+    const sigma = pitchDiag * 0.14;
 
     for (let gy = 0; gy < gridH; gy++) {
       const cy = this._pad + (gy + 0.5) * cellH;
@@ -2226,48 +2570,71 @@ class Pitch2D {
 
         for (const { pos, w } of homePts) {
           const dx = cx - pos.x, dy = cy - pos.y;
-          homeInf += w / (1 + (dx * dx + dy * dy) / sigmaSq);
+          homeInf += w * Math.exp(-(dx * dx + dy * dy) / (2 * sigma * sigma));
         }
         for (const { pos, w } of awayPts) {
           const dx = cx - pos.x, dy = cy - pos.y;
-          awayInf += w / (1 + (dx * dx + dy * dy) / sigmaSq);
+          awayInf += w * Math.exp(-(dx * dx + dy * dy) / (2 * sigma * sigma));
         }
 
         const total = homeInf + awayInf;
-        this._pitchControlGrid[gy * gridW + gx] = total > 0.001 ? (homeInf - awayInf) / total : 0;
+        this._pitchControlHomeRatio[gy * gridW + gx] = total > 0.001 ? homeInf / total : 0.5;
       }
     }
   }
 
   _renderControlTerritory(ctx, display, gridW, gridH, cellW, cellH) {
     const off = document.createElement('canvas');
-    const scale = 2;
-    off.width = gridW * scale;
-    off.height = gridH * scale;
+    off.width = gridW;
+    off.height = gridH;
     const offCtx = off.getContext('2d');
+    const imgData = offCtx.createImageData(gridW, gridH);
+    const d = imgData.data;
+
+    // Smooth colors: home=blue(59,130,246), away=orange(249,115,22)
+    const hR = 59, hG = 130, hB = 246;
+    const aR = 249, aG = 115, aB = 22;
 
     for (let gy = 0; gy < gridH; gy++) {
       for (let gx = 0; gx < gridW; gx++) {
-        const val = display[gy * gridW + gx];
-        const px = gx * scale, py = gy * scale;
+        const idx = (gy * gridW + gx) * 4;
+        const ratio = display[gy * gridW + gx];
 
-        if (val > 0.04) {
-          const a = Math.min(val * 0.5, 0.18);
-          offCtx.fillStyle = `rgba(59,130,246,${a})`;
-        } else if (val < -0.04) {
-          const a = Math.min(-val * 0.5, 0.18);
-          offCtx.fillStyle = `rgba(249,115,22,${a})`;
-        } else {
-          offCtx.fillStyle = `rgba(160,160,160,${0.04})`;
+        // Blend color smoothly based on ratio
+        const blend = Math.max(0, Math.min(1, (ratio - 0.5) * 2 + 0.5));
+        d[idx] = Math.round(hR + (aR - hR) * (1 - blend));
+        d[idx + 1] = Math.round(hG + (aG - hG) * (1 - blend));
+        d[idx + 2] = Math.round(hB + (aB - hB) * (1 - blend));
+
+        // Contested areas (40-60%): show as neutral/amber with higher alpha
+        const isContested = ratio > 0.4 && ratio < 0.6;
+        if (isContested) {
+          const contestedStrength = 1 - Math.abs(ratio - 0.5) * 10;
+          d[idx] = Math.round(d[idx] * (1 - contestedStrength * 0.4) + 200 * contestedStrength * 0.4);
+          d[idx + 1] = Math.round(d[idx + 1] * (1 - contestedStrength * 0.4) + 170 * contestedStrength * 0.4);
+          d[idx + 2] = Math.round(d[idx + 2] * (1 - contestedStrength * 0.4) + 50 * contestedStrength * 0.4);
         }
-        offCtx.fillRect(px, py, scale, scale);
+
+        const strength = Math.abs(ratio - 0.5) * 2;
+        const alpha = 0.08 + strength * 0.28;
+        d[idx + 3] = Math.round(Math.min(1, alpha + (isContested ? 0.06 : 0)) * 255);
       }
     }
 
+    offCtx.putImageData(imgData, 0, 0);
+
+    // Apply a gentle blur to remove geometric artifacts
+    const blurCanvas = document.createElement('canvas');
+    blurCanvas.width = gridW;
+    blurCanvas.height = gridH;
+    const blurCtx = blurCanvas.getContext('2d');
+    blurCtx.filter = 'blur(1px)';
+    blurCtx.drawImage(off, 0, 0);
+
     ctx.save();
-    ctx.filter = 'blur(8px)';
-    ctx.drawImage(off, this._pad, this._pad, cellW * gridW, cellH * gridH);
-    ctx.filter = 'none';
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
+    ctx.drawImage(blurCanvas, this._pad, this._pad, cellW * gridW, cellH * gridH);
     ctx.restore();
   }
 
@@ -2381,6 +2748,8 @@ class Pitch2D {
 
   // -- Players --
   _drawPlayers(W, H) {
+    const bobAmp = 1.2;
+    const bt = this._bobTime;
     const overlaps = {};
     if (this.displayMode === 'live') {
       const positions = [];
@@ -2388,6 +2757,8 @@ class Pitch2D {
         const preview = this._getPreviewPos(p, idx);
         const drawP = { ...p, _tx: preview._tx, _ty: preview._ty };
         const pos = this._normToCoord(drawP);
+        pos.x += Math.sin(bt * 1.7 + idx * 2.1) * bobAmp;
+        pos.y += Math.cos(bt * 1.3 + idx * 1.7) * bobAmp * 0.7;
         positions.push({ idx, pos, drawP });
       });
       const threshold = this._playerR * 2.2;
@@ -2410,7 +2781,11 @@ class Pitch2D {
         const preview = this._getPreviewPos(p, idx);
         const drawP = { ...p, _tx: preview._tx, _ty: preview._ty };
         const subAlpha = this._playerAlphas[idx] !== undefined ? this._playerAlphas[idx] : 1;
-        this._drawPlayer(drawP, W, H, idx, subAlpha);
+        const bpx = Math.sin(bt * 1.7 + idx * 2.1) * bobAmp;
+        const bpy = Math.cos(bt * 1.3 + idx * 1.7) * bobAmp * 0.7;
+        if (subAlpha > 0.01) {
+          this._drawPlayer(drawP, W, H, idx, subAlpha, bpx, bpy);
+        }
       });
     }
     if (this.displayMode !== 'live') {
@@ -2421,9 +2796,10 @@ class Pitch2D {
     }
   }
 
-  _drawPlayer(p, W, H, idx, alpha) {
+  _drawPlayer(p, W, H, idx, alpha, bpx, bpy) {
     const ctx = this.ctx;
     const pos = this._normToCoord(p);
+    if (bpx !== undefined) { pos.x += bpx; pos.y += (bpy || 0); }
     const r = this._playerR;
     const isHome = p.team === 'home';
     const isGK = p.pos === 'GK';
@@ -2619,6 +2995,10 @@ class Pitch2D {
     if (this._attackZoneAnimId) {
       cancelAnimationFrame(this._attackZoneAnimId);
       this._attackZoneAnimId = null;
+    }
+    if (this._highlightZonesAnimId) {
+      cancelAnimationFrame(this._highlightZonesAnimId);
+      this._highlightZonesAnimId = null;
     }
     this.canvas.remove();
     this.players = [];

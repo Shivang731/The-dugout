@@ -17,7 +17,7 @@ def _timeout():
     return float(os.getenv("OLLAMA_TIMEOUT", "180"))
 
 
-async def generate(prompt, max_tokens=800):
+async def generate(prompt, max_tokens=800, system=None):
     url = f"{_base_url()}/api/generate"
     payload = {
         "model": model_name(),
@@ -25,18 +25,12 @@ async def generate(prompt, max_tokens=800):
         "stream": False,
         "options": {"num_predict": max_tokens},
     }
-    try:
-        async with httpx.AsyncClient(timeout=_timeout()) as client:
-            r = await client.post(url, json=payload)
-            r.raise_for_status()
-            return r.json().get("response", "")
-    except Exception as e:
-        print(f"AI generation error: {e}")
-        return (
-            "Live AI not available — is Ollama running? "
-            f"Try: ollama serve && ollama pull {model_name()}. "
-            f"Error: {e}"
-        )
+    if system:
+        payload["system"] = system
+    async with httpx.AsyncClient(timeout=_timeout()) as client:
+        r = await client.post(url, json=payload)
+        r.raise_for_status()
+        return r.json().get("response", "")
 
 
 async def generate_structured(prompt, max_tokens=1000):

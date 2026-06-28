@@ -13,31 +13,8 @@
 
     <!-- ===== LEFT SIDEBAR ===== -->
     <aside class="left-sidebar">
-      <div class="logo-section">
-        <div class="logo-icon">◇</div>
-        <div>
-          <div class="logo-text">THE DUGOUT</div>
-          <div class="logo-sub">Understand the Game</div>
-        </div>
-      </div>
 
-      <nav class="nav-items">
-        <a class="nav-item active" href="#">
-          <span class="nav-dot">●</span> Scenarios
-        </a>
-        <a class="nav-item" href="#">
-          <span class="nav-dot">●</span> Learning
-        </a>
-        <a class="nav-item" href="#">
-          <span class="nav-dot">●</span> Concepts
-        </a>
-        <a class="nav-item" href="#">
-          <span class="nav-dot">●</span> Glossary
-        </a>
-        <a class="nav-item" href="#">
-          <span class="nav-dot">●</span> My Journey
-        </a>
-      </nav>
+      <a href="/static/index.html" class="back-link" style="margin-bottom:8px">← Home</a>
 
       <div class="progress-section">
         <h4 class="progress-heading">PROGRESS</h4>
@@ -71,17 +48,41 @@
         </div>
       </div>
 
-      <div class="free-card">
-        <div class="free-badge">100% FREE</div>
-        <p class="free-text">The Dugout is and will always be free.</p>
-        <p class="free-sub">Football understanding for everyone.</p>
-        <div class="stadium-art">
-          <div class="stadium-roof"></div>
-          <div class="stadium-arc"></div>
+      <!-- Attack Zones Card -->
+      <div class="sidebar-card attack-zones-card">
+        <div class="card-header">
+          <span class="card-icon">▤</span>
+          <h3>Attack Zones</h3>
+        </div>
+        <div class="card-body">
+          <div class="attack-zones-visual">
+            <div id="mini-pitch-container" class="mini-pitch-container"></div>
+            <div id="pitch-tooltip" class="pitch-tooltip"></div>
+          </div>
         </div>
       </div>
 
-      <a href="/static/index.html" class="back-link">← All Scenarios</a>
+      <div class="sidebar-card" style="margin-top:auto">
+        <div class="card-header">
+          <span class="card-icon">○</span>
+          <h3>Tactical Story</h3>
+        </div>
+        <div class="card-body" id="tactical-story-body">
+          <div class="ts-minute" id="tl-minute">70'</div>
+          <div class="ts-section">
+            <div class="ts-label">Situation</div>
+            <p class="ts-text" id="ts-situation">What's happening right now.</p>
+          </div>
+          <div class="ts-section">
+            <div class="ts-label">Why it Matters</div>
+            <p class="ts-text" id="ts-why">The tactical reason.</p>
+          </div>
+          <div class="ts-section">
+            <div class="ts-label">Expected Outcome</div>
+            <p class="ts-text" id="ts-outcome">What's likely next.</p>
+          </div>
+        </div>
+      </div>
     </aside>
 
     <!-- ===== MAIN CONTENT ===== -->
@@ -125,6 +126,7 @@
             <div class="overlay-toggles">
               <button class="overlay-btn active" data-overlay="shape" onclick="setOverlay('shape')">Shape</button>
               <button class="overlay-btn" data-overlay="pressing" onclick="setOverlay('pressing')">Pressing</button>
+              <button class="overlay-btn" data-overlay="attack" onclick="setOverlay('attack')">Attack Zones</button>
               <button class="overlay-btn" data-overlay="passing" onclick="setOverlay('passing')">Passing Lanes</button>
               <button class="overlay-btn" data-overlay="defensive" onclick="setOverlay('defensive')">Defensive Block</button>
               <button class="overlay-btn" data-overlay="pitch_control" onclick="setOverlay('pitch_control')">Pitch Control</button>
@@ -167,22 +169,25 @@
           </div>
         </div>
 
-        <div class="pitch-legend">
-          <span class="legend-item">
-            <span class="dot home-dot"></span> Senegal shape
-          </span>
-          <span class="legend-item">
-            <span class="dot away-dot"></span> Netherlands shape
-          </span>
-          <span class="legend-item ball-indicator">
-            <span class="ball-icon">⚽</span> Ball position
-          </span>
-        </div>
-
         <div class="preview-label" id="preview-label">Previewing tactical change…</div>
 
         <!-- Events timeline -->
         <div class="events-timeline" id="events-timeline"></div>
+        <div class="replay-controls" id="replay-controls">
+          <div class="replay-progress-track">
+            <div class="replay-progress-fill" id="replay-progress" style="width:0%"></div>
+          </div>
+          <div class="replay-buttons">
+            <button class="replay-btn" id="replay-play-btn" onclick="toggleReplay()" title="Play / Pause">
+              <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="6,4 20,12 6,20" fill="white"/></svg>
+            </button>
+            <span class="speed-group">
+              <button class="speed-btn" data-speed="0.5" onclick="setReplaySpeed(0.5)">0.5×</button>
+              <button class="speed-btn active" data-speed="1" onclick="setReplaySpeed(1)">1×</button>
+              <button class="speed-btn" data-speed="2" onclick="setReplaySpeed(2)">2×</button>
+            </span>
+          </div>
+        </div>
       </div>
 
       <!-- Match Story -->
@@ -212,29 +217,73 @@
       <!-- Result Reveal (hidden initially) -->
       <div class="result-section hidden" id="result-section">
         <div class="result-badge">Post-Match Analysis</div>
-        <h3 class="result-heading">What Actually Happened</h3>
-        <div class="result-row">
-          <span class="result-label">Manager Choice</span>
-          <span class="result-value" id="result-choice">—</span>
+
+        <!-- Final Result -->
+        <div class="result-block result-final">
+          <div class="result-block-header">
+            <span class="result-block-icon">▣</span>
+            <h3>Final Result</h3>
+          </div>
+          <div class="result-score-row" id="result-score-row">
+            <span class="result-team home" id="result-home-team">HOME</span>
+            <span class="result-score" id="result-score">0–0</span>
+            <span class="result-team away" id="result-away-team">AWAY</span>
+          </div>
+          <div class="result-scorers" id="result-scorers"></div>
+          <div class="result-minute">Match minute: <span id="result-match-minute">—</span></div>
         </div>
-        <div class="result-row">
-          <span class="result-label">Why</span>
-          <p class="result-text" id="result-why-text">—</p>
+
+        <!-- Your Decision -->
+        <div class="result-block">
+          <div class="result-block-header">
+            <span class="result-block-icon">◈</span>
+            <h3>Your Decision</h3>
+          </div>
+          <div class="result-choice-name" id="result-your-choice">—</div>
+          <div class="result-detail-label">Expected tactical effect</div>
+          <p class="result-detail-text" id="result-your-effect">—</p>
         </div>
-        <div class="result-row">
-          <span class="result-label">Outcome</span>
-          <p class="result-text" id="result-outcome-text">—</p>
+
+        <!-- Real Manager Decision -->
+        <div class="result-block">
+          <div class="result-block-header">
+            <span class="result-block-icon">◆</span>
+            <h3>Real Manager Decision</h3>
+          </div>
+          <div class="result-choice-name" id="result-manager-choice">—</div>
+          <div class="result-detail-label">Tactical objective</div>
+          <p class="result-detail-text" id="result-manager-objective">—</p>
         </div>
-        <div class="result-actions">
-          <button class="btn-primary" onclick="nextScenario()">Next Match →</button>
-          <button class="btn-secondary" onclick="closeResult()">Back to Pitch</button>
+
+        <!-- Tactical Comparison -->
+        <div class="result-block">
+          <div class="result-block-header">
+            <span class="result-block-icon">⇄</span>
+            <h3>Tactical Comparison</h3>
+          </div>
+          <p class="result-comparison" id="result-comparison">—</p>
+        </div>
+
+        <!-- Key Takeaway -->
+        <div class="result-block result-takeaway">
+          <div class="result-block-header">
+            <span class="result-block-icon">◇</span>
+            <h3>Key Takeaway</h3>
+          </div>
+          <p class="result-takeaway-text" id="result-takeaway">—</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="result-nav">
+          <button class="btn-secondary" onclick="closeResult()">← Back to Pitch</button>
+          <button class="btn-primary" onclick="nextScenario()">Next Scenario →</button>
         </div>
       </div>
 
-      <!-- Bottom Tip Bar -->
-      <div class="tip-bar">
+      <!-- Bottom Tip Bar (hidden by default, populated dynamically if needed) -->
+      <div class="tip-bar hidden" id="tip-bar">
         <span class="tip-label">Coach Tip:</span>
-        <span class="tip-text">There is no perfect choice in football. Every decision has trade-offs.</span>
+        <span class="tip-text" id="tip-text">—</span>
       </div>
     </main>
 
@@ -246,6 +295,23 @@
         <div class="card-header">
           <span class="card-icon">◇</span>
           <h3>AI Insight</h3>
+          <div class="lang-wrap">
+            <div class="lang-selector" id="lang-selector">
+              <span class="lang-globe">🌐</span>
+              <select id="lang-select" onchange="changeInsightLang(this.value)">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="pt">Português</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+                <option value="nl">Nederlands</option>
+                <option value="ar">العربية</option>
+                <option value="hi">हिन्दी</option>
+                <option value="ja">日本語</option>
+              </select>
+            </div>
+          </div>
         </div>
         <div class="card-body" id="ai-insight">
           <p>Senegal have 61% possession but only 5 shots with 0.9 xG.</p>
@@ -254,36 +320,7 @@
         </div>
       </div>
 
-      <!-- Card 2: Tactical Story -->
-      <div class="sidebar-card">
-        <div class="card-header">
-          <span class="card-icon">○</span>
-          <h3>Tactical Story</h3>
-        </div>
-        <div class="card-body">
-          <div class="timeline-item">
-            <span class="tl-minute" id="tl-minute">67'</span>
-            <span class="tl-text">Senegal need two goals</span>
-          </div>
-          <p class="tl-description" id="tl-description">They dominate possession. The next decision could change momentum.</p>
-        </div>
-      </div>
-
-      <!-- Card 3: Attack Zones (populated dynamically) -->
-      <div class="sidebar-card">
-        <div class="card-header">
-          <span class="card-icon">▤</span>
-          <h3>Attack Zones</h3>
-        </div>
-        <div class="card-body">
-          <div class="attack-zones-visual">
-            <div id="mini-pitch-container" class="mini-pitch-container"></div>
-            <div id="pitch-tooltip" class="pitch-tooltip"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4: Concept to Learn -->
+      <!-- Card 3: Concept to Learn -->
       <div class="sidebar-card concept-card">
         <div class="card-header">
           <span class="card-icon">◇</span>

@@ -106,11 +106,13 @@ async function listScenarios() {
   return r.json();
 }
 
-async function fetchMatchInsight(scenarioId) {
+async function fetchMatchInsight(scenarioId, lang) {
+  const payload = { scenario_id: scenarioId, lang: lang || 'en' };
+  console.log('[API] fetchMatchInsight payload:', JSON.stringify(payload));
   const r = await fetch(`${API_BASE}/api/match/insight`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ scenario_id: scenarioId }),
+    body: JSON.stringify(payload),
   });
   if (!r.ok) throw new Error('API error ' + r.status);
   return r.json();
