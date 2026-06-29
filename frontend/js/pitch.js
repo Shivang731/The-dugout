@@ -67,8 +67,8 @@ function _getTeamColors(teamName) {
 // ADVERTISING SPONSORS (cycle based on scenario hash)
 // ===================================================================
 const SPONSORS = [
-  'QATAR AIRWAYS', 'FIFA', 'HYUNDAI', 'VISA', 'ADIDAS',
-  'COCA-COLA', 'BUDWEISER', 'KIA', 'SONY', 'PEPSI',
+  'THE DUGOUT', 'UNDERSTAND THE GAME', 'TACTICAL ANALYSIS',
+  'IBM GRANITE', 'WORLD CUP',
 ];
 function _selectSponsors(scenarioId) {
   const hash = (scenarioId || '').split('').reduce((a, c) => a + c.charCodeAt(0), 0);
@@ -118,17 +118,18 @@ function _createGrassTexture() {
   canvas.height = 2048;
   const ctx = canvas.getContext('2d');
 
-  // 16 alternating mowing stripes (UEFA broadcast quality)
-  const darkGreen = '#2E7D32';
-  const lightGreen = '#3F9142';
-  const stripeW = canvas.width / 16;
+  const stripeH = canvas.height / 12;
 
-  for (let i = 0; i < 16; i++) {
+  // ── Base stripe colours (subtle 8–15% luminance difference) ──
+  const darkGreen  = '#0D4F1B';
+  const lightGreen = '#10591E';
+
+  for (let i = 0; i < 12; i++) {
     ctx.fillStyle = i % 2 === 0 ? darkGreen : lightGreen;
-    ctx.fillRect(i * stripeW, 0, stripeW, canvas.height);
+    ctx.fillRect(0, i * stripeH, canvas.width, stripeH);
   }
 
-  // subtle grain: dark specks
+  // ── Subtle grain: dark specks ──
   ctx.fillStyle = 'rgba(0,0,0,0.018)';
   for (let i = 0; i < 12000; i++) {
     ctx.fillRect(
@@ -139,8 +140,8 @@ function _createGrassTexture() {
     );
   }
 
-  // natural colour variation patches blending #357A38 and #3A873E
-  const variationColours = ['#357A38', '#3A873E'];
+  // ── Natural colour variation patches ──
+  const variationColours = ['#0D4F1B', '#10591E'];
   for (let i = 0; i < 10000; i++) {
     ctx.fillStyle = variationColours[Math.random() * 2 | 0] + '20';
     ctx.fillRect(
@@ -151,38 +152,66 @@ function _createGrassTexture() {
     );
   }
 
-  // alternating-direction mowing streaks (wavy per stripe)
-  ctx.lineWidth = 0.8;
-  for (let s = 0; s < 16; s++) {
-    const isLight = s % 2 === 0;
-    ctx.strokeStyle = isLight ? 'rgba(255,255,255,0.035)' : 'rgba(0,0,0,0.025)';
-    const xBase = s * stripeW;
-    for (let x = 0; x < stripeW; x += 10) {
+  // ── Mowing streaks with alternating direction per stripe ──
+  ctx.lineWidth = 1.0;
+  for (let s = 0; s < 12; s++) {
+    const yBase = s * stripeH;
+    const dir = s % 2 === 0 ? 1 : -1;
+    for (let row = 0; row < stripeH; row += 8) {
       ctx.beginPath();
-      ctx.moveTo(xBase + x, 0);
-      const drift = (Math.random() - 0.5) * 4;
-      ctx.lineTo(xBase + x + drift, canvas.height);
+      ctx.moveTo(dir > 0 ? 0 : canvas.width, yBase + row);
+      const drift = (Math.random() - 0.5) * 5;
+      const opacity = 0.015 + Math.random() * 0.015;
+      ctx.strokeStyle = dir > 0
+        ? `rgba(255,255,255,${opacity})`
+        : `rgba(0,0,0,${opacity})`;
+      ctx.lineTo(dir > 0 ? canvas.width : 0, yBase + row + drift);
       ctx.stroke();
     }
   }
 
-  // radial vignette — darker edges, bright centre
+  // ── Radial vignette — darker edges (matching 2D pitch) ──
   const cx = canvas.width / 2;
   const cy = canvas.height / 2;
-  const r = Math.max(canvas.width, canvas.height) * 0.55;
+  const r = Math.max(canvas.width, canvas.height) * 0.65;
   const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
   grad.addColorStop(0, 'rgba(0,0,0,0)');
-  grad.addColorStop(0.6, 'rgba(0,0,0,0)');
-  grad.addColorStop(0.85, 'rgba(0,0,0,0.04)');
-  grad.addColorStop(0.95, 'rgba(0,0,0,0.10)');
-  grad.addColorStop(1, 'rgba(0,0,0,0.18)');
+  grad.addColorStop(0.55, 'rgba(0,0,0,0)');
+  grad.addColorStop(0.80, 'rgba(0,0,0,0.04)');
+  grad.addColorStop(0.93, 'rgba(0,0,0,0.10)');
+  grad.addColorStop(1, 'rgba(0,0,0,0.20)');
   ctx.fillStyle = grad;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  // ── Centre spotlight — subtle brightening in the middle ──
+  const spotR = Math.max(canvas.width, canvas.height) * 0.55;
+  const spotGrad = ctx.createRadialGradient(cx, cy, spotR * 0.35, cx, cy, spotR * 0.55);
+  spotGrad.addColorStop(0, 'rgba(255,255,255,0)');
+  spotGrad.addColorStop(0.7, 'rgba(255,255,255,0)');
+  spotGrad.addColorStop(0.85, 'rgba(255,255,255,0.012)');
+  spotGrad.addColorStop(1, 'rgba(255,255,255,0.025)');
+  ctx.fillStyle = spotGrad;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  // ── Faint directional sheen per stripe ──
+  for (let s = 0; s < 12; s++) {
+    const yBase = s * stripeH;
+    const dir = s % 2 === 0 ? 1 : -1;
+    const sheenGrad = ctx.createLinearGradient(
+      dir > 0 ? 0 : canvas.width, 0,
+      dir > 0 ? canvas.width : 0, 0,
+    );
+    sheenGrad.addColorStop(0, 'rgba(255,255,255,0.015)');
+    sheenGrad.addColorStop(0.5, 'rgba(255,255,255,0)');
+    sheenGrad.addColorStop(1, 'rgba(0,0,0,0.010)');
+    ctx.fillStyle = sheenGrad;
+    ctx.fillRect(0, yBase, canvas.width, stripeH);
+  }
 
   const tex = new THREE.CanvasTexture(canvas);
   tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
   tex.repeat.set(1, 1);
-  tex.anisotropy = 8;
+  tex.anisotropy = 16;
   _grassTexCache = tex;
   return tex;
 }
@@ -206,8 +235,8 @@ function _createMarkingsTexture() {
   const px = (x) => (x / PITCH_W + 0.5) * w;
   const pz = (z) => (-z / PITCH_L + 0.5) * h;
 
-  ctx.strokeStyle = 'rgba(255,255,255,0.55)';
-  ctx.fillStyle = 'rgba(255,255,255,0.55)';
+  ctx.strokeStyle = 'rgba(255,255,255,0.75)';
+  ctx.fillStyle = 'rgba(255,255,255,0.75)';
   ctx.lineWidth = 3;
 
   function line(x1, z1, x2, z2) {
@@ -295,43 +324,64 @@ function _createMarkingsTexture() {
 
 function _createNetTexture() {
   const canvas = document.createElement('canvas');
-  canvas.width = 256;
-  canvas.height = 256;
+  canvas.width = 512;
+  canvas.height = 512;
   const ctx = canvas.getContext('2d');
+  ctx.clearRect(0, 0, 512, 512);
 
-  ctx.clearRect(0, 0, 256, 256);
+  const cellSize = 26;
+  const lineWidth = 2.8;
+  const knotR = 3.5;
 
-  const cellSize = 14;
-  ctx.strokeStyle = 'rgba(255, 255, 255, 0.8)';
-  ctx.lineWidth = 1.0;
-  for (let x = 0; x <= 256; x += cellSize) {
+  // Draw square mesh grid
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.9)';
+  ctx.lineWidth = lineWidth;
+  ctx.lineCap = 'round';
+
+  for (let x = 0; x <= 512; x += cellSize) {
     ctx.beginPath();
     ctx.moveTo(x, 0);
-    ctx.lineTo(x, 256);
+    ctx.lineTo(x, 512);
     ctx.stroke();
   }
-  for (let y = 0; y <= 256; y += cellSize) {
+  for (let y = 0; y <= 512; y += cellSize) {
     ctx.beginPath();
     ctx.moveTo(0, y);
-    ctx.lineTo(256, y);
+    ctx.lineTo(512, y);
     ctx.stroke();
   }
 
-  // knot dots at intersections
-  ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
-  for (let x = 0; x <= 256; x += cellSize) {
-    for (let y = 0; y <= 256; y += cellSize) {
+  // Knots at every intersection
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.65)';
+  for (let x = 0; x <= 512; x += cellSize) {
+    for (let y = 0; y <= 512; y += cellSize) {
       ctx.beginPath();
-      ctx.arc(x, y, 1.5, 0, Math.PI * 2);
+      ctx.arc(x, y, knotR, 0, Math.PI * 2);
       ctx.fill();
     }
   }
 
   const tex = new THREE.CanvasTexture(canvas);
   tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
-  tex.repeat.set(4, 2);
-  tex.anisotropy = 4;
+  tex.repeat.set(5, 2);
+  tex.anisotropy = 8;
   return tex;
+}
+
+// Subdivided plane geometry with subtle parabolic sag for realistic net hang
+function _makeNetPlane(w, h, segW, segH, sag) {
+  const geo = new THREE.PlaneGeometry(w, h, segW, segH);
+  const pos = geo.attributes.position;
+  const hw = w / 2;
+  const hh = h / 2;
+  for (let i = 0; i < pos.count; i++) {
+    const nx = pos.getX(i) / hw;
+    const ny = pos.getY(i) / hh;
+    const s = sag * (1 - nx * nx) * (1 - ny * ny);
+    pos.setZ(i, pos.getZ(i) - s);
+  }
+  geo.computeVertexNormals();
+  return geo;
 }
 
 function _createSponsorTexture(name) {
@@ -340,23 +390,34 @@ function _createSponsorTexture(name) {
   canvas.height = 128;
   const ctx = canvas.getContext('2d');
 
-  ctx.fillStyle = '#000000';
+  // LED panel background
+  ctx.fillStyle = '#08080f';
   ctx.fillRect(0, 0, 512, 128);
 
-  ctx.font = '700 48px Arial, sans-serif';
+  // Subtle inner border
+  ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+  ctx.lineWidth = 2;
+  ctx.strokeRect(4, 4, 504, 120);
+
+  // Text glow
+  ctx.font = '600 40px Arial, sans-serif';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-
-  // glow
-  ctx.shadowColor = 'rgba(255,255,255,0.3)';
-  ctx.shadowBlur = 20;
+  ctx.shadowColor = 'rgba(255,255,255,0.15)';
+  ctx.shadowBlur = 12;
   ctx.fillStyle = '#ffffff';
   ctx.fillText(name, 256, 64);
 
-  // sharp text
+  // Sharp text overlay
   ctx.shadowBlur = 0;
-  ctx.fillStyle = '#ffffff';
+  ctx.fillStyle = '#f0f0f5';
   ctx.fillText(name, 256, 64);
+
+  // Very subtle LED scanline effect
+  ctx.fillStyle = 'rgba(0,0,0,0.04)';
+  for (let y = 0; y < 128; y += 3) {
+    ctx.fillRect(0, y, 512, 1);
+  }
 
   const tex = new THREE.CanvasTexture(canvas);
   tex.needsUpdate = true;
@@ -370,31 +431,33 @@ function _buildPitch(scene, scenario) {
   const grassTex = _createGrassTexture();
   const grassMat = new THREE.MeshStandardMaterial({
     map: grassTex,
-    roughness: 0.88,
+    roughness: 0.55,
     metalness: 0,
-    color: 0x2e7d32,
+    color: 0xffffff,
+    envMapIntensity: 0.3,
   });
   const grass = new THREE.Mesh(
-    new THREE.PlaneGeometry(PITCH_W + 10, PITCH_L + 10),
+    new THREE.PlaneGeometry(PITCH_W, PITCH_L),
     grassMat,
   );
   grass.rotation.x = -Math.PI / 2;
-  grass.position.y = -0.15;
+  grass.position.y = -0.02;
   grass.receiveShadow = true;
   scene.add(grass);
 
-  // pitch border run-off track
+  // pitch border run-off track — BELOW the grass so the stripe texture
+  // is the visible surface on the playing area
   const trackMat = new THREE.MeshStandardMaterial({
-    color: 0x255f29,
+    color: 0x1a4d20,
     roughness: 1,
     metalness: 0,
   });
   const track = new THREE.Mesh(
-    new THREE.PlaneGeometry(PITCH_W + 6, PITCH_L + 6),
+    new THREE.PlaneGeometry(PITCH_W + 8, PITCH_L + 8),
     trackMat,
   );
   track.rotation.x = -Math.PI / 2;
-  track.position.y = -0.13;
+  track.position.y = -0.15;
   scene.add(track);
 
   // ===== PITCH MARKINGS — single transparent overlay texture =====
@@ -441,20 +504,21 @@ function _buildPitch(scene, scenario) {
 function _buildGoals(scene) {
   const netTex = _createNetTexture();
   const PR = 0.065;
-  const SEGS = 16;
-  const RSEGS = 8;
+  const SEGS = 24;
+  const RSEGS = 12;
+
+  // Shared bright white matte finish for all structural goal parts
+  const postMat = new THREE.MeshStandardMaterial({
+    color: 0xffffff,
+    metalness: 0,
+    roughness: 0.6,
+  });
 
   [-HALF_L, +HALF_L].forEach(z => {
     const sign = z < 0 ? 1 : -1;
+    const rearZ = z + sign * GOAL_D;
 
-    // --- Goalpost material (satin white, painted finish) ---
-    const postMat = new THREE.MeshStandardMaterial({
-      color: 0xf0f0f0,
-      metalness: 0.1,
-      roughness: 0.3,
-    });
-
-    // --- Goalposts (uniform diameter, smooth) ---
+    // --- Goalposts ---
     [-GOAL_W / 2, GOAL_W / 2].forEach(x => {
       const post = new THREE.Mesh(
         new THREE.CylinderGeometry(PR, PR, GOAL_H, SEGS),
@@ -465,7 +529,7 @@ function _buildGoals(scene) {
       scene.add(post);
     });
 
-    // --- Crossbar (same diameter as posts) ---
+    // --- Crossbar ---
     const crossbar = new THREE.Mesh(
       new THREE.CylinderGeometry(PR, PR, GOAL_W, SEGS),
       postMat,
@@ -488,9 +552,9 @@ function _buildGoals(scene) {
 
     // --- Post base plates ---
     const baseMat = new THREE.MeshStandardMaterial({
-      color: 0xe8e8e8,
-      metalness: 0.15,
-      roughness: 0.4,
+      color: 0xf0f0f0,
+      metalness: 0,
+      roughness: 0.7,
     });
     [-GOAL_W / 2, GOAL_W / 2].forEach(x => {
       const base = new THREE.Mesh(
@@ -501,65 +565,110 @@ function _buildGoals(scene) {
       scene.add(base);
     });
 
-    // --- Rear frame supports ---
-    const frameMat = new THREE.MeshStandardMaterial({
-      color: 0xcccccc,
-      metalness: 0.2,
-      roughness: 0.5,
-    });
-    const rearZ = z + sign * GOAL_D;
+    // --- Goal-line ground bar (connects the two posts at ground level) ---
+    const groundBar = new THREE.Mesh(
+      new THREE.CylinderGeometry(PR, PR, GOAL_W, SEGS),
+      postMat,
+    );
+    groundBar.rotation.x = Math.PI / 2;
+    groundBar.position.set(0, PR, z);
+    groundBar.castShadow = true;
+    scene.add(groundBar);
+
+    // --- Rear vertical supports ---
     [-GOAL_W / 2, GOAL_W / 2].forEach(x => {
       const support = new THREE.Mesh(
         new THREE.CylinderGeometry(0.04, 0.04, GOAL_H, RSEGS),
-        frameMat,
+        postMat,
       );
       support.position.set(x, GOAL_H / 2, rearZ);
+      support.castShadow = true;
       scene.add(support);
     });
 
-    // Top rear crossbar
+    // --- Top rear crossbar ---
     const rearCrossbar = new THREE.Mesh(
       new THREE.CylinderGeometry(0.04, 0.04, GOAL_W, RSEGS),
-      frameMat,
+      postMat,
     );
     rearCrossbar.rotation.x = Math.PI / 2;
     rearCrossbar.position.set(0, GOAL_H, rearZ);
+    rearCrossbar.castShadow = true;
     scene.add(rearCrossbar);
 
-    // --- Rear diagonal braces (ground at goal-line to top of rear post) ---
-    const diagMat = new THREE.MeshStandardMaterial({
-      color: 0xbbbbbb,
-      metalness: 0.15,
-      roughness: 0.5,
-    });
+    // --- Bottom rear crossbar ---
+    const bottomRearBar = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.04, 0.04, GOAL_W, RSEGS),
+      postMat,
+    );
+    bottomRearBar.rotation.x = Math.PI / 2;
+    bottomRearBar.position.set(0, 0.04, rearZ);
+    bottomRearBar.castShadow = true;
+    scene.add(bottomRearBar);
+
+    // --- Side ground rails (front post to rear support at ground level) ---
     [-GOAL_W / 2, GOAL_W / 2].forEach(x => {
-      const len = Math.sqrt(GOAL_H * GOAL_H + GOAL_D * GOAL_D);
+      const sideLen = GOAL_D;
+      const sideRail = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.03, 0.03, sideLen, RSEGS),
+        postMat,
+      );
+      sideRail.rotation.z = Math.PI / 2;
+      sideRail.position.set(x, 0.03, z + sign * GOAL_D / 2);
+      sideRail.castShadow = true;
+      scene.add(sideRail);
+    });
+
+    // --- Top side rails (front post top to rear support top) ---
+    [-GOAL_W / 2, GOAL_W / 2].forEach(x => {
+      const topRail = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.035, 0.035, GOAL_D, RSEGS),
+        postMat,
+      );
+      topRail.rotation.z = Math.PI / 2;
+      topRail.position.set(x, GOAL_H, z + sign * GOAL_D / 2);
+      topRail.castShadow = true;
+      scene.add(topRail);
+    });
+
+    // --- Diagonal braces (front post at 65% height to rear support base) ---
+    [-GOAL_W / 2, GOAL_W / 2].forEach(x => {
+      const braceHeight = GOAL_H * 0.65;
+      const len = Math.sqrt(braceHeight * braceHeight + GOAL_D * GOAL_D);
       const brace = new THREE.Mesh(
         new THREE.CylinderGeometry(0.035, 0.035, len, RSEGS),
-        diagMat,
+        postMat,
       );
-      brace.position.set(x, GOAL_H / 2, z + sign * GOAL_D / 2);
+      brace.position.set(x, braceHeight / 2, z + sign * GOAL_D / 2);
       brace.quaternion.setFromUnitVectors(
         new THREE.Vector3(0, 1, 0),
-        new THREE.Vector3(0, GOAL_H, sign * GOAL_D).normalize(),
+        new THREE.Vector3(0, braceHeight, sign * GOAL_D).normalize(),
       );
+      brace.castShadow = true;
       scene.add(brace);
     });
 
     // --- Net (back) ---
+    const netColor = 0xffffff;
+    const netRoughness = 0.65;
+
     const backNetMat = new THREE.MeshStandardMaterial({
       map: netTex,
       transparent: true,
-      opacity: 0.35,
+      opacity: 0.45,
       side: THREE.DoubleSide,
-      color: 0xffffff,
-      roughness: 0.8,
+      color: netColor,
+      roughness: netRoughness,
+      metalness: 0,
       depthWrite: false,
     });
     const backNet = new THREE.Mesh(
-      new THREE.PlaneGeometry(GOAL_W, GOAL_H),
+      _makeNetPlane(GOAL_W, GOAL_H, 20, 14, 0.18),
       backNetMat,
     );
+    const bp = backNet.geometry.attributes.position;
+    for (let i = 0; i < bp.count; i++) bp.setZ(i, bp.getZ(i) * sign);
+    backNet.geometry.computeVertexNormals();
     backNet.position.set(0, GOAL_H / 2, rearZ);
     backNet.receiveShadow = true;
     scene.add(backNet);
@@ -568,14 +677,15 @@ function _buildGoals(scene) {
     const topNetMat = new THREE.MeshStandardMaterial({
       map: netTex,
       transparent: true,
-      opacity: 0.3,
+      opacity: 0.35,
       side: THREE.DoubleSide,
-      color: 0xffffff,
-      roughness: 0.8,
+      color: netColor,
+      roughness: netRoughness,
+      metalness: 0,
       depthWrite: false,
     });
     const topNet = new THREE.Mesh(
-      new THREE.PlaneGeometry(GOAL_W, GOAL_D),
+      _makeNetPlane(GOAL_W, GOAL_D, 20, 8, 0.08),
       topNetMat,
     );
     topNet.rotation.x = -Math.PI / 2;
@@ -587,17 +697,21 @@ function _buildGoals(scene) {
     const sideNetMat = new THREE.MeshStandardMaterial({
       map: netTex,
       transparent: true,
-      opacity: 0.22,
+      opacity: 0.28,
       side: THREE.DoubleSide,
-      color: 0xffffff,
-      roughness: 0.8,
+      color: netColor,
+      roughness: netRoughness,
+      metalness: 0,
       depthWrite: false,
     });
     [-GOAL_W / 2, GOAL_W / 2].forEach(x => {
       const sideNet = new THREE.Mesh(
-        new THREE.PlaneGeometry(GOAL_D, GOAL_H),
+        _makeNetPlane(GOAL_D, GOAL_H, 8, 14, 0.08),
         sideNetMat,
       );
+      const sp = sideNet.geometry.attributes.position;
+      for (let i = 0; i < sp.count; i++) sp.setZ(i, sp.getZ(i) * (x < 0 ? -1 : 1));
+      sideNet.geometry.computeVertexNormals();
       sideNet.rotation.y = Math.PI / 2 * (x < 0 ? 1 : -1);
       sideNet.position.set(x, GOAL_H / 2, z + sign * GOAL_D / 2);
       sideNet.receiveShadow = true;
@@ -608,10 +722,11 @@ function _buildGoals(scene) {
     const groundNetMat = new THREE.MeshStandardMaterial({
       map: netTex,
       transparent: true,
-      opacity: 0.15,
+      opacity: 0.18,
       side: THREE.DoubleSide,
-      color: 0xffffff,
-      roughness: 0.9,
+      color: netColor,
+      roughness: 0.8,
+      metalness: 0,
       depthWrite: false,
     });
     const groundNet = new THREE.Mesh(
@@ -704,107 +819,86 @@ function _buildCornerFlags(scene) {
 function _buildAdvertisingBoards(scene, scenarioId) {
   const sponsors = _selectSponsors(scenarioId);
   const boards = [];
-  const boardH = 1.2;
-  const boardY = 0.6;
 
-  const addBoardRow = (xStart, zStart, xEnd, zEnd, sponsorIdx) => {
+  const boardW = 3;
+  const boardH = 1.05;
+  const boardD = 0.08;
+  const boardY = 0.525;
+  const pitchGap = 2.5;
+  const cornerGap = 2.5;
+
+  // Cache materials per sponsor for reuse
+  const matCache = {};
+  function _getMat(name) {
+    if (!matCache[name]) {
+      const tex = _createSponsorTexture(name);
+      matCache[name] = new THREE.MeshStandardMaterial({
+        map: tex,
+        roughness: 0.4,
+        metalness: 0.05,
+        emissive: 0x111122,
+        emissiveIntensity: 0.25,
+        emissiveMap: tex,
+        side: THREE.DoubleSide,
+      });
+    }
+    return matCache[name];
+  }
+
+  // Shared geometry
+  const faceGeo = _sharedGeo('adFace', () => new THREE.PlaneGeometry(boardW, boardH));
+  const caseGeo = _sharedGeo('adCase', () => new THREE.BoxGeometry(boardW, boardH, boardD));
+
+  function addRow(xStart, zStart, xEnd, zEnd, spIdx) {
     const dx = xEnd - xStart;
     const dz = zEnd - zStart;
     const totalLen = Math.sqrt(dx * dx + dz * dz);
-    const numBoards = Math.max(1, Math.floor(totalLen / 3));
-    const segDx = dx / numBoards;
-    const segDz = dz / numBoards;
-    const angle = Math.atan2(dx, dz);
+    const numBoards = Math.max(1, Math.floor(totalLen / boardW));
+
+    // Inward-facing angle: rotate so +Z normal points toward pitch centre
+    const cx = (xStart + xEnd) / 2;
+    const cz = (zStart + zEnd) / 2;
+    const angle = Math.atan2(-cx, -cz);
 
     for (let i = 0; i < numBoards; i++) {
       const t = (i + 0.5) / numBoards;
       const bx = xStart + t * dx;
       const bz = zStart + t * dz;
-      const sp = sponsors[(sponsorIdx + i) % sponsors.length];
-      const tex = _createSponsorTexture(sp);
+      const sp = sponsors[(spIdx + i) % sponsors.length];
+      const mat = _getMat(sp);
 
-      const boardMat = new THREE.MeshStandardMaterial({
-        map: tex,
-        roughness: 0.6,
-        metalness: 0.2,
-        emissive: 0x222233,
-        emissiveIntensity: 0.15,
-        emissiveMap: tex,
-      });
+      // Casing
+      const casing = new THREE.Mesh(caseGeo, mat);
+      casing.position.set(bx, boardY, bz);
+      casing.rotation.y = angle;
+      scene.add(casing);
+      boards.push(casing);
 
-      const board = new THREE.Mesh(
-        new THREE.PlaneGeometry(2.8, boardH),
-        boardMat,
+      // LED face (slightly proud of casing)
+      const face = new THREE.Mesh(faceGeo, mat);
+      face.position.set(
+        bx + Math.sin(angle) * (boardD / 2 + 0.005),
+        boardY,
+        bz + Math.cos(angle) * (boardD / 2 + 0.005),
       );
-      board.position.set(bx, boardY, bz);
-      board.rotation.y = angle;
-      board.castShadow = true;
-      scene.add(board);
-
-      // Frame
-      const frameMat = new THREE.MeshStandardMaterial({
-        color: 0x1a1a2e,
-        roughness: 0.8,
-        metalness: 0.1,
-      });
-      const frame = new THREE.Mesh(
-        new THREE.BoxGeometry(2.9, boardH + 0.1, 0.05),
-        frameMat,
-      );
-      frame.position.set(bx, boardY, bz);
-      frame.position.y = boardY;
-      // Slight offset behind the board
-      const offset = 0.05;
-      frame.position.x += Math.sin(angle) * offset;
-      frame.position.z += Math.cos(angle) * offset;
-      scene.add(frame);
-
-      // Stand legs
-      const legMat = new THREE.MeshStandardMaterial({
-        color: 0x333355,
-        roughness: 0.7,
-        metalness: 0.2,
-      });
-      [-0.6, 0.6].forEach(legOff => {
-        const leg = new THREE.Mesh(
-          new THREE.CylinderGeometry(0.03, 0.04, boardY * 2, 4),
-          legMat,
-        );
-        const perpX = Math.cos(angle) * legOff;
-        const perpZ = -Math.sin(angle) * legOff;
-        leg.position.set(bx + perpX, boardY * 0.5, bz + perpZ);
-        scene.add(leg);
-      });
-
-      // Glow light on ground from board
-      const glowMat = new THREE.MeshBasicMaterial({
-        color: 0x3344aa,
-        transparent: true,
-        opacity: 0.04,
-      });
-      const glow = new THREE.Mesh(
-        new THREE.PlaneGeometry(3.5, 1),
-        glowMat,
-      );
-      glow.rotation.x = -Math.PI / 2;
-      const perpGlowX = Math.cos(angle) * 0.8;
-      const perpGlowZ = -Math.sin(angle) * 0.8;
-      glow.position.set(bx + perpGlowX, -0.12, bz + perpGlowZ);
-      scene.add(glow);
-
-      boards.push(board);
+      face.rotation.y = angle;
+      scene.add(face);
+      boards.push(face);
     }
     return numBoards;
-  };
+  }
 
-  // Boards along both touchlines
+  const limit = HALF_L - cornerGap;
+  const wLimit = HALF_W - cornerGap;
   let spIdx = 0;
-  spIdx += addBoardRow(-HALF_W - 2, -HALF_L + 5, -HALF_W - 2, HALF_L - 5, spIdx);
-  spIdx += addBoardRow(+HALF_W + 2, -HALF_L + 5, +HALF_W + 2, HALF_L - 5, spIdx);
 
-  // Boards behind goals (shorter)
-  spIdx += addBoardRow(-HALF_W + 5, -HALF_L - 2, HALF_W - 5, -HALF_L - 2, spIdx);
-  spIdx += addBoardRow(-HALF_W + 5, +HALF_L + 2, HALF_W - 5, +HALF_L + 2, spIdx);
+  // Touchline rows (full length, minus corner gaps)
+  spIdx += addRow(-HALF_W - pitchGap, -limit, -HALF_W - pitchGap, limit, spIdx);
+  spIdx += addRow(+HALF_W + pitchGap, -limit, +HALF_W + pitchGap, limit, spIdx);
+
+  // Behind-goal rows
+  spIdx += addRow(-wLimit, -HALF_L - pitchGap, wLimit, -HALF_L - pitchGap, spIdx);
+  spIdx += addRow(-wLimit, +HALF_L + pitchGap, wLimit, +HALF_L + pitchGap, spIdx);
 
   return boards;
 }
@@ -813,262 +907,632 @@ function _buildAdvertisingBoards(scene, scenarioId) {
 // BUILD STADIUM
 // ===================================================================
 function _buildStadium(scene) {
-  const standMat = new THREE.MeshStandardMaterial({
-    color: 0x16162a,
+  // Materials — dark modern aesthetic
+  const concDark = new THREE.MeshStandardMaterial({
+    color: 0x12122a,
+    roughness: 0.9,
+    metalness: 0.02,
+  });
+  const concMid = new THREE.MeshStandardMaterial({
+    color: 0x181830,
     roughness: 0.85,
-    metalness: 0.05,
+    metalness: 0.02,
+  });
+  const concLight = new THREE.MeshStandardMaterial({
+    color: 0x20203a,
+    roughness: 0.8,
+    metalness: 0.02,
+  });
+  const steelMat = new THREE.MeshStandardMaterial({
+    color: 0x3a3a52,
+    roughness: 0.35,
+    metalness: 0.7,
   });
   const roofMat = new THREE.MeshStandardMaterial({
-    color: 0x1a1a30,
-    roughness: 0.75,
-    metalness: 0.1,
-  });
-  const beamMat = new THREE.MeshStandardMaterial({
-    color: 0x2a2a3e,
+    color: 0x16162e,
     roughness: 0.6,
-    metalness: 0.2,
+    metalness: 0.15,
+  });
+  const glassMat = new THREE.MeshStandardMaterial({
+    color: 0xaaccee,
+    transparent: true,
+    opacity: 0.2,
+    roughness: 0.05,
+    metalness: 0.1,
+    side: THREE.DoubleSide,
   });
 
-  // Main stands along sidelines (3 tiers each)
+  // ===================================================================
+  // 1. SIDELINE GRANDSTANDS (East & West)
+  // ===================================================================
+  // Each side has 3 tiers stepping back from the pitch.
+  // Outer (back) edge aligns at |x| = 49 for a clean exterior wall.
   [-1, 1].forEach(side => {
-    for (let tier = 0; tier < 3; tier++) {
-      const yBase = tier * 3 + 1;
-      const tw = 42;
-      const td = 4.5;
-      const stand = new THREE.Mesh(
-        new THREE.BoxGeometry(tw, 2.5, td),
-        standMat,
-      );
-      stand.position.set(0, yBase + 1.25, side * (HALF_L + 3 + tier * 2.5));
-      stand.castShadow = true;
-      stand.receiveShadow = true;
-      scene.add(stand);
-    }
-    // Roof
+    // Lower tier — closest to pitch, tallest
+    const lower = new THREE.Mesh(
+      new THREE.BoxGeometry(16, 4, 98),
+      concDark,
+    );
+    lower.position.set(side * 41, 2, 0);
+    lower.castShadow = true;
+    lower.receiveShadow = true;
+    scene.add(lower);
+
+    // Middle tier — set back 2m, shorter in height
+    const middle = new THREE.Mesh(
+      new THREE.BoxGeometry(13, 3.5, 90),
+      concMid,
+    );
+    middle.position.set(side * 43.5, 5.75, 0);
+    middle.castShadow = true;
+    middle.receiveShadow = true;
+    scene.add(middle);
+
+    // Upper tier — set back 2m more
+    const upper = new THREE.Mesh(
+      new THREE.BoxGeometry(10, 3.5, 82),
+      concLight,
+    );
+    upper.position.set(side * 46, 9.25, 0);
+    upper.castShadow = true;
+    upper.receiveShadow = true;
+    scene.add(upper);
+
+    // --- Exterior wall (connects all tiers at the back) ---
+    const wall = new THREE.Mesh(
+      new THREE.BoxGeometry(0.5, 11, 100),
+      concLight,
+    );
+    wall.position.set(side * 49, 5.5, 0);
+    scene.add(wall);
+
+    // --- Roof structure (cantilevered from back wall) ---
     const roof = new THREE.Mesh(
-      new THREE.BoxGeometry(44, 0.25, 16),
+      new THREE.BoxGeometry(16, 0.2, 88),
       roofMat,
     );
-    roof.position.set(0, 10.5, side * (HALF_L + 8.5));
+    roof.position.set(side * 45, 12, 0);
     roof.castShadow = true;
     scene.add(roof);
 
-    // Roof structural beams
-    for (let i = -18; i <= 18; i += 4) {
+    // Roof edge beam (front lip)
+    const lip = new THREE.Mesh(
+      new THREE.BoxGeometry(0.3, 0.5, 89),
+      steelMat,
+    );
+    lip.position.set(side * 37, 12.35, 0);
+    scene.add(lip);
+
+    // Roof rear beam (along back wall)
+    const rearBeam = new THREE.Mesh(
+      new THREE.BoxGeometry(0.3, 0.5, 89),
+      steelMat,
+    );
+    rearBeam.position.set(side * 53, 12.35, 0);
+    scene.add(rearBeam);
+
+    // Roof lateral beams (strut pattern)
+    for (let z = -42; z <= 42; z += 7) {
       const beam = new THREE.Mesh(
-        new THREE.BoxGeometry(0.12, 0.5, 14),
-        beamMat,
+        new THREE.BoxGeometry(16, 0.15, 0.15),
+        steelMat,
       );
-      beam.position.set(i, 10.8, side * (HALF_L + 8.5));
+      beam.position.set(side * 45, 12.1, z);
       scene.add(beam);
     }
-    // Vertical support columns
-    for (let i = -16; i <= 16; i += 8) {
-      for (let j = -4; j <= 4; j += 8) {
-        const col = new THREE.Mesh(
-          new THREE.CylinderGeometry(0.15, 0.2, 10, 6),
-          beamMat,
-        );
-        col.position.set(i, 5, side * (HALF_L + 5 + j));
-        scene.add(col);
-      }
+
+    // Vertical support columns at back wall
+    for (let z = -44; z <= 44; z += 10) {
+      const col = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.2, 0.25, 11, 8),
+        steelMat,
+      );
+      col.position.set(side * 49, 5.5, z);
+      scene.add(col);
+    }
+
+    // --- Stepped seating rows (visual strips on each tier) ---
+    const seatStripMat = new THREE.MeshStandardMaterial({
+      color: 0x1e1e38,
+      roughness: 0.85,
+      metalness: 0.02,
+    });
+    for (let row = 0; row < 10; row++) {
+      const step = new THREE.Mesh(
+        new THREE.BoxGeometry(14, 0.1, 0.25),
+        seatStripMat,
+      );
+      step.position.set(side * (34 + 0.6 + row * 1.4), 2.5 + row * 0.4, 0);
+      scene.add(step);
+    }
+    for (let row = 0; row < 8; row++) {
+      const step = new THREE.Mesh(
+        new THREE.BoxGeometry(11, 0.1, 0.25),
+        seatStripMat,
+      );
+      step.position.set(side * (36 + 0.6 + row * 1.4), 6.1 + row * 0.4, 0);
+      scene.add(step);
+    }
+    for (let row = 0; row < 6; row++) {
+      const step = new THREE.Mesh(
+        new THREE.BoxGeometry(8, 0.1, 0.25),
+        seatStripMat,
+      );
+      step.position.set(side * (38 + 0.6 + row * 1.4), 9.6 + row * 0.4, 0);
+      scene.add(step);
     }
   });
 
-  // Behind-goal stands (smaller)
+  // ===================================================================
+  // 2. END STANDS (North & South, behind goals)
+  // ===================================================================
   [-1, 1].forEach(side => {
-    const gs = new THREE.Mesh(
-      new THREE.BoxGeometry(22, 4, 6),
-      standMat,
+    // Lower tier
+    const endLower = new THREE.Mesh(
+      new THREE.BoxGeometry(66, 3.5, 8),
+      concDark,
     );
-    gs.position.set(0, 2, side * (HALF_L + 10));
-    gs.castShadow = true;
-    scene.add(gs);
+    endLower.position.set(0, 1.75, side * 57);
+    endLower.castShadow = true;
+    endLower.receiveShadow = true;
+    scene.add(endLower);
 
-    const gs2 = new THREE.Mesh(
-      new THREE.BoxGeometry(22, 3, 5),
-      standMat,
+    // Upper tier
+    const endUpper = new THREE.Mesh(
+      new THREE.BoxGeometry(60, 3, 7),
+      concMid,
     );
-    gs2.position.set(0, 5.5, side * (HALF_L + 11));
-    scene.add(gs2);
+    endUpper.position.set(0, 5, side * 59);
+    endUpper.castShadow = true;
+    endUpper.receiveShadow = true;
+    scene.add(endUpper);
+
+    // Exterior wall
+    const endWall = new THREE.Mesh(
+      new THREE.BoxGeometry(68, 6.5, 0.5),
+      concLight,
+    );
+    endWall.position.set(0, 3.25, side * 65);
+    scene.add(endWall);
 
     // Roof
-    const gRoof = new THREE.Mesh(
-      new THREE.BoxGeometry(24, 0.2, 8),
+    const endRoof = new THREE.Mesh(
+      new THREE.BoxGeometry(64, 0.2, 8),
       roofMat,
     );
-    gRoof.position.set(0, 8, side * (HALF_L + 12));
-    scene.add(gRoof);
+    endRoof.position.set(0, 7.5, side * 63);
+    endRoof.castShadow = true;
+    scene.add(endRoof);
+
+    // Roof beams
+    for (let x = -28; x <= 28; x += 7) {
+      const beam = new THREE.Mesh(
+        new THREE.BoxGeometry(0.15, 0.35, 8),
+        steelMat,
+      );
+      beam.position.set(x, 7.6, side * 63);
+      scene.add(beam);
+    }
+
+    // Stepped seating rows
+    const seatStripMat = new THREE.MeshStandardMaterial({
+      color: 0x1e1e38,
+      roughness: 0.85,
+      metalness: 0.02,
+    });
+    for (let row = 0; row < 6; row++) {
+      const step = new THREE.Mesh(
+        new THREE.BoxGeometry(60, 0.1, 0.25),
+        seatStripMat,
+      );
+      step.position.set(0, 2.1 + row * 0.45, side * (55 + 0.5 + row * 1.2));
+      scene.add(step);
+    }
   });
 
-  // Corner stands
+  // ===================================================================
+  // 3. CORNER SECTIONS
+  // ===================================================================
   [-1, 1].forEach(sx => {
     [-1, 1].forEach(sz => {
-      const cs = new THREE.Mesh(
-        new THREE.BoxGeometry(8, 3.5, 8),
-        standMat,
+      // Corner filler — connects sideline stands to end stands
+      const corner = new THREE.Mesh(
+        new THREE.BoxGeometry(24, 4, 14),
+        concDark,
       );
-      cs.position.set(sx * (HALF_W + 4), 1.75, sz * (HALF_L + 4));
-      scene.add(cs);
+      corner.position.set(sx * 34, 2, sz * 53);
+      corner.castShadow = true;
+      scene.add(corner);
+
+      // Corner upper tier
+      const cornerUp = new THREE.Mesh(
+        new THREE.BoxGeometry(20, 3, 11),
+        concMid,
+      );
+      cornerUp.position.set(sx * 36, 5.5, sz * 54.5);
+      cornerUp.castShadow = true;
+      scene.add(cornerUp);
     });
   });
 
-  // Subs benches / dugouts
-  const dugoutMat = new THREE.MeshStandardMaterial({
-    color: 0x1a1a30,
+  // ===================================================================
+  // 4. PITCH-SIDE BARRIERS & WALKWAYS
+  // ===================================================================
+  const barrierMat = new THREE.MeshStandardMaterial({
+    color: 0x2a2a44,
     roughness: 0.7,
-    metalness: 0.1,
+    metalness: 0.15,
+  });
+
+  // Sideline barriers (along touchlines)
+  [-1, 1].forEach(side => {
+    const barrier = new THREE.Mesh(
+      new THREE.BoxGeometry(0.5, 0.5, 104),
+      barrierMat,
+    );
+    barrier.position.set(side * (HALF_W + 2), 0.25, 0);
+    barrier.castShadow = true;
+    scene.add(barrier);
+  });
+
+  // Goal-line barriers
+  [-1, 1].forEach(side => {
+    const barrier = new THREE.Mesh(
+      new THREE.BoxGeometry(70, 0.5, 0.5),
+      barrierMat,
+    );
+    barrier.position.set(0, 0.25, side * (HALF_L + 2));
+    scene.add(barrier);
+  });
+
+  // Access walkway between barrier and stands (sideline)
+  const walkMat = new THREE.MeshStandardMaterial({
+    color: 0x2a2a40,
+    roughness: 0.9,
+    metalness: 0.02,
   });
   [-1, 1].forEach(side => {
-    const dugout = new THREE.Mesh(
-      new THREE.BoxGeometry(6, 0.6, 2.2),
-      dugoutMat,
+    const walk = new THREE.Mesh(
+      new THREE.BoxGeometry(3.5, 0.15, 100),
+      walkMat,
     );
-    dugout.position.set(side * (HALF_W + 1.5), 0.3, -7);
-    scene.add(dugout);
-
-    // Roof over dugout
-    const dRoof = new THREE.Mesh(
-      new THREE.BoxGeometry(6.5, 0.1, 2.5),
-      new THREE.MeshStandardMaterial({ color: 0x2a2a3e, roughness: 0.7 }),
-    );
-    dRoof.position.set(side * (HALF_W + 1.5), 1.2, -7);
-    scene.add(dRoof);
-
-    // Seats
-    const seatMat = _mat(0x333355, 0.6, 0.05);
-    for (let i = -2; i <= 2; i += 0.8) {
-      const seat = new THREE.Mesh(
-        new THREE.BoxGeometry(0.5, 0.2, 0.5),
-        seatMat,
-      );
-      seat.position.set(side * (HALF_W + 1.5) + i, 0.5, -7);
-      scene.add(seat);
-    }
+    walk.position.set(side * (HALF_W + 4.25), 0.07, 0);
+    scene.add(walk);
   });
 
-  // Tunnel
-  const tunnelMat = _mat(0x0a0a14, 0.8, 0.1);
+  // ===================================================================
+  // 5. ENTRANCE TUNNEL (near halfway line on north end)
+  // ===================================================================
+  const tunnelMat = new THREE.MeshStandardMaterial({
+    color: 0x080816,
+    roughness: 0.9,
+    metalness: 0.02,
+  });
+  const tunnelBorder = new THREE.MeshStandardMaterial({
+    color: 0x2a2a46,
+    roughness: 0.5,
+    metalness: 0.4,
+  });
+
+  // Tunnel passage through the north end stand
   const tunnel = new THREE.Mesh(
-    new THREE.BoxGeometry(4, 3, 6),
+    new THREE.BoxGeometry(5, 3.5, 10),
     tunnelMat,
   );
-  tunnel.position.set(0, 1.5, -(HALF_L + 10));
+  tunnel.position.set(0, 1.75, -(HALF_L + 54));
   scene.add(tunnel);
 
-  // Tunnel arch
-  const archMat = _mat(0x333355, 0.5, 0.2);
-  const arch = new THREE.Mesh(
-    new THREE.TorusGeometry(2, 0.12, 6, 12, Math.PI),
-    archMat,
+  // Tunnel arch frame (front face)
+  const archFrame = new THREE.Mesh(
+    new THREE.TorusGeometry(2.5, 0.15, 8, 14, Math.PI),
+    tunnelBorder,
   );
-  arch.position.set(0, 3, -(HALF_L + 7));
-  arch.rotation.x = Math.PI / 2;
-  scene.add(arch);
+  archFrame.position.set(0, 3.5, -(HALF_L + 49));
+  archFrame.rotation.x = Math.PI / 2;
+  scene.add(archFrame);
 
-  // Tunnel light
-  const tunnelLight = new THREE.Mesh(
-    new THREE.PlaneGeometry(3, 2),
+  // Vertical arch pillars
+  [-1, 1].forEach(side => {
+    const pillar = new THREE.Mesh(
+      new THREE.BoxGeometry(0.25, 3.5, 0.25),
+      tunnelBorder,
+    );
+    pillar.position.set(side * 2.5, 1.75, -(HALF_L + 49));
+    scene.add(pillar);
+  });
+
+  // Tunnel ceiling light strip
+  const tunnelGlow = new THREE.Mesh(
+    new THREE.PlaneGeometry(4, 0.5),
     new THREE.MeshBasicMaterial({
-      color: 0xffeedd,
+      color: 0xffeecc,
       transparent: true,
-      opacity: 0.08,
+      opacity: 0.12,
       side: THREE.DoubleSide,
     }),
   );
-  tunnelLight.position.set(0, 2.5, -(HALF_L + 7));
-  scene.add(tunnelLight);
+  tunnelGlow.position.set(0, 3.3, -(HALF_L + 50));
+  scene.add(tunnelGlow);
+
+  // Entrance opening (dark void behind the arch)
+  const voidMat = new THREE.MeshBasicMaterial({
+    color: 0x000000,
+  });
+  const entrance = new THREE.Mesh(
+    new THREE.PlaneGeometry(4.5, 3),
+    voidMat,
+  );
+  entrance.position.set(0, 1.5, -(HALF_L + 48.5));
+  scene.add(entrance);
+
+  // Tunnel side walls (extending from stand into stadium)
+  [-1, 1].forEach(side => {
+    const sideWall = new THREE.Mesh(
+      new THREE.BoxGeometry(0.5, 3, 8),
+      concMid,
+    );
+    sideWall.position.set(side * 3, 1.5, -(HALF_L + 46));
+    scene.add(sideWall);
+  });
+
+  // ===================================================================
+  // 6. HOME & AWAY DUGOUTS
+  // ===================================================================
+  [-1, 1].forEach(side => {
+    // Dugout base platform
+    const base = new THREE.Mesh(
+      new THREE.BoxGeometry(7, 0.3, 2.5),
+      concDark,
+    );
+    base.position.set(side * (HALF_W + 3.2), 0.15, -6.5);
+    base.receiveShadow = true;
+    scene.add(base);
+
+    // Bench (long seat)
+    const benchMat = _mat(0x333358, 0.6, 0.05);
+    const bench = new THREE.Mesh(
+      new THREE.BoxGeometry(6, 0.15, 0.5),
+      benchMat,
+    );
+    bench.position.set(side * (HALF_W + 3.2), 0.65, -6.5);
+    scene.add(bench);
+
+    // Bench legs
+    [-2.5, 0, 2.5].forEach(xOff => {
+      const leg = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.04, 0.04, 0.4, 6),
+        steelMat,
+      );
+      leg.position.set(side * (HALF_W + 3.2) + xOff, 0.35, -6.5);
+      scene.add(leg);
+    });
+
+    // Transparent dugout roof (glass shelter)
+    const roofGlass = new THREE.Mesh(
+      new THREE.BoxGeometry(7.5, 0.05, 3),
+      glassMat,
+    );
+    roofGlass.position.set(side * (HALF_W + 3.2), 2, -6.5);
+    scene.add(roofGlass);
+
+    // Dugout roof support frame
+    for (let zOff = -1.2; zOff <= 1.2; zOff += 2.4) {
+      const frame = new THREE.Mesh(
+        new THREE.BoxGeometry(7.5, 0.08, 0.08),
+        steelMat,
+      );
+      frame.position.set(side * (HALF_W + 3.2), 2, -6.5 + zOff);
+      scene.add(frame);
+    }
+    for (let xOff = -3.2; xOff <= 3.2; xOff += 6.4) {
+      const frame = new THREE.Mesh(
+        new THREE.BoxGeometry(0.08, 0.08, 3),
+        steelMat,
+      );
+      frame.position.set(side * (HALF_W + 3.2) + xOff, 2, -6.5);
+      scene.add(frame);
+    }
+
+    // Support posts for dugout roof
+    [-2.5, 2.5].forEach(xOff => {
+      [-1, 1].forEach(zOff => {
+        const post = new THREE.Mesh(
+          new THREE.CylinderGeometry(0.05, 0.06, 1.7, 6),
+          steelMat,
+        );
+        post.position.set(
+          side * (HALF_W + 3.2) + xOff,
+          1.05,
+          -6.5 + zOff * 1.2,
+        );
+        scene.add(post);
+      });
+    });
+  });
+
+  // ===================================================================
+  // 7. SAFETY RAILINGS (upper tier edges)
+  // ===================================================================
+  const railingMat = new THREE.MeshStandardMaterial({
+    color: 0x44445a,
+    roughness: 0.4,
+    metalness: 0.5,
+  });
+
+  // Sideline upper tier railings
+  [-1, 1].forEach(side => {
+    // Horizontal railing bar
+    const rail = new THREE.Mesh(
+      new THREE.BoxGeometry(0.08, 0.08, 80),
+      railingMat,
+    );
+    rail.position.set(side * 38, 9.6, 0);
+    scene.add(rail);
+
+    // Vertical posts
+    for (let z = -38; z <= 38; z += 4) {
+      const post = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.04, 0.04, 0.6, 4),
+        railingMat,
+      );
+      post.position.set(side * 38, 9.3, z);
+      scene.add(post);
+    }
+  });
+
+  // End stand railings
+  [-1, 1].forEach(side => {
+    const rail = new THREE.Mesh(
+      new THREE.BoxGeometry(0.08, 0.08, 58),
+      railingMat,
+    );
+    rail.rotation.x = Math.PI / 2;
+    rail.position.set(0, 5.3, side * 56);
+    scene.add(rail);
+
+    for (let x = -28; x <= 28; x += 4) {
+      const post = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.04, 0.04, 0.6, 4),
+        railingMat,
+      );
+      post.position.set(x, 5.0, side * 56);
+      scene.add(post);
+    }
+  });
 }
 
 // ===================================================================
-// BUILD CROWD
+// BUILD CROWD — instanced, lightweight, full-stadium
 // ===================================================================
 function _buildCrowd(scene, homeTeam, awayTeam) {
   const homeColors = _getTeamColors(homeTeam);
   const awayColors = _getTeamColors(awayTeam);
-  const group = new THREE.Group();
 
-  const neutralPalette = [0x1a1a2e, 0x16213e, 0x0f3460, 0x2d1b4e, 0x1c1c2a];
-
-  function _createSpectator(color) {
-    // Low-poly person: torso + head
-    const g = new THREE.Group();
-
-    const bodyMat = new THREE.MeshStandardMaterial({
-      color,
-      roughness: 0.9,
-    });
-    const body = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.15, 0.2, 0.5, 4),
-      bodyMat,
-    );
-    body.position.y = 0.35;
-    g.add(body);
-
-    const headMat = new THREE.MeshStandardMaterial({
-      color: 0xe8d5b8,
-      roughness: 0.8,
-    });
-    const head = new THREE.Mesh(
-      new THREE.SphereGeometry(0.12, 4, 4),
-      headMat,
-    );
-    head.position.y = 0.65;
-    g.add(head);
-
-    return g;
-  }
-
-  // Main stand crowds (along sidelines)
-  const standConfigs = [
-    { z: -(HALF_L + 4), y: 1.8, side: 0 },
-    { z: -(HALF_L + 6.5), y: 4.8, side: 0 },
-    { z: -(HALF_L + 9), y: 7.8, side: 0 },
-    { z: +(HALF_L + 4), y: 1.8, side: 1 },
-    { z: +(HALF_L + 6.5), y: 4.8, side: 1 },
-    { z: +(HALF_L + 9), y: 7.8, side: 1 },
+  // Colour palette — realistic match-day clothing
+  const palette = [
+    homeColors.crowd, awayColors.crowd,
+    0xffffff, 0xe0e0e0, 0xcccccc,
+    0x888888, 0x666666, 0x444444,
+    0x222222, 0x111111,
+    0x1a1a2e, 0x16213e, 0x0f3460,
+    0x2d1b4e, 0x333355,
+    0x8b1a1a, 0xcc3333, 0xcc6633,
+    0xccaa33, 0x226622, 0x1a4a6a,
   ];
 
-  standConfigs.forEach(config => {
-    const isAway = config.side === 1;
-    const baseColor = isAway ? awayColors.crowd : homeColors.crowd;
-    const rowWidth = 40;
-    const spacing = 0.55;
+  // Shared low-poly spectator geometry
+  const bodyGeo = new THREE.CylinderGeometry(0.15, 0.2, 0.5, 4);
+  bodyGeo.translate(0, 0.25, 0);
+  const headGeo = new THREE.SphereGeometry(0.12, 4, 4);
+  headGeo.translate(0, 0.65, 0);
 
-    for (let i = -rowWidth / 2; i <= rowWidth / 2; i += spacing) {
-      const jitter = (Math.random() - 0.5) * 0.2;
-      const isHomeSection = Math.abs(i) < 8;
-      let color;
-      if (isHomeSection) {
-        color = baseColor;
-      } else if (Math.random() < 0.3) {
-        color = baseColor;
-      } else {
-        color = neutralPalette[Math.floor(Math.random() * neutralPalette.length)];
-      }
-      const spec = _createSpectator(color);
-      spec.position.set(i + jitter, config.y + Math.random() * 0.2, config.z + (Math.random() - 0.5) * 0.3);
-      spec.scale.set(1, 0.8 + Math.random() * 0.4, 1);
-      group.add(spec);
-    }
+  // Body material — color comes from instanceColor
+  const bodyMat = new THREE.MeshStandardMaterial({
+    roughness: 0.9,
+    metalness: 0,
+  });
+  // Head material — single skin tone
+  const headMat = new THREE.MeshStandardMaterial({
+    color: 0xd4b896,
+    roughness: 0.85,
+    metalness: 0,
   });
 
-  // Behind-goal crowds
-  [-1, 1].forEach(sign => {
-    for (let row = 0; row < 3; row++) {
-      const z = sign * (HALF_L + 10 + row * 2);
-      const y = 1.5 + row * 1.5;
-      for (let i = -12; i <= 12; i += 0.6) {
-        const jitter = (Math.random() - 0.5) * 0.2;
-        const color = neutralPalette[Math.floor(Math.random() * neutralPalette.length)];
-        const spec = _createSpectator(color);
-        spec.position.set(i + jitter, y + Math.random() * 0.2, z + (Math.random() - 0.5) * 0.3);
-        spec.scale.set(1, 0.7 + Math.random() * 0.3, 1);
-        group.add(spec);
+  // Collect all spectator positions with section for facing direction.
+  // All Y positions are within the tier box bounds so spectators never float,
+  // clip through structures, or have heads above the roof (y=12 max).
+  const seats = [];
+  const SP = 0.4; // base seat spacing (tight for packed stadium look)
+
+  // ---- Sideline grandstands (East & West) ----
+  // Lower tier:  Box(16, 4, 98)  at (±41, 2, 0)  → top y=4,  x=[±33,±49], z=[-49,49]
+  // Middle tier: Box(13, 3.5, 90) at (±43.5, 5.75, 0) → top y=7.5, x=[±37,±50], z=[-45,45]
+  // Upper tier:  Box(10, 3.5, 82) at (±46, 9.25, 0) → top y=11,  x=[±41,±51], z=[-41,41]
+  [-1, 1].forEach(side => {
+    const rowDefs = [
+      { rows: 5, xS: 34, xSt: 2,   yS: 2.5, ySt: 0.35, zW: 94, tag: 'sideline' },
+      { rows: 4, xS: 38, xSt: 2.5, yS: 6.0, ySt: 0.5, zW: 86, tag: 'sideline' },
+      { rows: 3, xS: 42, xSt: 2.5, yS: 9.5, ySt: 0.5, zW: 78, tag: 'sideline' },
+    ];
+    rowDefs.forEach(def => {
+      for (let row = 0; row < def.rows; row++) {
+        const y = def.yS + row * def.ySt;
+        const x = side * (def.xS + row * def.xSt);
+        for (let z = -def.zW / 2; z <= def.zW / 2; z += SP) {
+          seats.push({ x, y, z, sec: def.tag });
+        }
       }
-    }
+    });
   });
 
+
+
+  const count = seats.length;
+
+  // Create instanced meshes
+  const bodyMesh = new THREE.InstancedMesh(bodyGeo, bodyMat, count);
+  const headMesh = new THREE.InstancedMesh(headGeo, headMat, count);
+  bodyMesh.castShadow = true;
+  headMesh.castShadow = true;
+
+  const dummy = new THREE.Object3D();
+  const col = new THREE.Color();
+  let idx = 0;
+
+  // Skip ~7 % for empty-seat variation
+  const skipEvery = 14;
+
+  seats.forEach(s => {
+    if (idx > 0 && idx % skipEvery === 0) {
+      idx++;
+      return;
+    }
+
+    // Jitter for natural look
+    const jx = (Math.random() - 0.5) * 0.12;
+    const jz = (Math.random() - 0.5) * 0.12;
+    const jy = (Math.random() - 0.5) * 0.08;
+    const heightScale = 0.75 + Math.random() * 0.4;
+
+    // Face toward pitch
+    let facing;
+    if (s.sec === 'sideline') {
+      facing = s.x > 0 ? Math.PI : 0;
+    } else if (s.sec === 'end') {
+      facing = s.z > 0 ? Math.PI / 2 : -Math.PI / 2;
+    } else {
+      facing = Math.atan2(-s.z, -s.x);
+    }
+
+    // Body
+    dummy.position.set(s.x + jx, s.y + jy, s.z + jz);
+    dummy.scale.set(1, heightScale, 1);
+    dummy.rotation.y = facing + (Math.random() - 0.5) * 0.3;
+    dummy.updateMatrix();
+    bodyMesh.setMatrixAt(idx, dummy.matrix);
+
+    // Head (same base position, slightly higher)
+    dummy.position.y += 0.3;
+    dummy.updateMatrix();
+    headMesh.setMatrixAt(idx, dummy.matrix);
+
+    // Random colour from palette
+    const c = palette[Math.floor(Math.random() * palette.length)];
+    col.setHex(c);
+    bodyMesh.setColorAt(idx, col);
+
+    idx++;
+  });
+
+  bodyMesh.count = idx;
+  headMesh.count = idx;
+  bodyMesh.instanceMatrix.needsUpdate = true;
+  if (bodyMesh.instanceColor) bodyMesh.instanceColor.needsUpdate = true;
+  headMesh.instanceMatrix.needsUpdate = true;
+
+  const group = new THREE.Group();
+  group.add(bodyMesh);
+  group.add(headMesh);
   return group;
 }
 
@@ -1077,66 +1541,72 @@ function _buildCrowd(scene, homeTeam, awayTeam) {
 // ===================================================================
 function _buildFloodlights(scene) {
   const towers = [];
+  // Option A: 4 primary corner towers — one beyond each corner, illuminating diagonally
   const towerPositions = [
-    [-HALF_W - 8, -HALF_L - 8],
-    [+HALF_W + 8, -HALF_L - 8],
-    [-HALF_W - 8, +HALF_L + 8],
-    [+HALF_W + 8, +HALF_L + 8],
-    [-HALF_W - 8, -20],
-    [+HALF_W + 8, -20],
-    [-HALF_W - 8, +20],
-    [+HALF_W + 8, +20],
+    [-HALF_W - 10, -HALF_L - 10],
+    [+HALF_W + 10, -HALF_L - 10],
+    [-HALF_W - 10, +HALF_L + 10],
+    [+HALF_W + 10, +HALF_L + 10],
   ];
 
   const towerMat = new THREE.MeshStandardMaterial({
-    color: 0x2a2a3e,
-    roughness: 0.7,
-    metalness: 0.2,
+    color: 0x3a3a50,
+    roughness: 0.6,
+    metalness: 0.3,
+  });
+  const headMat = new THREE.MeshStandardMaterial({
+    color: 0xdddddd,
+    emissive: 0xfff4d6,
+    emissiveIntensity: 0.3,
+    roughness: 0.3,
+    metalness: 0.4,
   });
 
   towerPositions.forEach(([x, z]) => {
-    // Main tower pole
-    const pole = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.3, 0.5, 30, 8),
+    // Tapered main pole (base section) — 40 m total height
+    const base = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.4, 0.7, 12, 8),
       towerMat,
     );
-    pole.position.set(x, 15, z);
-    pole.castShadow = true;
-    scene.add(pole);
+    base.position.set(x, 6, z);
+    base.castShadow = true;
+    scene.add(base);
 
-    // Cross arm
-    const arm = new THREE.Mesh(
-      new THREE.BoxGeometry(2.5, 0.08, 0.08),
+    // Upper pole (narrower)
+    const upper = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.15, 0.4, 28, 8),
       towerMat,
     );
-    arm.position.set(x, 29.5, z);
+    upper.position.set(x, 26, z);
+    upper.castShadow = true;
+    scene.add(upper);
+
+    // Cross arm array — longer to carry more floodlights
+    const arm = new THREE.Mesh(
+      new THREE.BoxGeometry(5, 0.12, 0.15),
+      towerMat,
+    );
+    arm.position.set(x, 38.5, z);
     scene.add(arm);
 
-    // Light heads (multiple per tower)
-    const headMat = new THREE.MeshStandardMaterial({
-      color: 0xeeeeee,
-      emissive: 0xfff4d6,
-      emissiveIntensity: 0.4,
-      roughness: 0.3,
-      metalness: 0.5,
-    });
-    [-0.8, 0, 0.8].forEach(offset => {
-      const head = new THREE.Mesh(
-        new THREE.BoxGeometry(0.4, 0.2, 0.3),
+    // 7 light fixtures per tower, spaced evenly, all pointing at pitch centre
+    [-2.4, -1.6, -0.8, 0, 0.8, 1.6, 2.4].forEach(offset => {
+      const housing = new THREE.Mesh(
+        new THREE.BoxGeometry(0.35, 0.18, 0.45),
         headMat,
       );
-      head.position.set(x + offset, 30, z);
-      scene.add(head);
+      housing.position.set(x + offset, 38.9, z);
+      scene.add(housing);
     });
 
-    // Light glow sprite
+    // Subtle glow sprite (smaller, lower opacity)
     const glowCanvas = document.createElement('canvas');
     glowCanvas.width = 64;
     glowCanvas.height = 64;
     const gctx = glowCanvas.getContext('2d');
     const grad = gctx.createRadialGradient(32, 32, 0, 32, 32, 32);
-    grad.addColorStop(0, 'rgba(255, 244, 214, 0.5)');
-    grad.addColorStop(0.3, 'rgba(255, 244, 214, 0.15)');
+    grad.addColorStop(0, 'rgba(255, 244, 214, 0.3)');
+    grad.addColorStop(0.3, 'rgba(255, 244, 214, 0.08)');
     grad.addColorStop(1, 'rgba(255, 244, 214, 0)');
     gctx.fillStyle = grad;
     gctx.fillRect(0, 0, 64, 64);
@@ -1149,11 +1619,11 @@ function _buildFloodlights(scene) {
         depthWrite: false,
       })
     );
-    glowSpr.scale.set(15, 15, 1);
-    glowSpr.position.set(x, 30, z);
+    glowSpr.scale.set(10, 10, 1);
+    glowSpr.position.set(x, 39, z);
     scene.add(glowSpr);
 
-    towers.push({ pole, arm, x, z });
+    towers.push({ base, upper, arm, x, z });
   });
 
   return towers;
@@ -1177,13 +1647,13 @@ function _buildPlayerFigure(p, scenario) {
   const gkColor = isAway ? awayColors.gk : homeColors.gk;
 
   const mainColor = isGK ? gkColor : shirtColor;
-  const mainColorDark = new THREE.Color(mainColor).multiplyScalar(0.7).getHex();
 
   const group = new THREE.Group();
-
   const H = PLAYER_HEIGHT;
 
-  // --- Ground shadow (drop shadow, no depth write) ---
+  const skinMat = _mat(0xf0d5b8, 0.4, 0.02);
+
+  // --- Ground shadow ---
   const shadow = new THREE.Mesh(
     _sharedGeo('shadow', () => new THREE.CircleGeometry(1.0, 16)),
     new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.3, depthWrite: false }),
@@ -1193,94 +1663,127 @@ function _buildPlayerFigure(p, scenario) {
   group.add(shadow);
 
   // --- Boots ---
-  const bootMat = _mat(isAway ? 0x000000 : 0xffffff, 0.5, 0.1);
-  [-0.12, 0.12].forEach(offset => {
+  const bootMat = _mat(0x111111, 0.5, 0.1);
+  [-0.1, 0.1].forEach(offset => {
     const boot = new THREE.Mesh(
-      new THREE.BoxGeometry(0.1, 0.08, 0.18),
+      new THREE.BoxGeometry(0.1, 0.08, 0.22),
       bootMat,
     );
     boot.position.set(offset, 0.04, 0.04);
+    boot.castShadow = true;
     group.add(boot);
   });
 
-  // --- Legs (socks) ---
-  const legMat = _mat(socksColor, 0.6, 0.05);
-  const legH = H * 0.3;
-  [-0.1, 0.1].forEach(offset => {
+  // --- Lower legs (socks) ---
+  const legMat = _mat(socksColor, 0.55, 0.05);
+  const lowerLegH = 0.45;
+  [-0.09, 0.09].forEach(offset => {
     const leg = new THREE.Mesh(
-      _sharedGeo('leg', () => new THREE.CylinderGeometry(0.07, 0.09, legH, 6)),
+      _sharedGeo('lowerLeg', () => new THREE.CylinderGeometry(0.07, 0.06, lowerLegH, 8)),
       legMat,
     );
-    leg.position.set(offset, 0.04 + legH / 2, 0);
+    leg.position.set(offset, 0.08 + lowerLegH / 2, 0);
     leg.castShadow = true;
     group.add(leg);
   });
 
+  // --- Upper legs (thighs) ---
+  const thighMat = _mat(shortsColor, 0.5, 0.05);
+  const thighH = 0.35;
+  [-0.09, 0.09].forEach(offset => {
+    const thigh = new THREE.Mesh(
+      _sharedGeo('thigh', () => new THREE.CylinderGeometry(0.09, 0.08, thighH, 8)),
+      thighMat,
+    );
+    thigh.position.set(offset, 0.08 + lowerLegH + thighH / 2, 0);
+    thigh.castShadow = true;
+    group.add(thigh);
+  });
+
   // --- Shorts ---
-  const shortsH = H * 0.12;
+  const shortsH = 0.22;
   const shorts = new THREE.Mesh(
-    _sharedGeo('shorts', () => new THREE.CylinderGeometry(0.28, 0.24, shortsH, 10)),
-    _mat(shortsColor, 0.45, 0.05),
+    _sharedGeo('shorts', () => new THREE.CylinderGeometry(0.24, 0.2, shortsH, 10)),
+    _mat(shortsColor, 0.4, 0.05),
   );
-  shorts.position.y = 0.04 + legH + shortsH / 2;
+  shorts.position.y = 0.08 + lowerLegH + thighH + shortsH / 2;
   shorts.castShadow = true;
   group.add(shorts);
 
-  // --- Torso (main shirt) ---
-  const torsoH = H * 0.32;
+  // --- Torso (shirt) ---
+  const torsoH = 0.62;
   const torso = new THREE.Mesh(
-    _sharedGeo('torso', () => new THREE.CylinderGeometry(0.32, 0.26, torsoH, 10)),
+    _sharedGeo('torso', () => new THREE.CylinderGeometry(0.32, 0.24, torsoH, 10)),
     _mat(mainColor, 0.35, 0.05),
   );
-  torso.position.y = 0.04 + legH + shortsH + torsoH / 2;
+  torso.position.y = 0.08 + lowerLegH + thighH + shortsH + torsoH / 2;
   torso.castShadow = true;
   group.add(torso);
 
-  // --- Contrast shorts/socks band (lower torso band) ---
-  const bandH = 0.06;
-  const bandGeo = _sharedGeo('band', () => new THREE.CylinderGeometry(0.33, 0.28, bandH, 10));
-  const bandMatColor = new THREE.Color(shortsColor).lerp(new THREE.Color(socksColor), 0.5).getHex();
-  const band = new THREE.Mesh(bandGeo, _mat(bandMatColor, 0.5, 0.0));
-  band.position.y = 0.04 + legH + shortsH - bandH * 0.5;
-  band.castShadow = true;
-  group.add(band);
-
-  // --- Arms ---
-  const armMatVal = _mat(mainColor, 0.35, 0.05);
-  const armH = H * 0.2;
-  [-0.32, 0.32].forEach(offset => {
-    const arm = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.05, 0.07, armH, 6),
-      armMatVal,
+  // --- Short sleeves ---
+  const sleeveH = 0.1;
+  [-0.33, 0.33].forEach(offset => {
+    const sleeve = new THREE.Mesh(
+      _sharedGeo('sleeve', () => new THREE.CylinderGeometry(0.08, 0.06, sleeveH, 8)),
+      _mat(mainColor, 0.35, 0.05),
     );
-    const armY = 0.04 + legH + shortsH + torsoH * 0.4;
+    sleeve.position.set(offset, 0.08 + lowerLegH + thighH + shortsH + torsoH - sleeveH / 2 - 0.04, 0);
+    sleeve.rotation.z = offset < 0 ? 0.25 : -0.25;
+    sleeve.castShadow = true;
+    group.add(sleeve);
+  });
+
+  // --- Arms (skin) ---
+  const armH = 0.26;
+  [-0.33, 0.33].forEach(offset => {
+    const arm = new THREE.Mesh(
+      _sharedGeo('arm', () => new THREE.CylinderGeometry(0.04, 0.05, armH, 6)),
+      skinMat,
+    );
+    const armY = 0.08 + lowerLegH + thighH + shortsH + torsoH * 0.55;
     arm.position.set(offset, armY, 0);
-    arm.rotation.z = offset < 0 ? 0.2 : -0.2;
     arm.castShadow = true;
     group.add(arm);
   });
 
-  // --- Hands / GK gloves ---
+  // --- Hands (skin) or GK gloves ---
   if (isGK) {
     const gloveMat = _mat(gkColor, 0.4, 0.05);
-    [-0.32, 0.32].forEach(offset => {
+    [-0.33, 0.33].forEach(offset => {
       const glove = new THREE.Mesh(
-        _sharedGeo('glove', () => new THREE.SphereGeometry(0.08, 6, 6)),
+        _sharedGeo('glove', () => new THREE.SphereGeometry(0.075, 6, 6)),
         gloveMat,
       );
-      glove.position.set(offset, 0.04 + legH + shortsH + torsoH * 0.6, 0.05);
+      glove.position.set(offset, 0.08 + lowerLegH + thighH + shortsH + torsoH * 0.55 - armH, 0.04);
       group.add(glove);
+    });
+  } else {
+    [-0.33, 0.33].forEach(offset => {
+      const hand = new THREE.Mesh(
+        _sharedGeo('hand', () => new THREE.SphereGeometry(0.045, 6, 6)),
+        skinMat,
+      );
+      hand.position.set(offset, 0.08 + lowerLegH + thighH + shortsH + torsoH * 0.55 - armH, 0.04);
+      group.add(hand);
     });
   }
 
+  // --- Neck ---
+  const neck = new THREE.Mesh(
+    _sharedGeo('neck', () => new THREE.CylinderGeometry(0.08, 0.1, 0.06, 8)),
+    skinMat,
+  );
+  neck.position.y = 0.08 + lowerLegH + thighH + shortsH + torsoH + 0.03;
+  group.add(neck);
+
   // --- Head ---
   const headMat = _mat(0xf0d5b8, 0.4, 0.02);
-  const headR = isGK ? 0.2 : 0.18;
+  const headR = isGK ? 0.19 : 0.17;
   const head = new THREE.Mesh(
     _sharedGeo('head', () => new THREE.SphereGeometry(headR, 10, 10)),
     headMat,
   );
-  head.position.y = 0.04 + legH + shortsH + torsoH + headR * 0.8;
+  head.position.y = 0.08 + lowerLegH + thighH + shortsH + torsoH + 0.06 + headR;
   head.castShadow = true;
   group.add(head);
 
@@ -1290,7 +1793,7 @@ function _buildPlayerFigure(p, scenario) {
     _sharedGeo('hair', () => new THREE.SphereGeometry(headR * 1.05, 8, 6)),
     hairMat,
   );
-  hair.position.y = 0.04 + legH + shortsH + torsoH + headR * 0.9;
+  hair.position.y = 0.08 + lowerLegH + thighH + shortsH + torsoH + 0.06 + headR * 1.15;
   hair.scale.set(1, 0.5, 1);
   group.add(hair);
 
@@ -1501,6 +2004,12 @@ class Pitch3D {
     this._animTime = 0;
     this._currentOverlay = 'shape';
     this._highlightCircles = [];
+    this._passingGraphDirty = true;
+    this._pressingMeshes = [];
+    this._pressingCircleGeo = null;
+    this._pressingGradientTexture = null;
+    this._passingGraphCache = null;
+    this._lastPassingPositions = null;
     this._replaying = false;
     this._replayCreatedPlayers = [];
     this._replayLabel = null;
@@ -1536,8 +2045,8 @@ class Pitch3D {
     const H = this.container.clientHeight || Math.round(W * 0.55) || 400;
 
     this.scene = new THREE.Scene();
-    this.scene.background = new THREE.Color(0x060a12);
-    this.scene.fog = new THREE.FogExp2(0x060a12, 0.003);
+    this.scene.background = new THREE.Color(0x060D0A);
+    this.scene.fog = new THREE.FogExp2(0x060D0A, 0.003);
 
     this.camera = new THREE.PerspectiveCamera(40, W / H, 0.1, 400);
 
@@ -1550,7 +2059,7 @@ class Pitch3D {
     this.renderer.shadowMap.enabled = true;
     this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    this.renderer.toneMappingExposure = 1.0;
+    this.renderer.toneMappingExposure = 0.85;
     this.container.innerHTML = '';
     this.container.appendChild(this.renderer.domElement);
 
@@ -1577,49 +2086,37 @@ class Pitch3D {
   }
 
   _setupLights() {
-    // Ambient light
-    this.scene.add(new THREE.AmbientLight(0x334466, 0.4));
+    // Low ambient for night atmosphere
+    this.scene.add(new THREE.AmbientLight(0x223355, 0.12));
 
-    // Key light (floodlight feel, warm)
-    const key = new THREE.DirectionalLight(0xfff4d6, 1.2);
-    key.position.set(25, 45, 20);
+    // Main key flood (warm, casts shadows for entire scene)
+    const key = new THREE.DirectionalLight(0xfff4d6, 1.6);
+    key.position.set(20, 55, 15);
     key.castShadow = true;
-    key.shadow.mapSize.set(2048, 2048);
-    key.shadow.camera.near = 0.5;
-    key.shadow.camera.far = 130;
-    key.shadow.camera.left = -70;
-    key.shadow.camera.right = 70;
-    key.shadow.camera.top = 70;
-    key.shadow.camera.bottom = -70;
-    key.shadow.bias = -0.0005;
-    key.shadow.normalBias = 0.02;
+    key.shadow.mapSize.set(4096, 4096);
+    key.shadow.camera.near = 1;
+    key.shadow.camera.far = 150;
+    key.shadow.camera.left = -80;
+    key.shadow.camera.right = 80;
+    key.shadow.camera.top = 80;
+    key.shadow.camera.bottom = -80;
+    key.shadow.bias = -0.0003;
+    key.shadow.normalBias = 0.03;
+    key.shadow.radius = 4;
     this.scene.add(key);
 
-    // Fill light (cool)
-    const fill = new THREE.DirectionalLight(0x8899cc, 0.25);
-    fill.position.set(-20, 30, -25);
-    this.scene.add(fill);
+    // Secondary flood fill (warm, opposite side — no shadows)
+    const key2 = new THREE.DirectionalLight(0xffeecc, 0.7);
+    key2.position.set(-20, 50, -15);
+    this.scene.add(key2);
 
-    // Rim/back light
-    const rim = new THREE.DirectionalLight(0xccddff, 0.12);
-    rim.position.set(0, 15, -50);
+    // Back rim (cool, separates players from background)
+    const rim = new THREE.DirectionalLight(0x8899cc, 0.3);
+    rim.position.set(0, 25, -60);
     this.scene.add(rim);
 
-    // Floodlight point lights
-    const flPositions = [
-      [-42, 30, -42], [+42, 30, -42],
-      [-42, 30, +42], [+42, 30, +42],
-      [-42, 30, -20], [+42, 30, -20],
-      [-42, 30, +20], [+42, 30, +20],
-    ];
-    flPositions.forEach(([x, y, z]) => {
-      const l = new THREE.PointLight(0xfff4d6, 0.35, 90);
-      l.position.set(x, y, z);
-      this.scene.add(l);
-    });
-
-    // Stadium ambient glow
-    const amb2 = new THREE.HemisphereLight(0x223366, 0x112211, 0.3);
+    // Stadium ground ambient glow
+    const amb2 = new THREE.HemisphereLight(0x223366, 0x112211, 0.2);
     this.scene.add(amb2);
   }
 
@@ -1860,88 +2357,139 @@ class Pitch3D {
     this._currentOverlay = mode;
     this._clearPassingLines();
     this._clearHighlightCircles();
+    this._clearPressingOverlay();
 
-    if (mode === 'shape') {
-      // nothing extra
-    } else if (mode === 'pressing') {
-      this._drawPressingOverlay();
+    if (mode === 'pressing') {
+      this._updatePressingOverlay();
     } else if (mode === 'attack') {
       this._drawAttackOverlay();
     } else if (mode === 'passing') {
+      this._passingGraphDirty = true;
       this._drawPassingOverlay();
     } else if (mode === 'defensive') {
       this._drawDefensiveOverlay();
     }
   }
 
-  _drawPressingOverlay() {
-    const homePlayers = this.players.filter(p => p.data.team === 'home');
-    const awayPlayers = this.players.filter(p => p.data.team === 'away');
+  markPassingDirty() {
+    this._passingGraphDirty = true;
+  }
 
-    const attackers = homePlayers.filter(p => {
-      const pos = p.data.pos;
-      return ['LW','RW','ST','FW','CF','SS','LM','RM','CM','AM'].includes(pos);
+  _clearPressingOverlay() {
+    this._pressingMeshes.forEach(m => {
+      this.scene.remove(m);
+      if (m.material) m.material.dispose();
     });
-    const defenders = awayPlayers.filter(p => {
-      const pos = p.data.pos;
-      return ['CB','DF','LB','RB','WB','GK','LCB','RCB','LWB','RWB'].includes(pos);
-    });
+    this._pressingMeshes = [];
+    if (this._pressingCircleGeo) {
+      this._pressingCircleGeo.dispose();
+      this._pressingCircleGeo = null;
+    }
+    if (this._pressingGradientTexture) {
+      this._pressingGradientTexture.dispose();
+      this._pressingGradientTexture = null;
+    }
+  }
 
-    const lineMat = new THREE.MeshBasicMaterial({
-      color: 0x8bf55a,
-      transparent: true,
-      opacity: 0.3,
-      side: THREE.DoubleSide,
-    });
+  _createPressingGradientTexture() {
+    const canvas = document.createElement('canvas');
+    canvas.width = 128;
+    canvas.height = 128;
+    const ctx = canvas.getContext('2d');
+    const grad = ctx.createRadialGradient(64, 64, 0, 64, 64, 64);
+    grad.addColorStop(0, 'rgba(255,255,255,1)');
+    grad.addColorStop(0.4, 'rgba(255,255,255,0.8)');
+    grad.addColorStop(0.7, 'rgba(255,255,255,0.2)');
+    grad.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, 128, 128);
+    this._pressingGradientTexture = new THREE.CanvasTexture(canvas);
+    return this._pressingGradientTexture;
+  }
 
-    attackers.forEach(att => {
-      const ax = att.group.position.x;
-      const az = att.group.position.z;
-      let closest = null;
-      let minDist = Infinity;
-      defenders.forEach(def => {
-        const dx = def.group.position.x;
-        const dz = def.group.position.z;
-        const dist = Math.sqrt((ax - dx) ** 2 + (az - dz) ** 2);
-        if (dist < minDist) { minDist = dist; closest = def; }
+  _computePressingState3D() {
+    const ballPos = this._ballData?.group.position;
+    if (!ballPos || this.players.length < 4) return null;
+
+    let carrier = null;
+    let minDist = Infinity;
+    this.players.forEach(p => {
+      if (p.data.pos === 'GK') return;
+      const d = Math.sqrt(
+        (p.group.position.x - ballPos.x) ** 2 +
+        (p.group.position.z - ballPos.z) ** 2,
+      );
+      if (d < minDist) { minDist = d; carrier = p; }
+    });
+    if (!carrier || minDist > PITCH_W * 0.15) return null;
+
+    const pressingTeam = carrier.data.team === 'home' ? 'away' : 'home';
+    const carrierPos = { x: carrier.group.position.x, z: carrier.group.position.z };
+    const maxDist = PITCH_W * 0.3;
+
+    const pressers = this.players
+      .filter(p => p.data.team === pressingTeam && p.data.pos !== 'GK')
+      .map(p => {
+        const dx = carrierPos.x - p.group.position.x;
+        const dz = carrierPos.z - p.group.position.z;
+        const dist = Math.sqrt(dx * dx + dz * dz);
+        const pressure = Math.max(0, 100 - (dist / maxDist) * 100);
+        return { player: p, pressure, isActive: pressure > 15, dist };
       });
 
-      if (closest && minDist < 25) {
-        const dx = closest.group.position.x;
-        const dz = closest.group.position.z;
+    return { pressers, carrier, carrierPos };
+  }
 
-        // Line
-        const midX = (ax + dx) / 2;
-        const midZ = (az + dz) / 2;
-        const angle = Math.atan2(dx - ax, dz - az);
-        const len = Math.sqrt((dx - ax) ** 2 + (dz - az) ** 2);
+  _updatePressingOverlay() {
+    const state = this._computePressingState3D();
+    if (!state) {
+      this._pressingMeshes.forEach(m => { m.visible = false; });
+      return;
+    }
 
-        const line = new THREE.Mesh(
-          new THREE.PlaneGeometry(0.05, len),
-          lineMat.clone(),
-        );
-        line.rotation.x = -Math.PI / 2;
-        line.rotation.z = angle;
-        line.position.set(midX, 0.03, midZ);
-        this.scene.add(line);
-        this._passingLines.push(line);
+    const active = state.pressers.filter(p => p.isActive);
 
-        // Arrow head
-        const headShape = new THREE.Shape();
-        const headSize = 0.6;
-        headShape.moveTo(0, 0);
-        headShape.lineTo(-headSize * 0.5, -headSize);
-        headShape.lineTo(headSize * 0.5, -headSize);
-        headShape.closePath();
-        const headGeo = new THREE.ShapeGeometry(headShape);
-        const head = new THREE.Mesh(headGeo, lineMat.clone());
-        head.rotation.x = -Math.PI / 2;
-        head.position.set(dx, 0.035, dz);
-        head.rotation.z = angle;
-        this.scene.add(head);
-        this._passingLines.push(head);
-      }
+    // Grow mesh pool as needed
+    while (this._pressingMeshes.length < active.length) {
+      const geo = this._pressingCircleGeo || (this._pressingCircleGeo = new THREE.CircleGeometry(1, 32));
+      const tex = this._pressingGradientTexture || this._createPressingGradientTexture();
+      const mat = new THREE.MeshBasicMaterial({
+        map: tex,
+        color: 0x93c5fd,
+        transparent: true,
+        opacity: 0.25,
+        depthWrite: false,
+        side: THREE.DoubleSide,
+      });
+      const mesh = new THREE.Mesh(geo, mat);
+      mesh.rotation.x = -Math.PI / 2;
+      mesh.renderOrder = 1;
+      this.scene.add(mesh);
+      this._pressingMeshes.push(mesh);
+    }
+
+    active.forEach((p, i) => {
+      const mesh = this._pressingMeshes[i];
+      mesh.visible = true;
+      const pos = p.player.group.position;
+      const r = 1.0 + (p.pressure / 100) * 2.5;
+      mesh.position.set(pos.x, 0.03, pos.z);
+      mesh.scale.set(r, r, 1);
+
+      const int = p.pressure / 100;
+      let hex;
+      if (int > 0.85) hex = 0xf87171;
+      else if (int > 0.70) hex = 0xfb923c;
+      else if (int > 0.40) hex = 0xfde047;
+      else hex = 0x93c5fd;
+
+      mesh.material.color.setHex(hex);
+      mesh.material.opacity = 0.20 + int * 0.15;
     });
+
+    for (let i = active.length; i < this._pressingMeshes.length; i++) {
+      this._pressingMeshes[i].visible = false;
+    }
   }
 
   _drawAttackOverlay() {
@@ -1985,78 +2533,271 @@ class Pitch3D {
     });
   }
 
-  _drawPassingOverlay() {
-    const lineMat = new THREE.MeshBasicMaterial({
-      color: 0x3b82f6,
-      transparent: true,
-      opacity: 0.12,
-      side: THREE.DoubleSide,
-    });
+  // ── 3D PASSING LANES ──
+  // Computes and renders passing lanes on the 3D pitch.
+  // Mirrors the 2D tactical engine (pitch2d.js _computePassingGraph / _evaluatePass)
+  // but uses 3D world coordinates from player meshes.
+  // The 2D tactical engine remains the single source of truth;
+  // this is a parallel evaluation in 3D coordinate space.
 
-    const homePlayers = this.players.filter(p => p.data.team === 'home');
-    const mids = homePlayers.filter(p => {
-      const pos = p.data.pos;
-      return ['CM','DM','AM','MF','LM','RM'].includes(pos);
-    });
-    const fwds = homePlayers.filter(p => {
-      const pos = p.data.pos;
-      return ['LW','RW','ST','FW','CF','SS'].includes(pos);
-    });
+  _distToSegment3D(px, pz, ax, az, bx, bz) {
+    const dx = bx - ax, dz = bz - az;
+    const lenSq = dx * dx + dz * dz;
+    if (lenSq === 0) return Math.sqrt((px - ax) ** 2 + (pz - az) ** 2);
+    let t = ((px - ax) * dx + (pz - az) * dz) / lenSq;
+    t = Math.max(0, Math.min(1, t));
+    const cx = ax + t * dx, cz = az + t * dz;
+    return Math.sqrt((px - cx) ** 2 + (pz - cz) ** 2);
+  }
 
-    mids.forEach((m, i) => {
-      // Connections between midfielders
-      for (let j = i + 1; j < mids.length; j++) {
-        const mx = m.group.position.x;
-        const mz = m.group.position.z;
-        const nx = mids[j].group.position.x;
-        const nz = mids[j].group.position.z;
-        const dx = nx - mx;
-        const dz = nz - mz;
-        const len = Math.sqrt(dx * dx + dz * dz);
-        const midX = (mx + nx) / 2;
-        const midZ = (mz + nz) / 2;
-        const angle = Math.atan2(dx, dz);
+  _evaluatePass3D(passerPos, receiverPos, opponents, isHome) {
+    const dx = receiverPos.x - passerPos.x;
+    const dz = receiverPos.z - passerPos.z;
+    const dist = Math.sqrt(dx * dx + dz * dz);
+    const pitchDiag = Math.sqrt(PITCH_W * PITCH_W + PITCH_L * PITCH_L);
+    const normDist = dist / pitchDiag;
 
-        const line = new THREE.Mesh(
-          new THREE.PlaneGeometry(0.03, len),
-          lineMat.clone(),
-        );
-        line.rotation.x = -Math.PI / 2;
-        line.rotation.z = angle;
-        line.position.set(midX, 0.025, midZ);
-        this.scene.add(line);
-        this._passingLines.push(line);
+    const angle = Math.atan2(dz, dx);
+    const forwardNorm = (isHome ? dx : -dx) / PITCH_W;
+    const forwardScore = Math.max(0, Math.min(1, (forwardNorm + 0.3) / 0.6));
+
+    const interceptR = PITCH_W * 0.045;
+    let blocked = false;
+    let blockSeverity = 0;
+    let defsBetween = 0;
+
+    opponents.forEach(def => {
+      const dPos = def.group.position;
+      const perpDist = this._distToSegment3D(
+        dPos.x, dPos.z,
+        passerPos.x, passerPos.z,
+        receiverPos.x, receiverPos.z,
+      );
+      const along = Math.max(0, Math.min(1, (
+        (dPos.x - passerPos.x) * dx +
+        (dPos.z - passerPos.z) * dz
+      ) / (dist * dist || 1)));
+
+      if (perpDist < interceptR && along > 0.05 && along < 0.95) {
+        blocked = true;
+        blockSeverity += (1 - perpDist / interceptR) * (1 - Math.abs(along - 0.5) * 1.5);
+        defsBetween++;
       }
-
-      // Connections to forwards
-      fwds.forEach(f => {
-        const mx = m.group.position.x;
-        const mz = m.group.position.z;
-        const fx = f.group.position.x;
-        const fz = f.group.position.z;
-        const dx = fx - mx;
-        const dz = fz - mz;
-        const len = Math.sqrt(dx * dx + dz * dz);
-        const midX = (mx + fx) / 2;
-        const midZ = (mz + fz) / 2;
-        const angle = Math.atan2(dx, dz);
-
-        const line = new THREE.Mesh(
-          new THREE.PlaneGeometry(0.02, len),
-          new THREE.MeshBasicMaterial({
-            color: 0x3b82f6,
-            transparent: true,
-            opacity: 0.06,
-            side: THREE.DoubleSide,
-          }),
-        );
-        line.rotation.x = -Math.PI / 2;
-        line.rotation.z = angle;
-        line.position.set(midX, 0.025, midZ);
-        this.scene.add(line);
-        this._passingLines.push(line);
-      });
     });
+
+    const nearbyDefs = opponents.filter(def => {
+      const dPos = def.group.position;
+      return Math.sqrt(
+        (dPos.x - receiverPos.x) ** 2 +
+        (dPos.z - receiverPos.z) ** 2,
+      ) < PITCH_W * 0.12;
+    }).length;
+    const spaceScore = Math.max(0, 1 - nearbyDefs / 4);
+
+    const obstructionScore = blocked ? Math.max(0, 1 - Math.min(1, blockSeverity)) : 1;
+    const distScore = Math.max(0, 1 - normDist / 0.6);
+    const rawConfidence = forwardScore * 25 + distScore * 25 + obstructionScore * 30 + spaceScore * 20;
+    const confidence = Math.round(Math.max(0, Math.min(100, rawConfidence)));
+
+    let category = 'blocked';
+    if (!blocked && confidence >= 60) category = 'safe';
+    else if (!blocked && confidence >= 30) category = 'risky';
+
+    return {
+      dist, angle, forwardNorm, blocked, confidence, category,
+      defsBetween, spaceScore,
+      completionPct: blocked
+        ? Math.round(15 + confidence * 0.3)
+        : Math.round(60 + confidence * 0.35),
+      pressure: confidence >= 65 ? 'Low' : confidence >= 40 ? 'Medium' : 'High',
+    };
+  }
+
+  _computePassingGraph3D() {
+    const ballPos = this._ballData?.group.position;
+    if (!ballPos || this.players.length < 4) return null;
+
+    // Find ball carrier — nearest outfield player to ball
+    let carrier = null;
+    let minDist = Infinity;
+    this.players.forEach(p => {
+      if (p.data.pos === 'GK') return;
+      const d = Math.sqrt(
+        (p.group.position.x - ballPos.x) ** 2 +
+        (p.group.position.z - ballPos.z) ** 2,
+      );
+      if (d < minDist) { minDist = d; carrier = p; }
+    });
+    if (!carrier || minDist > PITCH_W * 0.15) return null;
+
+    const isHome = carrier.data.team === 'home';
+    const carrierPos = { x: carrier.group.position.x, z: carrier.group.position.z };
+
+    const teammates = this.players.filter(p =>
+      p.data.team === carrier.data.team && p !== carrier && p.data.pos !== 'GK',
+    );
+    const opponents = this.players.filter(p =>
+      p.data.team !== carrier.data.team && p.data.pos !== 'GK',
+    );
+
+    const maxRange = PITCH_W * 0.55;
+    const edges = [];
+
+    teammates.forEach(receiver => {
+      const recvPos = { x: receiver.group.position.x, z: receiver.group.position.z };
+      const dx = recvPos.x - carrierPos.x;
+      const dz = recvPos.z - carrierPos.z;
+      const dist = Math.sqrt(dx * dx + dz * dz);
+      if (dist > maxRange || dist < PITCH_W * 0.02) return;
+
+      const result = this._evaluatePass3D(carrierPos, recvPos, opponents, isHome);
+      if (result) {
+        result.passer = carrier;
+        result.receiver = receiver;
+        edges.push(result);
+      }
+    });
+
+    edges.sort((a, b) => b.confidence - a.confidence);
+    const blocked = edges.filter(e => e.blocked).slice(0, 2);
+    const safeRisky = edges.filter(e => !e.blocked).slice(0, 5);
+    const displayEdges = [...safeRisky, ...blocked];
+
+    return { edges: displayEdges, carrier, carrierPos, isHome };
+  }
+
+  _renderPassLane(edge) {
+    const pPos = edge.passer.group.position;
+    const rPos = edge.receiver.group.position;
+    const dx = rPos.x - pPos.x;
+    const dz = rPos.z - pPos.z;
+    const len = Math.sqrt(dx * dx + dz * dz);
+    if (len < 0.1) return;
+
+    const midX = (pPos.x + rPos.x) / 2;
+    const midZ = (pPos.z + rPos.z) / 2;
+    const angle = Math.atan2(dx, dz);
+
+    // ── Colour & opacity per category (matches task spec for 3D) ──
+    let color, opacity, width;
+    switch (edge.category) {
+      case 'safe':
+        color = 0x4fc3f7;   // Light Blue
+        opacity = 0.55;
+        width = 0.1;
+        break;
+      case 'risky':
+        color = 0xffc107;   // Amber
+        opacity = 0.4;
+        width = 0.07;
+        break;
+      case 'blocked':
+        color = 0xef5350;   // Red
+        opacity = 0.35;
+        width = 0.07;
+        break;
+    }
+
+    const mat = new THREE.MeshBasicMaterial({
+      color,
+      transparent: true,
+      opacity,
+      side: THREE.DoubleSide,
+      depthWrite: false,
+    });
+
+    // Ribbon body
+    const ribbon = new THREE.Mesh(
+      new THREE.PlaneGeometry(width, len),
+      mat,
+    );
+    ribbon.rotation.x = -Math.PI / 2;
+    ribbon.rotation.z = angle;
+    ribbon.position.set(midX, 0.03, midZ);
+    this.scene.add(ribbon);
+    this._passingLines.push(ribbon);
+
+    // Arrow head at receiver
+    const headSize = 0.5;
+    const headShape = new THREE.Shape();
+    headShape.moveTo(0, 0);
+    headShape.lineTo(-headSize * 0.4, -headSize);
+    headShape.lineTo(headSize * 0.4, -headSize);
+    headShape.closePath();
+    const headMat = mat.clone();
+    headMat.opacity = opacity * 0.9;
+    const head = new THREE.Mesh(
+      new THREE.ShapeGeometry(headShape),
+      headMat,
+    );
+    head.rotation.x = -Math.PI / 2;
+    head.position.set(rPos.x, 0.035, rPos.z);
+    head.rotation.z = angle;
+    this.scene.add(head);
+    this._passingLines.push(head);
+
+    // Glow band (wider, low-opacity ribbon beneath)
+    const glowMat = new THREE.MeshBasicMaterial({
+      color,
+      transparent: true,
+      opacity: opacity * 0.2,
+      side: THREE.DoubleSide,
+      depthWrite: false,
+    });
+    const glow = new THREE.Mesh(
+      new THREE.PlaneGeometry(width * 3, len),
+      glowMat,
+    );
+    glow.rotation.x = -Math.PI / 2;
+    glow.rotation.z = angle;
+    glow.position.set(midX, 0.025, midZ);
+    this.scene.add(glow);
+    this._passingLines.push(glow);
+  }
+
+  _passingPositionsChanged() {
+    if (!this._lastPassingPositions) return true;
+    const ballPos = this._ballData?.group.position;
+    if (!ballPos) return false;
+    if (Math.abs(ballPos.x - this._lastPassingPositions.ball.x) > 0.01) return true;
+    if (Math.abs(ballPos.z - this._lastPassingPositions.ball.z) > 0.01) return true;
+    for (const p of this.players) {
+      const prev = this._lastPassingPositions.players.get(p);
+      if (!prev) return true;
+      if (Math.abs(p.group.position.x - prev.x) > 0.01) return true;
+      if (Math.abs(p.group.position.z - prev.z) > 0.01) return true;
+    }
+    return false;
+  }
+
+  _snapshotPassingPositions() {
+    const map = new Map();
+    for (const p of this.players) {
+      map.set(p, { x: p.group.position.x, z: p.group.position.z });
+    }
+    this._lastPassingPositions = {
+      ball: {
+        x: this._ballData?.group.position.x || 0,
+        z: this._ballData?.group.position.z || 0,
+      },
+      players: map,
+    };
+  }
+
+  _drawPassingOverlay() {
+    this._clearPassingLines();
+
+    if (!this._ballData || this.players.length < 4) return;
+
+    // Recompute graph
+    const graph = this._computePassingGraph3D();
+    if (!graph || !graph.edges.length) return;
+
+    this._passingGraphCache = graph;
+    this._snapshotPassingPositions();
+    this._passingGraphDirty = false;
+
+    graph.edges.forEach(edge => this._renderPassLane(edge));
   }
 
   _drawDefensiveOverlay() {
@@ -2453,27 +3194,8 @@ class Pitch3D {
       this.scene.remove(this._replayLabel);
       if (this._replayLabel.material.map) this._replayLabel.material.map.dispose();
       this._replayLabel.material.dispose();
+      this._replayLabel = null;
     }
-    const canvas = document.createElement('canvas');
-    canvas.width = 512;
-    canvas.height = 128;
-    const ctx = canvas.getContext('2d');
-    ctx.clearRect(0, 0, 512, 128);
-    ctx.font = '700 44px Arial, sans-serif';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.shadowColor = 'rgba(0,0,0,0.9)';
-    ctx.shadowBlur = 16;
-    ctx.fillStyle = '#22c55e';
-    ctx.fillText('◆ Showing: Real Outcome', 256, 64);
-    const tex = new THREE.CanvasTexture(canvas);
-    tex.needsUpdate = true;
-    const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false, sizeAttenuation: true });
-    const sprite = new THREE.Sprite(mat);
-    sprite.scale.set(3.5, 0.7, 1);
-    sprite.position.set(0, 3.5, 0);
-    this.scene.add(sprite);
-    this._replayLabel = sprite;
   }
 
   // ===== INTERACTION =====
@@ -2601,6 +3323,18 @@ class Pitch3D {
       }
     }
 
+    // Auto-refresh passing lanes when positions change
+    if (this._currentOverlay === 'passing' && this._ballData) {
+      if (this._passingGraphDirty || this._passingPositionsChanged()) {
+        this._drawPassingOverlay();
+      }
+    }
+
+    // Live pressing overlay update
+    if (this._currentOverlay === 'pressing') {
+      this._updatePressingOverlay();
+    }
+
     this.controls.update();
     this.renderer.render(this.scene, this.camera);
   }
@@ -2617,6 +3351,7 @@ class Pitch3D {
     this._clearLabels();
     this._clearPassingLines();
     this._clearHighlightCircles();
+    this._clearPressingOverlay();
     _clearPlayers(this.scene, this.players);
     if (this._replayCreatedPlayers.length) {
       _clearPlayers(this.scene, this._replayCreatedPlayers);

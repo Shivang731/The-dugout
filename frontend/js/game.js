@@ -277,6 +277,9 @@ function setOverlay(mode) {
   if (pitch && pitch.setOverlay) {
     pitch.setOverlay(mode);
   }
+  if (pitch3d && pitch3d.setOverlay) {
+    pitch3d.setOverlay(mode);
+  }
   document.querySelectorAll('.overlay-btn').forEach(b => {
     b.classList.toggle('active', b.dataset.overlay === mode);
   });
@@ -1172,9 +1175,12 @@ function setView(view) {
   const overlayBtns = document.querySelector('.overlay-toggles');
   const camBtns = document.getElementById('cam-toggles');
 
+  const pitchControlBtn = document.querySelector('.overlay-btn[data-overlay="pitch_control"]');
+
   if (view === '2d') {
     if (modeBtns) modeBtns.style.display = 'flex';
     if (overlayBtns) overlayBtns.style.display = 'flex';
+    if (pitchControlBtn) pitchControlBtn.style.display = '';
     if (camBtns) camBtns.classList.add('hidden');
     if (pitch3d && pitch3d.destroy) pitch3d.destroy();
     pitch3d = null;
@@ -1183,7 +1189,8 @@ function setView(view) {
   }
 
   if (modeBtns) modeBtns.style.display = 'none';
-  if (overlayBtns) overlayBtns.style.display = 'none';
+  if (overlayBtns) overlayBtns.style.display = 'flex';
+  if (pitchControlBtn) pitchControlBtn.style.display = 'none';
   if (camBtns) camBtns.classList.remove('hidden');
 
   // --- Cinematic transition: 2D → 3D ---
@@ -1241,6 +1248,11 @@ function init3DPitch() {
     const activeCam = document.querySelector('.cam-btn.active');
     if (activeCam && activeCam.dataset.cam) {
       pitch3d.setCameraMode(activeCam.dataset.cam, true);
+    }
+
+    const activeOverlay = document.querySelector('.overlay-btn.active');
+    if (activeOverlay && activeOverlay.dataset.overlay) {
+      pitch3d.setOverlay(activeOverlay.dataset.overlay);
     }
   } catch (e) {
     document.getElementById('view-2d')?.click();
