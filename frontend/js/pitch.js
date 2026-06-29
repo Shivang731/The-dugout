@@ -222,102 +222,132 @@ function _createGrassTexture() {
 var _markingsTexCache = null;
 function _createMarkingsTexture() {
   if (_markingsTexCache) return _markingsTexCache;
+  const W = 4096;
+  const H = 6320;
   const canvas = document.createElement('canvas');
-  canvas.width = 2048;
-  canvas.height = 3160; // matches PITCH_W:PITCH_L ratio
+  canvas.width = W;
+  canvas.height = H;
   const ctx = canvas.getContext('2d');
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.clearRect(0, 0, W, H);
 
-  const w = canvas.width;
-  const h = canvas.height;
+  const px = (x) => (x / PITCH_W + 0.5) * W;
+  const pz = (z) => (-z / PITCH_L + 0.5) * H;
 
-  // scaling helpers: pitch coords → canvas coords
-  const px = (x) => (x / PITCH_W + 0.5) * w;
-  const pz = (z) => (-z / PITCH_L + 0.5) * h;
+  const LINE_W = 7;
+  const UNDERLAY_W = 10;
+  const UNDERLAY_COLOR = 'rgba(0,18,0,0.30)';
 
-  ctx.strokeStyle = 'rgba(255,255,255,0.75)';
-  ctx.fillStyle = 'rgba(255,255,255,0.75)';
-  ctx.lineWidth = 3;
-
-  function line(x1, z1, x2, z2) {
+  function markLine(x1, z1, x2, z2) {
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = UNDERLAY_W;
+    ctx.strokeStyle = UNDERLAY_COLOR;
+    ctx.beginPath();
+    ctx.moveTo(px(x1), pz(z1));
+    ctx.lineTo(px(x2), pz(z2));
+    ctx.stroke();
+    ctx.lineWidth = LINE_W;
+    ctx.strokeStyle = '#ffffff';
     ctx.beginPath();
     ctx.moveTo(px(x1), pz(z1));
     ctx.lineTo(px(x2), pz(z2));
     ctx.stroke();
   }
 
-  function circle(cx, cz, r) {
+  function markCircle(cx, cz, r) {
+    const cr = (r / PITCH_W) * W;
+    ctx.lineWidth = UNDERLAY_W;
+    ctx.strokeStyle = UNDERLAY_COLOR;
     ctx.beginPath();
-    ctx.arc(px(cx), pz(cz), (r / PITCH_W) * w, 0, Math.PI * 2);
+    ctx.arc(px(cx), pz(cz), cr, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.lineWidth = LINE_W;
+    ctx.strokeStyle = '#ffffff';
+    ctx.beginPath();
+    ctx.arc(px(cx), pz(cz), cr, 0, Math.PI * 2);
     ctx.stroke();
   }
 
-  function arc(cx, cz, r, a1, a2) {
+  function markArc(cx, cz, r, a1, a2) {
+    const cr = (r / PITCH_W) * W;
+    ctx.lineWidth = UNDERLAY_W;
+    ctx.strokeStyle = UNDERLAY_COLOR;
     ctx.beginPath();
-    ctx.arc(px(cx), pz(cz), (r / PITCH_W) * w, a1, a2);
+    ctx.arc(px(cx), pz(cz), cr, a1, a2);
+    ctx.stroke();
+    ctx.lineWidth = LINE_W;
+    ctx.strokeStyle = '#ffffff';
+    ctx.beginPath();
+    ctx.arc(px(cx), pz(cz), cr, a1, a2);
     ctx.stroke();
   }
 
-  function dot(cx, cz, rad) {
+  function markDot(cx, cz, rad) {
+    const dR = rad * (W / PITCH_W);
     ctx.beginPath();
-    ctx.arc(px(cx), pz(cz), rad * (w / PITCH_W), 0, Math.PI * 2);
+    ctx.arc(px(cx), pz(cz), dR + 2, 0, Math.PI * 2);
+    ctx.fillStyle = UNDERLAY_COLOR;
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(px(cx), pz(cz), dR, 0, Math.PI * 2);
+    ctx.fillStyle = '#ffffff';
     ctx.fill();
   }
 
   // Outer boundary
-  line(-HALF_W, -HALF_L, HALF_W, -HALF_L);
-  line(HALF_W, -HALF_L, HALF_W, HALF_L);
-  line(HALF_W, HALF_L, -HALF_W, HALF_L);
-  line(-HALF_W, HALF_L, -HALF_W, -HALF_L);
+  markLine(-HALF_W, -HALF_L, HALF_W, -HALF_L);
+  markLine(HALF_W, -HALF_L, HALF_W, HALF_L);
+  markLine(HALF_W, HALF_L, -HALF_W, HALF_L);
+  markLine(-HALF_W, HALF_L, -HALF_W, -HALF_L);
 
   // Halfway line
-  line(-HALF_W, 0, HALF_W, 0);
+  markLine(-HALF_W, 0, HALF_W, 0);
 
   // Center circle
-  circle(0, 0, CENTER_R);
+  markCircle(0, 0, CENTER_R);
 
   // Center spot
-  dot(0, 0, 0.3);
+  markDot(0, 0, 0.3);
 
   // Penalty areas
-  line(-PEN_AREA_W / 2, HALF_L, PEN_AREA_W / 2, HALF_L);
-  line(PEN_AREA_W / 2, HALF_L, PEN_AREA_W / 2, HALF_L - PEN_AREA_L);
-  line(PEN_AREA_W / 2, HALF_L - PEN_AREA_L, -PEN_AREA_W / 2, HALF_L - PEN_AREA_L);
-  line(-PEN_AREA_W / 2, HALF_L - PEN_AREA_L, -PEN_AREA_W / 2, HALF_L);
-  line(-PEN_AREA_W / 2, -HALF_L, PEN_AREA_W / 2, -HALF_L);
-  line(PEN_AREA_W / 2, -HALF_L, PEN_AREA_W / 2, -HALF_L + PEN_AREA_L);
-  line(PEN_AREA_W / 2, -HALF_L + PEN_AREA_L, -PEN_AREA_W / 2, -HALF_L + PEN_AREA_L);
-  line(-PEN_AREA_W / 2, -HALF_L + PEN_AREA_L, -PEN_AREA_W / 2, -HALF_L);
+  markLine(-PEN_AREA_W / 2, HALF_L, PEN_AREA_W / 2, HALF_L);
+  markLine(PEN_AREA_W / 2, HALF_L, PEN_AREA_W / 2, HALF_L - PEN_AREA_L);
+  markLine(PEN_AREA_W / 2, HALF_L - PEN_AREA_L, -PEN_AREA_W / 2, HALF_L - PEN_AREA_L);
+  markLine(-PEN_AREA_W / 2, HALF_L - PEN_AREA_L, -PEN_AREA_W / 2, HALF_L);
+  markLine(-PEN_AREA_W / 2, -HALF_L, PEN_AREA_W / 2, -HALF_L);
+  markLine(PEN_AREA_W / 2, -HALF_L, PEN_AREA_W / 2, -HALF_L + PEN_AREA_L);
+  markLine(PEN_AREA_W / 2, -HALF_L + PEN_AREA_L, -PEN_AREA_W / 2, -HALF_L + PEN_AREA_L);
+  markLine(-PEN_AREA_W / 2, -HALF_L + PEN_AREA_L, -PEN_AREA_W / 2, -HALF_L);
 
   // Six-yard boxes
-  line(-SIX_YARD_W / 2, HALF_L, SIX_YARD_W / 2, HALF_L);
-  line(SIX_YARD_W / 2, HALF_L, SIX_YARD_W / 2, HALF_L - SIX_YARD_L);
-  line(SIX_YARD_W / 2, HALF_L - SIX_YARD_L, -SIX_YARD_W / 2, HALF_L - SIX_YARD_L);
-  line(-SIX_YARD_W / 2, HALF_L - SIX_YARD_L, -SIX_YARD_W / 2, HALF_L);
-  line(-SIX_YARD_W / 2, -HALF_L, SIX_YARD_W / 2, -HALF_L);
-  line(SIX_YARD_W / 2, -HALF_L, SIX_YARD_W / 2, -HALF_L + SIX_YARD_L);
-  line(SIX_YARD_W / 2, -HALF_L + SIX_YARD_L, -SIX_YARD_W / 2, -HALF_L + SIX_YARD_L);
-  line(-SIX_YARD_W / 2, -HALF_L + SIX_YARD_L, -SIX_YARD_W / 2, -HALF_L);
+  markLine(-SIX_YARD_W / 2, HALF_L, SIX_YARD_W / 2, HALF_L);
+  markLine(SIX_YARD_W / 2, HALF_L, SIX_YARD_W / 2, HALF_L - SIX_YARD_L);
+  markLine(SIX_YARD_W / 2, HALF_L - SIX_YARD_L, -SIX_YARD_W / 2, HALF_L - SIX_YARD_L);
+  markLine(-SIX_YARD_W / 2, HALF_L - SIX_YARD_L, -SIX_YARD_W / 2, HALF_L);
+  markLine(-SIX_YARD_W / 2, -HALF_L, SIX_YARD_W / 2, -HALF_L);
+  markLine(SIX_YARD_W / 2, -HALF_L, SIX_YARD_W / 2, -HALF_L + SIX_YARD_L);
+  markLine(SIX_YARD_W / 2, -HALF_L + SIX_YARD_L, -SIX_YARD_W / 2, -HALF_L + SIX_YARD_L);
+  markLine(-SIX_YARD_W / 2, -HALF_L + SIX_YARD_L, -SIX_YARD_W / 2, -HALF_L);
 
   // Penalty spots
-  dot(0, HALF_L - PEN_SPOT_DIST, 0.25);
-  dot(0, -HALF_L + PEN_SPOT_DIST, 0.25);
+  markDot(0, HALF_L - PEN_SPOT_DIST, 0.25);
+  markDot(0, -HALF_L + PEN_SPOT_DIST, 0.25);
 
   // Penalty arcs
   const penArcR = CENTER_R;
   const nz = HALF_L - PEN_SPOT_DIST;
-  arc(0, nz, penArcR, -0.7, 0.7);
-  arc(0, -nz, penArcR, Math.PI - 0.7, Math.PI + 0.7);
+  markArc(0, nz, penArcR, -0.7, 0.7);
+  markArc(0, -nz, penArcR, Math.PI - 0.7, Math.PI + 0.7);
 
   // Corner arcs
   const cr = CORNER_R;
-  arc(-HALF_W, -HALF_L, cr, 0, Math.PI / 2);
-  arc(HALF_W, -HALF_L, cr, Math.PI / 2, Math.PI);
-  arc(HALF_W, HALF_L, cr, Math.PI, 3 * Math.PI / 2);
-  arc(-HALF_W, HALF_L, cr, 3 * Math.PI / 2, 2 * Math.PI);
+  markArc(-HALF_W, -HALF_L, cr, 0, Math.PI / 2);
+  markArc(HALF_W, -HALF_L, cr, Math.PI / 2, Math.PI);
+  markArc(HALF_W, HALF_L, cr, Math.PI, 3 * Math.PI / 2);
+  markArc(-HALF_W, HALF_L, cr, 3 * Math.PI / 2, 2 * Math.PI);
 
   const tex = new THREE.CanvasTexture(canvas);
-  tex.anisotropy = 4;
+  tex.anisotropy = 16;
   _markingsTexCache = tex;
   return tex;
 }
@@ -477,7 +507,7 @@ function _buildPitch(scene, scenario) {
     markingsMat,
   );
   markings.rotation.x = -Math.PI / 2;
-  markings.position.y = 0.03;
+  markings.position.y = 0.05;
   markings.receiveShadow = false;
   scene.add(markings);
 
@@ -1894,66 +1924,176 @@ function _createShirtNumber(number, color = '#ffffff') {
 function _buildBallMesh() {
   const group = new THREE.Group();
 
-  // Ball canvas texture with pentagon blotches
-  const ballCanvas = document.createElement('canvas');
-  ballCanvas.width = 256;
-  ballCanvas.height = 256;
-  const bctx = ballCanvas.getContext('2d');
+  // Professional football texture with 32-panel pattern
+  const W = 1024, H = 512;
+  const canvas = document.createElement('canvas');
+  canvas.width = W;
+  canvas.height = H;
+  const ctx = canvas.getContext('2d');
 
-  // off-white base
-  bctx.fillStyle = '#f0ece4';
-  bctx.fillRect(0, 0, 256, 256);
+  // Synthetic leather base
+  ctx.fillStyle = '#ede9e0';
+  ctx.fillRect(0, 0, W, H);
 
-  // scatter pentagon-shaped blotches
-  const pentagonPts = 5;
-  for (let i = 0; i < 20; i++) {
-    const cx = Math.random() * 256;
-    const cy = Math.random() * 256;
-    const r = 10 + Math.random() * 16;
-    const rot = Math.random() * Math.PI * 2;
-    bctx.beginPath();
-    for (let j = 0; j < pentagonPts; j++) {
-      const a = rot + (j / pentagonPts) * Math.PI * 2 - Math.PI / 2;
+  // Draw pentagon panel
+  function drawPentagon(cx, cy, r, rot, fill, stroke) {
+    ctx.beginPath();
+    for (let i = 0; i < 5; i++) {
+      const a = rot + (i / 5) * Math.PI * 2 - Math.PI / 2;
       const px = cx + Math.cos(a) * r;
       const py = cy + Math.sin(a) * r;
-      j === 0 ? bctx.moveTo(px, py) : bctx.lineTo(px, py);
+      i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
     }
-    bctx.closePath();
-    bctx.fillStyle = `rgba(40,40,45,${0.35 + Math.random() * 0.3})`;
-    bctx.fill();
+    ctx.closePath();
+    if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+    if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = 2.5; ctx.stroke(); }
   }
 
-  // subtle seam lines
-  bctx.strokeStyle = 'rgba(0,0,0,0.08)';
-  bctx.lineWidth = 0.5;
-  for (let i = 0; i < 6; i++) {
-    bctx.beginPath();
-    bctx.arc(128, 128, 40 + Math.random() * 60, Math.random() * Math.PI * 2, Math.random() * Math.PI * 2);
-    bctx.stroke();
+  // Seam line between two UV points
+  function seamLine(x1, y1, x2, y2) {
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.strokeStyle = '#1a1a1e';
+    ctx.lineWidth = 2.2;
+    ctx.stroke();
+    // Subtle shadow offset for depth
+    ctx.beginPath();
+    ctx.moveTo(x1 + 1, y1 + 1);
+    ctx.lineTo(x2 + 1, y2 + 1);
+    ctx.strokeStyle = 'rgba(0,0,0,0.12)';
+    ctx.lineWidth = 3;
+    ctx.stroke();
   }
 
-  const ballTex = new THREE.CanvasTexture(ballCanvas);
-  ballTex.anisotropy = 2;
+  // Pentagon UV positions for classic 32-panel layout
+  const pentagonUV = [
+    { u: 0.5, v: 0.92, r: 28 },   // north pole
+    { u: 0.0, v: 0.65, r: 22 },   // upper ring
+    { u: 0.2, v: 0.65, r: 22 },
+    { u: 0.4, v: 0.65, r: 22 },
+    { u: 0.6, v: 0.65, r: 22 },
+    { u: 0.8, v: 0.65, r: 22 },
+    { u: 0.1, v: 0.35, r: 22 },   // lower ring
+    { u: 0.3, v: 0.35, r: 22 },
+    { u: 0.5, v: 0.35, r: 22 },
+    { u: 0.7, v: 0.35, r: 22 },
+    { u: 0.9, v: 0.35, r: 22 },
+    { u: 0.5, v: 0.08, r: 28 },   // south pole
+  ];
 
-  const ballMat = new THREE.MeshStandardMaterial({
+  const toPx = (u, v) => ({ x: u * W, y: v * H });
+
+  const upperRing = pentagonUV.slice(1, 6);
+  const lowerRing = pentagonUV.slice(6, 11);
+  const northPole = pentagonUV[0];
+  const southPole = pentagonUV[11];
+
+  const npPx = toPx(northPole.u, northPole.v);
+  const spPx = toPx(southPole.u, southPole.v);
+
+  // Draw seam lines connecting pentagons
+
+  // Upper ring to north pole
+  upperRing.forEach(p => {
+    const pt = toPx(p.u, p.v);
+    seamLine(pt.x, pt.y, npPx.x, npPx.y);
+  });
+
+  // Lower ring to south pole
+  lowerRing.forEach(p => {
+    const pt = toPx(p.u, p.v);
+    seamLine(pt.x, pt.y, spPx.x, spPx.y);
+  });
+
+  // Upper ring connections (horizontal)
+  upperRing.forEach((p, i) => {
+    const a = toPx(p.u, p.v);
+    const b = toPx(upperRing[(i + 1) % 5].u, upperRing[(i + 1) % 5].v);
+    seamLine(a.x, a.y, b.x, b.y);
+  });
+
+  // Lower ring connections (horizontal)
+  lowerRing.forEach((p, i) => {
+    const a = toPx(p.u, p.v);
+    const b = toPx(lowerRing[(i + 1) % 5].u, lowerRing[(i + 1) % 5].v);
+    seamLine(a.x, a.y, b.x, b.y);
+  });
+
+  // Connect upper ring to lower ring (vertical)
+  upperRing.forEach((p, i) => {
+    const uP = toPx(p.u, p.v);
+    const lP = toPx(lowerRing[i].u, lowerRing[i].v);
+    seamLine(uP.x, uP.y, lP.x, lP.y);
+    const nextL = toPx(lowerRing[(i + 1) % 5].u, lowerRing[(i + 1) % 5].v);
+    seamLine(uP.x, uP.y, nextL.x, nextL.y);
+  });
+
+  // Draw dark pentagons
+  pentagonUV.forEach(p => {
+    const pt = toPx(p.u, p.v);
+    drawPentagon(pt.x, pt.y, p.r, 0, '#1f1f24', '#0a0a0c');
+  });
+
+  // Subtle alternating panel shading (lighter hexagons)
+  for (let i = 0; i < 12; i++) {
+    const cx = W * (0.1 + Math.random() * 0.8);
+    const cy = H * (0.1 + Math.random() * 0.8);
+    if (Math.random() > 0.5) {
+      ctx.beginPath();
+      for (let j = 0; j < 6; j++) {
+        const a = (j / 6) * Math.PI * 2 - Math.PI / 2;
+        const px = cx + Math.cos(a) * (20 + Math.random() * 18);
+        const py = cy + Math.sin(a) * (20 + Math.random() * 18);
+        j === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
+      }
+      ctx.closePath();
+      ctx.fillStyle = `rgba(255,252,245,${0.04 + Math.random() * 0.04})`;
+      ctx.fill();
+    }
+  }
+
+  // Micro-grain noise for leather texture
+  const imgData = ctx.getImageData(0, 0, W, H);
+  const d = imgData.data;
+  for (let i = 0; i < d.length; i += 4) {
+    const noise = (Math.random() - 0.5) * 10;
+    d[i] = Math.max(0, Math.min(255, d[i] + noise));
+    d[i + 1] = Math.max(0, Math.min(255, d[i + 1] + noise));
+    d[i + 2] = Math.max(0, Math.min(255, d[i + 2] + noise));
+  }
+  ctx.putImageData(imgData, 0, 0);
+
+  // Subtle vignette (darker edges)
+  const grad = ctx.createRadialGradient(W / 2, H / 2, W * 0.2, W / 2, H / 2, W * 0.7);
+  grad.addColorStop(0, 'rgba(0,0,0,0)');
+  grad.addColorStop(1, 'rgba(0,0,0,0.08)');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  const ballTex = new THREE.CanvasTexture(canvas);
+  ballTex.anisotropy = 4;
+
+  const ballMat = new THREE.MeshPhysicalMaterial({
     map: ballTex,
-    color: 0xffffff,
-    roughness: 0.45,
-    metalness: 0.02,
+    roughness: 0.35,
+    metalness: 0,
+    clearcoat: 0.15,
+    clearcoatRoughness: 0.3,
   });
   const ball = new THREE.Mesh(
-    new THREE.SphereGeometry(0.22, 20, 20),
+    new THREE.SphereGeometry(0.22, 32, 32),
     ballMat,
   );
   ball.castShadow = true;
   ball.receiveShadow = true;
   group.add(ball);
 
-  // Ball glow
+  // Subtle white glow around ball
   const glowMat = new THREE.MeshBasicMaterial({
     color: 0xffffff,
     transparent: true,
-    opacity: 0.05,
+    opacity: 0.03,
   });
   const glowMesh = new THREE.Mesh(
     new THREE.SphereGeometry(0.4, 12, 12),
@@ -1961,7 +2101,11 @@ function _buildBallMesh() {
   );
   group.add(glowMesh);
 
-  return { group, ball, glowMesh };
+  // Reusable rotation helpers
+  const _rotAxis = new THREE.Vector3();
+  const _rotQuat = new THREE.Quaternion();
+
+  return { group, ball, glowMesh, _rotAxis, _rotQuat };
 }
 
 // ===================================================================
@@ -2272,21 +2416,36 @@ class Pitch3D {
     this.scene.add(ballGroup.group);
 
     // Ball shadow on ground
+    // Soft shadow texture with radial gradient
+    const sw = 64, sh = 64;
+    const sc = document.createElement('canvas');
+    sc.width = sw; sc.height = sh;
+    const sctx = sc.getContext('2d');
+    const sgrd = sctx.createRadialGradient(32, 32, 0, 32, 32, 32);
+    sgrd.addColorStop(0, 'rgba(0,0,0,0.35)');
+    sgrd.addColorStop(0.35, 'rgba(0,0,0,0.18)');
+    sgrd.addColorStop(1, 'rgba(0,0,0,0)');
+    sctx.fillStyle = sgrd;
+    sctx.fillRect(0, 0, sw, sh);
+    const shadowTex = new THREE.CanvasTexture(sc);
+
     const ballShadow = new THREE.Mesh(
-      new THREE.CircleGeometry(0.15, 12),
+      new THREE.CircleGeometry(0.28, 16),
       new THREE.MeshBasicMaterial({
-        color: 0x000000,
+        map: shadowTex,
         transparent: true,
-        opacity: 0.12,
+        opacity: 0.6,
+        depthWrite: false,
       }),
     );
     ballShadow.rotation.x = -Math.PI / 2;
-    ballShadow.position.set(w.x, 0.015, w.z);
+    ballShadow.position.set(w.x, 0.01, w.z);
     this.scene.add(ballShadow);
 
     this._ballData = ballGroup;
     this._ballData.shadow = ballShadow;
     this._ballData.restPos = { x: w.x, z: w.z };
+    this._ballData._prevPos = { x: w.x, z: w.z };
   }
 
   // ===== TACTICAL HIGHLIGHTS =====
@@ -2455,7 +2614,7 @@ class Pitch3D {
       const tex = this._pressingGradientTexture || this._createPressingGradientTexture();
       const mat = new THREE.MeshBasicMaterial({
         map: tex,
-        color: 0x93c5fd,
+        color: 0xc2410c,
         transparent: true,
         opacity: 0.25,
         depthWrite: false,
@@ -2473,18 +2632,15 @@ class Pitch3D {
       mesh.visible = true;
       const pos = p.player.group.position;
       const r = 1.0 + (p.pressure / 100) * 2.5;
-      mesh.position.set(pos.x, 0.03, pos.z);
+      mesh.position.set(pos.x, 0.04, pos.z);
       mesh.scale.set(r, r, 1);
+      mesh.renderOrder = 1;
 
       const int = p.pressure / 100;
-      let hex;
-      if (int > 0.85) hex = 0xf87171;
-      else if (int > 0.70) hex = 0xfb923c;
-      else if (int > 0.40) hex = 0xfde047;
-      else hex = 0x93c5fd;
-
+      const hex = int > 0.7 ? 0xb91c1c : 0xc2410c;
       mesh.material.color.setHex(hex);
-      mesh.material.opacity = 0.20 + int * 0.15;
+      mesh.material.opacity = 0.20 + int * 0.10;
+      mesh.material.depthWrite = false;
     });
 
     for (let i = active.length; i < this._pressingMeshes.length; i++) {
@@ -2493,13 +2649,6 @@ class Pitch3D {
   }
 
   _drawAttackOverlay() {
-    const thirdMat = new THREE.MeshBasicMaterial({
-      color: 0x3b82f6,
-      transparent: true,
-      opacity: 0.06,
-      side: THREE.DoubleSide,
-    });
-
     const thirdW = HALF_W * 2 / 3;
     const fieldThirds = [
       { x: -HALF_W / 3 - thirdW / 2, w: thirdW },
@@ -2507,27 +2656,34 @@ class Pitch3D {
       { x: HALF_W / 3 + thirdW / 2, w: thirdW },
     ];
 
-    let totalPlayers = 0;
     const zoneCount = [0, 0, 0];
     this.players.forEach(p => {
       const px = p.group.position.x;
       if (px < -HALF_W / 3) zoneCount[0]++;
       else if (px > HALF_W / 3) zoneCount[2]++;
       else zoneCount[1]++;
-      totalPlayers++;
     });
 
     const maxZone = Math.max(1, ...zoneCount);
+    const dangerColors = [0xdc2626, 0xea580c, 0xca8a04];
+
     fieldThirds.forEach((z, i) => {
-      const intensity = 0.02 + (zoneCount[i] / maxZone) * 0.1;
-      const m = thirdMat.clone();
-      m.opacity = intensity;
+      const intensity = 0.08 + (zoneCount[i] / maxZone) * 0.2;
+      const idx = zoneCount[i] / maxZone < 0.4 ? 2 : zoneCount[i] / maxZone < 0.7 ? 1 : 0;
+      const m = new THREE.MeshBasicMaterial({
+        color: dangerColors[idx],
+        transparent: true,
+        opacity: intensity,
+        side: THREE.DoubleSide,
+        depthWrite: false,
+      });
       const zone = new THREE.Mesh(
         new THREE.PlaneGeometry(z.w, 35),
         m,
       );
       zone.rotation.x = -Math.PI / 2;
-      zone.position.set(z.x, 0.025, 0);
+      zone.position.set(z.x, 0.04, 0);
+      zone.renderOrder = 1;
       this.scene.add(zone);
       this._passingLines.push(zone);
     });
@@ -2678,44 +2834,61 @@ class Pitch3D {
     const midZ = (pPos.z + rPos.z) / 2;
     const angle = Math.atan2(dx, dz);
 
-    // ── Colour & opacity per category (matches task spec for 3D) ──
-    let color, opacity, width;
+    let color, opacity, width, emissiveColor;
     switch (edge.category) {
       case 'safe':
-        color = 0x4fc3f7;   // Light Blue
-        opacity = 0.55;
-        width = 0.1;
+        color = 0x0ea5e9;   // dark saturated cyan
+        opacity = 0.7;
+        width = 0.14;
+        emissiveColor = 0x0ea5e9;
         break;
       case 'risky':
-        color = 0xffc107;   // Amber
-        opacity = 0.4;
-        width = 0.07;
+        color = 0xd97706;   // dark amber
+        opacity = 0.55;
+        width = 0.1;
+        emissiveColor = 0xd97706;
         break;
       case 'blocked':
-        color = 0xef5350;   // Red
-        opacity = 0.35;
-        width = 0.07;
+        color = 0xdc2626;   // muted red
+        opacity = 0.5;
+        width = 0.1;
+        emissiveColor = 0xdc2626;
         break;
     }
 
+    // Ribbon body with additive blending for subtle emissive glow
     const mat = new THREE.MeshBasicMaterial({
       color,
       transparent: true,
       opacity,
-      side: THREE.DoubleSide,
+      blending: THREE.AdditiveBlending,
       depthWrite: false,
+      side: THREE.DoubleSide,
     });
-
-    // Ribbon body
     const ribbon = new THREE.Mesh(
       new THREE.PlaneGeometry(width, len),
       mat,
     );
     ribbon.rotation.x = -Math.PI / 2;
     ribbon.rotation.z = angle;
-    ribbon.position.set(midX, 0.03, midZ);
+    ribbon.position.set(midX, 0.05, midZ);
+    ribbon.renderOrder = 1;
     this.scene.add(ribbon);
     this._passingLines.push(ribbon);
+
+    // Slightly wider, fainter under-glow for depth
+    const glowMat = mat.clone();
+    glowMat.opacity = opacity * 0.25;
+    const glow = new THREE.Mesh(
+      new THREE.PlaneGeometry(width * 2.5, len),
+      glowMat,
+    );
+    glow.rotation.x = -Math.PI / 2;
+    glow.rotation.z = angle;
+    glow.position.set(midX, 0.04, midZ);
+    glow.renderOrder = 0;
+    this.scene.add(glow);
+    this._passingLines.push(glow);
 
     // Arrow head at receiver
     const headSize = 0.5;
@@ -2731,28 +2904,11 @@ class Pitch3D {
       headMat,
     );
     head.rotation.x = -Math.PI / 2;
-    head.position.set(rPos.x, 0.035, rPos.z);
+    head.position.set(rPos.x, 0.055, rPos.z);
     head.rotation.z = angle;
+    head.renderOrder = 1;
     this.scene.add(head);
     this._passingLines.push(head);
-
-    // Glow band (wider, low-opacity ribbon beneath)
-    const glowMat = new THREE.MeshBasicMaterial({
-      color,
-      transparent: true,
-      opacity: opacity * 0.2,
-      side: THREE.DoubleSide,
-      depthWrite: false,
-    });
-    const glow = new THREE.Mesh(
-      new THREE.PlaneGeometry(width * 3, len),
-      glowMat,
-    );
-    glow.rotation.x = -Math.PI / 2;
-    glow.rotation.z = angle;
-    glow.position.set(midX, 0.025, midZ);
-    this.scene.add(glow);
-    this._passingLines.push(glow);
   }
 
   _passingPositionsChanged() {
@@ -2813,10 +2969,11 @@ class Pitch3D {
     const avgZ = homeDef.reduce((s, p) => s + p.group.position.z, 0) / homeDef.length;
 
     const blockMat = new THREE.MeshBasicMaterial({
-      color: 0x3b82f6,
+      color: 0x6366f1,
       transparent: true,
-      opacity: 0.04,
+      opacity: 0.12,
       side: THREE.DoubleSide,
+      depthWrite: false,
     });
 
     const block = new THREE.Mesh(
@@ -2824,20 +2981,23 @@ class Pitch3D {
       blockMat,
     );
     block.rotation.x = -Math.PI / 2;
-    block.position.set(avgX, 0.02, avgZ);
+    block.position.set(avgX, 0.04, avgZ);
+    block.renderOrder = 1;
     this.scene.add(block);
     this._passingLines.push(block);
 
     // Outline
     const outlineMat = new THREE.LineBasicMaterial({
-      color: 0x3b82f6,
+      color: 0x818cf8,
       transparent: true,
-      opacity: 0.15,
+      opacity: 0.3,
+      depthWrite: false,
     });
     const outlineGeo = new THREE.EdgesGeometry(new THREE.PlaneGeometry(25, 30));
     const outline = new THREE.LineSegments(outlineGeo, outlineMat);
     outline.rotation.x = -Math.PI / 2;
-    outline.position.set(avgX, 0.025, avgZ);
+    outline.position.set(avgX, 0.045, avgZ);
+    outline.renderOrder = 1;
     this.scene.add(outline);
     this._passingLines.push(outline);
   }
@@ -3305,22 +3465,36 @@ class Pitch3D {
       fd.pole.rotation.z = Math.sin(this._animTime * 1.8 + fd.phase) * 0.005;
     });
 
-    // Ball gentle hover and spin
+    // Ball gentle hover and natural rolling rotation
     if (this._ballData) {
+      const ballPos = this._ballData.group.position;
+      const ballMesh = this._ballData.ball;
+
+      // Compute rotation from horizontal movement (rolling on pitch surface)
+      if (this._ballData._prevPos && ballMesh) {
+        const dx = ballPos.x - this._ballData._prevPos.x;
+        const dz = ballPos.z - this._ballData._prevPos.z;
+        const dist = Math.sqrt(dx * dx + dz * dz);
+        if (dist > 0.0001) {
+          const axis = this._ballData._rotAxis;
+          const q = this._ballData._rotQuat;
+          axis.set(-dz, 0, dx).normalize();
+          q.setFromAxisAngle(axis, dist / 0.22);
+          ballMesh.quaternion.premultiply(q);
+        }
+      }
+
       const hover = Math.sin(this._animTime * 1.5) * 0.02;
       this._ballData.group.position.y = 0.22 + hover;
-      if (this._ballData.ball) {
-        this._ballData.ball.rotation.x += 0.01;
-        this._ballData.ball.rotation.z += 0.005;
-      }
       if (this._ballData.shadow) {
-        this._ballData.shadow.position.x = this._ballData.group.position.x;
-        this._ballData.shadow.position.z = this._ballData.group.position.z;
-        this._ballData.shadow.material.opacity = 0.08 + Math.sin(this._animTime * 1.5) * 0.04;
+        this._ballData.shadow.position.x = ballPos.x;
+        this._ballData.shadow.position.z = ballPos.z;
+        this._ballData.shadow.material.opacity = 0.5 + Math.sin(this._animTime * 1.5) * 0.1;
       }
       if (this._ballData.glowMesh) {
         this._ballData.glowMesh.material.opacity = 0.03 + Math.sin(this._animTime * 2) * 0.02;
       }
+      this._ballData._prevPos = { x: ballPos.x, z: ballPos.z };
     }
 
     // Auto-refresh passing lanes when positions change

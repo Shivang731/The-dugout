@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "nvidia": {
+      "baseURL": "https://integrate.api.nvidia.com/v1",
+      "apiKey": "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"
+    }
+  },
+  "model": "z-ai/glm-5.1"
+}
