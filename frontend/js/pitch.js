@@ -108,52 +108,81 @@ function _easeInOutCubic(t) {
 }
 
 // ===================================================================
-// GRASS TEXTURE GENERATION — lengthwise mowing stripes
+// GRASS TEXTURE GENERATION — broadcast-quality mowing stripes
 // ===================================================================
 var _grassTexCache = null;
 function _createGrassTexture() {
   if (_grassTexCache) return _grassTexCache;
   const canvas = document.createElement('canvas');
-  canvas.width = 512;
-  canvas.height = 1024;
+  canvas.width = 1024;
+  canvas.height = 2048;
   const ctx = canvas.getContext('2d');
 
-  const lightGreen = '#3a8c3f';
-  const darkGreen = '#368838';
-  // vertical stripes so they run lengthwise on the pitch (along Z)
-  const stripeW = canvas.width / 12;
+  // 16 alternating mowing stripes (UEFA broadcast quality)
+  const darkGreen = '#2E7D32';
+  const lightGreen = '#3F9142';
+  const stripeW = canvas.width / 16;
 
-  for (let i = 0; i < 12; i++) {
-    const color = i % 2 === 0 ? lightGreen : darkGreen;
-    ctx.fillStyle = color;
+  for (let i = 0; i < 16; i++) {
+    ctx.fillStyle = i % 2 === 0 ? darkGreen : lightGreen;
     ctx.fillRect(i * stripeW, 0, stripeW, canvas.height);
   }
 
-  // subtle grain overlay
-  ctx.fillStyle = 'rgba(0,0,0,0.015)';
-  for (let i = 0; i < 8000; i++) {
+  // subtle grain: dark specks
+  ctx.fillStyle = 'rgba(0,0,0,0.018)';
+  for (let i = 0; i < 12000; i++) {
     ctx.fillRect(
       Math.random() * canvas.width,
       Math.random() * canvas.height,
-      Math.random() * 3 + 1,
-      Math.random() * 2 + 0.5,
+      Math.random() * 2.5 + 0.5,
+      Math.random() * 1.5 + 0.5,
     );
   }
 
-  // mowing direction streaks (vertical, following stripe direction)
-  ctx.strokeStyle = 'rgba(255,255,255,0.03)';
-  ctx.lineWidth = 0.5;
-  for (let x = 0; x < canvas.width; x += 14) {
-    ctx.beginPath();
-    ctx.moveTo(x, 0);
-    ctx.lineTo(x + (Math.random() - 0.5) * 2, canvas.height);
-    ctx.stroke();
+  // natural colour variation patches blending #357A38 and #3A873E
+  const variationColours = ['#357A38', '#3A873E'];
+  for (let i = 0; i < 10000; i++) {
+    ctx.fillStyle = variationColours[Math.random() * 2 | 0] + '20';
+    ctx.fillRect(
+      Math.random() * canvas.width,
+      Math.random() * canvas.height,
+      Math.random() * 6 + 2,
+      Math.random() * 4 + 1,
+    );
   }
+
+  // alternating-direction mowing streaks (wavy per stripe)
+  ctx.lineWidth = 0.8;
+  for (let s = 0; s < 16; s++) {
+    const isLight = s % 2 === 0;
+    ctx.strokeStyle = isLight ? 'rgba(255,255,255,0.035)' : 'rgba(0,0,0,0.025)';
+    const xBase = s * stripeW;
+    for (let x = 0; x < stripeW; x += 10) {
+      ctx.beginPath();
+      ctx.moveTo(xBase + x, 0);
+      const drift = (Math.random() - 0.5) * 4;
+      ctx.lineTo(xBase + x + drift, canvas.height);
+      ctx.stroke();
+    }
+  }
+
+  // radial vignette — darker edges, bright centre
+  const cx = canvas.width / 2;
+  const cy = canvas.height / 2;
+  const r = Math.max(canvas.width, canvas.height) * 0.55;
+  const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
+  grad.addColorStop(0, 'rgba(0,0,0,0)');
+  grad.addColorStop(0.6, 'rgba(0,0,0,0)');
+  grad.addColorStop(0.85, 'rgba(0,0,0,0.04)');
+  grad.addColorStop(0.95, 'rgba(0,0,0,0.10)');
+  grad.addColorStop(1, 'rgba(0,0,0,0.18)');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   const tex = new THREE.CanvasTexture(canvas);
   tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
   tex.repeat.set(1, 1);
-  tex.anisotropy = 4;
+  tex.anisotropy = 8;
   _grassTexCache = tex;
   return tex;
 }
@@ -272,9 +301,9 @@ function _createNetTexture() {
 
   ctx.clearRect(0, 0, 256, 256);
 
-  const cellSize = 12;
-  ctx.strokeStyle = 'rgba(200, 200, 200, 0.5)';
-  ctx.lineWidth = 0.5;
+  const cellSize = 14;
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.8)';
+  ctx.lineWidth = 1.0;
   for (let x = 0; x <= 256; x += cellSize) {
     ctx.beginPath();
     ctx.moveTo(x, 0);
@@ -289,11 +318,11 @@ function _createNetTexture() {
   }
 
   // knot dots at intersections
-  ctx.fillStyle = 'rgba(200, 200, 200, 0.3)';
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
   for (let x = 0; x <= 256; x += cellSize) {
     for (let y = 0; y <= 256; y += cellSize) {
       ctx.beginPath();
-      ctx.arc(x, y, 1, 0, Math.PI * 2);
+      ctx.arc(x, y, 1.5, 0, Math.PI * 2);
       ctx.fill();
     }
   }
@@ -301,6 +330,7 @@ function _createNetTexture() {
   const tex = new THREE.CanvasTexture(canvas);
   tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
   tex.repeat.set(4, 2);
+  tex.anisotropy = 4;
   return tex;
 }
 
@@ -340,9 +370,9 @@ function _buildPitch(scene, scenario) {
   const grassTex = _createGrassTexture();
   const grassMat = new THREE.MeshStandardMaterial({
     map: grassTex,
-    roughness: 0.95,
+    roughness: 0.88,
     metalness: 0,
-    color: 0xffffff,
+    color: 0x2e7d32,
   });
   const grass = new THREE.Mesh(
     new THREE.PlaneGeometry(PITCH_W + 10, PITCH_L + 10),
@@ -355,7 +385,7 @@ function _buildPitch(scene, scenario) {
 
   // pitch border run-off track
   const trackMat = new THREE.MeshStandardMaterial({
-    color: 0x1a2e1a,
+    color: 0x255f29,
     roughness: 1,
     metalness: 0,
   });
@@ -410,20 +440,24 @@ function _buildPitch(scene, scenario) {
 // ===================================================================
 function _buildGoals(scene) {
   const netTex = _createNetTexture();
+  const PR = 0.065;
+  const SEGS = 16;
+  const RSEGS = 8;
 
   [-HALF_L, +HALF_L].forEach(z => {
     const sign = z < 0 ? 1 : -1;
 
-    // --- Goalposts ---
+    // --- Goalpost material (satin white, painted finish) ---
     const postMat = new THREE.MeshStandardMaterial({
-      color: 0xffffff,
-      metalness: 0.5,
+      color: 0xf0f0f0,
+      metalness: 0.1,
       roughness: 0.3,
     });
 
+    // --- Goalposts (uniform diameter, smooth) ---
     [-GOAL_W / 2, GOAL_W / 2].forEach(x => {
       const post = new THREE.Mesh(
-        new THREE.CylinderGeometry(0.08, 0.1, GOAL_H, 10),
+        new THREE.CylinderGeometry(PR, PR, GOAL_H, SEGS),
         postMat,
       );
       post.position.set(x, GOAL_H / 2, z);
@@ -431,9 +465,9 @@ function _buildGoals(scene) {
       scene.add(post);
     });
 
-    // Crossbar
+    // --- Crossbar (same diameter as posts) ---
     const crossbar = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.08, 0.08, GOAL_W, 10),
+      new THREE.CylinderGeometry(PR, PR, GOAL_W, SEGS),
       postMat,
     );
     crossbar.rotation.x = Math.PI / 2;
@@ -441,16 +475,42 @@ function _buildGoals(scene) {
     crossbar.castShadow = true;
     scene.add(crossbar);
 
+    // --- Corner fillets (smooth post-crossbar joints) ---
+    [-GOAL_W / 2, GOAL_W / 2].forEach(x => {
+      const fillet = new THREE.Mesh(
+        new THREE.SphereGeometry(PR, SEGS, SEGS),
+        postMat,
+      );
+      fillet.position.set(x, GOAL_H, z);
+      fillet.castShadow = true;
+      scene.add(fillet);
+    });
+
+    // --- Post base plates ---
+    const baseMat = new THREE.MeshStandardMaterial({
+      color: 0xe8e8e8,
+      metalness: 0.15,
+      roughness: 0.4,
+    });
+    [-GOAL_W / 2, GOAL_W / 2].forEach(x => {
+      const base = new THREE.Mesh(
+        new THREE.CylinderGeometry(PR + 0.025, PR + 0.035, 0.04, SEGS),
+        baseMat,
+      );
+      base.position.set(x, 0.02, z);
+      scene.add(base);
+    });
+
     // --- Rear frame supports ---
     const frameMat = new THREE.MeshStandardMaterial({
       color: 0xcccccc,
-      metalness: 0.4,
-      roughness: 0.4,
+      metalness: 0.2,
+      roughness: 0.5,
     });
     const rearZ = z + sign * GOAL_D;
     [-GOAL_W / 2, GOAL_W / 2].forEach(x => {
       const support = new THREE.Mesh(
-        new THREE.CylinderGeometry(0.05, 0.06, GOAL_H, 6),
+        new THREE.CylinderGeometry(0.04, 0.04, GOAL_H, RSEGS),
         frameMat,
       );
       support.position.set(x, GOAL_H / 2, rearZ);
@@ -459,36 +519,40 @@ function _buildGoals(scene) {
 
     // Top rear crossbar
     const rearCrossbar = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.05, 0.05, GOAL_W, 6),
+      new THREE.CylinderGeometry(0.04, 0.04, GOAL_W, RSEGS),
       frameMat,
     );
     rearCrossbar.rotation.x = Math.PI / 2;
     rearCrossbar.position.set(0, GOAL_H, rearZ);
     scene.add(rearCrossbar);
 
-    // Side diagonal supports (goal frame depth)
+    // --- Rear diagonal braces (ground at goal-line to top of rear post) ---
     const diagMat = new THREE.MeshStandardMaterial({
       color: 0xbbbbbb,
-      metalness: 0.3,
+      metalness: 0.15,
       roughness: 0.5,
     });
     [-GOAL_W / 2, GOAL_W / 2].forEach(x => {
-      const diag = new THREE.Mesh(
-        new THREE.CylinderGeometry(0.04, 0.04, GOAL_D * 1.1, 4),
+      const len = Math.sqrt(GOAL_H * GOAL_H + GOAL_D * GOAL_D);
+      const brace = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.035, 0.035, len, RSEGS),
         diagMat,
       );
-      diag.position.set(x, 0.05, z + sign * GOAL_D / 2);
-      diag.rotation.x = 0.3 * sign;
-      scene.add(diag);
+      brace.position.set(x, GOAL_H / 2, z + sign * GOAL_D / 2);
+      brace.quaternion.setFromUnitVectors(
+        new THREE.Vector3(0, 1, 0),
+        new THREE.Vector3(0, GOAL_H, sign * GOAL_D).normalize(),
+      );
+      scene.add(brace);
     });
 
     // --- Net (back) ---
     const backNetMat = new THREE.MeshStandardMaterial({
       map: netTex,
       transparent: true,
-      opacity: 0.3,
+      opacity: 0.35,
       side: THREE.DoubleSide,
-      color: 0xcccccc,
+      color: 0xffffff,
       roughness: 0.8,
       depthWrite: false,
     });
@@ -504,9 +568,9 @@ function _buildGoals(scene) {
     const topNetMat = new THREE.MeshStandardMaterial({
       map: netTex,
       transparent: true,
-      opacity: 0.2,
+      opacity: 0.3,
       side: THREE.DoubleSide,
-      color: 0xcccccc,
+      color: 0xffffff,
       roughness: 0.8,
       depthWrite: false,
     });
@@ -523,9 +587,9 @@ function _buildGoals(scene) {
     const sideNetMat = new THREE.MeshStandardMaterial({
       map: netTex,
       transparent: true,
-      opacity: 0.18,
+      opacity: 0.22,
       side: THREE.DoubleSide,
-      color: 0xcccccc,
+      color: 0xffffff,
       roughness: 0.8,
       depthWrite: false,
     });
@@ -544,9 +608,9 @@ function _buildGoals(scene) {
     const groundNetMat = new THREE.MeshStandardMaterial({
       map: netTex,
       transparent: true,
-      opacity: 0.1,
+      opacity: 0.15,
       side: THREE.DoubleSide,
-      color: 0xcccccc,
+      color: 0xffffff,
       roughness: 0.9,
       depthWrite: false,
     });
