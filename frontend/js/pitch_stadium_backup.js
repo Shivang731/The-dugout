@@ -113,61 +113,72 @@ function _easeInOutCubic(t) {
 }
 
 // ===================================================================
-// UNIFIED PITCH TEXTURE — grass stripes + pitch markings in one pass
-// Single opaque canvas, no separate overlay layer.
+// GRASS TEXTURE GENERATION — broadcast-quality mowing stripes
 // ===================================================================
-var _pitchTexCache = null;
-function _createPitchTexture() {
-  if (_pitchTexCache) return _pitchTexCache;
-  const W = 4096;
-  const H = 6336;
+var _grassTexCache = null;
+function _createGrassTexture() {
+  if (_grassTexCache) return _grassTexCache;
   const canvas = document.createElement('canvas');
-  canvas.width = W;
-  canvas.height = H;
+  canvas.width = 1024;
+  canvas.height = 2048;
   const ctx = canvas.getContext('2d');
 
-  // ── Grass mowing stripes (72 total, 12 per tile × 6 tiles) ──
-  const STRIPES = 72;
-  const stripeH = H / STRIPES;
+  const stripeH = canvas.height / 12;
+
+  // ── Base stripe colours (subtle 8–15% luminance difference) ──
   const darkGreen  = '#0D4F1B';
   const lightGreen = '#10591E';
-  for (let s = 0; s < STRIPES; s++) {
-    ctx.fillStyle = s % 2 === 0 ? lightGreen : darkGreen;
-    ctx.fillRect(0, s * stripeH, W, stripeH + 0.5);
+
+  for (let i = 0; i < 12; i++) {
+    ctx.fillStyle = i % 2 === 0 ? darkGreen : lightGreen;
+    ctx.fillRect(0, i * stripeH, canvas.width, stripeH);
   }
 
-  // ── Subtle grain ──
+  // ── Subtle grain: dark specks ──
   ctx.fillStyle = 'rgba(0,0,0,0.018)';
-  for (let i = 0; i < 60000; i++) {
-    ctx.fillRect(Math.random() * W, Math.random() * H, Math.random() * 2.5 + 0.5, Math.random() * 1.5 + 0.5);
+  for (let i = 0; i < 12000; i++) {
+    ctx.fillRect(
+      Math.random() * canvas.width,
+      Math.random() * canvas.height,
+      Math.random() * 2.5 + 0.5,
+      Math.random() * 1.5 + 0.5,
+    );
   }
 
-  // ── Colour variation ──
-  const vars = ['#0D4F1B', '#10591E'];
-  for (let i = 0; i < 50000; i++) {
-    ctx.fillStyle = vars[Math.random() * 2 | 0] + '20';
-    ctx.fillRect(Math.random() * W, Math.random() * H, Math.random() * 6 + 2, Math.random() * 4 + 1);
+  // ── Natural colour variation patches ──
+  const variationColours = ['#0D4F1B', '#10591E'];
+  for (let i = 0; i < 10000; i++) {
+    ctx.fillStyle = variationColours[Math.random() * 2 | 0] + '20';
+    ctx.fillRect(
+      Math.random() * canvas.width,
+      Math.random() * canvas.height,
+      Math.random() * 6 + 2,
+      Math.random() * 4 + 1,
+    );
   }
 
-  // ── Mowing streaks ──
+  // ── Mowing streaks with alternating direction per stripe ──
   ctx.lineWidth = 1.0;
-  for (let s = 0; s < STRIPES; s++) {
+  for (let s = 0; s < 12; s++) {
     const yBase = s * stripeH;
     const dir = s % 2 === 0 ? 1 : -1;
     for (let row = 0; row < stripeH; row += 8) {
       ctx.beginPath();
-      ctx.moveTo(dir > 0 ? 0 : W, yBase + row);
+      ctx.moveTo(dir > 0 ? 0 : canvas.width, yBase + row);
+      const drift = (Math.random() - 0.5) * 5;
+      const opacity = 0.015 + Math.random() * 0.015;
       ctx.strokeStyle = dir > 0
-        ? `rgba(255,255,255,${0.015 + Math.random() * 0.015})`
-        : `rgba(0,0,0,${0.015 + Math.random() * 0.015})`;
-      ctx.lineTo(dir > 0 ? W : 0, yBase + row + (Math.random() - 0.5) * 5);
+        ? `rgba(255,255,255,${opacity})`
+        : `rgba(0,0,0,${opacity})`;
+      ctx.lineTo(dir > 0 ? canvas.width : 0, yBase + row + drift);
       ctx.stroke();
     }
   }
 
-  // ── Radial vignette ──
-  const cx = W / 2, cy = H / 2;
-  const r = Math.max(W, H) * 0.65;
+  // ── Radial vignette — darker edges (matching 2D pitch) ──
+  const cx = canvas.width / 2;
+  const cy = canvas.height / 2;
+  const r = Math.max(canvas.width, canvas.height) * 0.65;
   const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
   grad.addColorStop(0, 'rgba(0,0,0,0)');
   grad.addColorStop(0.55, 'rgba(0,0,0,0)');
@@ -175,45 +186,67 @@ function _createPitchTexture() {
   grad.addColorStop(0.93, 'rgba(0,0,0,0.10)');
   grad.addColorStop(1, 'rgba(0,0,0,0.20)');
   ctx.fillStyle = grad;
-  ctx.fillRect(0, 0, W, H);
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  // ── Centre spotlight ──
-  const spotR = Math.max(W, H) * 0.55;
+  // ── Centre spotlight — subtle brightening in the middle ──
+  const spotR = Math.max(canvas.width, canvas.height) * 0.55;
   const spotGrad = ctx.createRadialGradient(cx, cy, spotR * 0.35, cx, cy, spotR * 0.55);
   spotGrad.addColorStop(0, 'rgba(255,255,255,0)');
   spotGrad.addColorStop(0.7, 'rgba(255,255,255,0)');
   spotGrad.addColorStop(0.85, 'rgba(255,255,255,0.012)');
   spotGrad.addColorStop(1, 'rgba(255,255,255,0.025)');
   ctx.fillStyle = spotGrad;
-  ctx.fillRect(0, 0, W, H);
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  // ── Directional sheen per stripe ──
-  for (let s = 0; s < STRIPES; s++) {
+  // ── Faint directional sheen per stripe ──
+  for (let s = 0; s < 12; s++) {
     const yBase = s * stripeH;
     const dir = s % 2 === 0 ? 1 : -1;
-    const sh = ctx.createLinearGradient(dir > 0 ? 0 : W, 0, dir > 0 ? W : 0, 0);
-    sh.addColorStop(0, 'rgba(255,255,255,0.015)');
-    sh.addColorStop(0.5, 'rgba(255,255,255,0)');
-    sh.addColorStop(1, 'rgba(0,0,0,0.010)');
-    ctx.fillStyle = sh;
-    ctx.fillRect(0, yBase, W, stripeH);
+    const sheenGrad = ctx.createLinearGradient(
+      dir > 0 ? 0 : canvas.width, 0,
+      dir > 0 ? canvas.width : 0, 0,
+    );
+    sheenGrad.addColorStop(0, 'rgba(255,255,255,0.015)');
+    sheenGrad.addColorStop(0.5, 'rgba(255,255,255,0)');
+    sheenGrad.addColorStop(1, 'rgba(0,0,0,0.010)');
+    ctx.fillStyle = sheenGrad;
+    ctx.fillRect(0, yBase, canvas.width, stripeH);
   }
 
-  // ===================================================================
-  // WHITE PITCH MARKINGS (painted directly on the grass canvas)
-  // ===================================================================
+  const tex = new THREE.CanvasTexture(canvas);
+  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
+  tex.repeat.set(1, 1);
+  tex.anisotropy = 16;
+  _grassTexCache = tex;
+  return tex;
+}
+
+// ===================================================================
+// PITCH MARKINGS TEXTURE — single transparent overlay
+// ===================================================================
+var _markingsTexCache = null;
+function _createMarkingsTexture() {
+  if (_markingsTexCache) return _markingsTexCache;
+  const W = 4096;
+  const H = 6320;
+  const canvas = document.createElement('canvas');
+  canvas.width = W;
+  canvas.height = H;
+  const ctx = canvas.getContext('2d');
+  ctx.clearRect(0, 0, W, H);
+
   const px = (x) => (x / PITCH_W + 0.5) * W;
   const pz = (z) => (-z / PITCH_L + 0.5) * H;
 
-  const LINE_W = 12;
-  const UNDERLAY_W = 20;
-  const UNDERLAY = 'rgba(0,0,0,0.45)';
+  const LINE_W = 7;
+  const UNDERLAY_W = 10;
+  const UNDERLAY_COLOR = 'rgba(0,18,0,0.30)';
 
   function markLine(x1, z1, x2, z2) {
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
     ctx.lineWidth = UNDERLAY_W;
-    ctx.strokeStyle = UNDERLAY;
+    ctx.strokeStyle = UNDERLAY_COLOR;
     ctx.beginPath();
     ctx.moveTo(px(x1), pz(z1));
     ctx.lineTo(px(x2), pz(z2));
@@ -229,7 +262,7 @@ function _createPitchTexture() {
   function markCircle(cx, cz, r) {
     const cr = (r / PITCH_W) * W;
     ctx.lineWidth = UNDERLAY_W;
-    ctx.strokeStyle = UNDERLAY;
+    ctx.strokeStyle = UNDERLAY_COLOR;
     ctx.beginPath();
     ctx.arc(px(cx), pz(cz), cr, 0, Math.PI * 2);
     ctx.stroke();
@@ -243,7 +276,7 @@ function _createPitchTexture() {
   function markArc(cx, cz, r, a1, a2) {
     const cr = (r / PITCH_W) * W;
     ctx.lineWidth = UNDERLAY_W;
-    ctx.strokeStyle = UNDERLAY;
+    ctx.strokeStyle = UNDERLAY_COLOR;
     ctx.beginPath();
     ctx.arc(px(cx), pz(cz), cr, a1, a2);
     ctx.stroke();
@@ -258,7 +291,7 @@ function _createPitchTexture() {
     const dR = rad * (W / PITCH_W);
     ctx.beginPath();
     ctx.arc(px(cx), pz(cz), dR + 2, 0, Math.PI * 2);
-    ctx.fillStyle = UNDERLAY;
+    ctx.fillStyle = UNDERLAY_COLOR;
     ctx.fill();
     ctx.beginPath();
     ctx.arc(px(cx), pz(cz), dR, 0, Math.PI * 2);
@@ -266,13 +299,22 @@ function _createPitchTexture() {
     ctx.fill();
   }
 
+  // Outer boundary
   markLine(-HALF_W, -HALF_L, HALF_W, -HALF_L);
   markLine(HALF_W, -HALF_L, HALF_W, HALF_L);
   markLine(HALF_W, HALF_L, -HALF_W, HALF_L);
   markLine(-HALF_W, HALF_L, -HALF_W, -HALF_L);
+
+  // Halfway line
   markLine(-HALF_W, 0, HALF_W, 0);
+
+  // Center circle
   markCircle(0, 0, CENTER_R);
+
+  // Center spot
   markDot(0, 0, 0.3);
+
+  // Penalty areas
   markLine(-PEN_AREA_W / 2, HALF_L, PEN_AREA_W / 2, HALF_L);
   markLine(PEN_AREA_W / 2, HALF_L, PEN_AREA_W / 2, HALF_L - PEN_AREA_L);
   markLine(PEN_AREA_W / 2, HALF_L - PEN_AREA_L, -PEN_AREA_W / 2, HALF_L - PEN_AREA_L);
@@ -281,6 +323,8 @@ function _createPitchTexture() {
   markLine(PEN_AREA_W / 2, -HALF_L, PEN_AREA_W / 2, -HALF_L + PEN_AREA_L);
   markLine(PEN_AREA_W / 2, -HALF_L + PEN_AREA_L, -PEN_AREA_W / 2, -HALF_L + PEN_AREA_L);
   markLine(-PEN_AREA_W / 2, -HALF_L + PEN_AREA_L, -PEN_AREA_W / 2, -HALF_L);
+
+  // Six-yard boxes
   markLine(-SIX_YARD_W / 2, HALF_L, SIX_YARD_W / 2, HALF_L);
   markLine(SIX_YARD_W / 2, HALF_L, SIX_YARD_W / 2, HALF_L - SIX_YARD_L);
   markLine(SIX_YARD_W / 2, HALF_L - SIX_YARD_L, -SIX_YARD_W / 2, HALF_L - SIX_YARD_L);
@@ -289,12 +333,18 @@ function _createPitchTexture() {
   markLine(SIX_YARD_W / 2, -HALF_L, SIX_YARD_W / 2, -HALF_L + SIX_YARD_L);
   markLine(SIX_YARD_W / 2, -HALF_L + SIX_YARD_L, -SIX_YARD_W / 2, -HALF_L + SIX_YARD_L);
   markLine(-SIX_YARD_W / 2, -HALF_L + SIX_YARD_L, -SIX_YARD_W / 2, -HALF_L);
+
+  // Penalty spots
   markDot(0, HALF_L - PEN_SPOT_DIST, 0.25);
   markDot(0, -HALF_L + PEN_SPOT_DIST, 0.25);
+
+  // Penalty arcs
   const penArcR = CENTER_R;
   const nz = HALF_L - PEN_SPOT_DIST;
   markArc(0, nz, penArcR, -0.7, 0.7);
   markArc(0, -nz, penArcR, Math.PI - 0.7, Math.PI + 0.7);
+
+  // Corner arcs
   const cr = CORNER_R;
   markArc(-HALF_W, -HALF_L, cr, 0, Math.PI / 2);
   markArc(HALF_W, -HALF_L, cr, Math.PI / 2, Math.PI);
@@ -302,11 +352,110 @@ function _createPitchTexture() {
   markArc(-HALF_W, HALF_L, cr, 3 * Math.PI / 2, 2 * Math.PI);
 
   const tex = new THREE.CanvasTexture(canvas);
-  tex.generateMipmaps = false;
-  tex.minFilter = THREE.LinearFilter;
-  tex.magFilter = THREE.LinearFilter;
-  _pitchTexCache = tex;
+  tex.anisotropy = 16;
+  _markingsTexCache = tex;
   return tex;
+}
+
+// ===================================================================
+// PITCH MARKINGS GEOMETRY — 3D line segments as geometry
+// ===================================================================
+var _markingsGeoCache = null;
+function _createMarkingsGeometry() {
+  if (_markingsGeoCache) return _markingsGeoCache;
+  const LW = 0.116;
+  const pos = [];
+  const idx = [];
+
+  function addLine(x1, z1, x2, z2) {
+    const dx = x2 - x1;
+    const dz = z2 - z1;
+    const len = Math.sqrt(dx * dx + dz * dz);
+    if (len < 1e-6) return;
+    const nx = -dz / len;
+    const nz = dx / len;
+    const hw = LW / 2;
+    const ox = nx * hw;
+    const oz = nz * hw;
+    const i = pos.length / 3;
+    pos.push(
+      x1 - ox, 0.02, z1 - oz,
+      x1 + ox, 0.02, z1 + oz,
+      x2 + ox, 0.02, z2 + oz,
+      x2 - ox, 0.02, z2 - oz,
+    );
+    idx.push(i, i + 2, i + 1, i, i + 3, i + 2);
+  }
+
+  function addArc(cx, cz, r, a1, a2) {
+    const segs = Math.max(16, Math.ceil((a2 - a1) * 64 / (Math.PI * 2)));
+    for (let i = 0; i < segs; i++) {
+      const t1 = a1 + (a2 - a1) * i / segs;
+      const t2 = a1 + (a2 - a1) * (i + 1) / segs;
+      addLine(
+        cx + r * Math.cos(t1),
+        cz + r * Math.sin(t1),
+        cx + r * Math.cos(t2),
+        cz + r * Math.sin(t2),
+      );
+    }
+  }
+
+  function addCircle(cx, cz, r) {
+    addArc(cx, cz, r, 0, Math.PI * 2);
+  }
+
+  function addDot(cx, cz, r) {
+    const d = (r || 0.3) * 2;
+    addLine(cx - d / 2, cz, cx + d / 2, cz);
+    addLine(cx, cz - d / 2, cx, cz + d / 2);
+  }
+
+  addLine(-HALF_W, -HALF_L, HALF_W, -HALF_L);
+  addLine(HALF_W, -HALF_L, HALF_W, HALF_L);
+  addLine(HALF_W, HALF_L, -HALF_W, HALF_L);
+  addLine(-HALF_W, HALF_L, -HALF_W, -HALF_L);
+
+  addLine(-HALF_W, 0, HALF_W, 0);
+  addCircle(0, 0, CENTER_R);
+  addDot(0, 0, 0.3);
+
+  addLine(-PEN_AREA_W / 2, HALF_L, PEN_AREA_W / 2, HALF_L);
+  addLine(PEN_AREA_W / 2, HALF_L, PEN_AREA_W / 2, HALF_L - PEN_AREA_L);
+  addLine(PEN_AREA_W / 2, HALF_L - PEN_AREA_L, -PEN_AREA_W / 2, HALF_L - PEN_AREA_L);
+  addLine(-PEN_AREA_W / 2, HALF_L - PEN_AREA_L, -PEN_AREA_W / 2, HALF_L);
+  addLine(-PEN_AREA_W / 2, -HALF_L, PEN_AREA_W / 2, -HALF_L);
+  addLine(PEN_AREA_W / 2, -HALF_L, PEN_AREA_W / 2, -HALF_L + PEN_AREA_L);
+  addLine(PEN_AREA_W / 2, -HALF_L + PEN_AREA_L, -PEN_AREA_W / 2, -HALF_L + PEN_AREA_L);
+  addLine(-PEN_AREA_W / 2, -HALF_L + PEN_AREA_L, -PEN_AREA_W / 2, -HALF_L);
+
+  addLine(-SIX_YARD_W / 2, HALF_L, SIX_YARD_W / 2, HALF_L);
+  addLine(SIX_YARD_W / 2, HALF_L, SIX_YARD_W / 2, HALF_L - SIX_YARD_L);
+  addLine(SIX_YARD_W / 2, HALF_L - SIX_YARD_L, -SIX_YARD_W / 2, HALF_L - SIX_YARD_L);
+  addLine(-SIX_YARD_W / 2, HALF_L - SIX_YARD_L, -SIX_YARD_W / 2, HALF_L);
+  addLine(-SIX_YARD_W / 2, -HALF_L, SIX_YARD_W / 2, -HALF_L);
+  addLine(SIX_YARD_W / 2, -HALF_L, SIX_YARD_W / 2, -HALF_L + SIX_YARD_L);
+  addLine(SIX_YARD_W / 2, -HALF_L + SIX_YARD_L, -SIX_YARD_W / 2, -HALF_L + SIX_YARD_L);
+  addLine(-SIX_YARD_W / 2, -HALF_L + SIX_YARD_L, -SIX_YARD_W / 2, -HALF_L);
+
+  addDot(0, HALF_L - PEN_SPOT_DIST, 0.25);
+  addDot(0, -HALF_L + PEN_SPOT_DIST, 0.25);
+
+  const nz = HALF_L - PEN_SPOT_DIST;
+  addArc(0, nz, CENTER_R, -0.7, 0.7);
+  addArc(0, -nz, CENTER_R, Math.PI - 0.7, Math.PI + 0.7);
+
+  addArc(-HALF_W, -HALF_L, CORNER_R, 0, Math.PI / 2);
+  addArc(HALF_W, -HALF_L, CORNER_R, Math.PI / 2, Math.PI);
+  addArc(HALF_W, HALF_L, CORNER_R, Math.PI, 3 * Math.PI / 2);
+  addArc(-HALF_W, HALF_L, CORNER_R, 3 * Math.PI / 2, 2 * Math.PI);
+
+  const geom = new THREE.BufferGeometry();
+  geom.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  geom.setIndex(idx.length > 0 ? idx : undefined);
+  geom.computeVertexNormals();
+  _markingsGeoCache = geom;
+  return geom;
 }
 
 function _createNetTexture() {
@@ -415,32 +564,52 @@ function _createSponsorTexture(name) {
 // BUILD PITCH
 // ===================================================================
 function _buildPitch(scene, scenario) {
-  // ── Unified pitch texture (grass + markings in one opaque canvas) ──
-  const pitchTex = _createPitchTexture();
-  const pitchMat = new THREE.MeshBasicMaterial({
-    map: pitchTex,
+  const grassTex = _createGrassTexture();
+  const grassMat = new THREE.MeshStandardMaterial({
+    map: grassTex,
+    roughness: 0.55,
+    metalness: 0,
+    color: 0xffffff,
+    envMapIntensity: 0.3,
   });
-  const pitch = new THREE.Mesh(
+  const grass = new THREE.Mesh(
     new THREE.PlaneGeometry(PITCH_W, PITCH_L),
-    pitchMat,
+    grassMat,
   );
-  pitch.rotation.x = -Math.PI / 2;
-  pitch.position.y = 0;
-  scene.add(pitch);
+  grass.rotation.x = -Math.PI / 2;
+  grass.position.y = -0.02;
+  grass.receiveShadow = true;
+  scene.add(grass);
 
-  // ── Pitch border run-off track ──
-  const trackMat = new THREE.MeshBasicMaterial({
+  // pitch border run-off track — BELOW the grass so the stripe texture
+  // is the visible surface on the playing area
+  const trackMat = new THREE.MeshStandardMaterial({
     color: 0x1a4d20,
+    roughness: 1,
+    metalness: 0,
   });
   const track = new THREE.Mesh(
     new THREE.PlaneGeometry(PITCH_W + 8, PITCH_L + 8),
     trackMat,
   );
   track.rotation.x = -Math.PI / 2;
-  track.position.y = -0.02;
+  track.position.y = -0.15;
   scene.add(track);
 
-  // ── Edge shadow gradients ──
+  // ===== PITCH MARKINGS — 3D geometry lines, no textures =====
+  const markingsGeo = _createMarkingsGeometry();
+  const markingsMat = new THREE.MeshBasicMaterial({
+    color: 0xffffff,
+    polygonOffset: true,
+    polygonOffsetFactor: -1,
+    polygonOffsetUnits: -2,
+  });
+  const markings = new THREE.Mesh(markingsGeo, markingsMat);
+  markings.renderOrder = 1;
+  markings.frustumCulled = false;
+  scene.add(markings);
+
+  // Pitch edge shadow gradients (keep these)
   const edgeMat = new THREE.MeshBasicMaterial({
     color: 0x000000,
     transparent: true,
@@ -452,7 +621,7 @@ function _buildPitch(scene, scenario) {
       edgeMat,
     );
     edge.rotation.x = -Math.PI / 2;
-    edge.position.set(side * (HALF_W + 2.5), -0.02, 0);
+    edge.position.set(side * (HALF_W + 2.5), -0.12, 0);
     scene.add(edge);
   });
 }
@@ -1272,94 +1441,72 @@ function _buildCrowd(scene, homeTeam, awayTeam) {
     metalness: 0,
   });
 
-  // Roof bottom heights (from _buildStadium geometry)
-  const SIDELINE_ROOF_BOTTOM = 11.74;
-  const END_ROOF_BOTTOM = 8.45;
-
-  // Head top relative to body Y: head instance at body Y + 0.3,
-  // head geometry translated by +0.65, radius 0.12
-  // max head top = body Y + 0.04 (jitter) + 0.3 + 0.65 + 0.12 = body Y + 1.11
-  const HEAD_ABOVE_BODY = 1.11;
-
   const seats = [];
   const SP = 0.4;
 
   // ---- Sideline stands (East & West) ----
-  // Y-offsets and row pitch MUST match _buildStadium exactly
+  // Lower bowl: seating rows at x ∈ [37, 46.35], y ∈ [2.0, 4.75]
   [-1, 1].forEach(side => {
-    // Lower bowl: 12 rows, xOff=0.85, yOff=0.30, width=95-row*0.8
     for (let row = 0; row < 12; row++) {
-      const y = 2.0 + row * 0.30;
+      const y = 2.0 + row * 0.25;
       const x = side * (37 + row * 0.85);
-      const halfW = (95 - row * 0.8) / 2;
-      for (let z = -halfW; z <= halfW; z += SP) {
+      for (let z = -47; z <= 47; z += SP) {
         seats.push({ x, y, z, sec: 'sideline' });
       }
     }
-    // Upper bowl: 8 rows, xOff=0.9, yOff=0.45, width=87-row*0.8
+    // Upper bowl: seating rows at x ∈ [42, 48.3], y ∈ [6.5, 8.95]
     for (let row = 0; row < 8; row++) {
-      const y = 6.5 + row * 0.45;
+      const y = 6.5 + row * 0.35;
       const x = side * (42 + row * 0.9);
-      // Skip row if head would be above roof
-      if (y + HEAD_ABOVE_BODY >= SIDELINE_ROOF_BOTTOM) continue;
-      const halfW = (87 - row * 0.8) / 2;
-      for (let z = -halfW; z <= halfW; z += SP) {
+      for (let z = -43; z <= 43; z += SP) {
         seats.push({ x, y, z, sec: 'sideline' });
       }
     }
   });
 
   // ---- End stands (North & South, behind goals) ----
+  // Lower bowl: seating rows at z ∈ [55, 60.25], y ∈ [2.1, 5.3]
   [-1, 1].forEach(side => {
-    // Lower bowl: 8 rows, zOff=0.75, yOff=0.40, width=62-row*0.8
     for (let row = 0; row < 8; row++) {
-      const y = 2.1 + row * 0.40;
+      const y = 2.1 + row * 0.35;
       const z = side * (55 + row * 0.75);
-      const halfW = (62 - row * 0.8) / 2;
-      for (let x = -halfW; x <= halfW; x += SP) {
+      for (let x = -30; x <= 30; x += SP) {
         seats.push({ x, y, z, sec: 'end' });
       }
     }
-    // Upper bowl: max 6 rows, zOff=0.8, yOff=0.45, width=56-row*0.8
-    // Stop before heads exceed end roof bottom (8.45)
+    // Upper bowl: seating rows at z ∈ [57.5, 61.5], y ∈ [6.2, 8.45]
     for (let row = 0; row < 6; row++) {
-      const y = 6.2 + row * 0.45;
-      if (y + HEAD_ABOVE_BODY >= END_ROOF_BOTTOM) break;
+      const y = 6.2 + row * 0.4;
       const z = side * (57.5 + row * 0.8);
-      const halfW = (56 - row * 0.8) / 2;
-      for (let x = -halfW; x <= halfW; x += SP) {
+      for (let x = -27; x <= 27; x += SP) {
         seats.push({ x, y, z, sec: 'end' });
       }
     }
   });
 
   // ---- Corner sections ----
+  // Lower corner: seating at cx ∈ [38, 45], cz ∈ [56, 62], y ∈ [2.3, 3.7]
   [-1, 1].forEach(sx => {
     [-1, 1].forEach(sz => {
-      // Lower corner: 6 rows, yOff=0.28
       for (let row = 0; row < 6; row++) {
         const f = row / 5;
         const y = 2.3 + row * 0.28;
         const cx = sx * (38 + f * 7);
         const cz = sz * (56 + f * 6);
-        const halfW = (6 + f * 6) / 2;
-        for (let ox = -halfW; ox <= halfW; ox += 0.6) {
-          for (let oz = -halfW; oz <= halfW; oz += 0.6) {
+        for (let ox = -3; ox <= 3; ox += 0.6) {
+          for (let oz = -3; oz <= 3; oz += 0.6) {
             seats.push({ x: cx + ox, y, z: cz + oz, sec: 'corner' });
           }
         }
       }
-      // Upper corner: 4 rows, yOff=0.35, check roof clearance
+      // Upper corner: seating at cx ∈ [39, 44], cz ∈ [57.5, 61.5], y ∈ [6.5, 7.55]
       for (let row = 0; row < 4; row++) {
         const f = row / 3;
         const y = 6.5 + row * 0.35;
-        // Upper corners are near end roof (y=8.45). Use end roof bound.
-        if (y + HEAD_ABOVE_BODY >= END_ROOF_BOTTOM) break;
         const cx = sx * (39 + f * 5);
         const cz = sz * (57.5 + f * 4);
-        const halfW = (5 + f * 4) / 2;
-        for (let ox = -halfW; ox <= halfW; ox += 0.6) {
-          for (let oz = -halfW; oz <= halfW; oz += 0.6) {
+        for (let ox = -2.5; ox <= 2.5; ox += 0.6) {
+          for (let oz = -2.5; oz <= 2.5; oz += 0.6) {
             seats.push({ x: cx + ox, y, z: cz + oz, sec: 'corner' });
           }
         }
@@ -2704,21 +2851,26 @@ class Pitch3D {
   }
 
   _computePassingGraph3D() {
-    const ballPos = this._ballData?.group.position;
-    if (!ballPos || this.players.length < 4) return null;
+    if (this.players.length < 4) return null;
 
-    // Find ball carrier — nearest outfield player to ball
+    // Determine ball carrier — priority: _ballCarrier (from events) → nearest-player heuristic
     let carrier = null;
-    let minDist = Infinity;
-    this.players.forEach(p => {
-      if (p.data.pos === 'GK') return;
-      const d = Math.sqrt(
-        (p.group.position.x - ballPos.x) ** 2 +
-        (p.group.position.z - ballPos.z) ** 2,
-      );
-      if (d < minDist) { minDist = d; carrier = p; }
-    });
-    if (!carrier || minDist > PITCH_W * 0.15) return null;
+    if (this._ballCarrier && this.players.includes(this._ballCarrier)) {
+      carrier = this._ballCarrier;
+    } else {
+      const ballPos = this._ballData?.group.position;
+      if (!ballPos) return null;
+      let minDist = Infinity;
+      this.players.forEach(p => {
+        if (p.data.pos === 'GK') return;
+        const d = Math.sqrt(
+          (p.group.position.x - ballPos.x) ** 2 +
+          (p.group.position.z - ballPos.z) ** 2,
+        );
+        if (d < minDist) { minDist = d; carrier = p; }
+      });
+    }
+    if (!carrier) return null;
 
     const isHome = carrier.data.team === 'home';
     const carrierPos = { x: carrier.group.position.x, z: carrier.group.position.z };
@@ -2768,65 +2920,71 @@ class Pitch3D {
     const midZ = (pPos.z + rPos.z) / 2;
     const angle = Math.atan2(dx, dz);
 
-    let color, width;
+    let color, opacity, width, emissiveColor;
     switch (edge.category) {
       case 'safe':
-        color = 0xbb0055;
-        width = 0.25;
+        color = 0x0ea5e9;   // dark saturated cyan
+        opacity = 0.7;
+        width = 0.14;
+        emissiveColor = 0x0ea5e9;
         break;
       case 'risky':
-        color = 0xbb5500;
-        width = 0.20;
+        color = 0xd97706;   // dark amber
+        opacity = 0.55;
+        width = 0.1;
+        emissiveColor = 0xd97706;
         break;
       case 'blocked':
-        color = 0xbb1111;
-        width = 0.20;
+        color = 0xdc2626;   // muted red
+        opacity = 0.5;
+        width = 0.1;
+        emissiveColor = 0xdc2626;
         break;
     }
 
-    // ── Dark underlay (contrast against any grass stripe) ──
-    const ulMat = new THREE.MeshBasicMaterial({
-      color: 0x111111,
-      transparent: true,
-      opacity: 0.55,
-      side: THREE.DoubleSide,
-      depthWrite: true,
-    });
-    const underlay = new THREE.Mesh(
-      new THREE.PlaneGeometry(width + 0.08, len),
-      ulMat,
-    );
-    underlay.rotation.x = -Math.PI / 2;
-    underlay.rotation.z = angle;
-    underlay.position.set(midX, 0.04, midZ);
-    this.scene.add(underlay);
-    this._passingLines.push(underlay);
-
-    // ── Main ribbon (opaque, high contrast) ──
-    const ribbonMat = new THREE.MeshBasicMaterial({
+    // Ribbon body with additive blending for subtle emissive glow
+    const mat = new THREE.MeshBasicMaterial({
       color,
-      transparent: false,
+      transparent: true,
+      opacity,
+      blending: THREE.AdditiveBlending,
+      depthWrite: false,
       side: THREE.DoubleSide,
-      depthWrite: true,
     });
     const ribbon = new THREE.Mesh(
       new THREE.PlaneGeometry(width, len),
-      ribbonMat,
+      mat,
     );
     ribbon.rotation.x = -Math.PI / 2;
     ribbon.rotation.z = angle;
     ribbon.position.set(midX, 0.05, midZ);
+    ribbon.renderOrder = 1;
     this.scene.add(ribbon);
     this._passingLines.push(ribbon);
 
-    // ── Arrow head at receiver ──
-    const headSize = 0.55;
+    // Slightly wider, fainter under-glow for depth
+    const glowMat = mat.clone();
+    glowMat.opacity = opacity * 0.25;
+    const glow = new THREE.Mesh(
+      new THREE.PlaneGeometry(width * 2.5, len),
+      glowMat,
+    );
+    glow.rotation.x = -Math.PI / 2;
+    glow.rotation.z = angle;
+    glow.position.set(midX, 0.04, midZ);
+    glow.renderOrder = 0;
+    this.scene.add(glow);
+    this._passingLines.push(glow);
+
+    // Arrow head at receiver
+    const headSize = 0.5;
     const headShape = new THREE.Shape();
     headShape.moveTo(0, 0);
     headShape.lineTo(-headSize * 0.4, -headSize);
     headShape.lineTo(headSize * 0.4, -headSize);
     headShape.closePath();
-    const headMat = ribbonMat.clone();
+    const headMat = mat.clone();
+    headMat.opacity = opacity * 0.9;
     const head = new THREE.Mesh(
       new THREE.ShapeGeometry(headShape),
       headMat,
@@ -2834,26 +2992,9 @@ class Pitch3D {
     head.rotation.x = -Math.PI / 2;
     head.position.set(rPos.x, 0.055, rPos.z);
     head.rotation.z = angle;
+    head.renderOrder = 1;
     this.scene.add(head);
     this._passingLines.push(head);
-
-    // ── Glow band (wider, subtle halo) ──
-    const glowMat = new THREE.MeshBasicMaterial({
-      color,
-      transparent: true,
-      opacity: 0.12,
-      side: THREE.DoubleSide,
-      depthWrite: false,
-    });
-    const glow = new THREE.Mesh(
-      new THREE.PlaneGeometry(width * 3.5, len),
-      glowMat,
-    );
-    glow.rotation.x = -Math.PI / 2;
-    glow.rotation.z = angle;
-    glow.position.set(midX, 0.03, midZ);
-    this.scene.add(glow);
-    this._passingLines.push(glow);
   }
 
   _passingPositionsChanged() {
@@ -2888,11 +3029,16 @@ class Pitch3D {
   _drawPassingOverlay() {
     this._clearPassingLines();
 
-    if (!this._ballData || this.players.length < 4) return;
+    if (!this._ballData || this.players.length < 4) {
+      this._passingGraphDirty = false;
+      return;
+    }
 
-    // Recompute graph
     const graph = this._computePassingGraph3D();
-    if (!graph || !graph.edges.length) return;
+    if (!graph || !graph.edges.length) {
+      this._passingGraphDirty = false;
+      return;
+    }
 
     this._passingGraphCache = graph;
     this._snapshotPassingPositions();
