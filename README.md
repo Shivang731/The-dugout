@@ -532,7 +532,6 @@ Each scenario teaches one tactical concept:
 | **AI** | Ollama (local, granite3.3:2b) |
 | **RAG** | Docling → PyMuPDF → FAISS + sentence-transformers (all-MiniLM-L6-v2) |
 | **HTTP** | httpx (async) |
-| **Deploy** | Railway (backend) + Vercel (frontend) |
 | **Data** | StatsBomb open-data |
 
 ---
