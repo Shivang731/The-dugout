@@ -19,6 +19,7 @@ const CENTER_R = 9.15;
 const PEN_SPOT_DIST = 11;
 const CORNER_R = 1;
 const PLAYER_HEIGHT = 2.2;
+const PROFESSIONAL_BALL_RADIUS = 0.11;
 
 // ===================================================================
 // TEAM COLORS
@@ -58,6 +59,10 @@ const TEAM_COLORS = {
   'Ecuador':           { shirt: 0xf7d100, shorts: 0x003cff, socks: 0xcf1020, gk: 0x22c55e, crowd: 0xf7d100 },
 };
 const DEFAULT_COLORS = { shirt: 0x3b82f6, shorts: 0x1e3a8a, socks: 0x3b82f6, gk: 0x2563eb, crowd: 0x3b82f6 };
+const DEMO_KITS = {
+  home: { shirt: 0xfff3b0, shorts: 0x123c69, socks: 0xfff3b0, gk: 0x00e5ff },
+  away: { shirt: 0xe11d48, shorts: 0x111827, socks: 0xe11d48, gk: 0xb8ff2c },
+};
 
 function _getTeamColors(teamName) {
   return TEAM_COLORS[teamName] || DEFAULT_COLORS;
@@ -1665,16 +1670,12 @@ function _buildFloodlights(scene) {
 function _buildPlayerFigure(p, scenario) {
   const isAway = p.team === 'away';
   const isGK = p.pos === 'GK';
+  const kit = isAway ? DEMO_KITS.away : DEMO_KITS.home;
 
-  const homeTeamName = scenario?.home_team || '';
-  const awayTeamName = scenario?.away_team || '';
-  const homeColors = _getTeamColors(homeTeamName);
-  const awayColors = _getTeamColors(awayTeamName);
-
-  const shirtColor = isAway ? awayColors.shirt : homeColors.shirt;
-  const shortsColor = isAway ? awayColors.shorts : homeColors.shorts;
-  const socksColor = isAway ? awayColors.socks : homeColors.socks;
-  const gkColor = isAway ? awayColors.gk : homeColors.gk;
+  const shirtColor = kit.shirt;
+  const shortsColor = kit.shorts;
+  const socksColor = kit.socks;
+  const gkColor = kit.gk;
 
   const mainColor = isGK ? gkColor : shirtColor;
 
@@ -1705,7 +1706,7 @@ function _buildPlayerFigure(p, scenario) {
   });
 
   // --- Lower legs (socks) ---
-  const legMat = _mat(socksColor, 0.55, 0.05);
+  const legMat = _mat(isGK ? gkColor : socksColor, 0.55, 0.05);
   const lowerLegH = 0.45;
   [-0.09, 0.09].forEach(offset => {
     const leg = new THREE.Mesh(
@@ -1718,7 +1719,7 @@ function _buildPlayerFigure(p, scenario) {
   });
 
   // --- Upper legs (thighs) ---
-  const thighMat = _mat(shortsColor, 0.5, 0.05);
+  const thighMat = _mat(isGK ? gkColor : shortsColor, 0.5, 0.05);
   const thighH = 0.35;
   [-0.09, 0.09].forEach(offset => {
     const thigh = new THREE.Mesh(
@@ -1734,7 +1735,7 @@ function _buildPlayerFigure(p, scenario) {
   const shortsH = 0.22;
   const shorts = new THREE.Mesh(
     _sharedGeo('shorts', () => new THREE.CylinderGeometry(0.24, 0.2, shortsH, 10)),
-    _mat(shortsColor, 0.4, 0.05),
+    _mat(isGK ? gkColor : shortsColor, 0.4, 0.05),
   );
   shorts.position.y = 0.08 + lowerLegH + thighH + shortsH / 2;
   shorts.castShadow = true;
@@ -1861,6 +1862,22 @@ function _buildPlayerFigure(p, scenario) {
   glow.position.y = 0.035;
   group.add(glow);
 
+  // --- Possession marker ---
+  const possessionMarker = new THREE.Mesh(
+    new THREE.RingGeometry(0.88, 1.08, 32),
+    new THREE.MeshBasicMaterial({
+      color: isAway ? DEMO_KITS.away.shirt : DEMO_KITS.home.shirt,
+      transparent: true,
+      opacity: 0,
+      side: THREE.DoubleSide,
+      depthWrite: false,
+    }),
+  );
+  possessionMarker.rotation.x = -Math.PI / 2;
+  possessionMarker.position.y = 0.045;
+  possessionMarker.renderOrder = 4;
+  group.add(possessionMarker);
+
   // --- Hit mesh (raycaster) ---
   const hitMesh = new THREE.Mesh(
     new THREE.CylinderGeometry(0.35, 0.35, H, 8),
@@ -1880,7 +1897,7 @@ function _buildPlayerFigure(p, scenario) {
   // Face toward opponent goal
   group.rotation.y = isAway ? 0 : Math.PI;
 
-  return { group, hitMesh, glow, data: p };
+  return { group, hitMesh, glow, possessionMarker, data: p };
 }
 
 function _createShirtNumber(number, color = '#ffffff') {
@@ -2152,11 +2169,16 @@ class Pitch3D {
     this._pressingMeshes = [];
     this._pressingCircleGeo = null;
     this._pressingGradientTexture = null;
+    this._attackZoneMeshes = [];
+    this._attackZoneGradientTex = null;
+    this._attackZoneData = null;
     this._passingGraphCache = null;
     this._lastPassingPositions = null;
     this._replaying = false;
     this._replayCreatedPlayers = [];
     this._replayLabel = null;
+    this._ballCarrier = null;
+    this._ballAttachedToCarrier = false;
 
     this._setupScene();
     this._setupLights();
@@ -2390,8 +2412,15 @@ class Pitch3D {
   _buildBall(scenario) {
     if (this._ballData) {
       this.scene.remove(this._ballData.group);
+      if (this._ballData.shadow) {
+        this.scene.remove(this._ballData.shadow);
+        if (this._ballData.shadow.material?.map) this._ballData.shadow.material.map.dispose();
+        this._ballData.shadow.geometry.dispose();
+        this._ballData.shadow.material.dispose();
+      }
       this._ballData = null;
     }
+    this._setBallCarrier(null, false);
 
     const events = scenario.replay_events || [];
     if (!events.length) return;
@@ -2446,6 +2475,13 @@ class Pitch3D {
     this._ballData.shadow = ballShadow;
     this._ballData.restPos = { x: w.x, z: w.z };
     this._ballData._prevPos = { x: w.x, z: w.z };
+
+    const cutoff = typeof getMatchMinute === 'function' ? getMatchMinute(scenario) : 60;
+    const relevant = events.filter(e => (e.minute || 0) <= cutoff && e.player);
+    const possessionEvent = [...relevant].reverse().find(e =>
+      e.type !== 'substitution' && e.type !== 'yellow_card' && e.type !== 'red_card'
+    );
+    if (possessionEvent) this._setBallCarrierFromEvent(possessionEvent);
   }
 
   // ===== TACTICAL HIGHLIGHTS =====
@@ -2517,11 +2553,12 @@ class Pitch3D {
     this._clearPassingLines();
     this._clearHighlightCircles();
     this._clearPressingOverlay();
+    this._clearAttackOverlay();
 
     if (mode === 'pressing') {
       this._updatePressingOverlay();
     } else if (mode === 'attack') {
-      this._drawAttackOverlay();
+      this._updateAttackOverlay();
     } else if (mode === 'passing') {
       this._passingGraphDirty = true;
       this._drawPassingOverlay();
@@ -2648,44 +2685,80 @@ class Pitch3D {
     }
   }
 
-  _drawAttackOverlay() {
-    const thirdW = HALF_W * 2 / 3;
-    const fieldThirds = [
-      { x: -HALF_W / 3 - thirdW / 2, w: thirdW },
-      { x: 0, w: thirdW },
-      { x: HALF_W / 3 + thirdW / 2, w: thirdW },
+  _clearAttackOverlay() {
+    this._attackZoneMeshes.forEach(m => {
+      this.scene.remove(m);
+      if (m.material) m.material.dispose();
+    });
+    this._attackZoneMeshes = [];
+    if (this._attackZoneGradientTex) {
+      this._attackZoneGradientTex.dispose();
+      this._attackZoneGradientTex = null;
+    }
+  }
+
+  _createAttackZoneTexture() {
+    const canvas = document.createElement('canvas');
+    canvas.width = 256;
+    canvas.height = 1;
+    const ctx = canvas.getContext('2d');
+    const grad = ctx.createLinearGradient(0, 0, 256, 0);
+    grad.addColorStop(0, 'rgba(255,255,255,0)');
+    grad.addColorStop(0.15, 'rgba(255,255,255,0.4)');
+    grad.addColorStop(0.5, 'rgba(255,255,255,1)');
+    grad.addColorStop(0.85, 'rgba(255,255,255,0.4)');
+    grad.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, 256, 1);
+    this._attackZoneGradientTex = new THREE.CanvasTexture(canvas);
+    this._attackZoneGradientTex.wrapS = THREE.ClampToEdgeWrapping;
+    return this._attackZoneGradientTex;
+  }
+
+  _updateAttackOverlay() {
+    this._attackZoneData = computeAttackZones(this.scenario);
+    const az = this._attackZoneData;
+    if (!az) return;
+
+    const leftPct = az.leftPct, centerPct = az.centerPct, rightPct = az.rightPct;
+    const maxVal = Math.max(1, leftPct, centerPct, rightPct);
+    const isDominantL = leftPct >= centerPct && leftPct >= rightPct;
+    const isDominantC = centerPct >= leftPct && centerPct >= rightPct;
+    const isDominantR = rightPct >= leftPct && rightPct >= centerPct;
+
+    const thirdW = PITCH_W / 3;
+    const zones = [
+      { x: -HALF_W + thirdW / 2, w: thirdW, pct: leftPct, dominant: isDominantL },
+      { x: 0, w: thirdW, pct: centerPct, dominant: isDominantC },
+      { x: HALF_W - thirdW / 2, w: thirdW, pct: rightPct, dominant: isDominantR },
     ];
 
-    const zoneCount = [0, 0, 0];
-    this.players.forEach(p => {
-      const px = p.group.position.x;
-      if (px < -HALF_W / 3) zoneCount[0]++;
-      else if (px > HALF_W / 3) zoneCount[2]++;
-      else zoneCount[1]++;
-    });
-
-    const maxZone = Math.max(1, ...zoneCount);
-    const dangerColors = [0xdc2626, 0xea580c, 0xca8a04];
-
-    fieldThirds.forEach((z, i) => {
-      const intensity = 0.08 + (zoneCount[i] / maxZone) * 0.2;
-      const idx = zoneCount[i] / maxZone < 0.4 ? 2 : zoneCount[i] / maxZone < 0.7 ? 1 : 0;
-      const m = new THREE.MeshBasicMaterial({
-        color: dangerColors[idx],
+    while (this._attackZoneMeshes.length < 3) {
+      const tex = this._attackZoneGradientTex || this._createAttackZoneTexture();
+      const mat = new THREE.MeshBasicMaterial({
+        map: tex,
         transparent: true,
-        opacity: intensity,
-        side: THREE.DoubleSide,
         depthWrite: false,
+        side: THREE.DoubleSide,
       });
-      const zone = new THREE.Mesh(
-        new THREE.PlaneGeometry(z.w, 35),
-        m,
-      );
-      zone.rotation.x = -Math.PI / 2;
-      zone.position.set(z.x, 0.04, 0);
-      zone.renderOrder = 1;
-      this.scene.add(zone);
-      this._passingLines.push(zone);
+      const mesh = new THREE.Mesh(new THREE.PlaneGeometry(1, PITCH_L), mat);
+      mesh.rotation.x = -Math.PI / 2;
+      mesh.position.y = 0.04;
+      mesh.renderOrder = 1;
+      this.scene.add(mesh);
+      this._attackZoneMeshes.push(mesh);
+    }
+
+    zones.forEach((z, i) => {
+      const mesh = this._attackZoneMeshes[i];
+      const intensity = Math.min(1, z.pct / maxVal);
+      const alpha = 0.03 + intensity * 0.2;
+      mesh.position.x = z.x;
+      mesh.position.z = 0;
+      mesh.scale.set(z.w, 1, 1);
+      mesh.material.color.setHex(z.dominant ? 0x22c55e : 0x3b82f6);
+      mesh.material.opacity = alpha;
+      mesh.visible = true;
     });
   }
 
@@ -3059,6 +3132,8 @@ class Pitch3D {
   // ===== PLAYERS =====
   load(homePlayers, awayPlayers) {
     _clearPlayers(this.scene, this.players);
+    this._ballCarrier = null;
+    this._ballAttachedToCarrier = false;
     const all = [
       ...homePlayers.map((p) => ({ ...p, team: 'home' })),
       ...awayPlayers.map((p) => ({ ...p, team: 'away' })),
@@ -3169,7 +3244,84 @@ class Pitch3D {
   }
 
   _findPlayerMesh(playerName) {
-    return this.players.find(p => p.data && p.data.name === playerName) || null;
+    if (!playerName) return null;
+    const needle = playerName.toLowerCase();
+    return this.players.find(p => {
+      const name = p.data?.name;
+      return name && (name === playerName || name.toLowerCase().includes(needle));
+    }) || null;
+  }
+
+  _getBallCarrierPosition(player) {
+    if (!player) return null;
+    const dir = player.data.team === 'home' ? 1 : -1;
+    return {
+      x: player.group.position.x + 0.10,
+      y: 0.22,
+      z: player.group.position.z + dir * 0.46,
+    };
+  }
+
+  _setBallWorldPosition(pos) {
+    if (!this._ballData || !pos) return;
+    this._ballData.group.position.set(pos.x, pos.y ?? 0.22, pos.z);
+    if (this._ballData.shadow) {
+      this._ballData.shadow.position.x = pos.x;
+      this._ballData.shadow.position.z = pos.z;
+    }
+  }
+
+  _setBallCarrier(player, attach = true) {
+    this._ballCarrier = player || null;
+    this._ballAttachedToCarrier = Boolean(player && attach);
+    this.players.forEach(p => {
+      if (!p.possessionMarker) return;
+      p.possessionMarker.material.opacity = p === player ? 0.72 : 0;
+    });
+    if (this._ballAttachedToCarrier && player) {
+      this._setBallWorldPosition(this._getBallCarrierPosition(player));
+    }
+  }
+
+  _setBallCarrierFromEvent(event) {
+    if (!event || !event.player) return null;
+    const player = this._findPlayerMesh(event.player);
+    if (!player) return null;
+    if (event.type === 'substitution' || event.type === 'yellow_card' || event.type === 'red_card') {
+      return player;
+    }
+    this._setBallCarrier(player, true);
+    return player;
+  }
+
+  _syncBallToCarrier() {
+    if (!this._ballAttachedToCarrier || !this._ballCarrier) return;
+    this._setBallWorldPosition(this._getBallCarrierPosition(this._ballCarrier));
+  }
+
+  _animateBallToWorld(target, duration) {
+    if (!this._ballData || !target) return Promise.resolve();
+    this._ballAttachedToCarrier = false;
+    const startX = this._ballData.group.position.x;
+    const startY = this._ballData.group.position.y;
+    const startZ = this._ballData.group.position.z;
+    const dur = duration || 800;
+    const startTime = performance.now();
+
+    return new Promise(resolve => {
+      const step = (now) => {
+        const t = Math.min(1, (now - startTime) / dur);
+        const ease = 1 - Math.pow(1 - t, 3);
+        this._setBallWorldPosition({
+          x: startX + (target.x - startX) * ease,
+          y: startY + ((target.y ?? 0.22) - startY) * ease,
+          z: startZ + (target.z - startZ) * ease,
+        });
+        if (t < 1) requestAnimationFrame(step);
+        else resolve();
+      };
+      requestAnimationFrame(step);
+    });
   }
 
   _delay(ms) {
@@ -3180,6 +3332,7 @@ class Pitch3D {
     for (const event of events) {
       if (!this._replaying || !this._running) break;
       const team = this._getEventTeam(event.player, allPlayerData);
+      this._setBallCarrierFromEvent(event);
       switch (event.type) {
         case 'goal':
           await this._animateReplayGoal(event, team);
@@ -3204,9 +3357,8 @@ class Pitch3D {
     const targetZ = isHome ? HALF_L - 1.5 : -HALF_L + 1.5;
     const targetX = 0;
     const dur = 1800;
-    const startX = this._ballData.group.position.x;
-    const startZ = this._ballData.group.position.z;
-    const startTime = performance.now();
+    const player = this._setBallCarrierFromEvent(event);
+    if (player) await this._delay(280);
 
     const flashMat = new THREE.MeshBasicMaterial({
       color: 0xffffff, transparent: true, opacity: 0, side: THREE.DoubleSide,
@@ -3217,18 +3369,10 @@ class Pitch3D {
     this.scene.add(flash);
 
     let didIncrement = false;
-
-    return new Promise(resolve => {
-      const step = (now) => {
-        const t = Math.min(1, (now - startTime) / dur);
-        const ease = 1 - Math.pow(1 - t, 3);
-        this._ballData.group.position.x = startX + (targetX - startX) * ease;
-        this._ballData.group.position.z = startZ + (targetZ - startZ) * ease;
-        if (t > 0.6 && t < 0.85) {
-          flash.material.opacity = ((t - 0.6) / 0.25) * 0.7;
-        } else if (t >= 0.85) {
-          flash.material.opacity = Math.max(0, (1 - (t - 0.85) / 0.15) * 0.7);
-        }
+    const scoreStart = performance.now();
+    const scorePromise = new Promise(resolve => {
+      const scoreStep = (now) => {
+        const t = Math.min(1, (now - scoreStart) / dur);
         if (!didIncrement && t >= 0.7) {
           didIncrement = true;
           if (isHome) {
@@ -3241,6 +3385,21 @@ class Pitch3D {
             if (el) el.textContent = this._replayScore.away;
           }
         }
+        if (t < 1) requestAnimationFrame(scoreStep);
+        else resolve();
+      };
+      requestAnimationFrame(scoreStep);
+    });
+
+    const flashPromise = new Promise(resolve => {
+      const startTime = performance.now();
+      const step = (now) => {
+        const t = Math.min(1, (now - startTime) / dur);
+        if (t > 0.6 && t < 0.85) {
+          flash.material.opacity = ((t - 0.6) / 0.25) * 0.7;
+        } else if (t >= 0.85) {
+          flash.material.opacity = Math.max(0, (1 - (t - 0.85) / 0.15) * 0.7);
+        }
         if (t < 1) {
           requestAnimationFrame(step);
         } else {
@@ -3252,6 +3411,12 @@ class Pitch3D {
       };
       requestAnimationFrame(step);
     });
+
+    await Promise.all([
+      this._animateBallToWorld({ x: targetX, y: 0.22, z: targetZ }, dur),
+      flashPromise,
+      scorePromise,
+    ]);
   }
 
   async _animateReplaySub(event, team) {
@@ -3292,19 +3457,21 @@ class Pitch3D {
       name: inName, number: '?', pos: 'SUB',
       x: 0.5, y: 0.5, team, fatigue: 50,
     };
-    const { group, hitMesh, glow, data } = _buildPlayerFigure(subData, this.scenario);
+    const { group, hitMesh, glow, possessionMarker } = _buildPlayerFigure(subData, this.scenario);
     group.position.set(posX, 0, posZ);
     this.scene.add(group);
-    const newPlayer = { group, data: subData, hitMesh, glow };
+    const newPlayer = { group, data: subData, hitMesh, glow, possessionMarker };
     this.players.push(newPlayer);
     this._replayCreatedPlayers.push(newPlayer);
 
     group.traverse(child => {
       if (child.isMesh && child.material) {
+        if (child === possessionMarker) return;
         const mats = Array.isArray(child.material) ? child.material : [child.material];
         mats.forEach(mat => { mat.transparent = true; mat.opacity = 0; });
       }
     });
+    if (possessionMarker) possessionMarker.material.opacity = 0;
 
     const fadeInStart = performance.now();
     await new Promise(resolve => {
@@ -3312,6 +3479,7 @@ class Pitch3D {
         const t = Math.min(1, (now - fadeInStart) / fadeDur);
         group.traverse(child => {
           if (child.isMesh && child.material) {
+            if (child === possessionMarker) return;
             const mats = Array.isArray(child.material) ? child.material : [child.material];
             mats.forEach(mat => { mat.transparent = true; mat.opacity = t; });
           }
@@ -3445,6 +3613,9 @@ class Pitch3D {
       const sway = Math.sin(this._animTime * 1.0 + phase) * 0.003;
       const breath = Math.sin(this._animTime * 0.8 + phase) * 0.002;
       p.group.position.y = sway;
+      if (p.possessionMarker && p === this._ballCarrier) {
+        p.possessionMarker.material.opacity = 0.58 + Math.sin(this._animTime * 5) * 0.14;
+      }
 
       // Subtle arm swing
       const armChildren = p.group.children.filter(c =>
@@ -3467,6 +3638,7 @@ class Pitch3D {
 
     // Ball gentle hover and natural rolling rotation
     if (this._ballData) {
+      this._syncBallToCarrier();
       const ballPos = this._ballData.group.position;
       const ballMesh = this._ballData.ball;
 
@@ -3526,13 +3698,22 @@ class Pitch3D {
     this._clearPassingLines();
     this._clearHighlightCircles();
     this._clearPressingOverlay();
+    this._clearAttackOverlay();
     _clearPlayers(this.scene, this.players);
+    this._ballCarrier = null;
+    this._ballAttachedToCarrier = false;
     if (this._replayCreatedPlayers.length) {
       _clearPlayers(this.scene, this._replayCreatedPlayers);
       this._replayCreatedPlayers = [];
     }
     if (this._ballData) {
       this.scene.remove(this._ballData.group);
+      if (this._ballData.shadow) {
+        this.scene.remove(this._ballData.shadow);
+        if (this._ballData.shadow.material?.map) this._ballData.shadow.material.map.dispose();
+        this._ballData.shadow.geometry.dispose();
+        this._ballData.shadow.material.dispose();
+      }
       this._ballData = null;
     }
     if (this._crowdGroup) {
@@ -3562,11 +3743,11 @@ class Pitch3D {
 // FACTORY HELPERS
 // ===================================================================
 function _createPlayer(scene, p, scenario) {
-  const { group, hitMesh, glow, data } = _buildPlayerFigure(p, scenario);
+  const { group, hitMesh, glow, possessionMarker, data } = _buildPlayerFigure(p, scenario);
   const w = _pNormToWorld(p);
   group.position.set(w.x, 0, w.z);
   scene.add(group);
-  return { group, data: p, hitMesh, glow };
+  return { group, data: p, hitMesh, glow, possessionMarker };
 }
 
 function _clearPlayers(scene, players) {
@@ -3586,5 +3767,3 @@ function _clearPlayers(scene, players) {
     });
   });
 }
-
-
